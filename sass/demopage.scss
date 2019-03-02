@@ -1,0 +1,36 @@
+.container {
+    background-color: yellow;
+    border: 1px solid red;
+
+    .row {
+        background-color: green;
+        // height: 50px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        .col {
+            background-color: purple;
+            outline: 1px solid yellow;
+        }
+    }
+}
+
+.row {
+    //background-color: green;
+}
+
+[class^="col"] {
+    // background: #ffff00;
+    // outline: 1px solid red;
+}
+
+.nav {
+    height: 100vh;
+    width: 270px;
+}
+
+.main-content {
+    margin: 0 auto;
+    width: calc(100vw - 350px);
+    //background-color: #ffffff;
+}

@@ -1,15 +1,3 @@
-/**
- * _flex.scss
- * Contains responsive flex classses including:
- * Flex Direction, Justify Content, Wrap, Fill, Grow & Shrink
- *
- */
-
-/**
- *
- * Flex 
- *
- */
 @each $modifier, $breakpoint in $map-grid-props { 
     @include create-mediaquery($breakpoint) {
 

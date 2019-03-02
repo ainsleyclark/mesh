@@ -1,0 +1,54 @@
+//Unresponsive Classes
+.type-decoration-none {
+    text-decoration: none;
+}
+.type-weight-normal {
+    font-weight: normal;
+}
+.type-weight-bold {
+    font-weight: 900;
+}
+.type-weight-light {
+    font-weight: 300;
+}
+.type-italic {
+    font-style: italic;
+}
+.type-uppercase {
+    text-transform: uppercase;
+}
+.type-lowercase {
+    text-transform: lowercase;
+}
+.type-flow {
+    $i: 0;
+    @while $i <= $intervals {
+        @media only screen and (min-width : 360 + ($i * $interval-size * 1px)) {
+            font-size: 1.2rem * (1 + (.02 * $i));
+        }
+        $i: $i + 1;
+    }
+    // Handle below 360px screen
+    @media only screen and (max-width: 360px) {
+        font-size: 1.2rem;
+    }
+}
+
+//Responsive Classes 
+@each $modifier, $breakpoint in $map-grid-props {
+    @include create-mediaquery($breakpoint) {
+        .type#{$modifier}-center {
+            text-align: center;
+        }
+        .type#{$modifier}-left {
+            text-align: left;
+        }
+        .type#{$modifier}-right {
+            text-align: right;
+        }
+        .type#{$modifier}-justify {
+            text-align: justify;
+        }
+    }
+}
+

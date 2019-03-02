@@ -1,11 +1,24 @@
-/**
- * _variables.scss
- * Sets up variables for the grid and mixins
- *
- */
+// ==========================================================================
+// Mesh variables
+// ==========================================================================
+//
+// Table of Contents:
+//
+//  1. Grid
+//  2. Spacing
+//  3. Sizing
+//  2. Colours
+//  3. Type
+//
+//
 
-//Defines columns
+
+// 1. Grid
+// ==========================================================================
+
+//Columns
 $grid-columns: 12;
+$column-padding: 15px; 
 
 //Defines breakpoints
 $grid-breakpoint-sm: 576;
@@ -21,3 +34,68 @@ $map-grid-props: (
     '-lg': $grid-breakpoint-lg,
     '-xl': $grid-breakpoint-xl
 );
+
+
+// 2. Spacing
+// ==========================================================================
+
+
+$map-spacing-props: (
+    0: 0,
+    1: 0.25rem,
+    2: 0.5rem,
+    3: 1rem,
+    4: 2rem,
+    5: 3rem,
+    6: 4rem,
+    7: 5rem,
+    // 8: 7rem,
+    // 9: 10rem,
+);
+
+
+// 3. Sizing
+// ==========================================================================
+
+
+
+
+// 4. Colour
+// ==========================================================================
+
+$black: #000000;
+$white: #ffffff;
+$white-off: #f2f7fb;
+$green: #182C61;
+$pink: #E56399;
+$blue: #253544;
+
+$palette: (
+    //Set colours, ensure they are the same as above
+    colors: (
+        black: $black,
+        white: $white,
+        pink: $pink,
+        blue: $blue,
+        green: $green
+    ),
+    //Set the attributes of colours
+    attr: (
+        colour: 'color',
+        bgcolour: 'background-color',
+        //fill__: 'fill',
+        // stroke__: 'stroke'
+    ),
+    //Tones, light dark & normal
+    tones: ('light': 15, 'normal': 0,'dark': -15),
+    //Transparency
+    alpha: ( 'low': 0.40, 'medium': 0.60, 'high': 0.80)     
+);
+
+// 5. Type
+// ==========================================================================
+
+//Flow Text
+$range : $grid-breakpoint-xl - $grid-breakpoint-sm !default;
+$intervals: 20 !default;
+$interval-size: $range / $intervals !default;
