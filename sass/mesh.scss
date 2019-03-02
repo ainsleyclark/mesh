@@ -1,0 +1,54 @@
+/**
+ * master.scss
+ * Imports all files from abstracts, base, components, layout, pages & vendor
+ * @author Ainsley Clark
+ * @author URL:   https://www.ainsleyclark.com
+ * @author email: info@ainsleyclark.com
+ */
+
+/* ====================
+    Abstracts
+    ==================== */
+    // @import 'abstracts/_functions.scss';
+    @import 'abstracts/_variables';
+    @import 'abstracts/_mixins';
+
+/* ====================
+    Base
+    ==================== */
+    @import 'base/_global';
+
+/* ====================
+    Partials
+    ==================== */
+    @import 'partials/_grid';
+    @import 'partials/_flex';
+
+/* ====================
+    Components
+    ==================== */
+
+/**
+ *
+ * Demo Stuff
+ *
+ */
+
+.container {
+    background-color: yellow;
+    border: 1px solid red;
+
+    .row {
+        background-color: green;
+        // height: 50px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        .col {
+            background-color: purple;
+            outline: 1px solid yellow;
+        }
+    }
+
+}
+

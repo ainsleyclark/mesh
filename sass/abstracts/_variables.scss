@@ -1,0 +1,23 @@
+/**
+ * _variables.scss
+ * Sets up variables for the grid and mixins
+ *
+ */
+
+//Defines columns
+$grid-columns: 12;
+
+//Defines breakpoints
+$grid-breakpoint-sm: 576;
+$grid-breakpoint-md: 768;
+$grid-breakpoint-lg: 992;
+$grid-breakpoint-xl: 1200;
+
+//Props for grid
+$map-grid-props: (
+    '': 0,
+    '-sm': $grid-breakpoint-sm, 
+    '-md': $grid-breakpoint-md, 
+    '-lg': $grid-breakpoint-lg,
+    '-xl': $grid-breakpoint-xl
+);

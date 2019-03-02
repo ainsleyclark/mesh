@@ -1,0 +1,134 @@
+/**
+ * _grid.scss
+ * Creates a responsive grid system including:
+ * Containers, Rows, Columns & Offsets
+ *
+ */
+
+/**
+ *
+ * Containers & Rows
+ *
+ */
+//Creates the breakpoints for containers
+@each $modifier, $breakpoint in $map-grid-props {
+    @include create-mediaquery($breakpoint) {
+        @if($breakpoint == 0) {
+            .container {
+                max-width: $grid-breakpoint-sm * 1px;
+            }
+        } @else {
+            .container {
+                max-width: $breakpoint * 1px;
+            }
+        }
+    }
+}
+
+.container,
+.container--fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    .container--fluid {
+        margin: 0;
+        max-width: 100%;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/**
+ *
+ * Columns & Offset
+ *
+ */
+@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+    @include create-mediaquery($breakpoint) {
+        //Columns
+        @for $i from 1 through $grid-columns {
+            .col#{$modifier}-#{$i} {
+                flex-basis: (100 / ($grid-columns / $i) ) * 1%;
+            }
+        }
+        .col#{$modifier}-offset-0 {
+            margin-left: 0;
+        }
+        //Offsets
+        @for $i from 1 through $grid-columns {
+            .offset#{$modifier}-#{$i} {
+                margin-left: (100 / ($grid-columns / $i) ) * 1%;
+            }
+        }
+    }
+}
+
+@each $modifier, $breakpoint in $map-grid-props {
+    @include create-col-classes($modifier, $grid-columns, $breakpoint );
+}
+
+/**
+ *
+ * Display 
+ *
+ */
+@each $modifier, $breakpoint in $map-grid-props { 
+    @include create-mediaquery($breakpoint) {
+        .d#{$modifier}-none {
+            display: none;
+        }
+        .d#{$modifier}-inline {
+            display: inline;
+        }
+        .d#{$modifier}-inline-block {
+            display: inline-block;
+        }
+        .d#{$modifier}-block {
+            display: block;
+        }
+        .d#{$modifier}-flex {
+            display: flex;
+        }
+        .d#{$modifier}-inline-flex {
+            display: inline-flex;
+        }
+    }
+}
+
+/**
+ *
+ * Order 
+ *
+ */
+@each $modifier, $breakpoint in $map-grid-props { 
+    @include create-mediaquery($breakpoint) {
+        .order#{$modifier}-first {
+            order: -1;
+        }
+        .order#{$modifier}-last {
+            order: $grid-columns + 1;
+        }
+        @for $i from 1 through $grid-columns {
+            .order#{$modifier}-#{$i} {
+                order: #{$i};
+            }
+        }
+    }
+}
+
+/**
+ *
+ * Padding & Margin 
+ *
+ */
+@each $modifier, $breakpoint in $map-grid-props { 
+    @include create-mediaquery($breakpoint) {
+        
+    }
+}
