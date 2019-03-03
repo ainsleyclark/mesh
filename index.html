@@ -7,45 +7,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/mesh.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/demopage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
 
 
 
-    <div class="container-fluid px-0 bgcolour-white-dark">
+    <div class="container-fluid px-0 bgcolour-white">
         <div class="row">
-            <div class="col-lg-auto nav bgcolour-blue pl-0">
-                <ul class="colour-white ml-4">
+            <div class="col-12 px-0">
+                <header class="header d-flex justify-content-between bgcolour-slategrey px-4">
+                    <div class="header__logo d-flex justify-content-around align-items-center">
+                        <img src="assets/icon/meshlogo.svg" alt="Mesh Logo" class="nav__logo">
+                        <span>mesh</span>
+                    </div>
+                    <div class="header__icons d-flex align-items-center">
+                        <a href="https://www.linkedin.com/in/ainsleyclark/" target="_blank">
+                            <i class="fab fa-linkedin fa-2x colour-white mx-3"></i>
+                        </a>
+                        <a href="https://github.com/ainsleyclark/mesh" target="_blank">
+                            <i class="fab fa-github fa-2x colour-white mx-3"></i>
+                        </a>
+                        <a href="https://github.com/ainsleyclark/mesh" target="_blank">
+                            <button class="mx-3">Download</button>
+                        </a>
+
+                    </div>
+                </header>
+            </div>
+        </div>
+        <main>
+        <div class="row">
+            <div class="col-lg-auto nav bgcolour-white pl-0">
+                <span class="nav__title type-4">Documentation</span>
+                <div class="divider bgcolour-white"></div>
+                <ul class="colour-black ml-4">
+                    <!-- Getting Started -->
                     <li>Getting Started</li>
-                    <li>Grid</li>
-                    <li>Flexbox</li>
-                    <li>Position</li>
-                    <li>Sizing</li>
-                    <li>Colours</li>
-                    <li>Type</li>
+                        <ul>
+                            <li>Download</li>
+                            <li>Contents</li>
+                            <li>Variables</li>
+                        </ul>
+                    <!-- Utilities -->
+                    <li>Utilities</li>
+                    <ul>
+                        <li>Grid</li>
+                        <li>Flexbox</li>
+                        <li>Position</li>
+                        <li>Sizing</li>
+                        <li>Colours</li>
+                        <li>Type</li>
+                        <li>Media</li>
+                    </ul>
+                    <!-- Components -->
+                    <li>Components</li>
+                    <ul>
+                        <li>Alert</li>
+                        <li>Bellutton</li>
+                        <li>Card</li>
+                        <li>Modal</li>
+                    </ul>
                 </ul>
             </div>
-            <div class="main-content">
+            <div class="main-content px-0 mx-0">
+                <!-- <div class="row breadcrumbs bgcolour-blue px-0 mx-0">
+                    <div class="col-12 px-0 mx-0">                
+                        <div class="breadcrumbs__wrapper">
+                            Home - Documentation
+                        </div>
+                    </div>
+                </div> -->
                 <div class="row">
-                    <div class="col-12 colour-blue">
-                        <header class="header d-flex justify-content-between bgcolour-white">
-                            <div class="header__name d-flex justify-content-around">
-                                <span></span>
-                            </div>
-                        </header>
-                    </div>
-                    <div class="col-12 bgcolour-blue h-100">
-                        <p class="w-50 d-block bgcolour-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi augue, lobortis a purus ac, mollis bibendum justo. Vestibulum rhoncus arcu non velit commodo fermentum. Donec ac vulputate lorem, ac tempor ex. Aenean iaculis fringilla velit, non commodo erat sodales varius. Nullam at fermentum ipsum. Integer at gravida leo. Praesent id maximus lacus. Duis commodo lacus id sapien convallis hendrerit.</p>
-                    </div>
-                    <div class="col-6">
+                    <div class="col-5 offset-3">
+                        <h1 class="colour-blue px-0">Get Started with Mesh</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi augue, lobortis a purus ac, mollis bibendum justo. Vestibulum rhoncus arcu non velit commodo fermentum. Donec ac vulputate lorem, ac tempor ex. Aenean iaculis fringilla velit, non commodo erat sodales varius. Nullam at fermentum ipsum. Integer at gravida leo. Praesent id maximus lacus. Duis commodo lacus id sapien convallis hendrerit.</p>
-                    </div>
-                    <div class="col-12">
-                            <p class="type-flow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi augue, lobortis a purus ac, mollis bibendum justo. Vestibulum rhoncus arcu non velit commodo fermentum. Donec ac vulputate lorem, ac tempor ex. Aenean iaculis fringilla velit, non commodo erat sodales varius. Nullam at fermentum ipsum. Integer at gravida leo. Praesent id maximus lacus. Duis commodo lacus id sapien convallis hendrerit.</p>
+                        <p class="type-flow">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi augue, lobortis a purus ac, mollis bibendum justo. Vestibulum rhoncus arcu non velit commodo fermentum. Donec ac vulputate lorem, ac tempor ex. Aenean iaculis fringilla velit, non commodo erat sodales varius. Nullam at fermentum ipsum. Integer at gravida leo. Praesent id maximus lacus. Duis commodo lacus id sapien convallis hendrerit.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </main>
 
     </div>
 

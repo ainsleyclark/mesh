@@ -21,6 +21,7 @@
 /* ====================
     Partials
     ==================== */
+    //Utilities
     @import 'partials/_grid';
     @import 'partials/_flex';
     @import 'partials/_sizing';
@@ -28,6 +29,8 @@
     @import 'partials/_colour';
     @import 'partials/_type';
     @import 'partials/_media';
+    //Components
+    @import 'components/divider';
 
 /* ====================
     Components

@@ -32,10 +32,15 @@
     width: 100%;
 }
 
-[class^="col"] {
+[class^="col-"] {
     padding-left: $column-padding;
     padding-right: $column-padding;
+
+    .no-gutters {
+        padding: 0;
+    }
 }
+
 
 // Columns & Offset
 @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {

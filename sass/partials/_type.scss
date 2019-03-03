@@ -1,4 +1,9 @@
 //Unresponsive Classes
+@each $prop, $size in $map-fontsize-props {
+    .type-#{$prop} {
+        font-size: $size;
+    }
+}
 .type-decoration-none {
     text-decoration: none;
 }
@@ -33,6 +38,7 @@
         font-size: 1.2rem;
     }
 }
+
 
 //Responsive Classes 
 @each $modifier, $breakpoint in $map-grid-props {

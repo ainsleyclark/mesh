@@ -1,24 +1,52 @@
-.container {
-  background-color: yellow;
-  border: 1px solid red;
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700");
+body {
+  font-family: 'Muli', sans-serif;
+  color: #000000;
+  background-color: #ffffff !important;
 }
 
-.container .row {
-  background-color: green;
+.header {
+  height: 80px;
 }
 
-.container .row .col {
-  background-color: purple;
-  outline: 1px solid yellow;
+.breadcrumbs {
+  height: 90px;
 }
 
 .nav {
-  height: 100vh;
+  height: calc(100vh - 70px);
   width: 270px;
+  -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 1px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.nav__logo {
+  width: 100px;
+}
+
+main {
+  width: 100%;
+}
+
+.home {
+  height: 100vh;
+  min-height: 600px;
 }
 
 .main-content {
   margin: 0 auto;
-  width: calc(100vw - 350px);
+  width: calc(100% - 270px);
+}
+
+button {
+  border-radius: 500px;
+  text-transform: uppercase;
+  padding: 0px 38px;
+  outline: none;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  line-height: 38px;
+  font-size: 14px;
 }
 /*# sourceMappingURL=demopage.css.map */

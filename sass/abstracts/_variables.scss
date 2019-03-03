@@ -39,7 +39,6 @@ $map-grid-props: (
 // 2. Spacing
 // ==========================================================================
 
-
 $map-spacing-props: (
     0: 0,
     1: 0.25rem,
@@ -57,27 +56,30 @@ $map-spacing-props: (
 // 3. Sizing
 // ==========================================================================
 
+$map-sizing-props: (
+    
+);
 
 
 
 // 4. Colour
 // ==========================================================================
 
-$black: #000000;
+$black: #1e2129;
 $white: #ffffff;
 $white-off: #f2f7fb;
-$green: #182C61;
-$pink: #E56399;
-$blue: #253544;
+$blue: #428df0;
+$slategrey: #242a32;
+$dimgrey: #565f6c;
 
 $palette: (
     //Set colours, ensure they are the same as above
     colors: (
         black: $black,
         white: $white,
-        pink: $pink,
         blue: $blue,
-        green: $green
+        slategrey: $slategrey,
+        dimgrey: $dimgrey,
     ),
     //Set the attributes of colours
     attr: (
@@ -94,6 +96,17 @@ $palette: (
 
 // 5. Type
 // ==========================================================================
+
+//Font Sizes
+$map-fontsize-props: (
+    1: 0.75rem,
+    2: 1rem,
+    3: 2rem,
+    4: 3rem,
+    5: 5rem,
+    6: 7rem,
+    7: 9rem,
+);
 
 //Flow Text
 $range : $grid-breakpoint-xl - $grid-breakpoint-sm !default;
