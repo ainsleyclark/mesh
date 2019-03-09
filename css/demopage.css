@@ -9,10 +9,6 @@ body {
   height: 80px;
 }
 
-.breadcrumbs {
-  height: 90px;
-}
-
 .nav {
   height: calc(100vh - 70px);
   width: 270px;
