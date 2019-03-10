@@ -1,46 +1,80 @@
+/**
+ *
+ * Container 
+ *
+ */
+
 //Creates the breakpoints for containers
 @each $modifier, $breakpoint in $map-grid-props {
     @include create-mediaquery($breakpoint) {
         @if($breakpoint == 0) {
             .container {
-                max-width: $grid-breakpoint-sm * 1px;
+                max-width: $grid-breakpoint-tab * 1px - 50px;
             }
         } @else {
             .container {
-                max-width: $breakpoint * 1px;
+                max-width: $breakpoint * 1px - 50px;
             }
         }
     }
 }
 
 .container,
-.container-fluid {
+.container-fullwidth {
     width: 100%;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: $column-padding;
+    padding-left: $column-padding;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.container--fluid {
+.container--fullwidth {
     margin: 0;
     max-width: 100%;
 }
 
+/**
+ *
+ * Rows 
+ *
+ */
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    // margin-right: -0.75rem;
+    // margin-left: -0.75rem;
 }
 
-[class^="col-"] {
+//No gap class, padding
+.no-gaps > [class^="col-"] {
+    padding: 0;
+}
+
+/**
+ *
+ * Columns
+ *
+ */
+
+//Common Column Properties
+%column-props {
+    position: relative;
+    width: 100%;
     padding-left: $column-padding;
     padding-right: $column-padding;
-
-    .no-gutters {
-        padding: 0;
-    }
 }
 
+@each $modifier, $breakpoint in $map-grid-props { 
+    .col#{$modifier}-auto {
+        @extend %column-props;
+    }
+    @for $i from 1 through $grid-columns {
+        .col#{$modifier}-#{$i} {
+            @extend %column-props;
+        }
+    }
+}
 
 // Columns & Offset
 @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
@@ -72,31 +106,12 @@
     @include create-col-classes($modifier, $grid-columns, $breakpoint );
 }
 
-//Display 
-@each $modifier, $breakpoint in $map-grid-props { 
-    @include create-mediaquery($breakpoint) {
-        .d#{$modifier}-none {
-            display: none;
-        }
-        .d#{$modifier}-inline {
-            display: inline;
-        }
-        .d#{$modifier}-inline-block {
-            display: inline-block;
-        }
-        .d#{$modifier}-block {
-            display: block;
-        }
-        .d#{$modifier}-flex {
-            display: flex;
-        }
-        .d#{$modifier}-inline-flex {
-            display: inline-flex;
-        }
-    }
-}
 
-//Order 
+/**
+ *
+ * Order
+ *
+ */
 @each $modifier, $breakpoint in $map-grid-props { 
     @include create-mediaquery($breakpoint) {
         .order#{$modifier}-first {
@@ -112,3 +127,26 @@
         }
     }
 }
+
+/**
+ *
+ * Display
+ *
+ */
+@each $modifier, $breakpoint in $map-grid-props { 
+    @include create-mediaquery($breakpoint) {
+        .d#{$modifier}-none {
+            display: none;
+        }
+        .d#{$modifier}-inline {
+            display: inline;
+        }
+        .d#{$modifier}-inline-block {
+            display: inline-block;
+        }
+        .d#{$modifier}-block {
+            display: block;
+        }
+    }
+}
+

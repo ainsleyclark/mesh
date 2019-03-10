@@ -1,6 +1,6 @@
 @each $primary, $hex in map-get($palette, colors) {
 
-    $culours: (
+    $colours: (
         $primary: (),
     );
 

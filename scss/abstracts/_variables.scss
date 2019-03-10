@@ -18,21 +18,20 @@
 
 //Columns
 $grid-columns: 12;
-$column-padding: 15px; 
+$column-padding: 0.75rem; 
 
 //Defines breakpoints
-$grid-breakpoint-sm: 576;
-$grid-breakpoint-md: 768;
-$grid-breakpoint-lg: 992;
-$grid-breakpoint-xl: 1200;
+$grid-breakpoint-mob: 0;
+$grid-breakpoint-tab: 769;
+$grid-breakpoint-desk: 1024;
+$grid-breakpoint-hd: 1408;
 
 //Props for grid
 $map-grid-props: (
     '': 0,
-    '-sm': $grid-breakpoint-sm, 
-    '-md': $grid-breakpoint-md, 
-    '-lg': $grid-breakpoint-lg,
-    '-xl': $grid-breakpoint-xl
+    '-tab': $grid-breakpoint-tab, 
+    '-desk': $grid-breakpoint-desk,
+    '-hd': $grid-breakpoint-hd
 );
 
 
@@ -61,7 +60,6 @@ $map-sizing-props: (
 );
 
 
-
 // 4. Colour
 // ==========================================================================
 
@@ -83,8 +81,8 @@ $palette: (
     ),
     //Set the attributes of colours
     attr: (
-        colour: 'color',
-        bgcolour: 'background-color',
+        color: 'color',
+        bgcolor: 'background-color',
         //fill__: 'fill',
         // stroke__: 'stroke'
     ),
@@ -109,6 +107,6 @@ $map-fontsize-props: (
 );
 
 //Flow Text
-$range : $grid-breakpoint-xl - $grid-breakpoint-sm !default;
+$range : $grid-breakpoint-hd - $grid-breakpoint-mob !default;
 $intervals: 20 !default;
 $interval-size: $range / $intervals !default;

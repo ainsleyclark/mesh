@@ -1,6 +1,14 @@
 @each $modifier, $breakpoint in $map-grid-props { 
     @include create-mediaquery($breakpoint) {
 
+        /* Display Flex */
+        .flex#{$modifier} {
+            display: flex;
+        }
+        .flex#{$modifier}-inline {
+            display: inline-flex;
+        }
+        
         /* Flex Direction */
         .flex#{$modifier}-row {
             flex-direction: row;
