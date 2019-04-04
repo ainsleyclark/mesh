@@ -63,21 +63,20 @@ $map-sizing-props: (
 // 4. Colour
 // ==========================================================================
 
-$black: #1e2129;
+$black: #222629;
 $white: #ffffff;
-$white-off: #f2f7fb;
-$blue: #428df0;
-$slategrey: #242a32;
-$dimgrey: #565f6c;
+$grey: #C5C6C7;
+$primary: #66FCF1;
+$primary-off: #45A29E;
 
 $palette: (
     //Set colours, ensure they are the same as above
     colors: (
         black: $black,
         white: $white,
-        blue: $blue,
-        slategrey: $slategrey,
-        dimgrey: $dimgrey,
+        grey: $grey,
+        primary: $primary,
+        primaryoff: $primary-off,
     ),
     //Set the attributes of colours
     attr: (

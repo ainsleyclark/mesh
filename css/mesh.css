@@ -3053,27 +3053,27 @@ section {
 }
 
 .color-black {
-  color: #1e2129;
+  color: #222629;
 }
 
 .color-black-low {
-  color: rgba(30, 33, 41, 0.6);
+  color: rgba(34, 38, 41, 0.6);
 }
 
 .color-black-medium {
-  color: rgba(30, 33, 41, 0.4);
+  color: rgba(34, 38, 41, 0.4);
 }
 
 .color-black-high {
-  color: rgba(30, 33, 41, 0.2);
+  color: rgba(34, 38, 41, 0.2);
 }
 
 .color-black-light {
-  color: #3e4555;
+  color: #454d53;
 }
 
 .color-black-normal {
-  color: #1e2129;
+  color: #222629;
 }
 
 .color-black-dark {
@@ -3081,27 +3081,27 @@ section {
 }
 
 .bgcolor-black {
-  background-color: #1e2129;
+  background-color: #222629;
 }
 
 .bgcolor-black-low {
-  background-color: rgba(30, 33, 41, 0.6);
+  background-color: rgba(34, 38, 41, 0.6);
 }
 
 .bgcolor-black-medium {
-  background-color: rgba(30, 33, 41, 0.4);
+  background-color: rgba(34, 38, 41, 0.4);
 }
 
 .bgcolor-black-high {
-  background-color: rgba(30, 33, 41, 0.2);
+  background-color: rgba(34, 38, 41, 0.2);
 }
 
 .bgcolor-black-light {
-  background-color: #3e4555;
+  background-color: #454d53;
 }
 
 .bgcolor-black-normal {
-  background-color: #1e2129;
+  background-color: #222629;
 }
 
 .bgcolor-black-dark {
@@ -3164,172 +3164,172 @@ section {
   background-color: #d9d9d9;
 }
 
-.color-blue {
-  color: #428df0;
+.color-grey {
+  color: #C5C6C7;
 }
 
-.color-blue-low {
-  color: rgba(66, 141, 240, 0.6);
+.color-grey-low {
+  color: rgba(197, 198, 199, 0.6);
 }
 
-.color-blue-medium {
-  color: rgba(66, 141, 240, 0.4);
+.color-grey-medium {
+  color: rgba(197, 198, 199, 0.4);
 }
 
-.color-blue-high {
-  color: rgba(66, 141, 240, 0.2);
+.color-grey-high {
+  color: rgba(197, 198, 199, 0.2);
 }
 
-.color-blue-light {
-  color: #89b8f6;
+.color-grey-light {
+  color: #ececed;
 }
 
-.color-blue-normal {
-  color: #428df0;
+.color-grey-normal {
+  color: #C5C6C7;
 }
 
-.color-blue-dark {
-  color: #1165d5;
+.color-grey-dark {
+  color: #9ea0a1;
 }
 
-.bgcolor-blue {
-  background-color: #428df0;
+.bgcolor-grey {
+  background-color: #C5C6C7;
 }
 
-.bgcolor-blue-low {
-  background-color: rgba(66, 141, 240, 0.6);
+.bgcolor-grey-low {
+  background-color: rgba(197, 198, 199, 0.6);
 }
 
-.bgcolor-blue-medium {
-  background-color: rgba(66, 141, 240, 0.4);
+.bgcolor-grey-medium {
+  background-color: rgba(197, 198, 199, 0.4);
 }
 
-.bgcolor-blue-high {
-  background-color: rgba(66, 141, 240, 0.2);
+.bgcolor-grey-high {
+  background-color: rgba(197, 198, 199, 0.2);
 }
 
-.bgcolor-blue-light {
-  background-color: #89b8f6;
+.bgcolor-grey-light {
+  background-color: #ececed;
 }
 
-.bgcolor-blue-normal {
-  background-color: #428df0;
+.bgcolor-grey-normal {
+  background-color: #C5C6C7;
 }
 
-.bgcolor-blue-dark {
-  background-color: #1165d5;
+.bgcolor-grey-dark {
+  background-color: #9ea0a1;
 }
 
-.color-slategrey {
-  color: #242a32;
+.color-primary {
+  color: #66FCF1;
 }
 
-.color-slategrey-low {
-  color: rgba(36, 42, 50, 0.6);
+.color-primary-low {
+  color: rgba(102, 252, 241, 0.6);
 }
 
-.color-slategrey-medium {
-  color: rgba(36, 42, 50, 0.4);
+.color-primary-medium {
+  color: rgba(102, 252, 241, 0.4);
 }
 
-.color-slategrey-high {
-  color: rgba(36, 42, 50, 0.2);
+.color-primary-high {
+  color: rgba(102, 252, 241, 0.2);
 }
 
-.color-slategrey-light {
-  color: #444f5e;
+.color-primary-light {
+  color: #b1fdf8;
 }
 
-.color-slategrey-normal {
-  color: #242a32;
+.color-primary-normal {
+  color: #66FCF1;
 }
 
-.color-slategrey-dark {
-  color: #040506;
+.color-primary-dark {
+  color: #1bfbea;
 }
 
-.bgcolor-slategrey {
-  background-color: #242a32;
+.bgcolor-primary {
+  background-color: #66FCF1;
 }
 
-.bgcolor-slategrey-low {
-  background-color: rgba(36, 42, 50, 0.6);
+.bgcolor-primary-low {
+  background-color: rgba(102, 252, 241, 0.6);
 }
 
-.bgcolor-slategrey-medium {
-  background-color: rgba(36, 42, 50, 0.4);
+.bgcolor-primary-medium {
+  background-color: rgba(102, 252, 241, 0.4);
 }
 
-.bgcolor-slategrey-high {
-  background-color: rgba(36, 42, 50, 0.2);
+.bgcolor-primary-high {
+  background-color: rgba(102, 252, 241, 0.2);
 }
 
-.bgcolor-slategrey-light {
-  background-color: #444f5e;
+.bgcolor-primary-light {
+  background-color: #b1fdf8;
 }
 
-.bgcolor-slategrey-normal {
-  background-color: #242a32;
+.bgcolor-primary-normal {
+  background-color: #66FCF1;
 }
 
-.bgcolor-slategrey-dark {
-  background-color: #040506;
+.bgcolor-primary-dark {
+  background-color: #1bfbea;
 }
 
-.color-dimgrey {
-  color: #565f6c;
+.color-primaryoff {
+  color: #45A29E;
 }
 
-.color-dimgrey-low {
-  color: rgba(86, 95, 108, 0.6);
+.color-primaryoff-low {
+  color: rgba(69, 162, 158, 0.6);
 }
 
-.color-dimgrey-medium {
-  color: rgba(86, 95, 108, 0.4);
+.color-primaryoff-medium {
+  color: rgba(69, 162, 158, 0.4);
 }
 
-.color-dimgrey-high {
-  color: rgba(86, 95, 108, 0.2);
+.color-primaryoff-high {
+  color: rgba(69, 162, 158, 0.2);
 }
 
-.color-dimgrey-light {
-  color: #7a8595;
+.color-primaryoff-light {
+  color: #71c3bf;
 }
 
-.color-dimgrey-normal {
-  color: #565f6c;
+.color-primaryoff-normal {
+  color: #45A29E;
 }
 
-.color-dimgrey-dark {
-  color: #343a41;
+.color-primaryoff-dark {
+  color: #2e6c6a;
 }
 
-.bgcolor-dimgrey {
-  background-color: #565f6c;
+.bgcolor-primaryoff {
+  background-color: #45A29E;
 }
 
-.bgcolor-dimgrey-low {
-  background-color: rgba(86, 95, 108, 0.6);
+.bgcolor-primaryoff-low {
+  background-color: rgba(69, 162, 158, 0.6);
 }
 
-.bgcolor-dimgrey-medium {
-  background-color: rgba(86, 95, 108, 0.4);
+.bgcolor-primaryoff-medium {
+  background-color: rgba(69, 162, 158, 0.4);
 }
 
-.bgcolor-dimgrey-high {
-  background-color: rgba(86, 95, 108, 0.2);
+.bgcolor-primaryoff-high {
+  background-color: rgba(69, 162, 158, 0.2);
 }
 
-.bgcolor-dimgrey-light {
-  background-color: #7a8595;
+.bgcolor-primaryoff-light {
+  background-color: #71c3bf;
 }
 
-.bgcolor-dimgrey-normal {
-  background-color: #565f6c;
+.bgcolor-primaryoff-normal {
+  background-color: #45A29E;
 }
 
-.bgcolor-dimgrey-dark {
-  background-color: #343a41;
+.bgcolor-primaryoff-dark {
+  background-color: #2e6c6a;
 }
 
 .type-1 {
