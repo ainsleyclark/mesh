@@ -1,0 +1,23 @@
+{
+  "name": "mesh",
+  "version": "1.0.0",
+  "description": "A lightweight, pure CSS framework.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ainsleyclark/mesh.git"
+  },
+  "author": "Ainsley Clark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ainsleyclark/mesh/issues"
+  },
+  "homepage": "https://github.com/ainsleyclark/mesh#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
