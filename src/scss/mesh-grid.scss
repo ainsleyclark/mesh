@@ -6,26 +6,19 @@
 //* @author email: info@ainsleyclark.com
 //*/
 
-/* ====================
-    Abstracts
-    ==================== */
+    //Abstracts
+    //----------------------------------------------
     @import 'abstracts/_variables';
     @import 'abstracts/_mixins';
 
-/* ====================
-    Base
-    ==================== */
+    //Base
+    //----------------------------------------------
     @import 'base/_global';
 
-    @import 'test/_test' only screen and (min-width: 450px);
-
-/* ====================
-    Grid
-    ==================== */
+    //Grid
+    //----------------------------------------------
     @import 'grid/_grid';
     @import 'grid/_display';
     @import 'grid/_order';
     @import 'grid/_flex';
-
-    
 

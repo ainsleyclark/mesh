@@ -4,43 +4,36 @@
 //* @author Ainsley Clark
 //* @author URL:   https://www.ainsleyclark.com
 //* @author email: info@ainsleyclark.com
-//*/
+//*/j
 
-///* ====================
-//   Abstracts
-//   ==================== */
+//Abstracts
+//----------------------------------------------
     // @import 'abstracts/_functions.scss';
     @import 'abstracts/_variables';
     @import 'abstracts/_mixins';
 
-///* ====================
-//    Base
-//    ==================== */
+//Base
+//----------------------------------------------
     @import 'base/_global';
 
-/* ====================
-    Grid
-    ==================== */
+//Grid
+//----------------------------------------------
     @import 'grid/_grid';
     @import 'grid/_display';
     @import 'grid/_order';
     @import 'grid/_flex';
 
-/* ====================
-    Partials
-    ==================== */
-    //Utilities
-
-    // @import 'partials/_sizing';
-    @import 'partials/_spacing';
-    @import 'partials/_colour';
-    @import 'partials/_type';
+//Util
+//----------------------------------------------
+    // @import 'util/_sizing';
+    // @import 'util/_spacing';
+    // @import 'util/_colour';
+    // @import 'util/_type';
     // @import 'partials/_media';
-    //@import 'partials/_hero';
+    // @import 'partials/_hero';
 
-/* ====================
-    Components
-    ==================== */
+//Components
+//----------------------------------------------
     // @import 'components/divider';
     // @import 'components/_cards';
     // @import 'components/_social';

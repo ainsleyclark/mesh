@@ -2,6 +2,20 @@
 //
 //Main grid system, containers, rows & columns.
 
+.container,
+.container-fullwidth {
+    width: 100%;
+    padding-right: $column-padding;
+    padding-left: $column-padding;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container--fullwidth {
+    margin: 0;
+    max-width: 100%;
+}
+
 //Creates the breakpoints for containers
 @each $modifier, $breakpoint in $map-grid-props {
     @include create-mediaquery($breakpoint) {
@@ -15,20 +29,6 @@
             }
         }
     }
-}
-
-.container,
-.container-fullwidth {
-    width: 100%;
-    padding-right: $column-padding;
-    padding-left: $column-padding;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.container--fullwidth {
-    margin: 0;
-    max-width: 100%;
 }
 
 .row {
@@ -91,26 +91,7 @@
 }
 
 
-/**
- *
- * Order
- *
- */
-@each $modifier, $breakpoint in $map-grid-props { 
-    @include create-mediaquery($breakpoint) {
-        .order#{$modifier}-first {
-            order: -1;
-        }
-        .order#{$modifier}-last {
-            order: $grid-columns + 1;
-        }
-        @for $i from 1 through $grid-columns {
-            .order#{$modifier}-#{$i} {
-                order: #{$i};
-            }
-        }
-    }
-}
+
 
 
 

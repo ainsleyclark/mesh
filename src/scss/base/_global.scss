@@ -1,34 +1,16 @@
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-}
-
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: transparent;
+    box-sizing: inherit;
 }
 
 html, 
 body {
     margin: 0;
     padding: 0;
-}
-
-article, 
-aside, 
-dialog, 
-figcaption, 
-figure, 
-footer, 
-header, 
-hgroup, 
-main, 
-nav, 
-section {
-    display: block;
 }
