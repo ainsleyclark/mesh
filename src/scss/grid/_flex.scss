@@ -1,15 +1,11 @@
+//_flex.scss
+//
+//Responsive flex utility classes for each breakpoint.
+
 @each $modifier, $breakpoint in $map-grid-props { 
     @include create-mediaquery($breakpoint) {
-
-        /* Display Flex */
-        .flex#{$modifier} {
-            display: flex;
-        }
-        .flex#{$modifier}-inline {
-            display: inline-flex;
-        }
-        
-        /* Flex Direction */
+    
+        //Flex Direction
         .flex#{$modifier}-row {
             flex-direction: row;
         }
@@ -23,7 +19,7 @@
             flex-direction: column-reverse;
         }
 
-        /* Justify Content */
+        //Justify Content
         .justify-content#{$modifier}-start {
             justify-content: start;
         }
@@ -43,7 +39,7 @@
             align-items: flex-start;
         }
 
-        /* Align Self & Align Items & Align Content */
+        //Align Self & Align Items & Align Content
         $align: 'self', 'items', 'content';
 
         @each $property in $align {
@@ -61,7 +57,7 @@
             }
         }
 
-        /* Wrap */
+        //Wrap
         .flex#{$modifier}-wrap {
             flex-wrap: wrap;
         }
@@ -69,12 +65,12 @@
             flex-wrap: nowrap;
         }
 
-        /* Fill */
+        //Fill
         .flex#{$modifier}-fill {
             flex: 1 1 auto;
         }
 
-        /* Grow & Shrink */
+        //Grow & Shrink
         .flex#{$modifier}-grow-0 {
             flex-grow: 0;
         }

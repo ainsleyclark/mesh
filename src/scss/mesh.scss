@@ -1,29 +1,36 @@
-/**
- * master.scss
- * Imports all files from abstracts, base, components, layout, pages & vendor
- * @author Ainsley Clark
- * @author URL:   https://www.ainsleyclark.com
- * @author email: info@ainsleyclark.comk
- */
+///**
+//* master.scss
+//* Imports all files from abstracts, base, components, layout, pages & vendor
+//* @author Ainsley Clark
+//* @author URL:   https://www.ainsleyclark.com
+//* @author email: info@ainsleyclark.com
+//*/
 
-/* ====================
-    Abstracts
-    ==================== */
+///* ====================
+//   Abstracts
+//   ==================== */
     // @import 'abstracts/_functions.scss';
     @import 'abstracts/_variables';
     @import 'abstracts/_mixins';
 
-/* ====================
-    Base
-    ==================== */
+///* ====================
+//    Base
+//    ==================== */
     @import 'base/_global';
+
+/* ====================
+    Grid
+    ==================== */
+    @import 'grid/_grid';
+    @import 'grid/_display';
+    @import 'grid/_order';
+    @import 'grid/_flex';
 
 /* ====================
     Partials
     ==================== */
     //Utilities
-    @import 'partials/_grid';
-    @import 'partials/_flex';
+
     // @import 'partials/_sizing';
     @import 'partials/_spacing';
     @import 'partials/_colour';

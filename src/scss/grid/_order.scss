@@ -1,0 +1,19 @@
+//_order.scss
+//
+//Adds order classes to each breakpoint (push & pull).
+
+ @each $modifier, $breakpoint in $map-grid-props { 
+    @include create-mediaquery($breakpoint) {
+        .order#{$modifier}-first {
+            order: -1;
+        }
+        .order#{$modifier}-last {
+            order: $grid-columns + 1;
+        }
+        @for $i from 1 through $grid-columns {
+            .order#{$modifier}-#{$i} {
+                order: #{$i};
+            }
+        }
+    }
+}

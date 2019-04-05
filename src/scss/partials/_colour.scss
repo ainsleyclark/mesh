@@ -14,26 +14,26 @@
         }
         
         //Opacity
-        @each $alpha_name, $alpha in map-get($palette, alpha) {
-            .#{$attr_name}-#{$primary}-#{$alpha_name} {
-                #{$attr}: transparentize($hex, $alpha);
-            }
-        }
+        // @each $alpha_name, $alpha in map-get($palette, alpha) {
+        //     .#{$attr_name}-#{$primary}-#{$alpha_name} {
+        //         #{$attr}: transparentize($hex, $alpha);
+        //     }
+        // }
 
-        //Light & Dark
-        @each $tone_name, $tone in map-get($palette, tones) {
-            .#{$attr_name}-#{$primary}-#{$tone_name} {
-                //Lighten 
-                @if ($tone > 0 ) {
-                    #{$attr}: lighten($hex, $tone);
-                //Darken
-                } @else if ($tone < 0) {
-                    #{$attr}: darken($hex, -$tone);
-                //Return normal
-                } @else if ($tone = 0) {
-                    #{$attr}: $hex
-                }
-            }
-        }
+        // //Light & Dark
+        // @each $tone_name, $tone in map-get($palette, tones) {
+        //     .#{$attr_name}-#{$primary}-#{$tone_name} {
+        //         //Lighten 
+        //         @if ($tone > 0 ) {
+        //             #{$attr}: lighten($hex, $tone);
+        //         //Darken
+        //         } @else if ($tone < 0) {
+        //             #{$attr}: darken($hex, -$tone);
+        //         //Return normal
+        //         } @else if ($tone = 0) {
+        //             #{$attr}: $hex
+        //         }
+        //     }
+        // }
     }
 }

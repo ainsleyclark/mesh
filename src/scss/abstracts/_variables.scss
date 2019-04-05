@@ -9,8 +9,7 @@
 //  3. Sizing
 //  2. Colours
 //  3. Type
-//
-//
+
 
 
 // 1. Grid
@@ -20,15 +19,16 @@
 $grid-columns: 12;
 $column-padding: 0.75rem; 
 
-//Defines breakpoints
-$grid-breakpoint-mob: 0;
-$grid-breakpoint-tab: 769;
+//Defines Greakpoints
+$grid-breakpoint-mob: 568;
+$grid-breakpoint-tab: 768;
 $grid-breakpoint-desk: 1024;
 $grid-breakpoint-hd: 1408;
 
-//Props for grid
+//Props for Grid
 $map-grid-props: (
     '': 0,
+    '-mob': $grid-breakpoint-mob, 
     '-tab': $grid-breakpoint-tab, 
     '-desk': $grid-breakpoint-desk,
     '-hd': $grid-breakpoint-hd
@@ -40,15 +40,11 @@ $map-grid-props: (
 
 $map-spacing-props: (
     0: 0,
-    1: 0.25rem,
-    2: 0.5rem,
+    1: 0.5rem,
+    2: 0.75rem,
     3: 1rem,
     4: 2rem,
     5: 3rem,
-    6: 4rem,
-    7: 5rem,
-    // 8: 7rem,
-    // 9: 10rem,
 );
 
 
@@ -82,13 +78,13 @@ $palette: (
     attr: (
         color: 'color',
         bgcolor: 'background-color',
-        //fill__: 'fill',
-        // stroke__: 'stroke'
+        fill__: 'fill',
+        stroke__: 'stroke'
     ),
-    //Tones, light dark & normal
-    tones: ('light': 15, 'normal': 0,'dark': -15),
-    //Transparency
-    alpha: ( 'low': 0.40, 'medium': 0.60, 'high': 0.80)     
+    // //Tones, light dark & normal
+    // tones: ('light': 15, 'normal': 0,'dark': -15),
+    // //Transparency
+    // alpha: ( 'low': 0.40, 'medium': 0.60, 'high': 0.80)     
 );
 
 // 5. Type

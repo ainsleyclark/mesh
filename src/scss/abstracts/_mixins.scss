@@ -1,11 +1,5 @@
-/**
- * _mixins.scss
- * Creates a responsive grid system including:
- * Containers, Rows, Columns & Offsets
- *
- */
-
 //@mixin create-mediaquery
+//
 //Dynamically creates media query based on $breakpoint variable.
 @mixin create-mediaquery($breakpoint) {
     @if($breakpoint == 0) {
