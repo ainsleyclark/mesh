@@ -1,0 +1,10 @@
+{
+    "printWidth": 100,
+    "useTabs": true,
+    "semi": false,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "proseWrap": "preserve"
+}

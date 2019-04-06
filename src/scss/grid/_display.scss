@@ -2,25 +2,25 @@
 //
 //Add none, inline, inline-block, block to each mediaquery & breakpoint.
 
-@each $modifier, $breakpoint in $map-grid-props { 
-    @include create-mediaquery($breakpoint) {
-        .d#{$modifier}-none {
-            display: none;
-        }
-        .d#{$modifier}-inline {
-            display: inline;
-        }
-        .d#{$modifier}-inline-block {
-            display: inline-block;
-        }
-        .d#{$modifier}-block {
-            display: block;
-        }
-        .d#{$modifier}-flex {
-            display: flex;
-        }
-        .d#{$modifier}-inline-flex {
-            display: flex;
-        }
-    }
+@each $modifier, $breakpoint in $map-grid-props {
+	@include create-mediaquery($breakpoint) {
+		.d#{$modifier}-none {
+			display: none;
+		}
+		.d#{$modifier}-inline {
+			display: inline;
+		}
+		.d#{$modifier}-inline-block {
+			display: inline-block;
+		}
+		.d#{$modifier}-block {
+			display: block;
+		}
+		.d#{$modifier}-flex {
+			display: flex;
+		}
+		.d#{$modifier}-inline-flex {
+			display: flex;
+		}
+	}
 }

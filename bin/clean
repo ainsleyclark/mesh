@@ -1,0 +1,1 @@
+prettier \"../**/*.{css,scss,html,json,yml}\" --write

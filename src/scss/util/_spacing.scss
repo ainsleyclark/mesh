@@ -1,48 +1,48 @@
 //Margin & Padding
 @each $modifier, $breakpoint in $map-grid-props {
-    @each $prop, $abbrev in (margin: m, padding: p) {
-        @include create-mediaquery($breakpoint) {
-            @each $size, $length in $map-spacing-props {
-                .#{$abbrev}#{$modifier}-#{$size} {
-                    #{$prop}: $length;
-                }
-                .#{$abbrev}t#{$modifier}-#{$size},
-                .#{$abbrev}y#{$modifier}-#{$size} {
-                    #{$prop}-top: $length;
-                }
-                .#{$abbrev}r#{$modifier}-#{$size},
-                .#{$abbrev}x#{$modifier}-#{$size} {
-                    #{$prop}-right: $length;
-                }
-                .#{$abbrev}b#{$modifier}-#{$size},
-                .#{$abbrev}y#{$modifier}-#{$size} {
-                    #{$prop}-bottom: $length;
-                }
-                .#{$abbrev}l#{$modifier}-#{$size},
-                .#{$abbrev}x#{$modifier}-#{$size} {
-                    #{$prop}-left: $length;
-                }
-            }
-            //Auto Margins
-            .m#{$modifier}-auto { 
-                margin: auto ; 
-            }
-            .mt#{$modifier}-auto,
-            .my#{$modifier}-auto {
-                margin-top: auto ;
-            }
-            .mr#{$modifier}-auto,
-            .mx#{$modifier}-auto {
-                margin-right: auto ;
-            }
-            .mb#{$modifier}-auto,
-            .my#{$modifier}-auto {
-                margin-bottom: auto ;
-            }
-            .ml#{$modifier}-auto,
-            .mx#{$modifier}-auto {
-                margin-left: auto ;
-            }     
-        }
-    }
+	@each $prop, $abbrev in (margin: m, padding: p) {
+		@include create-mediaquery($breakpoint) {
+			@each $size, $length in $map-spacing-props {
+				.#{$abbrev}#{$modifier}-#{$size} {
+					#{$prop}: $length;
+				}
+				.#{$abbrev}t#{$modifier}-#{$size},
+				.#{$abbrev}y#{$modifier}-#{$size} {
+					#{$prop}-top: $length;
+				}
+				.#{$abbrev}r#{$modifier}-#{$size},
+				.#{$abbrev}x#{$modifier}-#{$size} {
+					#{$prop}-right: $length;
+				}
+				.#{$abbrev}b#{$modifier}-#{$size},
+				.#{$abbrev}y#{$modifier}-#{$size} {
+					#{$prop}-bottom: $length;
+				}
+				.#{$abbrev}l#{$modifier}-#{$size},
+				.#{$abbrev}x#{$modifier}-#{$size} {
+					#{$prop}-left: $length;
+				}
+			}
+			//Auto Margins
+			.m#{$modifier}-auto {
+				margin: auto;
+			}
+			.mt#{$modifier}-auto,
+			.my#{$modifier}-auto {
+				margin-top: auto;
+			}
+			.mr#{$modifier}-auto,
+			.mx#{$modifier}-auto {
+				margin-right: auto;
+			}
+			.mb#{$modifier}-auto,
+			.my#{$modifier}-auto {
+				margin-bottom: auto;
+			}
+			.ml#{$modifier}-auto,
+			.mx#{$modifier}-auto {
+				margin-left: auto;
+			}
+		}
+	}
 }

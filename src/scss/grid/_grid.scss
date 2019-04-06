@@ -2,96 +2,88 @@
 //
 //Main grid system, containers, rows & columns.
 
-.container,
-.container-fullwidth {
-    width: 100%;
-    padding-right: $column-padding;
-    padding-left: $column-padding;
-    margin-right: auto;
-    margin-left: auto;
+.container {
+	width: 100%;
+	padding-right: $gap-width;
+	padding-left: $gap-width;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-.container--fullwidth {
-    margin: 0;
-    max-width: 100%;
+.container-fullwidth {
+	margin: 0;
+	width: 100%;
+	padding-left: $gap-width;
+	padding-right: $gap-width;
 }
 
 //Creates the breakpoints for containers
 @each $modifier, $breakpoint in $map-grid-props {
-    @include create-mediaquery($breakpoint) {
-        @if($breakpoint == 0) {
-            .container {
-                max-width: $grid-breakpoint-tab * 1px - 50px;
-            }
-        } @else {
-            .container {
-                max-width: $breakpoint * 1px - 50px;
-            }
-        }
-    }
+	@include create-mediaquery($breakpoint) {
+		@if ($breakpoint != 0) {
+			.container {
+				max-width: $breakpoint * 1px - 50px;
+			}
+		} 
+	}
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 //No gap class, padding
-.no-gaps > [class^="col-"] {
-    padding: 0;
+.no-gaps > [class^='col-'] {
+	padding-left: 0;
+	padding-right: 0;
 }
 
 //Common Column Properties
 %column-props {
-    position: relative;
-    width: 100%;
-    padding-left: $column-padding;
-    padding-right: $column-padding;
+	position: relative;
+	width: 100%;
+	padding-left: $gap-width;
+	padding-right: $gap-width;
 }
 
-@each $modifier, $breakpoint in $map-grid-props { 
-    .col#{$modifier}-auto {
-        @extend %column-props;
-    }
-    @for $i from 1 through $grid-columns {
-        .col#{$modifier}-#{$i} {
-            @extend %column-props;
-        }
-    }
+@each $modifier, $breakpoint in $map-grid-props {
+	.col#{$modifier}-auto {
+		@extend %column-props;
+	}
+	@for $i from 1 through $grid-columns {
+		.col#{$modifier}-#{$i} {
+			@extend %column-props;
+		}
+	}
 }
 
 // Columns & Offset
 @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
-    @include create-mediaquery($breakpoint) {
-        //Columns
-        .col#{$modifier}-auto {
-            flex: 0 0 auto;
-            width: auto;
-            max-width: 100%;
-        }
-        @for $i from 1 through $grid-columns {
-            .col#{$modifier}-#{$i} {
-                flex-basis: (100 / ($grid-columns / $i) ) * 1%;
-            }
-        }
-        .col#{$modifier}-offset-0 {
-            margin-left: 0;
-        }
-        //Offsets
-        @for $i from 1 through $grid-columns {
-            .offset#{$modifier}-#{$i} {
-                margin-left: (100 / ($grid-columns / $i) ) * 1%;
-            }
-        }
-    }
+	@include create-mediaquery($breakpoint) {
+		//Columns
+		.col#{$modifier}-auto {
+			flex: 0 0 auto;
+			width: auto;
+			max-width: 100%;
+		}
+		@for $i from 1 through $grid-columns {
+			.col#{$modifier}-#{$i} {
+				flex-basis: (100 / ($grid-columns / $i)) * 1%;
+			}
+		}
+		.col#{$modifier}-offset-0 {
+			margin-left: 0;
+		}
+		//Offsets
+		@for $i from 1 through $grid-columns {
+			.offset#{$modifier}-#{$i} {
+				margin-left: (100 / ($grid-columns / $i)) * 1%;
+			}
+		}
+	}
 }
 
 @each $modifier, $breakpoint in $map-grid-props {
-    @include create-col-classes($modifier, $grid-columns, $breakpoint);
+	@include create-col-classes($modifier, $grid-columns, $breakpoint);
 }
-
-
-
-
-
-

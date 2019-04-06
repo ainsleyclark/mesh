@@ -1,0 +1,1 @@
+node-sass --include-path scss src/scss/mesh.scss dist/css/mesh.css --output-style expanded && node-sass --include-path scss src/scss/mesh-grid.scss dist/css/mesh-grid.css --output-style expanded

@@ -4,36 +4,36 @@
 //* @author Ainsley Clark
 //* @author URL:   https://www.ainsleyclark.com
 //* @author email: info@ainsleyclark.com
-//*/j
+//
 
 //Abstracts
 //----------------------------------------------
-    // @import 'abstracts/_functions.scss';
-    @import 'abstracts/_variables';
-    @import 'abstracts/_mixins';
+// @import 'abstracts/_functions.scss';
+@import 'abstracts/_variables';
+@import 'abstracts/_mixins';
 
 //Base
 //----------------------------------------------
-    @import 'base/_global';
+@import 'base/_global';
 
 //Grid
 //----------------------------------------------
-    @import 'grid/_grid';
-    @import 'grid/_display';
-    @import 'grid/_order';
-    @import 'grid/_flex';
+@import 'grid/_grid';
+@import 'grid/_display';
+@import 'grid/_order';
+@import 'grid/_flex';
 
 //Util
 //----------------------------------------------
-    // @import 'util/_sizing';
-    // @import 'util/_spacing';
-    // @import 'util/_colour';
-    // @import 'util/_type';
-    // @import 'partials/_media';
-    // @import 'partials/_hero';
+// @import 'util/_sizing';
+// @import 'util/_spacing';
+// @import 'util/_colour';
+// @import 'util/_type';
+// @import 'partials/_media';
+// @import 'partials/_hero';
 
 //Components
 //----------------------------------------------
-    // @import 'components/divider';
-    // @import 'components/_cards';
-    // @import 'components/_social';
+// @import 'components/divider';
+// @import 'components/_cards';
+// @import 'components/_social';

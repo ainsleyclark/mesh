@@ -10,14 +10,12 @@
 //  2. Colours
 //  3. Type
 
-
-
 // 1. Grid
 // ==========================================================================
 
 //Columns
 $grid-columns: 12;
-$column-padding: 0.75rem; 
+$gap-width: 0.75rem;
 
 //Defines Greakpoints
 $grid-breakpoint-mob: 568;
@@ -27,64 +25,53 @@ $grid-breakpoint-hd: 1408;
 
 //Props for Grid
 $map-grid-props: (
-    '': 0,
-    '-mob': $grid-breakpoint-mob, 
-    '-tab': $grid-breakpoint-tab, 
-    '-desk': $grid-breakpoint-desk,
-    '-hd': $grid-breakpoint-hd
+	'': 0,
+	'-mob': $grid-breakpoint-mob,
+	'-tab': $grid-breakpoint-tab,
+	'-desk': $grid-breakpoint-desk,
+	'-hd': $grid-breakpoint-hd
 );
-
 
 // 2. Spacing
 // ==========================================================================
 
 $map-spacing-props: (
-    0: 0,
-    1: 0.5rem,
-    2: 0.75rem,
-    3: 1rem,
-    4: 2rem,
-    5: 3rem,
+	0: 0,
+	1: 0.5rem,
+	2: 0.75rem,
+	3: 1rem,
+	4: 2rem,
+	5: 3rem
 );
-
 
 // 3. Sizing
 // ==========================================================================
 
-$map-sizing-props: (
-    
-);
-
+$map-sizing-props: ();
 
 // 4. Colour
 // ==========================================================================
 
 $black: #222629;
 $white: #ffffff;
-$grey: #C5C6C7;
-$primary: #66FCF1;
-$primary-off: #45A29E;
+$grey: #c5c6c7;
+$primary: #66fcf1;
+$primary-off: #45a29e;
 
 $palette: (
-    //Set colours, ensure they are the same as above
-    colors: (
-        black: $black,
-        white: $white,
-        grey: $grey,
-        primary: $primary,
-        primaryoff: $primary-off,
-    ),
-    //Set the attributes of colours
-    attr: (
-        color: 'color',
-        bgcolor: 'background-color',
-        fill__: 'fill',
-        stroke__: 'stroke'
-    ),
-    // //Tones, light dark & normal
-    // tones: ('light': 15, 'normal': 0,'dark': -15),
-    // //Transparency
-    // alpha: ( 'low': 0.40, 'medium': 0.60, 'high': 0.80)     
+	colors: (
+		black: $black,
+		white: $white,
+		grey: $grey,
+		primary: $primary,
+		primaryoff: $primary-off
+	),
+	attr: (
+		color: 'color',
+		bgcolor: 'background-color',
+		fill__: 'fill',
+		stroke__: 'stroke'
+	)
 );
 
 // 5. Type
@@ -92,16 +79,16 @@ $palette: (
 
 //Font Sizes
 $map-fontsize-props: (
-    1: 0.75rem,
-    2: 1rem,
-    3: 2rem,
-    4: 3rem,
-    5: 5rem,
-    6: 7rem,
-    7: 9rem,
+	1: 0.75rem,
+	2: 1rem,
+	3: 2rem,
+	4: 3rem,
+	5: 5rem,
+	6: 7rem,
+	7: 9rem
 );
 
 //Flow Text
-$range : $grid-breakpoint-hd - $grid-breakpoint-mob !default;
+$range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
 $intervals: 20 !default;
 $interval-size: $range / $intervals !default;

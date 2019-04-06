@@ -1,39 +1,37 @@
 @each $primary, $hex in map-get($palette, colors) {
+	$colours: (
+		$primary: ()
+	);
 
-    $colours: (
-        $primary: (),
-    );
+	//Loop through attributes (background-colour, color etc..)
+	@each $attr_name, $attr in map-get($palette, attr) {
+		//Set Classes
+		.#{$attr_name}-#{$primary} {
+			#{$attr}: $hex;
+			$colours: ($primary);
+		}
 
-    //Loop through attributes (background-colour, color etc..) 
-    @each $attr_name, $attr in map-get($palette, attr) {
+		//Opacity
+		// @each $alpha_name, $alpha in map-get($palette, alpha) {
+		//     .#{$attr_name}-#{$primary}-#{$alpha_name} {
+		//         #{$attr}: transparentize($hex, $alpha);
+		//     }
+		// }
 
-        //Set Classes
-        .#{$attr_name}-#{$primary} {
-            #{$attr}: $hex;
-            $colours:($primary)
-        }
-        
-        //Opacity
-        // @each $alpha_name, $alpha in map-get($palette, alpha) {
-        //     .#{$attr_name}-#{$primary}-#{$alpha_name} {
-        //         #{$attr}: transparentize($hex, $alpha);
-        //     }
-        // }
-
-        // //Light & Dark
-        // @each $tone_name, $tone in map-get($palette, tones) {
-        //     .#{$attr_name}-#{$primary}-#{$tone_name} {
-        //         //Lighten 
-        //         @if ($tone > 0 ) {
-        //             #{$attr}: lighten($hex, $tone);
-        //         //Darken
-        //         } @else if ($tone < 0) {
-        //             #{$attr}: darken($hex, -$tone);
-        //         //Return normal
-        //         } @else if ($tone = 0) {
-        //             #{$attr}: $hex
-        //         }
-        //     }
-        // }
-    }
+		// //Light & Dark
+		// @each $tone_name, $tone in map-get($palette, tones) {
+		//     .#{$attr_name}-#{$primary}-#{$tone_name} {
+		//         //Lighten
+		//         @if ($tone > 0 ) {
+		//             #{$attr}: lighten($hex, $tone);
+		//         //Darken
+		//         } @else if ($tone < 0) {
+		//             #{$attr}: darken($hex, -$tone);
+		//         //Return normal
+		//         } @else if ($tone = 0) {
+		//             #{$attr}: $hex
+		//         }
+		//     }
+		// }
+	}
 }

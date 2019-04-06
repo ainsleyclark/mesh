@@ -1,26 +1,38 @@
 {
-  "name": "mesh",
-  "version": "1.0.0",
-  "description": "A lightweight, pure CSS framework.",
-  "main": "index.js",
-  "scripts": {
-    "build-css": "node-sass --include-path scss src/scss/mesh.scss dist/css/mesh.css --linefeed crlf && node-sass --include-path scss src/scss/mesh.scss dist/css/mesh.min.css --output-style compressed && node-sass --include-path scss src/scss/mesh-grid.scss dist/css/mesh.grid.css && node-sass --include-path scss src/scss/mesh-grid.scss dist/css/mesh-grid.min.css --output-style compressed",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ainsleyclark/mesh.git"
-  },
-  "author": "Ainsley Clark",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ainsleyclark/mesh/issues"
-  },
-  "homepage": "https://github.com/ainsleyclark/mesh#readme",
-  "devDependencies": {
-    "node-sass": "^4.11.0",
-    "nodemon": "^1.18.10",
-    "sass-lint": "^1.12.1",
-    "webpack-dev-server": "^3.2.1"
-  }
+	"name": "mesh",
+	"version": "1.0.0",
+	"description": "A lightweight, pure CSS framework.",
+	"scripts": {
+		"dev": "npm run watch-css",
+		"prod": "npm run prefix && npm run clean && npm run minify",
+		"build-css": "bin/build-css",
+		"watch-css": "bin/watch-css",
+		"test": "bin/clean",
+		"clean": "prettier \"**/*.{css,scss,html,json,yml}\" --write",
+		"prefix": "bin/prefix",
+		"minify": "bin/minify"
+	},
+	"browserslist": [
+		"last 2 versions"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ainsleyclark/mesh.git"
+	},
+	"author": "Ainsley Clark",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ainsleyclark/mesh/issues"
+	},
+	"homepage": "https://github.com/ainsleyclark/mesh#readme",
+	"devDependencies": {
+		"autoprefixer": "^9.5.0",
+		"concurrently": "^4.1.0",
+		"node-sass": "^4.11.0",
+		"nodemon": "^1.18.10",
+		"postcss-cli": "^6.1.2",
+		"prettier": "^1.16.4",
+		"sass-lint": "^1.12.1"
+	},
+	"dependencies": {}
 }

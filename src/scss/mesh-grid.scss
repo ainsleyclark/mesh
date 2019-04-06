@@ -4,21 +4,20 @@
 //* @author Ainsley Clark
 //* @author URL:   https://www.ainsleyclark.com
 //* @author email: info@ainsleyclark.com
-//*/
+//*k
 
-    //Abstracts
-    //----------------------------------------------
-    @import 'abstracts/_variables';
-    @import 'abstracts/_mixins';
+//Abstracts
+//----------------------------------------------
+@import 'abstracts/_variables';
+@import 'abstracts/_mixins';
 
-    //Base
-    //----------------------------------------------
-    @import 'base/_global';
+//Base
+//----------------------------------------------
+@import 'base/_global';
 
-    //Grid
-    //----------------------------------------------
-    @import 'grid/_grid';
-    @import 'grid/_display';
-    @import 'grid/_order';
-    @import 'grid/_flex';
-
+//Grid
+//----------------------------------------------
+@import 'grid/_grid';
+@import 'grid/_display';
+@import 'grid/_order';
+@import 'grid/_flex';
