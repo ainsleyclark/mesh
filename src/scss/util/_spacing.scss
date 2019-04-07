@@ -1,8 +1,12 @@
-//Margin & Padding
-@each $modifier, $breakpoint in $map-grid-props {
+//_spacing.scss
+//
+//Add margin & padding modifiers to each mediaquery & breakpoint.
+// ==========================================================================
+
+@each $modifier, $breakpoint in $grid-properties {
 	@each $prop, $abbrev in (margin: m, padding: p) {
 		@include create-mediaquery($breakpoint) {
-			@each $size, $length in $map-spacing-props {
+			@each $size, $length in $spacing-properties {
 				.#{$abbrev}#{$modifier}-#{$size} {
 					#{$prop}: $length;
 				}

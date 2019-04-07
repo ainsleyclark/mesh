@@ -1,0 +1,14 @@
+@each $primary, $hex in map-get($palette, colors) {
+	$colours: (
+		$primary: ()
+	);
+
+	//Loop through attributes (background-colour, color etc..)
+	@each $attr_name, $attr in map-get($palette, attr) {
+		//Set Classes
+		.#{$attr_name}-#{$primary} {
+			#{$attr}: $hex;
+			$colours: ($primary);
+		}
+	}
+}

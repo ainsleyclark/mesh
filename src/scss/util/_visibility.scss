@@ -1,0 +1,15 @@
+//_visibility.scss
+//
+//Add hidden and visible classes to each mediaquery & breakpoint.
+// ==========================================================================
+
+@each $modifier, $breakpoint in $grid-properties {
+	@include create-mediaquery($breakpoint) {
+        .visible#{$modifier} {
+            visibility: visible;
+        }
+        .invisible#{$modifier} {
+            visibility: hidden;
+        }
+    }
+}

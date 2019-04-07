@@ -1,26 +1,14 @@
 //_display.scss
 //
-//Add none, inline, inline-block, block to each mediaquery & breakpoint.
+//Add none, inline, inline-block, block etc to each mediaquery & breakpoint.
+// ==========================================================================
 
-@each $modifier, $breakpoint in $map-grid-props {
+@each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
-		.d#{$modifier}-none {
-			display: none;
-		}
-		.d#{$modifier}-inline {
-			display: inline;
-		}
-		.d#{$modifier}-inline-block {
-			display: inline-block;
-		}
-		.d#{$modifier}-block {
-			display: block;
-		}
-		.d#{$modifier}-flex {
-			display: flex;
-		}
-		.d#{$modifier}-inline-flex {
-			display: flex;
+		@each $property in $display-properties {
+			.d#{$modifier}-#{$property} {
+				display: #{$property} !important;
+			}
 		}
 	}
 }

@@ -1,5 +1,9 @@
-//@mixin create-mediaquery
+//_mixings.scss
 //
+//Contains all mixins used with mesh
+// ==========================================================================
+
+//@mixin create-mediaquery
 //Dynamically creates media query based on $breakpoint variable.
 @mixin create-mediaquery($breakpoint) {
 	@if ($breakpoint == 0) {
@@ -7,6 +11,33 @@
 	} @else {
 		@media (min-width: $breakpoint * 1px) {
 			@content;
+		}
+	}
+}
+
+//@mixin create-col-classes
+//Creates columns and offsets
+@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
+	@include create-mediaquery($breakpoint) {
+		//Columns
+		.col#{$modifier}-auto {
+			flex: 0 0 auto;
+			width: auto;
+			max-width: 100%;
+		}
+		@for $i from 1 through $grid-columns {
+			.col#{$modifier}-#{$i} {
+				flex-basis: (100 / ($grid-columns / $i)) * 1%;
+			}
+		}
+		.col#{$modifier}-offset-0 {
+			margin-left: 0;
+		}
+		//Offsets
+		@for $i from 1 through $grid-columns {
+			.offset#{$modifier}-#{$i} {
+				margin-left: (100 / ($grid-columns / $i)) * 1%;
+			}
 		}
 	}
 }

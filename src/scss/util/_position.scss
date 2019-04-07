@@ -1,16 +1,14 @@
-//Position
-.position-relative {
-	position: relative;
-}
-.position-absolute {
-	position: absolute;
-}
-.position-fixed {
-	position: fixed;
-}
-.position-static {
-	position: static;
-}
-.position-sticky {
-	position: sticky;
+//_position.scss
+//
+//Add position & modifiers to each mediaquery & breakpoint.
+// ==========================================================================
+
+@each $modifier, $breakpoint in $grid-properties {
+	@include create-mediaquery($breakpoint) {
+		@each $property in $position-properties {
+			.p#{$modifier}-#{$property} {
+				position: #{$property} !important;
+			}
+		}
+	}
 }

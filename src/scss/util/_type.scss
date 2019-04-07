@@ -1,58 +1,75 @@
+//_type.scss
+//
+//Unresponsive & Responsive classes for text
+// ==========================================================================
+
 //Unresponsive Classes
 @each $prop, $size in $map-fontsize-props {
 	.type-#{$prop} {
-		font-size: $size;
+		font-size: $size !important;
 	}
 }
 .type-decoration-none {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 .type-weight-normal {
-	font-weight: normal;
+	font-weight: normal !important;
 }
 .type-weight-bold {
-	font-weight: 900;
+	font-weight: 900 !important;
 }
 .type-weight-light {
-	font-weight: 300;
-}
-.type-italic {
-	font-style: italic;
+	font-weight: 300 !important;
 }
 .type-uppercase {
-	text-transform: uppercase;
+	text-transform: uppercase !important;
 }
 .type-lowercase {
-	text-transform: lowercase;
+	text-transform: lowercase !important;
 }
-.type-flow {
+.type-nowrap {
+	white-space: nowrap !important;
+}
+
+//Text Styles
+em {
+	font-style: italic !important;
+}
+strong {
+	font-weight: 900 !important;
+}
+small {
+	font-size: 75% !important;
+}
+
+//Responsive Text
+.type-responsive {
 	$i: 0;
-	@while $i <= $intervals {
-		@media only screen and (min-width: 360 + ($i * $interval-size * 1px)) {
+	@while $i <= $points {
+		@media only screen and (min-width: 360 + ($i * $point-size * 1px)) {
 			font-size: 1.2rem * (1 + (0.02 * $i));
 		}
 		$i: $i + 1;
 	}
-	// Handle below 360px screen
 	@media only screen and (max-width: 360px) {
 		font-size: 1.2rem;
 	}
 }
 
 //Responsive Classes
-@each $modifier, $breakpoint in $map-grid-props {
+@each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
 		.type#{$modifier}-center {
-			text-align: center;
+			text-align: center !important;
 		}
 		.type#{$modifier}-left {
-			text-align: left;
+			text-align: left !important;
 		}
 		.type#{$modifier}-right {
-			text-align: right;
+			text-align: right !important;
 		}
 		.type#{$modifier}-justify {
-			text-align: justify;
+			text-align: justify !important;
 		}
 	}
 }

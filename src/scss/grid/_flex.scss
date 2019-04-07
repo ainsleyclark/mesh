@@ -1,86 +1,86 @@
 //_flex.scss
 //
 //Responsive flex utility classes for each breakpoint.
+// ==========================================================================
 
-@each $modifier, $breakpoint in $map-grid-props {
+@each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
+		
 		//Flex Direction
 		.flex#{$modifier}-row {
-			flex-direction: row;
+			flex-direction: row !important;
 		}
 		.flex#{$modifier}-row-reverse {
-			flex-direction: row-reverse;
+			flex-direction: row-reverse !important;
 		}
 		.flex#{$modifier}-column {
-			flex-direction: column;
+			flex-direction: column !important;
 		}
 		.flex#{$modifier}-column-reverse {
-			flex-direction: column-reverse;
+			flex-direction: column-reverse !important;
 		}
 
 		//Justify Content
 		.justify-content#{$modifier}-start {
-			justify-content: start;
+			justify-content: start !important;
 		}
 		.justify-content#{$modifier}-end {
-			justify-content: end;
+			justify-content: end !important;
 		}
 		.justify-content#{$modifier}-center {
-			justify-content: center;
+			justify-content: center !important;
 		}
 		.justify-content#{$modifier}-between {
-			justify-content: space-between;
+			justify-content: space-between !important;
 		}
 		.justify-content#{$modifier}-around {
-			justify-content: space-around;
+			justify-content: space-around !important;
 		}
 		.align-items#{$modifier}-start {
-			align-items: flex-start;
+			align-items: flex-start !important;
 		}
 
 		//Align Self & Align Items & Align Content
-		$align: 'self', 'items', 'content';
-
-		@each $property in $align {
+		@each $property in ('self', 'items', 'content') {
 			.align-#{$property}#{$modifier}-end {
-				align-#{$property}: flex-end;
+				align-#{$property}: flex-end !important;
 			}
 			.align-#{$property}#{$modifier}-center {
-				align-#{$property}: center;
+				align-#{$property}: center !important;
 			}
 			.align-#{$property}#{$modifier}-baseline {
-				align-#{$property}: baseline;
+				align-#{$property}: baseline !important;
 			}
 			.align-#{$property}#{$modifier}-stretch {
-				align-#{$property}: stretch;
+				align-#{$property}: stretch !important;
 			}
 		}
 
 		//Wrap
 		.flex#{$modifier}-wrap {
-			flex-wrap: wrap;
+			flex-wrap: wrap !important;
 		}
 		.flex#{$modifier}-nowrap {
-			flex-wrap: nowrap;
+			flex-wrap: nowrap !important;
 		}
 
 		//Fill
 		.flex#{$modifier}-fill {
-			flex: 1 1 auto;
+			flex: 1 1 auto !important;
 		}
 
 		//Grow & Shrink
 		.flex#{$modifier}-grow-0 {
-			flex-grow: 0;
+			flex-grow: 0 !important;
 		}
 		.flex#{$modifier}-grow-1 {
-			flex-grow: 1;
+			flex-grow: 1 !important;
 		}
 		.flex#{$modifier}-shrink-0 {
-			flex-shrink: 0;
+			flex-shrink: 0 !important;
 		}
 		.flex#{$modifier}-shrink-1 {
-			flex-shrink: 1;
+			flex-shrink: 1 !important;
 		}
 	}
 }

@@ -7,33 +7,43 @@
 //
 
 //Abstracts
-//----------------------------------------------
-// @import 'abstracts/_functions.scss';
+// ==========================================================================
+@import 'abstracts/_functions.scss';
 @import 'abstracts/_variables';
 @import 'abstracts/_mixins';
 
+//Vendor
+// ==========================================================================
+// @import 'vendor/_reset';
+
 //Base
-//----------------------------------------------
+// ==========================================================================
 @import 'base/_global';
 
 //Grid
-//----------------------------------------------
+// ==========================================================================
 @import 'grid/_grid';
-@import 'grid/_display';
-@import 'grid/_order';
 @import 'grid/_flex';
+@import 'grid/_order';
+@import 'grid/_display';
 
 //Util
-//----------------------------------------------
-// @import 'util/_sizing';
-// @import 'util/_spacing';
-// @import 'util/_colour';
+// ==========================================================================
+@import 'util/_spacing';
+@import 'util/_position';
+@import 'util/_sizing';
+// @import 'util/_colours';
+// @import 'util/_type';
+@import 'util/_borders';
+@import 'util/_float';
+@import 'util/_visibility';
+
 // @import 'util/_type';
 // @import 'partials/_media';
-// @import 'partials/_hero';
 
 //Components
-//----------------------------------------------
+// ==========================================================================
 // @import 'components/divider';
 // @import 'components/_cards';
 // @import 'components/_social';
+// @import 'partials/_hero';

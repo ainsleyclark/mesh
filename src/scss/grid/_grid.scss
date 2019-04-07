@@ -1,6 +1,7 @@
 //_grid.scss
 //
 //Main grid system, containers, rows & columns.
+// ==========================================================================
 
 .container {
 	width: 100%;
@@ -18,7 +19,7 @@
 }
 
 //Creates the breakpoints for containers
-@each $modifier, $breakpoint in $map-grid-props {
+@each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
 		@if ($breakpoint != 0) {
 			.container {
@@ -47,7 +48,7 @@
 	padding-right: $gap-width;
 }
 
-@each $modifier, $breakpoint in $map-grid-props {
+@each $modifier, $breakpoint in $grid-properties {
 	.col#{$modifier}-auto {
 		@extend %column-props;
 	}
@@ -58,32 +59,6 @@
 	}
 }
 
-// Columns & Offset
-@mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
-	@include create-mediaquery($breakpoint) {
-		//Columns
-		.col#{$modifier}-auto {
-			flex: 0 0 auto;
-			width: auto;
-			max-width: 100%;
-		}
-		@for $i from 1 through $grid-columns {
-			.col#{$modifier}-#{$i} {
-				flex-basis: (100 / ($grid-columns / $i)) * 1%;
-			}
-		}
-		.col#{$modifier}-offset-0 {
-			margin-left: 0;
-		}
-		//Offsets
-		@for $i from 1 through $grid-columns {
-			.offset#{$modifier}-#{$i} {
-				margin-left: (100 / ($grid-columns / $i)) * 1%;
-			}
-		}
-	}
-}
-
-@each $modifier, $breakpoint in $map-grid-props {
+@each $modifier, $breakpoint in $grid-properties {
 	@include create-col-classes($modifier, $grid-columns, $breakpoint);
 }

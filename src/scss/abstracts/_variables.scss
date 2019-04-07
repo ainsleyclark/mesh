@@ -5,37 +5,55 @@
 // Table of Contents:
 //
 //  1. Grid
-//  2. Spacing
-//  3. Sizing
-//  2. Colours
-//  3. Type
+//  2. Display
+//  3. Spacing
+//  4. Position
+//  5. Sizing
+//  6. Colours
+//  7. Type
+//  8. Spacers
 
 // 1. Grid
 // ==========================================================================
 
 //Columns
-$grid-columns: 12;
-$gap-width: 0.75rem;
+$grid-columns: 12 !default;
+$gap-width: 0.75rem !default;
 
-//Defines Greakpoints
-$grid-breakpoint-mob: 568;
-$grid-breakpoint-tab: 768;
-$grid-breakpoint-desk: 1024;
-$grid-breakpoint-hd: 1408;
+//Defines Breakpoints
+$grid-breakpoint-mob: 568 !default;
+$grid-breakpoint-tab: 768 !default;
+$grid-breakpoint-desk: 1024 !default;
+$grid-breakpoint-hd: 1408 !default;
 
-//Props for Grid
-$map-grid-props: (
+//Properties for Grid
+$grid-properties: (
 	'': 0,
 	'-mob': $grid-breakpoint-mob,
 	'-tab': $grid-breakpoint-tab,
 	'-desk': $grid-breakpoint-desk,
 	'-hd': $grid-breakpoint-hd
-);
+) !default;
 
-// 2. Spacing
+// 2. Display
 // ==========================================================================
 
-$map-spacing-props: (
+$display-properties: (
+	none, 
+	inline, 
+	inline-block, 
+	block, 
+	flex, 
+	inline-flex, 
+	table, 
+	table-row, 
+	table-cell
+) !default;	
+
+// 3. Spacing
+// ==========================================================================
+
+$spacing-properties: (
 	0: 0,
 	1: 0.5rem,
 	2: 0.75rem,
@@ -44,12 +62,23 @@ $map-spacing-props: (
 	5: 3rem
 );
 
-// 3. Sizing
+// 4. Position
 // ==========================================================================
 
-$map-sizing-props: ();
+$position-properties: (
+	relative, 
+	absolute, 
+	fixed, 
+	static,
+	sticky
+) !default;	
 
-// 4. Colour
+// 5. Sizing
+// ==========================================================================
+
+$sizing-properties: (10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%) !default;
+
+// 6. Colour
 // ==========================================================================
 
 $black: #222629;
@@ -69,13 +98,22 @@ $palette: (
 	attr: (
 		color: 'color',
 		bgcolor: 'background-color',
-		fill__: 'fill',
-		stroke__: 'stroke'
 	)
 );
 
-// 5. Type
+// 7. Type
 // ==========================================================================
+
+//Font Stack
+$font-stack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Header Styles
+$h1-fontsize: 4.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.92rem !default;
+$h4-fontsize: 2.28rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1.15rem !default;
 
 //Font Sizes
 $map-fontsize-props: (
@@ -88,7 +126,14 @@ $map-fontsize-props: (
 	7: 9rem
 );
 
-//Flow Text
+//Responsive Text
 $range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
-$intervals: 20 !default;
-$interval-size: $range / $intervals !default;
+$points: 20 !default;
+$point-size: $range / $points !default;
+
+// 8. Spacers
+// ==========================================================================
+
+
+// 9. Borders
+// ==========================================================================

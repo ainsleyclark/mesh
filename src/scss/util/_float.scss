@@ -1,0 +1,18 @@
+//_float.scss
+//
+//Add float - left, right & none to each mediaquery & breakpoint.
+// ==========================================================================
+
+@each $modifier, $breakpoint in $grid-properties {
+	@include create-mediaquery($breakpoint) {
+        .float#{$modifier}-left {
+            float: left !important;
+        }
+        .float#{$modifier}-right {
+            float: right !important;
+        }
+        .float#{$modifier}-none {
+            float: none !important;
+        }
+	}
+}
