@@ -3,14 +3,19 @@
 //Add responsive sizing classes for width & height incremenets of 10 (default)
 // ==========================================================================
 
-@each $primary, $hex in map-get($palette, colors) {
-
-
-	//Loop through attributes (background-colour, color etc..)
-	@each $attr_name, $attr in map-get($palette, attr) {
-		//Set Classes
-		.#{$attr_name}-#{$primary} {
-			#{$attr}: $hex;
+@each $primary, $map in map-get($palette, colors) {
+	@each $attr-name, $attr in map-get($palette, attr) {
+		//@warn #{$map};
+		@each $class-name, $hex in $map {
+			@if $class-name == 'base' {
+				.#{$attr-name}-#{$primary} {
+					#{$attr}: $hex;
+				}
+			} @else {
+				.#{$attr-name}-#{$primary}-#{$class-name} {
+					#{$attr}: $hex;
+				}
+			}
 		}
 	}
 }
