@@ -1,5 +1,5 @@
 // ==========================================================================
-// Mesh variables
+// mesh variables
 // ==========================================================================
 //
 // Table of Contents:
@@ -11,7 +11,10 @@
 //  5. Sizing
 //  6. Colours
 //  7. Type
-//  8. Spacers
+//  8. Borders
+//	9. Spacers
+//
+//
 
 // 1. Grid
 // ==========================================================================
@@ -39,16 +42,16 @@ $grid-properties: (
 // ==========================================================================
 
 $display-properties: (
-	none, 
-	inline, 
-	inline-block, 
-	block, 
-	flex, 
-	inline-flex, 
-	table, 
-	table-row, 
+	none,
+	inline,
+	inline-block,
+	block,
+	flex,
+	inline-flex,
+	table,
+	table-row,
 	table-cell
-) !default;	
+) !default;
 
 // 3. Spacing
 // ==========================================================================
@@ -65,47 +68,62 @@ $spacing-properties: (
 // 4. Position
 // ==========================================================================
 
-$position-properties: (
-	relative, 
-	absolute, 
-	fixed, 
-	static,
-	sticky
-) !default;	
+$position-properties: (relative, absolute, fixed, static, sticky) !default;
 
 // 5. Sizing
 // ==========================================================================
 
-$sizing-properties: (10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%) !default;
+$sizing-properties: (
+	10%, 
+	20%, 
+	30%, 
+	40%, 
+	50%, 
+	60%, 
+	70%, 
+	80%, 
+	90%, 
+	100%
+) !default;
 
 // 6. Colour
 // ==========================================================================
 
-$black: #222629;
-$white: #ffffff;
-$grey: #c5c6c7;
-$primary: #66fcf1;
-$primary-off: #45a29e;
-
 $palette: (
 	colors: (
-		black: $black,
-		white: $white,
-		grey: $grey,
-		primary: $primary,
-		primaryoff: $primary-off
+		red: #f44336,
+		pink: #e91e63,
+		purple: #9c27b0,
+		deep-purple: #673ab7,
+		indigo: #3f51b5,
+		blue: #2196f3,
+		light-blue: #03a9f4,
+		cyan: #00bcd4,
+		teal: #009688,
+		green: #4caf50,
+		light-green: #8bc34a,
+		lime: #cddc39,
+		yellow: #ffeb3b,
+		amber: #ffc107,
+		orange: #ff9800,
+		deep-orange: #ff5722,
+		brown: #795548,
+		grey: #9e9e9e,
+		blue-grey: #607d8b
 	),
 	attr: (
 		color: 'color',
-		bgcolor: 'background-color',
+		bgcolor: 'background-color'
 	)
-);
+) !default;
 
 // 7. Type
 // ==========================================================================
 
 //Font Stack
-$font-stack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT',
+	'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma,
+	Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Header Styles
 $h1-fontsize: 4.2rem !default;
@@ -116,7 +134,7 @@ $h5-fontsize: 1.64rem !default;
 $h6-fontsize: 1.15rem !default;
 
 //Font Sizes
-$map-fontsize-props: (
+$fontsize-properties: (
 	1: 0.75rem,
 	2: 1rem,
 	3: 2rem,
@@ -131,9 +149,28 @@ $range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
 $points: 20 !default;
 $point-size: $range / $points !default;
 
-// 8. Spacers
+// 9. Spacers
 // ==========================================================================
 
+$spacer-properties: (
+	5px,
+	10px,
+	15px,
+	20px,
+	25px,
+	30px,
+	35px,
+	40px,
+	45px,
+	50px,
+	75px,
+	100px,
+	150px,
+	200px,
+	300px,
+	400px,
+	500px
+) !default;
 
 // 9. Borders
 // ==========================================================================

@@ -8,8 +8,8 @@
 		@include create-mediaquery($breakpoint) {
 			@each $value in $sizing-properties {
 				//Rid of % in $value
-				$classvalue: str-replace(#{$value}, '%', '');
-				.#{$abbrev}#{$modifier}-#{$classvalue} {
+				$class-value: str-replace(#{$value}, '%', '');
+				.#{$abbrev}#{$modifier}-#{$class-value} {
 					#{$property}: #{$value} !important;
 				}
 			}

@@ -5,7 +5,6 @@
 
 @each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
-		
 		//Flex Direction
 		.flex#{$modifier}-row {
 			flex-direction: row !important;

@@ -1,0 +1,21 @@
+//_spacers.scss
+//
+//Adds spacers based on spacer-properties map
+// ==========================================================================
+
+[class^='spacer'] {
+	width: 100%;
+	display: block;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@each $value in $spacer-properties {
+	//Rid of px in $value
+	$class-value: str-replace(#{$value}, 'px', '');
+	.spacer-#{$class-value} {
+		height: px-to-rem($value);
+	}
+}

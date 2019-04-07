@@ -5,11 +5,11 @@
 
 @each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
-        .visible#{$modifier} {
-            visibility: visible;
-        }
-        .invisible#{$modifier} {
-            visibility: hidden;
-        }
-    }
+		.visible#{$modifier} {
+			visibility: visible;
+		}
+		.invisible#{$modifier} {
+			visibility: hidden;
+		}
+	}
 }

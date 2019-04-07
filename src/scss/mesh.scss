@@ -11,6 +11,7 @@
 @import 'abstracts/_functions.scss';
 @import 'abstracts/_variables';
 @import 'abstracts/_mixins';
+@import 'abstracts/_colorvariables';
 
 //Vendor
 // ==========================================================================
@@ -32,9 +33,10 @@
 @import 'util/_spacing';
 @import 'util/_position';
 @import 'util/_sizing';
-// @import 'util/_colours';
+@import 'util/_colors';
 // @import 'util/_type';
 @import 'util/_borders';
+@import 'util/_spacers';
 @import 'util/_float';
 @import 'util/_visibility';
 

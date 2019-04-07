@@ -3,8 +3,9 @@
 //Contains all mixins used with mesh
 // ==========================================================================
 
-//@mixin create-mediaquery
-//Dynamically creates media query based on $breakpoint variable.
+/// @mixin create-mediaquery
+/// Dynamically creates media query based on $breakpoint variable.
+/// @param {Number} $breakpoint - Initial breakpoint
 @mixin create-mediaquery($breakpoint) {
 	@if ($breakpoint == 0) {
 		@content;
@@ -15,8 +16,11 @@
 	}
 }
 
-//@mixin create-col-classes
-//Creates columns and offsets
+/// @mixin create-col-classes
+/// Creates columns and offsets
+/// @param {String} $modifier - Class
+/// @param {Number} $grid-cols - Amount of columns
+/// @param {Number} $breakpoint - Media breakpoint
 @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
 	@include create-mediaquery($breakpoint) {
 		//Columns
@@ -40,4 +44,11 @@
 			}
 		}
 	}
+}
+
+// Function for converting a px based font-size to rem.
+@function px-to-rem($size) {
+	$remSize: $size / 16px;
+	//Default font size on html element is 100%, equivalent to 16px;
+	@return #{$remSize}rem;
 }
