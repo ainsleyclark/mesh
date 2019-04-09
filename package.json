@@ -7,8 +7,7 @@
 		"prod": "npm run prefix && npm run clean && npm run minify",
 		"build-css": "./bin/build-css",
 		"watch-css": "./bin/watch-css",
-		"test": "./bin/clean",
-		"clean": "prettier \"**/*.{css,scss,html,json,yml}\" --write",
+		"clean": "./bin/clean",
 		"prefix": "./bin/prefix",
 		"minify": "./bin/minify"
 	},
