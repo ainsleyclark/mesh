@@ -6,40 +6,40 @@
 //Unresponsive Classes
 @each $prop, $size in $map-fontsize-props {
 	.type-#{$prop} {
-		font-size: $size !important;
+		font-size: $size;
 	}
 }
 .type-decoration-none {
-	text-decoration: none !important;
+	text-decoration: none;
 }
 .type-weight-normal {
-	font-weight: normal !important;
+	font-weight: normal;
 }
 .type-weight-bold {
-	font-weight: 900 !important;
+	font-weight: 900;
 }
 .type-weight-light {
-	font-weight: 300 !important;
+	font-weight: 300;
 }
 .type-uppercase {
-	text-transform: uppercase !important;
+	text-transform: uppercase;
 }
 .type-lowercase {
-	text-transform: lowercase !important;
+	text-transform: lowercase;
 }
 .type-nowrap {
-	white-space: nowrap !important;
+	white-space: nowrap;
 }
 
 //Text Styles
 em {
-	font-style: italic !important;
+	font-style: italic;
 }
 strong {
-	font-weight: 900 !important;
+	font-weight: 900;
 }
 small {
-	font-size: 75% !important;
+	font-size: 75%;
 }
 
 //Responsive Text
@@ -60,16 +60,16 @@ small {
 @each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
 		.type#{$modifier}-center {
-			text-align: center !important;
+			text-align: center;
 		}
 		.type#{$modifier}-left {
-			text-align: left !important;
+			text-align: left;
 		}
 		.type#{$modifier}-right {
-			text-align: right !important;
+			text-align: right;
 		}
 		.type#{$modifier}-justify {
-			text-align: justify !important;
+			text-align: justify;
 		}
 	}
 }

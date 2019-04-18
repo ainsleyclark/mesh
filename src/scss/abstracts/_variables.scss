@@ -103,8 +103,8 @@ $palette: (
 		blue-grey: $blue-grey
 	),
 	attr: (
-		color: 'color',
-		bgcolor: 'background-color'
+		c: 'color',
+		bg: 'background-color'
 	)
 ) !default;
 
@@ -165,3 +165,19 @@ $spacer-properties: (
 
 // 9. Borders
 // ==========================================================================
+
+//Borders
+$border-colors: (
+	default: rgba(0, 0, 0, 0.6),
+	light: rgba(0, 0, 0, 0.3),
+	dark: rgba(0, 0, 0, 0.9)
+);
+
+$border-width: 1px;
+$border-width-2: 2px;
+$border-width-3: 3px;
+
+//Border Radius
+$border-radius: 0.5em;
+$border-radius-small: 0.25em;
+$border-radius-large: 1;

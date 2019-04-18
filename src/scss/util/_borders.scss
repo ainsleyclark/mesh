@@ -1,0 +1,95 @@
+//_borders.scss
+//
+//Add borders & border radius & colors
+// ==========================================================================
+
+@each $size in ($border-width, $border-width-2, $border-width-3) {
+    $class-value: str-replace(#{$size}, 'px', '');
+    .b-#{$class-value} {
+        border: #{$size} solid  map-get($border-colors, 'default');
+    }
+    .b-#{$class-value}-light {
+        border: #{$size} solid  map-get($border-colors, 'light');
+    }
+    .b-#{$class-value}-dark {
+        border: #{$size} solid  map-get($border-colors, 'dark');
+    }
+
+    $positions: (
+        top: t,
+        right: r,
+        bottom: b,
+        left: l
+    );
+
+    @each $color-abbrev, $color in $border-colors {
+        @each $property, $border-abbrev in $positions {
+            @if ($color-abbrev == 'default') {
+                .b-#{$border-abbrev}#{$class-value} {
+                    border-#{$property}: #{$size} solid $color;
+                }
+            } @else {
+                .b-#{$border-abbrev}#{$class-value}-#{$color-abbrev} {
+                    border-#{$property}: #{$size} solid $color;
+                }
+            }
+        }
+    } 
+}
+
+//Border Radius
+.br {
+	border-radius: $border-radius-small;
+}
+
+.br-sm {
+	border-radius: $border-radius;
+}
+
+.br-lg {
+	border-radius: $border-radius-large;
+}
+
+.br-circle {
+	border-radius: 50%;
+}
+
+.br-none {
+	border-radius: 0;
+}
+
+.br-top-left {
+	border-top-left-radius: $border-radius;
+}
+
+.br-top-right {
+	border-top-right-radius: $border-radius;
+}
+
+.br-bottom-left {
+	border-bottom-left-radius: $border-radius;
+}
+
+.br-bottom-right {
+	border-bottom-right-radius: $border-radius;
+}
+
+.br-top {
+	border-top-left-radius: $border-radius;
+	border-top-right-radius: $border-radius;
+}
+
+.br-right {
+	border-top-right-radius: $border-radius;
+	border-bottom-right-radius: $border-radius;
+}
+
+.br-bottom {
+	border-bottom-right-radius: $border-radius;
+	border-bottom-left-radius: $border-radius;
+}
+
+.br-left {
+	border-top-left-radius: $border-radius;
+	border-bottom-left-radius: $border-radius;
+}
