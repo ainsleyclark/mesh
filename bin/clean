@@ -1,1 +1,1 @@
-prettier "./**/*.{css,scss,html,json,yml}" --write
+prettier "./**/*.{css,scss,html,json,js}" --write
