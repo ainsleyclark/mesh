@@ -116,29 +116,20 @@ $font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill
 	'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma,
 	Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-// Header Styles
+// Font Sizes
 $h1-fontsize: 6rem !default;
 $h2-fontsize: 3.75rem !default;
 $h3-fontsize: 3rem !default;
 $h4-fontsize: 2.125rem !default;
 $h5-fontsize: 1.5rem !default;
 $h6-fontsize: 1.25rem !default;
-
-//Font Sizes
-$fontsize-properties: (
-	1: 0.75rem,
-	2: 1rem,
-	3: 2rem,
-	4: 3rem,
-	5: 5rem,
-	6: 7rem,
-	7: 9rem
-);
+$lead-fontsize: 1.25rem !default; 
+$small-font-size: 75% !default;
 
 //Responsive Text
 $range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
-$points: 20 !default;
-$point-size: $range / $points !default;
+$responsive-text-points: 30 !default;
+$point-size: $range / $responsive-text-points !default;
 
 // 9. Spacers
 // ==========================================================================

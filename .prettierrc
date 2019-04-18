@@ -5,6 +5,6 @@
     "tabWidth": 4,
     "singleQuote": true,
     "bracketSpacing": true,
-    "endOfLine": "lf",
+    "endOfLine": "crlf",
     "proseWrap": "preserve"
 }

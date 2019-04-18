@@ -9,7 +9,8 @@
 		"watch-css": "./bin/watch-css",
 		"clean": "./bin/clean",
 		"prefix": "./bin/prefix",
-		"minify": "./bin/minify"
+		"minify": "./bin/minify",
+		"lint": "./bin/lint"
 	},
 	"browserslist": [
 		"last 2 versions"
@@ -26,6 +27,8 @@
 	"homepage": "https://github.com/ainsleyclark/mesh#readme",
 	"devDependencies": {
 		"autoprefixer": "^9.5.0",
+		"clean-css": "^4.2.1",
+		"clean-css-cli": "^4.3.0",
 		"concurrently": "^4.1.0",
 		"node-sass": "^4.11.0",
 		"nodemon": "^1.18.10",

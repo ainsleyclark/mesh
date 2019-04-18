@@ -4,37 +4,37 @@
 // ==========================================================================
 
 @each $size in ($border-width, $border-width-2, $border-width-3) {
-    $class-value: str-replace(#{$size}, 'px', '');
-    .b-#{$class-value} {
-        border: #{$size} solid  map-get($border-colors, 'default');
-    }
-    .b-#{$class-value}-light {
-        border: #{$size} solid  map-get($border-colors, 'light');
-    }
-    .b-#{$class-value}-dark {
-        border: #{$size} solid  map-get($border-colors, 'dark');
-    }
+	$class-value: str-replace(#{$size}, 'px', '');
+	.b-#{$class-value} {
+		border: #{$size} solid map-get($border-colors, 'default');
+	}
+	.b-#{$class-value}-light {
+		border: #{$size} solid map-get($border-colors, 'light');
+	}
+	.b-#{$class-value}-dark {
+		border: #{$size} solid map-get($border-colors, 'dark');
+	}
 
-    $positions: (
-        top: t,
-        right: r,
-        bottom: b,
-        left: l
-    );
+	$positions: (
+		top: t,
+		right: r,
+		bottom: b,
+		left: l
+	);
 
-    @each $color-abbrev, $color in $border-colors {
-        @each $property, $border-abbrev in $positions {
-            @if ($color-abbrev == 'default') {
-                .b-#{$border-abbrev}#{$class-value} {
-                    border-#{$property}: #{$size} solid $color;
-                }
-            } @else {
-                .b-#{$border-abbrev}#{$class-value}-#{$color-abbrev} {
-                    border-#{$property}: #{$size} solid $color;
-                }
-            }
-        }
-    } 
+	@each $color-abbrev, $color in $border-colors {
+		@each $property, $border-abbrev in $positions {
+			@if ($color-abbrev == 'default') {
+				.b-#{$border-abbrev}#{$class-value} {
+					border-#{$property}: #{$size} solid $color;
+				}
+			} @else {
+				.b-#{$border-abbrev}#{$class-value}-#{$color-abbrev} {
+					border-#{$property}: #{$size} solid $color;
+				}
+			}
+		}
+	}
 }
 
 //Border Radius

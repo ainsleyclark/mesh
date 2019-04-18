@@ -1,56 +1,104 @@
 //_type.scss
 //
-//Unresponsive & Responsive classes for text
+//Unresponsive & Responsive classes for text including general font styles
 // ==========================================================================
 
-//Unresponsive Classes
-@each $prop, $size in $map-fontsize-props {
-	.type-#{$prop} {
-		font-size: $size;
-	}
-}
-.type-decoration-none {
-	text-decoration: none;
-}
-.type-weight-normal {
-	font-weight: normal;
-}
-.type-weight-bold {
-	font-weight: 900;
-}
-.type-weight-light {
-	font-weight: 300;
-}
-.type-uppercase {
-	text-transform: uppercase;
-}
-.type-lowercase {
-	text-transform: lowercase;
-}
-.type-nowrap {
-	white-space: nowrap;
+//Text Styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 500;
+	line-height: 1.2;
 }
 
-//Text Styles
+h1 { 
+	font-size: $h1-fontsize; 
+	margin: ($h1-fontsize / 1.5) 0 ($h1-fontsize / 2.5) 0;
+}
+
+h2 { 
+	font-size: $h2-fontsize; 
+	margin: ($h2-fontsize / 1.5) 0 ($h2-fontsize / 2.5) 0;
+}
+
+h3 { 
+	font-size: $h3-fontsize; 
+	margin: ($h3-fontsize / 1.5) 0 ($h3-fontsize / 2.5) 0;
+}
+
+h4 { 
+	font-size: $h4-fontsize; 
+	margin: ($h4-fontsize / 1.5) 0 ($h4-fontsize / 2.5) 0;
+}
+
+h5 { 
+	font-size: $h5-fontsize; 
+	margin: ($h5-fontsize / 1.5) 0 ($h5-fontsize / 2.5) 0;
+}
+
+h6 { 
+	font-size: $h6-fontsize; 
+	margin: ($h6-fontsize / 1.5) 0 ($h6-fontsize / 2.5) 0;
+}
+
+.lead {
+	font-size: $lead-fontsize;
+	font-weight: 300;
+}
+
 em {
 	font-style: italic;
 }
+
 strong {
 	font-weight: 900;
 }
+
 small {
-	font-size: 75%;
+	font-size: $small-font-size;
+}
+
+//Utility
+.t-decoration-none {
+	text-decoration: none;
+}
+
+.t-normal {
+	font-weight: normal;
+}
+
+.t-bold {
+	font-weight: 900;
+}
+
+.t-light {
+	font-weight: 300;
+}
+
+.t-uppercase {
+	text-transform: uppercase;
+}
+
+.t-lowercase {
+	text-transform: lowercase;
+}
+
+.t-nowrap {
+	white-space: nowrap;
 }
 
 //Responsive Text
-.type-responsive {
-	$i: 0;
-	@while $i <= $points {
+.t-responsive {
+
+	@for $i from 1 through $responsive-text-points {
 		@media only screen and (min-width: 360 + ($i * $point-size * 1px)) {
 			font-size: 1.2rem * (1 + (0.02 * $i));
 		}
-		$i: $i + 1;
 	}
+	
 	@media only screen and (max-width: 360px) {
 		font-size: 1.2rem;
 	}
@@ -59,16 +107,16 @@ small {
 //Responsive Classes
 @each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
-		.type#{$modifier}-center {
+		.t#{$modifier}-center {
 			text-align: center;
 		}
-		.type#{$modifier}-left {
+		.t#{$modifier}-left {
 			text-align: left;
 		}
-		.type#{$modifier}-right {
+		.t#{$modifier}-right {
 			text-align: right;
 		}
-		.type#{$modifier}-justify {
+		.t#{$modifier}-justify {
 			text-align: justify;
 		}
 	}
