@@ -17,10 +17,27 @@ mesh is still in its early days, if you wish to contribute, please do so! It wou
 Please email info@ainsleyclark.com if you have any questions, I will be more than happy to answer them. 
 
 **How to contribute:**
-1. Download source files.
+1. Clone this repo and create a new branch.
 2. Using node/npm enter `npm install` to install dev dependencies.
 3. Then use `npm run dev` to watch & compile scss.
 4. When finished use `npm run prod` to clean compiled css files. 
+5. Merge & commit, create new pull request.
+
+**What to contribute:**
+Any ideas are welcome. The majority of the utility classes are done so UI components are needed (remember CSS only!), including: 
+- Cards
+- Modals
+- Toasts
+- Chips
+- Forms
+- Nav
+- Header
+- Hero Section
+- Tabs
+- Tooltip
+- Icons
+- Breadcrumbs
+- Pagination
 
 **Notes:**
 - Please do not edit ***mesh.css*** directly, they are automatically generated. 
