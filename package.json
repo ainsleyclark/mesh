@@ -4,6 +4,7 @@
 	"description": "A lightweight, pure CSS framework.",
 	"scripts": {
 		"dev": "npm run watch-css",
+		"live": "live-server",
 		"prod": "npm run prefix && npm run clean && npm run minify",
 		"build-css": "./bin/build-css",
 		"watch-css": "./bin/watch-css",
