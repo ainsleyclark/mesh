@@ -176,7 +176,7 @@ See how our grid system works:
 | Gap width               | 0.75rem       | 0.75rem      | 0.75rem      | 0.75rem      | 0.75rem      |    
 
 
-| Notation:               |                                                        |
+| Notation -------------- |                                                        |
 | ----------------------- | ------------------------------------------------------ | 
 | Default                 | order-{value} for default                              |   
 | Responsive              | order-{breakpoint}-{value} for mob, tab, desk & hd     | 
