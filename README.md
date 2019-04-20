@@ -1,9 +1,9 @@
-#mesh
+# mesh
 A pure open source SCSS Framework, with no frills but a modular approach to a responsive grid system and other utilities by Ainsley Clark. 
 
 Please see (#Documentation)
 
-##Why mesh?
+## Why mesh?
 
 ### Versatile:
 It's based on the principle that every website is different. Most CSS frameworks have consistent styling, you can almost tell if a website was designed with a particular one. Here, we use wireframing to show you what it could look like, not what it will look like.
@@ -48,6 +48,11 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 ## Documentation
 meshcss.com is currently in progress. To get a kickstart on implementing mesh into your site, or to help contribute - please see the documentation below.
 
+##### Table of Contents  
+[Headers](#headers)  
+[Emphasis](#emphasis)  
+...snip...    
+
 **Grid:**
 
 **Flex:**
@@ -76,7 +81,12 @@ meshcss.com is currently in progress. To get a kickstart on implementing mesh in
 
 **Media:**
 
+<a name="headers"/>
+## Headers
+</a>
+
+
 
 ## Licence
-Code Copyright 2018 mesh. Code released under the MIT license.
+Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE)MIT license.
 
