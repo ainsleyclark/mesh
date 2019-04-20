@@ -166,17 +166,7 @@ If you need help with any flexboxy relatedness, check out https://css-tricks.com
 ### Order
 Order will allow you to change the visual order of columns (or flex items). You may want to order something first on desktop but last when it shrinks down to mobile. Here are our classes to help you with that:
 
-See how our grid system works:
-
-|                         | Default       | Mobile       | Tablet       | Desktop      | HD           |
-| ----------------------- | ------------- | ------------ | ------------ | ------------ | ------------ |
-| Minimum Width           | 0             | 568px        | 768px        | 1024px       | 1408px       |  
-| Max container width     | None          | 518px        | 718px        | 974px        | 1358px       |
-| Class prefix            | .col-         | .col-mob     | .col-tab     | .col-desk    | .col-hd      | 
-| Gap width               | 0.75rem       | 0.75rem      | 0.75rem      | 0.75rem      | 0.75rem      |    
-
-
-| Notation -------------- |                                                        |
+| Notation                |                                                        |
 | ----------------------- | ------------------------------------------------------ | 
 | Default                 | order-{value} for default                              |   
 | Responsive              | order-{breakpoint}-{value} for mob, tab, desk & hd     | 
@@ -216,7 +206,7 @@ They're also responsive (as well as desk & HD):
 ### Display
 You can toggle the display value of your components with ease with our display utility classes.
 
-| **Notation:**                                                                |
+| Notation                |                                                    |
 | ----------------------- | -------------------------------------------------- | 
 | Default                 | d-{value} for default                              |   
 | Responsive              | d-{breakpoint}-{value} for mob, tab, desk & hd     | 
@@ -236,7 +226,7 @@ You can toggle the display value of your components with ease with our display u
 Spacing is overwhelming, especially when it comes to making it responsive. mesh makes it easy and provides a shorthand responsive margin and padding utility classes.
 
 
-| **Notation:**                    
+| Notation                |                                                                   |
 | ----------------------- | ----------------------------------------------------------------- | 
 | Default                 | {property}{sides}-{size}                                          |   
 | Responsive              | {property}{sides}-{breakpoint}-{size} for mob, tab, desk & hd     | 
@@ -277,7 +267,7 @@ This gives us 3rem of padding on all sides, on all screens.
 ### Position
 mesh has responsive position classes! You can have something relative for mobile, but absolute for desktop making, like so:
 
-| **Notation:**                    
+| Notation                |                                                       |          
 | ----------------------- | ----------------------------------------------------- | 
 | Default                 | p-{position}                                          |   
 | Responsive              | p-{breakpoint}-{position} for mob, tab, desk & hd     | 
@@ -299,7 +289,7 @@ And for responsiveness:
 ### Sizing
 You can easily make a component wide/narrow or tall/short with our width and height utility classes. These classes are also responsive.
 
-| **Notation:**                    
+| Notation                |                                                              |               
 | ----------------------- | ------------------------------------------------------------ | 
 | Default                 | {property}-{amount}                                          |   
 | Responsive              | {property}-{breakpoint}-{amount} for mob, tab, desk & hd     | 
