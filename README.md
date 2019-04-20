@@ -53,7 +53,6 @@ meshcss.com is currently in progress. To get a kickstart on implementing mesh in
 ### Grid:
 mesh uses the conventional containers, rows and columns to layout and align content, it's built with flex box and is fully responsive.
 
-```
 <div class="container">
     <div class="row">
         <div class="col-12 col-tab-6 col-desk-4 col-hd-3">
@@ -61,7 +60,7 @@ mesh uses the conventional containers, rows and columns to layout and align cont
         </div>
     </div>
 </div>
-```
+
 #### Containers:
 A container can be at fixed size, and will gracefully become smaller as screen size gets smaller.
 
