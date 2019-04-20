@@ -1,9 +1,6 @@
 # mesh
 A pure open source SCSS Framework, with no frills but a modular approach to a responsive grid system and other utilities by Ainsley Clark. 
 
-## Table of Contents
-{:toc}
-
 ## Why mesh?
 
 ### Versatile
@@ -51,7 +48,7 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 
 meshcss.com is currently in progress. To get a kickstart on implementing mesh into your site, or to help contribute - please see the documentation below.
 
-### Grid
+## Grid
 mesh uses the conventional containers, rows and columns to layout and align content, it's built with flex box and is fully responsive. Here's an example
 
 ```
@@ -73,7 +70,7 @@ See how our grid system works:
 | Class prefix            | .col-         | .col-mob     | .col-tab     | .col-desk    | .col-hd      | 
 | Gap width               | 0.75rem       | 0.75rem      | 0.75rem      | 0.75rem      | 0.75rem      |    
 
-#### Containers
+### Containers
 - A container can be at fixed size, and will gracefully become smaller as screen size gets smaller.
 
 ```
@@ -88,7 +85,7 @@ See how our grid system works:
 </div>
 ```
 
-#### Rows
+### Rows
 - Rows live inside containers, they are at full width and are wrappers for columns. 
 - Rows use flexbox by default, so you can add any of our responsive flex classes to them to align them horizontally and vertically.
 
@@ -97,7 +94,7 @@ See how our grid system works:
 </div>
 ```
 
-#### Columns
+### Columns
 - Columns live inside rows, there can be a maximum of 12 columns in each row. If there are more, the column will wrap to the next line.
 - The column prefix is **col-modifier-amount** as shown below.
 - The **col-auto** class will fill up all available space, great if you want a column to have a predefined width.
@@ -107,7 +104,7 @@ See how our grid system works:
 <div class="col-12 col-mob-10 col-tab-6 col-desk-4 col-hd-4">
 </div>
 ```
-#### Offsetting Columns
+### Offsetting Columns
 - In order to move columns along within a row, you can use the offset classes, which are responsive.
 - Below will offset a column by 6 for tablet.
 - **Note:** This will also offset 6 columns for desktop and HD as well. To reset it add - ```col-desk-0```
@@ -117,10 +114,10 @@ See how our grid system works:
 </div>
 ```
 
-#### Notes
+### Notes
 - Rows are nest-able, meaning you can have rows that live inside columns.
 
-### Flex
+## Flex
 The whole of flexbox is bundled with mesh, meaning you can use them inline in html, making vertical and horizontal cantering a doddle. As a bonus all classes are responsive. 
 In order to make a container flexboxish add d-flex or d-inline-flex as a class. See our display options for more details.
 
@@ -163,7 +160,7 @@ If you need help with any flexboxy relatedness, check out https://css-tricks.com
 - ```.align-items-hd-center```
 - ```.flex-desk-column```
 
-### Order
+## Order
 Order will allow you to change the visual order of columns (or flex items). You may want to order something first on desktop but last when it shrinks down to mobile. Here are our classes to help you with that:
 
 | Notation                |                                                        |
@@ -203,7 +200,7 @@ They're also responsive (as well as desk & HD):
 - ```.order-tab-11```
 - ```.order-tab-12```
 
-### Display
+## Display
 You can toggle the display value of your components with ease with our display utility classes.
 
 | Notation                |                                                    |
@@ -222,7 +219,7 @@ You can toggle the display value of your components with ease with our display u
 - ```.d-table-row```
 - ```.d-table-cell```
 
-### Spacing
+## Spacing
 Spacing is overwhelming, especially when it comes to making it responsive. mesh makes it easy and provides a shorthand responsive margin and padding utility classes.
 
 
@@ -231,7 +228,7 @@ Spacing is overwhelming, especially when it comes to making it responsive. mesh 
 | Default                 | {property}{sides}-{size}                                          |   
 | Responsive              | {property}{sides}-{breakpoint}-{size} for mob, tab, desk & hd     | 
 
-#### Where:
+### Where:
 **Property** is either m for margin or p for padding
 
 **Sides** is t for top, b for bottom, l for left, r for right
@@ -244,7 +241,7 @@ Spacing is overwhelming, especially when it comes to making it responsive. mesh 
   - 5 is 3rem
 
 
-#### Examples:
+#### Examples
 ```
 <div class="my-3 my-tab-4 my-desk-5">
 </div>
@@ -264,7 +261,7 @@ This gives us 3rem of padding top as default but nothing for HD screens.
 This gives us 3rem of padding on all sides, on all screens.
 
 
-### Position
+## Position
 mesh has responsive position classes! You can have something relative for mobile, but absolute for desktop making, like so:
 
 | Notation                |                                                       |          
@@ -286,7 +283,7 @@ And for responsiveness:
 - ```.p-hd-static```
 - ```.p-tab-sticky```
 
-### Sizing
+## Sizing
 You can easily make a component wide/narrow or tall/short with our width and height utility classes. These classes are also responsive.
 
 | Notation                |                                                              |               
@@ -294,7 +291,7 @@ You can easily make a component wide/narrow or tall/short with our width and hei
 | Default                 | {property}-{amount}                                          |   
 | Responsive              | {property}-{breakpoint}-{amount} for mob, tab, desk & hd     | 
 
-#### Where:
+### Where:
 **Property** is either w for width or h for height
 
 **Amount** is from 0 to 100 in increments of 10.
@@ -330,8 +327,8 @@ And for responsiveness:
 - ```.h-desk-30```
 - ```.h-hd-40```
 
-### Colors
-Our colour scheme as been taken from googles's very own materielistic color pallette. Which you can see here: 
+## Colors
+Our colour scheme as been taken from googles's very own materialistic color palette. Which you can see here: 
 
 https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=FFEB3B
 
@@ -341,9 +338,9 @@ You can use these as ***colors*** or ***background colors***.
 | Notation                |                                                              |               
 | ----------------------- | ------------------------------------------------------------ | 
 | Default                 | {property}-{color}                                           | 
-| Default                 | {property}-{color}-{shade}-{amount}                           | 
+| Shade                   | {property}-{color}-{shade}-{amount}                          | 
    
-#### Where:
+### Where:
 **Property** is either c for color or bg for background color
 
 **Color** is one of listed below.
@@ -372,7 +369,7 @@ You can use these as ***colors*** or ***background colors***.
 - grey
 - blue-grey
 
-#### Examples:
+#### Examples
 ```
 <div class="bg-amber">
 </div>
@@ -385,20 +382,151 @@ Amber background
 ```
 Teal color, darken by 3
 
-### Text
+## Text
+Here are some handy classes for all things text. All of our text classes begin with hte prefix ```t-{property}```.
 
-### Borders
+### Unresponsive Classes
 
-### Spacers
+- ```.t-decoration-none``` - Font weight, light
+- ```.t-normal``` - Font weight, normal
+- ```.t-bold``` - Font weight, bold
+- ```.t-light``` - Font weight, light
+- ```.t-uppercase``` - Uppercase text
+- ```.t-lowercase``` - Lowercase text
+- ```.t-nowrap``` - White space, no wrap
 
-### Float
+### Responsive Classes
 
-### Visibility
+#### Responsive text:
+mesh includes **responsive text**, as the user scales down the screen, the text will get gradually smaller and smaller. Just simply add ```.t-responsive``` to the element.
 
-### Media
+#### Text align:
+
+| Notation                |                                                           |               
+| ----------------------- | --------------------------------------------------------- | 
+| Default                 | t-{alignment}                                             | 
+| Responsive              | t-{breakpoint}-{alignment}  for mob, tab, desk & hd       | 
+   
+### Where:
+**Alignment** is:
+- center
+- left
+- right
+- justify
+
+## Borders
+You can manipulate borders, widths and border border-radius with our border utility classes. They also come in three different flavours, light, medium & dark.
+
+#### Borders:
+
+| Notation                |                              |               
+| ----------------------- | ---------------------------- | 
+| Default                 | b-{side}                     |   
+| Sides                   | b-{side}{amount}             |   
+| Thickness               | b-{side}{amount}-{shade}     | 
+
+### Where:
+**Side** is either t for top, b for bottom, r for right or l for left.
+
+**Amount** is 1, 2 or 3 for pixels.
+
+**Shade** is light or dark.
+
+#### Examples
+
+```
+<div class="b-1">
+</div>
+```
+Results in: ```border: 1px solid rgba(0, 0, 0, 0.6)```;
+
+```
+<div class="b-r1-dark">
+</div>
+```
+Results in: ```border-right: 1px solid rgba(0, 0, 0, 0.9);```;
+
+```
+<div class="b-l2">
+</div>
+```
+Results in: ```border-left: 2px solid rgba(0, 0, 0, 0.6);```;
+
+```
+<div class="b-t3-light">
+</div>
+```
+Results in: ```border-top: 3px solid rgba(0, 0, 0, 0.3)```;
+
+### Border radius:
+
+- ```.br``` - Slight rounded corners on all sides
+- ```.br-sm``` - Small rounded corners on all sides
+- ```.br-lg``` - Font weight, bold
+- ```.br-none``` - No border radius
+- ```.br-top``` - Rounded corners on top of element
+- ```.br-bottom``` - Rounded corners on bottom of element
+- ```.br-right``` - Rounded corners on right of element
+- ```.br-left``` - Rounded corners on left of element
+- ```.br-top-left``` - Rounded corners on top left side of element
+- ```.br-top-right``` - Rounded corners on top right side of element
+- ```.br-bottom-left``` - Rounded corners on bottom left side of element
+- ```.br-bottom-right``` - Rounded corners on bottom right side of element
 
 
+## Spacers
+Sometimes you want a lot more whitespace than margin can offer, which is why we have added some handy spacer classes to create whitespace between your elements. 
 
+All spacers are 100% width and come in a variety of different sizes.
+***The number after the ```.spacer-``` class corrosponds to pixels.***
+
+- ```.spacer-5```
+- ```.spacer-10```
+- ```.spacer-15```
+- ```.spacer-20```
+- ```.spacer-25```
+- ```.spacer-30```
+- ```.spacer-35```
+- ```.spacer-40```
+- ```.spacer-45```
+- ```.spacer-50```
+- ```.spacer-75```
+- ```.spacer-100```
+- ```.spacer-150```
+- ```.spacer-200```
+- ```.spacer-300```
+- ```.spacer-400```
+- ```.spacer-500```
+
+## Float
+Floats can also be manipulated responsively like so:
+
+| Notation                |                                                         |               
+| ----------------------- | ------------------------------------------------------- | 
+| Default                 | f-{position}                                            | 
+| Responsive              | f-{breakpoint}-{position} for mob, tab, desk & hd       | 
+   
+### Where:
+**Position** is either left, right or none.
+
+#### Examples
+```
+<div class="float-right">
+</div>
+```
+Floats right
+
+```
+<div class="float-tab-left">
+</div>
+```
+Floats on left on tablet.
+
+## Visibility
+Visibility classes have been added to mesh to make elements vanish from the DOM.
+
+- ```.visible``` - Sets visibility to visible.
+- ```.invisible``` - Sets visibility to hidden.
 
 ## Licence
 Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE).
