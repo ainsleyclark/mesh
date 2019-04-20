@@ -14,7 +14,7 @@ It's quick - under 100kb minified. mesh was built with a very modular approach, 
 
 ### Functional
 It has a huge amount of very useful utility classes, which enables you to write HTML quicker. It's extremely easy to pick up and will save you bags of time in the long run.
-No !important, less of a headache using JS.
+No !important, so less of a headache using JS.
 
 ## Contributing
 mesh is still in its early days, if you wish to contribute, please do so! It would be appreciated. 
@@ -299,6 +299,7 @@ You can easily make a component wide/narrow or tall/short with our width and hei
 
 **Amount** is from 0 to 100 in increments of 10.
 
+Width:
 - ```.w-10```
 - ```.w-20```
 - ```.w-30```
@@ -310,15 +311,79 @@ You can easily make a component wide/narrow or tall/short with our width and hei
 - ```.w-90```
 - ```.w-100```
 
+Height:
+- ```.h-10```
+- ```.h-20```
+- ```.h-30```
+- ```.h-40```
+- ```.h-50```
+- ```.h-60```
+- ```.h-70```
+- ```.h-80```
+- ```.h-90```
+- ```.h-100```
+
 And for responsiveness: 
 
 - ```.w-mob-10```
 - ```.w-tab-20```
-- ```.w-desk-30```
-- ```.w-hd-40```
+- ```.h-desk-30```
+- ```.h-hd-40```
 
 ### Colors
-Our colour scheme as been taken from googles's very own 
+Our colour scheme as been taken from googles's very own materielistic color pallette. Which you can see here: 
+
+https://material.io/tools/color/#!/?view.left=0&view.right=0&primary.color=FFEB3B
+
+It features white & black, and 19 base colors with 4 darken classes & 5 lighten classes. 
+You can use these as ***colors*** or ***background colors***.
+
+| Notation                |                                                              |               
+| ----------------------- | ------------------------------------------------------------ | 
+| Default                 | {property}-{color}                                           | 
+| Default                 | {property}-{color}-{shade}-{amount}                           | 
+   
+#### Where:
+**Property** is either c for color or bg for background color
+
+**Color** is one of listed below.
+
+**Shade** is lighten or darken
+
+**Amount** is 1 to 5 for lighten or 1 to 4 for darken.
+
+- red
+- pink
+- purple
+- deep-purple
+- indigo
+- blue
+- light-blue
+- cyan
+- teal
+- green
+- light-green
+- lime
+- yellow
+- amber
+- orange
+- deep-orange
+- brown
+- grey
+- blue-grey
+
+#### Examples:
+```
+<div class="bg-amber">
+</div>
+```
+Amber background
+
+```
+<div class="c-teal-darken-3">
+</div>
+```
+Teal color, darken by 3
 
 ### Text
 
@@ -336,5 +401,5 @@ Our colour scheme as been taken from googles's very own
 
 
 ## Licence
-Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE)MIT license.
+Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE).
 
