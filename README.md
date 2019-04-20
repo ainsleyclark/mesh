@@ -5,16 +5,16 @@ Please see (#Documentation)
 
 ##Why mesh?
 
-###Versatile:
+### Versatile:
 It's based on the principle that every website is different. Most CSS frameworks have consistent styling, you can almost tell if a website was designed with a particular one. Here, we use wireframing to show you what it could look like, not what it will look like.
 
-###Fast:
+### Fast:
 It's quick - under 100kb minified. mesh was built with a very modular approach, meaning you can cut back on classes & components you won't use by using our scss files.
 
-###Functional:
+### Functional:
 It has a huge amount of very useful utility classes, which enables you to write HTML quicker. Its extremely easy to pick up and will save you bags of time in the long run.
 
-##Contributing:
+## Contributing:
 mesh is still in its early days, if you wish to contribute, please do so! It would be appriciated. 
 Please email info@ainsleyclark.com if you have any questions, I will be more than happy to answer them. 
 
@@ -45,7 +45,7 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 - Please do not edit ***mesh.css*** directly, they are automatically generated. 
 - Get yourself familar with the demo pages to see how things work. 
 
-##Documentation
+## Documentation
 meshcss.com is currently in progress. To get a kickstart on implementing mesh into your site, or to help contribute - please see the documentation below.
 
 **Grid:**
