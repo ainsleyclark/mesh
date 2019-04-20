@@ -1,4 +1,4 @@
-![logo]: http://www.ainsleyclark.com/meshlogo.png
+![Mesh Logo](meshlogo.png)
 # mesh
 A pure open source SCSS Framework, with no frills but a modular approach to a responsive grid system and other utilities by Ainsley Clark. 
 
