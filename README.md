@@ -2,7 +2,7 @@
 A pure open source SCSS Framework, with no frills but a modular approach to a responsive grid system and other utilities by Ainsley Clark. 
 
 ## Table of Contents
-{{TOC}}
+{:toc}
 
 ## Why mesh?
 
