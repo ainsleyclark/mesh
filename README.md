@@ -166,7 +166,17 @@ If you need help with any flexboxy relatedness, check out https://css-tricks.com
 ### Order
 Order will allow you to change the visual order of columns (or flex items). You may want to order something first on desktop but last when it shrinks down to mobile. Here are our classes to help you with that:
 
-| **Notation:**           |                                                        |
+See how our grid system works:
+
+|                         | Default       | Mobile       | Tablet       | Desktop      | HD           |
+| ----------------------- | ------------- | ------------ | ------------ | ------------ | ------------ |
+| Minimum Width           | 0             | 568px        | 768px        | 1024px       | 1408px       |  
+| Max container width     | None          | 518px        | 718px        | 974px        | 1358px       |
+| Class prefix            | .col-         | .col-mob     | .col-tab     | .col-desk    | .col-hd      | 
+| Gap width               | 0.75rem       | 0.75rem      | 0.75rem      | 0.75rem      | 0.75rem      |    
+
+
+| Notation:               | ------------------------------------------------------ |
 | ----------------------- | ------------------------------------------------------ | 
 | Default                 | order-{value} for default                              |   
 | Responsive              | order-{breakpoint}-{value} for mob, tab, desk & hd     | 
