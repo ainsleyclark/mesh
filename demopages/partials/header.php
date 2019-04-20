@@ -6,6 +6,8 @@ $websiteData = [
     'siteName' => 'mesh'
 ];
 
+$isDownDirectory = $pageData['isDownDirectory'];
+
 ?>
 
 <!DOCTYPE html>
@@ -31,10 +33,8 @@ $websiteData = [
     <meta name="twitter:image" content="<?php echo ($pageData['ogImage']); ?>">
     <!-- CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/vendor/font-awesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap/bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="<?php if ($isDownDirectory) echo '../'; ?>css/mesh.css">
+    <link rel="stylesheet" type="text/css" href="<?php if ($isDownDirectory) echo '../'; ?>css/main.css">
     <!-- 
     
     Place favicon here !
@@ -50,9 +50,30 @@ $websiteData = [
     <!-- =====================
         Header
         ===================== -->
-    <header class="primary">
-        <nav>
-        </nav>
+    <header class="primary d-flex align-items-center bg-blue-grey-darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex align-items-center">
+                        <div class="logo-cont">
+                            <img class="logo" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/meshlogo.svg" alt="mesh Logo">
+                        </div>
+                        <div class="text-cont ml-tab-3">
+                            <h5 class="c-white">mesh</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end">        
+                    <nav class="primary">
+                        <ul class="d-flex align-items-center my-0 t-uppercase">
+                            <li class="mx-2"><a href="/documentation">Documentation</a></li>
+                            <li class="mx-2"><a href="documentation.php">Contact</a></li>
+                            <li class="download d-flex align-items-center mx-2"><a href="documentation.php">Download</a><img class="ml-1" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/download.svg" alt="Downlod Icon"></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div> 
     </header>
     <main>
 

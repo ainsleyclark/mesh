@@ -18,6 +18,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -39,15 +41,6 @@ body {
    */
 main {
   display: block;
-}
-
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -383,11 +376,18 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
-/**
- * Basic typography style for copy text
- */
-body {
-  color: #000000;
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  color: #1f1f1f;
+}
+
+p {
+  font-weight: 300;
 }
 
 /* ====================
@@ -399,6 +399,62 @@ body {
 /* ====================
     Layout
     ==================== */
+header.primary {
+  height: 75px;
+}
+
+header.primary .logo {
+  width: 40px;
+}
+
+header.primary nav.primary ul {
+  list-style-type: none;
+}
+
+header.primary nav.primary ul li {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+header.primary nav.primary ul .download {
+  border: 1px solid #ffffff;
+  padding: 8px 30px;
+  border-radius: 500px;
+}
+
+header.primary nav.primary ul .download a {
+  margin-top: 4px;
+}
+
+header.primary nav.primary ul .download img {
+  width: 20px;
+}
+
+header.primary nav.primary ul a:hover {
+  text-decoration: none;
+}
+
+.sidenav {
+  position: sticky;
+  height: calc(100vh - 75px);
+  border-right: 1px #e5e5e5 solid;
+  padding: 20px 0;
+}
+
+.sidenav ul {
+  list-style-type: none;
+}
+
+.sidenav .nav-header {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 /* ====================
     Pages
     ==================== */
+section.hero {
+  height: calc(100vh - 75px);
+  min-height: 500px;
+  background: #263238;
+}

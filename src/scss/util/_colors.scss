@@ -1,11 +1,11 @@
 //_colors.scss
 //
-//Add responsive sizing classes for width & height incremenets of 10 (default)
+// Add colors via color variables, darken & lighen.
 // ==========================================================================
 
 @each $primary, $map in map-get($palette, colors) {
 	@each $attr-name, $attr in map-get($palette, attr) {
-		//@warn #{$map};
+		// @warn #{$map};
 		@each $class-name, $hex in $map {
 			@if $class-name == 'base' {
 				.#{$attr-name}-#{$primary} {

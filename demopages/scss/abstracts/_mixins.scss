@@ -8,25 +8,25 @@
 
 /// @author Ainsley Clark
 /// Returns mediaquery based on breakpoint set in _variables.scss
-@mixin media-sm {
+@mixin media-mob {
 	@media (min-width: #{$grid-breakpoint-mob}) {
 		@content;
 	}
 }
 
-@mixin media-md {
+@mixin media-tab {
 	@media (min-width: #{$grid-breakpoint-tab}) {
 		@content;
 	}
 }
 
-@mixin media-lg {
+@mixin media-desk {
 	@media (min-width: #{$grid-breakpoint-desk}) {
 		@content;
 	}
 }
 
-@mixin media-xl {
+@mixin media-hd {
 	@media (min-width: #{$grid-breakpoint-hd}) {
 		@content;
 	}

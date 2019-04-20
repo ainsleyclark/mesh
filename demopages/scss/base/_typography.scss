@@ -3,10 +3,11 @@
 // This file contains all type declerations (h1, h2, p etc) for whole site.
 // -----------------------------------------------------------------------------
 
-/**
- * Basic typography style for copy text
- */
-body {
+html {
+	font-family: $font;
 	color: $text-color;
-	//!SET font: normal 125% / 1.4 $text-font-stack;
+}
+
+p {
+	font-weight: 300;
 }

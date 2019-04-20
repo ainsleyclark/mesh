@@ -4,4 +4,38 @@
 // -----------------------------------------------------------------------------
 
 header.primary {
+	height: 75px;
+
+	.logo {
+		width: 40px;
+	}
+
+	nav.primary {
+		ul {
+			list-style-type: none;
+
+			li {
+				font-weight: 300;
+				font-size: 12px;
+			}
+
+			.download {
+				border: 1px solid $white;
+				padding: 8px 30px;
+                border-radius: 500px;
+                
+                a {
+                    margin-top: 4px;
+                }
+
+				img {
+					width: 20px;
+				}
+			}
+
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
 }

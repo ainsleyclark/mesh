@@ -2,3 +2,20 @@
 // _home.scss
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+section.hero {
+	height: calc(100vh - 75px);
+	min-height: 500px;
+	background: #263238;
+
+	// background: linear-gradient(128deg, #2d63d2, #ac07dd);
+	// background-size: 400% 400%;
+
+	// animation: backgroundGradient 7s ease infinite;
+
+	// @keyframes backgroundGradient {
+	//     0%{background-position:49% 0%}
+	//     50%{background-position:52% 100%}
+	//     100%{background-position:49% 0%}
+	// }
+}

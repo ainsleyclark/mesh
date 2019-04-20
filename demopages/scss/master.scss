@@ -9,8 +9,8 @@
 /*  ====================
     Abstracts
     ==================== */
-@import 'abstracts/_variables.scss';
-@import 'abstracts/_functions.scss';
+@import 'abstracts/_variables';
+@import 'abstracts/_functions';
 @import 'abstracts/_mixins';
 
 /* ====================
@@ -20,6 +20,7 @@
 @import 'base/_global';
 @import 'base/_fonts';
 @import 'base/_typography';
+@import 'base/_fonts';
 
 /* ====================
     Vendor
@@ -34,8 +35,10 @@
     Layout
     ==================== */
 @import 'layout/_header';
+@import 'layout/_sidenav';
 @import 'layout/_footer';
 
 /* ====================
     Pages
     ==================== */
+@import 'pages/home';

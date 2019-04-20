@@ -1,1 +1,1 @@
-nodemon -e scss -x "npm run build-css"
+nodemon -e scss -x "npm run build-css && cp ./dist/css/mesh.css ./demopages/css"

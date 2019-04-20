@@ -82,6 +82,8 @@ $sizing-properties: (10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%) !default
 
 $palette: (
 	colors: (
+		white: $white,
+		black: $black,
 		red: $red,
 		pink: $pink,
 		purple: $purple,
@@ -117,10 +119,10 @@ $font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill
 	Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Sizes
-$h1-fontsize: 6rem !default;
-$h2-fontsize: 3.75rem !default;
-$h3-fontsize: 3rem !default;
-$h4-fontsize: 2.125rem !default;
+$h1-fontsize: 3.5rem !default;
+$h2-fontsize: 3rem !default;
+$h3-fontsize: 2.75rem !default;
+$h4-fontsize: 2rem !default;
 $h5-fontsize: 1.5rem !default;
 $h6-fontsize: 1.25rem !default;
 $lead-fontsize: 1.25rem !default;

@@ -7,79 +7,79 @@
 	@include create-mediaquery($breakpoint) {
 		//Flex Direction
 		.flex#{$modifier}-row {
-			flex-direction: row !important;
+			flex-direction: row;
 		}
 		.flex#{$modifier}-row-reverse {
-			flex-direction: row-reverse !important;
+			flex-direction: row-reverse;
 		}
 		.flex#{$modifier}-column {
-			flex-direction: column !important;
+			flex-direction: column;
 		}
 		.flex#{$modifier}-column-reverse {
-			flex-direction: column-reverse !important;
+			flex-direction: column-reverse;
 		}
 
 		//Justify Content
 		.justify-content#{$modifier}-start {
-			justify-content: start !important;
+			justify-content: flex-start;
 		}
 		.justify-content#{$modifier}-end {
-			justify-content: end !important;
+			justify-content: flex-end;
 		}
 		.justify-content#{$modifier}-center {
-			justify-content: center !important;
+			justify-content: center;
 		}
 		.justify-content#{$modifier}-between {
-			justify-content: space-between !important;
+			justify-content: space-between;
 		}
 		.justify-content#{$modifier}-around {
-			justify-content: space-around !important;
-		}
-		.align-items#{$modifier}-start {
-			align-items: flex-start !important;
+			justify-content: space-around;
 		}
 
 		//Align Self & Align Items & Align Content
 		@each $property in ('self', 'items', 'content') {
+			.align-#{$property}#{$modifier}-start {
+				align-#{$property}: flex-start;
+			}
 			.align-#{$property}#{$modifier}-end {
-				align-#{$property}: flex-end !important;
+				align-#{$property}: flex-end;
 			}
 			.align-#{$property}#{$modifier}-center {
-				align-#{$property}: center !important;
+				align-#{$property}: center;
 			}
 			.align-#{$property}#{$modifier}-baseline {
-				align-#{$property}: baseline !important;
+				align-#{$property}: baseline;
 			}
 			.align-#{$property}#{$modifier}-stretch {
-				align-#{$property}: stretch !important;
+				align-#{$property}: stretch;
 			}
 		}
 
 		//Wrap
 		.flex#{$modifier}-wrap {
-			flex-wrap: wrap !important;
+			flex-wrap: wrap;
 		}
 		.flex#{$modifier}-nowrap {
-			flex-wrap: nowrap !important;
+			flex-wrap: nowrap;
 		}
 
 		//Fill
 		.flex#{$modifier}-fill {
-			flex: 1 1 auto !important;
+			flex: 1 1 auto;
 		}
 
 		//Grow & Shrink
 		.flex#{$modifier}-grow-0 {
-			flex-grow: 0 !important;
+			flex-grow: 0;
 		}
 		.flex#{$modifier}-grow-1 {
-			flex-grow: 1 !important;
+			flex-grow: 1;
 		}
 		.flex#{$modifier}-shrink-0 {
-			flex-shrink: 0 !important;
+			flex-shrink: 0;
 		}
 		.flex#{$modifier}-shrink-1 {
-			flex-shrink: 1 !important;
+			flex-shrink: 1;
 		}
 	}
 }

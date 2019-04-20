@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------------
+// _sidenav.scss
+// This file contains all styles related to the sidenav of the site.
+// -----------------------------------------------------------------------------
+
+.sidenav {
+    position: sticky;
+    height: calc(100vh - 75px);
+    border-right: 1px #e5e5e5 solid;
+    padding: 20px 0;
+
+	ul {
+		list-style-type: none;
+    }
+
+    .nav-header {
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+}
