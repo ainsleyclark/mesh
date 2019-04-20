@@ -3,8 +3,7 @@
 	"version": "1.0.0",
 	"description": "A lightweight, pure CSS framework.",
 	"scripts": {
-		"dev": "npm run watch-css",
-		"live": "live-server",
+		"dev": "vagrant up && npm run watch-css",
 		"prod": "npm run prefix && npm run clean && npm run minify",
 		"build-css": "./bin/build-css",
 		"watch-css": "./bin/watch-css",

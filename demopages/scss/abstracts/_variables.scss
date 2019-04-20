@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// _variables.scss
+// This file contains all variables for scss files.
+// -----------------------------------------------------------------------------
+
+// Breakpoints
+// ==========================================================================
+
+$grid-breakpoint-mob: 568 !default;
+$grid-breakpoint-tab: 768 !default;
+$grid-breakpoint-desk: 1024 !default;
+$grid-breakpoint-hd: 1408 !default;
+
+// Colours
+// ==========================================================================
+
+$black: #000000 !default;
+$white: #ffffff !default;
+$primary: #29b6f6 !default;
+$primary-dark: #0086c3 !default;
+$primary-light: #73e8ff !default;
+$text-color: #000000 !default;
+
+$palette: (
+	colors: (
+		black: $black,
+		white: $white,
+		primary: $primary,
+		primary-dark: $primary-dark,
+		primary-light: $primary-light
+	),
+	attr: (
+		color: 'color',
+		bgcolor: 'background-color',
+		//fill__: 'fill',
+			// stroke__: 'stroke'
+	)
+);
+
+// Typography
+// ==========================================================================
