@@ -166,7 +166,7 @@ If you need help with any flexboxy relatedness, check out https://css-tricks.com
 ### Order
 Order will allow you to change the visual order of columns (or flex items). You may want to order something first on desktop but last when it shrinks down to mobile. Here are our classes to help you with that:
 
-| **Notation:**                    
+| **Notation:**           |                                                        |
 | ----------------------- | ------------------------------------------------------ | 
 | Default                 | order-{value} for default                              |   
 | Responsive              | order-{breakpoint}-{value} for mob, tab, desk & hd     | 
@@ -206,7 +206,7 @@ They're also responsive (as well as desk & HD):
 ### Display
 You can toggle the display value of your components with ease with our display utility classes.
 
-| **Notation:**                    
+| **Notation:**                                                                |
 | ----------------------- | -------------------------------------------------- | 
 | Default                 | d-{value} for default                              |   
 | Responsive              | d-{breakpoint}-{value} for mob, tab, desk & hd     | 
@@ -318,6 +318,7 @@ And for responsiveness:
 - ```.w-hd-40```
 
 ### Colors
+Our colour scheme as been taken from googles's very own 
 
 ### Text
 
