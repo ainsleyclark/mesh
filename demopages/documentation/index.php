@@ -7,13 +7,14 @@ $pageData = [
     'activePage' => '',
     'ogImage' => '',
     'isDownDirectory' => true,
-    'sideNavHeader' => 'Documentation'
+    'sideNavActive' => 'intro'
 ];
 
 ?>
 
 <?php include_once('../partials/header.php'); ?>
 <?php include_once('../partials/sidenav.php'); ?>
+
 
 <section class="content">
     <div class="container">
@@ -30,11 +31,13 @@ $pageData = [
                 <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Download</h2>
                 <p>mesh comes in two different flavours. You can select which version you want dependant on your expertise and preference. To get going, click on one of the options below.</p>
                 <div class="row my-3">
-                    <div class="col-12 col-tab-6 px-0">
-                        <h3>mesh CSS</h3>
+                    <div class="col-12 col-tab-6 pl-0">
+                        <h3 class="c-primary">mesh CSS:</h3>
+                        <p>This is the standard version that comes with minified and unminified versions of mesh, including mesh grid, which is a barebones grid with flex, order & display. Choose this option if you have no familairty with Sass.</p>
                     </div>
-                    <div class="col-12 col-tab-6 px-0">
-                        <h3></h3>
+                    <div class="col-12 col-tab-6 pr-0">
+                        <h3 class="c-primary">Souce Files:</h3>
+                        <p>This is the uncompiled scss version of mesh, you need a way to compile Sass files if you choose this option, however, you will be able to modify the contents of mesh and change variables.</p>
                     </div>
                 </div>
                 <!-- Start using mesh -->
@@ -54,5 +57,5 @@ $pageData = [
         </div>
     </div>
 </section>
-
-<?php include_once('../partials/footer.php') ?>
+<?php include_once('../partials/smallnav.php'); ?>
+<?php include_once('../partials/footer.php'); ?>

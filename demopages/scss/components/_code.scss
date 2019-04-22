@@ -24,3 +24,21 @@ code {
     display: block;
     line-height: 1.8em;
 }
+
+.highlight {
+    
+    .html {
+
+        .name {
+            color: rgb(14, 176, 46);
+        }
+
+        .attr {
+            color: #2B91AF;
+        }
+        
+        .tag {
+            color: #101094;
+        }
+    }
+}

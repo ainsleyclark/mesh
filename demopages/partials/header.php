@@ -75,5 +75,6 @@ $isDownDirectory = $pageData['isDownDirectory'];
             </div>
         </div> 
     </header>
+    <div class="header-spacer"></div>
     <main>
 

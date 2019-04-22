@@ -4,9 +4,10 @@
 // -----------------------------------------------------------------------------
 
 header.primary {
-	height: 75px;
-	// position: fixed;
-	// width: 100%;
+	height: $header-height;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 
 	.logo {
 		width: 40px;
@@ -37,4 +38,8 @@ header.primary {
 			}
 		}
 	}
+}
+
+.header-spacer {
+	height: $header-height;
 }

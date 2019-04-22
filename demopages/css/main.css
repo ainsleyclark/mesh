@@ -19,9 +19,9 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 html {
   line-height: 1.15;
   /* 1 */
@@ -444,11 +444,26 @@ code {
   line-height: 1.8em;
 }
 
+.highlight .html .name {
+  color: #0eb02e;
+}
+
+.highlight .html .attr {
+  color: #2B91AF;
+}
+
+.highlight .html .tag {
+  color: #101094;
+}
+
 /* ====================
     Layout
     ==================== */
 header.primary {
   height: 75px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 header.primary .logo {
@@ -476,6 +491,10 @@ header.primary nav.primary ul .download img {
 
 header.primary nav.primary ul a:hover {
   text-decoration: none;
+}
+
+.header-spacer {
+  height: 75px;
 }
 
 .sidenav {
