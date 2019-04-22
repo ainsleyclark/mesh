@@ -1,1 +1,1 @@
-{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/Users/ainsley/Desktop/Web/localhost/mesh/demopages","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/ainsley/Desktop/Web/localhost/mesh","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/Users/ainsley/Desktop/Web/mesh/demopages","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/ainsley/Desktop/Web/mesh","disabled":false,"__vagrantfile":true}}}

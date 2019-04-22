@@ -4,10 +4,11 @@
 // -----------------------------------------------------------------------------
 
 .sidenav {
-    position: sticky;
+    position: fixed;
+    width: 320px;
     height: calc(100vh - 75px);
     border-right: 1px #e5e5e5 solid;
-    padding: 20px 0;
+    padding: 45px 45px 60px 45px;
 
 	ul {
 		list-style-type: none;
@@ -16,5 +17,33 @@
     .nav-header {
         text-transform: uppercase;
         font-size: 16px;
+    }
+
+    .sub-list {
+
+        a {
+            position: relative;
+            li {
+                color: $light-grey;
+                padding: 5px 0;
+            }
+        }
+
+        .active {
+            
+            li {
+                color: $primary;
+                //font-weight: 600;
+            }
+
+            &::before {
+                content: "kjhkhkjhkjh";
+                position: absolute;
+                top: 15px;
+                left: -25px;
+                width: 15px;
+                border-top: 1px solid $primary;
+            }
+        }
     }
 }

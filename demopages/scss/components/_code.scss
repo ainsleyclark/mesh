@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// _code.scss
+// This file contains all components for code blocks
+// -----------------------------------------------------------------------------
+
+pre {
+    background: rgba(238, 238, 238, 0.35);
+    border-radius: 3px;
+    padding: 10px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 0.8em;
+}
+
+code {
+    color: black;
+    text-shadow: 0 1px white;
+    font-family: $font-code;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    display: block;
+    line-height: 1.8em;
+}

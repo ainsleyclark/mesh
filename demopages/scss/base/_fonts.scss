@@ -3,6 +3,8 @@
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
 
-$font: 'Nunito', sans-serif;
+$font: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+$font-code: "Roboto Mono", Monaco, courier, monospace;

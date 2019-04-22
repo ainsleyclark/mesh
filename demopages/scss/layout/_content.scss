@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// _content.scss
+// This file contains styles for the content of the page (middle section).
+// -----------------------------------------------------------------------------
+
+.content {
+
+    @include media-desk {
+        padding-left: 240px;
+    }
+    @include media-hd {
+        padding-left: 40px;
+    }
+}

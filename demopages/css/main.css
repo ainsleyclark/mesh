@@ -18,8 +18,10 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
 html {
   line-height: 1.15;
   /* 1 */
@@ -382,12 +384,36 @@ ul {
 }
 
 html {
-  font-family: "Nunito", sans-serif;
-  color: #1f1f1f;
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+  color: #34495e;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin: 2.33333rem 0;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
 }
 
 p {
-  font-weight: 300;
+  line-height: 1.6em;
+  margin: 0.8em 0 -1.2em;
+  padding-bottom: 1.2em;
+  position: relative;
+}
+
+.hash:before {
+  content: "#";
+  position: absolute;
+  width: 25px;
+  margin-left: -25px;
+  color: #29b6f6;
 }
 
 /* ====================
@@ -396,6 +422,28 @@ p {
 /* ====================
     Components
     ==================== */
+pre {
+  background: rgba(238, 238, 238, 0.35);
+  border-radius: 3px;
+  padding: 10px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-size: 0.8em;
+}
+
+code {
+  color: black;
+  text-shadow: 0 1px white;
+  font-family: "Roboto Mono", Monaco, courier, monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  display: block;
+  line-height: 1.8em;
+}
+
 /* ====================
     Layout
     ==================== */
@@ -413,17 +461,13 @@ header.primary nav.primary ul {
 
 header.primary nav.primary ul li {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 header.primary nav.primary ul .download {
   border: 1px solid #ffffff;
   padding: 8px 30px;
   border-radius: 500px;
-}
-
-header.primary nav.primary ul .download a {
-  margin-top: 4px;
 }
 
 header.primary nav.primary ul .download img {
@@ -435,10 +479,11 @@ header.primary nav.primary ul a:hover {
 }
 
 .sidenav {
-  position: sticky;
+  position: fixed;
+  width: 320px;
   height: calc(100vh - 75px);
   border-right: 1px #e5e5e5 solid;
-  padding: 20px 0;
+  padding: 45px 45px 60px 45px;
 }
 
 .sidenav ul {
@@ -450,11 +495,45 @@ header.primary nav.primary ul a:hover {
   font-size: 16px;
 }
 
+.sidenav .sub-list a {
+  position: relative;
+}
+
+.sidenav .sub-list a li {
+  color: #999;
+  padding: 5px 0;
+}
+
+.sidenav .sub-list .active li {
+  color: #29b6f6;
+}
+
+.sidenav .sub-list .active::before {
+  content: "kjhkhkjhkjh";
+  position: absolute;
+  top: 15px;
+  left: -25px;
+  width: 15px;
+  border-top: 1px solid #29b6f6;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding-left: 240px;
+  }
+}
+
+@media (min-width: 1408px) {
+  .content {
+    padding-left: 40px;
+  }
+}
+
 /* ====================
     Pages
     ==================== */
 section.hero {
   height: calc(100vh - 75px);
   min-height: 500px;
-  background: #263238;
+  background: #2d283e;
 }

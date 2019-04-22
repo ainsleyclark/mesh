@@ -51,7 +51,7 @@ $isDownDirectory = $pageData['isDownDirectory'];
         Header
         ===================== -->
     <header class="primary d-flex align-items-center bg-blue-grey-darken-4">
-        <div class="container">
+        <div class="container-fullwidth">
             <div class="row">
                 <div class="col-6">
                     <div class="d-flex align-items-center">
