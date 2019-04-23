@@ -3,5 +3,15 @@
 // This file contains all styles related to the footer of the site.
 // -----------------------------------------------------------------------------
 
-footer.primary {
+footer {
+	height: $header-height;
+
+	.footer-icon {
+		width: 25px;
+		margin-right: 10px;
+	}
+
+	// &.home {
+	// 	width: 100%;
+	// }
 }

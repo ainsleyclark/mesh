@@ -10,7 +10,7 @@ header.primary {
 	z-index: 9999;
 
 	.logo {
-		width: 40px;
+		width: 45px;
 	}
 
 	nav.primary {
@@ -23,15 +23,14 @@ header.primary {
 			}
 
 			li {
-				font-weight: 300;
 				font-size: 14px;
 			}
 
 			.download {
 				border: 1px solid $primary;
-				padding: 8px 30px;
+				padding: 10px 32px;
 				border-radius: 500px;
-				
+
 				a {
 					color: $primary;
 				}

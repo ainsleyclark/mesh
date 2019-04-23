@@ -22,20 +22,24 @@
 	.sub-list {
 		a {
 			position: relative;
+			color: $light-grey;
+
 			li {
-				color: $light-grey;
 				padding: 5px 0;
+			}
+
+			@include on-event {
+				color: $primary;
 			}
 		}
 
 		.active {
 			li {
 				color: $primary;
-				//font-weight: 600;
 			}
 
 			&::before {
-				content: 'kjhkhkjhkjh';
+				content: '';
 				position: absolute;
 				top: 15px;
 				left: -25px;

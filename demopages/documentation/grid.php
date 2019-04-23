@@ -2,15 +2,11 @@
 
 //Page variables
 $pageData = [
-    'pageTitle' => '',
-    'pageDescription' => '',
-    'activePage' => '',
-    'ogImage' => '',
-    'isDownDirectory' => true,
-    'sideNavActive' => 'containers'
-];
-
-?>
+	'pageTitle' => 'Grid',
+	'pageDescription' => '',
+	'activePage' => 'grid',
+	'isDownDirectory' => true,
+]; ?>
 
 <?php include_once('../partials/header.php'); ?>
 <?php include_once('../partials/sidenav.php'); ?>
@@ -48,9 +44,6 @@ $pageData = [
                     <div class="img-cont p-relative my-3">
                         <img class="p-absolute" src="../assets/svg/browserwindow.svg" alt="Browser window">
                     </div>
-                    <div class="row">
-                        <div class="col-6 bg-red"></div>
-                    </div>
                 </div>
 
 
@@ -58,5 +51,6 @@ $pageData = [
         </div>
     </div>
 </section>
-<?php //include_once('../partials/smallnav.php'); ?>
-<?php //include_once('../partials/footer.php'); ?>
+
+<?php include_once('../partials/smallnav.php'); ?>
+<?php include_once('../partials/footer.php'); ?>

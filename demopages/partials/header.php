@@ -3,10 +3,12 @@
 //Website variables
 $websiteData = [
     'siteURL' => 'https://www.meshcsss.com',
-    'siteName' => 'mesh'
+    'siteName' => 'mesh',
+    'ogImage' => ''
 ];
 
 $isDownDirectory = $pageData['isDownDirectory'];
+$isHome = stripos($pageData['activePage'], 'home') === false;
 
 ?>
 
@@ -15,7 +17,7 @@ $isDownDirectory = $pageData['isDownDirectory'];
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php echo ($pageData['pageTitle']); ?></title>
+    <title>meshCSS | <?php echo ($pageData['pageTitle']); ?></title>
     <meta name="description" content="<?php echo ($pageData['pageDescription']); ?>">
     <link rel="canonical" href="<?php echo ($websiteData['siteURL']); ?>" />
     <!-- Open Graph -->
@@ -25,7 +27,7 @@ $isDownDirectory = $pageData['isDownDirectory'];
     <meta property="og:description" content="<?php echo ($pageData['pageDescription']); ?>">
     <meta property="og:url" content="<?php echo ($websiteData['siteURL']); ?>">
     <meta property="og:site_name" content="<?php echo ($websiteData['siteName']); ?>">
-    <meta property="og:image" content="<?php echo ($pageData['ogImage']); ?>">
+    <meta property="og:image" content="<?php echo ($websiteData['ogImage']); ?>">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="<?php echo ($pageData['pageDescription']); ?>">
@@ -35,11 +37,16 @@ $isDownDirectory = $pageData['isDownDirectory'];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="<?php if ($isDownDirectory) echo '../'; ?>css/mesh.css">
     <link rel="stylesheet" type="text/css" href="<?php if ($isDownDirectory) echo '../'; ?>css/main.css">
-    <!-- 
-    
-    Place favicon here !
-
-    -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <!--[if lte IE 9]>
@@ -50,31 +57,31 @@ $isDownDirectory = $pageData['isDownDirectory'];
     <!-- =====================
         Header
         ===================== -->
-    <header class="primary d-flex align-items-center">
-        <div class="container-fullwidth">
+    <header class="primary d-flex align-items-center b-b1-light <?php if($isHome !== false ) echo 'bg-white' ?>">
+        <div class="container-fullwidth px-4">
             <div class="row">
                 <div class="col-6">
-                    <div class="d-flex align-items-center">
+                    <a class="d-flex align-items-center" href="http://www.meshcss.com">
                         <div class="logo-cont">
-                            <img class="logo" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/meshlogo.svg" alt="mesh Logo">
+                            <img class="logo" src="<?php if ($isDownDirectory) echo '../'; ?>assets/svg/meshlogo.svg" alt="mesh Logo">
                         </div>
-                        <div class="text-cont ml-tab-3">
+                        <div class="text-cont">
                             <h5>meshCSS</h5>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-6 d-flex align-items-center justify-content-end">        
                     <nav class="primary">
                         <ul class="d-flex align-items-center my-0 t-uppercase">
-                            <li class="mx-3"><a href="/documentation">Documentation</a></li>
-                            <li class="mx-3"><a href="documentation.php">Contact</a></li>
-                            <li class="download d-flex align-items-center mx-3"><a href="documentation.php">Download</a><img class="ml-1" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/download.svg" alt="Downlod Icon"></li>
+                            <a class="hover" href="/documentation"><li class="mx-3">Documentation</li></a>
+                            <a class="hover" href="/documentation"><li class="mx-3">Contact</li></a>
+                            <li class="download d-flex align-items-center mx-3"><a href="documentation.php">Download</a><img class="ml-1" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/download-pink.svg" alt="Downlod Icon"></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div> 
     </header>
-    <div class="header-spacer"></div>
+    <?php if( stripos($pageData['activePage'], 'home') === false) echo '<div class="header-spacer"></div>' ?>
     <main>
 

@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// _smallnav.scss
+// This file contains all styles related to the small navigation for documentation.
+// -----------------------------------------------------------------------------
+
+.smallnav {
+	//For fixed class (js)
+
+	ul {
+		list-style-type: none;
+		width: 200px;
+
+		li,
+		a {
+			color: $light-grey;
+			font-weight: 300;
+			font-size: 14px;
+		}
+
+		li {
+			margin: 12px 0;
+		}
+	}
+
+	ul.community {
+		.icon {
+			width: 20px;
+		}
+	}
+
+	.table-of-contents {
+		.active {
+			color: $primary;
+		}
+	}
+}
+
+.smallnav.fixed {
+	position: fixed;
+	top: 100px;
+	margin-left: -1px;
+}

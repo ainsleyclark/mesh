@@ -353,6 +353,10 @@ body {
   margin: 0;
 }
 
+main {
+  position: relative;
+}
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -368,14 +372,18 @@ body {
 /**
  * Basic styles for links
  */
-a {
-  color: #ffffff;
+a,
+a:visited {
+  color: #34495e;
   text-decoration: none;
 }
 
-a:hover, a:active, a:focus {
-  color: #ffffff;
-  text-decoration: underline;
+a.hover {
+  transition: color 0.2s;
+}
+
+a.hover:hover, a.hover:active, a.hover:focus {
+  color: #ff2451;
 }
 
 ul {
@@ -388,19 +396,6 @@ html {
   color: #34495e;
 }
 
-h1 {
-  font-size: 2.2em;
-  margin: 2.33333rem 0;
-}
-
-h2 {
-  font-size: 1.6em;
-}
-
-h3 {
-  font-size: 1.4em;
-}
-
 p {
   line-height: 1.6em;
   margin: 0.8em 0 -1.2em;
@@ -409,11 +404,12 @@ p {
 }
 
 .hash:before {
-  content: '#';
+  content: url("../assets/svg/meshlogo.svg");
   position: absolute;
   width: 25px;
-  margin-left: -25px;
-  color: #FF2451;
+  margin-left: -30px;
+  margin-top: 4px;
+  color: #ff2451;
 }
 
 /* ====================
@@ -467,7 +463,7 @@ header.primary {
 }
 
 header.primary .logo {
-  width: 40px;
+  width: 45px;
 }
 
 header.primary nav.primary ul {
@@ -480,18 +476,17 @@ header.primary nav.primary ul a {
 }
 
 header.primary nav.primary ul li {
-  font-weight: 300;
   font-size: 14px;
 }
 
 header.primary nav.primary ul .download {
-  border: 1px solid #FF2451;
-  padding: 8px 30px;
+  border: 1px solid #ff2451;
+  padding: 10px 32px;
   border-radius: 500px;
 }
 
 header.primary nav.primary ul .download a {
-  color: #FF2451;
+  color: #ff2451;
 }
 
 header.primary nav.primary ul .download img {
@@ -525,24 +520,70 @@ header.primary nav.primary ul a:hover {
 
 .sidenav .sub-list a {
   position: relative;
+  color: #999;
 }
 
 .sidenav .sub-list a li {
-  color: #999;
   padding: 5px 0;
 }
 
+.sidenav .sub-list a:hover, .sidenav .sub-list a:active, .sidenav .sub-list a:focus {
+  color: #ff2451;
+}
+
 .sidenav .sub-list .active li {
-  color: #FF2451;
+  color: #ff2451;
 }
 
 .sidenav .sub-list .active::before {
-  content: 'kjhkhkjhkjh';
+  content: '';
   position: absolute;
   top: 15px;
   left: -25px;
   width: 15px;
-  border-top: 1px solid #FF2451;
+  border-top: 1px solid #ff2451;
+}
+
+.smallnav ul {
+  list-style-type: none;
+  width: 200px;
+}
+
+.smallnav ul li,
+.smallnav ul a {
+  color: #999;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.smallnav ul li {
+  margin: 12px 0;
+}
+
+.smallnav ul.community .icon {
+  width: 20px;
+}
+
+.smallnav .table-of-contents .active {
+  color: #ff2451;
+}
+
+.smallnav.fixed {
+  position: fixed;
+  top: 100px;
+  margin-left: -1px;
+}
+
+.content h1 {
+  font-size: 2.2em;
+}
+
+.content h2 {
+  font-size: 1.6em;
+}
+
+.content h3 {
+  font-size: 1.4em;
 }
 
 @media (min-width: 1024px) {
@@ -557,11 +598,38 @@ header.primary nav.primary ul a:hover {
   }
 }
 
+footer {
+  height: 75px;
+}
+
+footer .footer-icon {
+  width: 25px;
+  margin-right: 10px;
+}
+
 /* ====================
     Pages
     ==================== */
 section.hero {
   height: calc(100vh - 75px);
   min-height: 500px;
-  background: #2d283e;
+}
+
+section.hero .home-logo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+}
+
+section.hero .home-illusration {
+  transform: scale(1.3);
+}
+
+.home-background {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
 }

@@ -11,6 +11,10 @@ body {
 	margin: 0;
 }
 
+main {
+	position: relative;
+}
+
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
@@ -26,13 +30,17 @@ body {
 /**
  * Basic styles for links
  */
-a {
-	color: #ffffff; //!SET
+a,
+a:visited {
+	color: $text-color;
 	text-decoration: none;
+}
+
+a.hover {
+	transition: color 0.2s;
 
 	@include on-event {
-		color: #ffffff; //!SET
-		text-decoration: underline;
+		color: $primary;
 	}
 }
 
