@@ -4,41 +4,39 @@
 // -----------------------------------------------------------------------------
 
 pre {
-    background: rgba(238, 238, 238, 0.35);
-    border-radius: 3px;
-    padding: 10px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    font-size: 0.8em;
+	background: rgba(238, 238, 238, 0.35);
+	border-radius: 3px;
+	padding: 10px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	font-size: 0.8em;
 }
 
 code {
-    color: black;
-    text-shadow: 0 1px white;
-    font-family: $font-code;
-    direction: ltr;
-    text-align: left;
-    white-space: pre;
-    word-spacing: normal;
-    word-break: normal;
-    display: block;
-    line-height: 1.8em;
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: $font-code;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	display: block;
+	line-height: 1.8em;
 }
 
 .highlight {
-    
-    .html {
+	.html {
+		.name {
+			color: rgb(14, 176, 46);
+		}
 
-        .name {
-            color: rgb(14, 176, 46);
-        }
+		.attr {
+			color: #2b91af;
+		}
 
-        .attr {
-            color: #2B91AF;
-        }
-        
-        .tag {
-            color: #101094;
-        }
-    }
+		.tag {
+			color: #101094;
+		}
+	}
 }

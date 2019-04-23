@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.meshcss.com">
-    <img alt="mesh-logo" src="https://www.meshcss.com/assets/img/meshlogo.png" width="144">
+    <img alt="mesh-logo" src="https://www.meshcss.com/assets/img/meshlogo.svg" width="144">
   </a>
 </p>
 

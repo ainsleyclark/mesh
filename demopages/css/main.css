@@ -409,11 +409,11 @@ p {
 }
 
 .hash:before {
-  content: "#";
+  content: '#';
   position: absolute;
   width: 25px;
   margin-left: -25px;
-  color: #29b6f6;
+  color: #FF2451;
 }
 
 /* ====================
@@ -449,7 +449,7 @@ code {
 }
 
 .highlight .html .attr {
-  color: #2B91AF;
+  color: #2b91af;
 }
 
 .highlight .html .tag {
@@ -474,15 +474,24 @@ header.primary nav.primary ul {
   list-style-type: none;
 }
 
+header.primary nav.primary ul a {
+  color: #34495e;
+  letter-spacing: 1px;
+}
+
 header.primary nav.primary ul li {
   font-weight: 300;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 header.primary nav.primary ul .download {
-  border: 1px solid #ffffff;
+  border: 1px solid #FF2451;
   padding: 8px 30px;
   border-radius: 500px;
+}
+
+header.primary nav.primary ul .download a {
+  color: #FF2451;
 }
 
 header.primary nav.primary ul .download img {
@@ -524,27 +533,27 @@ header.primary nav.primary ul a:hover {
 }
 
 .sidenav .sub-list .active li {
-  color: #29b6f6;
+  color: #FF2451;
 }
 
 .sidenav .sub-list .active::before {
-  content: "kjhkhkjhkjh";
+  content: 'kjhkhkjhkjh';
   position: absolute;
   top: 15px;
   left: -25px;
   width: 15px;
-  border-top: 1px solid #29b6f6;
+  border-top: 1px solid #FF2451;
 }
 
 @media (min-width: 1024px) {
   .content {
-    padding-left: 240px;
+    padding-left: 400px;
   }
 }
 
 @media (min-width: 1408px) {
   .content {
-    padding-left: 40px;
+    padding-left: 80px;
   }
 }
 

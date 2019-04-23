@@ -14,20 +14,28 @@ header.primary {
 	}
 
 	nav.primary {
-
 		ul {
 			list-style-type: none;
 
+			a {
+				color: $text-color;
+				letter-spacing: 1px;
+			}
+
 			li {
 				font-weight: 300;
-				font-size: 13px;
+				font-size: 14px;
 			}
 
 			.download {
-				border: 1px solid $white;
+				border: 1px solid $primary;
 				padding: 8px 30px;
-                border-radius: 500px;
-                
+				border-radius: 500px;
+				
+				a {
+					color: $primary;
+				}
+
 				img {
 					width: 20px;
 				}

@@ -4,11 +4,10 @@
 // -----------------------------------------------------------------------------
 
 .content {
-
-    @include media-desk {
-        padding-left: 240px;
-    }
-    @include media-hd {
-        padding-left: 40px;
-    }
+	@include media-desk {
+		padding-left: 400px;
+	}
+	@include media-hd {
+		padding-left: 80px;
+	}
 }

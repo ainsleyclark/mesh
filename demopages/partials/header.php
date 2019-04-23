@@ -50,7 +50,7 @@ $isDownDirectory = $pageData['isDownDirectory'];
     <!-- =====================
         Header
         ===================== -->
-    <header class="primary d-flex align-items-center bg-blue-grey-darken-4">
+    <header class="primary d-flex align-items-center">
         <div class="container-fullwidth">
             <div class="row">
                 <div class="col-6">
@@ -59,16 +59,16 @@ $isDownDirectory = $pageData['isDownDirectory'];
                             <img class="logo" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/meshlogo.svg" alt="mesh Logo">
                         </div>
                         <div class="text-cont ml-tab-3">
-                            <h5 class="c-white">mesh</h5>
+                            <h5>meshCSS</h5>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 d-flex align-items-center justify-content-end">        
                     <nav class="primary">
                         <ul class="d-flex align-items-center my-0 t-uppercase">
-                            <li class="mx-2"><a href="/documentation">Documentation</a></li>
-                            <li class="mx-2"><a href="documentation.php">Contact</a></li>
-                            <li class="download d-flex align-items-center mx-2"><a href="documentation.php">Download</a><img class="ml-1" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/download.svg" alt="Downlod Icon"></li>
+                            <li class="mx-3"><a href="/documentation">Documentation</a></li>
+                            <li class="mx-3"><a href="documentation.php">Contact</a></li>
+                            <li class="download d-flex align-items-center mx-3"><a href="documentation.php">Download</a><img class="ml-1" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/download.svg" alt="Downlod Icon"></li>
                         </ul>
                     </nav>
                 </div>
