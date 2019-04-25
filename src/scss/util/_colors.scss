@@ -5,11 +5,8 @@
 
 @each $color-name, $hex in map-get($palette, colors) {
 	@each $attr-name, $attr in map-get($palette, attr) {
-
-
-			.#{$attr-name}-#{$color-name} {
-				#{$attr}: $hex;
-			}
-		
+		.#{$attr-name}-#{$color-name} {
+			#{$attr}: $hex;
+		}
 	}
 }

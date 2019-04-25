@@ -41,7 +41,7 @@
 }
 
 //Common Column Properties
-%column-props {
+@mixin column-props {
 	position: relative;
 	width: 100%;
 	padding-left: $gap-width;
@@ -50,11 +50,11 @@
 
 @each $modifier, $breakpoint in $grid-properties {
 	.col#{$modifier}-auto {
-		@extend %column-props;
+		@include column-props;
 	}
 	@for $i from 1 through $grid-columns {
 		.col#{$modifier}-#{$i} {
-			@extend %column-props;
+			@include column-props;
 		}
 	}
 }

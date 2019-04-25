@@ -1,1 +1,1 @@
-sass-lint -c ./config/.sass-lint.yaml '../**/*.scss' -v -q
+sass-lint -c ./config/.sass-lint.yaml 'src/**/*.scss' -v -q

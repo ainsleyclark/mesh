@@ -12,12 +12,9 @@
 @import 'abstracts/_mixins';
 @import 'abstracts/_variables';
 
-//Vendor
-// ==========================================================================
-// @import 'vendor/_reset';
-
 //Base
 // ==========================================================================
+// @import 'base/_reset';
 @import 'base/_global';
 
 //Grid

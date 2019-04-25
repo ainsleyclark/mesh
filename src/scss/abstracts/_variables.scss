@@ -78,8 +78,6 @@ $sizing-properties: (10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%) !default
 // 6. Colour
 // ==========================================================================
 
-
-
 $palette: (
 	colors: (
 		white: #ffffff,
@@ -90,7 +88,7 @@ $palette: (
 		info: #37abd4,
 		success: #37d43c,
 		warning: #ff7100,
-		danger: #ff3324,
+		danger: #ff3324
 	),
 	attr: (
 		c: 'color',
@@ -102,9 +100,8 @@ $palette: (
 // ==========================================================================
 
 //Font Stack
-$font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT',
-	'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma,
-	Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/* prettier-ignore */
+$font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Sizes
 $h1-fontsize: 3.5rem !default;

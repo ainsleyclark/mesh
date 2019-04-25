@@ -13,7 +13,7 @@
 		"lint": "./bin/lint"
 	},
 	"browserslist": [
-		"last 2 versions"
+		"last 1 versions"
 	],
 	"repository": {
 		"type": "git",
