@@ -58,5 +58,6 @@ rules:
   space-before-bang: 2
   space-before-colon: 2
   space-between-parens: 2
+  space-after-colon: true
   zero-unit:
     - 2

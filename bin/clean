@@ -1,1 +1,1 @@
-prettier "./**/*.{css,scss,html,json,js}" --write
+prettier "./**/*.{css,scss,html,json,js}" --write --ignore-path ./config/.prettierignore
