@@ -35,8 +35,8 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
     <meta name="twitter:image" content="<?php echo ($pageData['ogImage']); ?>">
     <!-- CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="<?php if ($isDownDirectory) echo '../'; ?>css/mesh.css">
-    <link rel="stylesheet" type="text/css" href="<?php if ($isDownDirectory) echo '../'; ?>css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/mesh.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/favicon-32x32.png">

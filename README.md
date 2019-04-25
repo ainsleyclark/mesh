@@ -65,19 +65,19 @@ Please email info@ainsleyclark.com if you have any questions, I will be more tha
 
 ### How to contribute:
 Any ideas are welcome. The majority of the utility classes are done so UI components are needed (remember CSS only!), including: 
-- ~~Cards~~
-- ~~Buttons~~
-- ~~Modals~~
+- ~~Cards~~ @kassuro
+- ~~Buttons~~ -- @nicholsk 
+- ~~Modals~~ -- @Ainsley
 - Toasts
 - Chips
 - Forms
-- ~~Nav~~
+- ~~Nav~~ -- @Stefario
 - Header
 - Hero Section
 - Tabs
-- ~~Tooltip~~ 
-- ~~Accordian~~
-- ~~Icons & Social~~
+- ~~Tooltip~~ -- @devonddunn
+- ~~Accordian~~ -- @devonddunn
+- ~~Icons & Social~~ I've forgotten!
 - Breadcrumbs
 - Pagination
 
