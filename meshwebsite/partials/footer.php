@@ -15,11 +15,11 @@ $isDownDirectory = $pageData['isDownDirectory'];
             <span>Version 1.0.0</span>
         </div>
         <div class="icon-cont mx-3 d-inline-flex align-items-center">
-            <img class="footer-icon" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/github-logo.svg" alt="Github logo">
+            <img class="footer-icon" src="/assets/icons/github-logo.svg" alt="Github logo">
             <a class="hover" href="https://github.com/ainsleyclark/mesh" target="_blank">Github</a>
         </div>
         <div class="icon-cont mx-3 d-inline-flex align-items-center">
-            <img class="footer-icon" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/chat.svg" alt="Github logo">
+            <img class="footer-icon" src="/assets/icons/chat.svg" alt="Github logo">
             <a class="hover" href="https://discordapp.com/channels/569873903237857300/569873903237857304" target="_blank">Community</a>
         </div>
         <div class="text-cont mx-3">
@@ -29,5 +29,5 @@ $isDownDirectory = $pageData['isDownDirectory'];
 </footer>
 
 </body>
-<?php if ($isDownDirectory) echo '<script src="../js/app.js"></script>' ?>
+<?php if ($isDownDirectory) echo '<script src="/js/app.js"></script>' ?>
 </html>

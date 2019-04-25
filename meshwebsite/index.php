@@ -5,9 +5,9 @@ $pageData = [
 	'pageTitle' => '',
 	'pageDescription' => '',
 	'activePage' => 'home',
-	'ogImage' => '',
-	'isDownDirectory' => false
-]; ?>
+]; 
+
+?>
 
 <?php include_once 'partials/header.php'; ?>
 

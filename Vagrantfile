@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   # config.vm.network "public_network"
 
   # Folder Settings
-  config.vm.synced_folder "./demopages/", "/var/www/html"
+  config.vm.synced_folder "./meshwebsite/", "/var/www/html"
   
   # Provision Settings
   config.vm.provision "shell", inline: <<-SHELL

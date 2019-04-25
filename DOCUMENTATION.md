@@ -427,7 +427,6 @@ Results in: ```border-top: 3px solid rgba(0, 0, 0, 0.3)```;
 - ```.br-bottom-left``` - Rounded corners on bottom left side of element
 - ```.br-bottom-right``` - Rounded corners on bottom right side of element
 
-
 ## Spacers
 Sometimes you want a lot more whitespace than margin can offer, which is why we have added some handy spacer classes to create whitespace between your elements. 
 

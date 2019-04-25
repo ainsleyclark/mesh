@@ -38,14 +38,14 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
     <link rel="stylesheet" type="text/css" href="/css/mesh.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/site.webmanifest">
-    <link rel="mask-icon" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="<?php if ($isDownDirectory) echo '../'; ?>assets/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
@@ -63,7 +63,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
                 <div class="col-6">
                     <a class="d-flex align-items-center" href="http://www.meshcss.com">
                         <div class="logo-cont">
-                            <img class="logo" src="<?php if ($isDownDirectory) echo '../'; ?>assets/svg/meshlogo.svg" alt="mesh Logo">
+                            <img class="logo" src="/assets/svg/meshlogo.svg" alt="mesh Logo">
                         </div>
                         <div class="text-cont">
                             <h5>meshCSS</h5>
@@ -75,7 +75,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
                         <ul class="d-flex align-items-center my-0 t-uppercase">
                             <a class="hover" href="/documentation"><li class="mx-3">Documentation</li></a>
                             <a class="hover" href="/documentation"><li class="mx-3">Contact</li></a>
-                            <li class="download d-flex align-items-center mx-3"><a href="documentation.php">Download</a><img class="ml-1" src="<?php if ($isDownDirectory) echo '../'; ?>assets/icons/download-pink.svg" alt="Downlod Icon"></li>
+                            <li class="download d-flex align-items-center mx-3"><a href="documentation.php">Download</a><img class="ml-1" src="/assets/icons/download-pink.svg" alt="Downlod Icon"></li>
                         </ul>
                     </nav>
                 </div>
