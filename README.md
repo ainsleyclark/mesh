@@ -67,7 +67,7 @@ Please email info@ainsleyclark.com if you have any questions, I will be more tha
 Any ideas are welcome. The majority of the utility classes are done so UI components are needed (remember CSS only!), including: 
 - ~~Cards~~ @kassuro
 - ~~Buttons~~ -- @nicholsk 
-- ~~Modals~~ -- @Ainsley
+- ~~Modals~~ -- @ainsleyc
 - Toasts
 - Chips
 - Forms
@@ -77,7 +77,7 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 - Tabs
 - ~~Tooltip~~ -- @devonddunn
 - ~~Accordian~~ -- @devonddunn
-- ~~Icons & Social~~ I've forgotten!
+- ~~Icons & Social~~ -- @nicholsk
 - Breadcrumbs
 - Pagination
 

@@ -3,19 +3,13 @@
 // Add colors via color variables, darken & lighen.
 // ==========================================================================
 
-@each $primary, $map in map-get($palette, colors) {
+@each $color-name, $hex in map-get($palette, colors) {
 	@each $attr-name, $attr in map-get($palette, attr) {
-		// @warn #{$map};
-		@each $class-name, $hex in $map {
-			@if $class-name == 'base' {
-				.#{$attr-name}-#{$primary} {
-					#{$attr}: $hex;
-				}
-			} @else {
-				.#{$attr-name}-#{$primary}-#{$class-name} {
-					#{$attr}: $hex;
-				}
+
+
+			.#{$attr-name}-#{$color-name} {
+				#{$attr}: $hex;
 			}
-		}
+		
 	}
 }
