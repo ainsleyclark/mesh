@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/Users/Ainsley/Desktop/Web/mesh/demopages","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/Ainsley/Desktop/Web/mesh","disabled":false,"__vagrantfile":true}}}
