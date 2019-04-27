@@ -3,8 +3,8 @@
 // Add colors via color variables, darken & lighen.
 // ==========================================================================
 
-@each $color-name, $hex in map-get($palette, colors) {
-	@each $attr-name, $attr in map-get($palette, attr) {
+@each $color-name, $hex in $palette {
+	@each $attr-name, $attr in $color-attr {
 		.#{$attr-name}-#{$color-name} {
 			#{$attr}: $hex;
 		}

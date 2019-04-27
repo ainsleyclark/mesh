@@ -9,7 +9,7 @@ $pageData = [
 
 ?>
 
-<?php include_once 'partials/header.php'; ?>
+<?php include_once('partials/header.php'); ?>
 
     <!-- Gradient Overlay -->
     <svg class="p-absolute home-background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 336.7" preserveAspectRatio="none">

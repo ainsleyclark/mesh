@@ -13,7 +13,7 @@
 //  7. Type
 //  8. Borders
 //	9. Spacers
-//
+//	10. Buttons
 //
 
 // 1. Grid
@@ -79,21 +79,21 @@ $sizing-properties: (10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%) !default
 // ==========================================================================
 
 $palette: (
-	colors: (
-		white: #ffffff,
-		black: #000000,
-		muted: #f8f8f8,
-		primary: #ff2451,
-		link: #3763d4,
-		info: #37abd4,
-		success: #37d43c,
-		warning: #ff7100,
-		danger: #ff3324
-	),
-	attr: (
-		c: 'color',
-		bg: 'background-color'
-	)
+	white: #ffffff,
+	black: #000000,
+	muted: #f8f8f8,
+	primary: #ff2451,
+	link: #3763d4,
+	info: #37abd4,
+	success: #37d43c,
+	warning: #ff7100,
+	danger: #ff3324
+) !default;
+
+//Color Attributes
+$color-attr: (
+	c: 'color',
+	bg: 'background-color'
 ) !default;
 
 // 7. Type
@@ -159,3 +159,16 @@ $border-width-3: 3px;
 $border-radius: 0.5em;
 $border-radius-small: 0.25em;
 $border-radius-large: 1;
+
+// 10. Buttons
+// ==========================================================================
+
+//Colours
+$button-disabled-color: rgb(157, 157, 157);
+
+//Padding
+$button-padding-small: 6px 20px;
+$button-padding-medium: 12px 30px;
+$button-padding-large: 18px 40px;
+$button-padding-round: 12px 40px;
+$button-font-size: 14px;

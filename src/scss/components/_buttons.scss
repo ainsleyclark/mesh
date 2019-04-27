@@ -1,111 +1,107 @@
-$colors: (
-  white: #FFFFFF,
-  basic: #D9D9D9,
-  primary: #FF2451,
-  success: #37D43C,
-  info: #37ABD4,
-  warning: #FF7100,
-  danger: #FF3324,
-  link: #3763D4
-);
+//_buttons.scss
+//
+// Button classes & styling with reference to palette.
+// ==========================================================================
 
-@function color($color-name) {
-    @return map-get($colors, $color-name);
-}
-
-// buttons
 .btn {
-  display: inline-block;
-  padding: 10px;
-  border-radius: none;
-  background-color: color(white);
-  border: 1px solid color(white);
-  cursor: pointer;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  transition: box-shadow .2s;
-  outline: none;
+	display: inline-block;
+	position: relative;
+	padding:  $button-padding-medium;
+	background: #ffffff;
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,.12);
+	outline: none;
+	border-radius: 3px;
+	font-size: $button-font-size;
+	text-transform: uppercase;
+	transition: border 0.1s;
+	transition-timing-function: box-shadow .2s cubic-bezier(.4,0,1,1), background-color .2s cubic-bezier(.4,0,.2,1);
+
+	&:hover {
+		border: 1px solid rgba(0,0,0,.25);
+	}
 }
+
 .btn:active {
-  box-shadow: inset 0 0 3px rgba(0,0,0,.2);
-}
-.btn-basic{
-  background-color: color(basic);
-  border: 1px solid color(basic);
-}
-.btn-basic:active {
-  background-color: darken(color(basic), 5%);
-}
-.btn-primary{
-  background-color: color(primary);
-  color: white;
-  border: 1px solid color(primary);
-}
-.btn-primary:active {
-  background-color: darken(color(primary), 20%);
-}
-.btn-success{
-  background-color: color(success);
-  color: white;
-  border: 1px solid color(success);
-}
-.btn-success:active {
-  background-color: darken(color(success), 10%);
-}
-.btn-info{
-  background-color: color(info);
-  color: white;
-  border: 1px solid color(info);
-}
-.btn-info:active {
-  background-color: darken(color(info), 10%);
-}
-.btn-warning{
-  background-color: color(warning);
-  color: white;
-  border: 1px solid color(warning);
-}
-.btn-warning:active {
-  background-color: darken(color(warning), 10%);
-}
-.btn-danger{
-  background-color: color(danger);
-  color: white;
-  border: 1px solid color(danger);
-}
-.btn-danger:active {
-  background-color: darken(color(danger), 10%);
-}
-.btn-link{
-  background-color: Transparent;
-  box-shadow: none;
-  border: none;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-  color: color(link);
-}
-.btn-link:hover{
-  text-decoration: underline;
-}
-.btn-link:active{
-  box-shadow: none;
+	border: 1px solid rgba(0,0,0,.55);
 }
 
-// btn sizes
-.btn-lg {
-  padding: 15px 30px;
-}
-.btn-md {
-  padding: 10px 15px;
-}
-.btn-sm {
-  padding: 6px 10px;
-}
-.btn-xs {
-  padding: 3px 8px;
+@each $color-name, $hex in $palette {
+	.btn.#{$color-name} {
+		background-color: $hex;
+		color: white;
+		border: 0;
+		transition: box-shadow 0.2s;
+		box-shadow: 0 2px 2px 0 rgba($hex,.14), 0 3px 1px -2px rgba($hex,.2), 0 1px 5px 0 rgba($hex,.12);
+		
+		&:hover, 
+		&:focus {
+			border: 0;
+			box-shadow: 0 14px 26px -12px rgba($hex,.42), 0 4px 23px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba($hex,.2);
+		}
+
+		&:active {
+			border: 0;
+			background-color: darken($hex, 10%);
+		}
+	} 
 }
 
-// full container length
-.btn-block {
-  width: 100%;
+/////////
+.btn-link {
+	background-color: Transparent;
+	box-shadow: 0;
+	border: 0;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	color: color(link);
+}
+
+.btn-link:hover {
+	text-decoration: underline;
+}
+
+.btn-link:active {
+	box-shadow: none;
+}
+
+// Button Sizes 
+.btn.small {
+	padding: $button-padding-small;
+	font-size: $button-font-size - 1px;
+}
+.btn.large {
+	padding: $button-padding-large;
+	font-size: $button-font-size + 1px;
+}
+
+
+// Other Button Mods
+.btn.round {
+	border-radius: 500px;
+	padding: $button-padding-round;
+}
+
+.btn.just-icon {
+	border-radius: 30px;
+	padding: 0;
+	height:45px;
+    min-width: 45px;
+	width: 45px;
+}
+
+.btn.disabled {
+	color: $button-disabled-color;
+
+	&:hover, 
+	&:focus {
+		border: 1px solid rgba(0,0,0,.12);
+		box-shadow: 0;
+	}
+	
+}
+
+.btn.block {
+	width: 100%;
 }
