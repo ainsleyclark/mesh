@@ -16,7 +16,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>meshCSS | <?php echo ($pageData['pageTitle']); ?></title>
+    <title><?php echo ($pageData['pageTitle']) . ' | ' ?>meshCSS</title>
     <meta name="description" content="<?php echo ($pageData['pageDescription']); ?>">
     <link rel="canonical" href="<?php echo ($websiteData['siteURL']); ?>" />
     <!-- Open Graph -->
@@ -62,7 +62,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
         <div class="container-fullwidth px-4">
             <div class="row">
                 <div class="col-6">
-                    <a class="d-flex align-items-center" href="http://www.meshcss.com">
+                    <a class="d-flex align-items-center" href="/">
                         <div class="logo-cont">
                             <img class="logo" src="/assets/svg/meshlogo.svg" alt="mesh Logo">
                         </div>
@@ -74,9 +74,9 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
                 <div class="col-6 d-flex align-items-center justify-content-end">        
                     <nav class="primary">
                         <ul class="d-flex align-items-center my-0 t-uppercase">
-                            <a class="hover" href="/documentation"><li class="mx-3">Documentation</li></a>
-                            <a class="hover" href="/documentation"><li class="mx-3">Contact</li></a>
-                            <li class="download d-flex align-items-center mx-3"><a href="documentation.php">Download</a><img class="ml-1" src="/assets/icons/download-pink.svg" alt="Downlod Icon"></li>
+                            <a class="hover" href="/documentation/getting-started"><li class="mx-3">Documentation</li></a>
+                            <a class="hover" href="/documentation/getting-started"><li class="mx-3">Contact</li></a>
+                            <a class="ml-3" href="documentation.php"><button class="btn rounded outline primary icon">Download<img class="ml-1" src="/assets/icons/download-pink.svg" alt="Downlod Icon"></button></a>
                         </ul>
                     </nav>
                 </div>

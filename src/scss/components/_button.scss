@@ -1,7 +1,10 @@
-//_buttons.scss
+//_button.scss
 //
 // Button classes & styling with reference to palette.
 // ==========================================================================
+
+//! NEED TO ADD DISABLED BUTTONS FOR ALL COLORS
+//! SORT OUT SPECIFICITY, THE COLOR CLASSES CANT OVERRIDE THE WHITE
 
 .btn {
 	display: inline-block;
@@ -14,21 +17,21 @@
 	border-radius: 3px;
 	font-size: $button-font-size;
 	text-transform: uppercase;
-	transition: border 0.1s;
-	line-height: 1.42857;
+	transition: border 0.1s cubic-bezier(0.4, 0, 1, 1);;
 	height: auto;
 	font-weight: 400;
-	transition-timing-function: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
 	&:hover,
 	&:focus {
 		border: 1px solid rgba(0, 0, 0, 0.25);
 	}
+
+	&:active {
+		color: #000000;
+		border: 1px solid rgba(0, 0, 0, 0.55);
+	}
 }
 
-.btn:active {
-	border: 1px solid rgba(0, 0, 0, 0.55);
-}
 
 // Coloured Buttons
 // ==========================================================================
@@ -37,8 +40,8 @@ $button-colors-map: map-merge($palette, $button-colors);
 
 %button-properties {
 	border: 0;
-	color: white;
-	transition: box-shadow 0.2s;
+	color: #ffffff;
+	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);;
 
 	&:hover,
 	&:focus {
@@ -51,8 +54,9 @@ $button-colors-map: map-merge($palette, $button-colors);
 }
 
 @each $color-name, $hex in $button-colors-map {
-	@if (to-lower-case(inspect($hex)) != '#ffffff') { // sass-lint:disable-line hex-notation
-		
+	@if (to-lower-case(inspect($hex)) != '#ffffff') {
+		// sass-lint:disable-line hex-notation
+
 		.btn.#{$color-name} {
 			@if (lightness($hex) > 80) {
 				color: #000000;
@@ -61,26 +65,34 @@ $button-colors-map: map-merge($palette, $button-colors);
 				@extend %button-properties;
 				background-color: $hex;
 				box-shadow: 0 2px 2px 0 rgba($hex, 0.14), 0 3px 1px -2px rgba($hex, 0.2), 0 1px 5px 0 rgba($hex, 0.12);
-	
+
 				&:hover,
 				&:focus {
 					box-shadow: 0 14px 26px -12px rgba($hex, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($hex, 0.2);
 				}
-	
+
 				&:active {
 					background-color: darken($hex, 10%);
 				}
 			} @else {
 				cursor: no-drop;
+				color: rgba(0, 0, 0, 0.5);
 
 				&:hover,
 				&:focus {
 					border: 1px solid rgba(0, 0, 0, 0.12);
 					box-shadow: 0;
+					color: rgba(0, 0, 0, 0.5);
 				}
 			}
 		}
 	}
+}
+
+.btn.simple {
+	background-color: transparent;
+	box-shadow: 0;
+	border: 0;
 }
 
 // Outlined Buttons
@@ -89,15 +101,11 @@ $button-colors-map: map-merge($palette, $button-colors);
 .btn.outline {
 	box-shadow: none;
 	background-color: transparent;
-	transition: all 0.2s;
+	transition: color, background-color 0.1s cubic-bezier(0.4, 0, 1, 1);;
 
 	&:hover,
 	&:focus {
 		box-shadow: none;
-	}
-
-	&:active {
-		background-color: transparent;
 	}
 }
 
@@ -107,8 +115,9 @@ $button-colors-map: map-merge($palette, $button-colors);
 		border: 1px solid $hex;
 
 		&:active {
-			border-color: darken($hex, 15%);
-			color: darken($hex, 15%);
+			background-color: darken($hex, 10%);
+			border-color: $hex;
+			color: #ffffff;
 		}
 
 		&:hover {
@@ -118,26 +127,10 @@ $button-colors-map: map-merge($palette, $button-colors);
 	}
 }
 
-/////////
-.btn-link {
-	background-color: Transparent;
-	box-shadow: 0;
-	border: 0;
-	cursor: pointer;
-	overflow: hidden;
-	outline: none;
-	color: color(link);
-}
-
-.btn-link:hover {
-	text-decoration: underline;
-}
-
-.btn-link:active {
-	box-shadow: none;
-}
 
 // Button Sizes
+// ==========================================================================
+
 .btn.small {
 	padding: $button-padding-small;
 	font-size: $button-font-size - 1px;
@@ -180,9 +173,18 @@ $button-colors-map: map-merge($palette, $button-colors);
 	height: 45px;
 	min-width: 45px;
 	width: 45px;
+
+	&.large {
+		width: 56px;
+		height: 56px;
+		min-width: 56px;
+
+		i {
+			font-size: 1.3rem;
+			line-height: 56px;
+		}
+	}
 }
-
-
 
 // Block Button
 // ==========================================================================
@@ -196,7 +198,7 @@ $button-colors-map: map-merge($palette, $button-colors);
 
 .btn.loading {
 	$self: &;
-	height: 41px;
+	height: 43px;
 	width: 112px;
 	transition: none;
 	pointer-events: none;
@@ -213,6 +215,37 @@ $button-colors-map: map-merge($palette, $button-colors);
 		animation-iteration-count: infinite;
 		animation-name: spinner;
 		animation-timing-function: linear;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -9px;
+		margin-top: -9px;
+	}
+
+	&.small {
+		height: 32px;
+		width: 78px;
+
+		&:after {
+			width: 14px;
+			height: 14px;
+			border-width: 1.5px;
+			margin-left: -7px;
+			margin-top: -7px;
+		}
+	}
+
+	&.large {
+		height: 59px;
+		width: 123px;
+
+		&:after {
+			width: 26px;
+			height: 26px;
+			border-width: 3px;
+			margin-left: -13px;
+			margin-top: -13px;
+		}
 	}
 
 	@keyframes spinner {
@@ -229,15 +262,14 @@ $button-colors-map: map-merge($palette, $button-colors);
 	}
 }
 
-
 %white-spinner {
 	border-color: #ffffff;
 	border-right-color: transparent;
 }
 
-
 @each $color-name, $hex in $palette {
-	@if (to-lower-case(inspect($hex)) != '#ffffff' and to-lower-case(inspect($hex)) != '#000000') { // sass-lint:disable-line hex-notation
+	@if (to-lower-case(inspect($hex)) != '#ffffff' and to-lower-case(inspect($hex)) != '#000000') {
+		// sass-lint:disable-line hex-notation
 		.btn.loading.#{$color-name}:after {
 			@extend %white-spinner;
 		}

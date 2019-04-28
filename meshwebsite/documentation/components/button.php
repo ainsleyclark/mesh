@@ -1,4 +1,16 @@
-<?php include_once('../partials/header.php'); ?>
+<?php
+
+//Page variables
+$pageData = [
+	'pageTitle' => 'Button',
+	'pageDescription' => '',
+	'activePage' => 'button',
+]; 
+
+?>
+
+<?php include_once('../../partials/header.php'); ?>
+<?php include_once('../../partials/sidenav.php'); ?>
 
 <div class="container">
     <div class="row justify-content-center t-center">
@@ -12,13 +24,14 @@
                     <button class="btn light mx-1">Light</button>
                     <button class="btn dark mx-1">Dark</button>
                     <button class="btn black mx-1">Black</button>
+                    <button class="btn simple mx-1">Simple</button>
                 </div>
             </div>
 
             <h5>Coloured Buttons:</h5>
             <div class="d-flex justify-content-center">
                 <div class="button-cont mx-auto my-4">
-                    <button class="btn primary mx-1">Primary</button>
+                    <button class="btn primary c-black mx-1">Primary</button>
                     <button class="btn info mx-1">Info</button>
                     <button class="btn success mx-1">Success</button>
                     <button class="btn warning mx-1">Warning</button>
@@ -51,7 +64,7 @@
 
             <h5>Icon Buttons:</h5>
             <div class="d-flex justify-content-center align-items-center">
-                <div class="button-cont mx-auto my-4 d-flex align-items-start">
+                <div class="button-cont mx-auto my-4 d-flex align-items-start flex-column flex-desk-row">
                     <button class="btn icon primary mx-1">
                         <i class="fas fa-hashtag"></i>
                         <span>With Icon</span>
@@ -72,9 +85,8 @@
                         <span>With Icon</span>
                         <i class="fas fa-hashtag fa-2x"></i>
                     </button>
-                    <button class="btn just-icon primary mx-1">
-                        <i class="fas fa-hashtag"></i>
-                    </button>
+                    <button class="btn just-icon primary mx-1"><i class="fas fa-hashtag"></i></button>
+                    <button class="btn just-icon large primary mx-1"><i class="fas fa-hashtag"></i></button>
                 </div>
             </div>
 
@@ -99,6 +111,8 @@
                 <button class="btn loading warning mx-1"></button>
                 <button class="btn loading danger mx-1"></button>
                 <button class="btn loading link mx-1"></button>
+                <button class="btn loading small link mx-1"></button>
+                <button class="btn loading large link mx-1"></button>
             </div>
         </div>
 

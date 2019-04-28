@@ -1,13 +1,21 @@
 //_alerts.scss
 //
-// Alerts for mesh, different colours.
+// Alerts for mesh, different colours & fullwidth etc.
 // ==========================================================================
 
-// .alert {
-//     border: 0;
-//     border-radius: 0;
-//     position: relative;
-//     padding: 20px 15px;
-//     line-height: 20px;
-//     margin-bottom: 20px;
-// }
+.alert {
+    border: 0;
+    border-radius: 0;
+    position: relative;
+    padding: 20px 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+
+.alert.success {
+    background-color: #55b559;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 12px 20px -10px rgba(85,181,89,.28), 0 4px 20px 0 rgba(0,0,0,.12), 0 7px 8px -5px rgba(85,181,89,.2);
+}

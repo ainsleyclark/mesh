@@ -15,10 +15,11 @@ $tableOfContents = [
     'sass' => 'Source Files (SCSS)',
     'npm' => 'npm'
 ];
+
 ?>
 
-<?php include_once('../partials/header.php'); ?>
-<?php include_once('../partials/sidenav.php'); ?>
+<?php include_once('../../partials/header.php'); ?>
+<?php include_once('../../partials/sidenav.php'); ?>
 
 <section class="content">
     <div class="container">
@@ -58,12 +59,12 @@ $tableOfContents = [
                 </div>
             </div><!-- /Col -->
             <div class="col-2">
-                <?php include_once('../partials/smallnav.php') ?>
+                <?php include_once('../../partials/smallnav.php') ?>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
-                <?php include_once('../partials/footer.php') ?>
+                <?php include_once('../../partials/footer.php') ?>
             </div>
         </div><!-- /Row -->
     </div><!-- /Container -->

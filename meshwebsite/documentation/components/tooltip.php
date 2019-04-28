@@ -2,12 +2,9 @@
 
 //Page variables
 $pageData = [
-    'pageTitle' => '',
+    'pageTitle' => 'Alert',
     'pageDescription' => '',
-    'activePage' => '',
-    'ogImage' => '',
-    'isDownDirectory' => true,
-    'sideNavActive' => 'intro'
+    'activePage' => 'intro',
 ];
 
 ?>
