@@ -41,17 +41,7 @@ $grid-properties: (
 // 2. Display
 // ==========================================================================
 
-$display-properties: (
-	none,
-	inline,
-	inline-block,
-	block,
-	flex,
-	inline-flex,
-	table,
-	table-row,
-	table-cell
-) !default;
+$display-properties: (none, inline, inline-block, block, flex, inline-flex, table, table-row, table-cell) !default;
 
 // 3. Spacing
 // ==========================================================================
@@ -100,7 +90,6 @@ $color-attr: (
 // ==========================================================================
 
 //Font Stack
-/* prettier-ignore */
 $font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Sizes
@@ -121,25 +110,7 @@ $point-size: $range / $responsive-text-points !default;
 // 9. Spacers
 // ==========================================================================
 
-$spacer-properties: (
-	5px,
-	10px,
-	15px,
-	20px,
-	25px,
-	30px,
-	35px,
-	40px,
-	45px,
-	50px,
-	75px,
-	100px,
-	150px,
-	200px,
-	300px,
-	400px,
-	500px
-) !default;
+$spacer-properties: (5px, 10px, 15px, 20px, 25px, 30px, 35px, 40px, 45px, 50px, 75px, 100px, 150px, 200px, 300px, 400px, 500px) !default;
 
 // 9. Borders
 // ==========================================================================
@@ -164,7 +135,11 @@ $border-radius-large: 1;
 // ==========================================================================
 
 //Colours
-$button-disabled-color: rgb(157, 157, 157);
+$button-colors: (
+	light: #e8e8e8,
+	dark: #363636,
+	disabled: rgb(157, 157, 157)
+);
 
 //Padding
 $button-padding-small: 6px 20px;

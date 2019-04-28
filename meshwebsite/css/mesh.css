@@ -1,4 +1,3 @@
-/* prettier-ignore */
 html {
   box-sizing: border-box;
 }
@@ -64,455 +63,7 @@ body {
   padding-right: 0;
 }
 
-.col-auto {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-1 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-2 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-3 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-4 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-5 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-6 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-7 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-8 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-9 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-10 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-11 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-12 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-auto {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-1 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-2 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-3 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-4 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-5 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-6 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-7 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-8 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-9 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-10 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-11 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-mob-12 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-auto {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-1 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-2 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-3 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-4 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-5 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-6 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-7 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-8 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-9 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-10 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-11 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-tab-12 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-auto {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-1 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-2 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-3 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-4 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-5 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-6 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-7 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-8 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-9 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-10 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-11 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-desk-12 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-auto {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-1 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-2 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-3 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-4 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-5 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-6 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-7 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-8 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-9 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-10 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-11 {
-  position: relative;
-  width: 100%;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.col-hd-12 {
+.col-auto, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-mob-auto, .col-mob-1, .col-mob-2, .col-mob-3, .col-mob-4, .col-mob-5, .col-mob-6, .col-mob-7, .col-mob-8, .col-mob-9, .col-mob-10, .col-mob-11, .col-mob-12, .col-tab-auto, .col-tab-1, .col-tab-2, .col-tab-3, .col-tab-4, .col-tab-5, .col-tab-6, .col-tab-7, .col-tab-8, .col-tab-9, .col-tab-10, .col-tab-11, .col-tab-12, .col-desk-auto, .col-desk-1, .col-desk-2, .col-desk-3, .col-desk-4, .col-desk-5, .col-desk-6, .col-desk-7, .col-desk-8, .col-desk-9, .col-desk-10, .col-desk-11, .col-desk-12, .col-hd-auto, .col-hd-1, .col-hd-2, .col-hd-3, .col-hd-4, .col-hd-5, .col-hd-6, .col-hd-7, .col-hd-8, .col-hd-9, .col-hd-10, .col-hd-11, .col-hd-12 {
   position: relative;
   width: 100%;
   padding-left: 0.75rem;
@@ -4692,10 +4243,13 @@ button[data-tool-tip] {
   font-size: 14px;
   text-transform: uppercase;
   transition: border 0.1s;
+  line-height: 1.42857;
+  height: auto;
+  font-weight: 400;
   transition-timing-function: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
 
@@ -4703,166 +4257,308 @@ button[data-tool-tip] {
   border: 1px solid rgba(0, 0, 0, 0.55);
 }
 
-.btn.white {
-  background-color: #ffffff;
+.btn.black, .btn.muted, .btn.primary, .btn.link, .btn.info, .btn.success, .btn.warning, .btn.danger, .btn.light, .btn.dark {
+  border: 0;
   color: white;
-  border: 0;
   transition: box-shadow 0.2s;
-  box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.14), 0 3px 1px -2px rgba(255, 255, 255, 0.2), 0 1px 5px 0 rgba(255, 255, 255, 0.12);
 }
 
-.btn.white:hover, .btn.white:focus {
+.btn.black:hover, .btn.muted:hover, .btn.primary:hover, .btn.link:hover, .btn.info:hover, .btn.success:hover, .btn.warning:hover, .btn.danger:hover, .btn.light:hover, .btn.dark:hover, .btn.black:focus, .btn.muted:focus, .btn.primary:focus, .btn.link:focus, .btn.info:focus, .btn.success:focus, .btn.warning:focus, .btn.danger:focus, .btn.light:focus, .btn.dark:focus {
   border: 0;
-  box-shadow: 0 14px 26px -12px rgba(255, 255, 255, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 255, 255, 0.2);
 }
 
-.btn.white:active {
+.btn.black:active, .btn.muted:active, .btn.primary:active, .btn.link:active, .btn.info:active, .btn.success:active, .btn.warning:active, .btn.danger:active, .btn.light:active, .btn.dark:active {
   border: 0;
-  background-color: #e6e6e6;
 }
 
 .btn.black {
   background-color: #000000;
-  color: white;
-  border: 0;
-  transition: box-shadow 0.2s;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .btn.black:hover, .btn.black:focus {
-  border: 0;
   box-shadow: 0 14px 26px -12px rgba(0, 0, 0, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .btn.black:active {
-  border: 0;
   background-color: black;
 }
 
 .btn.muted {
+  color: #000000;
   background-color: #f8f8f8;
-  color: white;
-  border: 0;
-  transition: box-shadow 0.2s;
   box-shadow: 0 2px 2px 0 rgba(248, 248, 248, 0.14), 0 3px 1px -2px rgba(248, 248, 248, 0.2), 0 1px 5px 0 rgba(248, 248, 248, 0.12);
 }
 
 .btn.muted:hover, .btn.muted:focus {
-  border: 0;
   box-shadow: 0 14px 26px -12px rgba(248, 248, 248, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(248, 248, 248, 0.2);
 }
 
 .btn.muted:active {
-  border: 0;
   background-color: #dfdfdf;
 }
 
 .btn.primary {
   background-color: #ff2451;
-  color: white;
-  border: 0;
-  transition: box-shadow 0.2s;
   box-shadow: 0 2px 2px 0 rgba(255, 36, 81, 0.14), 0 3px 1px -2px rgba(255, 36, 81, 0.2), 0 1px 5px 0 rgba(255, 36, 81, 0.12);
 }
 
 .btn.primary:hover, .btn.primary:focus {
-  border: 0;
   box-shadow: 0 14px 26px -12px rgba(255, 36, 81, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 36, 81, 0.2);
 }
 
 .btn.primary:active {
-  border: 0;
   background-color: #f00031;
 }
 
 .btn.link {
   background-color: #3763d4;
-  color: white;
-  border: 0;
-  transition: box-shadow 0.2s;
   box-shadow: 0 2px 2px 0 rgba(55, 99, 212, 0.14), 0 3px 1px -2px rgba(55, 99, 212, 0.2), 0 1px 5px 0 rgba(55, 99, 212, 0.12);
 }
 
 .btn.link:hover, .btn.link:focus {
-  border: 0;
   box-shadow: 0 14px 26px -12px rgba(55, 99, 212, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(55, 99, 212, 0.2);
 }
 
 .btn.link:active {
-  border: 0;
   background-color: #264db2;
 }
 
 .btn.info {
   background-color: #37abd4;
-  color: white;
-  border: 0;
-  transition: box-shadow 0.2s;
   box-shadow: 0 2px 2px 0 rgba(55, 171, 212, 0.14), 0 3px 1px -2px rgba(55, 171, 212, 0.2), 0 1px 5px 0 rgba(55, 171, 212, 0.12);
 }
 
 .btn.info:hover, .btn.info:focus {
-  border: 0;
   box-shadow: 0 14px 26px -12px rgba(55, 171, 212, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(55, 171, 212, 0.2);
 }
 
 .btn.info:active {
-  border: 0;
   background-color: #268db2;
 }
 
 .btn.success {
   background-color: #37d43c;
-  color: white;
-  border: 0;
-  transition: box-shadow 0.2s;
   box-shadow: 0 2px 2px 0 rgba(55, 212, 60, 0.14), 0 3px 1px -2px rgba(55, 212, 60, 0.2), 0 1px 5px 0 rgba(55, 212, 60, 0.12);
 }
 
 .btn.success:hover, .btn.success:focus {
-  border: 0;
   box-shadow: 0 14px 26px -12px rgba(55, 212, 60, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(55, 212, 60, 0.2);
 }
 
 .btn.success:active {
-  border: 0;
   background-color: #26b22b;
 }
 
 .btn.warning {
   background-color: #ff7100;
-  color: white;
-  border: 0;
-  transition: box-shadow 0.2s;
   box-shadow: 0 2px 2px 0 rgba(255, 113, 0, 0.14), 0 3px 1px -2px rgba(255, 113, 0, 0.2), 0 1px 5px 0 rgba(255, 113, 0, 0.12);
 }
 
 .btn.warning:hover, .btn.warning:focus {
-  border: 0;
   box-shadow: 0 14px 26px -12px rgba(255, 113, 0, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 113, 0, 0.2);
 }
 
 .btn.warning:active {
-  border: 0;
   background-color: #cc5a00;
 }
 
 .btn.danger {
   background-color: #ff3324;
-  color: white;
-  border: 0;
-  transition: box-shadow 0.2s;
   box-shadow: 0 2px 2px 0 rgba(255, 51, 36, 0.14), 0 3px 1px -2px rgba(255, 51, 36, 0.2), 0 1px 5px 0 rgba(255, 51, 36, 0.12);
 }
 
 .btn.danger:hover, .btn.danger:focus {
-  border: 0;
   box-shadow: 0 14px 26px -12px rgba(255, 51, 36, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(255, 51, 36, 0.2);
 }
 
 .btn.danger:active {
-  border: 0;
   background-color: #f01000;
+}
+
+.btn.light {
+  color: #000000;
+  background-color: #e8e8e8;
+  box-shadow: 0 2px 2px 0 rgba(232, 232, 232, 0.14), 0 3px 1px -2px rgba(232, 232, 232, 0.2), 0 1px 5px 0 rgba(232, 232, 232, 0.12);
+}
+
+.btn.light:hover, .btn.light:focus {
+  box-shadow: 0 14px 26px -12px rgba(232, 232, 232, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(232, 232, 232, 0.2);
+}
+
+.btn.light:active {
+  background-color: #cfcfcf;
+}
+
+.btn.dark {
+  background-color: #363636;
+  box-shadow: 0 2px 2px 0 rgba(54, 54, 54, 0.14), 0 3px 1px -2px rgba(54, 54, 54, 0.2), 0 1px 5px 0 rgba(54, 54, 54, 0.12);
+}
+
+.btn.dark:hover, .btn.dark:focus {
+  box-shadow: 0 14px 26px -12px rgba(54, 54, 54, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(54, 54, 54, 0.2);
+}
+
+.btn.dark:active {
+  background-color: #1d1d1d;
+}
+
+.btn.disabled {
+  cursor: no-drop;
+}
+
+.btn.disabled:hover, .btn.disabled:focus {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0;
+}
+
+.btn.outline {
+  box-shadow: none;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+.btn.outline:hover, .btn.outline:focus {
+  box-shadow: none;
+}
+
+.btn.outline:active {
+  background-color: transparent;
+}
+
+.btn.white.outline {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.btn.white.outline:active {
+  border-color: #d9d9d9;
+  color: #d9d9d9;
+}
+
+.btn.white.outline:hover {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+.btn.black.outline {
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+.btn.black.outline:active {
+  border-color: black;
+  color: black;
+}
+
+.btn.black.outline:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.btn.muted.outline {
+  color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+}
+
+.btn.muted.outline:active {
+  border-color: #d2d2d2;
+  color: #d2d2d2;
+}
+
+.btn.muted.outline:hover {
+  color: #ffffff;
+  background-color: #f8f8f8;
+}
+
+.btn.primary.outline {
+  color: #ff2451;
+  border: 1px solid #ff2451;
+}
+
+.btn.primary.outline:active {
+  border-color: #d7002c;
+  color: #d7002c;
+}
+
+.btn.primary.outline:hover {
+  color: #ffffff;
+  background-color: #ff2451;
+}
+
+.btn.link.outline {
+  color: #3763d4;
+  border: 1px solid #3763d4;
+}
+
+.btn.link.outline:active {
+  border-color: #22449d;
+  color: #22449d;
+}
+
+.btn.link.outline:hover {
+  color: #ffffff;
+  background-color: #3763d4;
+}
+
+.btn.info.outline {
+  color: #37abd4;
+  border: 1px solid #37abd4;
+}
+
+.btn.info.outline:active {
+  border-color: #227d9d;
+  color: #227d9d;
+}
+
+.btn.info.outline:hover {
+  color: #ffffff;
+  background-color: #37abd4;
+}
+
+.btn.success.outline {
+  color: #37d43c;
+  border: 1px solid #37d43c;
+}
+
+.btn.success.outline:active {
+  border-color: #229d26;
+  color: #229d26;
+}
+
+.btn.success.outline:hover {
+  color: #ffffff;
+  background-color: #37d43c;
+}
+
+.btn.warning.outline {
+  color: #ff7100;
+  border: 1px solid #ff7100;
+}
+
+.btn.warning.outline:active {
+  border-color: #b34f00;
+  color: #b34f00;
+}
+
+.btn.warning.outline:hover {
+  color: #ffffff;
+  background-color: #ff7100;
+}
+
+.btn.danger.outline {
+  color: #ff3324;
+  border: 1px solid #ff3324;
+}
+
+.btn.danger.outline:active {
+  border-color: #d70f00;
+  color: #d70f00;
+}
+
+.btn.danger.outline:hover {
+  color: #ffffff;
+  background-color: #ff3324;
 }
 
 .btn-link {
@@ -4893,9 +4589,25 @@ button[data-tool-tip] {
   font-size: 15px;
 }
 
-.btn.round {
+.btn.rounded {
   border-radius: 500px;
   padding: 12px 40px;
+}
+
+.btn.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.icon i:first-child:not(:last-child) {
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.btn.icon i:last-child:not(:first-child) {
+  margin-left: 5px;
+  margin-right: 0;
 }
 
 .btn.just-icon {
@@ -4906,15 +4618,45 @@ button[data-tool-tip] {
   width: 45px;
 }
 
-.btn.disabled {
-  color: #9d9d9d;
-}
-
-.btn.disabled:hover, .btn.disabled:focus {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0;
-}
-
 .btn.block {
   width: 100%;
+}
+
+.btn.loading {
+  height: 41px;
+  width: 112px;
+  transition: none;
+  pointer-events: none;
+}
+
+.btn.loading:after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+  animation-name: spinner;
+  animation-timing-function: linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn.loading:hover {
+  box-shadow: none;
+}
+
+.btn.loading.muted:after, .btn.loading.primary:after, .btn.loading.link:after, .btn.loading.info:after, .btn.loading.success:after, .btn.loading.warning:after, .btn.loading.danger:after {
+  border-color: #ffffff;
+  border-right-color: transparent;
 }

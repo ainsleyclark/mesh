@@ -7,7 +7,6 @@ $websiteData = [
     'ogImage' => ''
 ];
 
-$isDownDirectory = $pageData['isDownDirectory'];
 $isHome = stripos($pageData['activePage'], 'home') === false;
 
 ?>
@@ -37,8 +36,8 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/mesh.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <!-- //! Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
