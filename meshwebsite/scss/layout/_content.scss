@@ -18,15 +18,10 @@
 	}
 
 	@include media-desk {
-		margin-left: 320px;
+		padding-left: 320px;
 
 		.container-fullwidth {
 			max-width: 1280px;
-			//width: calc(100vw - 320px);
 		}
 	}
-
-	// @include media-hd {
-	// 	padding-left: 80px;
-	// }
 }

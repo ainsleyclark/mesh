@@ -4,7 +4,7 @@ $activeClass = $pageData['activePage'];
 
 ?>
 
-<div class="sidenav">
+<aside class="sidenav">
     <h5>Documentation</h5>
     <ul class="main-list color-black">
         <!-- Getting Started -->
@@ -53,6 +53,6 @@ $activeClass = $pageData['activePage'];
             </ul>
         </li>
     </ul>
-</div>
+</aside>
 
 

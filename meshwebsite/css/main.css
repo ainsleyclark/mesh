@@ -510,6 +510,8 @@ header.primary nav.primary ul .download:hover svg path {
   border-right: 1px #e5e5e5 solid;
   padding: 45px 45px 60px 45px;
   overflow: scroll;
+  transform: translateX(-100%);
+  transition: transform 1s;
 }
 
 .sidenav ul {
@@ -547,13 +549,19 @@ header.primary nav.primary ul .download:hover svg path {
   border-top: 1px solid #ff2451;
 }
 
+@media (min-width: 1024px) {
+  .sidenav {
+    transform: translateX(0%);
+  }
+}
+
 .smallnav-cont {
   top: 150px;
 }
 
 .smallnav-cont ul {
   list-style-type: none;
-  width: 200px;
+  max-width: 200px;
 }
 
 .smallnav-cont ul li,
@@ -595,7 +603,7 @@ header.primary nav.primary ul .download:hover svg path {
 
 @media (min-width: 1024px) {
   .content {
-    margin-left: 320px;
+    padding-left: 320px;
   }
   .content .container-fullwidth {
     max-width: 1280px;
