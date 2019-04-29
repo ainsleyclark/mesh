@@ -5,6 +5,7 @@ $pageData = [
     'pageTitle' => 'Tooltip',
     'pageDescription' => '',
     'activePage' => 'tooltip',
+    'parentDirectory' => basename(__DIR__)
 ];
 
 ?>

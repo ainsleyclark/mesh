@@ -27,11 +27,11 @@ if ($pageData['parentDirectory']) {
             </li>
             <li class="d-flex align-items-center">
                 <img class="icon" src="/assets/icons/danger.svg" alt="Warning icon">
-                <a href="" class="hover ml-1">Report a problem</a>
+                <a href="https://github.com/ainsleyclark/mesh/issues" class="hover ml-1">Report a problem</a>
             </li>
             <li class="d-flex align-items-center">
                 <img class="icon" src="/assets/icons/chat-grey.svg" alt="Community icon">
-                <a href="https://discordapp.com/channels/569873903237857300/569873903237857304" target="_blank" class="hover ml-1">Ask the commnity</a>
+                <a href="https://discord.gg/geBW7CN" target="_blank" class="hover ml-1">Ask the commnity</a>
             </li>
         </ul>
     </div>
