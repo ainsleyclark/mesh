@@ -40,8 +40,10 @@ $pageData = [
                 <div class="col-12 col-desk-5 order-last order-desk-first">
                     <div class="d-flex justify-content-center align-items-center w-100 flex-column">
                         <div class="text-cont t-center t-desk-left">
-                            <h1 class="my-2 ">meshCSS</h1>
-                            <div class="lead pr-5">A blazingly fast, versatile, pure CSS open source framework with a modular approach to a responsive grid system and a vast amount of utilities.</div>
+                            <h1 class="my-0">meshCSS</h1>
+                            <div class="lead pr-5 mt-3">A blazingly fast, versatile, pure CSS open source framework with a modular approach to a responsive grid system and a vast amount of utilities.</div>
+                            <a href="/documentation/getting-started"><button class="btn rounded primary t-initial mt-4 c-black">Get Started with mesh</button></a>
+                            <a href="https://github.com/ainsleyclark/mesh" target="_blank"><button class="btn rounded outline primary t-initial mt-4 mx-2">View on Github</button></a>
                         </div>
                     </div>
                 </div>

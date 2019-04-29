@@ -479,24 +479,6 @@ header.primary nav.primary ul li {
   font-size: 14px;
 }
 
-header.primary nav.primary ul .download {
-  border: 1px solid #ff2451;
-  padding: 10px 32px;
-  border-radius: 500px;
-}
-
-header.primary nav.primary ul .download a {
-  color: #ff2451;
-}
-
-header.primary nav.primary ul .download img {
-  width: 20px;
-}
-
-header.primary nav.primary ul a:hover {
-  text-decoration: none;
-}
-
 .header-spacer {
   height: 75px;
 }

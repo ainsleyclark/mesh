@@ -5,11 +5,12 @@ $pageData = [
 	'pageTitle' => 'Grid',
 	'pageDescription' => '',
 	'activePage' => 'grid',
-	'isDownDirectory' => true,
-]; ?>
+]; 
 
-<?php include_once('../partials/header.php'); ?>
-<?php include_once('../partials/sidenav.php'); ?>
+?>
+
+<?php include_once('../../partials/header.php'); ?>
+<?php include_once('../../partials/sidenav.php'); ?>
 
 
 <section class="content">

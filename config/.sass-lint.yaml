@@ -28,7 +28,7 @@ rules:
   empty-line-between-blocks:
     - 0
   # Extends cause trouble
-  no-extends: 2
+  no-extends: 0
   mixin-name-format:
     - 2
     -

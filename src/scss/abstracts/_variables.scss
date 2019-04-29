@@ -13,7 +13,9 @@
 //  7. Type
 //  8. Borders
 //	9. Spacers
-//	10. Buttons
+//	10. Alerts
+//	11. Buttons
+//	10. Cards
 //
 
 // 1. Grid
@@ -41,17 +43,7 @@ $grid-properties: (
 // 2. Display
 // ==========================================================================
 
-$display-properties: (
-	none,
-	inline,
-	inline-block,
-	block,
-	flex,
-	inline-flex,
-	table,
-	table-row,
-	table-cell
-) !default;
+$display-properties: (none, inline, inline-block, block, flex, inline-flex, table, table-row, table-cell) !default;
 
 // 3. Spacing
 // ==========================================================================
@@ -81,13 +73,13 @@ $sizing-properties: (10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%) !default
 $palette: (
 	white: #ffffff,
 	black: #000000,
-	muted: #f8f8f8,
+	// muted: #f8f8f8,
 	primary: #ff2451,
 	link: #3763d4,
 	info: #37abd4,
-	success: #37d43c,
-	warning: #ff7100,
-	danger: #ff3324
+	success: #55b559,
+	warning: #ff9e0f,
+	danger: #f55145
 ) !default;
 
 //Color Attributes
@@ -100,7 +92,6 @@ $color-attr: (
 // ==========================================================================
 
 //Font Stack
-/* prettier-ignore */
 $font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Sizes
@@ -121,25 +112,7 @@ $point-size: $range / $responsive-text-points !default;
 // 9. Spacers
 // ==========================================================================
 
-$spacer-properties: (
-	5px,
-	10px,
-	15px,
-	20px,
-	25px,
-	30px,
-	35px,
-	40px,
-	45px,
-	50px,
-	75px,
-	100px,
-	150px,
-	200px,
-	300px,
-	400px,
-	500px
-) !default;
+$spacer-properties: (5px, 10px, 15px, 20px, 25px, 30px, 35px, 40px, 45px, 50px, 75px, 100px, 150px, 200px, 300px, 400px, 500px) !default;
 
 // 9. Borders
 // ==========================================================================
@@ -149,26 +122,37 @@ $border-colors: (
 	default: rgba(0, 0, 0, 0.3),
 	light: rgba(0, 0, 0, 0.1),
 	dark: rgba(0, 0, 0, 0.6)
-);
+) !default;
 
-$border-width: 1px;
-$border-width-2: 2px;
-$border-width-3: 3px;
+$border-width: 1px !default;
+$border-width-2: 2px !default;
+$border-width-3: 3px !default;
 
 //Border Radius
-$border-radius: 0.5em;
-$border-radius-small: 0.25em;
-$border-radius-large: 1;
+$border-radius: 0.5em !default;
+$border-radius-small: 0.25em !default;
+$border-radius-large: 1 !default;
 
-// 10. Buttons
+// 10. Alerts
+// ==========================================================================
+
+
+// 11. Buttons
 // ==========================================================================
 
 //Colours
-$button-disabled-color: rgb(157, 157, 157);
+$button-colors: (
+	light: #e8e8e8,
+	dark: #363636,
+	disabled: rgb(157, 157, 157)
+) !default;
 
 //Padding
-$button-padding-small: 6px 20px;
-$button-padding-medium: 12px 30px;
-$button-padding-large: 18px 40px;
-$button-padding-round: 12px 40px;
-$button-font-size: 14px;
+$button-padding-small: 6px 20px !default;
+$button-padding-medium: 12px 30px !default;
+$button-padding-large: 18px 40px !default;
+$button-padding-round: 12px 40px !default;
+$button-font-size: 14px !default;
+
+// 12. Cards
+// ==========================================================================

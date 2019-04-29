@@ -10,136 +10,133 @@ $dark-temp: #000;
 /////////////////////////////////////////////////////
 
 [data-tool-tip] {
-	position: relative;
-	cursor: help;
-	z-index: 10;
+  position: relative;
+  cursor: help;
+  z-index: 10;
 
-	//default (with default color black with white text)
-	&:hover::after {
-		content: attr(data-tool-tip);
-		position: absolute;
-		left: 0;
-		top: 30px;
-		min-width: 100px;
-		border-radius: 5px;
-		padding: 5px;
-		font-size: 14px;
-		font-weight: 500;
-		z-index: 1;
-		color: $light-temp;
-		background-color: $dark-temp;
-		border: 1px solid $dark-temp;
-		font-size: 12px;
-		font-weight: 100;
-		z-index: 10;
-	}
-	&:hover::before {
-		content: '';
-		position: absolute;
-		top: 25px;
-		left: 10px;
-		width: 0;
-		height: 0;
-		border: 10px solid $dark-temp;
-		border-bottom: 0;
-		border-left: 0;
-		margin-left: 18px;
-		margin-bottom: 10px;
-		transform: rotate(45deg);
-		z-index: 9;
-	}
-	//end of default
-	//remove pointer --- set to important encase custom used
-	&.no-point:hover::before {
-		border-color: transparent !important;
-	}
-	//dark tooltip colors
-	&.tool-dark:hover {
-		&::after {
-			color: $light-temp;
-			background-color: $dark-temp;
-			border-color: $dark-temp;
-		}
-		&::before {
-			border-color: $dark-temp;
-		}
-	}
-	//light tooltip colors
-	&.tool-light:hover {
-		&::after {
-			color: $dark-temp;
-			background-color: $light-temp;
-			border-color: $dark-temp;
-		}
-		&::before {
-			border-color: $dark-temp;
-		}
-	}
+  //default (with default color black with white text)
+  &:hover::after {
+    content: attr(data-tool-tip);
+    position: absolute;
+    left: 0;
+    top: 30px;
+    min-width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    z-index: 1;
+    color: $light-temp;
+    background-color: $dark-temp;
+    border: 1px solid $dark-temp;
+  }
+  &:hover::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 0;
+    height: 0;
+    border: 10px solid $dark-temp;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: 18px;
+    margin-bottom: 10px;
+    transform: rotate(45deg);
+    z-index: 9;
+  }
+  //end of default
+  //remove pointer --- set to important encase custom used
+  &.no-point:hover::before {
+    border-color: transparent !important;
+  }
+  //dark tooltip colors
+  &.tool-dark:hover {
+    &::after {
+      color: $light-temp;
+      background-color: $dark-temp;
+      border-color: $dark-temp;
+    }
+    &::before {
+      border-color: $dark-temp;
+    }
+  }
+  //light tooltip colors
+  &.tool-light:hover {
+    &::after {
+      color: $dark-temp;
+      background-color: $light-temp;
+      border-color: $dark-temp;
+    }
+    &::before {
+      border-color: $dark-temp;
+    }
+  }
 
-	//set button and a tag to have cursor pointer (the rest are help)
-	&.custom-tool {
-		&:hover::after {
-			color: var(--tooltip-color);
-			background-color: var(--tooltip-bg);
-			font-size: var(--tooltip-font-size);
-			font-family: var(--tooltip-font-family);
-			cursor: var(--tooltip-cursor);
-			//sets to same as text color
-			border-color: var(--tooltip-color);
-		}
-		&:hover::after {
-			//ovverides border color if specified
-			border-color: var(--tooltip-border-color);
-		}
-		&:hover::before {
-			//sets point to specified color if .no-point is absent and color is set
-			border-color: var(--tooltip-color);
-		}
-		&:hover::before {
-			//ovverides if specifically set border color
-			border-color: var(--tooltip-border-color);
-		}
-	}
+  //set button and a tag to have cursor pointer (the rest are help)
+  &.custom-tool {
+    &:hover::after {
+      color: var(--tooltip-color);
+      background-color: var(--tooltip-bg);
+      font-size: var(--tooltip-font-size);
+      font-family: var(--tooltip-font-family);
+      cursor: var(--tooltip-cursor);
+      //sets to same as text color
+      border-color: var(--tooltip-color);
+    }
+    &:hover::after {
+      //ovverides border color if specified
+      border-color: var(--tooltip-border-color);
+    }
+    &:hover::before {
+      //sets point to specified color if .no-point is absent and color is set
+      border-color: var(--tooltip-color);
+    }
+    &:hover::before {
+      //ovverides if specifically set border color
+      border-color: var(--tooltip-border-color);
+    }
+  }
 }
 
 a[data-tool-tip],
 button[data-tool-tip] {
-	cursor: pointer;
+  cursor: pointer;
 }
 //flip for top
 [data-tool-tip].top:hover::before {
-	transform: rotate(225deg);
-	top: -15px;
+  transform: rotate(225deg);
+  top: -15px;
 }
 
 [data-tool-tip].top:hover::after {
-	top: -35px;
+  top: -35px;
 }
 //bottom class (default)
 [data-tool-tip].bot:hover::after {
-	top: 30px;
+  top: 30px;
 }
 [data-tool-tip].bot:hover::before {
-	top: 25px;
-	left: 10px;
+  top: 25px;
+  left: 10px;
 }
-//allows for left class
-[data-tool-tip].left:hover::before {
-	margin-left: 103%;
-	margin-top: 0;
-	top: 0 !important;
-	transform: rotate(315deg);
+//allows for right class which goes to right side of element
+[data-tool-tip].right:hover::before {
+  margin-left: 103%;
+  margin-top: 0;
+  top: 0 !important;
+  transform: rotate(315deg);
 }
-[data-tool-tip].left:hover::after {
-	margin-left: 110%;
-	top: -10px;
+[data-tool-tip].right:hover::after {
+  margin-left: 110%;
+  top: -10px;
 }
-//allows for right class ### not working right now
-// [data-tool-tip].right:hover::before{
+//allows for left class ### not working left now
+// [data-tool-tip].left:hover::before{
 //    margin-left:auto;
 //    transform:rotate(315deg);
 //  }
-//  [data-tool-tip].right:hover::after{
+//  [data-tool-tip].left:hover::after{
 //     //  margin-left:-10%;
 //      margin-top:20px;
 //      top:-10px;

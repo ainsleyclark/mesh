@@ -25,24 +25,6 @@ header.primary {
 			li {
 				font-size: 14px;
 			}
-
-			.download {
-				border: 1px solid $primary;
-				padding: 10px 32px;
-				border-radius: 500px;
-
-				a {
-					color: $primary;
-				}
-
-				img {
-					width: 20px;
-				}
-			}
-
-			a:hover {
-				text-decoration: none;
-			}
 		}
 	}
 }
