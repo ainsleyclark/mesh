@@ -4,8 +4,8 @@
 $pageData = [
 	'pageTitle' => 'Installation',
 	'pageDescription' => 'Get familiar with the setup and overview of mesh',
-	'activePage' => 'installation',
-	'isDownDirectory' => true,
+    'activePage' => 'installation',
+    'parentDirectory' => basename(__DIR__)
 ];
 
 //Table of contents

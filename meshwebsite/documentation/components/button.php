@@ -66,27 +66,27 @@ $pageData = [
             <div class="d-flex justify-content-center align-items-center">
                 <div class="button-cont mx-auto my-4 d-flex align-items-start flex-column flex-desk-row">
                     <button class="btn icon primary mx-1">
-                        <i class="fas fa-hashtag"></i>
+                        <i class="far fa-hashtag"></i>
                         <span>With Icon</span>
                     </button>
                     <button class="btn icon primary mx-1">
                         <span>With Icon</span>
-                        <i class="fas fa-hashtag"></i>
+                        <i class="far fa-hashtag"></i>
                     </button>
                     <button class="btn icon outline primary mx-1">
                         <span>With Icon</span>
-                        <i class="fas fa-hashtag"></i>
+                        <i class="far fa-hashtag"></i>
                     </button>
                     <button class="btn icon primary mx-1">
                         <span>With Icon</span>
-                        <i class="fas fa-hashtag fa-lg"></i>
+                        <i class="far fa-hashtag fa-lg"></i>
                     </button>
                     <button class="btn icon primary mx-1">
                         <span>With Icon</span>
-                        <i class="fas fa-hashtag fa-2x"></i>
+                        <i class="far fa-hashtag fa-2x"></i>
                     </button>
-                    <button class="btn just-icon primary mx-1"><i class="fas fa-hashtag"></i></button>
-                    <button class="btn just-icon large primary mx-1"><i class="fas fa-hashtag"></i></button>
+                    <button class="btn just-icon primary mx-1"><i class="far fa-hashtag"></i></button>
+                    <button class="btn just-icon large primary mx-1"><i class="far fa-hashtag"></i></button>
                 </div>
             </div>
 

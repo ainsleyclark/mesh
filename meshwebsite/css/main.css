@@ -456,7 +456,7 @@ code {
     Layout
     ==================== */
 header.primary {
-  height: 75px;
+  height: 72px;
   position: fixed;
   width: 100%;
   z-index: 9999;
@@ -470,17 +470,37 @@ header.primary nav.primary ul {
   list-style-type: none;
 }
 
-header.primary nav.primary ul a {
-  color: #34495e;
-  letter-spacing: 1px;
-}
-
 header.primary nav.primary ul li {
   font-size: 14px;
 }
 
+header.primary nav.primary ul a {
+  color: #34495e;
+}
+
+header.primary nav.primary ul a:hover {
+  color: #ff2451;
+}
+
+header.primary nav.primary ul .download {
+  padding: 10px 40px;
+}
+
+header.primary nav.primary ul .download svg {
+  width: 18px;
+  height: auto;
+}
+
+header.primary nav.primary ul .download svg path {
+  fill: #ff2451;
+}
+
+header.primary nav.primary ul .download:hover svg path {
+  fill: #ffffff;
+}
+
 .header-spacer {
-  height: 75px;
+  height: 72px;
 }
 
 .sidenav {
@@ -489,6 +509,7 @@ header.primary nav.primary ul li {
   height: calc(100vh - 75px);
   border-right: 1px #e5e5e5 solid;
   padding: 45px 45px 60px 45px;
+  overflow: scroll;
 }
 
 .sidenav ul {
@@ -526,27 +547,31 @@ header.primary nav.primary ul li {
   border-top: 1px solid #ff2451;
 }
 
-.smallnav ul {
+.smallnav-cont {
+  top: 150px;
+}
+
+.smallnav-cont ul {
   list-style-type: none;
   width: 200px;
 }
 
-.smallnav ul li,
-.smallnav ul a {
+.smallnav-cont ul li,
+.smallnav-cont ul a {
   color: #999;
   font-weight: 300;
   font-size: 14px;
 }
 
-.smallnav ul li {
+.smallnav-cont ul li {
   margin: 12px 0;
 }
 
-.smallnav ul.community .icon {
+.smallnav-cont ul.community .icon {
   width: 20px;
 }
 
-.smallnav .table-of-contents .active {
+.smallnav-cont .table-of-contents .active {
   color: #ff2451;
 }
 
@@ -570,18 +595,15 @@ header.primary nav.primary ul li {
 
 @media (min-width: 1024px) {
   .content {
-    padding-left: 400px;
+    margin-left: 320px;
   }
-}
-
-@media (min-width: 1408px) {
-  .content {
-    padding-left: 80px;
+  .content .container-fullwidth {
+    max-width: 1280px;
   }
 }
 
 footer {
-  height: 75px;
+  height: 72px;
 }
 
 footer .footer-icon {

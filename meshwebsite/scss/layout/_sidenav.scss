@@ -9,6 +9,7 @@
 	height: calc(100vh - 75px);
 	border-right: 1px #e5e5e5 solid;
 	padding: 45px 45px 60px 45px;
+	overflow: scroll;
 
 	ul {
 		list-style-type: none;
