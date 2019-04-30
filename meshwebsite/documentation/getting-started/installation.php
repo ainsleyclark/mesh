@@ -4,8 +4,8 @@
 $pageData = [
 	'pageTitle' => 'Installation',
 	'pageDescription' => 'Get familiar with the setup and overview of mesh',
-	'activePage' => 'installation',
-	'isDownDirectory' => true,
+    'activePage' => 'installation',
+    'parentDirectory' => basename(__DIR__)
 ];
 
 //Table of contents
@@ -22,10 +22,10 @@ $tableOfContents = [
 <?php include_once('../../partials/sidenav.php'); ?>
 
 <section class="content">
-    <div class="container">
+    <div class="container-fullwidth">
         <div class="row justify-content-center">
             <div class="spacer-75"></div>
-            <div class="col-6 offset-1 mr-4">
+            <div class="col-12 col-tab-8 col-desk-8 mr-tab-2 mr-desk-2">
             <h1 class="mb-2 mt-0">Installation</h1>
                 <div class="lead">mesh comes in four different flavours to install, depending on your preference, please use one of the options below.</div>
                 <!-- mesh CDN -->
@@ -58,15 +58,10 @@ $tableOfContents = [
                     <p></p>
                 </div>
             </div><!-- /Col -->
-            <div class="col-2">
-                <?php include_once('../../partials/smallnav.php') ?>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6">
-                <?php include_once('../../partials/footer.php') ?>
-            </div>
+            <?php include_once('../../partials/smallnav.php') ?>
+            <?php include_once('../../partials/sub-footer.php') ?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
+<?php include_once('../../partials/footer.php') ?>

@@ -2,15 +2,16 @@
 
 //Page variables
 $pageData = [
-    'pageTitle' => 'Alert',
+    'pageTitle' => 'Tooltip',
     'pageDescription' => '',
-    'activePage' => 'intro',
+    'activePage' => 'tooltip',
+    'parentDirectory' => basename(__DIR__)
 ];
 
 ?>
 
-<?php include_once('../partials/header.php'); ?>
-<?php include_once('../partials/sidenav.php'); ?>
+<?php include_once('../../partials/header.php'); ?>
+<?php include_once('../../partials/sidenav.php'); ?>
 
 <style>
     code{
@@ -196,5 +197,5 @@ $pageData = [
                 
 
 </section>
-<?php include_once('../partials/smallnav.php'); ?>
-<?php include_once('../partials/footer.php'); ?>
+<?php include_once('../../partials/smallnav.php'); ?>
+<?php include_once('../../partials/footer.php'); ?>

@@ -4,8 +4,8 @@
 $pageData = [
 	'pageTitle' => 'Getting started with mesh',
 	'pageDescription' => 'Get familiar with the setup and overview of mesh',
-	'activePage' => 'introduction',
-	'isDownDirectory' => true,
+    'activePage' => 'introduction',
+    'parentDirectory' => basename(__DIR__)
 ];
 
 //Table of contents
@@ -23,7 +23,7 @@ $tableOfContents = [
     <div class="container">
         <div class="row justify-content-center">
             <div class="spacer-75"></div>
-            <div class="col-6 offset-1 mr-4">
+            <div class="col-desk-7 offset-1 mr-4">
                 <h1 class="mb-2 mt-0">Getting started</h1>
                 <div class="lead">Get familiar with the setup and overview of mesh.</div>
                 <!-- What is mesh? -->
@@ -62,12 +62,13 @@ $tableOfContents = [
     &lt;body&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                </div>
+</div>
             </div><!-- /Col -->
-            <div class="col-2">
+
+       
+        <div class="col-2">
                 <?php include_once('../../partials/smallnav.php'); ?>
             </div>
-        </div>
         <div class="row">
             <div class="col-6">
                 <?php include_once('../../partials/footer.php'); ?>

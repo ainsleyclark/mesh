@@ -23,10 +23,11 @@ body {
 }
 
 .container-fullwidth {
-  margin: 0;
   width: 100%;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 568px) {
@@ -77,51 +78,51 @@ body {
 }
 
 .col-1 {
-  flex-basis: 8.33333%;
+  width: 8.33333%;
 }
 
 .col-2 {
-  flex-basis: 16.66667%;
+  width: 16.66667%;
 }
 
 .col-3 {
-  flex-basis: 25%;
+  width: 25%;
 }
 
 .col-4 {
-  flex-basis: 33.33333%;
+  width: 33.33333%;
 }
 
 .col-5 {
-  flex-basis: 41.66667%;
+  width: 41.66667%;
 }
 
 .col-6 {
-  flex-basis: 50%;
+  width: 50%;
 }
 
 .col-7 {
-  flex-basis: 58.33333%;
+  width: 58.33333%;
 }
 
 .col-8 {
-  flex-basis: 66.66667%;
+  width: 66.66667%;
 }
 
 .col-9 {
-  flex-basis: 75%;
+  width: 75%;
 }
 
 .col-10 {
-  flex-basis: 83.33333%;
+  width: 83.33333%;
 }
 
 .col-11 {
-  flex-basis: 91.66667%;
+  width: 91.66667%;
 }
 
 .col-12 {
-  flex-basis: 100%;
+  width: 100%;
 }
 
 .col-offset-0 {
@@ -183,40 +184,40 @@ body {
     max-width: 100%;
   }
   .col-mob-1 {
-    flex-basis: 8.33333%;
+    width: 8.33333%;
   }
   .col-mob-2 {
-    flex-basis: 16.66667%;
+    width: 16.66667%;
   }
   .col-mob-3 {
-    flex-basis: 25%;
+    width: 25%;
   }
   .col-mob-4 {
-    flex-basis: 33.33333%;
+    width: 33.33333%;
   }
   .col-mob-5 {
-    flex-basis: 41.66667%;
+    width: 41.66667%;
   }
   .col-mob-6 {
-    flex-basis: 50%;
+    width: 50%;
   }
   .col-mob-7 {
-    flex-basis: 58.33333%;
+    width: 58.33333%;
   }
   .col-mob-8 {
-    flex-basis: 66.66667%;
+    width: 66.66667%;
   }
   .col-mob-9 {
-    flex-basis: 75%;
+    width: 75%;
   }
   .col-mob-10 {
-    flex-basis: 83.33333%;
+    width: 83.33333%;
   }
   .col-mob-11 {
-    flex-basis: 91.66667%;
+    width: 91.66667%;
   }
   .col-mob-12 {
-    flex-basis: 100%;
+    width: 100%;
   }
   .col-mob-offset-0 {
     margin-left: 0;
@@ -266,40 +267,40 @@ body {
     max-width: 100%;
   }
   .col-tab-1 {
-    flex-basis: 8.33333%;
+    width: 8.33333%;
   }
   .col-tab-2 {
-    flex-basis: 16.66667%;
+    width: 16.66667%;
   }
   .col-tab-3 {
-    flex-basis: 25%;
+    width: 25%;
   }
   .col-tab-4 {
-    flex-basis: 33.33333%;
+    width: 33.33333%;
   }
   .col-tab-5 {
-    flex-basis: 41.66667%;
+    width: 41.66667%;
   }
   .col-tab-6 {
-    flex-basis: 50%;
+    width: 50%;
   }
   .col-tab-7 {
-    flex-basis: 58.33333%;
+    width: 58.33333%;
   }
   .col-tab-8 {
-    flex-basis: 66.66667%;
+    width: 66.66667%;
   }
   .col-tab-9 {
-    flex-basis: 75%;
+    width: 75%;
   }
   .col-tab-10 {
-    flex-basis: 83.33333%;
+    width: 83.33333%;
   }
   .col-tab-11 {
-    flex-basis: 91.66667%;
+    width: 91.66667%;
   }
   .col-tab-12 {
-    flex-basis: 100%;
+    width: 100%;
   }
   .col-tab-offset-0 {
     margin-left: 0;
@@ -349,40 +350,40 @@ body {
     max-width: 100%;
   }
   .col-desk-1 {
-    flex-basis: 8.33333%;
+    width: 8.33333%;
   }
   .col-desk-2 {
-    flex-basis: 16.66667%;
+    width: 16.66667%;
   }
   .col-desk-3 {
-    flex-basis: 25%;
+    width: 25%;
   }
   .col-desk-4 {
-    flex-basis: 33.33333%;
+    width: 33.33333%;
   }
   .col-desk-5 {
-    flex-basis: 41.66667%;
+    width: 41.66667%;
   }
   .col-desk-6 {
-    flex-basis: 50%;
+    width: 50%;
   }
   .col-desk-7 {
-    flex-basis: 58.33333%;
+    width: 58.33333%;
   }
   .col-desk-8 {
-    flex-basis: 66.66667%;
+    width: 66.66667%;
   }
   .col-desk-9 {
-    flex-basis: 75%;
+    width: 75%;
   }
   .col-desk-10 {
-    flex-basis: 83.33333%;
+    width: 83.33333%;
   }
   .col-desk-11 {
-    flex-basis: 91.66667%;
+    width: 91.66667%;
   }
   .col-desk-12 {
-    flex-basis: 100%;
+    width: 100%;
   }
   .col-desk-offset-0 {
     margin-left: 0;
@@ -432,40 +433,40 @@ body {
     max-width: 100%;
   }
   .col-hd-1 {
-    flex-basis: 8.33333%;
+    width: 8.33333%;
   }
   .col-hd-2 {
-    flex-basis: 16.66667%;
+    width: 16.66667%;
   }
   .col-hd-3 {
-    flex-basis: 25%;
+    width: 25%;
   }
   .col-hd-4 {
-    flex-basis: 33.33333%;
+    width: 33.33333%;
   }
   .col-hd-5 {
-    flex-basis: 41.66667%;
+    width: 41.66667%;
   }
   .col-hd-6 {
-    flex-basis: 50%;
+    width: 50%;
   }
   .col-hd-7 {
-    flex-basis: 58.33333%;
+    width: 58.33333%;
   }
   .col-hd-8 {
-    flex-basis: 66.66667%;
+    width: 66.66667%;
   }
   .col-hd-9 {
-    flex-basis: 75%;
+    width: 75%;
   }
   .col-hd-10 {
-    flex-basis: 83.33333%;
+    width: 83.33333%;
   }
   .col-hd-11 {
-    flex-basis: 91.66667%;
+    width: 91.66667%;
   }
   .col-hd-12 {
-    flex-basis: 100%;
+    width: 100%;
   }
   .col-hd-offset-0 {
     margin-left: 0;
@@ -4572,19 +4573,16 @@ video.video-responsive {
   min-width: 100px;
   border-radius: 5px;
   padding: 5px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   z-index: 1;
   color: #fff;
   background-color: #000;
   border: 1px solid #000;
-  font-size: 12px;
-  font-weight: 100;
-  z-index: 10;
 }
 
 [data-tool-tip]:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 25px;
   left: 10px;
@@ -4667,14 +4665,88 @@ button[data-tool-tip] {
   left: 10px;
 }
 
-[data-tool-tip].left:hover::before {
+[data-tool-tip].right:hover::before {
   margin-left: 103%;
   margin-top: 0;
   top: 0 !important;
   transform: rotate(315deg);
 }
 
-[data-tool-tip].left:hover::after {
+[data-tool-tip].right:hover::after {
   margin-left: 110%;
   top: -10px;
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.breadcrumb.center {
+  justify-content: center;
+}
+
+.breadcrumb.right {
+  justify-content: flex-end;
+}
+
+.breadcrumb.left {
+  justify-content: flex-start;
+}
+
+.breadcrumb li a {
+  transition: 300ms;
+  color: inherit;
+  text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+  opacity: 0.5;
+  color: inherit;
+}
+
+.breadcrumb li a:visited {
+  color: inherit;
+}
+
+.breadcrumb li:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  padding-right: 3px;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.breadcrumb.double li:after {
+  content: "\f101";
+}
+
+.breadcrumb.solid li:after {
+  content: "\f0da";
+  padding-left: 5px;
+}
+
+.breadcrumb.slash li:after {
+  content: "/";
+}
+
+.breadcrumb.seperator-grey li:after {
+  color: grey;
+}
+
+.breadcrumb.seperator-black li:after {
+  color: black;
+}
+
+.breadcrumb.seperator-white li:after {
+  color: white;
+}
+
+.breadcrumb li:last-child:after {
+  content: none;
 }

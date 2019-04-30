@@ -12,10 +12,11 @@
 }
 
 .container-fullwidth {
-	margin: 0;
 	width: 100%;
 	padding-left: $gap-width;
 	padding-right: $gap-width;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 //Creates the breakpoints for containers

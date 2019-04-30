@@ -14,16 +14,41 @@ header.primary {
 	}
 
 	nav.primary {
+		
 		ul {
 			list-style-type: none;
 
-			a {
-				color: $text-color;
-				letter-spacing: 1px;
-			}
-
 			li {
 				font-size: 14px;
+			}
+			
+			a {
+				color: $text-color;
+
+				&:hover {
+					color: $primary;
+				}
+			}
+
+
+
+			.download { 
+				padding: 10px 40px; 
+
+				svg {
+					width: 18px;
+					height: auto;
+
+					path {
+						fill: $primary;
+					}
+				}
+
+				&:hover {
+					svg path {
+						fill: $white;
+					}
+				}
 			}
 		}
 	}

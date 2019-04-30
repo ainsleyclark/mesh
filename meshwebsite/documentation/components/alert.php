@@ -4,7 +4,8 @@
 $pageData = [
 	'pageTitle' => 'Alert',
 	'pageDescription' => '',
-	'activePage' => 'alert',
+    'activePage' => 'alert',
+    'parentDirectory' => basename(__DIR__)
 ]; 
 
 ?>

@@ -18,10 +18,10 @@
 	}
 
 	@include media-desk {
-		padding-left: 400px;
-	}
+		padding-left: 320px;
 
-	@include media-hd {
-		padding-left: 80px;
+		.container-fullwidth {
+			max-width: 1280px;
+		}
 	}
 }
