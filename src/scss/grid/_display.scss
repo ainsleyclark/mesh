@@ -7,7 +7,7 @@
 	@include create-mediaquery($breakpoint) {
 		@each $property in $display-properties {
 			.d#{$modifier}-#{$property} {
-				display: #{$property};
+				display: #{$property} !important;
 			}
 		}
 	}

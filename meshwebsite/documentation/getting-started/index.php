@@ -10,10 +10,11 @@ $pageData = [
 
 //Table of contents
 $tableOfContents = [
-	'whatis' => 'What is mesh?',
+	'whatIs' => 'What is mesh?',
 	'download' => 'Download',
-	'startusing' => 'Start using mesh'
+	'startUsing' => 'Start using mesh'
 ];
+
 ?>
 
 <?php include_once('../../partials/header.php'); ?>
@@ -22,11 +23,11 @@ $tableOfContents = [
 <section class="content">
     <div class="container-fullwidth">
         <div class="row justify-content-center mt-4 mt-desk-5">
-            <div class="col-12 col-tab-9 col-desk-7 mr-desk-2">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2">
                 <h1 class="mb-2 mt-0">Getting started</h1>
                 <div class="lead">Get familiar with the setup and overview of mesh.</div>
                 <!-- What is mesh? -->
-                <div class="section-scroll" id="whatis">
+                <div class="section-scroll" id="whatIs">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">What is mesh?</h2>
                     <p>mesh (pronounced /meʃ/) is an open source pure CSS framework for building websites for efficentley. Unlike other frameworks, you can use mesh without detracting from the unique visual signature of a website, whilst still being able to add components to quicken your workflow.</p>
                     <p>It has a modular approach to a responsive grid system, you can define containers, rows and columns and set them indepdantly of screen width. Five breakpoints helps you sculpt your site to different screen sizes and a easy naming system makes it ideal for begginers or patrons of the web.</p>
@@ -50,7 +51,7 @@ $tableOfContents = [
                     </div>
                 </div>
                 <!-- Start using mesh -->
-                <div class="section-scroll" id="startusing">
+                <div class="section-scroll" id="startUsing">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Start using mesh</h2>
                     <p>mesh comes in two different flavours. You can select which version you want dependant on your expertise and preference. To get going, click on one of the options below.</p>
 <pre class="highlight"><code class="html">&lt;!DOCTYPE html&gt;

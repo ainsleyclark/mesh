@@ -21,7 +21,7 @@ $activeClass = $pageData['activePage'];
         <li class="my-4">
         <div class="nav-header b-b1-light pb-2">Grid</div>
             <ul class="sub-list mt-1">
-                <a class="<?php if($activeClass == 'containers') echo 'active'; ?>" href="/documentation/grid/grid.php"><li>Containers, Rows & Columns</li></a>
+                <a class="<?php if($activeClass == 'grid') echo 'active'; ?>" href="/documentation/grid/grid.php"><li>Containers, Rows & Columns</li></a>
                 <a class="<?php if($activeClass == 'flex') echo 'active'; ?>" href="/documentation/grid/flex.php"><li>Flex</li></a>
                 <a class="<?php if($activeClass == 'order') echo 'active'; ?>" href="/documentation/grid/order.php"><li>Order</li></a>
                 <a class="<?php if($activeClass == 'display') echo 'active'; ?>" href="/documentation/grid/display.php"><li>Display</li></a>

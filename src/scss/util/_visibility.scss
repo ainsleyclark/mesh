@@ -6,10 +6,10 @@
 @each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
 		.visible#{$modifier} {
-			visibility: visible;
+			visibility: visible !important;
 		}
 		.invisible#{$modifier} {
-			visibility: hidden;
+			visibility: hidden !important;
 		}
 	}
 }

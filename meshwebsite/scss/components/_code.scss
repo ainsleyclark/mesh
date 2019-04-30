@@ -4,13 +4,13 @@
 // -----------------------------------------------------------------------------
 
 pre {
-	background: rgba(238, 238, 238, 0.35);
+	background: #f9f9f9;
 	border-radius: 3px;
-	padding: 10px;
+	padding: 10px 10px 0px 10px;
 	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	font-size: 0.8em;
-	overflow-x: scroll;
+	border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 code {
@@ -24,20 +24,37 @@ code {
 	word-break: normal;
 	display: block;
 	line-height: 1.8em;
+	overflow-x: scroll;
+	padding-bottom: 10px;
 }
 
 .highlight {
+	position: relative;
+
 	.html {
 		.name {
-			color: $primary;
+			color: desaturate($primary, 20%);
 		}
 
 		.attr {
-			color: $green;
+			color: desaturate($green, 20%);
 		}
 
 		.tag {
-			color: $blue;
+			color: desaturate($blue, 20%);
 		}
+	}
+	.html:after {
+		content: 'language-markup';
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 3px 10px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+		border-left: 1px solid rgba(0, 0, 0, 0.125);
+		border-bottom-left-radius: 3px;
+		background-color: #ffffff;
+		text-shadow: 0;
+		color: rgba(0, 0, 0, 0.8);
 	}
 }

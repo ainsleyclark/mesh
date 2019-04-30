@@ -17,7 +17,7 @@ body {
 	font-family: $font-stack;
 	font-size: 1rem;
 	line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased; // sass-lint:disable-line  no-vendor-prefixes
 }
 
 a,

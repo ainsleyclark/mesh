@@ -6,13 +6,13 @@
 @each $size in ($border-width, $border-width-2, $border-width-3) {
 	$class-value: str-replace(#{$size}, 'px', '');
 	.b-#{$class-value} {
-		border: #{$size} solid map-get($border-colors, 'default');
+		border: #{$size} solid map-get($border-colors, 'default') !important;
 	}
 	.b-#{$class-value}-light {
-		border: #{$size} solid map-get($border-colors, 'light');
+		border: #{$size} solid map-get($border-colors, 'light') !important;
 	}
 	.b-#{$class-value}-dark {
-		border: #{$size} solid map-get($border-colors, 'dark');
+		border: #{$size} solid map-get($border-colors, 'dark') !important;
 	}
 
 	$positions: (
@@ -26,11 +26,11 @@
 		@each $property, $border-abbrev in $positions {
 			@if ($color-abbrev == 'default') {
 				.b-#{$border-abbrev}#{$class-value} {
-					border-#{$property}: #{$size} solid $color;
+					border-#{$property}: #{$size} solid $color !important;
 				}
 			} @else {
 				.b-#{$border-abbrev}#{$class-value}-#{$color-abbrev} {
-					border-#{$property}: #{$size} solid $color;
+					border-#{$property}: #{$size} solid $color !important;
 				}
 			}
 		}

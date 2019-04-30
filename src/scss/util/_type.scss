@@ -69,35 +69,35 @@ small {
 
 //Utility
 .t-decoration-none {
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 .t-normal {
-	font-weight: normal;
+	font-weight: normal !important;
 }
 
 .t-bold {
-	font-weight: 900;
+	font-weight: 900 !important;
 }
 
 .t-light {
-	font-weight: 300;
+	font-weight: 300 !important;
 }
 
 .t-uppercase {
-	text-transform: uppercase;
+	text-transform: uppercase !important;
 }
 
 .t-lowercase {
-	text-transform: lowercase;
+	text-transform: lowercase !important;
 }
 
 .t-initial {
-	text-transform: initial;
+	text-transform: initial !important;
 }
 
 .t-nowrap {
-	white-space: nowrap;
+	white-space: nowrap !important;
 }
 
 //Responsive Text
@@ -117,16 +117,16 @@ small {
 @each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
 		.t#{$modifier}-center {
-			text-align: center;
+			text-align: center !important;
 		}
 		.t#{$modifier}-left {
-			text-align: left;
+			text-align: left !important;
 		}
 		.t#{$modifier}-right {
-			text-align: right;
+			text-align: right !important;
 		}
 		.t#{$modifier}-justify {
-			text-align: justify;
+			text-align: justify !important;
 		}
 	}
 }

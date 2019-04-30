@@ -23,9 +23,8 @@ $tableOfContents = [
 
 <section class="content">
     <div class="container-fullwidth">
-        <div class="row justify-content-center">
-            <div class="spacer-75"></div>
-            <div class="col-12 col-tab-9 col-desk-7 mr-desk-2">
+        <div class="row justify-content-center mt-4 mt-desk-5">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2">
             <h1 class="mb-2 mt-0">Installation</h1>
                 <div class="lead">mesh comes in four different flavours to install, depending on your preference, please use one of the options below.</div>
                 <!-- mesh CDN -->

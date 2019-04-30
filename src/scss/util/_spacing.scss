@@ -8,44 +8,44 @@
 		@include create-mediaquery($breakpoint) {
 			@each $size, $length in $spacing-properties {
 				.#{$abbrev}#{$modifier}-#{$size} {
-					#{$prop}: $length;
+					#{$prop}: $length !important;
 				}
 				.#{$abbrev}t#{$modifier}-#{$size},
 				.#{$abbrev}y#{$modifier}-#{$size} {
-					#{$prop}-top: $length;
+					#{$prop}-top: $length !important;
 				}
 				.#{$abbrev}r#{$modifier}-#{$size},
 				.#{$abbrev}x#{$modifier}-#{$size} {
-					#{$prop}-right: $length;
+					#{$prop}-right: $length !important;
 				}
 				.#{$abbrev}b#{$modifier}-#{$size},
 				.#{$abbrev}y#{$modifier}-#{$size} {
-					#{$prop}-bottom: $length;
+					#{$prop}-bottom: $length !important;
 				}
 				.#{$abbrev}l#{$modifier}-#{$size},
 				.#{$abbrev}x#{$modifier}-#{$size} {
-					#{$prop}-left: $length;
+					#{$prop}-left: $length !important;
 				}
 			}
 			//Auto Margins
 			.m#{$modifier}-auto {
-				margin: auto;
+				margin: auto !important;
 			}
 			.mt#{$modifier}-auto,
 			.my#{$modifier}-auto {
-				margin-top: auto;
+				margin-top: auto !important;
 			}
 			.mr#{$modifier}-auto,
 			.mx#{$modifier}-auto {
-				margin-right: auto;
+				margin-right: auto !important;
 			}
 			.mb#{$modifier}-auto,
 			.my#{$modifier}-auto {
-				margin-bottom: auto;
+				margin-bottom: auto !important;
 			}
 			.ml#{$modifier}-auto,
 			.mx#{$modifier}-auto {
-				margin-left: auto;
+				margin-left: auto !important;
 			}
 		}
 	}

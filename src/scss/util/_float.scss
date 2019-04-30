@@ -6,13 +6,13 @@
 @each $modifier, $breakpoint in $grid-properties {
 	@include create-mediaquery($breakpoint) {
 		.f#{$modifier}-left {
-			float: left;
+			float: left !important;
 		}
 		.f#{$modifier}-right {
-			float: right;
+			float: right !important;
 		}
 		.f#{$modifier}-none {
-			float: none;
+			float: none !important;
 		}
 	}
 }

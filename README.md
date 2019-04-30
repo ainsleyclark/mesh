@@ -34,9 +34,8 @@ It's quick - under 100kb minified. mesh was built with a very modular approach, 
 
 ### Functional
 It has a huge amount of very useful utility classes, it's also built entirely around flex box, which enables you to write HTML quicker. It's extremely easy to pick up and will save you bags of time in the long run.
-No !important, so less of a headache using JS.
 
-##  Installation 
+##  Installation
 
 - To begin with, download or clone this repository 
 - Under copy `dist` , copy `mesh.min.css` to your site's css folder.
@@ -81,6 +80,7 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 - ~~Icons & Social~~ -- @nicholsk
 - Breadcrumbs
 - Pagination
+- Pills & Badges
 
 **Notes:**
 - Please do not edit ***mesh.css*** directly, they are automatically generated. 

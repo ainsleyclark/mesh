@@ -7,7 +7,7 @@ if ($pageData['parentDirectory']) {
 
 ?>
 
-<div class="col-2 col-desk-3">
+<div class="col-2 pr-0">
     <aside class="smallnav h-100 d-none d-tab-block">
         <div class="smallnav-cont p-sticky">
             <ul class="table-of-contents b-b1-light">

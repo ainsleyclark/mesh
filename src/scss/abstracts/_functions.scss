@@ -3,7 +3,6 @@
 // Contains all functions used with mesh
 // ==========================================================================
 
-
 // String Replace
 // ==========================================================================
 
@@ -36,4 +35,17 @@
 
 	@warn "Unknown `#{$key}` in $colors.";
 	@return null;
+}
+
+// Pixel to REM Convertor
+// ==========================================================================
+
+/// @author Ainsley Clark
+/// @param {String} $size - Size in pixels
+/// @return {Color} - REM units
+// Function for converting a px based font-size to rem.
+@function px-to-rem($size) {
+	$remSize: $size / 16px;
+	//Default font size on html element is 100%, equivalent to 16px;
+	@return #{$remSize}rem;
 }

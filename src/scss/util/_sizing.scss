@@ -10,7 +10,7 @@
 				//Rid of % in $value
 				$class-value: str-replace(#{$value}, '%', '');
 				.#{$abbrev}#{$modifier}-#{$class-value} {
-					#{$property}: #{$value};
+					#{$property}: #{$value} !important;
 				}
 			}
 		}

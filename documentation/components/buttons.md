@@ -34,8 +34,8 @@
 ```
 
 ## To change the size of Mesh button
-- for small buttons add ``` small ``` to class field
-- for large buttons add ``` large ``` to class field
+- For small buttons add ``` small ``` to class field
+- For large buttons add ``` large ``` to class field
 > **Note:** The default button size does not require any additional classes.
 
 #### Example:
@@ -45,8 +45,8 @@
 ```
 
 ## To add rounder corners
-- add ``` rounded ``` to class field
-- gives border-radius 600px 
+- Add ``` rounded ``` to class field
+- Gives border-radius 600px 
 #### Example:
 ```
 <button class="btn rounded primary">
@@ -54,7 +54,7 @@
 ```
 
 ## to add loading animation to a button
-- add ``` loading ``` to class field
+- Add ``` loading ``` to class field
 #### Example:
 ```
 <button class="btn loading primary">
@@ -62,8 +62,8 @@
 ```
 
 ## To add a block button
-- add ``` block ``` to class field
-- creates a full width button
+- Add ``` block ``` to class field
+- Creates a full width button
 #### Example:
 ```
 <button class="btn block primary">
