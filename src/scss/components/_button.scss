@@ -3,9 +3,10 @@
 // Button classes & styling with reference to palette.
 // ==========================================================================
 
-//! NEED TO ADD DISABLED BUTTONS FOR ALL COLORS
-//! SORT OUT SPECIFICITY, THE COLOR CLASSES CANT OVERRIDE THE WHITE
-//! NEEDS TO BE .btn-outline, .btn-disabled, .btn-primary etc.
+//! NEED TO ADD DISABLED BUTTONS FOR ALL COLORS using :disabled and .disabled
+//! NEED TO change to btn-outline-primary etc..
+//! Add hover states? btn-hover?
+//! FIX Loading & Outline bug
 
 .btn {
 	display: inline-block;
@@ -111,7 +112,7 @@ $button-colors-map: map-merge($palette, $button-colors);
 }
 
 @each $color-name, $hex in $palette {
-	.btn.#{$color-name}.outline {
+	.btn-#{$color-name}.btn-outline {
 		color: $hex;
 		border: 1px solid $hex;
 

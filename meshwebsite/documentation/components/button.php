@@ -106,7 +106,7 @@ $pageData = [
             <h5>Loading Buttons:</h5>
             <div class="button-cont mx-auto my-4">
                 <button class="btn btn-loading mx-1"></button>
-                <button class="btn btn-loading btn-primary mx-1"></button>
+                <button class="btn btn-loading btn-outline btn-primary mx-1"></button>
                 <button class="btn btn-loading btn-info mx-1"></button>
                 <button class="btn btn-loading btn-success mx-1"></button>
                 <button class="btn btn-loading btn-warning mx-1"></button>
