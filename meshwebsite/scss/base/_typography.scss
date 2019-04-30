@@ -15,11 +15,25 @@ p {
 	position: relative;
 }
 
+.hash {
+	padding-left: 30px;
+
+	@include media-tab {
+		padding-left: 0;
+	}
+}
+
 .hash:before {
 	content: url('../assets/svg/meshlogo.svg');
 	position: absolute;
+	height: auto;
 	width: 25px;
-	margin-left: -30px;
 	margin-top: 4px;
 	color: $primary;
+	margin-left: -30px;
+
+	@include media-tab {
+		position: absolute;
+
+	}
 }

@@ -20,10 +20,9 @@ $tableOfContents = [
 <?php include_once('../../partials/sidenav.php'); ?>
 
 <section class="content">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="spacer-75"></div>
-            <div class="col-desk-7 offset-1 mr-4">
+    <div class="container-fullwidth">
+        <div class="row justify-content-center mt-4 mt-desk-5">
+            <div class="col-12 col-tab-9 col-desk-7 mr-desk-2">
                 <h1 class="mb-2 mt-0">Getting started</h1>
                 <div class="lead">Get familiar with the setup and overview of mesh.</div>
                 <!-- What is mesh? -->
@@ -38,11 +37,11 @@ $tableOfContents = [
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Download</h2>
                     <p>mesh comes in two different flavours. You can select which version you want dependant on your expertise and preference. To get going, click on one of the options below.</p>
                     <div class="row my-3">
-                        <div class="col-12 col-tab-6 pl-0">
+                        <div class="col-12 col-tab-6 px-0 pl-tab-0 pr-tab-2">
                             <h3 class="c-primary">mesh CSS:</h3>
                             <p>This is the standard version that comes with minified and unminified versions of mesh, including mesh grid, which is a barebones grid with flex, order & display. Choose this option if you have no familairty with Sass.</p>
                         </div>
-                        <div class="col-12 col-tab-6 pr-0">
+                        <div class="col-12 col-tab-6 px-0 pr-tab-0 pl-tab-2">
                             <h3 class="c-primary">Souce Files:</h3>
                             <p>This is the uncompiled scss version of mesh, you need a way to compile Sass files if you choose this option, however, you will be able to modify the contents of mesh and change variables.</p>
                         </div>
@@ -50,8 +49,8 @@ $tableOfContents = [
                 </div>
                 <!-- Start using mesh -->
                 <div class="section-scroll" id="startusing">
-                <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Start using mesh</h2>
-                <p>mesh comes in two different flavours. You can select which version you want dependant on your expertise and preference. To get going, click on one of the options below.</p>
+                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Start using mesh</h2>
+                    <p>mesh comes in two different flavours. You can select which version you want dependant on your expertise and preference. To get going, click on one of the options below.</p>
 <pre><code>&lt;!DOCTYPE html&gt;
     &lt;head&gt;
         &lt;title&gt;Website Title&lt;/title&gt;
@@ -62,17 +61,10 @@ $tableOfContents = [
     &lt;body&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-</div>
+                </div>
             </div><!-- /Col -->
-
-       
-        <div class="col-2">
-                <?php include_once('../../partials/smallnav.php'); ?>
-            </div>
-        <div class="row">
-            <div class="col-6">
-                <?php include_once('../../partials/footer.php'); ?>
-            </div>
+            <?php include_once('../../partials/smallnav.php'); ?>
+            <?php include_once('../../partials/footer.php'); ?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>

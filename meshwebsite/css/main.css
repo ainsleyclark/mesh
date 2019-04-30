@@ -403,13 +403,30 @@ p {
   position: relative;
 }
 
+.hash {
+  padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .hash {
+    padding-left: 0;
+  }
+}
+
 .hash:before {
   content: url("../assets/svg/meshlogo.svg");
   position: absolute;
+  height: auto;
   width: 25px;
-  margin-left: -30px;
   margin-top: 4px;
   color: #ff2451;
+  margin-left: -30px;
+}
+
+@media (min-width: 768px) {
+  .hash:before {
+    position: absolute;
+  }
 }
 
 /* ====================
@@ -425,6 +442,7 @@ pre {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   font-size: 0.8em;
+  overflow-x: scroll;
 }
 
 code {
@@ -505,13 +523,16 @@ header.primary nav.primary ul .download:hover svg path {
 
 .sidenav {
   position: fixed;
+  top: 72px;
   width: 320px;
   height: calc(100vh - 75px);
   border-right: 1px #e5e5e5 solid;
   padding: 45px 45px 60px 45px;
-  overflow: scroll;
+  overflow-y: scroll;
   transform: translateX(-100%);
-  transition: transform 1s;
+  transition: transform 0.5s;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
 .sidenav ul {
