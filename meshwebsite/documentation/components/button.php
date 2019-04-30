@@ -13,11 +13,15 @@ $pageData = [
 <?php include_once('../../partials/header.php'); ?>
 <?php include_once('../../partials/sidenav.php'); ?>
 
+
+
 <div class="container">
     <div class="row justify-content-center t-center">
         <div class="col-12">
             <div class="spacer-100"></div>
 
+            <a href="" class="btn btn-primary">Test</a>
+            
             <h5>Default Buttons:</h5>
             <div class="d-flex justify-content-center">
                 <div class="button-cont mx-auto my-4">
