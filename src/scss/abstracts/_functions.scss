@@ -1,3 +1,12 @@
+// _mixins.scss
+//
+// Contains all functions used with mesh
+// ==========================================================================
+
+
+// String Replace
+// ==========================================================================
+
 /// Replace `$search` with `$replace` in `$string`
 /// @author Hugo Giraudel
 /// @param {String} $string - Initial string
@@ -7,7 +16,6 @@
 @function str-replace($string, $search, $replace: '') {
 	$index: str-index($string, $search);
 
-	/* prettier-ignore */
 	@if $index {
 		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
 	}
@@ -15,9 +23,17 @@
 	@return $string;
 }
 
-// Function for converting a px based font-size to rem.
-@function px-to-rem($size) {
-	$remSize: $size / 16px;
-	//Default font size on html element is 100%, equivalent to 16px;
-	@return #{$remSize}rem;
+// Return Color from Palette
+// ==========================================================================
+
+/// @author Ainsley Clark
+/// @param {String} $key - Key for pallette(color)alue
+/// @return {Color} - Return hex
+@function color($key) {
+	@if map-has-key($palette, $key) {
+		@return map-get($palette, $key);
+	}
+
+	@warn "Unknown `#{$key}` in $colors.";
+	@return null;
 }

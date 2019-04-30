@@ -1,10 +1,12 @@
-//_mixings.scss
+// _mixins.scss
 //
-//Contains all mixins used with mesh
+// Contains all mixins used with mesh
 // ==========================================================================
 
-/// @mixin create-mediaquery
-/// Dynamically creates media query based on $breakpoint variable.
+// Create Media Query
+// ==========================================================================
+
+/// @author Ainsley Clark
 /// @param {Number} $breakpoint - Initial breakpoint
 @mixin create-mediaquery($breakpoint) {
 	@if ($breakpoint == 0) {
@@ -16,8 +18,10 @@
 	}
 }
 
-/// @mixin create-col-classes
-/// Creates columns and offsets
+// Create Column Classes
+// ==========================================================================
+
+/// @author Ainsley Clark
 /// @param {String} $modifier - Class
 /// @param {Number} $grid-cols - Amount of columns
 /// @param {Number} $breakpoint - Media breakpoint
@@ -46,9 +50,37 @@
 	}
 }
 
-// Function for converting a px based font-size to rem.
-@function px-to-rem($size) {
-	$remSize: $size / 16px;
-	//Default font size on html element is 100%, equivalent to 16px;
-	@return #{$remSize}rem;
+// Pixel to REM Converter
+// ==========================================================================
+
+/// @author Ainsley Clark
+/// @param {Number} $pxValue - Pixel amount to convert
+/// @param {String} $property [font-size] - Property to convert
+/// @param {Number} $standard-size - Initial base rem size
+@mixin px-to-rem($pxValue, $property: 'font-size', $standard-size: 16) {
+	#{$property}: $pxValue + px;
+	#{$property}: $pxValue / $standard-size + rem;
+}
+
+// Event Wrapper
+// ==========================================================================
+
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+	@if $self {
+		&,
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	} @else {
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	}
 }

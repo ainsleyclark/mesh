@@ -11,41 +11,47 @@ h4,
 h5,
 h6 {
 	font-weight: 500;
-	line-height: 1.2;
+	line-height: 1.5em;
 }
 
 h1 {
-	font-size: $h1-fontsize;
-	margin: ($h1-fontsize / 7.5) 0;
+	font-size: $h1-font-size;
+	margin: ($h1-font-size / 7.5) 0;
 }
 
 h2 {
-	font-size: $h2-fontsize;
-	margin: ($h2-fontsize / 7.5) 0;
+	font-size: $h2-font-size;
+	margin: ($h2-font-size / 7.5) 0;
 }
 
 h3 {
-	font-size: $h3-fontsize;
-	margin: ($h3-fontsize / 7.5) 0;
+	font-size: $h3-font-size;
+	margin: ($h3-font-size / 7.5) 0;
 }
 
 h4 {
-	font-size: $h4-fontsize;
-	margin: ($h4-fontsize / 7.5) 0;
+	font-size: $h4-font-size;
+	margin: ($h4-font-size / 7.5) 0;
 }
 
 h5 {
-	font-size: $h5-fontsize;
-	margin: ($h5-fontsize / 7.5) 0;
+	font-size: $h5-font-size;
+	margin: ($h5-font-size / 7.5) 0;
 }
 
 h6 {
-	font-size: $h6-fontsize;
-	margin: ($h6-fontsize / 7.5) 0;
+	font-size: $h6-font-size;
+	margin: ($h6-font-size / 7.5) 0;
+}
+
+p {
+	font-size: $paragraph-font-size;
+	margin: 0 0 10px;
+	font-weight: 300;
 }
 
 .lead {
-	font-size: $lead-fontsize;
+	font-size: $lead-font-size;
 	font-weight: 300;
 }
 

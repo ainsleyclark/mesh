@@ -18,9 +18,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 html {
   line-height: 1.15;
@@ -357,52 +355,6 @@ main {
   position: relative;
 }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/**
- * Basic styles for links
- */
-a,
-a:visited {
-  color: #34495e;
-  text-decoration: none;
-}
-
-a.hover {
-  transition: color 0.2s;
-}
-
-a.hover:hover, a.hover:active, a.hover:focus {
-  color: #ff2451;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-  color: #34495e;
-}
-
-p {
-  line-height: 1.6em;
-  margin: 0.8em 0 -1.2em;
-  padding-bottom: 1.2em;
-  position: relative;
-}
-
 .hash {
   padding-left: 30px;
 }
@@ -446,7 +398,7 @@ pre {
 }
 
 code {
-  color: black;
+  color: #999;
   text-shadow: 0 1px white;
   font-family: "Roboto Mono", Monaco, courier, monospace;
   direction: ltr;
@@ -459,15 +411,15 @@ code {
 }
 
 .highlight .html .name {
-  color: #0eb02e;
+  color: #ff2451;
 }
 
 .highlight .html .attr {
-  color: #2b91af;
+  color: #55b559;
 }
 
 .highlight .html .tag {
-  color: #101094;
+  color: #37abd4;
 }
 
 /* ====================
@@ -550,7 +502,7 @@ header.primary nav.primary ul .download:hover svg path {
 }
 
 .sidenav .sub-list a li {
-  padding: 5px 0;
+  padding: 1px 0;
 }
 
 .sidenav .sub-list a:hover, .sidenav .sub-list a:active, .sidenav .sub-list a:focus {
@@ -593,7 +545,7 @@ header.primary nav.primary ul .download:hover svg path {
 }
 
 .smallnav-cont ul li {
-  margin: 12px 0;
+  margin: 8px 0;
 }
 
 .smallnav-cont ul.community .icon {

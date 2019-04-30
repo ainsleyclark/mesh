@@ -11,8 +11,8 @@
 //  5. Sizing
 //  6. Colours
 //  7. Type
-//  8. Borders
-//	9. Spacers
+//  8. Spacers
+//	9. Borders
 //	10. Alerts
 //	11. Buttons
 //	10. Cards
@@ -73,8 +73,9 @@ $sizing-properties: (10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%) !default
 $palette: (
 	white: #ffffff,
 	black: #000000,
-	// muted: #f8f8f8,
+	muted: #999,
 	primary: #ff2451,
+	secondary: #8270b8,
 	link: #3763d4,
 	info: #37abd4,
 	success: #55b559,
@@ -92,24 +93,30 @@ $color-attr: (
 // ==========================================================================
 
 //Font Stack
-$font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+$font-stack: Roboto,Helvetica,Arial,sans-serif;
+//$font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Sizes
-$h1-fontsize: 3.5rem !default;
-$h2-fontsize: 3rem !default;
-$h3-fontsize: 2.75rem !default;
-$h4-fontsize: 2rem !default;
-$h5-fontsize: 1.5rem !default;
-$h6-fontsize: 1.25rem !default;
-$lead-fontsize: 1.25rem !default;
+$h1-font-size: 3.31rem !default;
+$h2-font-size: 2.25rem !default;
+$h3-font-size: 1.56rem !default;
+$h4-font-size: 1.12rem !default;
+$h5-font-size: 1.06rem !default;
+$h6-font-size: 0.75rem !default;
+$lead-font-size: 1.25rem !default;
+$paragraph-font-size: 16px !default;
 $small-font-size: 75% !default;
+
+//Colors
+$text-color: #3c4858;
 
 //Responsive Text
 $range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
 $responsive-text-points: 30 !default;
 $point-size: $range / $responsive-text-points !default;
 
-// 9. Spacers
+// 8. Spacers
 // ==========================================================================
 
 $spacer-properties: (5px, 10px, 15px, 20px, 25px, 30px, 35px, 40px, 45px, 50px, 75px, 100px, 150px, 200px, 300px, 400px, 500px) !default;
@@ -136,7 +143,6 @@ $border-radius-large: 1 !default;
 // 10. Alerts
 // ==========================================================================
 
-
 // 11. Buttons
 // ==========================================================================
 
@@ -152,7 +158,10 @@ $button-padding-small: 6px 20px !default;
 $button-padding-medium: 12px 30px !default;
 $button-padding-large: 18px 40px !default;
 $button-padding-round: 12px 40px !default;
+
+//Font
 $button-font-size: 14px !default;
+$button-font-weight: 400;
 
 // 12. Cards
 // ==========================================================================

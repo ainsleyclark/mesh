@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 html {
   box-sizing: border-box;
 }
@@ -10,6 +11,31 @@ html {
 
 html,
 body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited {
+  color: #3c4858;
+  text-decoration: none;
+}
+
+a.hover {
+  transition: color 0.2s;
+}
+
+a.hover:hover, a.hover:active, a.hover:focus {
+  color: #ff2451;
+}
+
+ul {
   margin: 0;
   padding: 0;
 }

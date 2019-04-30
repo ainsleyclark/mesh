@@ -3,18 +3,6 @@
 // This file contains all type declerations (h1, h2, p etc) for whole site.
 // -----------------------------------------------------------------------------
 
-html {
-	font-family: $font;
-	color: $text-color;
-}
-
-p {
-	line-height: 1.6em;
-	margin: 0.8em 0 -1.2em;
-	padding-bottom: 1.2em;
-	position: relative;
-}
-
 .hash {
 	padding-left: 30px;
 
@@ -34,6 +22,5 @@ p {
 
 	@include media-tab {
 		position: absolute;
-
 	}
 }

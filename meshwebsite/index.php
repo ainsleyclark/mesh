@@ -57,4 +57,5 @@ $pageData = [
         </div>
     </section>
 
-<?php include_once 'partials/footer.php'; ?>
+<?php include_once('partials/sub-footer.php'); ?>
+<?php include_once('partials/footer.php'); ?>

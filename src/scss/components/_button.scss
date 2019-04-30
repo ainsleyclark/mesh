@@ -18,9 +18,9 @@
 	border-radius: 3px;
 	font-size: $button-font-size;
 	text-transform: uppercase;
-	transition: border 0.1s cubic-bezier(0.4, 0, 1, 1);;
+	transition: border 0.1s cubic-bezier(0.4, 0, 1, 1);
 	height: auto;
-	font-weight: 400;
+	font-weight: $button-font-weight;
 
 	&:hover,
 	&:focus {
@@ -33,7 +33,6 @@
 	}
 }
 
-
 // Coloured Buttons
 // ==========================================================================
 
@@ -42,7 +41,7 @@ $button-colors-map: map-merge($palette, $button-colors);
 %button-properties {
 	border: 0;
 	color: #ffffff;
-	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);;
+	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
 
 	&:hover,
 	&:focus {
@@ -102,7 +101,7 @@ $button-colors-map: map-merge($palette, $button-colors);
 .btn.outline {
 	box-shadow: none;
 	background-color: transparent;
-	transition: color, background-color 0.1s cubic-bezier(0.4, 0, 1, 1);;
+	transition: color, background-color 0.1s cubic-bezier(0.4, 0, 1, 1);
 
 	&:hover,
 	&:focus {
@@ -127,7 +126,6 @@ $button-colors-map: map-merge($palette, $button-colors);
 		}
 	}
 }
-
 
 // Button Sizes
 // ==========================================================================

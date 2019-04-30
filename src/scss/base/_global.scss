@@ -10,6 +10,31 @@ html {
 
 html,
 body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: $font-stack;
+	font-size: 1rem;
+	line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a,
+a:visited {
+	color: $text-color;
+	text-decoration: none;
+}
+
+a.hover {
+	transition: color 0.2s;
+
+	@include on-event {
+		color: color(primary);
+	}
+}
+
+ul {
 	margin: 0;
 	padding: 0;
 }

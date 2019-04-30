@@ -14,7 +14,7 @@ pre {
 }
 
 code {
-	color: black;
+	color: #999;
 	text-shadow: 0 1px white;
 	font-family: $font-code;
 	direction: ltr;
@@ -29,15 +29,15 @@ code {
 .highlight {
 	.html {
 		.name {
-			color: rgb(14, 176, 46);
+			color: $primary;
 		}
 
 		.attr {
-			color: #2b91af;
+			color: $green;
 		}
 
 		.tag {
-			color: #101094;
+			color: $blue;
 		}
 	}
 }

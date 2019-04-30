@@ -40,10 +40,12 @@ $tableOfContents = [
                         <div class="col-12 col-tab-6 px-0 pl-tab-0 pr-tab-2">
                             <h3 class="c-primary">mesh CSS:</h3>
                             <p>This is the standard version that comes with minified and unminified versions of mesh, including mesh grid, which is a barebones grid with flex, order & display. Choose this option if you have no familairty with Sass.</p>
+                            <button class="btn success rounded mt-3">Download meshCSS</button>
                         </div>
                         <div class="col-12 col-tab-6 px-0 pr-tab-0 pl-tab-2">
                             <h3 class="c-primary">Souce Files:</h3>
-                            <p>This is the uncompiled scss version of mesh, you need a way to compile Sass files if you choose this option, however, you will be able to modify the contents of mesh and change variables.</p>
+                            <p>This is the uncompiled scss version of mesh, you need a way to compile Sass files if you choose this option, however, you will be able to modify the contents of mesh by change variables and various other components.</p>
+                            <button class="btn link rounded mt-3 t-initial">Download meshSaas</button>
                         </div>
                     </div>
                 </div>
@@ -51,16 +53,16 @@ $tableOfContents = [
                 <div class="section-scroll" id="startusing">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Start using mesh</h2>
                     <p>mesh comes in two different flavours. You can select which version you want dependant on your expertise and preference. To get going, click on one of the options below.</p>
-<pre><code>&lt;!DOCTYPE html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Website Title&lt;/title&gt;
-        &lt;meta charset="utf-8"&gt;
-        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-        &lt;link rel="stylesheet" type="text/css" href="path-to-stylesheet/mesh.min.css" /&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+<pre class="highlight"><code class="html">&lt;!DOCTYPE html&gt;
+    &lt;<span class="tag">head</span>&gt;
+        &lt;<span class="tag">title</span>&gt;Website Title&lt;<span class="tag">/title</span>&gt;
+        &lt;<span class="tag">meta</span> <span class="attr">charset=</span><span class="name">"utf-8"</span>&gt;
+        &lt;<span class="tag">meta</span> <span class="attr">name=</span><span class="name">"viewport"</span> <span class="attr">content=</span><span class="name">"width=device-width, initial-scale=1"</span>&gt;
+        &lt;<span class="tag">link</span> <span class="attr">rel=</span><span class="name">"stylesheet"</span> <span class="attr">type=</span><span class="name">"text/css"</span> href=<span class="name">"path-to-stylesheet/mesh.min.css"</span> /&gt;
+    &lt;<span class="tag">/head</span>&gt;
+    &lt;<span class="tag">body</span>&gt;
+    &lt;<span class="tag">/body</span>&gt;
+&lt;<span class="tag">/html</span>&gt;</code></pre>
                 </div>
             </div><!-- /Col -->
             <?php include_once('../../partials/smallnav.php'); ?>

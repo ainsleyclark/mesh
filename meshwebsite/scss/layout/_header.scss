@@ -14,14 +14,13 @@ header.primary {
 	}
 
 	nav.primary {
-		
 		ul {
 			list-style-type: none;
 
 			li {
 				font-size: 14px;
 			}
-			
+
 			a {
 				color: $text-color;
 
@@ -30,10 +29,8 @@ header.primary {
 				}
 			}
 
-
-
-			.download { 
-				padding: 10px 40px; 
+			.download {
+				padding: 10px 40px;
 
 				svg {
 					width: 18px;

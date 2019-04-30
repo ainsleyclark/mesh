@@ -69,7 +69,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
                             <img class="logo" src="/assets/svg/meshlogo.svg" alt="mesh Logo">
                         </div>
                         <div class="text-cont">
-                            <h5>meshCSS</h5>
+                            <h3>meshCSS</h3>
                         </div>
                     </a>
                 </div>

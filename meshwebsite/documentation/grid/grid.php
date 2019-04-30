@@ -27,18 +27,18 @@ $pageData = [
     &lt;<span class="tag">div </span><span class="attr">class=</span><span class="name">"row"</span>&gt;
         &lt;<span class="tag">div </span><span class="attr">class=</span><span class="name">"col-12 col-tab-6 col-desk-4 col-hd-3"</span>&gt;
             I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at dekstop and 3 in hd screens
-        <span class="tag">&lt;/div&gt;</span>
-        &lt;<span class="tag">div </span><span class="attr">class=</span><span class="name">"col-10 col-tab-6 col-desk-4 col-hd-3"</span>&gt;
-            I'm a column, I take up 10 columns at mobile, 6 at tablet, 4 at dekstop and 3 in hd screens
-        <span class="tag">&lt;/div&gt;</span>
+        &lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">div </span><span class="attr">class=</span><span class="name">"col-12 col-tab-6 col-desk-4 col-hd-3"</span>&gt;
-            I'm a column, I take up 12 columns at mobile, 6 at tablet, 4 at dekstop and 3 in hd screens
-        <span class="tag">&lt;/div&gt;</span>
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at dekstop and 3 in hd screens
+        &lt;<span class="tag">/div</span>&gt;
         &lt;<span class="tag">div </span><span class="attr">class=</span><span class="name">"col-12 col-tab-6 col-desk-4 col-hd-3"</span>&gt;
-            I'm a column, I take up 12 columns at mobile, 6 at tablet, 4 at dekstop and 3 in hd screens
-        <span class="tag">&lt;/div&gt;</span>
-    <span class="tag">&lt;/div&gt;</span>
-<span class="tag">&lt;/div&gt;</span></code></pre>
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at dekstop and 3 in hd screens
+        &lt;<span class="tag">div </span><span class="attr">class=</span><span class="name">"col-12 col-tab-6 col-desk-4 col-hd-3"</span>&gt;
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at dekstop and 3 in hd screens
+        &lt;<span class="tag">/div</span>&gt;
+        &lt;<span class="tag">/div</span>&gt;
+    &lt;<span class="tag">/div</span>&gt;
+&lt;<span class="tag">/div</span>&gt;</code></pre>
                 <!-- Containers -->
                 <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Containers</h2>
                 <p>A container can be at fixed size, and will gracefully become smaller as screen size gets smaller.</p>
