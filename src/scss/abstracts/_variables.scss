@@ -174,3 +174,19 @@ $button-enable-shadows: true;
 
 // 12. Cards
 // ==========================================================================
+
+// Default card sizes
+$card-default-width: 300px !default;
+$card-default-width-large: 500px !default;
+
+// Default Card Padding
+$card-default-padding: 12px 30px !default;
+$card-default-header-icon-padding: 5px 0 5px 30px !default;
+$card-default-media-img-title-padding: 5px 30px !default;
+
+// Card Media-Header Size
+$card-default-media-header-height: 150px !default;
+
+// Default Card Font Sizes
+$card-default-title-font-size: 18px !default;
+$card-default-content-font-size: 16px !default;
