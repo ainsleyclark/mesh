@@ -95,6 +95,6 @@ Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE).
 
 ## BrowserStack
 Tested with BrowserStack.
-<a href="https://www.browserstack.com/">
+<a href="https://www.browserstack.com/" style="display: block;">
   <img alt="BrowserStack Logo" src="https://www.meshcss.com/assets/img/browserstack-logo.png" width="144">
 </a>
