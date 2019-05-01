@@ -30,7 +30,7 @@ $dark-temp: #000;
 		background-color: $dark-temp;
 		border: 1px solid $dark-temp;
 	}
-	
+
 	&:hover::before {
 		content: '';
 		position: absolute;

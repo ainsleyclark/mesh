@@ -5,8 +5,6 @@ $pageData = [
 	'pageTitle' => '',
 	'pageDescription' => '',
 	'activePage' => 'home',
-    'ogImage' => '',
-    'isDownDirectory' => false
 ]; 
 
 ?>
@@ -44,8 +42,8 @@ $pageData = [
                         <div class="text-cont t-center t-desk-left">
                             <h1 class="my-0">meshCSS</h1>
                             <div class="lead pr-5 mt-3">A blazingly fast, versatile, pure CSS open source framework with a modular approach to a responsive grid system and a vast amount of utilities.</div>
-                            <a href="/documentation/getting-started"><button class="btn rounded primary t-initial mt-4 c-black">Get Started with mesh</button></a>
-                            <a href="https://github.com/ainsleyclark/mesh" target="_blank"><button class="btn rounded outline primary t-initial mt-4 mx-2">View on Github</button></a>
+                            <a href="/documentation/getting-started"><button class="btn btn-rounded btn-primary mt-4">Get Started with mesh</button></a>
+                            <a href="https://github.com/ainsleyclark/mesh" target="_blank"><button class="btn btn-rounded btn-outline btn-primary mt-4 mx-2">View on Github</button></a>
                         </div>
                     </div>
                 </div>

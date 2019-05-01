@@ -5,7 +5,7 @@ $activeClass = $pageData['activePage'];
 ?>
 
 <aside class="sidenav">
-    <h5>Documentation</h5>
+    <h3>Documentation</h3>
     <ul class="main-list color-black">
         <!-- Getting Started -->
         <li class="my-4">
