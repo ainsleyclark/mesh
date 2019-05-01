@@ -127,13 +127,14 @@ $spacer-properties: (5px, 10px, 15px, 20px, 25px, 30px, 35px, 40px, 45px, 50px, 
 // 9. Borders
 // ==========================================================================
 
-//Borders
+//Border Colors
 $border-colors: (
 	default: rgba(0, 0, 0, 0.3),
 	light: rgba(0, 0, 0, 0.1),
 	dark: rgba(0, 0, 0, 0.6)
 ) !default;
 
+//Border Widths
 $border-width: 1px !default;
 $border-width-2: 2px !default;
 $border-width-3: 3px !default;
@@ -145,6 +146,7 @@ $border-radius-large: 1 !default;
 
 // 10. Alerts
 // ==========================================================================
+
 
 // 11. Buttons
 // ==========================================================================
