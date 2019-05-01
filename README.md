@@ -4,8 +4,6 @@
   </a>
 </p>
 
-https://p14.zdusercontent.com/attachment/1015988/digIqT85dl7Uy8TmOFWakwIer?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..cC-eZRN-5N3qz5z3fG0rdA.SB_ljDoijx6xBIgm-HLLu8SIxmOwCSmdBSoxtYaG5LgmxMiWv7N-zsptEX3wntdIM_VdoMOLm3TYJsLVVfTbrjjQiR_QqaCFkRa-MDA9hnUQhW5ttSJrQnup1N4gIqiru4pr4gimLHKe2jYeexAy0GsdCoXDZ1nqTCCUMQy2Adh4THPVc57wvC1vSUIOuVtKA2vh-vWPG8Wd7J-h3Gife9nBBK9vh5e2q2bksLq89wUw1xldNE1zOn9RXNbI9i8AD5CvN-NrXamXDJFMbL7Xtl9WFw8ghs3qfa09CfxcVzk.MPFOZa9eq4SwAqw_7XgmCg
-
 <h1 align="center">
   mesh
 </h1>
@@ -94,7 +92,7 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE).
 
 ## BrowserStack
-Tested with BrowserStack.
-<a href="https://www.browserstack.com/" style="display: block;">
+Tested with BrowserStack.  <br/>
+<a href="https://www.browserstack.com/">
   <img alt="BrowserStack Logo" src="https://www.meshcss.com/assets/img/browserstack-logo.png" width="144">
 </a>
