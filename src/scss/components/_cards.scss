@@ -70,10 +70,10 @@
 			z-index: 10;
 		}
 
-		/* 
-     	*  Enforce font-size for all headings except h1
-     	*  because there should never be a h1 in a card
-    	*/
+		/*
+     		*  Enforce font-size for all headings except h1
+     		*  because there should never be a h1 in a card
+    		*/
 		@for $index from 2 through 6 {
 			& > .card-title > h#{$index} {
 				font-size: inherit;
@@ -84,7 +84,7 @@
 		}
 	}
 
-	// Add extra padding-top if has .card-menu sibling
+	//Add extra padding-top if has .card-menu sibling
 	.card-menu + .card-header {
 		padding-top: 40px;
 	}
