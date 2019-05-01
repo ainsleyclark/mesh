@@ -14,7 +14,6 @@ $pageData = [
 <?php include_once('../../partials/sidenav.php'); ?>
 
 
-
 <div class="container">
     <div class="row justify-content-center t-center">
         <div class="col-12">
@@ -139,5 +138,6 @@ $pageData = [
                 <button class="btn btn-block btn-primary btn-rounded mx-1 my-2">Block</button>
             </div>
         </div>
+        
     </div>
 </div>

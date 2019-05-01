@@ -3,7 +3,6 @@
 // Button classes & styling with reference to palette.
 // ==========================================================================
 
-
 //! Add hover states? btn-hover?
 .btn {
 	display: inline-block;
@@ -31,8 +30,6 @@
 	}
 }
 
-
-
 // Colored Buttons
 // ==========================================================================
 
@@ -53,12 +50,12 @@
 		.btn-#{$color-name} {
 			@extend %button-properties;
 		}
-	
+
 		.btn-#{$color-name} {
 			@include buttons-colored($hex);
 		}
 	}
-	
+
 	//Simple Button
 	.btn-simple {
 		background-color: transparent;
@@ -67,29 +64,28 @@
 	}
 }
 
-
 // Disabled Buttons
 // ==========================================================================
 
 @if $button-enable-disabled {
-	.btn-disabled, .btn:disabled {
+	.btn-disabled,
+	.btn:disabled {
 		&:hover {
 			box-shadow: none;
 			cursor: default;
 		}
 	}
-	
+
 	@each $color-name, $hex in $palette {
-		.btn-disabled, .btn-#{$color-name}:disabled {
+		.btn-disabled,
+		.btn-#{$color-name}:disabled {
 			background-color: rgba($hex, 0.5);
 		}
 	}
 }
 
-
 // Outlined Buttons
 // ==========================================================================
-
 
 @if $button-enable-outline {
 	@each $color-name, $hex in $palette {
@@ -97,31 +93,26 @@
 			@include buttons-outline($hex);
 		}
 	}
-	
+
 	//Common button outline props
 	.btn-outline {
 		box-shadow: none;
 		background-color: transparent;
 		transition: color, background-color 0.1s cubic-bezier(0.4, 0, 1, 1);
-	
+
 		&:hover,
-		&:focus {
+		&:focus,
+		&:active {
 			box-shadow: none;
 			color: #ffffff;
 		}
-	
-		&:active {
-			color: #ffffff;
-		}
-	
+
 		//For loading spinner
 		&:after {
 			border-right-color: transparent;
 		}
 	}
 }
-
-
 
 // Button Sizes
 // ==========================================================================
@@ -148,7 +139,6 @@
 	}
 }
 
-
 // Icon Buttons
 // ==========================================================================
 
@@ -157,18 +147,18 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-	
+
 		i:first-child:not(:last-child) {
 			margin-left: 0;
 			margin-right: 5px;
 		}
-	
+
 		i:last-child:not(:first-child) {
 			margin-left: 5px;
 			margin-right: 0;
 		}
 	}
-	
+
 	//Rounded button with icon
 	.btn-justicon {
 		border-radius: 30px;
@@ -176,30 +166,16 @@
 		height: 45px;
 		min-width: 45px;
 		width: 45px;
-	
+
 		&.large {
 			width: 56px;
 			height: 56px;
 			min-width: 56px;
-	
+
 			i {
 				font-size: 1.3rem;
 				line-height: 56px;
 			}
-		}
-	}
-}
-
-// Block Button
-// ==========================================================================
-
-@if $button-enable-block {
-	.btn-block {
-		display: block;
-		width: 100%;
-	
-		+ .btn-block {
-			margin-top: 10px;
 		}
 	}
 }
@@ -272,6 +248,11 @@
 		&:hover {
 			box-shadow: none;
 		}
+
+		//Overwrite specific classes
+		&.btn-outline:after {
+			border-right-color: transparent;
+		}
 	}
 
 	//All coloured buttons to have white spinner
@@ -286,6 +267,20 @@
 			.btn-#{$color-name}:after {
 				@extend %white-spinner;
 			}
+		}
+	}
+}
+
+// Block Button
+// ==========================================================================
+
+@if $button-enable-block {
+	.btn-block {
+		display: block;
+		width: 100%;
+
+		+ .btn-block {
+			margin-top: 10px;
 		}
 	}
 }
