@@ -11,7 +11,7 @@ $dark-temp: #000;
 
 [data-tool-tip] {
 	position: relative;
-	cursor: help;
+	cursor: pointer;
 	z-index: 10;
 
 	//default (with default color black with white text)
@@ -30,6 +30,7 @@ $dark-temp: #000;
 		background-color: $dark-temp;
 		border: 1px solid $dark-temp;
 	}
+	
 	&:hover::before {
 		content: '';
 		position: absolute;

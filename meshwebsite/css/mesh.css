@@ -4768,7 +4768,7 @@ video.video-responsive {
 
 [data-tool-tip] {
   position: relative;
-  cursor: help;
+  cursor: pointer;
   z-index: 10;
 }
 
