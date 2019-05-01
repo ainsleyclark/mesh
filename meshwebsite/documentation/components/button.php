@@ -20,8 +20,6 @@ $pageData = [
         <div class="col-12">
             <div class="spacer-100"></div>
 
-            <a href="" class="btn btn-primary">Test</a>
-            
             <h5>Default Buttons:</h5>
             <div class="d-flex justify-content-center">
                 <div class="button-cont mx-auto my-4">
@@ -42,7 +40,19 @@ $pageData = [
                     <button class="btn btn-warning mx-1">Warning</button>
                     <button class="btn btn-danger mx-1">Danger</button>
                     <button class="btn btn-link mx-1">Link</button>
-                    <button class="btn btn-disabled mx-1">Disabled</button>
+                </div>
+            </div>
+
+            <h5>Disabled Buttons:</h5>
+            <div class="d-flex justify-content-center">
+                <div class="button-cont mx-auto my-4">
+                    <button class="btn mx-1" disabled>Default</button>
+                    <button class="btn btn-primary mx-1" disabled>Primary</button>
+                    <button class="btn btn-info mx-1" disabled>Info</button>
+                    <button class="btn btn-success mx-1" disabled>Success</button>
+                    <button class="btn btn-warning mx-1" disabled>Warning</button>
+                    <button class="btn btn-danger mx-1" disabled>Danger</button>
+                    <button class="btn btn-link mx-1" disabled>Link</button>
                 </div>
             </div>
 
@@ -50,11 +60,11 @@ $pageData = [
             <div class="d-flex justify-content-center">
                 <div class="button-cont mx-auto my-4">
                     <button class="btn btn-outline btn-primary mx-1">Primary</button>
-                    <button class="btn btn-outline info mx-1">Info</button>
-                    <button class="btn btn-outline success mx-1">Success</button>
-                    <button class="btn btn-outline warning mx-1">Warning</button>
-                    <button class="btn btn-outline danger mx-1">Danger</button>
-                    <button class="btn btn-outline link mx-1">Link</button>
+                    <button class="btn btn-outline btn-info mx-1">Info</button>
+                    <button class="btn btn-outline btn-success mx-1">Success</button>
+                    <button class="btn btn-outline btn-warning mx-1">Warning</button>
+                    <button class="btn btn-outline btn-danger mx-1">Danger</button>
+                    <button class="btn btn-outline btn-link mx-1">Link</button>
                 </div>
             </div>
 

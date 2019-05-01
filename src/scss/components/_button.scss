@@ -3,18 +3,13 @@
 // Button classes & styling with reference to palette.
 // ==========================================================================
 
-//! NEED TO ADD DISABLED BUTTONS FOR ALL COLORS using :disabled and .disabled
-//! NEED TO change to btn-outline-primary etc..
+
 //! Add hover states? btn-hover?
-//! FIX Loading & Outline bug
-//! A href button is black
-
-
 .btn {
 	display: inline-block;
 	position: relative;
 	padding: $button-padding-medium;
-	background: #ffffff;
+	background: transparent;
 	cursor: pointer;
 	border: 1px solid rgba(0, 0, 0, 0.12);
 	outline: none;
@@ -32,15 +27,14 @@
 	}
 
 	&:active {
-		color: #000000;
 		border: 1px solid rgba(0, 0, 0, 0.55);
 	}
 }
 
-// Coloured Buttons
-// ==========================================================================
 
-$button-colors-map: map-merge($palette, $button-colors);
+
+// Colored Buttons
+// ==========================================================================
 
 %button-properties {
 	border: 0;
@@ -48,143 +42,150 @@ $button-colors-map: map-merge($palette, $button-colors);
 	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1);
 
 	&:hover,
-	&:focus {
-		border: 0;
-	}
-
+	&:focus,
 	&:active {
 		border: 0;
 	}
 }
 
-@each $color-name, $hex in $button-colors-map {
-	@if (to-lower-case(inspect($hex)) != '#ffffff') {
-		// sass-lint:disable-line hex-notation
-
+@if $button-enable-colored {
+	@each $color-name, $hex in $palette {
 		.btn-#{$color-name} {
-			@if (lightness($hex) > 80) {
-				color: #000000;
-			}
-			@if ($color-name != disabled) {
-				@extend %button-properties;
-				background-color: $hex;
-				box-shadow: 0 2px 2px 0 rgba($hex, 0.14), 0 3px 1px -2px rgba($hex, 0.2), 0 1px 5px 0 rgba($hex, 0.12);
+			@extend %button-properties;
+		}
+	
+		.btn-#{$color-name} {
+			@include buttons-colored($hex);
+		}
+	}
+	
+	//Simple Button
+	.btn-simple {
+		background-color: transparent;
+		box-shadow: 0;
+		border: 0;
+	}
+}
 
-				&:hover,
-				&:focus {
-					box-shadow: 0 14px 26px -12px rgba($hex, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($hex, 0.2);
-				}
 
-				&:active {
-					background-color: darken($hex, 10%);
-				}
-			} @else {
-				cursor: no-drop;
-				color: rgba(0, 0, 0, 0.5);
+// Disabled Buttons
+// ==========================================================================
 
-				&:hover,
-				&:focus {
-					border: 1px solid rgba(0, 0, 0, 0.12);
-					box-shadow: 0;
-					color: rgba(0, 0, 0, 0.5);
-				}
-			}
+@if $button-enable-disabled {
+	.btn-disabled, .btn:disabled {
+		&:hover {
+			box-shadow: none;
+			cursor: default;
+		}
+	}
+	
+	@each $color-name, $hex in $palette {
+		.btn-disabled, .btn-#{$color-name}:disabled {
+			background-color: rgba($hex, 0.5);
 		}
 	}
 }
 
-.btn.simple {
-	background-color: transparent;
-	box-shadow: 0;
-	border: 0;
-}
 
 // Outlined Buttons
 // ==========================================================================
 
-.btn-outline {
-	box-shadow: none;
-	background-color: transparent;
-	transition: color, background-color 0.1s cubic-bezier(0.4, 0, 1, 1);
 
-	&:hover,
-	&:focus {
+@if $button-enable-outline {
+	@each $color-name, $hex in $palette {
+		.btn-#{$color-name}.btn-outline {
+			@include buttons-outline($hex);
+		}
+	}
+	
+	//Common button outline props
+	.btn-outline {
 		box-shadow: none;
-	}
-}
-
-@each $color-name, $hex in $palette {
-	.btn-#{$color-name}.btn-outline {
-		color: $hex;
-		border: 1px solid $hex;
-
+		background-color: transparent;
+		transition: color, background-color 0.1s cubic-bezier(0.4, 0, 1, 1);
+	
+		&:hover,
+		&:focus {
+			box-shadow: none;
+			color: #ffffff;
+		}
+	
 		&:active {
-			background-color: darken($hex, 10%);
-			border-color: $hex;
 			color: #ffffff;
 		}
-
-		&:hover {
-			color: #ffffff;
-			background-color: $hex;
+	
+		//For loading spinner
+		&:after {
+			border-right-color: transparent;
 		}
 	}
 }
+
+
 
 // Button Sizes
 // ==========================================================================
 
-.btn-small {
-	padding: $button-padding-small;
-	font-size: $button-font-size - 1px;
-}
-.btn-large {
-	padding: $button-padding-large;
-	font-size: $button-font-size + 1px;
+@if $button-enable-sizes {
+	.btn-small {
+		padding: $button-padding-small;
+		font-size: $button-font-size - 1px;
+	}
+
+	.btn-large {
+		padding: $button-padding-large;
+		font-size: $button-font-size + 1px;
+	}
 }
 
 // Rounded Buttons
 // ==========================================================================
 
-.btn-rounded {
-	border-radius: 500px;
-	padding: $button-padding-round;
+@if $button-enable-rounded {
+	.btn-rounded {
+		border-radius: 500px;
+		padding: $button-padding-round;
+	}
 }
+
 
 // Icon Buttons
 // ==========================================================================
 
-.btn-icon {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	i:first-child:not(:last-child) {
-		margin-left: 0;
-		margin-right: 5px;
+@if $button-enable-icons {
+	.btn-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	
+		i:first-child:not(:last-child) {
+			margin-left: 0;
+			margin-right: 5px;
+		}
+	
+		i:last-child:not(:first-child) {
+			margin-left: 5px;
+			margin-right: 0;
+		}
 	}
-
-	i:last-child:not(:first-child) {
-		margin-left: 5px;
-		margin-right: 0;
-	}
-}
-
-.btn-justicon {
-	border-radius: 30px;
-	padding: 0;
-	height: 45px;
-	min-width: 45px;
-	width: 45px;
-
-	&.large {
-		width: 56px;
-		height: 56px;
-		min-width: 56px;
-
-		i {
-			font-size: 1.3rem;
-			line-height: 56px;
+	
+	//Rounded button with icon
+	.btn-justicon {
+		border-radius: 30px;
+		padding: 0;
+		height: 45px;
+		min-width: 45px;
+		width: 45px;
+	
+		&.large {
+			width: 56px;
+			height: 56px;
+			min-width: 56px;
+	
+			i {
+				font-size: 1.3rem;
+				line-height: 56px;
+			}
 		}
 	}
 }
@@ -192,92 +193,99 @@ $button-colors-map: map-merge($palette, $button-colors);
 // Block Button
 // ==========================================================================
 
-.btn-block {
-	display: block;
-	width: 100%;
+@if $button-enable-block {
+	.btn-block {
+		display: block;
+		width: 100%;
+	
+		+ .btn-block {
+			margin-top: 10px;
+		}
+	}
 }
 
 // Loading Button
 // ==========================================================================
 
-.btn-loading {
-	$self: &;
-	height: 43px;
-	width: 112px;
-	transition: none;
-	pointer-events: none;
+@if $button-enable-loading {
+	.btn-loading {
+		$self: &;
+		height: 43px;
+		width: 112px;
+		transition: none;
+		pointer-events: none;
 
-	&:after {
-		content: '';
-		width: 18px;
-		height: 18px;
-		border: 2px solid rgba(0, 0, 0, 0.5);
+		&:after {
+			content: '';
+			width: 18px;
+			height: 18px;
+			border: 2px solid rgba(0, 0, 0, 0.5);
+			border-right-color: transparent;
+			border-radius: 50%;
+			display: inline-block;
+			animation-duration: 0.75s;
+			animation-iteration-count: infinite;
+			animation-name: spinner;
+			animation-timing-function: linear;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -9px;
+			margin-top: -9px;
+		}
+
+		&.btn-small {
+			height: 32px;
+			width: 78px;
+
+			&:after {
+				width: 14px;
+				height: 14px;
+				border-width: 1.5px;
+				margin-left: -7px;
+				margin-top: -7px;
+			}
+		}
+
+		&.btn-large {
+			height: 59px;
+			width: 123px;
+
+			&:after {
+				width: 26px;
+				height: 26px;
+				border-width: 3px;
+				margin-left: -13px;
+				margin-top: -13px;
+			}
+		}
+
+		@keyframes spinner {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		&:hover {
+			box-shadow: none;
+		}
+	}
+
+	//All coloured buttons to have white spinner
+	%white-spinner {
+		border-color: #ffffff;
 		border-right-color: transparent;
-		border-radius: 50%;
-		display: inline-block;
-		animation-duration: 0.75s;
-		animation-iteration-count: infinite;
-		animation-name: spinner;
-		animation-timing-function: linear;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-left: -9px;
-		margin-top: -9px;
 	}
 
-	&.btn-small {
-		height: 32px;
-		width: 78px;
-
-		&:after {
-			width: 14px;
-			height: 14px;
-			border-width: 1.5px;
-			margin-left: -7px;
-			margin-top: -7px;
-		}
-	}
-
-	&.btn-large {
-		height: 59px;
-		width: 123px;
-
-		&:after {
-			width: 26px;
-			height: 26px;
-			border-width: 3px;
-			margin-left: -13px;
-			margin-top: -13px;
-		}
-	}
-
-	@keyframes spinner {
-		0% {
-			transform: rotate(0deg);
-		}
-		100% {
-			transform: rotate(360deg);
-		}
-	}
-
-	&:hover {
-		box-shadow: none;
-	}
-}
-
-%white-spinner {
-	border-color: #ffffff;
-	border-right-color: transparent;
-}
-
-@each $color-name, $hex in $palette {
-	@if (to-lower-case(inspect($hex)) != '#ffffff' and to-lower-case(inspect($hex)) != '#000000') {
-		// sass-lint:disable-line hex-notation
-		.btn-loading.btn-#{$color-name}:after {
-			@extend %white-spinner;
+	@each $color-name, $hex in $palette {
+		@if (to-lower-case(inspect($hex)) != '#ffffff' and to-lower-case(inspect($hex)) != '#000000') {
+			// sass-lint:disable-line hex-notation
+			.btn-#{$color-name}:after {
+				@extend %white-spinner;
+			}
 		}
 	}
 }
-
-//.btn.loading.primary:after

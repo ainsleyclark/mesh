@@ -49,3 +49,25 @@
 	//Default font size on html element is 100%, equivalent to 16px;
 	@return #{$remSize}rem;
 }
+
+
+// Pixel to REM Convertor
+// ==========================================================================
+
+/// @author Bootstrap
+/// @param {Color} - Hex
+/// @return {Color} - Black or white text
+@function color-contrast($color) {
+	$r: red($color);
+	$g: green($color);
+	$b: blue($color);
+  
+	$yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+  
+	@if ($yiq >= 190) {
+	  @return $black-text-color;
+	} @else {
+	  @return $white-text-color;
+	}
+}
+

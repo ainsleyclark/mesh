@@ -5,6 +5,8 @@ $pageData = [
 	'pageTitle' => '',
 	'pageDescription' => '',
 	'activePage' => 'home',
+    'ogImage' => '',
+    'isDownDirectory' => false
 ]; 
 
 ?>
