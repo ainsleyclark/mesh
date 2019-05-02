@@ -10,7 +10,10 @@
 		"clean": "./bin/clean",
 		"prefix": "./bin/prefix",
 		"minify": "./bin/minify",
-		"lint": "./bin/lint"
+		"lint": "./bin/lint",
+		"docker-start": "docker start mesh-php && npm run watch-css",
+		"docker-stop": "docker stop mesh-php",
+		"docker-create": "./bin/docker-create"
 	},
 	"browserslist": [
 		"last 2 versions"
