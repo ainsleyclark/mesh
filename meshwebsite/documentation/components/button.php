@@ -3,16 +3,16 @@
 //Page variables
 $pageData = [
 	'pageTitle' => 'Button',
-	'pageDescription' => '',
+	'pageDescription' => 'Discover how to use our buttons in your forms, dialogs and more with our versatile classes - including various sizes, colors and states.',
     'activePage' => 'button',
     'parentDirectory' => basename(__DIR__)
 ]; 
 
 //Table of contents
 $tableOfContents = [
-	'notes' => 'A few notes',
-	'css' => 'Source Files (CSS)',
-    'sass' => 'Source Files (SCSS)',
+	'usage' => 'Usage',
+	'colored' => 'Colored buttons',
+	'disabled' => 'Disabled buttons',
     'npm' => 'npm'
 ];
 
@@ -25,94 +25,111 @@ $tableOfContents = [
 <section class="content">
     <div class="container-fullwidth">
         <div class="row justify-content-center mt-4 mt-desk-5">
-            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="mb-2 mt-0">Button</h1>
                 <div class="lead">Discover how to use our buttons in your forms, dialogs and more with our versatile classes - including various sizes, colors and states.</div>
-                <!-- mesh CDN -->
-                <div class="section-scroll" id="notes">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">A few notes</h2>
-                    <p>The mesh button should be prefixed with <pre><code>.btn</code></pre></p>
-                </div>
-
-                <div class="spacer-100"></div>
-
-                <h5>Default Buttons:</h5>
-                <div class="d-flex justify-content-center">
-                    <div class="button-cont mx-auto my-4">
-                        <button class="btn mx-1">Default</button>
-                        <button class="btn btn-light mx-1">Light</button>
-                        <button class="btn btn-dark mx-1">Dark</button>
-                        <button class="btn btn-black mx-1">Black</button>
-                        <button class="btn btn-simple mx-1">Simple</button>
+                <!-- Usage -->
+                <div class="section-scroll" id="usage">
+                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Usage</h2>
+                    <p>The mesh button should be prefixed with the <code class="inline">.btn</code> class which will give you access to all of the classes outlined below.</p>
+                    <p>They are designed to be used with the <code class="inline">&lt;button&gt;</code>  element but you can also use them on <code class="inline">&lt;a&gt;</code> tags, <code class="inline">&lt;input type="submit"&gt;</code> and <code class="inline">&lt;input type="reset"&gt;</code> tags for ease of use.</p>
+                    <p>You can have <strong>any combination</strong> of the classes listed below</p>
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
+                        <button class="btn">Default</button>
+                        <button class="btn btn-light">Light</button>
+                        <button class="btn btn-dark">Dark</button>
+                        <button class="btn btn-black">Black</button>
+                        <button class="btn btn-simple">Simple</button>
                     </div>
+<pre class="highlight"><code class="html">&lt;button class="btn"&gt;Default&lt;/button&gt;
+&lt;button class="btn btn-light"&gt;Light&lt;/button&gt;
+&lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;
+&lt;button class="btn btn-black"&gt;Black&lt;/button&gt;
+&lt;button class="btn btn-simple"&gt;Simple&lt;/button&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </div>
 
-                <h5>Coloured Buttons:</h5>
-                <div class="d-flex justify-content-center">
-                    <div class="button-cont mx-auto my-4">
-                        <button class="btn btn-primary mx-1">Primary</button>
-                        <button class="btn btn-info mx-1">Info</button>
-                        <button class="btn btn-success mx-1">Success</button>
-                        <button class="btn btn-warning mx-1">Warning</button>
-                        <button class="btn btn-danger mx-1">Danger</button>
-                        <button class="btn btn-link mx-1">Link</button>
+                <!-- Colored Buttons -->
+                <article class="section-scroll py-2" id="colored">
+                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Colored Buttons</h2>
+                    <p>You can add color classes to brighten up the buttons by prefixing it with <code class="inline">.btn-{color}</code> class which will give you access to all of the classes outlined below.</p>
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-success">Success</button>
+                        <button class="btn btn-info">Info</button>
+                        <button class="btn btn-warning">Warning</button>
+                        <button class="btn btn-danger">Danger</button>
+                        <button class="btn btn-link">Link</button>
                     </div>
-                </div>
+                    <pre class="highlight"><code class="html">&lt;button class="btn"&gt;Default&lt;/button&gt;
+&lt;button class="btn btn-light"&gt;Light&lt;/button&gt;
+&lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;
+&lt;button class="btn btn-black"&gt;Black&lt;/button&gt;
+&lt;button class="btn btn-simple"&gt;Simple&lt;/button&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                </article>
 
-                <h5>Disabled Buttons:</h5>
-                <div class="d-flex justify-content-center">
-                    <div class="button-cont mx-auto my-4">
-                        <button class="btn mx-1" disabled>Default</button>
-                        <button class="btn btn-primary mx-1" disabled>Primary</button>
-                        <button class="btn btn-info mx-1" disabled>Info</button>
-                        <button class="btn btn-success mx-1" disabled>Success</button>
-                        <button class="btn btn-warning mx-1" disabled>Warning</button>
-                        <button class="btn btn-danger mx-1" disabled>Danger</button>
-                        <button class="btn btn-link mx-1" disabled>Link</button>
+                <!-- Disabled Buttons -->
+                <article class="section-scroll py-2" id="disabled">
+                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Disabled Buttons</h2>
+                    <p>You can make buttons appear inactive by adding the <code class="inline">disabled</code> attribute to the end of the elements tag. Alternativley you could add the btn-disabled class name.</code></p>
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
+                        <button class="btn btn-primary" disabled>Primary</button>
+                        <button class="btn btn-success" disabled>Success</button>
+                        <button class="btn btn-info" disabled>Info</button>
+                        <button class="btn btn-warning" disabled>Warning</button>
+                        <button class="btn btn-danger" disabled>Danger</button>
+                        <button class="btn btn-link" disabled>Link</button>
                     </div>
-                </div>
+                    <pre class="highlight"><code class="html">&lt;button class="btn btn-primary" disabled&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-light" disabled&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-dark" disabled&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-black" disabled&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-danger" disabled&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-link" disabled&gt;Link&lt;/button&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                </article>
+
+ 
 
                 <h5>Outlined Buttons:</h5>
                 <div class="d-flex justify-content-center">
                     <div class="button-cont mx-auto my-4">
-                        <button class="btn btn-outline btn-primary mx-1">Primary</button>
-                        <button class="btn btn-outline btn-info mx-1">Info</button>
-                        <button class="btn btn-outline btn-success mx-1">Success</button>
-                        <button class="btn btn-outline btn-warning mx-1">Warning</button>
-                        <button class="btn btn-outline btn-danger mx-1">Danger</button>
-                        <button class="btn btn-outline btn-link mx-1">Link</button>
+                        <button class="btn btn-outline btn-primary">Primary</button>
+                        <button class="btn btn-outline btn-info">Info</button>
+                        <button class="btn btn-outline btn-success">Success</button>
+                        <button class="btn btn-outline btn-warning">Warning</button>
+                        <button class="btn btn-outline btn-danger">Danger</button>
+                        <button class="btn btn-outline btn-link">Link</button>
                     </div>
                 </div>
 
                 <h5>Sized Buttons:</h5>
                 <div class="d-flex justify-content-center">
                     <div class="button-cont mx-auto my-4">
-                        <button class="btn btn-small mx-1">Small</button>
-                        <button class="btn mx-1">Default</button>
-                        <button class="btn btn-large mx-1">Large</button>
+                        <button class="btn btn-small">Small</button>
+                        <button class="btn">Default</button>
+                        <button class="btn btn-large">Large</button>
                     </div>
                 </div>
 
                 <h5>Icon Buttons:</h5>
                 <div class="d-flex justify-content-center align-items-center flex-wrap">
                     <div class="button-cont mx-auto my-4 d-flex align-items-start flex-column flex-desk-row">
-                        <button class="btn btn-icon btn-primary mx-1">
+                        <button class="btn btn-icon btn-primary">
                             <i class="far fa-hashtag"></i>
                             <span>With Icon Tes Test test</span>
                         </button>
-                        <button class="btn btn-icon btn-primary mx-1">
+                        <button class="btn btn-icon btn-primary">
                             <span>With Icon</span>
                             <i class="far fa-hashtag"></i>
                         </button>
-                        <button class="btn btn-icon btn-outline primary mx-1">
+                        <button class="btn btn-icon btn-outline primary">
                             <span>With Icon</span>
                             <i class="far fa-hashtag"></i>
                         </button>
-                        <button class="btn btn-icon btn-primary mx-1">
+                        <button class="btn btn-icon btn-primary">
                             <span>With Icon</span>
                             <i class="far fa-hashtag fa-lg"></i>
                         </button>
-                        <button class="btn btn-icon btn-primary mx-1">
+                        <button class="btn btn-icon btn-primary">
                             <span>With Icon</span>
                             <i class="far fa-hashtag fa-2x"></i>
                         </button>
@@ -161,3 +178,5 @@ $tableOfContents = [
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
+
+<?php include_once('../../partials/footer.php') ?>

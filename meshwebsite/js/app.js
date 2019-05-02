@@ -20,3 +20,44 @@
 // 		}
 // 	}
 // }
+
+//Highlight
+hljs.initHighlightingOnLoad();
+
+//Copy Click
+let copyButtons = document.querySelectorAll('.copy-to-clipboard');
+
+for (var i = 0 ; i < copyButtons.length; i++) {
+    copyButtons[i].addEventListener('click' , getCopyData , false ) ; 
+}
+
+function getCopyData(el) {
+    //Get the HTML of the codes sibling
+    var sibling = this.parentNode.firstChild.outerHTML;
+    sibling = strip(sibling);
+    var fullLink = document.createElement('input');
+    document.body.appendChild(fullLink);
+    fullLink.value = sibling;
+    copyToClipboard(fullLink);
+    changeToTick(this);
+    fullLink.remove();
+
+}
+
+//Strip HTML tags from a given string
+function strip(html) {
+    var doc = new DOMParser().parseFromString(html, 'text/html');
+    return doc.body.textContent || "";
+}
+
+//Copy to Clipboard
+function copyToClipboard(el) {
+    el.select();
+    document.execCommand("copy");
+}
+
+//Change Clipboard Icon to Tick
+let changeToTick = function(el) {
+    el.style.display = 'none';
+    el.nextElementSibling.style.display = 'block';
+}

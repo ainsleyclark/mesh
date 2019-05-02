@@ -28,22 +28,46 @@ code {
 	padding-bottom: 10px;
 }
 
+code.inline {
+	font-size: 13px;
+	display: inline;
+    color: $purple;
+    white-space: nowrap;
+    padding: 2px 6px;
+	background: #f8f8f8;
+	font-weight: 900;
+}
+
 .highlight {
 	position: relative;
 
 	.html {
-		.name {
+		.hljs-string {
 			color: desaturate($primary, 20%);
 		}
 
-		.attr {
+		.hljs-attr {
 			color: desaturate($green, 20%);
 		}
 
-		.tag {
+		.hljs-name {
 			color: desaturate($blue, 20%);
 		}
 	}
+
+	.copy-to-clipboard, .copy-tick {
+		width: 25px;
+		max-height: 40px;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		cursor: pointer;
+	}
+	
+	.copy-tick {
+		display: none;
+	}
+
 	.html:after {
 		content: 'language-markup';
 		position: absolute;

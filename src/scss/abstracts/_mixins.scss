@@ -110,7 +110,7 @@
 	}
 }
 
-// Buttons Colored
+// Buttons Outline
 // ==========================================================================
 
 /// @author Ainsley Clark
@@ -128,5 +128,6 @@
 	&:hover,
 	&:focus {
 		background-color: $color;
+		color: color-contrast($color) !important;
 	}
 }

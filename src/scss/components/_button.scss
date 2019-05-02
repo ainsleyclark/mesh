@@ -3,7 +3,6 @@
 // Button classes & styling with reference to palette.
 // ==========================================================================
 
-//! Add hover states? btn-hover?
 .btn {
 	display: inline-flex;
 	justify-content: center;
@@ -60,30 +59,12 @@
 	//Simple Button
 	.btn-simple {
 		background-color: transparent;
-		box-shadow: 0;
-		border: 0;
-	}
-}
-
-// Disabled Buttons
-// ==========================================================================
-
-@if $button-enable-disabled {
-
-	.btn-disabled,
-	.btn:disabled {
 		box-shadow: none;
+		border: 0;
 
+		&:focus,
 		&:hover {
-			box-shadow: none;
-			cursor: default;
-		}
-	}
-
-	@each $color-name, $hex in $palette {
-		.btn-disabled,
-		.btn-#{$color-name}:disabled {
-			background-color: rgba($hex, 0.5);
+			border: 0;
 		}
 	}
 }
@@ -108,12 +89,42 @@
 		&:focus,
 		&:active {
 			box-shadow: none;
-			color: #ffffff;
 		}
 
-		//For loading spinner
+		&:disabled {
+			background-color: transparent !important;
+			border: 1px solid rgba(0, 0, 0, 0.12); 
+			color: rgba(0, 0, 0, 0.12) !important;
+
+			&:hover {
+				color: rgba(0, 0, 0, 0.12) !important;
+			}
+		}
+	}
+}
+
+// Disabled Buttons
+// ==========================================================================
+
+@if $button-enable-disabled {
+
+	.btn:disabled {
+		box-shadow: none;
+		cursor: default;
+
+		&:hover {
+			box-shadow: none;
+			cursor: default;
+		}
+
 		&:after {
-			border-right-color: transparent;
+			display: none;
+		}
+	}
+
+	@each $color-name, $hex in $palette {
+		.btn-#{$color-name}:disabled {
+			background-color: rgba($hex, 0.5);
 		}
 	}
 }
@@ -200,7 +211,7 @@
 			width: 18px;
 			height: 18px;
 			border: 2px solid rgba(0, 0, 0, 0.5);
-			border-right-color: transparent;
+			border-right-color: transparent !important;
 			border-radius: 50%;
 			display: inline-block;
 			animation-duration: 0.75s;
@@ -246,17 +257,11 @@
 		&:hover {
 			box-shadow: none;
 		}
-
-		//Overwrite specific classes
-		&.btn-outline:after {
-			border-right-color: transparent;
-		}
 	}
 
 	//All coloured buttons to have white spinner
 	%white-spinner {
 		border-color: #ffffff;
-		border-right-color: transparent;
 	}
 
 	@each $color-name, $hex in $palette {
