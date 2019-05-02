@@ -4363,7 +4363,8 @@ video.video-responsive {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
   position: relative;
   padding: 12px 30px;
   background: transparent;
@@ -4569,6 +4570,11 @@ video.video-responsive {
   background-color: transparent;
   box-shadow: 0;
   border: 0;
+}
+
+.btn-disabled,
+.btn:disabled {
+  box-shadow: none;
 }
 
 .btn-disabled:hover,
@@ -4824,18 +4830,19 @@ video.video-responsive {
 }
 
 .btn-icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 
 .btn-icon i:first-child:not(:last-child) {
   margin-left: 0;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 .btn-icon i:last-child:not(:first-child) {
-  margin-left: 5px;
+  margin-left: 3px;
   margin-right: 0;
 }
 
@@ -4859,10 +4866,9 @@ video.video-responsive {
 }
 
 .btn-loading {
-  height: 43px;
-  width: 112px;
   transition: none;
   pointer-events: none;
+  color: transparent !important;
 }
 
 .btn-loading:after {
@@ -4884,22 +4890,12 @@ video.video-responsive {
   margin-top: -9px;
 }
 
-.btn-loading.btn-small {
-  height: 32px;
-  width: 78px;
-}
-
 .btn-loading.btn-small:after {
   width: 14px;
   height: 14px;
   border-width: 1.5px;
   margin-left: -7px;
   margin-top: -7px;
-}
-
-.btn-loading.btn-large {
-  height: 59px;
-  width: 123px;
 }
 
 .btn-loading.btn-large:after {

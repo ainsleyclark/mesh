@@ -5,7 +5,8 @@
 
 //! Add hover states? btn-hover?
 .btn {
-	display: inline-block;
+	display: inline-flex;
+	justify-content: center;
 	position: relative;
 	padding: $button-padding-medium;
 	background: transparent;
@@ -68,8 +69,11 @@
 // ==========================================================================
 
 @if $button-enable-disabled {
+
 	.btn-disabled,
 	.btn:disabled {
+		box-shadow: none;
+
 		&:hover {
 			box-shadow: none;
 			cursor: default;
@@ -144,17 +148,18 @@
 
 @if $button-enable-icons {
 	.btn-icon {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		justify-content: center;
+		white-space: nowrap;
 
 		i:first-child:not(:last-child) {
 			margin-left: 0;
-			margin-right: 5px;
+			margin-right: 3px;
 		}
 
 		i:last-child:not(:first-child) {
-			margin-left: 5px;
+			margin-left: 3px;
 			margin-right: 0;
 		}
 	}
@@ -184,12 +189,11 @@
 // ==========================================================================
 
 @if $button-enable-loading {
-	.btn-loading {
+	.btn-loading { 
 		$self: &;
-		height: 43px;
-		width: 112px;
 		transition: none;
 		pointer-events: none;
+		color: transparent !important;
 
 		&:after {
 			content: '';
@@ -211,9 +215,6 @@
 		}
 
 		&.btn-small {
-			height: 32px;
-			width: 78px;
-
 			&:after {
 				width: 14px;
 				height: 14px;
@@ -224,9 +225,6 @@
 		}
 
 		&.btn-large {
-			height: 59px;
-			width: 123px;
-
 			&:after {
 				width: 26px;
 				height: 26px;

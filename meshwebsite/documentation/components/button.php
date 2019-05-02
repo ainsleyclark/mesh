@@ -94,11 +94,11 @@ $tableOfContents = [
                 </div>
 
                 <h5>Icon Buttons:</h5>
-                <div class="d-flex justify-content-center align-items-center">
+                <div class="d-flex justify-content-center align-items-center flex-wrap">
                     <div class="button-cont mx-auto my-4 d-flex align-items-start flex-column flex-desk-row">
                         <button class="btn btn-icon btn-primary mx-1">
                             <i class="far fa-hashtag"></i>
-                            <span>With Icon</span>
+                            <span>With Icon Tes Test test</span>
                         </button>
                         <button class="btn btn-icon btn-primary mx-1">
                             <span>With Icon</span>
@@ -116,8 +116,8 @@ $tableOfContents = [
                             <span>With Icon</span>
                             <i class="far fa-hashtag fa-2x"></i>
                         </button>
-                        <button class="btn btn-justicon btn-primary mx-1"><i class="far fa-hashtag"></i></button>
-                        <button class="btn btn-justicon large btn-primary mx-1"><i class="far fa-hashtag"></i></button>
+                        <!-- <button class="btn btn-justicon btn-primary mx-1"><i class="far fa-hashtag"></i></button>
+                        <button class="btn btn-justicon large btn-primary mx-1"><i class="far fa-hashtag"></i></button> -->
                     </div>
                 </div>
 
@@ -135,15 +135,15 @@ $tableOfContents = [
 
                 <h5>Loading Buttons:</h5>
                 <div class="button-cont mx-auto my-4">
-                    <button class="btn btn-loading mx-1"></button>
-                    <button class="btn btn-loading btn-outline btn-primary mx-1"></button>
-                    <button class="btn btn-loading btn-info mx-1"></button>
-                    <button class="btn btn-loading btn-success mx-1"></button>
-                    <button class="btn btn-loading btn-warning mx-1"></button>
-                    <button class="btn btn-loading btn-danger mx-1"></button>
-                    <button class="btn btn-loading btn-link mx-1"></button>
-                    <button class="btn btn-loading btn-small btn-link mx-1"></button>
-                    <button class="btn btn-loading btn-large btn-link mx-1"></button>
+                    <button class="btn btn-loading mx-1">Loading</button>
+                    <button class="btn btn-loading btn-outline btn-primary mx-1">Loading</button>
+                    <button class="btn btn-loading btn-info mx-1">Loading</button>
+                    <button class="btn btn-loading btn-success mx-1">Loading</button>
+                    <button class="btn btn-loading btn-warning mx-1">Loading</button>
+                    <button class="btn btn-loading btn-danger mx-1">Loading</button>
+                    <button class="btn btn-loading btn-link mx-1">Loading</button>
+                    <button class="btn btn-loading btn-small btn-link mx-1">Loading</button>
+                    <button class="btn btn-loading btn-large btn-link mx-1">Loading</button>
                 </div>
 
                 <div class="col-5">
