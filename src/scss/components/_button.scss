@@ -104,7 +104,6 @@
 }
 
 // Disabled Buttons
-// ==========================================================================
 
 @if $button-enable-disabled {
 
@@ -136,11 +135,12 @@
 	.btn-small {
 		padding: $button-padding-small;
 		font-size: $button-font-size - 1px;
+
 	}
 
 	.btn-large {
 		padding: $button-padding-large;
-		font-size: $button-font-size + 1px;
+		font-size: $button-font-size + 2px;
 	}
 }
 
@@ -173,17 +173,23 @@
 			margin-left: 3px;
 			margin-right: 0;
 		}
+
+		&.btn-large {
+			i {
+				font-size: 1.2rem;
+			}
+		}
+
 	}
 
-	//Rounded button with icon
+	//Just icon classes
 	.btn-justicon {
-		border-radius: 30px;
 		padding: 0;
 		height: 45px;
 		min-width: 45px;
 		width: 45px;
 
-		&.large {
+		&.btn-large {
 			width: 56px;
 			height: 56px;
 			min-width: 56px;

@@ -68,7 +68,7 @@ pre {
 }
 
 code {
-  color: #999;
+  color: gray;
   text-shadow: 0 1px white;
   font-family: "Roboto Mono", Monaco, courier, monospace;
   direction: ltr;
