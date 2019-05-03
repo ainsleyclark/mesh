@@ -3,7 +3,7 @@
 //Page variables
 $pageData = [
 	'pageTitle' => 'Flex',
-	'pageDescription' => 'Flexbox has been built into mesh with handy, responsive utility classes allowing you to knock up layouts extremley quickly.',
+	'pageDescription' => 'Flexbox has been built into mesh with responsive utility classes allowing you to knock up layouts extremley quickly.',
     'activePage' => 'button',
     'parentDirectory' => basename(__DIR__)
 ]; 
@@ -25,7 +25,7 @@ $tableOfContents = [
         <div class="row justify-content-center mt-4 mt-desk-5">
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="mb-2 mt-0">Flex</h1>
-                <div class="lead">Flexbox has been built into mesh with responsive utility classes allowing you to knock up layouts extremley quickly.</div>
+                <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
                 
                 <!-- Usage -->
                 <div class="section-scroll" id="usage">

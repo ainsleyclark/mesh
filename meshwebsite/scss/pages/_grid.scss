@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// _grid.scss
+// This file contains styles that are specific to the button page.
+// -----------------------------------------------------------------------------
+
+.grid-page {
+
+    //Small primary columns
+    .container-cont {
+
+        [class^='col-'] {
+            padding: 0 4px;
+
+            .text {
+                padding: 15px 0;
+            }
+        }
+    }
+
+    //Browser container window
+    .browser {
+        
+        .container-fullwidth {
+            z-index: 99;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%;
+            background: rgba(0,0,0,0.07);
+            height: 40px;
+        }
+    }
+}

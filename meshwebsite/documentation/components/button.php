@@ -25,13 +25,12 @@ $tableOfContents = [
 <?php include_once('../../partials/header.php'); ?>
 <?php include_once('../../partials/sidenav.php'); ?>
 
-
-<section class="content">
+<section class="content button-page">
     <div class="container-fullwidth">
         <div class="row justify-content-center mt-4 mt-desk-5">
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="mb-2 mt-0">Button</h1>
-                <div class="lead">Discover how to use our buttons in your forms, dialogs and more with our versatile classes - including various sizes, colors and states.</div>
+                <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
                 
                 <!-- Usage -->
                 <div class="section-scroll" id="usage">
@@ -39,7 +38,7 @@ $tableOfContents = [
                     <p>The mesh button should be prefixed with the <code class="inline">.btn</code> class which will give you access to all of the classes outlined below.</p>
                     <p>They are designed to be used with the <code class="inline">&lt;button&gt;</code>  element but you can also use them on <code class="inline">&lt;a&gt;</code> tags, <code class="inline">&lt;input type="submit"&gt;</code> and <code class="inline">&lt;input type="reset"&gt;</code> tags for ease of use.</p>
                     <p>You can have <strong>any combination</strong> of the classes listed below.</p>
-                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap">
                         <button class="btn">Default</button>
                         <button class="btn btn-light">Light</button>
                         <button class="btn btn-dark">Dark</button>
@@ -57,7 +56,7 @@ $tableOfContents = [
                 <article class="section-scroll py-2" id="colored">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Colored</h2>
                     <p>You can add color classes to brighten up the buttons by prefixing it with <code class="inline">.btn-{color}</code> class which will give you access to all of the classes outlined below.</p>
-                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap">
                         <button class="btn btn-primary">Primary</button>
                         <button class="btn btn-success">Success</button>
                         <button class="btn btn-info">Info</button>
@@ -77,7 +76,7 @@ $tableOfContents = [
                 <article class="section-scroll py-2" id="disabled">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Disabled</h2>
                     <p>You can make buttons appear inactive by adding the <code class="inline">disabled</code> attribute to the end of the elements tag.</code></p>
-                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap">
                         <button class="btn btn-primary" disabled>Primary</button>
                         <button class="btn btn-success" disabled>Success</button>
                         <button class="btn btn-info" disabled>Info</button>
@@ -98,7 +97,7 @@ $tableOfContents = [
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Outlined</h2>
                     <p>For an outlined appearance add the class<code class="inline">btn-outline</code> attribute to the end of the elements tag. This will give the button a transparent background with a 1px border.
                     <br><strong>Note:</strong> Colors <code class="inline">.btn-{color}</code> need to be prefixed with this class in order to achieve the desired effect.</code></p>
-                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap">
                         <button class="btn btn-primary btn-outline">Primary</button>
                         <button class="btn btn-success btn-outline">Success</button>
                         <button class="btn btn-info btn-outline">Info</button>
@@ -118,7 +117,7 @@ $tableOfContents = [
                  <article class="section-scroll py-2" id="sized">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Sizes</h2>
                     <p>mesh Buttons come in three different sizes - small, default & large, simply add <code class="inline">btn-small</code> or <code class="inline">btn-large</code> classes to achieve the desired effect.</p>
-                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap my-3">
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-small">Small</button>
                         <button class="btn">Default</button>
                         <button class="btn btn-large">Large</button>
@@ -130,7 +129,7 @@ $tableOfContents = [
                     <!-- Just Icons -->
                     <h3 class="mt-4">Blocks</h3>
                     <p>Button blocks extend the full width of the container that they are in. Add them by using the <code class="inline">btn-block</code> class. If multiple block buttons are present, slight margin bottom will seperate them.</p>
-                    <div class="button-cont w-50 my-3 mx-auto mx-desk-0">
+                    <div class="button-cont w-50 mx-auto mx-desk-0">
                         <button class="btn btn-block">Default Block</button>
                         <button class="btn btn-block btn-primary">Primary Block</button>
                         <button class="btn btn-block btn-primary btn-rounded">Rounded Block</button>
@@ -147,7 +146,7 @@ $tableOfContents = [
                     <p>You are able to add font-awesome icons to any button by adding the <code class="inline">&lt;i&gt;</code> tag inside the <code class="inline">&lt;button&gt;</code>.
                     <br>A <code class="inline">&lt;span&gt;</code> tag <strong>is required</strong> for the text inside the button. This will give slight margin around the icon.
                     <br>Icon buttons are available in large, </p>
-                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap my-3">
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-icon btn-primary">
                             <i class="far fa-hashtag"></i>
                             <span>With Icon</span>
@@ -194,7 +193,7 @@ $tableOfContents = [
                     <!-- Just Icons -->
                     <h3 class="mt-4">Just Icons</h3>
                     <p>You can also use just icons within a button by adding the<code class="inline">&lt;btn-justicon&gt;</code> class. To make the button circular, add one of our border radius classes <code class="inline">&lt;br-circle&gt;</code>.</p>
-                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap my-3">
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-primary btn-justicon">
                             <i class="far fa-hashtag"></i>
                         </button>
@@ -238,7 +237,7 @@ $tableOfContents = [
                 <article class="section-scroll py-2" id="rounded">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Rounded</h2>
                     <p>Buttons can also look rounded with the <code class="inline">&lt;btn-rounded&gt;</code></p>
-                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap my-3">
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-rounded btn-primary">Rounded</button>
                         <button class="btn btn-rounded btn-primary btn-outline">Outline</button>
                         <button class="btn btn-rounded btn-primary" disabled>Disabled</button>
@@ -254,7 +253,7 @@ $tableOfContents = [
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Loading</h2>
                     <p>A loading class can be added to any button to add an animated spinner to the button using the <code class="inline">:after</code> pseudo selector. Typically this class will be used with Javascript, just simply add the <code class="inline">btn-loading</code> class, which will in turn, make the text transparen and add the spinner. The size of the button will remained the same.<br>
                     <strong>Note:</strong> Any color classes can be added to the loading buttons.</p>
-                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap my-3">
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-primary btn-loading">Loading</button>
                         <button class="btn btn-primary btn-loading btn-outline">Loading</button>
                         <button class="btn btn-primary btn-loading btn-small">Loading</button>

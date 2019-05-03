@@ -57,6 +57,29 @@ main {
 /* ====================
     Components
     ==================== */
+ul.list {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.list li {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+ul.list li:before {
+  content: "";
+  color: #ff2451;
+  display: inline-block;
+  background-color: #ff2451;
+  height: 1.8px;
+  width: 1em;
+  margin-left: -25px;
+  margin-right: 10px;
+  top: -5px;
+  position: relative;
+}
+
 pre {
   background: #f9f9f9;
   border-radius: 3px;
@@ -65,6 +88,7 @@ pre {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   font-size: 0.8em;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 15px 0;
 }
 
 code {
@@ -332,7 +356,33 @@ section.hero .home-illusration {
   z-index: -1;
 }
 
-.button-cont .btn {
+.grid-page .container-cont [class^='col-'] {
+  padding: 0 4px;
+}
+
+.grid-page .container-cont [class^='col-'] .text {
+  padding: 15px 0;
+}
+
+.grid-page .browser .container-fullwidth {
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  background: rgba(0, 0, 0, 0.07);
+  height: 40px;
+}
+
+.button-page .button-cont {
+  margin-top: 20px;
+}
+
+.button-page .button-cont .btn {
   margin-right: 5px;
   margin-bottom: 10px;
+}
+
+.button-page pre {
+  margin-top: 15px;
 }

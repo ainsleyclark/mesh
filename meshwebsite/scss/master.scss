@@ -29,6 +29,7 @@
 /* ====================
     Components
     ==================== */
+@import 'components/_lists';
 @import 'components/_code';
 @import 'components/_browser';
 
@@ -45,5 +46,6 @@
 /* ====================
     Pages
     ==================== */
-@import 'pages/home';
+@import 'pages/_home';
+@import 'pages/_grid';
 @import 'pages/_button';

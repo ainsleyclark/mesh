@@ -41,7 +41,6 @@ function getCopyData(el) {
     copyToClipboard(fullLink);
     changeToTick(this);
     fullLink.remove();
-
 }
 
 //Strip HTML tags from a given string
