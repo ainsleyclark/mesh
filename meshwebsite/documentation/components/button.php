@@ -31,7 +31,7 @@ $tableOfContents = [
                 <!-- Usage -->
                 <div class="section-scroll" id="usage">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Usage</h2>
-                    <p>The mesh button should be prefixed with the <code class="inline">.btn</code> class which will give you access to all of the classes outlined below.</p>
+                    <p>The mesh button should be prefixed with the <code class="inline">.btn</code> class desiredhich will give you access to all of the classes outlined below.</p>
                     <p>They are designed to be used with the <code class="inline">&lt;button&gt;</code>  element but you can also use them on <code class="inline">&lt;a&gt;</code> tags, <code class="inline">&lt;input type="submit"&gt;</code> and <code class="inline">&lt;input type="reset"&gt;</code> tags for ease of use.</p>
                     <p>You can have <strong>any combination</strong> of the classes listed below</p>
                     <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
@@ -70,7 +70,7 @@ $tableOfContents = [
                 <!-- Disabled Buttons -->
                 <article class="section-scroll py-2" id="disabled">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Disabled Buttons</h2>
-                    <p>You can make buttons appear inactive by adding the <code class="inline">disabled</code> attribute to the end of the elements tag. Alternativley you could add the btn-disabled class name.</code></p>
+                    <p>You can make buttons appear inactive by adding the <code class="inline">disabled</code> attribute to the end of the elements tag.</code></p>
                     <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
                         <button class="btn btn-primary" disabled>Primary</button>
                         <button class="btn btn-success" disabled>Success</button>
@@ -87,19 +87,27 @@ $tableOfContents = [
 &lt;button class="btn btn-link" disabled&gt;Link&lt;/button&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
- 
-
-                <h5>Outlined Buttons:</h5>
-                <div class="d-flex justify-content-center">
-                    <div class="button-cont mx-auto my-4">
-                        <button class="btn btn-outline btn-primary">Primary</button>
-                        <button class="btn btn-outline btn-info">Info</button>
-                        <button class="btn btn-outline btn-success">Success</button>
-                        <button class="btn btn-outline btn-warning">Warning</button>
-                        <button class="btn btn-outline btn-danger">Danger</button>
-                        <button class="btn btn-outline btn-link">Link</button>
+                 <!-- Outlined Buttons -->
+                 <article class="section-scroll py-2" id="disabled">
+                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Outlined Buttons</h2>
+                    <p>For an outlined appearance add the class<code class="inline">btn-outline</code> attribute to the end of the elements tag. This will give the button a transparent background with a 1px border.
+                    <br><strong>Note:</strong> Colors <code class="inline">.btn-{color}</code> need to be prefixed with this class in order to achieve the desired effect.</code></p>
+                    <div class="button-cont d-flex justify-content-center justify-content-desk-start flex-wrap my-3">
+                        <button class="btn btn-primary btn-outline">Primary</button>
+                        <button class="btn btn-success btn-outline">Success</button>
+                        <button class="btn btn-info btn-outline">Info</button>
+                        <button class="btn btn-warning btn-outline">Warning</button>
+                        <button class="btn btn-danger btn-outline">Danger</button>
+                        <button class="btn btn-link btn-outline">Link</button>
                     </div>
-                </div>
+                    <pre class="highlight"><code class="html">&lt;button class="btn btn-primary btn-outline" disabled&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-light btn-outline"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-dark btn-outline"&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-black btn-outline"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-danger btn-outline"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-link btn-outline"&gt;Link&lt;/button&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                </article>
+
 
                 <h5>Sized Buttons:</h5>
                 <div class="d-flex justify-content-center">
