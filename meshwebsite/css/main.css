@@ -68,7 +68,7 @@ ul.list li {
 }
 
 ul.list li:before {
-  content: "";
+  content: '';
   color: #ff2451;
   display: inline-block;
   background-color: #ff2451;
@@ -83,8 +83,7 @@ ul.list li:before {
 pre {
   background: #f9f9f9;
   border-radius: 3px;
-  padding: 10px 10px 0px 10px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+  padding: 10px 10px 0 10px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   font-size: 0.8em;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -132,7 +131,8 @@ code.inline {
   color: #4f9fbc;
 }
 
-.highlight .copy-to-clipboard, .highlight .copy-tick {
+.highlight .copy-to-clipboard,
+.highlight .copy-tick {
   width: 25px;
   max-height: 40px;
   position: absolute;
@@ -281,6 +281,14 @@ header.primary nav.primary ul .download:hover svg path {
   font-size: 14px;
 }
 
+.smallnav-cont ul a {
+  transition: color 0.2s;
+}
+
+.smallnav-cont ul a:hover li {
+  color: #ff2451;
+}
+
 .smallnav-cont ul li {
   margin: 8px 0;
 }
@@ -356,11 +364,25 @@ section.hero .home-illusration {
   z-index: -1;
 }
 
-.grid-page .container-cont [class^='col-'] {
-  padding: 0 4px;
+.grid-page .column-demo {
+  padding: 10px 0;
+  margin: 10px 0;
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.grid-page .container-cont [class^='col-'] .text {
+.grid-page .column-demo .no-gaps {
+  background: red;
+}
+
+.grid-page .column-demo .row {
+  margin: 0 -5px;
+}
+
+.grid-page .column-demo [class^='col-'] {
+  padding: 0 5px;
+}
+
+.grid-page .column-demo [class^='col-'] .text {
   padding: 15px 0;
 }
 

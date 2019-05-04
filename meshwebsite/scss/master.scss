@@ -16,7 +16,6 @@
 /* ====================
     Base
     ==================== */
-// @import 'base/_normalize'; //Not neccessary if bootstrap is used.
 @import 'base/_global';
 @import 'base/_fonts';
 @import 'base/_typography';
@@ -32,7 +31,6 @@
 @import 'components/_lists';
 @import 'components/_code';
 @import 'components/_browser';
-
 
 /* ====================
     Layout

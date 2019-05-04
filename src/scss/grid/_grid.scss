@@ -33,6 +33,8 @@
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: -$gap-width;
+	margin-right: -$gap-width;
 }
 
 //No gap class, padding

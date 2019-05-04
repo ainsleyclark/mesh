@@ -6,8 +6,7 @@
 pre {
 	background: #f9f9f9;
 	border-radius: 3px;
-	padding: 10px 10px 0px 10px;
-	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+	padding: 10px 10px 0 10px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	font-size: 0.8em;
 	border: 1px solid rgba(0, 0, 0, 0.125);
@@ -32,9 +31,9 @@ code {
 code.inline {
 	font-size: 13px;
 	display: inline;
-    color: $purple;
-    white-space: nowrap;
-    padding: 2px 6px;
+	color: $purple;
+	white-space: nowrap;
+	padding: 2px 6px;
 	background: #f8f8f8;
 	font-weight: 900;
 }
@@ -56,7 +55,8 @@ code.inline {
 		}
 	}
 
-	.copy-to-clipboard, .copy-tick {
+	.copy-to-clipboard,
+	.copy-tick {
 		width: 25px;
 		max-height: 40px;
 		position: absolute;
@@ -64,7 +64,7 @@ code.inline {
 		bottom: 10px;
 		cursor: pointer;
 	}
-	
+
 	.copy-tick {
 		display: none;
 	}

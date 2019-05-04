@@ -93,7 +93,7 @@
 
 		&:disabled {
 			background-color: transparent !important;
-			border: 1px solid rgba(0, 0, 0, 0.12); 
+			border: 1px solid rgba(0, 0, 0, 0.12);
 			color: rgba(0, 0, 0, 0.12) !important;
 
 			&:hover {
@@ -106,7 +106,6 @@
 // Disabled Buttons
 
 @if $button-enable-disabled {
-
 	.btn:disabled {
 		box-shadow: none;
 		cursor: default;
@@ -135,7 +134,6 @@
 	.btn-small {
 		padding: $button-padding-small;
 		font-size: $button-font-size - 1px;
-
 	}
 
 	.btn-large {
@@ -179,7 +177,6 @@
 				font-size: 1.2rem;
 			}
 		}
-
 	}
 
 	//Just icon classes
@@ -206,7 +203,7 @@
 // ==========================================================================
 
 @if $button-enable-loading {
-	.btn-loading { 
+	.btn-loading {
 		$self: &;
 		transition: none;
 		pointer-events: none;

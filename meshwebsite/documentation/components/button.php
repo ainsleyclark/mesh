@@ -114,7 +114,7 @@ $tableOfContents = [
                 </article>
 
                  <!-- Sized Buttons -->
-                 <article class="section-scroll py-2" id="sized">
+                 <article class="section-scroll py-2" id="sizes">
                     <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Sizes</h2>
                     <p>mesh Buttons come in three different sizes - small, default & large, simply add <code class="inline">btn-small</code> or <code class="inline">btn-large</code> classes to achieve the desired effect.</p>
                     <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">

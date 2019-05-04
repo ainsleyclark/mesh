@@ -4,30 +4,38 @@
 // -----------------------------------------------------------------------------
 
 .grid-page {
+	//Small primary columns
+	.column-demo {
+		padding: 10px 0;
+		margin: 10px 0;
+		background: rgba(0, 0, 0, 0.1);
 
-    //Small primary columns
-    .container-cont {
+		.no-gaps {
+			background: red;
+		}
 
-        [class^='col-'] {
-            padding: 0 4px;
+		.row {
+			margin: 0 -5px;
+		}
 
-            .text {
-                padding: 15px 0;
-            }
-        }
-    }
+		[class^='col-'] {
+			padding: 0 5px;
+			.text {
+				padding: 15px 0;
+			}
+		}
+	}
 
-    //Browser container window
-    .browser {
-        
-        .container-fullwidth {
-            z-index: 99;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 95%;
-            background: rgba(0,0,0,0.07);
-            height: 40px;
-        }
-    }
+	//Browser container window
+	.browser {
+		.container-fullwidth {
+			z-index: 99;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 95%;
+			background: rgba(0, 0, 0, 0.07);
+			height: 40px;
+		}
+	}
 }

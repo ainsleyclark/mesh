@@ -17,6 +17,14 @@
 			font-size: 14px;
 		}
 
+		a {
+			transition: color 0.2s;
+
+			&:hover li {
+				color: $primary;
+			}
+		}
+
 		li {
 			margin: 8px 0;
 		}

@@ -3,6 +3,7 @@
 // This file contains all mixin's for use with scss files.
 // -----------------------------------------------------------------------------
 // sass-lint:disable no-duplicate-properties
+// sass-lint:disable no-vendor-prefixes
 
 // Breakpoint Mixins
 // ==========================================================================
@@ -42,7 +43,7 @@
 /// @param {Number} $standard-size - Initial base rem size
 @mixin px-to-rem($pxValue, $property: 'font-size', $standard-size: 16) {
 	#{$property}: $pxValue + px;
-	#{$property}: $pxValue/$standard-size + rem;
+	#{$property}: $pxValue / $standard-size + rem;
 }
 
 // Event Wrapper
