@@ -28,14 +28,14 @@ $tableOfContents = [
                 <div class="lead">Get familiar with the setup and overview of mesh.</div>
                 <!-- What is mesh? -->
                 <div class="section-scroll" id="whatIs">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">What is mesh?</h2>
+                    <h2 class="pb-1 b-b1-light mt-5 mb-1 hash">What is mesh?</h2>
                     <p>mesh (pronounced /meʃ/) is an open source pure CSS framework for building websites for efficentley. Unlike other frameworks, you can use mesh without detracting from the unique visual signature of a website, whilst still being able to add components to quicken your workflow.</p>
                     <p>It has a modular approach to a responsive grid system, you can define containers, rows and columns and set them indepdantly of screen width. Five breakpoints helps you sculpt your site to different screen sizes and a easy naming system makes it ideal for begginers or patrons of the web.</p>
                     <p>mesh has huge amounts of utility classes to help you along the way, such as responsive text, responsive width & height classes, a materalistic color scheme, border helper classes & spacers for when margin isn't quite good enough, and alot more...</p>
                 </div>
                 <!-- Download -->
                 <div class="section-scroll" id="download">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Download</h2>
+                    <h2 class="pb-1 b-b1-light mt-5 mb-1 hash">Download</h2>
                     <p>mesh comes in two different flavours. You can select which version you want dependant on your expertise and preference. To get going, click on one of the options below.</p>
                     <div class="row my-3">
                         <div class="col-12 col-tab-6 px-0 pl-tab-0 pr-tab-2">
@@ -52,7 +52,7 @@ $tableOfContents = [
                 </div>
                 <!-- Start using mesh -->
                 <div class="section-scroll" id="startUsing">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Start using mesh</h2>
+                    <h2 class="pb-1 b-b1-light mt-5 mb-1 hash">Start using mesh</h2>
                     <p>mesh comes in two different flavours. You can select which version you want dependant on your expertise and preference. To get going, click on one of the options below.</p>
 <pre class="highlight"><code class="html">&lt;!DOCTYPE html&gt;
     &lt;<span class="tag">head</span>&gt;

@@ -328,6 +328,10 @@ header.primary nav.primary ul .download:hover svg path {
   }
 }
 
+.content article.section-scroll {
+  margin-top: 75px;
+}
+
 footer {
   height: 72px;
 }

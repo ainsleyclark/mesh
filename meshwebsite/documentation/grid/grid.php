@@ -31,8 +31,8 @@ $tableOfContents = [
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
 
                 <!-- How it works -->
-                <article class="section-scroll py-2" id="howItWorks">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">How it works</h2>
+                <article class="section-scroll" id="howItWorks">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">How it works</h2>
                     <p>mesh uses the conventional containers, rows and columns to layout and align content, it's built with flex box and is fully responsive. Here's an example:</p>
 <pre class="highlight"><code class="html">&lt;div class="container"&gt;
     &lt;div class="row"&gt;
@@ -52,16 +52,16 @@ $tableOfContents = [
                 </article>
 
                 <!-- Grid options -->
-                <article class="section-scroll py-2" id="gridOptions">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Grid options</h2>
+                <article class="section-scroll" id="gridOptions">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Grid options</h2>
                     <p></p>
                 </article>
 
                 <!-- Containers -->
-                <article class="section-scroll py-2" id="containers">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Containers</h2>
+                <article class="section-scroll" id="containers">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Containers</h2>
                     <p>A container is the wrapper for a row (more on that later) and defines the width of your content. It can be at fixed size or full width, and will gracefully become smaller as screen size gets smaller. Here are your options:</p>
-                    <div class="text-cont my-3">
+                    <div class="text-cont my-4">
                         <h3 class="mb-1">Container options:</h3>
                         <ul class="list">
                             <li>A container, by default is at fixed size, by using the <code class="inline">container</code> tag. With maximum widths set at each side, it will gradually get smaller as the viewport does.</li>
@@ -81,11 +81,11 @@ $tableOfContents = [
                 </article>
 
                 <!-- Rows -->
-                <article class="section-scroll py-2" id="rows">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Rows</h2>
+                <article class="section-scroll" id="rows">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Rows</h2>
                     <p>A <strong>row is the container for columns</strong>, it lives inside a container. It is 100% width (of container) and uses flexbox to align columns. Naturally it has no padding but has negative margins on the x axis to counteract the gaps set on the columns.
                     <br>Add the <code class="inline">row</code> class to a <code class="inline">div</code> to enable this behaviour.</p>
-                    <div class="text-cont my-3">
+                    <div class="text-cont my-4">
                         <h3 class="mb-1">Row Options:</h3>
                         <ul class="list">
                             <li>To rid of the padding on each side of a column, add the <code class="inline">no-gaps</code> class to a row. See below: </li>
@@ -135,23 +135,59 @@ $tableOfContents = [
                 </article>
 
                 <!-- Columns -->
-                <article class="section-scroll py-2" id="columns">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Columns</h2>
+                <article class="section-scroll" id="columns">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Columns</h2>
                     <p>A column is where your content lives, <strong>they live inside rows</strong>, there can be a maximum of 12 columns in a row, if there a more they will wrap to the next line. Of course you can overwrite this behaviour by using the <code class="inline">flex-nowrap</code> class.
-                    <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifer is the class name for a breakpoint and the amount can be 1 to 12.
-                    <br>The <code class="inline">col-auto</code> class will fill up all available space, great if you want a column to have a predefined width.
-                    <br>If you decide to leave the default (*col-) out of the class declaration, it will default to 12, saving you're typing.</p>
+                    <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifer is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be 1 to 12. 
                     <br></p>
-                    <h4 class="mb-1 mt-3">Lorem Ipsum</h4>
-                    <ul class="list">
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <div class="text-cont my-4">
+                        <h3 class="mb-1">Notes:</h3>
+                        <ul class="list">
+                            <li>The default size of a column is defined with <code class="inline">col-{amount}</code>, for example <code class="inline">col-10</code> will take up 10 columns at all breakpoints.</li>
+                            <li>The <code class="inline">col-auto</code> class will fill up all available space within the row, great if you want a column to have a predefined width (in pixels or ems for example).</li>
+                            <li>The default width of a column is 100%, meaning you can omit <code class="inline">col-12</code> if you always want to take up 12 columns for mobile.</li>
+                        </ul>
+                    </div>
+                    <div class="text-cont my-4">
+                        <h3 class="mb-1">Examples:</h3>
+                    
+                    <h5 class="c-blue">Simple layout:</h5>
+                    <p>Here all columns will take up 4 spaces at HD screens, 6 on tablet, and because mesh is built mobile first, they will be 100% width at mobile, even though we didnt specify. The first column will take up 12 columns on tablet.
+                    <br><strong>Notice:</strong></p>
+                    <div class="column-demo c-white">
+                        <div class="row">
+                            <div class="col-tab-12 col-hd-4 mb-2 mb-hd-0">
+                                <div class="text px-3 br">
+                                    col-tab-12 col-hd-4
+                                </div>
+                            </div>
+                            <div class="col-tab-6 col-hd-4 mb-2 mb-tab-0">
+                                <div class="text px-3 br">
+                                    col-tab-6 col-hd-4
+                                </div>
+                            </div>
+                            <div class="col-tab-6 col-hd-4">
+                                <div class="text px-3 br">
+                                    col-tab-6 col-hd-4
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="highlight mt-3"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-tab-12 col-hd-4"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-tab-6 col-hd-4"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-tab-6 col-hd-4"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+</div>
                 </article>
 
                 <!-- Offset -->
-                <article class="section-scroll py-2" id="offset">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Offset</h2>
+                <article class="section-scroll" id="offset">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Offset</h2>
                     <p>A container is the wrapper for a row (more on that later) and defines the width of your content. It can be at fixed size or full width, and will gracefully become smaller as screen size gets smaller. Here are your options:</p>
                     <h4 class="mb-1 mt-3">Lorem Ipsum</h4>
                     <ul class="list">
