@@ -87,7 +87,7 @@ pre {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   font-size: 0.8em;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  margin: 15px 0;
+  margin: 0 0 25px 0;
 }
 
 code {
@@ -317,6 +317,7 @@ header.primary nav.primary ul .download:hover svg path {
 
 .content h3 {
   font-size: 1.4em;
+  margin: 0 0 5px 0;
 }
 
 @media (min-width: 1024px) {
@@ -329,7 +330,24 @@ header.primary nav.primary ul .download:hover svg path {
 }
 
 .content article.section-scroll {
-  margin-top: 75px;
+  margin-top: 80px;
+}
+
+.content .secondary-lead {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.content .text-cont, .content .btn {
+  margin-bottom: 25px;
+}
+
+.content .mb-25 {
+  margin-bottom: 25px;
+}
+
+.content .mb-20 {
+  margin-bottom: 20px;
 }
 
 footer {
@@ -368,10 +386,6 @@ section.hero .home-illusration {
   z-index: -1;
 }
 
-.grid-page .column-demo {
-  margin-top: 20px;
-}
-
 .grid-page .column-demo .row {
   margin: 0 -5px;
 }
@@ -391,16 +405,6 @@ section.hero .home-illusration {
 .grid-page .column-demo [class^='col-'] .text {
   padding: 15px 0;
   background: #ff2451;
-}
-
-.grid-page .browser .container-fullwidth {
-  z-index: 99;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 95%;
-  background: rgba(0, 0, 0, 0.07);
-  height: 40px;
 }
 
 .button-page .button-cont {

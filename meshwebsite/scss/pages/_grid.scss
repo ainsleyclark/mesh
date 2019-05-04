@@ -7,9 +7,7 @@
 
 	//Small primary columns
 	.column-demo {
-		margin-top: 20px;
 		
-
 		.row {
 			margin: 0 -5px;
 		}
@@ -34,15 +32,4 @@
 	}
 
 	//Browser container window
-	.browser {
-		.container-fullwidth {
-			z-index: 99;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 95%;
-			background: rgba(0, 0, 0, 0.07);
-			height: 40px;
-		}
-	}
 }

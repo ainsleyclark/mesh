@@ -15,6 +15,7 @@
 
 	h3 {
 		font-size: 1.4em;
+		margin: 0 0 5px 0;
 	}
 
 	@include media-desk {
@@ -26,6 +27,23 @@
 	}
 
 	article.section-scroll {
-		margin-top: 75px;
+		margin-top: 80px;
+	}
+
+	.secondary-lead {
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+
+	.text-cont, .btn {
+		margin-bottom: 25px;
+	}
+
+	.mb-25 {
+		margin-bottom: 25px;
+	}
+
+	.mb-20 {
+		margin-bottom: 20px;
 	}
 }

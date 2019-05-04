@@ -72,7 +72,7 @@
     <circle class="cls-6" cx="3153.2" cy="240.6" r="8.7" transform="matrix(0.92, -0.38, 0.38, 0.92, 147.94, 1224.97)"/>
     <rect class="cls-2" y="291" width="3207.3" height="1545.63"/>
   </g>
-  <g id="fullwidth">
+  <g id="fullwidth" class="d-none">
     <rect class="cls-7" x="69.5" y="451" width="3088.6" height="1129.38" rx="31.2" ry="31.2"/>
     <rect class="cls-8" x="170.8" y="553.5" width="316.9" height="316.88" rx="50.3" ry="50.3"/>
     <rect class="cls-8" x="568.8" y="618.6" width="2317.6" height="40"/>
