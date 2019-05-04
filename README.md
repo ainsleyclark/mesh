@@ -93,8 +93,8 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE).
 
 ## Contributors
-@Nicholsk18
-@versustune
+[@versustune]( https://github.com/versustune )
+[@nicholsk18]( https://github.com/nicholsk18 )
 
 ## BrowserStack
 Tested with BrowserStack.  <br/>
