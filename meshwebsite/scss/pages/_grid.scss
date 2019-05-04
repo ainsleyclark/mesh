@@ -4,24 +4,30 @@
 // -----------------------------------------------------------------------------
 
 .grid-page {
+
 	//Small primary columns
 	.column-demo {
-		padding: 10px 0;
-		margin: 10px 0;
-		background: rgba(0, 0, 0, 0.1);
-
-		.no-gaps {
-			background: red;
-		}
+		margin-top: 20px;
+		
 
 		.row {
 			margin: 0 -5px;
 		}
 
+		.row.no-gaps  {
+			margin: 0;
+			[class^='col-'] {
+				padding: 0;
+				
+			}
+		}
+
 		[class^='col-'] {
 			padding: 0 5px;
+
 			.text {
 				padding: 15px 0;
+				background: $primary;
 			}
 		}
 	}

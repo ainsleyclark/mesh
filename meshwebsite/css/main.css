@@ -365,17 +365,19 @@ section.hero .home-illusration {
 }
 
 .grid-page .column-demo {
-  padding: 10px 0;
-  margin: 10px 0;
-  background: rgba(0, 0, 0, 0.1);
-}
-
-.grid-page .column-demo .no-gaps {
-  background: red;
+  margin-top: 20px;
 }
 
 .grid-page .column-demo .row {
   margin: 0 -5px;
+}
+
+.grid-page .column-demo .row.no-gaps {
+  margin: 0;
+}
+
+.grid-page .column-demo .row.no-gaps [class^='col-'] {
+  padding: 0;
 }
 
 .grid-page .column-demo [class^='col-'] {
@@ -384,6 +386,7 @@ section.hero .home-illusration {
 
 .grid-page .column-demo [class^='col-'] .text {
   padding: 15px 0;
+  background: #ff2451;
 }
 
 .grid-page .browser .container-fullwidth {
