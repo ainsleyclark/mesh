@@ -20,7 +20,6 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![dependency status](https://david-dm.org/ainsleyclark/mesh.svg)](https://david-dm.org/ainsleyclark/mesh)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/ainsleyclark/mesh/) 
-[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)](https://www.browserstack.com/automate/public-build/<badge_key>)
 
 </center>
 

@@ -218,12 +218,12 @@ $tableOfContents = [
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
 
-                    <!-- Wrapping & breaking -->
+                    <!-- Wrapping -->
                     <div class="example mt-5">
                         <div class="text-cont">
                             <h3>Wrapping</h3>
                             <p>
-                                If you require colums to wrap to the next line at various viewports, you can use the <code class="inline">w-100</code> class which will effectivley create a new line in your grid without using a new <code class="inline">row</code>. Sometimes you may not want this at desktop for example, if so, use our display classes - <code class="inline">d-desk-none</code>.              
+                                If you require column to wrap to the next line at various viewports, you can use the <code class="inline">w-100</code> class which will effectively create a new line in your grid without using a new <code class="inline">row</code>. Sometimes you may not want this at desktop for example, if so, use our display classes - <code class="inline">d-desk-none</code>.              
                                 <br>You can even add margin to the <code class="inline">w-100</code> like below:
                             </p>
                         </div>
@@ -273,7 +273,48 @@ $tableOfContents = [
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
 
-
+                    <!-- Horizontal alignment -->
+                    <div class="example mt-5">
+                        <div class="text-cont">
+                            <h3>Horizontal alignment</h3>
+                            <p>
+                                CSS alignment can be a nightmare, we've all been there, trying to align one div for hours. With mesh, as its built with flexbox, alignment is easy. Just add one of our flex classes to the row or container that the content lives in.
+                            </p>
+                            <ul class="list">
+                                <li>To align content centrally add <code class="inline">justify-content-center</code> to the row/container.</li>
+                                <li>To align content at the start of the row/container add <code class="inline">justify-content-start</code>.</li>
+                                <li>To align content at the end of the row/container add <code class="inline">justify-content-end</code>.</li>
+                            </ul>
+                        </div>
+                        <div class="column-demo c-white mb-25">
+                            <div class="row">
+                                <div class="col-desk-3 mb-2 mb-hd-0">
+                                    <div class="text px-3 br">
+                                        col-desk-3
+                                    </div>
+                                </div>
+                                <div class="col-auto mb-2 mb-hd-0">
+                                    <div class="text px-3 br">
+                                        I fill based what's inside me - col-auto
+                                    </div>
+                                </div>
+                                <div class="col-desk-3">
+                                    <div class="text px-3 br">
+                                        col-desk-3
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-desk-3"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-auto"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-desk-3"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                    </div>
 
                 </article>
 
