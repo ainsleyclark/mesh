@@ -36,7 +36,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b1-light hash">Usage</h2>
                     <p class="secondary-lead mb-1">
-                        To start with, the container of parent of the items you want to be flexible needs the <code class="inline">d-flex</code> or <code class="inline">d-inline-flex</code> classes. Inline flex makes the flex container display inline, which is the only difference between the two.
+                        To start with, the container or parent of the items you want to be flexible needs the <code class="inline">d-flex</code> or <code class="inline">d-inline-flex</code> classes. Inline flex makes the flex container display inline, which is the only difference between the two.
                         <br>You are able to turn flex on and off at various viewports, this is done by using <code class="inline">d-{breakpoint}-flex</code>, see below.
                     </p>
                     <p class="mb-3"><strong>Note:</strong> If you need help with anything flexboxy related, check out our friends at <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks</a> for more details.</p>

@@ -3,7 +3,7 @@
 //Page variables
 $pageData = [
 	'pageTitle' => 'Grid',
-	'pageDescription' => 'See how powerful our mobile-first flexbox grid is. With five breakpoints to choose from, its easy sculpting elements to be responsive.',
+	'pageDescription' => 'See how powerful our mobile-first flexbox grid is. With five breakpoints to choose from, it&#39;s easy sculpting elements to be responsive.',
     'activePage' => 'grid',
     'parentDirectory' => basename(__DIR__)
 ]; 
@@ -64,13 +64,13 @@ $tableOfContents = [
                     <div class="text-cont">
                         <h3>Container options:</h3>
                         <ul class="list">
-                            <li>A container, by default is at fixed size, by using the <code class="inline">container</code> tag. With maximum widths set at each side, it will gradually get smaller as the viewport does.</li>
+                            <li>A container, by default, is at fixed size, by using the <code class="inline">container</code> tag. With maximum widths set at each side, it will gradually get smaller as the viewport does.</li>
                             <li>Or a container can be full width, which will take up 100% of the screen and have slight padding either side. This is acheived by adding the <code class="inline">container-fullwidth</code> class to a div or semantic element.</li>
                         </ul>
                     </div>
                     <button class="btn btn-secondary" id="btnBrowser">Switch to container-fullwidth</button>
                     <div class="browser-cont">
-                        <?php include_once('../../partials/browser-window.php'); ?>
+                        <?php include_once('../../includes/browser-window.php'); ?>
                     </div>
                 </article>
 
@@ -84,7 +84,7 @@ $tableOfContents = [
                     <div class="text-cont">
                         <h3>Row options:</h3>
                         <ul class="list">
-                            <li>To rid of the padding on each side of a column, add the <code class="inline">no-gaps</code> class to a row. See below: </li>
+                            <li>To get rid of the padding on each side of a column, add the <code class="inline">no-gaps</code> class to a row. See below: </li>
                         </ul>
                     </div>
                     <button class="btn btn-secondary" id="btnNoGaps">Turn gaps off</button>
@@ -134,7 +134,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="columns">
                     <h2 class="b-b1-light hash">Columns</h2>
                     <p class="secondary-lead">
-                        A column is where your content lives, <strong>they live inside rows</strong>, there can be a maximum of 12 columns in a row, if there a more they will wrap to the next line. Of course you can overwrite this behaviour by using the <code class="inline">flex-nowrap</code> class.
+                        A column is where your content lives, <strong>it lives inside a row</strong>, there can be a maximum of 12 columns in a row, if there a more they will wrap to the next line. Of course you can overwrite this behaviour by using the <code class="inline">flex-nowrap</code> class.
                         <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12. 
                     </p>
                     <div class="text-cont">
@@ -150,7 +150,7 @@ $tableOfContents = [
                     <div class="example mt-5">
                         <div class="text-cont">
                             <h3>Simple layout:</h3>
-                            <p>Here all columns will take up 4 spaces on HD screens, 6 on tablet, and because mesh is built mobile first, they will be 100% width at mobile, even though we didnt specify. The first column will take up 12 columns on tablet. Go ahead and resize the screen to see the effect.</p>
+                            <p>Here all columns will take up 4 spaces on HD screens, 6 on tablet, and because mesh is built mobile first, they will be 100% width at mobile, even though we didn't specify. The first column will take up 12 columns on tablet. Go ahead and resize the screen to see the effect.</p>
                         </div>
                         <div class="column-demo c-white mb-3 t-center">
                             <div class="row">
@@ -197,7 +197,7 @@ $tableOfContents = [
                                 </div>
                                 <div class="col-auto mb-2 mb-hd-0">
                                     <div class="text px-3 br">
-                                        I fill based what's inside me - col-auto
+                                        I fill based on what's inside me - col-auto
                                     </div>
                                 </div>
                                 <div class="col-desk-3">
@@ -223,7 +223,7 @@ $tableOfContents = [
                         <div class="text-cont">
                             <h3>Wrapping</h3>
                             <p>
-                                If you require column to wrap to the next line at various viewports, you can use the <code class="inline">w-100</code> class which will effectively create a new line in your grid without using a new <code class="inline">row</code>. Sometimes you may not want this at desktop for example, if so, use our display classes - <code class="inline">d-desk-none</code>.              
+                                If you require a column to wrap to the next line at various viewports, you can use the <code class="inline">w-100</code> class which will effectively create a new line in your grid without using a new <code class="inline">row</code>. Sometimes you may not want this at desktop for example, if so, use our display classes - <code class="inline">d-desk-none</code>.              
                                 <br>You can even add margin to the <code class="inline">w-100</code> like below:
                             </p>
                         </div>
@@ -277,7 +277,7 @@ $tableOfContents = [
                     <div class="example mt-5">
                         <div class="text-cont">
                             <h3>Horizontal alignment</h3>
-                            <p>CSS alignment can be a nightmare. With mesh, as its built with flexbox, alignment is easy. Just add one of our flex classes to the row or parent that the content lives in.</p>
+                            <p>CSS alignment can be a nightmare. With mesh, as it's built with flexbox, alignment is easy. Just add one of our flex classes to the row or parent that the content lives in.</p>
                             <ul class="list">
                                 <li>To align content centrally add <code class="inline">justify-content-center</code> to the row/parent.</li>
                                 <li>To align content at the start of the row/parent add <code class="inline">justify-content-start</code>.</li>
@@ -379,7 +379,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="offset">
                     <h2 class="b-b1-light hash">Offset</h2>
                     <p class="secondary-lead">
-                        Offsetting is a way to push columns along in the row. Columns can be offset in a responsive manner, meaning you can offset columns dependant on viewport. 
+                        Offsetting is a way to push columns along in the row. Columns can be offset in a responsive manner, meaning you can offset columns dependent on viewport. 
                         <br>To offset use <code class="inline">offset-{breakpoint}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12.
                     </p>
                     <div class="column-demo c-white mb-3 t-center">

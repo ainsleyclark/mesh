@@ -2,7 +2,7 @@
 
 //Website variables
 $websiteData = [
-    'siteURL' => 'https://www.meshcsss.com',
+    'siteURL' => 'https://www.meshcss.com',
     'siteName' => 'mesh',
     'ogImage' => ''
 ];
@@ -14,6 +14,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
 <!DOCTYPE html>
 <html class="no-js" lang="en_GB"> 
 <head>
+    <meta charset="utf-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo ($pageData['pageTitle']) . ' | ' ?>meshCSS</title>
