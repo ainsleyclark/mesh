@@ -148,25 +148,25 @@ $tableOfContents = [
                     <br>Icon buttons are available in large, </p>
                     <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-icon btn-primary">
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                             <span>With Icon</span>
                         </button>
                         <button class="btn btn-icon btn-primary">
                             <span>With Icon</span>
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                         <button class="btn btn-icon btn-outline primary">
                             <span>With Icon</span>
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                         <div class="w-100"></div>
                         <button class="btn btn-icon btn-primary btn-large">
                             <span>With Icon</span>
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                         <button class="btn btn-icon btn-primary btn-small">
                             <span>With Icon</span>
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                     </div>
                     <pre class="highlight"><code class="html">&lt;button class="btn btn-icon btn-primary"&gt;
@@ -195,22 +195,22 @@ $tableOfContents = [
                     <p>You can also use just icons within a button by adding the<code class="inline">&lt;btn-justicon&gt;</code> class. To make the button circular, add one of our border radius classes <code class="inline">&lt;br-circle&gt;</code>.</p>
                     <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-primary btn-justicon">
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                         <button class="btn btn-primary btn-justicon btn-large">
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                         <button class="btn btn-primary btn-justicon br-circle">
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                         <button class="btn btn-primary btn-justicon btn-large br-circle">
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                         <button class="btn btn-primary btn-justicon br-circle btn-outline">
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                         <button class="btn btn-primary btn-justicon btn-large br-circle btn-outline">
-                            <i class="far fa-hashtag"></i>
+                            <i class="fas fa-hashtag"></i>
                         </button>
                     </div>
                     <pre class="highlight"><code class="html">&lt;button class="btn btn-primary btn-justicon"&gt;
