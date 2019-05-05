@@ -28,7 +28,7 @@ $tableOfContents = [
 <section class="content flex-page">
     <div class="container-fullwidth">
         <div class="row justify-content-center mt-4 mt-desk-5">
-            <div class="col-11 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
                 
@@ -107,7 +107,7 @@ $tableOfContents = [
                             <div class="text px-3 px-tab-4 px-desk-5 br mx-0">4</div>
                             <div class="text px-3 px-tab-4 px-desk-5 br mx-0">5</div>
                         </div>
-                        <pre class="highlight"><code class="html py-2">&lt;div class="d-flex flex-row-reverse"&gt;
+                        <pre class="highlight"><code class="html">&lt;div class="d-flex flex-row-reverse"&gt;
     &lt;div class="flex-item"&gt;1&lt;/div&gt;
     &lt;div class="flex-item"&gt;2&lt;/div&gt;
     &lt;div class="flex-item"&gt;3&lt;/div&gt;

@@ -13,28 +13,30 @@
     ==================== */
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-main {
-  position: relative;
-  word-wrap: break-word;
-  font-size: 85%;
+html {
+  font-size: 87.5%;
 }
 
 @media (min-width: 768px) {
-  main {
-    font-size: 92.5%;
+  html {
+    font-size: 95%;
   }
 }
 
 @media (min-width: 1024px) {
-  main {
+  html {
     font-size: 100%;
   }
 }
 
 @media (min-width: 1408px) {
-  main {
-    font-size: 107.5%;
+  html {
+    font-size: 104%;
   }
+}
+
+main {
+  position: relative;
 }
 
 .hash {
@@ -102,7 +104,7 @@ pre {
   border-radius: 3px;
   padding: 10px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  font-size: 0.8em;
+  font-size: 0.8rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
   margin: 0 0 25px 0;
   overflow-x: auto;
@@ -118,11 +120,11 @@ code {
   word-spacing: normal;
   word-break: normal;
   display: block;
-  line-height: 1.8em;
+  line-height: 1.8rem;
 }
 
 code.inline {
-  font-size: 13px;
+  font-size: 0.8rem;
   display: inline;
   color: #8270b8;
   white-space: normal;
@@ -149,6 +151,7 @@ code.inline {
 
 .highlight .copy-to-clipboard,
 .highlight .copy-tick {
+  display: none;
   width: 25px;
   max-height: 40px;
   position: absolute;
@@ -157,11 +160,19 @@ code.inline {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .highlight .copy-to-clipboard,
+  .highlight .copy-tick {
+    display: block;
+  }
+}
+
 .highlight .copy-tick {
   display: none;
 }
 
 .highlight .html:after {
+  display: none;
   content: 'language-markup';
   position: absolute;
   top: 0;
@@ -173,6 +184,12 @@ code.inline {
   background-color: #ffffff;
   text-shadow: 0;
   color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 768px) {
+  .highlight .html:after {
+    display: block;
+  }
 }
 
 /* ====================
@@ -328,15 +345,15 @@ header.primary nav.primary ul .download:hover svg path {
 }
 
 .content h1 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
 }
 
 .content h2 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .content h3 {
-  font-size: 1.4em;
+  font-size: 1.3rem;
   margin: 0 0 5px 0;
 }
 
@@ -354,13 +371,13 @@ header.primary nav.primary ul .download:hover svg path {
 }
 
 .content .secondary-lead {
-  margin-bottom: 30px;
+  margin-bottom: 1rem;
   margin-top: 10px;
 }
 
 .content .text-cont,
 .content .btn {
-  margin-bottom: 25px;
+  margin-bottom: 1rem;
 }
 
 .content .mb-25 {

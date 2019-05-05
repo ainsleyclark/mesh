@@ -8,7 +8,7 @@ pre {
 	border-radius: 3px;
 	padding: 10px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	margin: 0 0 25px 0;
 	overflow-x: auto;
@@ -24,18 +24,17 @@ code {
 	word-spacing: normal;
 	word-break: normal;
 	display: block;
-	line-height: 1.8em;
+	line-height: 1.8rem;
 }
 
 code.inline {
-	font-size: 13px;
+	font-size: 0.8rem;
 	display: inline;
 	color: $purple;
 	white-space: normal;
 	padding: 2px 6px;
 	background: #f8f8f8;
 	font-weight: 900;
-
 }
 
 .highlight {
@@ -57,12 +56,17 @@ code.inline {
 
 	.copy-to-clipboard,
 	.copy-tick {
+		display: none;
 		width: 25px;
 		max-height: 40px;
 		position: absolute;
 		right: 10px;
 		bottom: 10px;
 		cursor: pointer;
+
+		@include media-tab {
+			display: block;
+		}
 	}
 
 	.copy-tick {
@@ -70,6 +74,7 @@ code.inline {
 	}
 
 	.html:after {
+		display: none;
 		content: 'language-markup';
 		position: absolute;
 		top: 0;
@@ -81,5 +86,9 @@ code.inline {
 		background-color: #ffffff;
 		text-shadow: 0;
 		color: rgba(0, 0, 0, 0.8);
+
+		@include media-tab {
+			display: block;
+		}
 	}
 }
