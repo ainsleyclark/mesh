@@ -52,14 +52,14 @@ $tableOfContents = [
                         <br>Go ahead and resize your screen and watch the items.
                     </p>
                     <div class="column-demo c-white mb-3">
-                        <div class="br bg-light d-flex mb-3 justify-content-between t-center">
-                            <div class="text px-3 br mx-0 w-20">
+                        <div class="br d-flex mb-3 justify-content-between t-center">
+                            <div class="text px-3 br mx-0 w-30">
                                 first child
                             </div>                            
-                            <div class="text px-3 br mx-0 w-20 order-tab-last">
+                            <div class="text px-3 br mx-0 w-30 order-tab-last">
                                 second-child
                             </div>
-                            <div class="text px-3 br mx-0 w-20 order-desk-first">
+                            <div class="text px-3 br mx-0 w-30 order-desk-first">
                                 last-child
                             </div>
                         </div>
@@ -75,7 +75,7 @@ $tableOfContents = [
                         <br>Here the third item that appears in the DOM (3) has the <code class="inline">order-desk-6</code> class which will place it fifth in our column sequence <strong>(as the order starts from zero)</strong> for desktop screens and above.
                         <br>Go ahead and resize your screen and watch the items.
                     </p>
-                    <div class="column-demo c-white mb-3 t-center bg-light">
+                    <div class="column-demo c-white mb-3 t-center">
                         <div class="row justify-content-center">
                             <div class="col-5 mb-1">
                                 <div class="text px-3 br">

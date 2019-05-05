@@ -20,6 +20,10 @@ $tableOfContents = [
 <?php include_once('../../partials/header.php'); ?>
 <?php include_once('../../partials/sidenav.php'); ?>
 
+<!-- //! ADD THESE SECTIONS -->
+<h1>How we notate our classes</h1>
+<h1>A word about JS</h1>
+
 <section class="content">
     <div class="container-fullwidth">
         <div class="row justify-content-center mt-4 mt-desk-5">
@@ -70,5 +74,6 @@ $tableOfContents = [
             <?php include_once('../../partials/footer.php'); ?>
         </div><!-- /Row -->
     </div><!-- /Container -->
+
 </section>
 

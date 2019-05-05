@@ -55,14 +55,19 @@ $tableOfContents = [
                         <pre class="highlight"><code class="html py-2">&lt;div class="d-inline-flex"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
                     <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;div class="d-flex"&gt;&lt;/div&gt;
+<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="d-flex"&gt;&lt;/div&gt;
 &lt;div class="d-inline-flex"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
 &lt;div class="d-mob-flex"&gt;&lt;/div&gt;
 &lt;div class="d-mob-inline-flex"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
 &lt;div class="d-tab-flex"&gt;&lt;/div&gt;
 &lt;div class="d-tab-inline-flex"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
 &lt;div class="d-desk-flex"&gt;&lt;/div&gt;
 &lt;div class="d-desk-inline-flex"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
 &lt;div class="d-hd-flex"&gt;&lt;/div&gt;
 &lt;div class="d-hd-inline-flex"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
@@ -154,22 +159,27 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></div></pre>
                     <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;div class="flex-row"&gt;&lt;/div&gt;
+<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="flex-row"&gt;&lt;/div&gt;
 &lt;div class="flex-row-reverse"&gt;&lt;/div&gt;
 &lt;div class="flex-column"&gt;&lt;/div&gt;
 &lt;div class="flex-column-reverse"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
 &lt;div class="flex-mob-row"&gt;&lt;/div&gt;
 &lt;div class="flex-mob-row-reverse"&gt;&lt;/div&gt;
 &lt;div class="flex-mob-column"&gt;&lt;/div&gt;
 &lt;div class="flex-mob-column-reverse"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
 &lt;div class="flex-tab-row"&gt;&lt;/div&gt;
 &lt;div class="flex-tab-row-reverse"&gt;&lt;/div&gt;
 &lt;div class="flex-tab-column"&gt;&lt;/div&gt;
 &lt;div class="flex-tab-column-reverse"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
 &lt;div class="flex-desk-row"&gt;&lt;/div&gt;
 &lt;div class="flex-desk-row-reverse"&gt;&lt;/div&gt;
 &lt;div class="flex-desk-column"&gt;&lt;/div&gt;
 &lt;div class="flex-desk-column-reverse"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
 &lt;div class="flex-hd-row"&gt;&lt;/div&gt;
 &lt;div class="flex-hd-row-reverse"&gt;&lt;/div&gt;
 &lt;div class="flex-hd-column"&gt;&lt;/div&gt;
@@ -247,26 +257,31 @@ $tableOfContents = [
                         </div>
                     </div>
                     <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;div class="d-flex justify-content-start"&gt;&lt;/div&gt;
+<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="d-flex justify-content-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-between"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-around"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
 &lt;div class="d-flex justify-content-mob-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-mob-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-mob-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-mob-between"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-mob-around"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
 &lt;div class="d-flex justify-content-tab-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-tab-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-tab-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-tab-between"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-tab-around"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
 &lt;div class="d-flex justify-content-desk-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-desk-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-desk-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-desk-between"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-desk-around"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
 &lt;div class="d-flex justify-content-hd-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-hd-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-hd-center"&gt;&lt;/div&gt;
@@ -345,26 +360,31 @@ $tableOfContents = [
                         </div>
                     </div>
                     <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;div class="d-flex align-items-stretch"&gt;&lt;/div&gt;
+<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="d-flex align-items-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-baseline"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt
 &lt;div class="d-flex align-items-mob-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-mob-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-mob-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-mob-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-mob-baseline"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
 &lt;div class="d-flex align-items-tab-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-tab-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-tab-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-tab-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-tab-baseline"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
 &lt;div class="d-flex align-items-desk-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-desk-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-desk-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-desk-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-desk-baseline"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
 &lt;div class="d-flex align-items-hd-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-hd-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-hd-end"&gt;&lt;/div&gt;
@@ -468,26 +488,31 @@ $tableOfContents = [
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
                     <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;div class="d-flex align-self-stretch"&gt;&lt;/div&gt;
+<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="d-flex align-self-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-baseline"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
 &lt;div class="d-flex align-self-mob-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-mob-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-mob-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-mob-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-mob-baseline"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
 &lt;div class="d-flex align-self-tab-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-tab-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-tab-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-tab-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-tab-baseline"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
 &lt;div class="d-flex align-self-desk-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-desk-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-desk-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-desk-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-desk-baseline"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
 &lt;div class="d-flex align-self-hd-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-hd-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-hd-end"&gt;&lt;/div&gt;
@@ -607,13 +632,14 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>       
                     </div>
-                    <h3>Responsive variations:</h3>
+                    <h3>Responsive variations:</h3>&lt;!-- Default --&gt;
 <pre class="highlight"><code class="html">&lt;div class="d-flex align-content-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-between"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-around"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-stretch"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
 &lt;div class="d-flex align-content-mob-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-mob-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-mob-center"&gt;&lt;/div&gt;
@@ -621,17 +647,20 @@ $tableOfContents = [
 &lt;div class="d-flex align-content-mob-around"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-mob-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-tab-start"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
 &lt;div class="d-flex align-content-tab-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-tab-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-tab-between"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-tab-around"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-tab-stretch"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
 &lt;div class="d-flex align-content-desk-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-desk-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-desk-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-desk-between"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-desk-around"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-desk-stretch"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
 &lt;div class="d-flex align-content-hd-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-hd-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-hd-center"&gt;&lt;/div&gt;
@@ -703,18 +732,23 @@ $tableOfContents = [
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         </div>
                         <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;div class="d-flex flex-wrap"&gt;&lt;/div&gt;
+<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="d-flex flex-wrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-nowrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-wrap-reverse"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
 &lt;div class="d-flex flex-mob-wrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-mob-nowrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-mob-wrap-reverse"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
 &lt;div class="d-flex flex-tab-wrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-tab-nowrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-tab-wrap-reverse"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
 &lt;div class="d-flex flex-desk-wrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-desk-nowrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-desk-wrap-reverse"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
 &lt;div class="d-flex flex-hd-wrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-hd-nowrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-hd-wrap-reverse"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
@@ -794,6 +828,32 @@ $tableOfContents = [
     &lt;div class="flex-item flex-grow-1"&gt;4&lt;/div&gt;
     &lt;div class="flex-item flex-grow-1"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+<h3>Responsive variations:</h3>
+<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="d-flex flex-grow-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-grow-1"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-shrink-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-shrink-1"&gt;&lt;/div&gt;
+&lt;!-- Mobile --&gt;
+&lt;div class="d-flex flex-mob-grow-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-mob-grow-1"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-mob-shrink-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-mob-shrink-1"&gt;&lt;/div&gt;
+&lt;!-- Tablet --&gt;
+&lt;div class="d-flex flex-tab-grow-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-tab-grow-1"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-tab-shrink-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-tab-shrink-1"&gt;&lt;/div&gt;
+&lt;!-- Desktop --&gt;
+&lt;div class="d-flex flex-desk-grow-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-desk-grow-1"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-desk-shrink-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-desk-shrink-1"&gt;&lt;/div&gt;
+&lt;!-- HD --&gt;
+&lt;div class="d-flex flex-hd-grow-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-hd-grow-1"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-hd-shrink-0"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-hd-shrink-1"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
 
 
             </div><!-- /Col -->

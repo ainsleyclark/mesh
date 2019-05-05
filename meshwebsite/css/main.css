@@ -87,7 +87,7 @@ ul.list li:before {
   display: inline-block;
   background-color: #ff2451;
   height: 1.8px;
-  width: 1em;
+  width: 10px;
   top: -5px;
   position: relative;
   margin-right: 10px;
@@ -95,7 +95,7 @@ ul.list li:before {
 
 @media (min-width: 768px) {
   ul.list li:before {
-    margin-left: -25px;
+    margin-left: -20px;
   }
 }
 
