@@ -18,10 +18,14 @@ ul.list {
 			background-color: $primary;
 			height: 1.8px;
 			width: 1em;
-			margin-left: -25px;
-			margin-right: 10px;
 			top: -5px;
 			position: relative;
+			margin-right: 10px;
+
+			@include media-tab {
+				margin-left: -25px;
+
+			}
 		}
 	}
 }

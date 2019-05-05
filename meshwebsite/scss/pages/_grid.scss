@@ -2,34 +2,3 @@
 // _grid.scss
 // This file contains styles that are specific to the button page.
 // -----------------------------------------------------------------------------
-
-.grid-page {
-
-	//Small primary columns
-	.column-demo {
-		
-		.row {
-			margin: 0 -5px;
-		}
-
-		.row.no-gaps  {
-			margin: 0;
-
-			[class^='col-'] {
-				padding: 0;
-				
-			}
-		}
-
-		[class^='col-'] {
-			padding: 0 5px;
-
-			.text {
-				padding: 15px 0;
-				background: $primary;
-			}
-		}
-	}
-
-	//Browser container window
-}

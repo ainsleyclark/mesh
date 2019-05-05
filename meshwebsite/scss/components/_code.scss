@@ -6,11 +6,12 @@
 pre {
 	background: #f9f9f9;
 	border-radius: 3px;
-	padding: 10px 10px 0 10px;
+	padding: 10px;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 	font-size: 0.8em;
 	border: 1px solid rgba(0, 0, 0, 0.125);
 	margin: 0 0 25px 0;
+	overflow-x: auto;
 }
 
 code {
@@ -24,8 +25,6 @@ code {
 	word-break: normal;
 	display: block;
 	line-height: 1.8em;
-	overflow-x: scroll;
-	padding-bottom: 10px;
 }
 
 code.inline {

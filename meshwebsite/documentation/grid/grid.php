@@ -27,25 +27,25 @@ $tableOfContents = [
     <div class="container-fullwidth">
         <div class="row justify-content-center mt-4 mt-desk-5">
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
-                <h1 class="mb-2">Grid</h1>
+                <h1 class="mb-2"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
 
                 <!-- How it works -->
                 <article class="section-scroll" id="howItWorks">
                     <h2 class="b-b1-light hash">How it works</h2>
-                    <p>mesh uses the conventional containers, rows and columns to layout and align content, it's built with flex box and is fully responsive. Here's an example:</p>
+                    <p class="secondary-lead">mesh uses conventional containers, rows and columns to layout and align content, it's built with flex box and is fully responsive. Here's an example:</p>
 <pre class="highlight"><code class="html">&lt;div class="container"&gt;
     &lt;div class="row"&gt;
         &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
-            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at dekstop and 3 in hd screens
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at desktop and 3 in hd screens
         &lt;/div&gt;
         &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
-            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at dekstop and 3 in hd screens
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at desktop and 3 in hd screens
         &lt;/div&gt;
         &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
-            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at dekstop and 3 in hd screens
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at desktop and 3 in hd screens
         &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
-            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at dekstop and 3 in hd screens
+            I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at desktop and 3 in hd screens
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
@@ -60,7 +60,7 @@ $tableOfContents = [
                 <!-- Containers -->
                 <article class="section-scroll" id="containers">
                     <h2 class="b-b1-light hash">Containers</h2>
-                    <p class="secondary-lead">A container is the wrapper for a row (more on that later) and defines the width of your content. It can be at fixed size or full width, and will gracefully become smaller as screen size gets smaller. Here are your options:</p>
+                    <p class="secondary-lead">A container is the wrapper for a row (more on that later) and defines the width of your content. It can be at fixed size or full width, and will gracefully become smaller as screen size gets smaller.</p>
                     <div class="text-cont">
                         <h3>Container options:</h3>
                         <ul class="list">
@@ -135,7 +135,7 @@ $tableOfContents = [
                     <h2 class="b-b1-light hash">Columns</h2>
                     <p class="secondary-lead">
                         A column is where your content lives, <strong>they live inside rows</strong>, there can be a maximum of 12 columns in a row, if there a more they will wrap to the next line. Of course you can overwrite this behaviour by using the <code class="inline">flex-nowrap</code> class.
-                        <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifer is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be 1 to 12. 
+                        <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12. 
                     </p>
                     <div class="text-cont">
                         <h3>Notes:</h3>
@@ -150,9 +150,9 @@ $tableOfContents = [
                     <div class="example mt-5">
                         <div class="text-cont">
                             <h3>Simple layout:</h3>
-                            <p>Here all columns will take up 4 spaces at HD screens, 6 on tablet, and because mesh is built mobile first, they will be 100% width at mobile, even though we didnt specify. The first column will take up 12 columns on tablet. Go ahead and resize the screen to see the effect.</p>
+                            <p>Here all columns will take up 4 spaces on HD screens, 6 on tablet, and because mesh is built mobile first, they will be 100% width at mobile, even though we didnt specify. The first column will take up 12 columns on tablet. Go ahead and resize the screen to see the effect.</p>
                         </div>
-                        <div class="column-demo c-white mb-25">
+                        <div class="column-demo c-white mb-25 t-center">
                             <div class="row">
                                 <div class="col-tab-12 col-hd-4 mb-2 mb-hd-0">
                                     <div class="text px-3 br">
@@ -188,7 +188,7 @@ $tableOfContents = [
                             <h3>Auto width columns</h3>
                             <p>With the <code class="inline">col-{breakpoint}-auto</code> class, the column will fill based on the content that sites inside it.</p>
                         </div>
-                        <div class="column-demo c-white mb-25">
+                        <div class="column-demo c-white mb-25 t-center">
                             <div class="row">
                                 <div class="col-desk-3 mb-2 mb-hd-0">
                                     <div class="text px-3 br">
@@ -227,7 +227,7 @@ $tableOfContents = [
                                 <br>You can even add margin to the <code class="inline">w-100</code> like below:
                             </p>
                         </div>
-                        <div class="column-demo c-white mb-25">
+                        <div class="column-demo c-white mb-25 t-center">
                             <div class="row">
                                 <div class="col-6 col-tab-3 mb-1">
                                     <div class="text px-3 br">
@@ -277,41 +277,98 @@ $tableOfContents = [
                     <div class="example mt-5">
                         <div class="text-cont">
                             <h3>Horizontal alignment</h3>
-                            <p>
-                                CSS alignment can be a nightmare, we've all been there, trying to align one div for hours. With mesh, as its built with flexbox, alignment is easy. Just add one of our flex classes to the row or container that the content lives in.
-                            </p>
+                            <p>CSS alignment can be a nightmare. With mesh, as its built with flexbox, alignment is easy. Just add one of our flex classes to the row or parent that the content lives in.</p>
                             <ul class="list">
-                                <li>To align content centrally add <code class="inline">justify-content-center</code> to the row/container.</li>
-                                <li>To align content at the start of the row/container add <code class="inline">justify-content-start</code>.</li>
-                                <li>To align content at the end of the row/container add <code class="inline">justify-content-end</code>.</li>
+                                <li>To align content centrally add <code class="inline">justify-content-center</code> to the row/parent.</li>
+                                <li>To align content at the start of the row/parent add <code class="inline">justify-content-start</code>.</li>
+                                <li>To align content at the end of the row/parent add <code class="inline">justify-content-end</code>.</li>
                             </ul>
                         </div>
                         <div class="column-demo c-white mb-25">
-                            <div class="row">
-                                <div class="col-desk-3 mb-2 mb-hd-0">
+                            <div class="row justify-content-center bg-light mx-0 br">
+                                <div class="col-5 px-0 t-center">
                                     <div class="text px-3 br">
-                                        col-desk-3
+                                        justify-content-center
                                     </div>
                                 </div>
-                                <div class="col-auto mb-2 mb-hd-0">
+                            </div>
+                            <div class="row justify-content-start bg-light mx-0 my-2 br">
+                                <div class="col-5 px-0 t-center">
                                     <div class="text px-3 br">
-                                        I fill based what's inside me - col-auto
+                                        justify-content-start
                                     </div>
                                 </div>
-                                <div class="col-desk-3">
+                            </div>
+                            <div class="row justify-content-end bg-light mx-0 my-2 br">
+                                <div class="col-5 px-0 t-center">
                                     <div class="text px-3 br">
-                                        col-desk-3
+                                        justify-content-end
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <pre class="highlight"><code class="html">&lt;div class="container"&gt;
-    &lt;div class="row"&gt;
-        &lt;div class="col-desk-3"&gt;
+    &lt;div class="row justify-content-center"&gt;
+        &lt;div class="col-5"&gt;
         &lt;/div&gt;
-        &lt;div class="col-auto"&gt;
+    &lt;/div&gt;
+    &lt;div class="row justify-content-start"&gt;
+        &lt;div class="col-5"&gt;
         &lt;/div&gt;
-        &lt;div class="col-desk-3"&gt;
+    &lt;/div&gt;
+    &lt;div class="row justify-content-end"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                    </div>
+
+                    <!-- Vertical alignment -->
+                    <div class="example mt-5">
+                        <div class="text-cont">
+                            <h3>Vertical alignment</h3>
+                            <p>To align content vertically within the container you will need to take advantage of our flex class <code class="inline">align-items-*</code>.</p>
+                            <ul class="list">
+                                <li>To align content centrally add <code class="inline">align-items-center</code> to the row/container.</li>
+                                <li>To align content at the start of the row/container add <code class="inline">align-items-start</code>.</li>
+                                <li>To align content at the end of the row/container add <code class="inline">align-items-end</code>.</li>
+                            </ul>
+                        </div>
+                        <div class="column-demo c-white mb-25">
+                            <div class="row align-items-center bg-light height-100 mx-0 br">
+                                <div class="col-12 px-0 t-center">
+                                    <div class="text px-3 br">
+                                        align-items-center
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-start bg-light height-100 mx-0 my-2 br">
+                                <div class="col-12 px-0 t-center">
+                                    <div class="text px-3 br">
+                                        align-items-start
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-end bg-light height-100 mx-0 my-2 br">
+                                <div class="col-12 px-0 t-center">
+                                    <div class="text px-3 br h-100">
+                                        align-items-end
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <pre class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row align-items--center"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row align-items-start"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row align-items-end"&gt;
+        &lt;div class="col-5"&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
@@ -321,12 +378,46 @@ $tableOfContents = [
                 <!-- Offset -->
                 <article class="section-scroll" id="offset">
                     <h2 class="b-b1-light hash">Offset</h2>
-                    <p class="secondary-lead">A container is the wrapper for a row (more on that later) and defines the width of your content. It can be at fixed size or full width, and will gracefully become smaller as screen size gets smaller. Here are your options:</p>
-                    <h4 class="mb-1 mt-3">Lorem Ipsum</h4>
-                    <ul class="list">
-                        <li></li>
-                        <li></li>
-                    </ul>
+                    <p class="secondary-lead">
+                        Offsetting is a way to push columns along in the row. Columns can be offset in a responsive manner, meaning you can offset columns dependant on viewport. 
+                        <br>To offset use <code class="inline">offset-{breakpoint}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12.
+                    </p>
+                    <div class="column-demo c-white mb-25 t-center">
+                        <div class="row">
+                            <div class="col-6 offset-6 mb-2">
+                                <div class="text px-3 br">
+                                    col-6 offset-6
+                                </div>
+                            </div>
+                            <div class="col-5 offset-desk-1 mb-2 mb-hd-0">
+                                <div class="text px-3 br mb-2">
+                                    col-5 offset-desk-1
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text px-3 br">
+                                    col-4
+                                </div>
+                            </div>
+                            <div class="col-6 offset-6 offset-desk-0">
+                                <div class="text px-3 br">
+                                    col-6 offset-6 offset-desk-0
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="highlight"><code class="html">&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-6 offset-6"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-5 offset-desk-1"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-4"&gt;
+        &lt;/div&gt;
+        &lt;div class="col-6 offset-6 offset-desk-0"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
             </div><!-- /Col -->
@@ -356,8 +447,3 @@ $tableOfContents = [
     });
     </script>
 <?php } ?>
-
-.cls-2 {
-        fill: #afafaf;
-        opacity: 0.5;
-      }

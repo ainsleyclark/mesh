@@ -92,10 +92,11 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE).
 
 ## Contributors
-[@versustune]( https://github.com/versustune )
+[@kassuro]( https://github.com/kassuro )
 [@nicholsk18]( https://github.com/nicholsk18 )
+[@versustune]( https://github.com/versustune )
 
-## BrowserStack
+## Testing
 Tested with BrowserStack.  <br/>
 <a href="https://www.browserstack.com/">
   <img alt="BrowserStack Logo" src="https://www.meshcss.com/assets/img/browserstack-logo.png" width="144">
