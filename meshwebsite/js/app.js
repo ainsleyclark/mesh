@@ -7,87 +7,127 @@
  * @param {array} arr - The contents item
  * @return {array} An array of items that match with the data attr
  */
-window.onscroll = function changeClass() {
-	let scrollSection = document.querySelectorAll('.section-scroll')
-	let scrollPosY = window.pageYOffset | document.body.scrollTop
+let scrollSection = document.querySelectorAll('.section-scroll');
+let contentsItems = document.querySelectorAll('.contents-item');
 
-	for (let i = 0; i < scrollSection.length; i++) {
-		let sectionHeight = scrollSection[i].offsetHeight
-		let contentsItems = document.querySelectorAll('.contents-item')
-		let sectionOffset = scrollSection[i].offsetTop - 43
+window.addEventListener('scroll', function () {
+    let scrollPosY = window.pageYOffset | document.body.scrollTop;
+    reset();
+    if (scrollPosY > scrollSection[0].offsetTop + 80) {
+        scrollPosY += (innerHeight / 2);
+        let elements = [];
+        for (let i = 0; i < scrollSection.length; i++) {
+            let sectionHeight = scrollSection[i].offsetHeight;
+            let sectionOffset = scrollSection[i].offsetTop - 43;
 
-		if (scrollPosY >= sectionOffset + sectionHeight || scrollPosY < sectionOffset) {
-			contentsItems[i].classList.remove('active')
-		} else {
-			contentsItems[i].classList.add('active')
-		}
-	}
+            let is = scrollPosY >= sectionOffset + sectionHeight || scrollPosY < sectionOffset;
+            if (!is) {
+                contentsItems[i]._i = i;
+                elements.push(contentsItems[i]);
+            }
+        }
+        findActive(elements, scrollPosY);
+    }
+    else {
+        contentsItems[0].classList.add('active');
+    }
+
+}, {passive: true});
+
+function findActive(elements, scrollPosY) {
+    if (elements.length > 0) {
+        let activeEl = {d: Infinity, el: null};
+        elements.forEach(function (el) {
+            let sec = scrollSection[el._i];
+            let d = ((scrollPosY) - sec.offsetHeight);
+            if (d < activeEl.d) {
+                activeEl.d = d;
+                activeEl.el = el;
+            }
+        });
+        activeEl.el.classList.add('active');
+    }
 }
 
+function reset() {
+    contentsItems.forEach(function (el) {
+        el.classList.remove('active');
+    })
+}
 /***********************************************************************************************/
 /* Highlight Code */
 /***********************************************************************************************/
 
-hljs.initHighlightingOnLoad()
+hljs.initHighlightingOnLoad();
+
+/****************************/
+/* Delegated Event Listener */
+/****************************/
+Node.prototype.addDelegatedEventListener = function (eventType, aim, callback) {
+    let events = eventType.split(',');
+    events.forEach(function (value) {
+        this.addEventListener(value.trim(), function (event) {
+            if (event.target.matches) {
+                if (event.target.matches(aim + ', ' + aim + ' *')) {
+                    callback(event, event.target.closest(aim));
+                }
+            }
+        }, false)
+    })
+};
 
 /***********************************************************************************************/
 /* Copy to Clipboard */
 /***********************************************************************************************/
 
 //Copy Click
-let copyButtons = document.querySelectorAll('.copy-to-clipboard')
 
-for (var i = 0; i < copyButtons.length; i++) {
-	copyButtons[i].addEventListener('click', getCopyData, false)
-}
+document.body.addDelegatedEventListener('click', '.copy-to-clipboard', getCopyData);
 
-function getCopyData(el) {
-	//Get the HTML of the codes sibling
-	var sibling = this.parentNode.firstChild.outerHTML
-	sibling = strip(sibling)
-	var fullLink = document.createElement('input')
-	document.body.appendChild(fullLink)
-	fullLink.value = sibling
-	copyToClipboard(fullLink)
-	changeToTick(this)
-	fullLink.remove()
+function getCopyData(e, el) {
+    //Get the HTML of the codes sibling
+    var sibling = el.parentNode.firstChild.outerHTML;
+    sibling = strip(sibling);
+    var fullLink = document.createElement('textarea');
+    document.body.appendChild(fullLink);
+    fullLink.value = sibling;
+    copyToClipboard(fullLink);
+    changeToTick(el);
+    fullLink.remove()
 }
 
 //Strip HTML tags from a given string
 function strip(html) {
-	var doc = new DOMParser().parseFromString(html, 'text/html')
-	return doc.body.textContent || ''
+    var doc = new DOMParser().parseFromString(html, 'text/html');
+    return doc.body.textContent || ''
 }
 
 //Copy to Clipboard
 function copyToClipboard(el) {
-	el.select()
-	document.execCommand('copy')
+    el.select();
+    document.execCommand('copy')
 }
 
 //Change Clipboard Icon to Tick
-let changeToTick = function(el) {
-	el.style.display = 'none'
-	el.nextElementSibling.style.display = 'block'
-}
+let changeToTick = function (el) {
+    el.style.display = 'none';
+    el.nextElementSibling.style.display = 'block'
+};
 
 /***********************************************************************************************/
 /* Scroll to Anchor */
 /***********************************************************************************************/
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-	anchor.addEventListener('click', function(e) {
-		e.preventDefault()
+document.body.addDelegatedEventListener('click', 'a[href^="#"]', function (e, el) {
+    e.preventDefault();
 
-		let headerOffset = -55
-		let section = document.querySelector(this.getAttribute('href'))
-		let elementPosition = section.offsetTop
-		let offsetPosition = elementPosition - headerOffset
+    let headerOffset = -55;
+    let section = document.querySelector(el.getAttribute('href'));
+    let elementPosition = section.offsetTop;
+    let offsetPosition = elementPosition - headerOffset;
 
-		window.scrollTo({
-			top: offsetPosition,
-			behavior: 'smooth'
-		})
-	})
-})
-
+    window.scrollTo({
+        top: offsetPosition - (innerHeight / 2 - 200),
+        behavior: 'smooth'
+    });
+});
