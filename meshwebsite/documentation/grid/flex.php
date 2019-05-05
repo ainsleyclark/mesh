@@ -702,9 +702,25 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         </div>
+                        <h3>Responsive variations:</h3>
+<pre class="highlight"><code class="html">&lt;div class="d-flex flex-wrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-nowrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-wrap-reverse"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-mob-wrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-mob-nowrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-mob-wrap-reverse"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-tab-wrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-tab-nowrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-tab-wrap-reverse"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-desk-wrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-desk-nowrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-desk-wrap-reverse"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-hd-wrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-hd-nowrap"&gt;&lt;/div&gt;
+&lt;div class="d-flex flex-hd-wrap-reverse"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
 
                         <!-- Fill -->
-                        <h3>Fill</h3>
+                        <h3 class="mt-5">Fill</h3>
                         <p class="secondary-lead mt-0">
                             The flex fill class is set to fill the remaining space of the container. Its used by adding the <code class="inline">flex-{breakpoint}-fill</code> class to the <strong>flexible child</strong>.
                         </p>
@@ -724,7 +740,14 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-                </article>
+                        <h3>Responsive variations:</h3>
+<pre class="highlight"><code class="html">&lt;div class="flex-fill"&gt;&lt;/div&gt;
+&lt;div class="flex-mob-fill"&gt;&lt;/div&gt;
+&lt;div class="flex-tab-fill"&gt;&lt;/div&gt;
+&lt;div class="flex-desk-fill"&gt;&lt;/div&gt;
+&lt;div class="flex-hd-fill"&gt;&lt;/div&gt;
+</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+</article>
 
                 <!-- Grow & shrink -->
                 <article class="section-scroll" id="growShrink">
@@ -751,7 +774,7 @@ $tableOfContents = [
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
 
                     <!-- Shrink -->
-                    <h3>Shrink</h3>
+                    <h3 class="mt-5">Shrink</h3>
                     <p class="secondary-lead mt-0">
                         The shrink property define the ability for an a flex child to shrink within the flex container, the default is set to 0. You can target the flex shrink properties by using the <code class="inline">flex-{breakpoint}-shrink-{amount}</code> class where the breakpoint is optional and the <strong>amount is either 0 or 1.</strong>
                     </p>
