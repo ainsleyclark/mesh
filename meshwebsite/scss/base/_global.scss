@@ -3,14 +3,21 @@
 // This file contains very basic styles to reset document.
 // -----------------------------------------------------------------------------
 
-html,
-body {
-	height: 100%;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-}
-
 main {
 	position: relative;
+	word-wrap: break-word;
+	font-size: 85%;
+
+	@include media-tab {
+		font-size: 92.5%;
+	}
+
+	@include media-desk {
+		font-size: 100%;
+	}
+
+	@include media-hd {
+		font-size: 107.5%;
+	}
 }
+

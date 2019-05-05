@@ -4,10 +4,14 @@
 // -----------------------------------------------------------------------------
 
 footer {
-	height: $header-height;
+
 
 	.footer-icon {
 		width: 25px;
 		margin-right: 10px;
+	}
+
+	@include media-tab {
+		height: $header-height;
 	}
 }

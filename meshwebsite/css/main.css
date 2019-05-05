@@ -13,16 +13,28 @@
     ==================== */
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-html,
-body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
 main {
   position: relative;
+  word-wrap: break-word;
+  font-size: 85%;
+}
+
+@media (min-width: 768px) {
+  main {
+    font-size: 92.5%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 1408px) {
+  main {
+    font-size: 107.5%;
+  }
 }
 
 .hash {
@@ -113,7 +125,7 @@ code.inline {
   font-size: 13px;
   display: inline;
   color: #8270b8;
-  white-space: nowrap;
+  white-space: normal;
   padding: 2px 6px;
   background: #f8f8f8;
   font-weight: 900;
@@ -311,6 +323,10 @@ header.primary nav.primary ul .download:hover svg path {
   margin-left: -1px;
 }
 
+.content {
+  word-wrap: break-word;
+}
+
 .content h1 {
   font-size: 2.2em;
 }
@@ -388,13 +404,15 @@ header.primary nav.primary ul .download:hover svg path {
   height: 300px;
 }
 
-footer {
-  height: 72px;
-}
-
 footer .footer-icon {
   width: 25px;
   margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    height: 72px;
+  }
 }
 
 /* ====================

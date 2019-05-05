@@ -28,7 +28,7 @@ $tableOfContents = [
 <section class="content flex-page">
     <div class="container-fullwidth">
         <div class="row justify-content-center mt-4 mt-desk-5">
-            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
+            <div class="col-11 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
                 
@@ -86,11 +86,11 @@ $tableOfContents = [
                     <h4><code class="inline bg-white">d-flex</code></h4>
                     <div class="column-demo mb-3">
                         <div class="br bg-light mb-3 d-flex justify-content-between c-white">
-                            <div class="text px-5 br mx-0">1</div>
-                            <div class="text px-5 br mx-0">2</div>
-                            <div class="text px-5 br mx-0">3</div>
-                            <div class="text px-5 br mx-0">4</div>
-                            <div class="text px-5 br mx-0">5</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">1</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">2</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">3</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">4</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">5</div>
                         </div>
                         <pre class="highlight"><code class="html py-2">&lt;div class="d-flex"&gt;
     &lt;div class="flex-item"&gt;1&lt;/div&gt;
@@ -101,11 +101,11 @@ $tableOfContents = [
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         <h4><code class="inline bg-white">flex-row-reverse</code></h4>
                         <div class="br bg-light mb-3 d-flex flex-row-reverse justify-content-between c-white">
-                            <div class="text px-5 br mx-0">1</div>
-                            <div class="text px-5 br mx-0">2</div>
-                            <div class="text px-5 br mx-0">3</div>
-                            <div class="text px-5 br mx-0">4</div>
-                            <div class="text px-5 br mx-0">5</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">1</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">2</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">3</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">4</div>
+                            <div class="text px-3 px-tab-4 px-desk-5 br mx-0">5</div>
                         </div>
                         <pre class="highlight"><code class="html py-2">&lt;div class="d-flex flex-row-reverse"&gt;
     &lt;div class="flex-item"&gt;1&lt;/div&gt;
@@ -113,10 +113,10 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
-&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>         
                         <h3>Column</h3>
                         <p>Here, the flex direction goes from top to bottom or bottom to top.</p>
-                        <div class="d-flex justify-content-between t-center w-80 mx-auto">
+                        <div class="d-none d-tab-flex justify-content-between t-center w-80 mx-auto">
                             <h4><code class="inline bg-white">flex-column</code></h4>
                             <h4><code class="inline bg-white">flex-column-reverse</code></h4>
                         </div>
@@ -198,51 +198,51 @@ $tableOfContents = [
                         <h4><code class="inline bg-white">justify-content-start (default)</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex justify-content-start mb-3">
-                                <div class="text mr-1 px-3 px-tab-4 br">1</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">2</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">3</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">4</div>
-                                <div class="text ml-1 px-3 px-tab-4 br">5</div>
+                                <div class="text mr-1 px-2 px-tab-4 br">1</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">2</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">3</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">4</div>
+                                <div class="text ml-1 px-2 px-tab-4 br">5</div>
                             </div>
                         </div>
                         <h4><code class="inline bg-white">justify-content-end</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex justify-content-end mb-3">
-                                <div class="text mr-1 px-3 px-tab-4 br">1</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">2</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">3</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">4</div>
-                                <div class="text ml-1 px-3 px-tab-4 br">5</div>
+                                <div class="text mr-1 px-2 px-tab-4 br">1</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">2</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">3</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">4</div>
+                                <div class="text ml-1 px-2 px-tab-4 br">5</div>
                             </div>
                         </div>
                         <h4><code class="inline bg-white">justify-content-center</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex justify-content-center mb-3">
-                                <div class="text mr-1 px-3 px-tab-4 br">1</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">2</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">3</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">4</div>
-                                <div class="text ml-1 px-3 px-tab-4 br">5</div>
+                                <div class="text mr-1 px-2 px-tab-4 br">1</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">2</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">3</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">4</div>
+                                <div class="text ml-1 px-2 px-tab-4 br">5</div>
                             </div>
                         </div>
                         <h4><code class="inline bg-white">justify-content-between</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex justify-content-between mb-3">
-                                <div class="text mr-1 px-3 px-tab-4 br">1</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">2</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">3</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">4</div>
-                                <div class="text ml-1 px-3 px-tab-4 br">5</div>
+                                <div class="text mr-1 px-2 px-tab-4 br">1</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">2</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">3</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">4</div>
+                                <div class="text ml-1 px-2 px-tab-4 br">5</div>
                             </div>
                         </div>
                         <h4><code class="inline bg-white">justify-content-around</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex justify-content-around mb-3">
-                                <div class="text mr-1 px-3 px-tab-4 br">1</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">2</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">3</div>
-                                <div class="text mx-1 px-3 px-tab-4 br">4</div>
-                                <div class="text ml-1 px-3 px-tab-4 br">5</div>
+                                <div class="text mr-1 px-2 px-tab-4 br">1</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">2</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">3</div>
+                                <div class="text mx-1 px-2 px-tab-4 br">4</div>
+                                <div class="text ml-1 px-2 px-tab-4 br">5</div>
                             </div>
                         </div>
                     </div>
@@ -306,7 +306,7 @@ $tableOfContents = [
                         <h4><code class="inline bg-white">align-items-start</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex align-items-start mb-3 height-100">
-                                <div class="text mr-1 mr-hd-2 px-tab-4 br">1</div>
+                                <div class="text mr-1 mr-hd-2 px-3 px-tab-4 br">1</div>
                                 <div class="text mx-1 mx-hd-2 px-3 px-tab-4 br">2</div>
                                 <div class="text mx-1 mx-hd-2 px-3 px-tab-4 br">3</div>
                                 <div class="text mx-1 mx-hd-2 px-3 px-tab-4 br">4</div>
@@ -316,7 +316,7 @@ $tableOfContents = [
                         <h4><code class="inline bg-white">align-items-end</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex align-items-end mb-3 height-100">
-                                <div class="text mr-1 mr-hd-2 px-tab-4 br">1</div>
+                                <div class="text mr-1 mr-hd-2 px-3 px-tab-4 br">1</div>
                                 <div class="text mx-1 mx-hd-2 px-3 px-tab-4 br">2</div>
                                 <div class="text mx-1 mx-hd-2 px-3 px-tab-4 br">3</div>
                                 <div class="text mx-1 mx-hd-2 px-3 px-tab-4 br">4</div>
