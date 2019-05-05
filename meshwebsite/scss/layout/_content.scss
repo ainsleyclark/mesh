@@ -4,7 +4,6 @@
 // -----------------------------------------------------------------------------
 
 .content {
-	
 	h1 {
 		font-size: 2.2em;
 	}
@@ -35,7 +34,7 @@
 		margin-top: 10px;
 	}
 
-	.text-cont, 
+	.text-cont,
 	.btn {
 		margin-bottom: 25px;
 	}
@@ -51,17 +50,15 @@
 
 //Small primary columns
 .column-demo {
-	
 	.row {
 		margin: 0 -5px;
 	}
 
-	.row.no-gaps  {
+	.row.no-gaps {
 		margin: 0;
 
 		[class^='col-'] {
 			padding: 0;
-			
 		}
 	}
 
@@ -77,5 +74,13 @@
 	//Vertical alignment classes under columns
 	.height-100 {
 		height: 100px;
+	}
+
+	.height-110 {
+		height: 110px;
+	}
+
+	.height-200 {
+		height: 300px;
 	}
 }

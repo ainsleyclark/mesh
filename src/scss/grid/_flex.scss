@@ -36,8 +36,8 @@
 			justify-content: space-around !important;
 		}
 
-		//Align Self & Align Items & Align Content
-		@each $property in ('self', 'items', 'content') {
+		//Align Self & Align Items
+		@each $property in ('self', 'items') {
 			.align-#{$property}#{$modifier}-start {
 				align-#{$property}: flex-start !important;
 			}
@@ -55,12 +55,35 @@
 			}
 		}
 
+		//Align Content
+		.align-content#{$modifier}-start {
+			align-content: flex-start !important;
+		}
+		.align-content#{$modifier}-end {
+			align-content: flex-end !important;
+		}
+		.align-content#{$modifier}-center {
+			align-content: center !important;
+		}
+		.align-content#{$modifier}-stretch {
+			align-content: stretch !important;
+		}
+		.align-content#{$modifier}-between {
+			align-content: space-between !important;
+		}
+		.align-content#{$modifier}-around {
+			align-content: space-around !important;
+		}
+
 		//Wrap
 		.flex#{$modifier}-wrap {
 			flex-wrap: wrap !important;
 		}
 		.flex#{$modifier}-nowrap {
 			flex-wrap: nowrap !important;
+		}
+		.flex#{$modifier}-wrap-reverse {
+			flex-wrap: wrap-reverse !important;
 		}
 
 		//Fill

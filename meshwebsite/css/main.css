@@ -380,6 +380,14 @@ header.primary nav.primary ul .download:hover svg path {
   height: 100px;
 }
 
+.column-demo .height-110 {
+  height: 110px;
+}
+
+.column-demo .height-200 {
+  height: 300px;
+}
+
 footer {
   height: 72px;
 }
@@ -414,6 +422,10 @@ section.hero .home-illusration {
   height: 100vh;
   width: 100vw;
   z-index: -1;
+}
+
+.flex-page .line-height-4 {
+  line-height: 4.5;
 }
 
 .button-page .button-cont {

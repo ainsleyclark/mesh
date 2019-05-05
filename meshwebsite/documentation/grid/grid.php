@@ -82,7 +82,7 @@ $tableOfContents = [
                         <br>Add the <code class="inline">row</code> class to a <code class="inline">div</code> to enable this behaviour.
                     </p>
                     <div class="text-cont">
-                        <h3>Row Options:</h3>
+                        <h3>Row options:</h3>
                         <ul class="list">
                             <li>To rid of the padding on each side of a column, add the <code class="inline">no-gaps</code> class to a row. See below: </li>
                         </ul>
@@ -152,7 +152,7 @@ $tableOfContents = [
                             <h3>Simple layout:</h3>
                             <p>Here all columns will take up 4 spaces on HD screens, 6 on tablet, and because mesh is built mobile first, they will be 100% width at mobile, even though we didnt specify. The first column will take up 12 columns on tablet. Go ahead and resize the screen to see the effect.</p>
                         </div>
-                        <div class="column-demo c-white mb-25 t-center">
+                        <div class="column-demo c-white mb-3 t-center">
                             <div class="row">
                                 <div class="col-tab-12 col-hd-4 mb-2 mb-hd-0">
                                     <div class="text px-3 br">
@@ -188,7 +188,7 @@ $tableOfContents = [
                             <h3>Auto width columns</h3>
                             <p>With the <code class="inline">col-{breakpoint}-auto</code> class, the column will fill based on the content that sites inside it.</p>
                         </div>
-                        <div class="column-demo c-white mb-25 t-center">
+                        <div class="column-demo c-white mb-3 t-center">
                             <div class="row">
                                 <div class="col-desk-3 mb-2 mb-hd-0">
                                     <div class="text px-3 br">
@@ -227,7 +227,7 @@ $tableOfContents = [
                                 <br>You can even add margin to the <code class="inline">w-100</code> like below:
                             </p>
                         </div>
-                        <div class="column-demo c-white mb-25 t-center">
+                        <div class="column-demo c-white mb-3 t-center">
                             <div class="row">
                                 <div class="col-6 col-tab-3 mb-1">
                                     <div class="text px-3 br">
@@ -284,7 +284,7 @@ $tableOfContents = [
                                 <li>To align content at the end of the row/parent add <code class="inline">justify-content-end</code>.</li>
                             </ul>
                         </div>
-                        <div class="column-demo c-white mb-25">
+                        <div class="column-demo c-white mb-3">
                             <div class="row justify-content-center bg-light mx-0 br">
                                 <div class="col-5 px-0 t-center">
                                     <div class="text px-3 br">
@@ -334,7 +334,7 @@ $tableOfContents = [
                                 <li>To align content at the end of the row/container add <code class="inline">align-items-end</code>.</li>
                             </ul>
                         </div>
-                        <div class="column-demo c-white mb-25">
+                        <div class="column-demo c-white mb-3">
                             <div class="row align-items-center bg-light height-100 mx-0 br">
                                 <div class="col-12 px-0 t-center">
                                     <div class="text px-3 br">
@@ -382,7 +382,7 @@ $tableOfContents = [
                         Offsetting is a way to push columns along in the row. Columns can be offset in a responsive manner, meaning you can offset columns dependant on viewport. 
                         <br>To offset use <code class="inline">offset-{breakpoint}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12.
                     </p>
-                    <div class="column-demo c-white mb-25 t-center">
+                    <div class="column-demo c-white mb-3 t-center">
                         <div class="row">
                             <div class="col-6 offset-6 mb-2">
                                 <div class="text px-3 br">
