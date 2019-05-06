@@ -23,7 +23,7 @@
 
 //Columns
 $grid-columns: 12 !default;
-$gap-width: 0.75rem !default;
+$gap-width: 15px !default;
 
 //Defines Breakpoints
 $grid-breakpoint-mob: 568 !default;
@@ -107,7 +107,7 @@ $h4-font-size: 1.12rem !default;
 $h5-font-size: 1.06rem !default;
 $h6-font-size: 0.75rem !default;
 $lead-font-size: 1.25rem !default;
-$paragraph-font-size: 16px !default;
+$paragraph-font-size: 1rem !default;
 $small-font-size: 75% !default;
 
 //Colors
@@ -175,6 +175,22 @@ $button-enable-shadows: true;
 
 // 12. Cards
 // ==========================================================================
+
+// Default card sizes
+$card-default-width: 300px !default;
+$card-default-width-large: 500px !default;
+
+// Default Card Padding
+$card-default-padding: 12px 30px !default;
+$card-default-header-icon-padding: 5px 0 5px 30px !default;
+$card-default-media-img-title-padding: 5px 30px !default;
+
+// Card Media-Header Size
+$card-default-media-header-height: 150px !default;
+
+// Default Card Font Sizes
+$card-default-title-font-size: 18px !default;
+$card-default-content-font-size: 16px !default;
 
 // //! SET CONTENTS Tooltip
 // ==========================================================================

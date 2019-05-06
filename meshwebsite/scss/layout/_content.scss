@@ -4,17 +4,19 @@
 // -----------------------------------------------------------------------------
 
 .content {
+	word-wrap: break-word;
+	
 	h1 {
-		font-size: 2.2em;
-		//margin: 2.33333rem 0;
+		font-size: 2.2rem;
 	}
 
 	h2 {
-		font-size: 1.6em;
+		font-size: 1.6rem;
 	}
 
 	h3 {
-		font-size: 1.4em;
+		font-size: 1.3rem;
+		margin: 0 0 5px 0;
 	}
 
 	@include media-desk {
@@ -23,5 +25,64 @@
 		.container-fullwidth {
 			max-width: 1280px;
 		}
+	}
+
+	article.section-scroll {
+		margin-top: 80px;
+	}
+
+	.secondary-lead {
+		margin-bottom: 1rem;
+		margin-top: 10px;
+	}
+
+	.text-cont,
+	.btn {
+		margin-bottom: 1rem;
+	}
+
+	.mb-25 {
+		margin-bottom: 25px;
+	}
+
+	.mb-20 {
+		margin-bottom: 20px;
+	}
+}
+
+//Small primary columns
+.column-demo {
+	.row {
+		margin: 0 -5px;
+	}
+
+	.row.no-gaps {
+		margin: 0;
+
+		[class^='col-'] {
+			padding: 0;
+		}
+	}
+
+	[class^='col-'] {
+		padding: 0 5px;
+	}
+
+	.text {
+		padding: 15px 0;
+		background: $primary;
+	}
+
+	//Vertical alignment classes under columns
+	.height-100 {
+		height: 100px;
+	}
+
+	.height-110 {
+		height: 110px;
+	}
+
+	.height-200 {
+		height: 300px;
 	}
 }

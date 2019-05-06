@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// _button.scss
+// This file contains styles that are specific to the button page.
+// -----------------------------------------------------------------------------
+
+.button-page {
+	.button-cont {
+		margin-top: 20px;
+
+		.btn {
+			margin-right: 5px;
+			margin-bottom: 10px;
+		}
+	}
+
+	pre {
+		margin-top: 15px;
+	}
+}

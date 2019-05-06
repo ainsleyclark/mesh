@@ -1,5 +1,5 @@
 ###################################
-## Lincoln Loop Base Sass Lint File
+## mesh Base sass Lint File
 ###################################
 # Linter Options
 # rules @ https://github.com/sasstools/sass-lint/tree/master/docs/rules
@@ -8,9 +8,9 @@ options:
   # Don't merge default rules
   merge-default-rules: false
 files:
-  include: 'src/**/*.s+(a|c)ss'
   ignore:
     - './node_modules'
+    - 'meshwebsite/css/vendor/**'
 # Rule Configuration
 rules:
   border-zero:

@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// _code.scss
+// This file contains all list styles
+// -----------------------------------------------------------------------------
+
+ul.list {
+	list-style-type: none;
+	position: relative;
+
+	li {
+		font-weight: 300;
+		margin-bottom: 5px;
+
+		&:before {
+			content: '';
+			color: $primary;
+			display: inline-block;
+			background-color: $primary;
+			height: 1.8px;
+			width: 10px;
+			top: -5px;
+			position: relative;
+			margin-right: 10px;
+
+			@include media-tab {
+				margin-left: -20px;
+			}
+		}
+	}
+}

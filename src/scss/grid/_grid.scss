@@ -33,12 +33,19 @@
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: -$gap-width;
+	margin-right: -$gap-width;
 }
 
-//No gap class, padding
-.no-gaps > [class^='col-'] {
-	padding-left: 0;
+.no-gaps {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.no-gaps > .col,
+.no-gaps > [class*='col-'] {
 	padding-right: 0;
+	padding-left: 0;
 }
 
 //Common Column Properties

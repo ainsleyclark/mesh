@@ -2,7 +2,7 @@
 
 //Website variables
 $websiteData = [
-    'siteURL' => 'https://www.meshcsss.com',
+    'siteURL' => 'https://www.meshcss.com',
     'siteName' => 'mesh',
     'ogImage' => ''
 ];
@@ -14,6 +14,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
 <!DOCTYPE html>
 <html class="no-js" lang="en_GB"> 
 <head>
+    <meta charset="utf-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo ($pageData['pageTitle']) . ' | ' ?>meshCSS</title>
@@ -33,7 +34,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
     <meta name="twitter:title" content="<?php echo ($pageData['pageTitle']); ?>">
     <meta name="twitter:image" content="<?php echo ($pageData['ogImage']); ?>">
     <!-- CSS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" type="text/css" href="/css/mesh.css">
@@ -49,7 +50,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ff2451">
 </head>
 <body>
     <!--[if lte IE 9]>

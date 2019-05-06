@@ -13,7 +13,7 @@ if ($pageData['parentDirectory']) {
             <ul class="table-of-contents b-b1-light">
                 <?php 
                     foreach ($contentsData as $key => $value) {
-                        echo '<li class="contents-item" data-contentitem="' . $key . '">' . $value . '</li>';
+                        echo '<a href="#' . $key . '"><li class="contents-item" data-contentitem="' . $key . '">' . $value . '</li></a>';
                     } 
                 ?>
             </ul>

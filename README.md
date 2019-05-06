@@ -20,7 +20,6 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![dependency status](https://david-dm.org/ainsleyclark/mesh.svg)](https://david-dm.org/ainsleyclark/mesh)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/ainsleyclark/mesh/) 
-[![BrowserStack Status](https://www.browserstack.com/automate/badge.svg?badge_key=<badge_key>)](https://www.browserstack.com/automate/public-build/<badge_key>)
 
 </center>
 
@@ -59,9 +58,10 @@ Please email info@ainsleyclark.com if you have any questions, I will be more tha
 1. Clone this repo and create a new branch.
 2. Using node/npm enter `npm install` to install dev dependencies.
 3. If you have vagrant, use 'npm run dev' to boot up vagrant box (trusty64) and watch & compile sass.
-4. If you do not have vagrant, use 'npm run watch-css' to watch & compile sass.
-4. When finished use `npm run prod` to clean compiled css files. 
-5. Merge & commit, create new pull request.
+4. If you use docker, use 'npm run docker-create' in the mesh base dir to create a docker container and 'npm run docker-start' to start the container and watch & compile sass.
+5. If you do not have vagrant, use 'npm run watch-css' to watch & compile sass.
+6. When finished use `npm run prod` to clean compiled css files. 
+7. Merge & commit, create new pull request.
 
 ### How to contribute:
 Any ideas are welcome. The majority of the utility classes are done so UI components are needed (remember CSS only!), including: 
@@ -91,7 +91,12 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 ## Licence
 Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE).
 
-## BrowserStack
+## Contributors
+[@kassuro]( https://github.com/kassuro )
+[@nicholsk18]( https://github.com/nicholsk18 )
+[@versustune]( https://github.com/versustune )
+
+## Testing
 Tested with BrowserStack.  <br/>
 <a href="https://www.browserstack.com/">
   <img alt="BrowserStack Logo" src="https://www.meshcss.com/assets/img/browserstack-logo.png" width="144">

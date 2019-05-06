@@ -3,9 +3,9 @@
 // Button classes & styling with reference to palette.
 // ==========================================================================
 
-//! Add hover states? btn-hover?
 .btn {
-	display: inline-block;
+	display: inline-flex;
+	justify-content: center;
 	position: relative;
 	padding: $button-padding-medium;
 	background: transparent;
@@ -59,27 +59,12 @@
 	//Simple Button
 	.btn-simple {
 		background-color: transparent;
-		box-shadow: 0;
+		box-shadow: none;
 		border: 0;
-	}
-}
 
-// Disabled Buttons
-// ==========================================================================
-
-@if $button-enable-disabled {
-	.btn-disabled,
-	.btn:disabled {
+		&:focus,
 		&:hover {
-			box-shadow: none;
-			cursor: default;
-		}
-	}
-
-	@each $color-name, $hex in $palette {
-		.btn-disabled,
-		.btn-#{$color-name}:disabled {
-			background-color: rgba($hex, 0.5);
+			border: 0;
 		}
 	}
 }
@@ -104,12 +89,40 @@
 		&:focus,
 		&:active {
 			box-shadow: none;
-			color: #ffffff;
 		}
 
-		//For loading spinner
+		&:disabled {
+			background-color: transparent !important;
+			border: 1px solid rgba(0, 0, 0, 0.12);
+			color: rgba(0, 0, 0, 0.12) !important;
+
+			&:hover {
+				color: rgba(0, 0, 0, 0.12) !important;
+			}
+		}
+	}
+}
+
+// Disabled Buttons
+
+@if $button-enable-disabled {
+	.btn:disabled {
+		box-shadow: none;
+		cursor: default;
+
+		&:hover {
+			box-shadow: none;
+			cursor: default;
+		}
+
 		&:after {
-			border-right-color: transparent;
+			display: none;
+		}
+	}
+
+	@each $color-name, $hex in $palette {
+		.btn-#{$color-name}:disabled {
+			background-color: rgba($hex, 0.5);
 		}
 	}
 }
@@ -125,7 +138,7 @@
 
 	.btn-large {
 		padding: $button-padding-large;
-		font-size: $button-font-size + 1px;
+		font-size: $button-font-size + 2px;
 	}
 }
 
@@ -144,30 +157,36 @@
 
 @if $button-enable-icons {
 	.btn-icon {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		justify-content: center;
+		white-space: nowrap;
 
 		i:first-child:not(:last-child) {
 			margin-left: 0;
-			margin-right: 5px;
+			margin-right: 3px;
 		}
 
 		i:last-child:not(:first-child) {
-			margin-left: 5px;
+			margin-left: 3px;
 			margin-right: 0;
+		}
+
+		&.btn-large {
+			i {
+				font-size: 1.2rem;
+			}
 		}
 	}
 
-	//Rounded button with icon
+	//Just icon classes
 	.btn-justicon {
-		border-radius: 30px;
 		padding: 0;
 		height: 45px;
 		min-width: 45px;
 		width: 45px;
 
-		&.large {
+		&.btn-large {
 			width: 56px;
 			height: 56px;
 			min-width: 56px;
@@ -186,17 +205,16 @@
 @if $button-enable-loading {
 	.btn-loading {
 		$self: &;
-		height: 43px;
-		width: 112px;
 		transition: none;
 		pointer-events: none;
+		color: transparent !important;
 
 		&:after {
 			content: '';
 			width: 18px;
 			height: 18px;
 			border: 2px solid rgba(0, 0, 0, 0.5);
-			border-right-color: transparent;
+			border-right-color: transparent !important;
 			border-radius: 50%;
 			display: inline-block;
 			animation-duration: 0.75s;
@@ -211,9 +229,6 @@
 		}
 
 		&.btn-small {
-			height: 32px;
-			width: 78px;
-
 			&:after {
 				width: 14px;
 				height: 14px;
@@ -224,9 +239,6 @@
 		}
 
 		&.btn-large {
-			height: 59px;
-			width: 123px;
-
 			&:after {
 				width: 26px;
 				height: 26px;
@@ -248,17 +260,11 @@
 		&:hover {
 			box-shadow: none;
 		}
-
-		//Overwrite specific classes
-		&.btn-outline:after {
-			border-right-color: transparent;
-		}
 	}
 
 	//All coloured buttons to have white spinner
 	%white-spinner {
 		border-color: #ffffff;
-		border-right-color: transparent;
 	}
 
 	@each $color-name, $hex in $palette {

@@ -49,7 +49,7 @@ $pageData = [
                 </div>
                 <div class="col-10 col-desk-7">
                     <div class="img-cont">
-                        <img class="home-illusration" src="assets/svg/home-illustration.svg">
+                        <img class="home-illustration" src="assets/svg/home-illustration.svg">
                     </div>
                     <img class="p-absolute home-logo" src="assets/svg/meshlogo-black.svg">
                 </div>
@@ -59,3 +59,14 @@ $pageData = [
 
 <?php include_once('partials/sub-footer.php'); ?>
 <?php include_once('partials/footer.php'); ?>
+
+<!-- =======================
+    Page specific scripts
+    ======================= -->
+<?php function scripts() { ?>
+    <script src="/js/vendor/gsap/TimeLineLite.min.js"></script>
+    <script src="/js/vendor/gsap/TimeLineLite.min.js"></script>
+    <script>
+        
+    </script>
+<?php } ?>

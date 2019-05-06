@@ -4,14 +4,14 @@
 // -----------------------------------------------------------------------------
 
 footer {
-	height: $header-height;
+
 
 	.footer-icon {
 		width: 25px;
 		margin-right: 10px;
 	}
 
-	// &.home {
-	// 	width: 100%;
-	// }
+	@include media-tab {
+		height: $header-height;
+	}
 }

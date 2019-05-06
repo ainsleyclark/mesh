@@ -16,7 +16,6 @@
 /* ====================
     Base
     ==================== */
-@import 'base/_normalize'; //Not neccessary if bootstrap is used.
 @import 'base/_global';
 @import 'base/_fonts';
 @import 'base/_typography';
@@ -29,9 +28,9 @@
 /* ====================
     Components
     ==================== */
+@import 'components/_lists';
 @import 'components/_code';
 @import 'components/_browser';
-@import 'components/_buttons';
 
 /* ====================
     Layout
@@ -45,4 +44,7 @@
 /* ====================
     Pages
     ==================== */
-@import 'pages/home';
+@import 'pages/_home';
+@import 'pages/_grid';
+@import 'pages/_flex';
+@import 'pages/_button';

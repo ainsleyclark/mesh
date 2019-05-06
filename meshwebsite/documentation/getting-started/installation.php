@@ -29,12 +29,12 @@ $tableOfContents = [
                 <div class="lead">mesh comes in four different flavours to install, depending on your preference, please use one of the options below.</div>
                 <!-- mesh CDN -->
                 <div class="section-scroll" id="cdn">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">mesh CDN</h2>
+                    <h2 class="pb-1 b-b1-light mt-5 mb-1 hash">mesh CDN</h2>
                     <p></p>
                 </div>
                 <!-- Source Files (CSS) -->
                 <div class="section-scroll" id="css">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">Source Files (CSS)</h2>
+                    <h2 class="pb-1 b-b1-light mt-5 mb-1 hash">Source Files (CSS)</h2>
                     <pre><code>&lt;!DOCTYPE html&gt;
     &lt;head&gt;
         &lt;title&gt;Website Title&lt;/title&gt;
@@ -48,12 +48,12 @@ $tableOfContents = [
                 </div>
                 <!-- Source Files (Saas) -->
                 <div class="section-scroll" id="saas">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash" id="startusing">Source Saas (CSS)</h2>
+                    <h2 class="pb-1 b-b1-light mt-5 mb-1 hash" id="startusing">Source Saas (CSS)</h2>
                     <p></p>
                 </div>
                 <!-- npm -->
                 <div class="section-scroll" id="npm">
-                    <h2 class="pb-2 b-b1-light mt-5 mb-1 hash">npm</h2>
+                    <h2 class="pb-1 b-b1-light mt-5 mb-1 hash">npm</h2>
                     <p></p>
                 </div>
             </div><!-- /Col -->
