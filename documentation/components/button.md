@@ -69,3 +69,24 @@
 <button class="btn block primary">
 </button>
 ```
+
+## To add Icons to a button
+- add ``` btn-icon ``` to class field inside of a button
+- after that add a ``` <i> ``` or a ``` <span> ``` tag
+> **Note:** Works with any color or size.
+#### Example:
+```
+<button class="btn btn-icon btn-primary">
+    <i class="far fa-hashtag></i>
+</button>
+```
+
+## To add Just Icons
+- add ``` btn-justicon ``` to class field inside of a button
+- or to make button circular add ``` br-circle ``` to class field
+#### Example:
+```
+<button class="btn btn-justicon btn-primary">
+    <i class="far fa-hashtag></i>
+</button>
+```
