@@ -27,9 +27,6 @@
     @each $color-name, $hex in $palette {
         .badge-#{$color-name} {
             @extend %badge-properties;
-        }
-
-        .badge-#{$color-name} {
             @include badge-colored($hex);
         }
     }
