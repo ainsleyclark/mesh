@@ -49,9 +49,6 @@
 	@each $color-name, $hex in $palette {
 		.btn-#{$color-name} {
 			@extend %button-properties;
-		}
-
-		.btn-#{$color-name} {
 			@include buttons-colored($hex);
 		}
 	}
