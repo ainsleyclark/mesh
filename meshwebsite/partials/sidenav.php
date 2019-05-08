@@ -48,7 +48,10 @@ $activeClass = $pageData['activePage'];
             <div class="nav-header b-b1-light pb-2">Components</div>
             <ul class="sub-list mt-1">
                 <a class="<?php if($activeClass == 'alert') echo 'active'; ?>" href="/documentation/components/alert.php"><li>Alert</li></a>
+                <a class="<?php if($activeClass == 'cards') echo 'active'; ?>" href="/documentation/components/badges.php"><li>Badges & Tags</li></a>
                 <a class="<?php if($activeClass == 'button') echo 'active'; ?>" href="/documentation/components/button.php"><li>Button</li></a>
+                <a class="<?php if($activeClass == 'cards') echo 'active'; ?>" href="/documentation/components/cards.php"><li>Cards</li></a>
+                <a class="<?php if($activeClass == 'cards') echo 'active'; ?>" href="/documentation/components/cards.php"><li>Cards</li></a>
                 <a class="<?php if($activeClass == 'cards') echo 'active'; ?>" href="/documentation/components/cards.php"><li>Cards</li></a>
             </ul>
         </li>
