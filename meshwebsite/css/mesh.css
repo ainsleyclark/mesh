@@ -2991,6 +2991,46 @@ ul {
   }
 }
 
+.pin-t {
+  top: 0 !important;
+}
+
+.pin-r {
+  right: 0 !important;
+}
+
+.pin-b {
+  bottom: 0 !important;
+}
+
+.pin-l {
+  left: 0 !important;
+}
+
+.pin-y {
+  top: 0 !important;
+  bottom: 0 !important;
+}
+
+.pin-x {
+  right: 0 !important;
+  left: 0 !important;
+}
+
+.pin {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}
+
+.pin-none {
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+}
+
 .w-10 {
   width: 10% !important;
 }

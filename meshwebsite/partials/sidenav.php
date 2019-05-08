@@ -13,7 +13,7 @@ $activeClass = $pageData['activePage'];
             <ul class="sub-list mt-1">
                 <a class="<?php if($activeClass == 'introduction') echo 'active'; ?>" href="/documentation/getting-started"><li>Introduction</li></a>
                 <a class="<?php if($activeClass == 'installation') echo 'active'; ?>" href="/documentation/getting-started/installation.php"><li>Installation</li></a>
-                <a class="<?php if($activeClass == 'contents') echo 'active'; ?>" href="/documentation/getting-started/contents.php"><li>Contents</li></a>
+                <a class="<?php if($activeClass == 'builder') echo 'active'; ?>" href="/builder.php"><li>meshBuilder</li></a>
                 <a class="<?php if($activeClass == 'variables') echo 'active'; ?>" href="/documentation/getting-started/variables.php"><li>Variables</li></a>
             </ul>
         </li>

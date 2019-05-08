@@ -463,6 +463,10 @@ section.hero .home-illusration {
   line-height: 4.5;
 }
 
+.sizing-page .height-200 {
+  height: 200px;
+}
+
 .button-page .button-cont {
   margin-top: 20px;
 }
