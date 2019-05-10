@@ -1,0 +1,65 @@
+.table {
+	font-size: $table-font-size;
+	border-collapse: collapse;
+	border-spacing: 0;
+	background-color: #fff;
+
+	& th,
+	& td {
+		border: $table-standard-border;
+		border-width: 0 0 1px;
+	}
+
+	& thead th,
+	& tfoot th {
+		font-size: $table-heading-font-size;
+		font-weight: 500;
+		border-width: 0 0 3px;
+		text-align: left;
+		padding: $table-padding;
+	}
+
+	& tbody tr:last-child {
+		border-width: 0;
+	}
+
+	& tfoot th {
+		border-width: 2px 0 0;
+	}
+
+	& tbody td {
+		padding: $table-padding;
+	}
+
+	// select first and last child of each row for extra padding
+	& thead th:first-child,
+	& tbody tr td:first-child,
+	& tfoot th:first-child {
+		padding-left: 30px;
+	}
+
+	& thead th:last-child,
+	& tbody tr td:last-child,
+	& tfoot th:last-child {
+		padding-right: 20px;
+	}
+
+	&.table-striped tbody tr:nth-child(even) {
+		background-color: $table-striped-color;
+	}
+
+	&.table-fullwidth {
+		width: 100%;
+		margin: 0;
+	}
+
+	&.table-hoverable tbody tr:hover {
+		background-color: $table-hover-color;
+	}
+}
+
+.table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+}
