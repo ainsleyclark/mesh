@@ -11,8 +11,8 @@ $pageData = [
 //Table of contents
 $tableOfContents = [
     'usage' => 'Usage',
-    'default' => 'Background Colors',
-    'examples' => 'Examples',
+    'background' => 'Background Colors',
+    'colors' => 'Colors',
 ];
 
 ?>
@@ -46,7 +46,8 @@ $tableOfContents = [
                 <!-- Background Colors -->
                 <article class="section-scroll" id="background">
                     <h2 class="b-b1-light hash">Background Colors</h2>
-                    <table class="table w-100 t-left code mt-4">
+                    <p class="secondary-lead">Here you can see the default mesh background colors:</p>
+                    <table class="table w-100 t-left code mt-3">
                         <col width="100">
                         <col width="140">
                         <col width="80">
@@ -60,89 +61,147 @@ $tableOfContents = [
                         <tbody>
                             <tr>
                                 <td class="py-2">.bg-white</td>
-                                <td><div class="w-70 h-100 p-2 bg-white p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-white  br"></div></td>
                                 <td>#ffffff</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-black</td>
-                                <td><div class="w-70 h-100 p-2 bg-black p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-black  br"></div></td>
                                 <td>#000000</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-dark</td>
-                                <td><div class="w-70 h-100 p-2 bg-dark p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-dark  br"></div></td>
                                 <td>#e8e8e8</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-muted</td>
-                                <td><div class="w-70 h-100 p-2 bg-muted p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-muted  br"></div></td>
                                 <td>#999999</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-light</td>
-                                <td><div class="w-70 h-100 p-2 bg-light p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-light  br"></div></td>
                                 <td>#e8e8e8</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-primary</td>
-                                <td><div class="w-70 h-100 p-2 bg-primary p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-primary  br"></div></td>
                                 <td>#ff2451</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-secondary</td>
-                                <td><div class="w-70 h-100 p-2 bg-secondary p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-secondary  br"></div></td>
                                 <td>#8270b8</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-success</td>
-                                <td><div class="w-70 h-100 p-2 bg-success p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-success  br"></div></td>
                                 <td>#55b559</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-info</td>
-                                <td><div class="w-70 h-100 p-2 bg-info p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-info  br"></div></td>
                                 <td>#37abd4</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-warning</td>
-                                <td><div class="w-70 h-100 p-2 bg-warning p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-warning  br"></div></td>
                                 <td>#ff9e0f</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-danger</td>
-                                <td><div class="w-70 h-100 p-2 bg-danger p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-danger  br"></div></td>
                                 <td>#f55145</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-link</td>
-                                <td><div class="w-70 h-100 p-2 bg-link p-relative br"></div></td>
+                                <td><div class="w-70 h-100 p-2 bg-link  br"></div></td>
                                 <td>#3763d4</td>
                             </tr>
                         </tbody>
                     </table>
                 </article>
 
-                <!-- Examples -->
-                <article class="section-scroll" id="examples">
-                    <h2 class="b-b1-light hash">Examples</h2>
-                    <h3 class="mt-3">Responsive Position:</h3>
-                    <p>
-                        Here, the purple element, the third that sits in the DOM will be positioned absolutley from desktop widths and above, whilst being static at mobile and tablet.
-                    </p>
-                    <div class="column-demo c-white mb-3">
-                        <div class="br d-flex mb-3 height-100 bg-light justify-content-center align-items-center justify-content-desk-between t-center">
-                            <div class="text px-3 mx-2 br mx-0 w-30"></div>                            
-                            <div class="text px-3 mx-2 br mx-0 w-30"></div>
-                            <div class="text px-3 mx-2 br mx-0 w-30 p-desk-absolute bg-secondary" style="opacity: 0.6; left: 20%;"></div>
-                        </div>
-                    </div>
-                    <pre class="highlight"><code class="html">&lt;div class="element"&gt;element&lt;/div&gt;
-&lt;div class="element"&gt;element&lt;/div&gt;
-&lt;div class="p-desk-absolute"&gt;third-child&lt;/div&gt;
-</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                <!-- Background Colors -->
+                <article class="section-scroll" id="colors">
+                    <h2 class="b-b1-light hash">Colors</h2>
+                    <p class="secondary-lead">Here you can see the default mesh text colors:</p>
+                    <table class="table w-100 t-left code mt-3">
+                        <col width="100">
+                        <col width="140">
+                        <col width="80">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Color</th>
+                                <th>Hex</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2">.c-white</td>
+                                <td><div class="w-70 h-100 c-white br bg-muted" style="text-shadow: none;">White</div></td>
+                                <td>#ffffff</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-black</td>
+                                <td class=".c-black">Black</td>
+                                <td>#000000</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-dark</td>
+                                <td class=".c-dark">Dark</td>
+                                <td>#e8e8e8</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-muted</td>
+                                <td class=".c-muted">Muted</td>
+                                <td>#999999</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-light</td>
+                                <td class="c-light">Light</td>
+                                <td>#e8e8e8</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-primary</td>
+                                <td class="c-primary">Primary</td>
+                                <td>#ff2451</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-secondary</td>
+                                <td class="c-secondary">Secondary</td>
+                                <td>#8270b8</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-success</td>
+                                <td class="c-success">Success</td>
+                                <td>#55b559</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-info</td>
+                                <td class="c-info">Info</td>
+                                <td>#37abd4</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-warning</td>
+                                <td class="c-warning">Warning</td>
+                                <td>#ff9e0f</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-danger</td>
+                                <td class="c-danger">Danger</td>
+                                <td>#f55145</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.c-link</td>
+                                <td class="c-link">Link</td>
+                                <td>#3763d4</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </article>
-
-              
 
             </div><!-- /Col -->
             <?php include_once('../../partials/smallnav.php') ?>
