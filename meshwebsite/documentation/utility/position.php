@@ -57,57 +57,72 @@ $tableOfContents = [
                 <article class="section-scroll" id="pinning">
                     <h2 class="b-b1-light hash">Pinning</h2>
                     <p>You can also use the <code class="inline">pin</code> classes to fix elements to the top, right, bottom & left of the container/parent, see below:</p>
-                    <ul class="list">
-                        <li></li>
-                    </ul>
+                    
+                    <table class="table w-100 t-left code mt-3">
+                        <col width="130">
+                        <col width="80">
+                        <thead>
+                            <tr>
+                                <th>Class</th>
+                                <th>Properties</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>.pin-t</td>
+                                <td>top: 0;</td>
+                            </tr>
+                            <tr>
+                                <td>.pin-r</td>
+                                <td>right: 0;</td>
+                            </tr>
+                            <tr>
+                                <td>.pin-b</td>
+                                <td>bottom: 0;</td>
+                            </tr>
+                            <tr>
+                                <td>.pin-l</td>
+                                <td>left: 0;</td>
+                            </tr>
+                            <tr>
+                                <td>.pin-y</td>
+                                <td>top: 0;<br>bottom: 0;</td>
+                            </tr>
+                            <tr>
+                                <td>.pin-x</td>
+                                <td>left: 0;<br>right: 0;</td>
+                            </tr>
+                            <tr>
+                                <td>.pin</td>
+                                <td>top: 0;<br>right: 0;<br>bottom: 0;<br>left: 0;</td>
+                            </tr>
+                            <tr>
+                                <td>.pin-none</td>
+                                <td>top: auto;<br>right: auto;<br>bottom: auto;<br>left: auto;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   
                 </article>
 
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
                     <h2 class="b-b1-light hash">Examples</h2>
-                    <h3 class="mt-3">Hiding elements:</h3>
+                    <h3 class="mt-3">Responsive Position:</h3>
                     <p>
-                        Using our table above, we can apply the theory to something practical. Here the third element will only be visible on desktop screens.
+                        Here, the purple element, the third that sits in the DOM will be positioned absolutley from desktop widths and above, whilst being static at mobile and tablet.
                     </p>
                     <div class="column-demo c-white mb-3">
-                        <div class="br d-flex mb-3 justify-content-center justify-content-desk-between t-center">
-                            <div class="text px-3 mr-2 br mx-0 w-30">
-                                element
-                            </div>                            
-                            <div class="text px-3 mx-2 br mx-0 w-30">
-                                element
-                            </div>
-                            <div class="text px-3 mx-2 br mx-0 w-30 d-none d-desk-block">
-                                d-none d-desk-block
-                            </div>
+                        <div class="br d-flex mb-3 height-100 bg-light justify-content-center align-items-center justify-content-desk-between t-center">
+                            <div class="text px-3 mx-2 br mx-0 w-30"></div>                            
+                            <div class="text px-3 mx-2 br mx-0 w-30"></div>
+                            <div class="text px-3 mx-2 br mx-0 w-30 p-desk-absolute bg-secondary" style="opacity: 0.6; left: 20%;"></div>
                         </div>
                     </div>
                     <pre class="highlight"><code class="html">&lt;div class="element"&gt;element&lt;/div&gt;
 &lt;div class="element"&gt;element&lt;/div&gt;
-&lt;div class="d-none d-desk-block"&gt;third-child&lt;/div&gt;
+&lt;div class="p-desk-absolute"&gt;third-child&lt;/div&gt;
 </code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-                    <h3 class="mt-3">Changing properties:</h3>
-                    <p>
-                        A common practice is to make containers/parents have a <code class="inline">display: flex;</code> attached to them in larger screens. Below we are doing exactly that, the items are set to block from mobile up until tablet, then they become flex items, aligning horizontally.
-                    </p>
-                    <div class="column-demo mb-3">
-                        <div class="br mb-3 c-white">
-                            <div class="d-block d-desk-flex justify-content-between mb-3 t-center">
-                                <div class="text my-2 my-desk-0 mr-desk-1 mr-hd-2 px-3 px-tab-4 px-hd-5 br">1</div>
-                                <div class="text my-2 my-desk-0 mx-desk-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">2</div>
-                                <div class="text my-2 my-desk-0 mx-desk-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">3</div>
-                                <div class="text my-2 my-desk-0 mx-desk-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">4</div>
-                                <div class="text my-2 my-desk-0 ml-desk-1 ml-hd-2 px-3 px-tab-4 px-hd-5 br">5</div>
-                            </div>
-                        </div>
-                    </div>
-                    <pre class="highlight"><code class="html">&lt;div class="d-block d-desk-flex justify-content-between"&gt;
-    &lt;div class="flex-item"&gt;1&lt;/div&gt;
-    &lt;div class="flex-item"&gt;2&lt;/div&gt;
-    &lt;div class="flex-item"&gt;3&lt;/div&gt;
-    &lt;div class="flex-item"&gt;4&lt;/div&gt;
-    &lt;div class="flex-item"&gt;5&lt;/div&gt;
-&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
                 <!-- Variations -->

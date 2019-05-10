@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// _table.scss
+// This file contains all table styles
+// -----------------------------------------------------------------------------
+
+table.code {
+	border-collapse: collapse;
+	font-size: 14px;
+
+	thead {
+		border-bottom: 1px solid $primary;
+		border-top: 1px solid $primary;
+		font-size: 16px;
+		margin: 10px 0;
+		
+		th {
+			padding: 15px 0;
+		}
+	}
+
+	tbody {
+		font-family: $font-code;
+		line-height: 1.4rem;
+		color: rgb(128, 128, 128);
+		text-shadow: 0 1px white;
+
+		tr {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			
+			td {
+				padding: 5px 0;
+			}
+
+			td:first-child {
+				color: $purple;
+			}
+			
+		}
+	}
+
+}
