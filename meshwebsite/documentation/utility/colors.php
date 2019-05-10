@@ -3,7 +3,7 @@
 //Page variables
 $pageData = [
 	'pageTitle' => 'Colors',
-	'pageDescription' => 'A small color pallette has been used for mesh to keep things quick, but its totally customisable.',
+	'pageDescription' => 'A small color pallette has been added to mesh to keep things quick, but its totally customisable. Manipulate the elements color and background color quickly.',
     'activePage' => 'colors',
     'parentDirectory' => basename(__DIR__)
 ]; 
@@ -11,9 +11,8 @@ $pageData = [
 //Table of contents
 $tableOfContents = [
     'usage' => 'Usage',
-    'pinning' => 'Pinning',
+    'default' => 'Background Colors',
     'examples' => 'Examples',
-    'variations' => 'Variations'
 ];
 
 ?>
@@ -32,77 +31,95 @@ $tableOfContents = [
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b1-light hash">Usage</h2>
                     <p class="secondary-lead">
-                        Things can get complicated when trying to position elements with CSS which is why we have created handy utility classes to help you along your way. For more information on the position property, head over to <a href="https://medium.freecodecamp.org/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26" rel="noopener nofollow">Free Code Camp</a>.
+                        All website's colors are different, there's no doubt in that. Which is why we highly reccomend you use the mesh builder to change the default colors in order to create a custom css file. 
+                        <br><strong>Color and background color</strong> are able to be manipulated inline with the color utility classes.
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
                         <ul class="list">
-                            <li>You can target the position class by using <code class="inline">p-{breakpoint}-{property}</code>. The breakpoint being optional and one of our five breakpoints, the properties being outlined below.</li>
-                            <li>These classes effect the breakpoint and upwards, for example - <code class="inline">p-tab-absolute</code> will make the element's position absolute on tablet, desktop & HD screens.</li>
-                        </ul>
-                    </div>
-                    <div class="text-cont">
-                        <h3>Properties:</h3>
-                        <ul class="list">
-                            <li>relative</li>
-                            <li>absolute</li>
-                            <li>fixed</li>
-                            <li>static</li>
-                            <li>sticky</li>
+                            <li>You can target the color class by using <code class="inline">c-{color}</code>.</li>
+                            <li>The background class can be targeted by using <code class="inline">bg-{color}</code>.</li>
                         </ul>
                     </div>
                 </article>
 
-                <!-- Pinning -->
-                <article class="section-scroll" id="pinning">
-                    <h2 class="b-b1-light hash">Pinning</h2>
-                    <p>You can also use the <code class="inline">pin</code> classes to fix elements to the top, right, bottom & left of the container/parent, see below:</p>
-                    
-                    <table class="table w-100 t-left code mt-3">
-                        <col width="130">
+                <!-- Background Colors -->
+                <article class="section-scroll" id="background">
+                    <h2 class="b-b1-light hash">Background Colors</h2>
+                    <table class="table w-100 t-left code mt-4">
+                        <col width="100">
+                        <col width="140">
                         <col width="80">
                         <thead>
                             <tr>
                                 <th>Class</th>
-                                <th>Properties</th>
+                                <th>Background Color</th>
+                                <th>Hex</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>.pin-t</td>
-                                <td>top: 0;</td>
+                                <td class="py-2">.bg-white</td>
+                                <td><div class="w-70 h-100 p-2 bg-white p-relative br"></div></td>
+                                <td>#ffffff</td>
                             </tr>
                             <tr>
-                                <td>.pin-r</td>
-                                <td>right: 0;</td>
+                                <td class="py-2">.bg-black</td>
+                                <td><div class="w-70 h-100 p-2 bg-black p-relative br"></div></td>
+                                <td>#000000</td>
                             </tr>
                             <tr>
-                                <td>.pin-b</td>
-                                <td>bottom: 0;</td>
+                                <td class="py-2">.bg-dark</td>
+                                <td><div class="w-70 h-100 p-2 bg-dark p-relative br"></div></td>
+                                <td>#e8e8e8</td>
                             </tr>
                             <tr>
-                                <td>.pin-l</td>
-                                <td>left: 0;</td>
+                                <td class="py-2">.bg-muted</td>
+                                <td><div class="w-70 h-100 p-2 bg-muted p-relative br"></div></td>
+                                <td>#999999</td>
                             </tr>
                             <tr>
-                                <td>.pin-y</td>
-                                <td>top: 0;<br>bottom: 0;</td>
+                                <td class="py-2">.bg-light</td>
+                                <td><div class="w-70 h-100 p-2 bg-light p-relative br"></div></td>
+                                <td>#e8e8e8</td>
                             </tr>
                             <tr>
-                                <td>.pin-x</td>
-                                <td>left: 0;<br>right: 0;</td>
+                                <td class="py-2">.bg-primary</td>
+                                <td><div class="w-70 h-100 p-2 bg-primary p-relative br"></div></td>
+                                <td>#ff2451</td>
                             </tr>
                             <tr>
-                                <td>.pin</td>
-                                <td>top: 0;<br>right: 0;<br>bottom: 0;<br>left: 0;</td>
+                                <td class="py-2">.bg-secondary</td>
+                                <td><div class="w-70 h-100 p-2 bg-secondary p-relative br"></div></td>
+                                <td>#8270b8</td>
                             </tr>
                             <tr>
-                                <td>.pin-none</td>
-                                <td>top: auto;<br>right: auto;<br>bottom: auto;<br>left: auto;</td>
+                                <td class="py-2">.bg-success</td>
+                                <td><div class="w-70 h-100 p-2 bg-success p-relative br"></div></td>
+                                <td>#55b559</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.bg-info</td>
+                                <td><div class="w-70 h-100 p-2 bg-info p-relative br"></div></td>
+                                <td>#37abd4</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.bg-warning</td>
+                                <td><div class="w-70 h-100 p-2 bg-warning p-relative br"></div></td>
+                                <td>#ff9e0f</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.bg-danger</td>
+                                <td><div class="w-70 h-100 p-2 bg-danger p-relative br"></div></td>
+                                <td>#f55145</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2">.bg-link</td>
+                                <td><div class="w-70 h-100 p-2 bg-link p-relative br"></div></td>
+                                <td>#3763d4</td>
                             </tr>
                         </tbody>
                     </table>
-                   
                 </article>
 
                 <!-- Examples -->
@@ -125,40 +142,7 @@ $tableOfContents = [
 </code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
-                <!-- Variations -->
-                <article class="section-scroll" id="variations">
-                <h2 class="b-b1-light hash">Variations</h2>
-<pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
-&lt;div class="p-relative"&gt;&lt;/div&gt;
-&lt;div class="p-absolute"&gt;&lt;/div&gt;
-&lt;div class="p-fixed"&gt;&lt;/div&gt;
-&lt;div class="p-static"&gt;&lt;/div&gt;
-&lt;div class="p-sticky"&gt;&lt;/div&gt;
-&lt;!-- Mobile --&gt;
-&lt;div class="p-mob-relative"&gt;&lt;/div&gt;
-&lt;div class="p-mob-absolute"&gt;&lt;/div&gt;
-&lt;div class="p-mob-fixed"&gt;&lt;/div&gt;
-&lt;div class="p-mob-static"&gt;&lt;/div&gt;
-&lt;div class="p-mob-sticky"&gt;&lt;/div&gt;
-&lt;!-- Tablet --&gt;
-&lt;div class="p-tab-relative"&gt;&lt;/div&gt;
-&lt;div class="p-tab-absolute"&gt;&lt;/div&gt;
-&lt;div class="p-tab-fixed"&gt;&lt;/div&gt;
-&lt;div class="p-tab-static"&gt;&lt;/div&gt;
-&lt;div class="p-tab-sticky"&gt;&lt;/div&gt;
-&lt;!-- Desktop --&gt;
-&lt;div class="p-desk-relative"&gt;&lt;/div&gt;
-&lt;div class="p-desk-absolute"&gt;&lt;/div&gt;
-&lt;div class="p-desk-fixed"&gt;&lt;/div&gt;
-&lt;div class="p-desk-static"&gt;&lt;/div&gt;
-&lt;div class="p-desk-sticky"&gt;&lt;/div&gt;
-&lt;!-- HD --&gt;
-&lt;div class="p-hd-relative"&gt;&lt;/div&gt;
-&lt;div class="p-hd-absolute"&gt;&lt;/div&gt;
-&lt;div class="p-hd-fixed"&gt;&lt;/div&gt;
-&lt;div class="p-hd-static"&gt;&lt;/div&gt;
-&lt;div class="p-hd-sticky"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-                </article>
+              
 
             </div><!-- /Col -->
             <?php include_once('../../partials/smallnav.php') ?>

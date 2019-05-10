@@ -12,7 +12,7 @@ table.code {
 		border-top: 1px solid $primary;
 		font-size: 16px;
 		margin: 10px 0;
-		
+
 		th {
 			padding: 15px 0;
 		}
@@ -25,8 +25,8 @@ table.code {
 		text-shadow: 0 1px white;
 
 		tr {
-			border-bottom: 1px solid rgba(0,0,0,0.1);
-			
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 			td {
 				padding: 5px 0;
 			}
@@ -34,8 +34,6 @@ table.code {
 			td:first-child {
 				color: $purple;
 			}
-			
 		}
 	}
-
 }

@@ -43,13 +43,38 @@ $tableOfContents = [
                     </div>
                     <div class="text-cont">
                         <h3>Properties:</h3>
-                        <ul class="list">
-                            <li>relative</li>
-                            <li>absolute</li>
-                            <li>fixed</li>
-                            <li>static</li>
-                            <li>sticky</li>
-                        </ul>
+                        <table class="table w-100 t-left code mt-3">
+                            <col width="130">
+                            <col width="80">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Properties</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>.p-relative</td>
+                                    <td>position: relative;</td>
+                                </tr>
+                                <tr>
+                                    <td>.p-absolute</td>
+                                    <td>position: absolute;</td>
+                                </tr>
+                                <tr>
+                                    <td>.p-fixed</td>
+                                    <td>position: fixed;</td>
+                                </tr>
+                                <tr>
+                                    <td>.p-static</td>
+                                    <td>position: static;</td>
+                                </tr>
+                                <tr>
+                                    <td>.p-sticky</td>
+                                    <td>position: sticky;</td>
+                                </tr>
+                            </tbody>
+                        </table> 
                     </div>
                 </article>
 
@@ -57,7 +82,6 @@ $tableOfContents = [
                 <article class="section-scroll" id="pinning">
                     <h2 class="b-b1-light hash">Pinning</h2>
                     <p>You can also use the <code class="inline">pin</code> classes to fix elements to the top, right, bottom & left of the container/parent, see below:</p>
-                    
                     <table class="table w-100 t-left code mt-3">
                         <col width="130">
                         <col width="80">
@@ -102,7 +126,6 @@ $tableOfContents = [
                             </tr>
                         </tbody>
                     </table>
-                   
                 </article>
 
                 <!-- Examples -->

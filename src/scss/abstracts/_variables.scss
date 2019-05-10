@@ -73,16 +73,16 @@ $sizing-properties: (10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%) !default
 $palette: (
 	white: #ffffff,
 	black: #000000,
-	muted: #999,
-	light: #e8e8e8,
 	dark: #363636,
+	muted: #999999,
+	light: #e8e8e8,
 	primary: #ff2451,
 	secondary: #8270b8,
-	link: #3763d4,
-	info: #37abd4,
 	success: #55b559,
+	info: #37abd4,
 	warning: #ff9e0f,
 	danger: #f55145
+	link: #3763d4,
 ) !default;
 
 //Color Attributes

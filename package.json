@@ -38,7 +38,8 @@
 		"nodemon": "^1.19.0",
 		"postcss-cli": "^6.1.2",
 		"prettier": "^1.17.0",
-		"sass-lint": "^1.13.1"
+		"sass-lint": "^1.13.1",
+		"sassdoc": "^2.7.0"
 	},
 	"dependencies": {}
 }

@@ -3,10 +3,9 @@
 // This file contains very basic styles to reset document.
 // -----------------------------------------------------------------------------
 
-
 html {
 	font-size: 87.5%;
-	
+
 	@include media-tab {
 		font-size: 95%;
 	}
@@ -18,9 +17,7 @@ html {
 	@include media-hd {
 		font-size: 104%;
 	}
-
 }
 main {
 	position: relative;
 }
-

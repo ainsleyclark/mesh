@@ -1,28 +1,28 @@
 .badge {
-    display: inline-block;
-    position: relative;
-    padding: 5px 12px;
-    background-color: #999;
-    color: #fff;
-    border: 0;
-    outline: none;
-    border-radius: 10rem;
-    font-size: 10px;
-    text-transform: uppercase;
-    height: auto;
-    user-select: none;
+	display: inline-block;
+	position: relative;
+	padding: 5px 12px;
+	background-color: #999;
+	color: #fff;
+	border: 0;
+	outline: none;
+	border-radius: 10rem;
+	font-size: 10px;
+	text-transform: uppercase;
+	height: auto;
+	user-select: none;
 }
 
 %badge-properties {
-    border: 0;
-    color: #ffffff;
+	border: 0;
+	color: #ffffff;
 }
 
 @if $badge-enable-colored {
-    @each $color-name, $hex in $palette {
-        .badge-#{$color-name} {
-            @extend %badge-properties;
-            @include badge-colored($hex);
-        }
-    }
+	@each $color-name, $hex in $palette {
+		.badge-#{$color-name} {
+			@extend %badge-properties;
+			@include badge-colored($hex);
+		}
+	}
 }
