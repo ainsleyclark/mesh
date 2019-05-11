@@ -40,6 +40,73 @@ $tableOfContents = [
                             <li>Order first and last classes are also bundled with mesh. <code class="inline">order-{breakpoint}-first</code> and <code class="inline">order-{breakpoint}-last</code> will place the content you target first or last in the container retrospectively.</li>
                         </ul>
                     </div>
+                    <div class="text-cont">
+                        <h3>Properties:</h3>
+                        <table class="table-code w-100 t-left">
+                            <col width="100">
+                            <col width="100">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Properties</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>.order-first</td>
+                                    <td>order: -1;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-last</td>
+                                    <td>order: 13;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-1</td>
+                                    <td>order: 1;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-2</td>
+                                    <td>order: 3;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-4</td>
+                                    <td>order: 4;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-5</td>
+                                    <td>order: 5;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-6</td>
+                                    <td>order: 6;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-7</td>
+                                    <td>order: 7;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-8</td>
+                                    <td>order: 8;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-9</td>
+                                    <td>order: 9;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-10</td>
+                                    <td>order: 10;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-11</td>
+                                    <td>order: 11;</td>
+                                </tr>
+                                <tr>
+                                    <td>.order-12</td>
+                                    <td>order: 12;</td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div>
                 </article>
 
                 <!-- Examples -->

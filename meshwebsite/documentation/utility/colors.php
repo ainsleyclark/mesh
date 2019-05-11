@@ -47,7 +47,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="background">
                     <h2 class="b-b1-light hash">Background Colors</h2>
                     <p class="secondary-lead">Here you can see the default mesh background colors:</p>
-                    <table class="table w-100 t-left code mt-3">
+                    <table class="table-code w-100 t-left mt-3">
                         <col width="100">
                         <col width="140">
                         <col width="80">
@@ -127,7 +127,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="colors">
                     <h2 class="b-b1-light hash">Colors</h2>
                     <p class="secondary-lead">Here you can see the default mesh text colors:</p>
-                    <table class="table w-100 t-left code mt-3">
+                    <table class="table-code w-100 t-left mt-3">
                         <col width="100">
                         <col width="140">
                         <col width="80">
@@ -146,17 +146,17 @@ $tableOfContents = [
                             </tr>
                             <tr>
                                 <td class="py-2">.c-black</td>
-                                <td class=".c-black">Black</td>
+                                <td class="c-black">Black</td>
                                 <td>#000000</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.c-dark</td>
-                                <td class=".c-dark">Dark</td>
+                                <td class="c-dark">Dark</td>
                                 <td>#e8e8e8</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.c-muted</td>
-                                <td class=".c-muted">Muted</td>
+                                <td class="c-muted">Muted</td>
                                 <td>#999999</td>
                             </tr>
                             <tr>

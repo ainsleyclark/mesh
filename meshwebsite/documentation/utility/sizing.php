@@ -43,7 +43,7 @@ $tableOfContents = [
                     <div class="text-cont">
                         <h3>Properties:</h3>
                         <div class="d-flex flex-column flex-desk-row">
-                            <table class="table w-100 t-left code mt-3">
+                            <table class="table-code w-100 t-left">
                                 <col width="80">
                                 <col width="100">
                                 <thead>
@@ -95,7 +95,7 @@ $tableOfContents = [
                                     </tr>
                                 </tbody>
                             </table>
-                            <table class="table w-100 t-left code mt-4 mt-desk-3">
+                            <table class="table-code w-100 t-left mt-4 mt-desk-0">
                                 <col width="80">
                                 <col width="100">
                                 <thead>

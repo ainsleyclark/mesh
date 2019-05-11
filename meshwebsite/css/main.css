@@ -192,38 +192,38 @@ code.inline {
   }
 }
 
-table.code {
+.table-code {
   border-collapse: collapse;
   font-size: 14px;
 }
 
-table.code thead {
+.table-code thead {
   border-bottom: 1px solid #ff2451;
   border-top: 1px solid #ff2451;
   font-size: 16px;
   margin: 10px 0;
 }
 
-table.code thead th {
+.table-code thead th {
   padding: 15px 0;
 }
 
-table.code tbody {
+.table-code tbody {
   font-family: "Roboto Mono", Monaco, courier, monospace;
   line-height: 1.4rem;
   color: gray;
   text-shadow: 0 1px white;
 }
 
-table.code tbody tr {
+.table-code tbody tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-table.code tbody tr td {
+.table-code tbody tr td {
   padding: 5px 0;
 }
 
-table.code tbody tr td:first-child {
+.table-code tbody tr td:first-child {
   color: #8270b8;
 }
 

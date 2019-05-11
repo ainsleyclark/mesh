@@ -11,7 +11,7 @@ $pageData = [
 //Table of contents
 $tableOfContents = [
     'usage' => 'Usage',
-    'hiding' => 'Hiding',
+    'hiding' => 'Hiding/showing',
     'examples' => 'Examples',
     'variations' => 'Variations'
 ];
@@ -43,24 +43,115 @@ $tableOfContents = [
                     </div>
                     <div class="text-cont">
                         <h3>Properties:</h3>
-                        <ul class="list">
-                            <li>none</li>
-                            <li>inline</li>
-                            <li>inline-block</li>
-                            <li>block</li>
-                            <li>flex</li>
-                            <li>inline-flex</li>
-                            <li>table</li>
-                            <li>table-row</li>
-                            <li>table-cell</li>
-                        </ul>
+                        <table class="table-code w-100 t-left">
+                            <col width="100">
+                            <col width="100">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Properties</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>.d-none</td>
+                                    <td>display: none;</td>
+                                </tr>
+                                <tr>
+                                    <td>.d-inline</td>
+                                    <td>display: inline;</td>
+                                </tr>
+                                <tr>
+                                    <td>.d-inline-block</td>
+                                    <td>display: inline-block;</td>
+                                </tr>
+                                <tr>
+                                    <td>.d-flex</td>
+                                    <td>display: flex;</td>
+                                </tr>
+                                <tr>
+                                    <td>.d-inline-flex</td>
+                                    <td>display: inline-flex;</td>
+                                </tr>
+                                <tr>
+                                    <td>.d-table</td>
+                                    <td>display: table;</td>
+                                </tr>
+                                <tr>
+                                    <td>.d-table-row</td>
+                                    <td>display: table-row;</td>
+                                </tr>
+                                <tr>
+                                    <td>.d-table-cell</td>
+                                    <td>display: table-cell;</td>
+                                </tr>
+                            </tbody>
+                        </table> 
                     </div>
                 </article>
 
                 <!-- Hiding -->
                 <article class="section-scroll" id="hiding">
-                    <h2 class="b-b1-light hash">Hiding</h2>
-                    <p class="secondary-lead"><span class="c-danger">ADD TABLE HERE!</span></p>
+                    <h2 class="b-b1-light hash">Hiding/showing</h2>
+                    <p class="secondary-lead">
+                        Its common to hide elements in the DOM on mobile to create a faster user experience for mobiles and tablets. You can hide elements at various sizes with the display class using <code class="inline">.d-none</code>.
+                        <br>Use the table below to help you with hiding and showing elements at various screen sizes. <strong>{type}</strong> can be any of the properties listed above.
+                    </p>
+                    <div class="text-cont">
+                        <table class="table-code w-100 t-left">
+                            <col width="100">
+                            <col width="100">
+                            <thead>
+                                <tr>
+                                    <th>Breakpoint</th>
+                                    <th>Class</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hidden on all</td>
+                                    <td>.d-none</td>
+                                </tr>
+                                <tr>
+                                    <td>Hidden on extra small only</td>
+                                    <td>.d-mob-none .d-tab-{type}</td>
+                                </tr>
+                                <tr>
+                                    <td>Hidden on tablet only</td>
+                                    <td>.d-tab-none .d-desk-{type}</td>
+                                </tr>
+                                <tr>
+                                    <td>Hidden on desktop only</td>
+                                    <td>.d-desk-none .d-hd-{type}</td>
+                                </tr>
+                                <tr>
+                                    <td>Hidden on HD screens only</td>
+                                    <td>.d-hd-none</td>
+                                </tr>
+                                <tr>
+                                    <td>Visible on all</td>
+                                    <td>.d-{type}</td>
+                                </tr>
+                                <tr>
+                                    <td>Visible on extra small only</td>
+                                    <td>.d-none .d-mob-{type} .d-tab-none</td>
+                                </tr>
+                                <tr>
+                                    <td>Visible on tablet only</td>
+                                    <td>.d-none .d-tab-{type} .d-desk-none</td>
+                                </tr>
+                                <tr>
+                                    <td>Visible on desktop only</td>
+                                    <td>.d-none .d-desk-{type} .d-hd-none</td>
+                                </tr>
+                                <tr>
+                                    <td>Visible on HD screens only</td>
+                                    <td>.d-none .d-hd-{type}</td>
+                                </tr>
+
+                            </tbody>
+                        </table> 
+                    </div>
                 </article>
 
                 <!-- Examples -->

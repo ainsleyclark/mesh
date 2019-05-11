@@ -62,7 +62,7 @@ $tableOfContents = [
                     </div>
                     <div class="text-cont">
                         <h3>Properties:</h3>
-                        <table class="table w-100 t-left code mt-3">
+                        <table class="table w-100 t-left code">
                             <col width="100">
                             <col width="100">
                             <thead>
