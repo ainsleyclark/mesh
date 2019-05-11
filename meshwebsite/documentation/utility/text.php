@@ -11,6 +11,7 @@ $pageData = [
 //Table of contents
 $tableOfContents = [
     'sizes' => 'Font sizes',
+    'sub' => 'Sub headings',
     'examples' => 'Examples',
     'utility' => 'Utility classes',
     'responsive' => 'Responsive text',
@@ -43,14 +44,24 @@ $tableOfContents = [
                         <h5 class="normal-headings">h5 Heading</h5>
                         <h6 class="normal-headings">h6 Heading</h6>
                     </div>
-                    
-                    <p></p>
+                </article>
 
+                <!-- Font Sizes -->
+                <article class="section-scroll" id="sub">
+                <h2 class="b-b1-light hash">Sub headings</h2>
+                    <p class="secondary-lead">A lead class is available by apply <code class="inline">.lead</code> to your element, this text is perfect for sub headings on pages and large paragraphs.</p>
+                    <div class="text-cont bg-light br p-3">
+                        <h1 class="normal-headings">Welcome to mesh</h1>
+                        <p class="lead">I'm an example sub heading using the lead class.</p>
+                    </div>
+
+                    <pre class="highlight mt-3"><code class="html py-2">&lt;h1&gt;Welcome to mesh&lt;/h1&gt;
+&lt;p class="lead"&gtI'm an example sub heading using the lead class.&lt;/p&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
                 <!-- Unresponsive -->
                 <article class="section-scroll" id="utility">
-                    <h2 class="b-b1-light hash">Unresponsive classes</h2>
+                    <h2 class="b-b1-light hash">Utility classes</h2>
                     <p class="secondary-lead">
                         A number of text utility helper classes have been bundled with mesh to help with creating font styles quickly.
                     </p>
@@ -62,7 +73,7 @@ $tableOfContents = [
                     </div>
                     <div class="text-cont">
                         <h3>Properties:</h3>
-                        <table class="table w-100 t-left code">
+                        <table class="table-code w-100 t-left">
                             <col width="100">
                             <col width="100">
                             <thead>
@@ -114,7 +125,7 @@ $tableOfContents = [
                     <h2 class="b-b1-light hash">Responsive text</h2>
                     <button class="btn btn-rounded btn-secondary">Turn responsive text on</button>
                     <div class="text-cont">
-                        <p class="t-responsive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda rerum iste, nobis similique est obcaecati commodi quae quam hic veritatis numquam facere ratione praesentium, nesciunt itaque! Nihil sunt alias quidem molestiae illo excepturi reprehenderit, saepe nesciunt qui, repudiandae voluptatem quibusdam molestias eligendi ducimus, quasi quod sequi beatae incidunt expedita doloremque? Ducimus natus impedit culpa nobis eum voluptates ex necessitatibus aspernatur veritatis vero. Incidunt nobis nesciunt nihil reiciendis optio odit blanditiis quidem quaerat earum, sunt vitae, voluptatibus obcaecati consequuntur fugit minima, minus vel! Commodi rem libero fugiat architecto facere numquam esse deleniti vel officiis aperiam corporis excepturi nam, laudantium voluptates dolorum autem minus quo minima molestiae error ipsum quisquam! Amet modi nemo fugit doloremque officia incidunt accusantium? Eius est sequi fugiat, commodi culpa necessitatibus, non a obcaecati numquam atque architecto dolores quod optio? Dolorem perferendis quod dignissimos earum nesciunt molestiae est blanditiis vitae tempora ullam. Itaque odio quasi nesciunt voluptates voluptas ipsa corrupti quod et sit, laborum deleniti quae facilis assumenda illo iure eius, officia atque. Quas id commodi architecto. Totam nihil aliquid vitae velit vero? Eos vitae pariatur facilis. Dignissimos laudantium similique magnam iusto, pariatur esse vitae illum omnis odio quia, fuga architecto adipisci expedita dolorem impedit minus at nulla?</p>
+                        <p class="t-responsive">With responsive text, the font size gradually gets smaller on differnt</p>
                     </div>
                 </article>
 

@@ -498,6 +498,22 @@ section.hero .home-illusration {
   line-height: 4.5;
 }
 
+.spacing-page .spacing-table {
+  font-size: 14px;
+  font-family: "Roboto Mono", Monaco, courier, monospace;
+  line-height: 1.4rem;
+  color: gray;
+  text-shadow: 0 1px white;
+}
+
+.spacing-page .spacing-table .column:nth-child(1), .spacing-page .spacing-table .column:nth-child(3) {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.spacing-page .spacing-table .item {
+  padding: 5px 0;
+}
+
 .sizing-page .height-200 {
   height: 200px;
 }
