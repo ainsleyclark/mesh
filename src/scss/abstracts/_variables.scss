@@ -116,7 +116,7 @@ $white-text-color: #ffffff;
 
 //Responsive Text
 $range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
-$responsive-text-points: 30 !default;
+$responsive-text-points: 20 !default;
 $point-size: $range / $responsive-text-points !default;
 
 // 8. Spacers

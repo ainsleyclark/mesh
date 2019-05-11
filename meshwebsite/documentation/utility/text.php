@@ -23,7 +23,7 @@ $tableOfContents = [
 <?php include_once('../../partials/header.php'); ?>
 <?php include_once('../../partials/sidenav.php'); ?>
 
-<section class="content sizing-page">
+<section class="content text-page">
     <div class="container-fullwidth">
         <div class="row justify-content-center mt-4 mt-desk-5">
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
@@ -34,7 +34,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="sizes">
                     <h2 class="b-b1-light hash">Font sizes</h2>
                     <p class="secondary-lead">
-                        Default font sizes are shown below, is calculated automatically based on the size.
+                        Default font sizes are shown below, margin is calculated automatically based on the size.
                     </p>
                     <div class="text-cont">
                         <h1 class="normal-headings">h1 Heading</h1>
@@ -68,7 +68,7 @@ $tableOfContents = [
                     <div class="text-cont">
                         <h3>Notation:</h3>
                         <ul class="list">
-                            <li>All text classes shown below are prefixed with <code class="inline">.t-{helper}</code> for text.</li>
+                            <li>All text classes shown below are prefixed with <code class="inline">t-{helper}</code> for text.</li>
                         </ul>
                     </div>
                     <div class="text-cont">
@@ -123,9 +123,10 @@ $tableOfContents = [
                 <!-- Responsive Text --> 
                 <article class="section-scroll" id="responsive">
                     <h2 class="b-b1-light hash">Responsive text</h2>
-                    <button class="btn btn-rounded btn-secondary">Turn responsive text on</button>
+                    <p class="secondary-lead">Below is a demo of our responsive text class, you can target it by using the <code class="inline">t-responsive</code> class.</p>
+                    <button class="btn btn-rounded btn-secondary" id="responsiveTextBtn">Turn responsive text off</button>
                     <div class="text-cont">
-                        <p class="t-responsive">With responsive text, the font size gradually gets smaller on differnt</p>
+                        <p class="t-responsive" id="responsiveText">With responsive text, the font size gradually gets smaller on different viewports. Its totally customizable, you can adjust the base font size and how many points you would like. Go ahead and resize the screen to watch me get smaller!</p>
                     </div>
                 </article>
 
@@ -136,7 +137,7 @@ $tableOfContents = [
                         Text alignment is simple with mesh, you can adjust it responsively by using <code class="inline">t-{breakpoint}-{property}</code>  The breakpoint being optional and one of our five breakpoints, the properties being outlined below.
                     </p>
                     <div class="text-cont">
-                        <table class="table w-100 t-left code mt-3">
+                        <table class="table-code w-100 t-left mt-3">
                             <col width="100">
                             <col width="100">
                             <thead>
@@ -201,3 +202,17 @@ $tableOfContents = [
 </section>
 
 <?php include_once('../../partials/footer.php') ?>
+
+<!-- =======================
+    Page specific scripts
+    ======================= -->
+    <?php function scripts() { ?>
+    <script>   
+    //Turn responsive text on & off
+    document.querySelector('#responsiveTextBtn').addEventListener('click', function() {
+        this.innerHTML = this.innerHTML.includes('off') ? "Turn responsive text on" : "Turn responsive text off";
+        document.querySelector('#responsiveText').classList.toggle('t-responsive');
+        document.querySelector('#responsiveText').classList.toggle('font-size-2');
+    });
+    </script>
+<?php } ?>

@@ -518,6 +518,10 @@ section.hero .home-illusration {
   height: 200px;
 }
 
+.text-page .font-size-2 {
+  font-size: 28px;
+}
+
 .button-page .button-cont {
   margin-top: 20px;
 }
