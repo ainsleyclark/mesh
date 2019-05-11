@@ -44,8 +44,8 @@ $tableOfContents = [
                     <div class="text-cont">
                         <h3>Properties:</h3>
                         <table class="table w-100 t-left code mt-3">
-                            <col width="130">
-                            <col width="80">
+                            <col width="100">
+                            <col width="100">
                             <thead>
                                 <tr>
                                     <th>Class</th>
@@ -83,8 +83,8 @@ $tableOfContents = [
                     <h2 class="b-b1-light hash">Pinning</h2>
                     <p>You can also use the <code class="inline">pin</code> classes to fix elements to the top, right, bottom & left of the container/parent, see below:</p>
                     <table class="table w-100 t-left code mt-3">
-                        <col width="130">
-                        <col width="80">
+                        <col width="100">
+                        <col width="100">
                         <thead>
                             <tr>
                                 <th>Class</th>

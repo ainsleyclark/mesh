@@ -42,13 +42,112 @@ $tableOfContents = [
                     </div>
                     <div class="text-cont">
                         <h3>Properties:</h3>
-                        <ul class="list">
-                            <li>relative</li>
-                            <li>absolute</li>
-                            <li>fixed</li>
-                            <li>static</li>
-                            <li>sticky</li>
-                        </ul>
+                        <div class="d-flex flex-column flex-desk-row">
+                            <table class="table w-100 t-left code mt-3">
+                                <col width="80">
+                                <col width="100">
+                                <thead>
+                                    <tr>
+                                        <th>Width</th>
+                                        <th>Properties</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>.w-10</td>
+                                        <td>width: 10%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.w-20</td>
+                                        <td>width: 20%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.w-30</td>
+                                        <td>width: 30%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.w-40</td>
+                                        <td>width: 40%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.w-50</td>
+                                        <td>width: 50%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.w-60</td>
+                                        <td>width: 60%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.w-70</td>
+                                        <td>width: 70%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.w-80</td>
+                                        <td>width: 80%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.w-90</td>
+                                        <td>width: 90%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.w-10</td>
+                                        <td>width: 100%;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table w-100 t-left code mt-4 mt-desk-3">
+                                <col width="80">
+                                <col width="100">
+                                <thead>
+                                    <tr>
+                                        <th>Height</th>
+                                        <th>Properties</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>.h-10</td>
+                                        <td>height: 10%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-20</td>
+                                        <td>height: 20%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-30</td>
+                                        <td>height: 30%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-40</td>
+                                        <td>height: 40%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-50</td>
+                                        <td>height: 50%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-60</td>
+                                        <td>height: 60%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-70</td>
+                                        <td>height: 70%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-80</td>
+                                        <td>height: 80%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-90</td>
+                                        <td>height: 90%;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.h-10</td>
+                                        <td>height: 100%;</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </article>
 

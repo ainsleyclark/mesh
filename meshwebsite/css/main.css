@@ -379,15 +379,15 @@ header.primary nav.primary ul .download:hover svg path {
   word-wrap: break-word;
 }
 
-.content h1 {
+.content h1:not(.normal-headings) {
   font-size: 2.2rem;
 }
 
-.content h2 {
+.content h2:not(.normal-headings) {
   font-size: 1.6rem;
 }
 
-.content h3 {
+.content h3:not(.normal-headings) {
   font-size: 1.3rem;
   margin: 0 0 5px 0;
 }

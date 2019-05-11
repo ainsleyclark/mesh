@@ -12,7 +12,7 @@ $pageData = [
 $tableOfContents = [
     'usage' => 'Usage',
     'background' => 'Background Colors',
-    'colors' => 'Colors',
+    'colors' => 'Colors', 
 ];
 
 ?>
