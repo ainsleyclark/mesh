@@ -116,7 +116,7 @@ $white-text-color: #ffffff;
 
 //Responsive Text
 $range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
-$responsive-text-points: 20 !default;
+$responsive-text-points: 30 !default;
 $point-size: $range / $responsive-text-points !default;
 
 // 8. Spacers
@@ -178,6 +178,14 @@ $button-enable-shadows: true;
 
 // Badge Types
 $badge-enable-colored: true;
+$badge-enable-rounded: true;
+
+//Padding
+$badge-padding: 5px 12px;
+
+//Font
+$badge-font-size: 10px !default;
+$badge-font-weight: 400;
 
 // 13. Cards
 // ==========================================================================
