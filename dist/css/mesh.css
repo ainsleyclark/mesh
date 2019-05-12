@@ -4100,7 +4100,7 @@ small {
 .clearfix::after {
   display: block;
   clear: both;
-  content: "";
+  content: '';
 }
 
 .visible {

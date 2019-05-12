@@ -423,6 +423,33 @@ header.primary nav.primary ul .download:hover svg path {
   margin-bottom: 20px;
 }
 
+.content .table-props .header {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.content .table-props .header span {
+  width: 25%;
+  text-align: center;
+}
+
+.content .table-props .body {
+  font-size: 14px;
+  font-family: "Roboto Mono", Monaco, courier, monospace;
+  line-height: 1.4rem;
+  color: gray;
+  text-shadow: 0 1px white;
+}
+
+.content .table-props .body .item {
+  padding: 5px 0;
+}
+
+.content .table-props .body .line {
+  width: 1px;
+  background: #ff2451;
+}
+
 .column-demo .row {
   margin: 0 -5px;
 }
@@ -496,23 +523,6 @@ section.hero .home-illusration {
 
 .flex-page .line-height-4 {
   line-height: 4.5;
-}
-
-.spacing-page .spacing-table {
-  font-size: 14px;
-  font-family: "Roboto Mono", Monaco, courier, monospace;
-  line-height: 1.4rem;
-  color: gray;
-  text-shadow: 0 1px white;
-}
-
-.spacing-page .spacing-table .column:nth-child(1),
-.spacing-page .spacing-table .column:nth-child(3) {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.spacing-page .spacing-table .item {
-  padding: 5px 0;
 }
 
 .sizing-page .height-200 {

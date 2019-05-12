@@ -33,7 +33,102 @@ $tableOfContents = [
                         The border classes help you to create borders on the fly easily. Choose from all different sides (top, right, bottom & left) as well as all sides.
                     </p>
                     <div class="text-cont">
-
+                        <h3>Notation:</h3>
+                        <ul class="list">
+                            <li>All border classes shown below are prefixed with <code class="inline">b-{side}-{shade}</code> where side is <code class="inline">t, r, b, l</code>, (top, right, bottom or left) and optional and shade being light or dark, which is optional too.</li>
+                        </ul>
+                    </div>
+                    <div class="text-cont">
+                        <h3>Properties:</h3>
+                        <table class="table-code w-100 t-left">
+                            <col width="100">
+                            <col width="200">
+                            <thead>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Properties</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>.b</td>
+                                    <td>border: 1px solid rgba(0, 0, 0, 0.3);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-light</td>
+                                    <td>border: 1px solid rgba(0, 0, 0, 0.1);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-dark</td>
+                                    <td>border: 1px solid rgba(0, 0, 0, 0.6);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-t</td>
+                                    <td>border-top: 1px solid rgba(0, 0, 0, 0.3);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-r</td>
+                                    <td>border-right: 1px solid rgba(0, 0, 0, 0.3);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-b</td>
+                                    <td>border-bottom: 1px solid rgba(0, 0, 0, 0.3);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-l</td>
+                                    <td>border-left: 1px solid rgba(0, 0, 0, 0.3);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-t-light</td>
+                                    <td>border-top: 1px solid rgba(0, 0, 0, 0.1);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-r-light</td>
+                                    <td>border-right: 1px solid rgba(0, 0, 0, 0.1);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-b-light</td>
+                                    <td>border-bottom: 1px solid rgba(0, 0, 0, 0.1);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-l-light</td>
+                                    <td>border-left: 1px solid rgba(0, 0, 0, 0.1);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-t-dark</td>
+                                    <td>border-top: 1px solid rgba(0, 0, 0, 0.6);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-r-dark</td>
+                                    <td>border-right: 1px solid rgba(0, 0, 0, 0.6);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-b-dark</td>
+                                    <td>border-bottom: 1px solid rgba(0, 0, 0, 0.6);</td>
+                                </tr>
+                                <tr>
+                                    <td>.b-l-dark</td>
+                                    <td>border-left: 1px solid rgba(0, 0, 0, 0.6);</td>
+                                </tr>
+                    
+                            </tbody>
+                        </table> 
+                    </div>
+                    <div class="text-cont">
+                        <h3>Example:</h3>
+                        <div class="column-demo border-radius-demo mb-3">
+                            <div class="mb-3 c-black t-center">
+                                <div class="d-flex">
+                                    <div class="text mr-1 bg-white b">b</div>
+                                    <div class="text mx-1 bg-white b-light">b-light</div>
+                                    <div class="text mx-1 bg-white b-dark">b-dark</div>
+                                    <div class="text mx-1 bg-white b-t">b-t</div>
+                                    <div class="text mx-1 bg-white b-r">b-r</div>
+                                    <div class="text mx-1 bg-white b-b-light">b-b-light</div>
+                                    <div class="text mx-1 bg-white b-l-dark">b-l-dark</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </article>
 
@@ -44,12 +139,9 @@ $tableOfContents = [
                         The border classes help you to create borders on the fly easily. Choose from all different sides (top, right, bottom & left) as well as all sides.
                     </p>
                     <div class="text-cont">
-
-                    </div>
-                    <div class="text-cont">
                         <h3>Notation:</h3>
                         <ul class="list">
-                            <li>All text classes shown below are prefixed with <code class="inline">t-{helper}</code> for text.</li>
+                            <li>All border radius classes shown below are prefixed with <code class="inline">br-{helper}</code>.</li>
                         </ul>
                     </div>
                     <div class="text-cont">
@@ -112,7 +204,7 @@ $tableOfContents = [
                         </table> 
                     </div>
                     <div class="text-cont">
-                        <h3>Examples:</h3>
+                        <h3>Example:</h3>
                         <div class="column-demo border-radius-demo mb-3">
                             <div class="mb-3 c-white t-center">
                                 <div class="d-flex justify-content-center align-items-center mb-3 flex-wrap">
@@ -131,70 +223,6 @@ $tableOfContents = [
                             </div>
                         </div>
                     </div>
-                </article>
-
-                <!-- Alignment --> 
-                <article class="section-scroll" id="align">
-                    <h2 class="b-b-light hash">Alignment</h2>
-                    <p class="secondary-lead">
-                        Text alignment is simple with mesh, you can adjust it responsively by using <code class="inline">t-{breakpoint}-{property}</code>  The breakpoint being optional and one of our five breakpoints, the properties being outlined below.
-                    </p>
-                    <div class="text-cont">
-                        <table class="table-code w-100 t-left mt-3">
-                            <col width="100">
-                            <col width="100">
-                            <thead>
-                                <tr>
-                                    <th>Class</th>
-                                    <th>Properties</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>.t-center</td>
-                                    <td>text-align: center;</td>
-                                </tr>
-                                <tr>
-                                    <td>.t-left</td>
-                                    <td>text-align: left;</td>
-                                </tr>
-                                <tr>
-                                    <td>.t-right</td>
-                                    <td>text-align: right;</td>
-                                </tr>
-                                <tr>
-                                    <td>.t-justify</td>
-                                    <td>text-align: center;</td>
-                                </tr>
-                            </tbody>
-                        </table> 
-                    </div>
-                    <h3 class="mt-3">Responsive variations:</h3>
-                    <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
-&lt;div class="t-center"&gt;&lt;/div&gt;
-&lt;div class="t-left"&gt;&lt;/div&gt;
-&lt;div class="t-right"&gt;&lt;/div&gt;
-&lt;div class="t-justify"&gt;&lt;/div&gt;
-&lt;!-- Mobile --&gt;
-&lt;div class="t-mob-center"&gt;&lt;/div&gt;
-&lt;div class="t-mob-left"&gt;&lt;/div&gt;
-&lt;div class="t-mob-right"&gt;&lt;/div&gt;
-&lt;div class="t-mob-justify"&gt;&lt;/div&gt;
-&lt;!-- Tablet --&gt;
-&lt;div class="t-tab-center"&gt;&lt;/div&gt;
-&lt;div class="t-tab-left"&gt;&lt;/div&gt;
-&lt;div class="t-tab-right"&gt;&lt;/div&gt;
-&lt;div class="t-tab-justify"&gt;&lt;/div&gt;
-&lt;!-- Desktop --&gt;
-&lt;div class="t-desk-center"&gt;&lt;/div&gt;
-&lt;div class="t-desk-left"&gt;&lt;/div&gt;
-&lt;div class="t-desk-right"&gt;&lt;/div&gt;
-&lt;div class="t-desk-justify"&gt;&lt;/div&gt;
-&lt;!-- HD --&gt;
-&lt;div class="t-hd-center"&gt;&lt;/div&gt;
-&lt;div class="t-hd-left"&gt;&lt;/div&gt;
-&lt;div class="t-hd-right"&gt;&lt;/div&gt;
-&lt;div class="t-hd-justify"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
             </div><!-- /Col -->

@@ -41,43 +41,37 @@ $tableOfContents = [
                     </div>
                     <div class="text-cont">
                         <h3>Properties:</h3>
-                        <table class="table-code w-100 t-left">
-                            <col width="100">
-                            <col width="100">
-                            <col width="100">
-                            <thead>
-                                <tr>
-                                    <th>Class</th>
-                                    <th>Side (optional)</th>
-                                    <th>Space</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                        </table>
-                        <div class="d-flex justify-content-start w-100 spacing-table mt-2">
-                            <div class="w-40 w-tab-30 column">
-                                <div class="item">{p} padding</div>
-                                <div class="item">{m} margin</div>
+                        <div class="table-props">
+                            <div class="header d-flex justify-content-between w-100 mt-3">
+                                <span>Class</span>
+                                <span>Side (optional)</span>
+                                <span>Space</span>
                             </div>
-                            <div class="w-0 w-tab-10"></div>
-                            <div class="w-40 w-tab-30 column">
-                                <div class="item">{} All sides</div>
-                                <div class="item">{t} top</div>
-                                <div class="item">{r} right</div>
-                                <div class="item">{b} bottom</div>
-                                <div class="item">{l} left</div>
-                                <div class="item">{x} horizontal</div>
-                                <div class="item">{y} vertical</div>
-                            </div>
-                            <div class="w-0 w-tab-10"></div>
-                            <div class="w-40 column">
-                                <div class="item">{1} 0.5rem</div>
-                                <div class="item">{2} 0.75rem</div>
-                                <div class="item">{3} 1rem</div>
-                                <div class="item">{4} 2rem</div>
-                                <div class="item">{5} 3rem</div>
-                            </div>
-                        </div>                              
+                            <div class="body d-flex justify-content-around flex-wrap mt-1">
+                                <div class="column">
+                                    <div class="item">{p} padding</div>
+                                    <div class="item">{m} margin</div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="column">
+                                    <div class="item">{} All sides</div>
+                                    <div class="item">{t} top</div>
+                                    <div class="item">{r} right</div>
+                                    <div class="item">{b} bottom</div>
+                                    <div class="item">{l} left</div>
+                                    <div class="item">{x} horizontal</div>
+                                    <div class="item">{y} vertical</div>
+                                </div>
+                                <div class="line"></div>
+                                <div class="column">
+                                    <div class="item">{1} 0.5rem</div>
+                                    <div class="item">{2} 0.75rem</div>
+                                    <div class="item">{3} 1rem</div>
+                                    <div class="item">{4} 2rem</div>
+                                    <div class="item">{5} 3rem</div>
+                                </div>
+                            </div> 
+                        </div>
                     </div>
                 </article>
 
@@ -86,7 +80,7 @@ $tableOfContents = [
                     <h2 class="b-b-light hash">Examples</h2>
                     <h3 class="mt-3">Responsive padding:</h3>
                     <p>
-                        A common usage for these utilitiy classes would be to extend with value of padding when screen size becomes larger. Below is an example of just that:
+                        A common usage for these utility classes would be to extend with value of padding when screen size becomes larger. Below is an example of just that:
                     </p>
                     <div class="column-demo c-white mb-3">
                         <div class="br d-flex mb-3 justify-content-center justify-content-desk-between t-center">

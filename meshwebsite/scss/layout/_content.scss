@@ -48,6 +48,39 @@
 	.mb-20 {
 		margin-bottom: 20px;
 	}
+
+
+	//Table for properties, spacing & borders pages
+	.table-props {
+
+		.header {
+			font-size: 1rem;
+			font-weight: bold;
+	
+			span {
+				width: 25%;
+				text-align: center;
+			}
+		}
+	
+		.body {
+			font-size: 14px;
+			font-family: $font-code;
+			line-height: 1.4rem;
+			color: rgb(128, 128, 128);
+			text-shadow: 0 1px white;
+	
+	
+			.item {
+				padding: 5px 0;
+			}
+	
+			.line {
+				width: 1px;
+				background: $primary;
+			}
+		}
+	}
 }
 
 //Small primary columns
