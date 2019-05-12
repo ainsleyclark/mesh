@@ -4,7 +4,6 @@
 // -----------------------------------------------------------------------------
 
 .spacing-page {
-
 	.spacing-table {
 		font-size: 14px;
 		font-family: $font-code;
@@ -12,11 +11,12 @@
 		color: rgb(128, 128, 128);
 		text-shadow: 0 1px white;
 
-		.column:nth-child(1), .column:nth-child(3) {
-			border-right: 1px solid rgba(0,0,0,0.1);
+		.column:nth-child(1),
+		.column:nth-child(3) {
+			border-right: 1px solid rgba(0, 0, 0, 0.1);
 			//padding-right: 20%;
 		}
-		
+
 		.item {
 			padding: 5px 0;
 		}

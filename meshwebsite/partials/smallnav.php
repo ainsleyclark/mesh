@@ -10,7 +10,7 @@ if ($pageData['parentDirectory']) {
 <div class="col-2 pr-0">
     <aside class="smallnav h-100 d-none d-tab-block">
         <div class="smallnav-cont p-sticky">
-            <ul class="table-of-contents b-b1-light">
+            <ul class="table-of-contents b-b-light">
                 <?php 
                     foreach ($contentsData as $key => $value) {
                         echo '<a href="#' . $key . '"><li class="contents-item" data-contentitem="' . $key . '">' . $value . '</li></a>';

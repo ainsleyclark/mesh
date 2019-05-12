@@ -61,7 +61,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
     <!-- =====================
         Header
         ===================== -->
-    <header class="primary d-flex align-items-center b-b1-light <?php if($isHome !== false ) echo 'bg-white' ?>">
+    <header class="primary d-flex align-items-center b-b-light <?php if($isHome !== false ) echo 'bg-white' ?>">
         <div class="container-fullwidth px-4">
             <div class="row">
                 <div class="col-6">

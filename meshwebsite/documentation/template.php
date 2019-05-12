@@ -29,7 +29,7 @@ $tableOfContents = [
 
                 <!-- Rounded Buttons -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b1-light hash">Title</h2>
+                    <h2 class="b-b-light hash">Title</h2>
                     <p class="secondary-lead">Lead<code class="inline">&lt;code&gt;</code></p>
                     <pre class="highlight"><code class="html">&lt;button class="btn btn-primary btn-rounded"&gt;Rounded&lt;/button&gt;
 &lt;button class="btn btn-primary btn-rounded btn-outline"&gt;Outline&lt;/button&gt;

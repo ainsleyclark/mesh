@@ -30,7 +30,7 @@ $tableOfContents = [
 
                 <!-- What is mesh? -->
                 <article class="section-scroll" id="whatIs">
-                    <h2 class="pb-1 b-b1-light mt-5 mb-1 hash">What is mesh?</h2>
+                    <h2 class="pb-1 b-b-light mt-5 mb-1 hash">What is mesh?</h2>
                     <p>mesh (pronounced /meʃ/) is an open source pure CSS framework for building websites for efficentley. Unlike other frameworks, you can use mesh without detracting from the unique visual signature of a website, whilst still being able to add components to quicken your workflow.</p>
                     <p>It has a modular approach to a responsive grid system, you can define containers, rows and columns and set them indepdantly of screen width. Five breakpoints helps you sculpt your site to different screen sizes and a easy naming system makes it ideal for begginers or patrons of the web.</p>
                     <p>mesh has huge amounts of utility classes to help you along the way, such as responsive text, responsive width & height classes, border helper classes & spacers for when margin isn't quite good enough, and alot lot more...</p>
@@ -38,7 +38,7 @@ $tableOfContents = [
 
                 <!-- Download -->
                 <article class="section-scroll" id="download">
-                    <h2 class="pb-1 b-b1-light mt-5 mb-1 hash">Download</h2>
+                    <h2 class="pb-1 b-b-light mt-5 mb-1 hash">Download</h2>
                     <p>mesh comes in three different flavours. You can select which version you want dependant on your expertise and preference. To get going, click on one of the options below.</p>
                     <div class="row my-3">
                         <div class="col-12">
@@ -65,14 +65,14 @@ $tableOfContents = [
 
                 <!-- JS -->
                 <article class="section-scroll" id="js">
-                    <h2 class="b-b1-light hash">A note about JS</h2>
+                    <h2 class="b-b-light hash">A note about JS</h2>
                     <p>We realise everything can't be done in CSS & somethings are best done with JavaScript. Which is why we have included example usage with our specific JS components. This makes things easier if you are using a front-end framework or want to write your own code but if you dont fancy that, just use ours!</p>
                     <p> Of course, if there is a CSS alternative we have also provided that too, mainly through the use of checkboxes to show & hide components.</p>
                 </article>
 
                 <!-- Notate -->
                 <article class="section-scroll" id="classes">
-                    <h2 class="b-b1-light hash">How we notate</h2>
+                    <h2 class="b-b-light hash">How we notate</h2>
                     <p>We have tried to make things extremley simple for you when it comes to class names and notation. Most of the utilities you will encounter starts with the letter of the utility <span class="c-secondary">p for position</span> for example, followed by a dash <span class="c-seconary">-</span> then preceeded by the property. Here is a taster, but please see the indiviudal page on the left for more details.</p>
                     <ul class="list">
                         <li>Columns - <code class="inline">col-12 col-mob-6 col-tab-4 col-desk-3 col-hd-1</code></li>

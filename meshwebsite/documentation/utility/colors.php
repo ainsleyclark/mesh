@@ -29,7 +29,7 @@ $tableOfContents = [
 
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b1-light hash">Usage</h2>
+                    <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
                         All website's colors are different, there's no doubt in that. Which is why we highly reccomend you use the mesh builder to change the default colors in order to create a custom css file. 
                         <br><strong>Color and background color</strong> are able to be manipulated inline with the color utility classes.
@@ -45,7 +45,7 @@ $tableOfContents = [
 
                 <!-- Background Colors -->
                 <article class="section-scroll" id="background">
-                    <h2 class="b-b1-light hash">Background Colors</h2>
+                    <h2 class="b-b-light hash">Background Colors</h2>
                     <p class="secondary-lead">Here you can see the default mesh background colors:</p>
                     <table class="table-code w-100 t-left mt-3">
                         <col width="100">
@@ -125,7 +125,7 @@ $tableOfContents = [
 
                 <!-- Background Colors -->
                 <article class="section-scroll" id="colors">
-                    <h2 class="b-b1-light hash">Colors</h2>
+                    <h2 class="b-b-light hash">Colors</h2>
                     <p class="secondary-lead">Here you can see the default mesh text colors:</p>
                     <table class="table-code w-100 t-left mt-3">
                         <col width="100">

@@ -2,6 +2,8 @@
 	"name": "mesh",
 	"version": "1.0.0",
 	"description": "A lightweight, pure CSS framework.",
+	"author": "Ainsley Clark",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vagrant up && npm run watch-css",
 		"prod": "npm run prefix && npm run clean && npm run minify",
@@ -16,14 +18,16 @@
 		"docker-create": "./bin/docker-create"
 	},
 	"browserslist": [
-		"last 2 versions"
+		"last 2 versions",
+		"not ie <= 10",
+		"Firefox > 31",
+		"Chrome > 35",
+		"iOS > 9"
 	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ainsleyclark/mesh.git"
 	},
-	"author": "Ainsley Clark",
-	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/ainsleyclark/mesh/issues"
 	},

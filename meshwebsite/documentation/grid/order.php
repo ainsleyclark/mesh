@@ -29,7 +29,7 @@ $tableOfContents = [
 
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b1-light hash">Usage</h2>
+                    <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
                         The flex property order, allows us to change the visual order of content within the DOM, without touching the HTML. This comes in handy when you want to re-order content for different viewports.
                     </p>
@@ -111,7 +111,7 @@ $tableOfContents = [
 
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
-                    <h2 class="b-b1-light hash">Examples</h2>
+                    <h2 class="b-b-light hash">Examples</h2>
                     <h3 class="mt-3">Using first & last classes:</h3>
                     <p>
                         Here the second item that appears in the DOM (second-child) has the <code class="inline">order-tab-last</code> class which will move it across in the container to the end from tablet screen widths and upwards.
@@ -188,7 +188,7 @@ $tableOfContents = [
 
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
-                <h2 class="b-b1-light hash">Variations</h2>
+                <h2 class="b-b-light hash">Variations</h2>
 <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="order-first"&gt;&lt;/div&gt;
 &lt;div class="order-last"&gt;&lt;/div&gt;

@@ -30,7 +30,7 @@ $tableOfContents = [
 
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b1-light hash">Usage</h2>
+                    <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
                         The display property classes allows you to switch the css display property at each breakpoint, allowing you to hide and show elements in the DOM responsively. 
                     </p>
@@ -92,7 +92,7 @@ $tableOfContents = [
 
                 <!-- Hiding -->
                 <article class="section-scroll" id="hiding">
-                    <h2 class="b-b1-light hash">Hiding/showing</h2>
+                    <h2 class="b-b-light hash">Hiding/showing</h2>
                     <p class="secondary-lead">
                         Its common to hide elements in the DOM on mobile to create a faster user experience for mobiles and tablets. You can hide elements at various sizes with the display class using <code class="inline">.d-none</code>.
                         <br>Use the table below to help you with hiding and showing elements at various screen sizes. <strong>{type}</strong> can be any of the properties listed above.
@@ -156,7 +156,7 @@ $tableOfContents = [
 
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
-                    <h2 class="b-b1-light hash">Examples</h2>
+                    <h2 class="b-b-light hash">Examples</h2>
                     <h3 class="mt-3">Hiding elements:</h3>
                     <p>
                         Using our table above, we can apply the theory to something practical. Here the third element will only be visible on desktop screens.
@@ -204,7 +204,7 @@ $tableOfContents = [
 
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
-                <h2 class="b-b1-light hash">Variations</h2>
+                <h2 class="b-b-light hash">Variations</h2>
 <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="d-none"&gt;&lt;/div&gt;
 &lt;div class="d-inline"&gt;&lt;/div&gt;

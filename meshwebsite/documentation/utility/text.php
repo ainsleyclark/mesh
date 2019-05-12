@@ -32,7 +32,7 @@ $tableOfContents = [
 
                 <!-- Font Sizes -->
                 <article class="section-scroll" id="sizes">
-                    <h2 class="b-b1-light hash">Font sizes</h2>
+                    <h2 class="b-b-light hash">Font sizes</h2>
                     <p class="secondary-lead">
                         Default font sizes are shown below, margin is calculated automatically based on the size.
                     </p>
@@ -48,7 +48,7 @@ $tableOfContents = [
 
                 <!-- Font Sizes -->
                 <article class="section-scroll" id="sub">
-                <h2 class="b-b1-light hash">Sub headings</h2>
+                <h2 class="b-b-light hash">Sub headings</h2>
                     <p class="secondary-lead">A lead class is available by apply <code class="inline">.lead</code> to your element, this text is perfect for sub headings on pages and large paragraphs.</p>
                     <div class="text-cont bg-light br p-3">
                         <h1 class="normal-headings">Welcome to mesh</h1>
@@ -61,7 +61,7 @@ $tableOfContents = [
 
                 <!-- Unresponsive -->
                 <article class="section-scroll" id="utility">
-                    <h2 class="b-b1-light hash">Utility classes</h2>
+                    <h2 class="b-b-light hash">Utility classes</h2>
                     <p class="secondary-lead">
                         A number of text utility helper classes have been bundled with mesh to help with creating font styles quickly.
                     </p>
@@ -122,7 +122,7 @@ $tableOfContents = [
 
                 <!-- Responsive Text --> 
                 <article class="section-scroll" id="responsive">
-                    <h2 class="b-b1-light hash">Responsive text</h2>
+                    <h2 class="b-b-light hash">Responsive text</h2>
                     <p class="secondary-lead">Below is a demo of our responsive text class, you can target it by using the <code class="inline">t-responsive</code> class.</p>
                     <button class="btn btn-rounded btn-secondary" id="responsiveTextBtn">Turn responsive text off</button>
                     <div class="text-cont">
@@ -132,7 +132,7 @@ $tableOfContents = [
 
                 <!-- Alignment --> 
                 <article class="section-scroll" id="align">
-                    <h2 class="b-b1-light hash">Alignment</h2>
+                    <h2 class="b-b-light hash">Alignment</h2>
                     <p class="secondary-lead">
                         Text alignment is simple with mesh, you can adjust it responsively by using <code class="inline">t-{breakpoint}-{property}</code>  The breakpoint being optional and one of our five breakpoints, the properties being outlined below.
                     </p>
@@ -166,7 +166,7 @@ $tableOfContents = [
                             </tbody>
                         </table> 
                     </div>
-                    <h3>Responsive variations:</h3>
+                    <h3 class="mt-3">Responsive variations:</h3>
                     <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="t-center"&gt;&lt;/div&gt;
 &lt;div class="t-left"&gt;&lt;/div&gt;

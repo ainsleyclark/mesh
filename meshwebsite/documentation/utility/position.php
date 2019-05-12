@@ -30,7 +30,7 @@ $tableOfContents = [
 
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b1-light hash">Usage</h2>
+                    <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
                         Things can get complicated when trying to position elements with CSS which is why we have created handy utility classes to help you along your way. For more information on the position property, head over to <a href="https://medium.freecodecamp.org/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26" rel="noopener nofollow">Free Code Camp</a>.
                     </p>
@@ -80,7 +80,7 @@ $tableOfContents = [
 
                 <!-- Pinning -->
                 <article class="section-scroll" id="pinning">
-                    <h2 class="b-b1-light hash">Pinning</h2>
+                    <h2 class="b-b-light hash">Pinning</h2>
                     <p>You can also use the <code class="inline">pin</code> classes to fix elements to the top, right, bottom & left of the container/parent, see below:</p>
                     <table class="table-code w-100 t-left">
                         <col width="100">
@@ -130,7 +130,7 @@ $tableOfContents = [
 
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
-                    <h2 class="b-b1-light hash">Examples</h2>
+                    <h2 class="b-b-light hash">Examples</h2>
                     <h3 class="mt-3">Responsive Position:</h3>
                     <p>
                         Here, the purple element, the third that sits in the DOM will be positioned absolutley from desktop widths and above, whilst being static at mobile and tablet.
@@ -150,7 +150,7 @@ $tableOfContents = [
 
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
-                <h2 class="b-b1-light hash">Variations</h2>
+                <h2 class="b-b-light hash">Variations</h2>
 <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="p-relative"&gt;&lt;/div&gt;
 &lt;div class="p-absolute"&gt;&lt;/div&gt;

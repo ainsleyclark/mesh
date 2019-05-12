@@ -28,7 +28,7 @@ $tableOfContents = [
 
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b1-light hash">Usage</h2>
+                    <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
                         Sometimes it can be a pain writing out padding & margin responsively using CSS, which is why we have included handy utility classes to make things easier.
                     </p>
@@ -83,7 +83,7 @@ $tableOfContents = [
 
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
-                    <h2 class="b-b1-light hash">Examples</h2>
+                    <h2 class="b-b-light hash">Examples</h2>
                     <h3 class="mt-3">Responsive Padding:</h3>
                     <p>
                         A common usage for these utilitiy classes would be to extend with value of padding when screen size becomes larger. Below is an example of just that:

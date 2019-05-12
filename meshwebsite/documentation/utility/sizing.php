@@ -29,7 +29,7 @@ $tableOfContents = [
 
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b1-light hash">Usage</h2>
+                    <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
                         You can change the width and height of an element by using <code class="inline">{property}-{breakpoi</code>
                     </p>
@@ -153,7 +153,7 @@ $tableOfContents = [
 
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
-                    <h2 class="b-b1-light hash">Examples</h2>
+                    <h2 class="b-b-light hash">Examples</h2>
                     <h3 class="mt-3">Responsive Width:</h3>
                     <p>
                         Here these divs are 100% width at mobile then scale up at tablet to become 40% width of the container. Go ahead and resize the screen to see the effect.
@@ -190,7 +190,7 @@ $tableOfContents = [
 
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
-                <h2 class="b-b1-light hash">Variations</h2>
+                <h2 class="b-b-light hash">Variations</h2>
 <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="w-10"&gt;&lt;/div&gt;
 &lt;div class="w-20"&gt;&lt;/div&gt;

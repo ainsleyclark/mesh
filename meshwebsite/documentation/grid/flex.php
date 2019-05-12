@@ -34,7 +34,7 @@ $tableOfContents = [
                 
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b1-light hash">Usage</h2>
+                    <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead mb-1">
                         To start with, the container or parent of the items you want to be flexible needs the <code class="inline">d-flex</code> or <code class="inline">d-inline-flex</code> classes. Inline flex makes the flex container display inline, which is the only difference between the two.
                         <br>You are able to turn flex on and off at various viewports, this is done by using <code class="inline">d-{breakpoint}-flex</code>, see below.
@@ -74,7 +74,7 @@ $tableOfContents = [
 
                 <!-- Direction -->
                 <article class="section-scroll" id="direction">
-                    <h2 class="b-b1-light hash">Direction</h2>
+                    <h2 class="b-b-light hash">Direction</h2>
                     <p class="secondary-lead">
                         Flex direction establishes the main axis, which ultimately defines the direction the flex items are placed in the flex container. By default <code class="inline">d-flex</code> establishes a flex direction of row.
                     </p>
@@ -188,7 +188,7 @@ $tableOfContents = [
 
                 <!-- Justify content -->
                 <article class="section-scroll" id="justifyContent">
-                    <h2 class="b-b1-light hash">Justify content</h2>
+                    <h2 class="b-b-light hash">Justify content</h2>
                     <p class="secondary-lead">
                         This defines the alignment across the main axis, it allows us to distribute space between the flex content within the flex container. If the flex direction is row, the alignment will be on the x-axis, if flex direction is column, alignment will be on the y-axis. 
                         <br>Target justify content using <code class="inline">justify-content-{breakpoint}-{property}</code> where property is one of five listed below.
@@ -291,7 +291,7 @@ $tableOfContents = [
 
                 <!-- Align items -->
                 <article class="section-scroll" id="alignItems">
-                    <h2 class="b-b1-light hash">Align items</h2>
+                    <h2 class="b-b-light hash">Align items</h2>
                     <p class="secondary-lead">
                         This defines the alignment across the cross axis, basically it defines how how the flex items are laid out opposite from the main axis. So if flex direction is set to row, it will be vertically, is set to column, it will be horizontally. 
                         <br>Target justify content using <code class="inline">align-items-{breakpoint}-{property}</code> where property is one of five listed below.
@@ -394,7 +394,7 @@ $tableOfContents = [
 
                 <!-- Align self -->
                 <article class="section-scroll" id="alignSelf">
-                    <h2 class="b-b1-light hash">Align self</h2>
+                    <h2 class="b-b-light hash">Align self</h2>
                     <p class="secondary-lead">
                         This allows us to align one flex item on the cross axis - if flex direction is set to row, it will be vertically, is set to column, it will be horizontally. 
                         <br>Target justify content using <code class="inline">align-self-{breakpoint}-{property}</code> where property is one of five listed below.
@@ -522,7 +522,7 @@ $tableOfContents = [
 
                 <!-- Align content -->
                 <article class="section-scroll" id="alignContent">
-                    <h2 class="b-b1-light hash">Align content</h2>
+                    <h2 class="b-b-light hash">Align content</h2>
                     <p class="secondary-lead">
                         This allows us to align to line flex items when there is space left over in the cross axis, very similar to <code class="inline">justify-content</code>. If flex direction is set to row, it will be vertically, is set to column, it will be horizontally. 
                         <br>Target justify content using <code class="inline">align-content-{breakpoint}-{property}</code> where property is one of five listed below.
@@ -671,7 +671,7 @@ $tableOfContents = [
 
                 <!-- Wrap & fill -->
                 <article class="section-scroll" id="wrapFill">
-                    <h2 class="b-b1-light hash mb-3">Wrap & fill</h2>
+                    <h2 class="b-b-light hash mb-3">Wrap & fill</h2>
                     <h3>Wrap</h3>
                     <p class="secondary-lead mt-0">
                         By default, flex items will always fit on one line, but you can change this property with flex-wrap, which allows flex items to 'wrap' to the next line. 
@@ -785,7 +785,7 @@ $tableOfContents = [
 
                 <!-- Grow & shrink -->
                 <article class="section-scroll" id="growShrink">
-                    <h2 class="b-b1-light hash mb-3">Grow & shrink</h2>
+                    <h2 class="b-b-light hash mb-3">Grow & shrink</h2>
                     <h3>Grow</h3>
                     <p class="secondary-lead mt-0">
                         The grow property defines the ability for an a flex child to grow within the flex container, the default is set to 0. You can target the flex grow properties by using the <code class="inline">flex-{breakpoint}-grow-{amount}</code> class where the breakpoint is optional and the <strong>amount is either 0 or 1.</strong>

@@ -29,7 +29,7 @@ $tableOfContents = [
 
                <!-- Usage -->
                <article class="section-scroll" id="usage">
-                    <h2 class="pb-1 b-b1-light mb-1 hash">Usage</h2>
+                    <h2 class="pb-1 b-b-light mb-1 hash">Usage</h2>
                     <p>The mesh badge should be prefixed with the <code class="inline">.badge</code> class which will give you access to all of the classes outlined below.</p>
                     <p>They are designed to be used with the <code class="inline">&lt;span&gt;</code>  element.</p>
                     <p>You can have <strong>any combination</strong> of the classes listed below.</p>
@@ -47,7 +47,7 @@ $tableOfContents = [
 
                 <!-- Colored Badges -->
                 <article class="section-scroll py-2" id="colored">
-                    <h2 class="pb-1 b-b1-light mb-1 hash">Colored</h2>
+                    <h2 class="pb-1 b-b-light mb-1 hash">Colored</h2>
                     <p>You can add color classes to brighten up the badges by prefixing it with <code class="inline">.badge-{color}</code> class which will give you access to all of the classes outlined below.</p>
                     <div class="d-flex justify-content-center justify-content-desk-start flex-wrap">
                         <span class="badge badge-primary">Primary</span>
@@ -66,7 +66,7 @@ $tableOfContents = [
 
                  <!-- Sized Buttons -->
                  <article class="section-scroll py-2" id="sizes">
-                    <h2 class="pb-1 b-b1-light mb-1 hash">Sizes</h2>
+                    <h2 class="pb-1 b-b-light mb-1 hash">Sizes</h2>
                     <p>mesh Buttons come in three different sizes - small, default & large, simply add <code class="inline">btn-small</code> or <code class="inline">btn-large</code> classes to achieve the desired effect.</p>
                     <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-primary">hello<span class="badge badge-small">4</span></button>
@@ -93,7 +93,7 @@ $tableOfContents = [
 
                  <!-- Icon Buttons -->
                  <article class="section-scroll py-2" id="icons">
-                    <h2 class="pb-1 b-b1-light mb-1 hash">Icons</h2>
+                    <h2 class="pb-1 b-b-light mb-1 hash">Icons</h2>
                     <p>You are able to add font-awesome icons to any button by adding the <code class="inline">&lt;i&gt;</code> tag inside the <code class="inline">&lt;button&gt;</code>.
                     <br>A <code class="inline">&lt;span&gt;</code> tag <strong>is required</strong> for the text inside the button. This will give slight margin around the icon.
                     <br>Icon buttons are available in large, </p>
@@ -186,7 +186,7 @@ $tableOfContents = [
         
                 <!-- Rounded Buttons -->
                 <article class="section-scroll py-2" id="rounded">
-                    <h2 class="pb-1 b-b1-light mb-1 hash">Rounded</h2>
+                    <h2 class="pb-1 b-b-light mb-1 hash">Rounded</h2>
                     <p>Buttons can also look rounded with the <code class="inline">&lt;btn-rounded&gt;</code></p>
                     <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-rounded btn-primary">Rounded</button>
@@ -201,7 +201,7 @@ $tableOfContents = [
 
                 <!-- Loading Buttons -->
                 <article class="section-scroll py-2" id="loading">
-                    <h2 class="pb-1 b-b1-light mb-1 hash">Loading</h2>
+                    <h2 class="pb-1 b-b-light mb-1 hash">Loading</h2>
                     <p>A loading class can be added to any button to add an animated spinner to the button using the <code class="inline">:after</code> pseudo selector. Typically this class will be used with Javascript, just simply add the <code class="inline">btn-loading</code> class, which will in turn, make the text transparen and add the spinner. The size of the button will remained the same.<br>
                     <strong>Note:</strong> Any color classes can be added to the loading buttons.</p>
                     <div class="button-cont d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">

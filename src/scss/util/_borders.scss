@@ -3,18 +3,17 @@
 //Add borders & border radius & colors
 // ==========================================================================
 
-@each $size in ($border-width, $border-width-2, $border-width-3) {
-	$class-value: str-replace(#{$size}, 'px', '');
-	.b-#{$class-value} {
-		border: #{$size} solid map-get($border-colors, 'default') !important;
-	}
-	.b-#{$class-value}-light {
-		border: #{$size} solid map-get($border-colors, 'light') !important;
-	}
-	.b-#{$class-value}-dark {
-		border: #{$size} solid map-get($border-colors, 'dark') !important;
-	}
+.b {
+	border: #{$border-width} solid map-get($border-colors, 'default') !important;
+}
+.b-light {
+	border: #{$border-width} solid map-get($border-colors, 'light') !important;
+}
+.b-dark {
+	border: #{$border-width} solid map-get($border-colors, 'dark') !important;
+}
 
+@each $color-abbrev, $color in $border-colors {
 	$positions: (
 		top: t,
 		right: r,
@@ -22,16 +21,14 @@
 		left: l
 	);
 
-	@each $color-abbrev, $color in $border-colors {
-		@each $property, $border-abbrev in $positions {
-			@if ($color-abbrev == 'default') {
-				.b-#{$border-abbrev}#{$class-value} {
-					border-#{$property}: #{$size} solid $color !important;
-				}
-			} @else {
-				.b-#{$border-abbrev}#{$class-value}-#{$color-abbrev} {
-					border-#{$property}: #{$size} solid $color !important;
-				}
+	@each $property, $border-abbrev in $positions {
+		@if ($color-abbrev == 'default') {
+			.b-#{$border-abbrev} {
+				border-#{$property}: #{$border-width} solid $color !important;
+			}
+		} @else {
+			.b-#{$border-abbrev}-#{$color-abbrev} {
+				border-#{$property}: #{$border-width} solid $color !important;
 			}
 		}
 	}

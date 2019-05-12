@@ -506,7 +506,8 @@ section.hero .home-illusration {
   text-shadow: 0 1px white;
 }
 
-.spacing-page .spacing-table .column:nth-child(1), .spacing-page .spacing-table .column:nth-child(3) {
+.spacing-page .spacing-table .column:nth-child(1),
+.spacing-page .spacing-table .column:nth-child(3) {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -520,6 +521,19 @@ section.hero .home-illusration {
 
 .text-page .font-size-2 {
   font-size: 28px;
+}
+
+.borders-page .border-radius-demo .text {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.borders-page .h-300 {
+  height: 300px;
 }
 
 .button-page .button-cont {

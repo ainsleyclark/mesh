@@ -9,7 +9,7 @@ $activeClass = $pageData['activePage'];
     <ul class="main-list color-black">
         <!-- Getting Started -->
         <li class="my-4">
-            <div class="nav-header b-b1-light pb-2">Getting Started</div>
+            <div class="nav-header b-b-light pb-2">Getting Started</div>
             <ul class="sub-list mt-1">
                 <a class="<?php if($activeClass == 'introduction') echo 'active'; ?>" href="/documentation/getting-started"><li>Introduction</li></a>
                 <a class="<?php if($activeClass == 'installation') echo 'active'; ?>" href="/documentation/getting-started/installation.php"><li>Installation</li></a>
@@ -19,7 +19,7 @@ $activeClass = $pageData['activePage'];
         </li>
         <!-- Grid -->
         <li class="my-4">
-        <div class="nav-header b-b1-light pb-2">Grid</div>
+        <div class="nav-header b-b-light pb-2">Grid</div>
             <ul class="sub-list mt-1">
                 <a class="<?php if($activeClass == 'grid') echo 'active'; ?>" href="/documentation/grid/grid.php"><li>Grid</li></a>
                 <a class="<?php if($activeClass == 'flex') echo 'active'; ?>" href="/documentation/grid/flex.php"><li>Flex</li></a>
@@ -29,7 +29,7 @@ $activeClass = $pageData['activePage'];
         </li>
         <!-- Utility -->
         <li class="my-4">
-            <div class="nav-header b-b1-light pb-2">Utility</div>
+            <div class="nav-header b-b-light pb-2">Utility</div>
             <ul class="sub-list mt-1">
                 <a class="<?php if($activeClass == 'spacing') echo 'active'; ?>" href="/documentation/utility/spacing.php"><li>Spacing</li></a>
                 <a class="<?php if($activeClass == 'position') echo 'active'; ?>" href="/documentation/utility/position.php"><li>Position</li></a>
@@ -45,7 +45,7 @@ $activeClass = $pageData['activePage'];
         </li>
         <!-- Components -->
         <li class="my-4">
-            <div class="nav-header b-b1-light pb-2">Components</div>
+            <div class="nav-header b-b-light pb-2">Components</div>
             <ul class="sub-list mt-1">
                 <a class="<?php if($activeClass == 'alert') echo 'active'; ?>" href="/documentation/components/alert.php"><li>Alert</li></a>
                 <a class="<?php if($activeClass == 'cards') echo 'active'; ?>" href="/documentation/components/badges.php"><li>Badges & Tags</li></a>

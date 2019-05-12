@@ -32,7 +32,7 @@ $tableOfContents = [
 
                 <!-- How it works -->
                 <article class="section-scroll" id="howItWorks">
-                    <h2 class="b-b1-light hash">How it works</h2>
+                    <h2 class="b-b-light hash">How it works</h2>
                     <p class="secondary-lead">mesh uses conventional containers, rows and columns to layout and align content, it's built with flex box and is fully responsive. Here's an example:</p>
 <pre class="highlight"><code class="html">&lt;div class="container"&gt;
     &lt;div class="row"&gt;
@@ -53,13 +53,13 @@ $tableOfContents = [
 
                 <!-- Grid options -->
                 <article class="section-scroll" id="gridOptions">
-                    <h2 class="b-b1-light hash">Grid options</h2>
+                    <h2 class="b-b-light hash">Grid options</h2>
                     <p></p>
                 </article>
 
                 <!-- Containers -->
                 <article class="section-scroll" id="containers">
-                    <h2 class="b-b1-light hash">Containers</h2>
+                    <h2 class="b-b-light hash">Containers</h2>
                     <p class="secondary-lead">A container is the wrapper for a row (more on that later) and defines the width of your content. It can be at fixed size or full width, and will gracefully become smaller as screen size gets smaller.</p>
                     <div class="text-cont">
                         <h3>Container options:</h3>
@@ -76,7 +76,7 @@ $tableOfContents = [
 
                 <!-- Rows -->
                 <article class="section-scroll" id="rows">
-                    <h2 class="b-b1-light hash">Rows</h2>
+                    <h2 class="b-b-light hash">Rows</h2>
                     <p class="secondary-lead">
                         A <strong>row is the container for columns</strong>, it lives inside a container. It is 100% width (of container) and uses flexbox to align columns. Naturally it has no padding but has negative margins on the x axis to counteract the gaps set on the columns.
                         <br>Add the <code class="inline">row</code> class to a <code class="inline">div</code> to enable this behaviour.
@@ -132,7 +132,7 @@ $tableOfContents = [
 
                 <!-- Columns -->
                 <article class="section-scroll" id="columns">
-                    <h2 class="b-b1-light hash">Columns</h2>
+                    <h2 class="b-b-light hash">Columns</h2>
                     <p class="secondary-lead">
                         A column is where your content lives, <strong>it lives inside a row</strong>, there can be a maximum of 12 columns in a row, if there a more they will wrap to the next line. Of course you can overwrite this behaviour by using the <code class="inline">flex-nowrap</code> class.
                         <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12. 
@@ -377,7 +377,7 @@ $tableOfContents = [
 
                 <!-- Offset -->
                 <article class="section-scroll" id="offset">
-                    <h2 class="b-b1-light hash">Offset</h2>
+                    <h2 class="b-b-light hash">Offset</h2>
                     <p class="secondary-lead">
                         Offsetting is a way to push columns along in the row. Columns can be offset in a responsive manner, meaning you can offset columns dependent on viewport. 
                         <br>To offset use <code class="inline">offset-{breakpoint}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12.
