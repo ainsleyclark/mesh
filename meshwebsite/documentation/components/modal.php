@@ -59,6 +59,7 @@ $tableOfContents = [
                 <a href="#example1" class="btn btn-secondary nohover c-white">Open example #1</a>
 
                 <div class="modal" id="example1" aria-hidden="true">
+                    <div class="modal-overlay"></div>
                     <div class="modal-container">
                         <div class="modal-header">
 
