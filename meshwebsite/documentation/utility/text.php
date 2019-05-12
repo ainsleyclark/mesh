@@ -203,16 +203,16 @@ $tableOfContents = [
 
 <?php include_once('../../partials/footer.php') ?>
 
-<!-- =======================
-    Page specific scripts
-    ======================= -->
-    <?php function scripts() { ?>
-    <script>   
-    //Turn responsive text on & off
-    document.querySelector('#responsiveTextBtn').addEventListener('click', function() {
-        this.innerHTML = this.innerHTML.includes('off') ? "Turn responsive text on" : "Turn responsive text off";
-        document.querySelector('#responsiveText').classList.toggle('t-responsive');
-        document.querySelector('#responsiveText').classList.toggle('font-size-2');
-    });
-    </script>
+<?php function scripts() { ?>
+
+<script>   
+//Turn responsive text on & off
+document.querySelector('#responsiveTextBtn').addEventListener('click', function() {
+    this.innerHTML = this.innerHTML.includes('off') ? "Turn responsive text on" : "Turn responsive text off";
+    let responsiveText = document.querySelector('#responsiveText');
+    responsiveText.classList.toggle('t-responsive');
+    responsiveText.classList.toggle('font-size-2');
+});
+</script>
+
 <?php } ?>

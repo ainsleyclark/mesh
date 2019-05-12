@@ -16,3 +16,10 @@
 		}
 	}
 }
+
+//Clearfix class
+.clearfix::after {
+	display: block;
+	clear: both;
+	content: "";
+}

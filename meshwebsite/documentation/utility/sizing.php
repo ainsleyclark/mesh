@@ -154,7 +154,7 @@ $tableOfContents = [
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
                     <h2 class="b-b-light hash">Examples</h2>
-                    <h3 class="mt-3">Responsive Width:</h3>
+                    <h3 class="mt-3">Responsive width:</h3>
                     <p>
                         Here these divs are 100% width at mobile then scale up at tablet to become 40% width of the container. Go ahead and resize the screen to see the effect.
                     </p>
@@ -170,7 +170,7 @@ $tableOfContents = [
                     </div>
                     <pre class="highlight"><code class="html">&lt;div class="w-100 w-tab-40"&gt;w-100 w-tab-40&lt;/div&gt;
 &lt;div class="w-100 w-tab-40"&gt;w-100 w-tab-40&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-                    <h3 class="mt-3">Responsive Height:</h3>
+                    <h3 class="mt-3">Responsive height:</h3>
                     <p>
                         Here the first div is 60% height of the container and then moves down to 40% for desktop, the last div is doing the reverse.
                     </p>

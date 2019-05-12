@@ -131,7 +131,7 @@ $tableOfContents = [
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
                     <h2 class="b-b-light hash">Examples</h2>
-                    <h3 class="mt-3">Responsive Position:</h3>
+                    <h3 class="mt-3">Responsive position:</h3>
                     <p>
                         Here, the purple element, the third that sits in the DOM will be positioned absolutley from desktop widths and above, whilst being static at mobile and tablet.
                     </p>

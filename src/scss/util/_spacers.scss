@@ -16,6 +16,7 @@
 	//Rid of px in $value
 	$class-value: str-replace(#{$value}, 'px', '');
 	.spacer-#{$class-value} {
-		height: px-to-rem($value) !important;
+		// height: px-to-rem($value) !important;
+		height: $value !important;
 	}
 }

@@ -84,7 +84,7 @@ $tableOfContents = [
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
                     <h2 class="b-b-light hash">Examples</h2>
-                    <h3 class="mt-3">Responsive Padding:</h3>
+                    <h3 class="mt-3">Responsive padding:</h3>
                     <p>
                         A common usage for these utilitiy classes would be to extend with value of padding when screen size becomes larger. Below is an example of just that:
                     </p>
