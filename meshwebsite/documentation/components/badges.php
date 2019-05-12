@@ -27,8 +27,8 @@ $tableOfContents = [
                 <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
 
-               <!-- Usage -->
-               <article class="section-scroll" id="usage">
+                <!-- Usage -->
+                <article class="section-scroll" id="usage">
                     <h2 class="pb-1 b-b1-light mb-1 hash">Usage</h2>
                     <p>The mesh badge should be prefixed with the <code class="inline">.badge</code> class which will give you access to all of the classes outlined below.</p>
                     <p>They are designed to be used with the <code class="inline">&lt;span&gt;</code>  element.</p>
