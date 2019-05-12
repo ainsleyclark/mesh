@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 html {
   box-sizing: border-box;
@@ -25,14 +26,6 @@ a,
 a:visited {
   color: #3c4858;
   text-decoration: none;
-}
-
-a {
-  transition: color 0.2s;
-}
-
-a:hover, a:active, a:focus {
-  color: #ff2451;
 }
 
 ul {
@@ -5196,7 +5189,7 @@ button[data-tool-tip] {
   white-space: nowrap;
   vertical-align: middle;
   height: auto;
-  margin-left: 10px;
+  margin-right: 5px;
 }
 
 .badge-white, .badge-black, .badge-dark, .badge-muted, .badge-light, .badge-primary, .badge-secondary, .badge-success, .badge-info, .badge-warning, .badge-danger, .badge-link {
@@ -5267,6 +5260,70 @@ button[data-tool-tip] {
 .badge-rounded {
   border-radius: 500px;
   padding: 5px 12px;
+}
+
+.modal {
+  display: none;
+}
+
+.modal:target {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999;
+}
+
+.modal:target:before {
+  opacity: 1;
+}
+
+.modal:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.modal .close {
+  position: relative;
+  display: block;
+}
+
+.modal .close:after {
+  right: -1rem;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  content: '×';
+  cursor: pointer;
+}
+
+.modal .close:before {
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  content: '';
+  cursor: default;
 }
 
 .table {

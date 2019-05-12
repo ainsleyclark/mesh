@@ -65,23 +65,23 @@ Please email info@ainsleyclark.com if you have any questions, I will be more tha
 
 ### How to contribute:
 Any ideas are welcome. The majority of the utility classes are done so UI components are needed (remember CSS only!), including: 
-- ~~Alerts~~ @ainsleyc
-- ~~Cards~~ @kassuro
-- ~~Buttons~~ -- @nicholsk 
-- ~~Modals~~ -- @ainsleyc
-- Toasts
-- Chips
-- ~~Forms~~ --VersusTune
-- ~~Nav~~ -- @Stefario
-- Header
+- ~~Alert~~ -- @ainsleyc
+- ~~Badges~~ -- @nicholsk
+- Breadcrumb
+- ~~Button~~ -- @nicholsk 
+- ~~Button~~ -- @ainsleyc & @nicholsk
+- ~~Card~~ -- @kassuro
+- Collapse 
+- ~~Form~~ -- @VersusTune
+- ~~Header~~ -- @Stefario
 - Hero Section
-- Tabs
-- ~~Tooltip~~ -- @devonddunn
-- ~~Accordian~~ -- @devonddunn
-- ~~Icons & Social~~ -- @nicholsk
-- Breadcrumbs
+- List
+- ~~Modal~~ -- @ainsleyc
+- ~~Nav~~ -- @Stefario
 - Pagination
-- Pills & Badges
+- Progress
+- ~~Toasts~~
+- ~~Tooltip~~ -- @devonddunn
 
 **Notes:**
 - Please do not edit ***mesh.css*** directly, they are automatically generated. 

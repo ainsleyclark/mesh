@@ -37,7 +37,7 @@ $pageData = [
     <section class="hero d-flex align-items-center">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-desk-5 order-last order-desk-first">
+                <div class="col-12 col-desk-6 col-hd-5 order-last order-desk-first">
                     <div class="d-flex justify-content-center align-items-center w-100 flex-column">
                         <div class="text-cont t-center t-desk-left">
                             <h1 class="my-0">meshCSS</h1>
@@ -47,7 +47,7 @@ $pageData = [
                         </div>
                     </div>
                 </div>
-                <div class="col-10 col-desk-7">
+                <div class="col-10 col-desk-6 col-hd-7">
                     <div class="img-cont">
                         <img class="home-illustration" src="assets/svg/home-illustration.svg">
                     </div>

@@ -74,7 +74,6 @@ $tableOfContents = [
                         </div>
                     </div>
                 </article>
-
                 <!-- Examples -->
                 <article class="section-scroll" id="examples">
                     <h2 class="b-b-light hash">Examples</h2>

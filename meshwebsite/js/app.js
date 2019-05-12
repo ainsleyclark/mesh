@@ -120,7 +120,7 @@ let changeToTick = function(el) {
 /* Scroll to Anchor */
 /***********************************************************************************************/
 
-document.body.addDelegatedEventListener('click', 'a[href^="#"]', function(e, el) {
+document.body.addDelegatedEventListener('click', '.smallnav a[href^="#"]', function(e, el) {
 	e.preventDefault()
 
 	let headerOffset = -400

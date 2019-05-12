@@ -206,6 +206,7 @@ $card-default-content-font-size: 16px !default;
 
 // 14. Table
 // ==========================================================================
+
 $table-font-size: 16px !default;
 $table-heading-font-size: 18px !default;
 $table-padding: 10px 15px !default;
@@ -215,6 +216,12 @@ $table-hover-color: #aaffaa !default;
 
 // 15. Toast
 // ==========================================================================
+
 $toast-width: 256px !default;
 $toast-width-large: 512px !default;
 $toast-padding: 12px 30px !default;
+
+// 16. Modal
+// ==========================================================================
+
+$modal-background-color: rgba(0,0,0,.2);

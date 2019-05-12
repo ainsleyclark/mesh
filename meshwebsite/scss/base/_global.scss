@@ -21,3 +21,11 @@ html {
 main {
 	position: relative;
 }
+
+a:not(.nohover) {
+	transition: color 0.2s;
+
+	@include on-event {
+		color: color(primary);
+	}
+}

@@ -26,14 +26,6 @@ a:visited {
 	text-decoration: none;
 }
 
-a {
-	transition: color 0.2s;
-
-	@include on-event {
-		color: color(primary);
-	}
-}
-
 ul {
 	margin: 0;
 	padding: 0;

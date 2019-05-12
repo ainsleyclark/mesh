@@ -27,14 +27,6 @@ a:visited {
   text-decoration: none;
 }
 
-a {
-  transition: color 0.2s;
-}
-
-a:hover, a:active, a:focus {
-  color: #ff2451;
-}
-
 ul {
   margin: 0;
   padding: 0;

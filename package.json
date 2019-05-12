@@ -19,10 +19,11 @@
 	},
 	"browserslist": [
 		"last 2 versions",
-		"not ie <= 10",
-		"Firefox > 31",
-		"Chrome > 35",
-		"iOS > 9"
+		"Chrome >= 30",
+		"Firefox >= 30",
+		"not ie 10",
+		"not ie_mob 10",
+		"Safari >= 9"
 	],
 	"repository": {
 		"type": "git",

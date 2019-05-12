@@ -39,6 +39,14 @@ main {
   position: relative;
 }
 
+a:not(.nohover) {
+  transition: color 0.2s;
+}
+
+a:not(.nohover):hover, a:not(.nohover):active, a:not(.nohover):focus {
+  color: color(primary);
+}
+
 .hash {
   padding-left: 30px;
 }
@@ -321,7 +329,7 @@ header.primary nav.primary ul .download:hover svg path {
 .sidenav .sub-list .active::before {
   content: '';
   position: absolute;
-  top: 15px;
+  top: 13px;
   left: -25px;
   width: 15px;
   border-top: 1px solid #ff2451;
@@ -506,7 +514,8 @@ section.hero .home-logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  max-width: 70%;
+  height: auto;
 }
 
 section.hero .home-illusration {
