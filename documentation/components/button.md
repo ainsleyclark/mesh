@@ -11,16 +11,16 @@
 
 ## To add color to buttons 
 - add one of these classes
-- ``` "btn primary" ``` - Red
-- ``` "btn info"    ``` - light Blue
-- ``` "btn success" ``` - Light Green
-- ``` "btn warning" ``` - Orange
-- ``` "btn danger"  ``` - Red Orange
-- ``` "btn link"    ``` - Dark Blue
-- ``` "btn disabled" ```- White background disabled
+- ``` "btn-primary" ``` - Red
+- ``` "btn-info"    ``` - Light Blue
+- ``` "btn-success" ``` - Light Green
+- ``` "btn-warning" ``` - Orange
+- ``` "btn-danger"  ``` - Red Orange
+- ``` "btn-link"    ``` - Dark Blue
+- ``` "btn-disabled" ```- White background disabled
 #### Example:
 ```
-<button class="btn primary">
+<button class="btn-primary">
 </button>
 ```
 
@@ -29,7 +29,7 @@
 - This will create outlined border and letters in primary color with white background
 #### Example:
 ```
-<button class="btn outline primary"
+<button class="btn outline-primary"
 </button>
 ```
 
@@ -40,7 +40,7 @@
 
 #### Example:
 ```
-<button class="btn large">
+<button class="btn btn-large">
 </button>
 ```
 
@@ -49,7 +49,7 @@
 - gives border-radius 600px 
 #### Example:
 ```
-<button class="btn rounded primary">
+<button class="btn btn-rounded btn-primary">
 </button>
 ```
 
@@ -57,7 +57,7 @@
 - add ``` loading ``` to class field
 #### Example:
 ```
-<button class="btn loading primary">
+<button class="btn btn-loading btn-primary">
 </button>
 ```
 
@@ -66,7 +66,7 @@
 - creates a full width button
 #### Example:
 ```
-<button class="btn block primary">
+<button class="btn btn-block btn-primary">
 </button>
 ```
 

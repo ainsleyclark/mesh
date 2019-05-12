@@ -1,16 +1,18 @@
 .badge {
 	display: inline-block;
-	position: relative;
-	padding: 5px 12px;
+	padding: $badge-padding;
 	background-color: #999;
 	color: #fff;
-	border: 0;
-	outline: none;
-	border-radius: 10rem;
-	font-size: 10px;
+	border-radius: 3px;
+	font-size: $badge-font-size;
 	text-transform: uppercase;
+	font-weight: $badge-font-weight;
+	// line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
 	height: auto;
-	user-select: none;
+	margin-left: 10px;
 }
 
 %badge-properties {
@@ -24,5 +26,12 @@
 			@extend %badge-properties;
 			@include badge-colored($hex);
 		}
+	}
+}
+
+@if $badge-enable-rounded {
+	.badge-rounded {
+		border-radius: 500px;
+		padding: $badge-padding;
 	}
 }

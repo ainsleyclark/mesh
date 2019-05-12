@@ -3566,123 +3566,183 @@ small {
   white-space: nowrap !important;
 }
 
-@media only screen and (min-width: 402px) {
+@media only screen and (min-width: 388px) {
   .t-responsive {
     font-size: 1.224rem;
   }
 }
 
-@media only screen and (min-width: 444px) {
+@media only screen and (min-width: 416px) {
   .t-responsive {
     font-size: 1.248rem;
   }
 }
 
-@media only screen and (min-width: 486px) {
+@media only screen and (min-width: 444px) {
   .t-responsive {
     font-size: 1.272rem;
   }
 }
 
-@media only screen and (min-width: 528px) {
+@media only screen and (min-width: 472px) {
   .t-responsive {
     font-size: 1.296rem;
   }
 }
 
-@media only screen and (min-width: 570px) {
+@media only screen and (min-width: 500px) {
   .t-responsive {
     font-size: 1.32rem;
   }
 }
 
-@media only screen and (min-width: 612px) {
+@media only screen and (min-width: 528px) {
   .t-responsive {
     font-size: 1.344rem;
   }
 }
 
-@media only screen and (min-width: 654px) {
+@media only screen and (min-width: 556px) {
   .t-responsive {
     font-size: 1.368rem;
   }
 }
 
-@media only screen and (min-width: 696px) {
+@media only screen and (min-width: 584px) {
   .t-responsive {
     font-size: 1.392rem;
   }
 }
 
-@media only screen and (min-width: 738px) {
+@media only screen and (min-width: 612px) {
   .t-responsive {
     font-size: 1.416rem;
   }
 }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 640px) {
   .t-responsive {
     font-size: 1.44rem;
   }
 }
 
-@media only screen and (min-width: 822px) {
+@media only screen and (min-width: 668px) {
   .t-responsive {
     font-size: 1.464rem;
   }
 }
 
-@media only screen and (min-width: 864px) {
+@media only screen and (min-width: 696px) {
   .t-responsive {
     font-size: 1.488rem;
   }
 }
 
-@media only screen and (min-width: 906px) {
+@media only screen and (min-width: 724px) {
   .t-responsive {
     font-size: 1.512rem;
   }
 }
 
-@media only screen and (min-width: 948px) {
+@media only screen and (min-width: 752px) {
   .t-responsive {
     font-size: 1.536rem;
   }
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 780px) {
   .t-responsive {
     font-size: 1.56rem;
   }
 }
 
-@media only screen and (min-width: 1032px) {
+@media only screen and (min-width: 808px) {
   .t-responsive {
     font-size: 1.584rem;
   }
 }
 
-@media only screen and (min-width: 1074px) {
+@media only screen and (min-width: 836px) {
   .t-responsive {
     font-size: 1.608rem;
   }
 }
 
-@media only screen and (min-width: 1116px) {
+@media only screen and (min-width: 864px) {
   .t-responsive {
     font-size: 1.632rem;
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 892px) {
   .t-responsive {
     font-size: 1.656rem;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 920px) {
   .t-responsive {
     font-size: 1.68rem;
+  }
+}
+
+@media only screen and (min-width: 948px) {
+  .t-responsive {
+    font-size: 1.704rem;
+  }
+}
+
+@media only screen and (min-width: 976px) {
+  .t-responsive {
+    font-size: 1.728rem;
+  }
+}
+
+@media only screen and (min-width: 1004px) {
+  .t-responsive {
+    font-size: 1.752rem;
+  }
+}
+
+@media only screen and (min-width: 1032px) {
+  .t-responsive {
+    font-size: 1.776rem;
+  }
+}
+
+@media only screen and (min-width: 1060px) {
+  .t-responsive {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1088px) {
+  .t-responsive {
+    font-size: 1.824rem;
+  }
+}
+
+@media only screen and (min-width: 1116px) {
+  .t-responsive {
+    font-size: 1.848rem;
+  }
+}
+
+@media only screen and (min-width: 1144px) {
+  .t-responsive {
+    font-size: 1.872rem;
+  }
+}
+
+@media only screen and (min-width: 1172px) {
+  .t-responsive {
+    font-size: 1.896rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .t-responsive {
+    font-size: 1.92rem;
   }
 }
 
@@ -5089,17 +5149,18 @@ button[data-tool-tip] {
 
 .badge {
   display: inline-block;
-  position: relative;
   padding: 5px 12px;
   background-color: #999;
   color: #fff;
-  border: 0;
-  outline: none;
-  border-radius: 10rem;
+  border-radius: 3px;
   font-size: 10px;
   text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
   height: auto;
-  user-select: none;
+  margin-left: 10px;
 }
 
 .badge-white, .badge-black, .badge-dark, .badge-muted, .badge-light, .badge-primary, .badge-secondary, .badge-success, .badge-info, .badge-warning, .badge-danger, .badge-link {
@@ -5165,6 +5226,11 @@ button[data-tool-tip] {
 .badge-link {
   color: #ffffff;
   background-color: #3763d4;
+}
+
+.badge-rounded {
+  border-radius: 500px;
+  padding: 5px 12px;
 }
 
 .table {
