@@ -1,0 +1,19 @@
+ip: 192.168.10.11
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /path-to-folder
+        to: /home/vagrant/mesh
+sites:
+    -
+        map: meshcss.com
+        to: /home/vagrant/mesh/meshwebsite
+databases:
+    - homestead
+name: mesh
+hostname: mesh
