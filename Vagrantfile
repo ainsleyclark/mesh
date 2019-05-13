@@ -1,40 +1,53 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant.configure("2") do |config|
+require 'json'
+require 'yaml'
 
-  # Box Settings
-  config.vm.box = "ubuntu/trusty64"
+VAGRANTFILE_API_VERSION ||= "2"
+confDir = $confDir ||= File.expand_path("vendor/laravel/homestead", File.dirname(__FILE__))
 
-  # Provider Settings
-  config.vm.provider "virtualbox" do |vb|
-    vb.memory = 2048
-    vb.cpus = 2
-  end
+homesteadYamlPath = File.expand_path("Homestead.yaml", File.dirname(__FILE__))
+homesteadJsonPath = File.expand_path("Homestead.json", File.dirname(__FILE__))
+afterScriptPath = "after.sh"
+customizationScriptPath = "user-customizations.sh"
+aliasesPath = "aliases"
 
-  # Network Settings
-  # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
-  config.vm.network "private_network", ip: "192.168.33.10"
-  # config.vm.network "public_network"
+require File.expand_path(confDir + '/scripts/homestead.rb')
 
-  # Folder Settings
-  config.vm.synced_folder "./meshwebsite/", "/var/www/html"
-  
-  # Provision Settings
-  config.vm.provision "shell", inline: <<-SHELL
-    apt-get update
-    apt-get upgrade
-    apt-get install -y git
-    apt-get install -y apache2
-    a2enmod rewrite
-    add-apt-repository ppa:ondrej/php
-    apt-get update
-    apt-get install -y php7.3
-    apt-get -y libapache2-mod-php7.3
-    service apache2 restart
-    apt-get install -y php7.3-common
-    apt-get install -y php7.3-mcrypt
-    apt-get install -y php7.3-zip
-    sudo service apache2 restart
-  SHELL
+Vagrant.require_version '>= 1.9.0'
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+    if File.exist? aliasesPath then
+        config.vm.provision "file", source: aliasesPath, destination: "/tmp/bash_aliases"
+        config.vm.provision "shell" do |s|
+            s.inline = "awk '{ sub(\"\r$\", \"\"); print }' /tmp/bash_aliases > /home/vagrant/.bash_aliases"
+        end
+    end
+
+    if File.exist? homesteadYamlPath then
+        settings = YAML::load(File.read(homesteadYamlPath))
+    elsif File.exist? homesteadJsonPath then
+        settings = JSON::parse(File.read(homesteadJsonPath))
+    else
+        abort "Homestead settings file not found in " + File.dirname(__FILE__)
+    end
+
+    Homestead.configure(config, settings)
+
+    if File.exist? afterScriptPath then
+        config.vm.provision "shell", path: afterScriptPath, privileged: false, keep_color: true
+    end
+
+    if File.exist? customizationScriptPath then
+        config.vm.provision "shell", path: customizationScriptPath, privileged: false, keep_color: true
+    end
+
+    if Vagrant.has_plugin?('vagrant-hostsupdater')
+        config.hostsupdater.aliases = settings['sites'].map { |site| site['map'] }
+    elsif Vagrant.has_plugin?('vagrant-hostmanager')
+        config.hostmanager.enabled = true
+        config.hostmanager.manage_host = true
+        config.hostmanager.aliases = settings['sites'].map { |site| site['map'] }
+    end
 end
