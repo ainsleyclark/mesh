@@ -5281,12 +5281,14 @@ button[data-tool-tip] {
 }
 
 .modal {
+  overflow-y: auto;
   display: none;
 }
 
 .modal:target {
   position: fixed;
-  display: block;
+  display: flex;
+  align-items: start;
   top: 0;
   right: 0;
   bottom: 0;
@@ -5357,7 +5359,7 @@ button[data-tool-tip] {
 }
 
 .modal-centered .modal-container {
-  margin: 0 auto;
+  margin: auto;
 }
 
 .table {

@@ -29,6 +29,7 @@
 
 .modal {
 	$self: #{&};
+	overflow-y: auto;
 
 	///!SET TO NONE HERE
 	display: none;
@@ -36,14 +37,14 @@
 	///Target - make modal appear
 	&:target {
 		position: fixed;
-		display: block;
+		display: flex;
+		align-items: start;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		z-index: 9999999;
 	}
-
 
 	&-container {
 		max-width: 500px;
@@ -116,7 +117,6 @@
 .modal-centered {
 
 	.modal-container {
-		
-		margin: 0 auto;
+		margin: auto;
 	}
 }

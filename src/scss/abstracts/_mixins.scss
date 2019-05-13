@@ -62,6 +62,35 @@
 	#{$property}: $pxValue / $standard-size + rem; // sass-lint:disable-line no-duplicate-properties
 }
 
+// Breakpoint Mixins
+// ==========================================================================
+
+/// @author Ainsley Clark
+/// @return mediaquery based on breakpoint set in _variables.scss
+@mixin media-mob {
+	@media (min-width: #{$grid-breakpoint-mob}) {
+		@content;
+	}
+}
+
+@mixin media-tab {
+	@media (min-width: #{$grid-breakpoint-tab}) {
+		@content;
+	}
+}
+
+@mixin media-desk {
+	@media (min-width: #{$grid-breakpoint-desk}) {
+		@content;
+	}
+}
+
+@mixin media-hd {
+	@media (min-width: #{$grid-breakpoint-hd}) {
+		@content;
+	}
+}
+
 // Event Wrapper
 // ==========================================================================
 

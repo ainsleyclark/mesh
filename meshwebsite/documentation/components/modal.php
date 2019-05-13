@@ -96,6 +96,35 @@ $tableOfContents = [
                     </div>
                 </div>
 
+                <a href="#example3" class="btn btn-secondary nohover c-white">Open example #3</a>
+
+                <div class="modal modal-centered" id="example3" aria-hidden="true">
+                    <div class="modal-container">
+                        <div class="modal-header">
+                            <h3>Modal Title</h3>
+                            <a href="#" class="close" rel="nofollow"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div class="modal-body">
+                            <p>An old man walked across the beach until he came across a young boy throwing something into the breaking waves. Upon closer inspection, the old man could see that the boy was tossing stranded starfish from the sandy beach, back into the ocean.</p>
+                            <p>“What are you doing, young man?” He asked. “If the starfish are still on the beach when the sun rises, they will die,” the boy answered. “That is ridiculous. There are thousands of miles of beach and millions of starfish. It doesn’t matter how many you throw in; you can’t make a difference.”</p>
+                            <p>“It matters to this one,” the boy said as he threw another starfish into the waves. “And it matters to this one.”</p>
+                            <p>An old man walked across the beach until he came across a young boy throwing something into the breaking waves. Upon closer inspection, the old man could see that the boy was tossing stranded starfish from the sandy beach, back into the ocean.</p>
+                            <p>“What are you doing, young man?” He asked. “If the starfish are still on the beach when the sun rises, they will die,” the boy answered. “That is ridiculous. There are thousands of miles of beach and millions of starfish. It doesn’t matter how many you throw in; you can’t make a difference.”</p>
+                            <p>“It matters to this one,” the boy said as he threw another starfish into the waves. “And it matters to this one.”</p>
+                            <p>An old man walked across the beach until he came across a young boy throwing something into the breaking waves. Upon closer inspection, the old man could see that the boy was tossing stranded starfish from the sandy beach, back into the ocean.</p>
+                            <p>“What are you doing, young man?” He asked. “If the starfish are still on the beach when the sun rises, they will die,” the boy answered. “That is ridiculous. There are thousands of miles of beach and millions of starfish. It doesn’t matter how many you throw in; you can’t make a difference.”</p>
+                            <p>“It matters to this one,” the boy said as he threw another starfish into the waves. “And it matters to this one.”</p>
+                            <p>An old man walked across the beach until he came across a young boy throwing something into the breaking waves. Upon closer inspection, the old man could see that the boy was tossing stranded starfish from the sandy beach, back into the ocean.</p>
+                            <p>“What are you doing, young man?” He asked. “If the starfish are still on the beach when the sun rises, they will die,” the boy answered. “That is ridiculous. There are thousands of miles of beach and millions of starfish. It doesn’t matter how many you throw in; you can’t make a difference.”</p>
+                            <p>“It matters to this one,” the boy said as he threw another starfish into the waves. “And it matters to this one.”</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn mr-2 btn-primary">Nice Story!</button>
+                            <a href="#" rel="nofollow"><button class="btn btn-secondary">Close</button></a>
+                        </div>
+                    </div>
+                </div>
+
 
 
             </div><!-- /Col -->
