@@ -3,68 +3,92 @@
 // All styles related to modal using :target selector
 // ==========================================================================
 
-@mixin translate($x, $y) {
-	transform: translate($x, $y);
+//_modal.scss
+//
+// All styles related to modal using :target selector
+// ==========================================================================
+
+/* Add animation (Standard syntax) */
+@keyframes example {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes example2 {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
 
 .modal {
+	$self: #{&};
+
 	///!SET TO NONE HERE
 	display: none;
 
 	///Target - make modal appear
 	&:target {
 		position: fixed;
-		// left: 0;
-		// top: 0;
-		// width: 100vw;
-		// height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		display: block;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 		z-index: 9999999;
+	}
 
-		.modal-overlay {
-			@include translate(0, 0); 
-			top: 20%;  
+
+	&-container {
+		max-width: 500px;
+		position: relative;
+		background-color: #fff;
+		box-shadow: 0 27px 24px 0 rgba(0,0,0,.2), 0 40px 77px 0 rgba(0,0,0,.22);
+		border-radius: 6px;
+		border: 0;
+		margin: 130px auto 0 auto;
+
+		#{$self}-header {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 24px 24px 0;
+		}
+
+		.close  {
+			position: absolute;
+			right: 10px;
+			top: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 8px 16px;
+			color: rgba(0, 0, 0, 0.4);
+		}
+
+
+		#{$self}-body {
+			padding: 24px 24px 16px;
+		}
+
+		#{$self}-footer {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			padding: 0 24px 24px 24px;
 		}
 	}
 
-	.modal-overlay {
-        background: red;
-        border: red solid 1px;
-        border-radius: 5px;
-        margin-left: -200px;
-        position: fixed; 
-        left: 50%; 
-        top: -100%;  
-        z-index: 11; 
-		width: 360px;
-		height: 100vh;
-		@include translate(0, -500%);
-		transition: all 0.2s;
-	}
 
 	///Close button
 	& .close {
-		position: relative;
 		display: block;
-
-		&:after {
-			right: -1rem;
-			top: -1rem;
-			width: 2rem;
-			height: 2rem;
-			position: absolute;
-			display: flex;
-			z-index: 1;
-			align-items: center;
-			justify-content: center;
-			background-color: black;
-			border-radius: 50%;
-			color: white;
-			content: '×';
-			cursor: pointer;
-		}
 
 		&:before {
 			left: 0;
@@ -74,6 +98,25 @@
 			position: fixed;
 			content: '';
 			cursor: default;
+			background: rgba(0, 0, 0, 0.4);
+			z-index: -1;
+
+			animation-name: example;
+			animation-duration: 0.5s;
 		}
+
+		&:active {
+			animation-name: example2;
+			animation-duration: 15s;
+		}
+	}
+}
+
+
+.modal-centered {
+
+	.modal-container {
+		
+		margin: 0 auto;
 	}
 }
