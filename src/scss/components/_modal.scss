@@ -5,7 +5,7 @@
 
 .modal {
 	///!SET TO NONE HERE
-    display: none;
+	display: none;
 
 	///Target - make modal appear
 	&:target {
@@ -17,30 +17,29 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-        z-index: 9999999;
+		z-index: 9999999;
 
-        &:before {
-            opacity: 1;
-        }
-    }
+		&:before {
+			opacity: 1;
+		}
+	}
 
-    
-    &:before {
-        content: '';
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        background-color: $modal-background-color;
-        opacity: 0;
-        transition: all 0.2s;
-    }
+	&:before {
+		content: '';
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		background-color: $modal-background-color;
+		opacity: 0;
+		transition: all 0.2s;
+	}
 
 	///Close button
 	& .close {
 		position: relative;
-        display: block;
+		display: block;
 
 		&:after {
 			right: -1rem;
@@ -66,7 +65,7 @@
 			height: 100vh;
 			position: fixed;
 			content: '';
-            cursor: default;
+			cursor: default;
 		}
 	}
 }
