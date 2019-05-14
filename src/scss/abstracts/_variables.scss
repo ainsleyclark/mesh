@@ -15,8 +15,12 @@
 //	9. Borders
 //	10. Alerts
 //	11. Buttons
-//	10. Cards
-//
+//  12. Badges
+//  13. Tags
+//	14. Cards
+//  15. Table
+//  16. Toast
+//  17. Modal
 
 // 1. Grid
 // ==========================================================================
@@ -185,7 +189,14 @@ $badge-padding: 5px 12px;
 $badge-font-size: 10px !default;
 $badge-font-weight: 400;
 
-// 13. Cards
+// 13. Tags
+// ==========================================================================
+
+// Tags Types
+$tag-enable-colored: true;
+$tag-enable-rounded: true;
+
+// 14. Cards
 // ==========================================================================
 
 // Default card sizes
@@ -204,7 +215,7 @@ $card-default-media-header-height: 150px !default;
 $card-default-title-font-size: 18px !default;
 $card-default-content-font-size: 16px !default;
 
-// 14. Table
+// 15. Table
 // ==========================================================================
 
 $table-font-size: 16px !default;
@@ -214,14 +225,14 @@ $table-standard-border: 1px solid #f0f0f0 !default;
 $table-striped-color: #fdadad !default;
 $table-hover-color: #aaffaa !default;
 
-// 15. Toast
+// 16. Toast
 // ==========================================================================
 
 $toast-width: 256px !default;
 $toast-width-large: 512px !default;
 $toast-padding: 12px 30px !default;
 
-// 16. Modal
+// 17. Modal
 // ==========================================================================
 
 $modal-background-color: rgba(0, 0, 0, 0.2);

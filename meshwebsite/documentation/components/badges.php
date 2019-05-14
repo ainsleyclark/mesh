@@ -83,7 +83,7 @@ $tableOfContents = [
 &lt;span class="badge badge-rounded badge-danger"&gt;Danger&lt;/span&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
-                 <!-- Notifications Buttons -->
+                 <!-- Notifications Badges -->
                  <article class="section-scroll py-2" id="sizes">
                     <h2 class="pb-1 b-b1-light mb-1 hash">Notifications</h2>
                     <p>Mesh badges can be added to buttons as notifications without additional classes.</p>
@@ -98,7 +98,99 @@ $tableOfContents = [
     &lt;span class="badge badge-light"&gt;10&lt;/badge&gt;
 &lt;/button&gt;
 </code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-                    
+
+            <!-- Rounded Tags -->
+            <article class="section-scroll py-2" id="colored">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Rounded Tags</h2>
+                    <p>The mesh tags should be prefiex with the <code class="inline">.tag</code> class which will give you access to all of the classes outline below.</p>
+                    <p>The mesh tags should also containe <code class="inline">.deletable</code> class which will alow tag to be deleted.</p>
+                    <p>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.</p>
+                    <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
+                        <div class="tag tag-primary deletable">
+                            <div>Primary</div>
+                            <div class="input">
+                                <i>
+                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                        </path>
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="tag tag-success deletable">
+                            <div>Success</div>
+                            <div class="input">
+                                <i>
+                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                        </path>
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="tag tag-info deletable">
+                            <div>Info</div>
+                            <div class="input">
+                                <i>
+                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                        </path>
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="tag tag-warning deletable">
+                            <div>Warning</div>
+                            <div class="input">
+                                <i>
+                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                        </path>
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="tag tag-danger deletable">
+                            <div>Danger</div>
+                            <div class="input">
+                                <i>
+                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                        </path>
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="tag tag-link deletable">
+                            <div>Link</div>
+                            <div class="input">
+                                <i>
+                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                        </path>
+                                        <path d="M0 0h24v24H0z" fill="none"></path>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <pre class="highlight"><code class="html">&lt;div class="tag tag-primary deletable"&gt;
+    &lt;div&gt;Primary&lt;/div&gt;
+    &lt;div class="input"&gt;
+        &lt;i&gt;
+            &lt;svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"&gt;
+                &lt;path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"&gt;&lt;/path&gt;
+                &lt;path d="M0 0h24v24H0z" fill="none"&gt;&lt;/path&gt;
+            &lt;/svg&gt;
+        &lt;/i&gt;
+    &lt;/div&gt;                     
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                </article>
 
             </div><!-- /Col -->
             <?php include_once('../../partials/smallnav.php') ?>
