@@ -1,3 +1,9 @@
+//_badges.scss
+//
+// Badges classes & styling with reference to palette.
+// ==========================================================================
+
+
 .badge {
 	display: inline-block;
 	padding: $badge-padding;
@@ -12,6 +18,7 @@
 	vertical-align: middle;
 	height: auto;
 	margin-right: 5px;
+	margin-left: 5px;
 }
 
 %badge-properties {
@@ -30,6 +37,84 @@
 
 @if $badge-enable-rounded {
 	.badge-rounded {
+		border-radius: 500px;
+		padding: $badge-padding;
+	}
+}
+
+// Tag classes & styling with reference to palette.
+// ==========================================================================
+
+
+.tag {
+	background-color: #999;
+	color: #fff;
+	margin-top: 7px;
+	height: 32px;
+	padding: 0 12px;
+	padding-right: 13px;
+	display: inline-block;
+	border-radius: 32px;
+	font-size: $badge-font-size;
+	text-transform: uppercase;
+	font-weight: $badge-font-weight;
+	line-height: 32px;
+	vertical-align: middle;
+	white-space: nowrap;
+	margin-right: 10px;
+
+	&.deletable {
+		position: relative;
+	}
+
+	& .input {
+		fill: #fff !important;
+		top: 10%;
+		background-color: transparent !important;
+	}
+
+	&:hover {
+		padding-right: 30px;
+		transition: .3s cubic-bezier(.25,.8,.25,1);
+		transition-property: background-color,color,opacity,transform,box-shadow;
+		will-change: background-color,color,opacity,transform,box-shadow;
+
+		& .input {
+			fill: #fff !important;
+			width: 18px;
+			min-width: 18px;
+			height: 10px;
+			margin: 0;
+			position: absolute;
+			top: 10%;
+			right: 15px;
+			z-index: 6;
+			transform: translate3D(50%, -25%, 0);
+			transition-duration: 0.3s;
+			transition-timing-function: cubic-bezier(.25, .8, .25, 1);
+			font-size: 18px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+	}
+}
+
+%tag-properties {
+	border: 0;
+	color: #ffffff;
+}
+
+@if $tag-enable-colored {
+	@each $color-name, $hex in $palette {
+		.tag-#{$color-name} {
+			@extend %tag-properties;
+			@include tag-colored($hex);
+		}
+	}
+}
+
+@if $tag-enable-rounded {
+	.tag-rounded {
 		border-radius: 500px;
 		padding: $badge-padding;
 	}
