@@ -38,7 +38,6 @@
 	&:target {
 		position: fixed;
 		display: flex;
-<<<<<<< HEAD
 		align-items: center;
 		justify-content: center;
 		z-index: 9999999;
@@ -58,28 +57,23 @@
 		background-color: $modal-background-color;
 		opacity: 0;
 		transition: all 0.2s;
-=======
 		align-items: start;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		z-index: 9999999;
->>>>>>> 651df99775ad3f1d28f1b918453bbc5d91ee3e48
 	}
 
 	&-container {
 		max-width: 500px;
 		position: relative;
-<<<<<<< HEAD
 		display: block;
-=======
 		background-color: #fff;
-		box-shadow: 0 27px 24px 0 rgba(0,0,0,.2), 0 40px 77px 0 rgba(0,0,0,.22);
+		box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 		border-radius: 6px;
 		border: 0;
 		margin: 130px auto 0 auto;
->>>>>>> 651df99775ad3f1d28f1b918453bbc5d91ee3e48
 
 		#{$self}-header {
 			display: flex;
@@ -88,7 +82,7 @@
 			padding: 24px 24px 0;
 		}
 
-		.close  {
+		.close {
 			position: absolute;
 			right: 10px;
 			top: 5px;
@@ -98,7 +92,6 @@
 			padding: 8px 16px;
 			color: rgba(0, 0, 0, 0.4);
 		}
-
 
 		#{$self}-body {
 			padding: 24px 24px 16px;
@@ -112,7 +105,6 @@
 		}
 	}
 
-
 	///Close button
 	& .close {
 		display: block;
@@ -125,8 +117,6 @@
 			position: fixed;
 			content: '';
 			cursor: default;
-<<<<<<< HEAD
-=======
 			background: rgba(0, 0, 0, 0.4);
 			z-index: -1;
 
@@ -137,14 +127,11 @@
 		&:active {
 			animation-name: example2;
 			animation-duration: 15s;
->>>>>>> 651df99775ad3f1d28f1b918453bbc5d91ee3e48
 		}
 	}
 }
 
-
 .modal-centered {
-
 	.modal-container {
 		margin: auto;
 	}

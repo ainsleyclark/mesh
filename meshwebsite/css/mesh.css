@@ -5288,6 +5288,25 @@ button[data-tool-tip] {
 .modal:target {
   position: fixed;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999;
+}
+
+.modal:target:before {
+  opacity: 1;
+}
+
+.modal:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.2s;
   align-items: start;
   top: 0;
   right: 0;
@@ -5299,6 +5318,7 @@ button[data-tool-tip] {
 .modal-container {
   max-width: 500px;
   position: relative;
+  display: block;
   background-color: #fff;
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
   border-radius: 6px;
