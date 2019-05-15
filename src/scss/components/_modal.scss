@@ -50,7 +50,7 @@
 		max-width: 500px;
 		position: relative;
 		background-color: #fff;
-		box-shadow: 0 27px 24px 0 rgba(0,0,0,.2), 0 40px 77px 0 rgba(0,0,0,.22);
+		box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 		border-radius: 6px;
 		border: 0;
 		margin: 130px auto 0 auto;
@@ -62,7 +62,7 @@
 			padding: 24px 24px 0;
 		}
 
-		.close  {
+		.close {
 			position: absolute;
 			right: 10px;
 			top: 5px;
@@ -72,7 +72,6 @@
 			padding: 8px 16px;
 			color: rgba(0, 0, 0, 0.4);
 		}
-
 
 		#{$self}-body {
 			padding: 24px 24px 16px;
@@ -85,7 +84,6 @@
 			padding: 0 24px 24px 24px;
 		}
 	}
-
 
 	///Close button
 	& .close {
@@ -113,9 +111,7 @@
 	}
 }
 
-
 .modal-centered {
-
 	.modal-container {
 		margin: auto;
 	}

@@ -145,15 +145,15 @@ code.inline {
   position: relative;
 }
 
-.highlight .html .hljs-string {
+.highlight code .hljs-string {
   color: #e93a5e;
 }
 
-.highlight .html .hljs-attr {
+.highlight code .hljs-attr {
   color: #6d9d6f;
 }
 
-.highlight .html .hljs-name {
+.highlight code .hljs-name {
   color: #4f9fbc;
 }
 
@@ -179,9 +179,9 @@ code.inline {
   display: none;
 }
 
-.highlight .html:after {
+.highlight code:after {
   display: none;
-  content: 'language-markup';
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -195,9 +195,17 @@ code.inline {
 }
 
 @media (min-width: 768px) {
-  .highlight .html:after {
+  .highlight code:after {
     display: block;
   }
+}
+
+.highlight .html:after {
+  content: 'language-markup';
+}
+
+.highlight .javascript:after {
+  content: 'language-javascript';
 }
 
 .table-code {

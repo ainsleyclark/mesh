@@ -40,7 +40,7 @@ code.inline {
 .highlight {
 	position: relative;
 
-	.html {
+	code {
 		.hljs-string {
 			color: desaturate($primary, 20%);
 		}
@@ -73,9 +73,9 @@ code.inline {
 		display: none;
 	}
 
-	.html:after {
+	code:after {
 		display: none;
-		content: 'language-markup';
+		content: '';
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -90,5 +90,13 @@ code.inline {
 		@include media-tab {
 			display: block;
 		}
+	}
+
+	.html:after {
+		content: 'language-markup';
+	}
+
+	.javascript:after {
+		content: 'language-javascript';
 	}
 }
