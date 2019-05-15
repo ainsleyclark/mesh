@@ -33,7 +33,7 @@ $tableOfContents = [
                 <!-- How it works -->
                 <article class="section-scroll" id="howItWorks">
                     <h2 class="b-b-light hash">How it works</h2>
-                    <p class="secondary-lead">mesh uses conventional containers, rows and columns to layout and align content, it's built with flex box and is fully responsive. Here's an example:</p>
+                    <p class="secondary-lead">mesh uses conventional containers, rows and columns to layout and align content, it's built with flexbox and is fully responsive. Here's an example:</p>
 <pre class="highlight"><code class="html">&lt;div class="container"&gt;
     &lt;div class="row"&gt;
         &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
@@ -64,7 +64,7 @@ $tableOfContents = [
                     <div class="text-cont">
                         <h3>Container options:</h3>
                         <ul class="list">
-                            <li>A container, by default, is at fixed size, by using the <code class="inline">container</code> tag. With maximum widths set at each side, it will gradually get smaller as the viewport does.</li>
+                            <li>A container, is at fixed size by default, when using the <code class="inline">container</code> tag. With maximum widths set at each side, it will gradually get smaller as the viewport does.</li>
                             <li>Or a container can be full width, which will take up 100% of the screen and have slight padding either side. This is acheived by adding the <code class="inline">container-fullwidth</code> class to a div or semantic element.</li>
                         </ul>
                     </div>
@@ -78,7 +78,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="rows">
                     <h2 class="b-b-light hash">Rows</h2>
                     <p class="secondary-lead">
-                        A <strong>row is the container for columns</strong>, it lives inside a container. It is 100% width (of container) and uses flexbox to align columns. Naturally it has no padding but has negative margins on the x axis to counteract the gaps set on the columns.
+                        A <strong>row is the container for columns</strong>, it lives inside a container. It is 100% width (of it's container) and uses flexbox to align columns. Naturally it has no padding but has negative margins on the x axis to counteract the gaps set on the columns.
                         <br>Add the <code class="inline">row</code> class to a <code class="inline">div</code> to enable this behaviour.
                     </p>
                     <div class="text-cont">
@@ -134,7 +134,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="columns">
                     <h2 class="b-b-light hash">Columns</h2>
                     <p class="secondary-lead">
-                        A column is where your content lives, <strong>it lives inside a row</strong>, there can be a maximum of 12 columns in a row, if there a more they will wrap to the next line. Of course you can overwrite this behaviour by using the <code class="inline">flex-nowrap</code> class.
+                        A column is where your content lives, <strong>it lives inside a row.</strong> <br />There can be a maximum of 12 columns in a row, if there are more they will wrap to the next line. Of course you can overwrite this behaviour by using the <code class="inline">flex-nowrap</code> class.
                         <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12. 
                     </p>
                     <div class="text-cont">

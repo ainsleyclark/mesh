@@ -67,7 +67,7 @@ $tableOfContents = [
                 <!-- Rounded Badges -->
                 <article class="section-scroll py-2" id="colored">
                     <h2 class="pb-1 b-b1-light mb-1 hash">Rounded</h2>
-                    <p>You can make badges rounded with <code class="inline">.badge-rounded</code> class which will make badges rounded.</p>
+                    <p>You can make badges rounded with <code class="inline">.badge-rounded</code> class.</p>
                     <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <span class="badge badge-rounded badge-primary">Primary</span>
                         <span class="badge badge-rounded badge-success">Success</span>
@@ -102,8 +102,8 @@ $tableOfContents = [
             <!-- Rounded Tags -->
             <article class="section-scroll py-2" id="colored">
                     <h2 class="pb-1 b-b1-light mb-1 hash">Rounded Tags</h2>
-                    <p>The mesh tags should be prefiex with the <code class="inline">.tag</code> class which will give you access to all of the classes outline below.</p>
-                    <p>The mesh tags should also containe <code class="inline">.deletable</code> class which will alow tag to be deleted.</p>
+                    <p>The mesh tags should be prefix with the <code class="inline">.tag</code> class which will give you access to all of the classes outline below.</p>
+                    <p>The mesh tags should also contain <code class="inline">.deletable</code> class which will alow tag to be deleted.</p>
                     <p>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.</p>
                     <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <div class="tag tag-primary deletable">

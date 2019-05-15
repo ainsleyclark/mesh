@@ -3,7 +3,7 @@
 //Page variables
 $pageData = [
 	'pageTitle' => 'Display',
-	'pageDescription' => 'Easily toggle the display of items at each breakpoint by using our straight forward display classes. ',
+	'pageDescription' => 'Easily toggle the display of items at each breakpoint by using our straightforward display classes. ',
     'activePage' => 'display',
     'parentDirectory' => basename(__DIR__)
 ]; 
@@ -38,7 +38,7 @@ $tableOfContents = [
                         <h3>Notation:</h3>
                         <ul class="list">
                             <li>You can target the display class by using <code class="inline">d-{breakpoint}-{property}</code>. The breakpoint being optional and one of our five breakpoints and the properties being outlined below.</li>
-                            <li>These classes effect the breakpoint and upwards, for example - <code class="inline">d-tab-flex</code> will make the element's display 'flex' on tablet, desktop & HD screens.</li>
+                            <li>These classes affect the breakpoint and upwards, for example - <code class="inline">d-tab-flex</code> will make the element's display 'flex' on tablet, desktop & HD screens.</li>
                         </ul>
                     </div>
                     <div class="text-cont">
