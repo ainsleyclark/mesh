@@ -113,7 +113,7 @@ pre {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   font-size: 0.8rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  margin: 0 0 25px 0;
+  margin: 0 0 25px;
   overflow-x: auto;
 }
 
@@ -299,7 +299,7 @@ header.primary nav.primary ul .download:hover svg path {
   width: 320px;
   height: calc(100vh - 75px);
   border-right: 1px #e5e5e5 solid;
-  padding: 45px 45px 60px 45px;
+  padding: 45px 45px 60px;
   overflow-y: scroll;
   transform: translateX(-100%);
   transition: transform 0.5s;
@@ -404,7 +404,7 @@ header.primary nav.primary ul .download:hover svg path {
 
 .content h3:not(.normal-headings) {
   font-size: 1.3rem;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
 }
 
 @media (min-width: 1024px) {

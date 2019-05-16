@@ -5581,7 +5581,7 @@ button[data-tool-tip] {
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
   border-radius: 6px;
   border: 0;
-  margin: 130px auto 0 auto;
+  margin: 130px auto 0;
 }
 
 .modal-container .modal-header {
@@ -5610,7 +5610,7 @@ button[data-tool-tip] {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 24px 24px 24px;
+  padding: 0 24px 24px;
 }
 
 .modal .close {
