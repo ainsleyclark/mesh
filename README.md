@@ -67,20 +67,20 @@ Please email info@ainsleyclark.com if you have any questions, I will be more tha
 Any ideas are welcome. The majority of the utility classes are done so UI components are needed (remember CSS only!), including: 
 - ~~Alert~~ -- @ainsleyc
 - ~~Badges~~ -- @nicholsk
-- Breadcrumb
-- ~~Button~~ -- @nicholsk 
+- ~~Breadcrumb~~ -- @ainsleyc
 - ~~Button~~ -- @ainsleyc & @nicholsk
 - ~~Card~~ -- @kassuro
 - Collapse 
 - ~~Form~~ -- @VersusTune
 - ~~Header~~ -- @Stefario
-- Hero Section
+- Hero
 - List
 - ~~Modal~~ -- @ainsleyc
 - ~~Nav~~ -- @Stefario
-- Pagination
+- ~~Pagination~~ @ainsleyc @devonddunn
 - Progress
-- ~~Toasts~~
+- Tabs
+- ~~Toasts~~ -- @kassuro
 - ~~Tooltip~~ -- @devonddunn
 
 **Notes:**
