@@ -3,6 +3,7 @@
 // Badges classes & styling with reference to palette.
 // ==========================================================================
 
+
 .badge {
 	display: inline-block;
 	padding: $badge-padding;
@@ -44,6 +45,7 @@
 // Tag classes & styling with reference to palette.
 // ==========================================================================
 
+
 .tag {
 	background-color: #999;
 	color: #fff;
@@ -60,36 +62,37 @@
 	vertical-align: middle;
 	white-space: nowrap;
 	margin-right: 10px;
+	transition: padding-right .3s cubic-bezier(.25,.8,.25,1);
 
 	&.deletable {
 		position: relative;
 	}
 
 	& .input {
-		fill: #fff !important;
-		top: 10%;
+		fill: #fff;
+		top: 5%;
 		background-color: transparent !important;
 	}
 
 	&:hover {
 		padding-right: 30px;
-		transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-		transition-property: background-color, color, opacity, transform, box-shadow;
-		will-change: background-color, color, opacity, transform, box-shadow;
+		transition: .3s cubic-bezier(.25,.8,.25,1);
+		transition-property: background-color,color,opacity,transform,box-shadow, padding-right;
+		will-change: background-color,color,opacity,transform,box-shadow, padding-right;
 
 		& .input {
-			fill: #fff !important;
+			fill: #fff;
 			width: 18px;
 			min-width: 18px;
 			height: 10px;
 			margin: 0;
 			position: absolute;
-			top: 10%;
+			top: 5%;
 			right: 15px;
 			z-index: 6;
-			transform: translate3D(50%, -25%, 0);
+			transform: translate3D(50%, -20%, 0);
 			transition-duration: 0.3s;
-			transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+			transition-timing-function: cubic-bezier(.25, .8, .25, 1);
 			font-size: 18px;
 			border-radius: 50%;
 			cursor: pointer;
