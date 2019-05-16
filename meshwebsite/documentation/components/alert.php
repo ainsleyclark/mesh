@@ -33,7 +33,7 @@ $tableOfContents = [
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
-                    <p class="mt-3">
+                    <p class="mt-2">
                         All alerts are prefixed with the <code class="inline">alert</code> class. This gives the element some common properties for the alert such as margin and padding.
                     </p>
                     <p class="mb-3">You can have <strong>any combination</strong> of the classes listed below.</p>
@@ -356,7 +356,6 @@ $tableOfContents = [
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
-
 
 <?php include_once('../../partials/footer.php') ?>
 

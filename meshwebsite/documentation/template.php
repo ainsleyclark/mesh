@@ -2,20 +2,18 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Alert',
+	'pageTitle' => 'Im the page title',
 	'pageDescription' => 'Use mesh alerts to display informaitve information easily with varying colors and styles.',
     'activePage' => 'alert',
     'parentDirectory' => basename(__DIR__)
 ]; 
 
 //Table of contents
+//! DUPLICATE FOR CONTENTS ITEM,
+//! If you add an article, make sure the Id matches the first value here.
 $tableOfContents = [
     'usage' => 'Usage',
     'background' => 'Full background',
-    'close' => 'Close',
-    'icons' => 'Icon',
-    'css' => 'CSS alert dismiss',
-    'js' => 'JS alert dismiss',
 ];
 
 ?>

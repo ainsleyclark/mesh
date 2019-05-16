@@ -1,10 +1,13 @@
+//_breadcrumb.scss
+//
+// Description
+// ==========================================================================
+
 ///////////////////////////////////////////
 //change brey black and white to be colors that fit the theme
 //uses font-awesome icons -> if we switch icon sets just put codes in li.class:after content:"\code";
 //////////////////////////////////////////
 
-//not sure what we want to do with the transition time/effect - these are temperary values (for hover on a)
-$trans-time: 300ms;
 $trans-opacity: 0.5;
 //to change seperator color (if no class is added for seperator color will default to same as the li/a text)
 $black: black;
@@ -12,82 +15,31 @@ $white: white;
 $grey: grey;
 
 .breadcrumb {
-	margin: 0;
+	margin-bottom: 20px;
 	padding: 0;
 	display: flex;
 	list-style: none;
-	&.center {
-		justify-content: center;
-	}
-	&.right {
-		justify-content: flex-end;
-	}
-	&.left {
-		justify-content: flex-start;
-	}
-	align-items: center;
+	width: 100%;
+	padding: 20px 15px;
+
 	li {
 		a {
-			transition: $trans-time;
 			color: inherit;
 			text-decoration: none;
-			&:hover {
-				opacity: $trans-opacity;
-				color: inherit;
-			}
+
 			&:visited {
 				color: inherit;
 			}
 		}
 	}
 	li:after {
-		font-family: 'Font Awesome 5 Free';
-		content: '\f105';
+		content: '/';
 		padding-right: 3px;
 		font-size: 1rem;
-		font-weight: 900;
 		margin-left: 5px;
 		margin-right: 5px;
 	}
-	//changes spereator to >>
-	&.double {
-		li:after {
-			content: '\f101';
-		}
-	}
-	//changes seperator to font awesome solid arrow
-	&.solid {
-		li:after {
-			content: '\f0da';
-			padding-left: 5px;
-		}
-	}
-	//inserts a slash instead of icon (/)
-	&.slash {
-		li:after {
-			content: '/';
-		}
-	}
-	///////  colors for icons
-	//grey
-	&.seperator-grey {
-		li:after {
-			color: $grey;
-		}
-	}
-	//black
-	&.seperator-black {
-		li:after {
-			color: $black;
-		}
-	}
-	//white
-	&.seperator-white {
-		li:after {
-			color: $white;
-		}
-	}
-	//makes sure the last item does not have trailing logo
+
 	li:last-child:after {
 		content: none;
 	}
