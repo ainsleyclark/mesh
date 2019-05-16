@@ -115,85 +115,44 @@ $tableOfContents = [
                         <div class="tag tag-primary deletable">
                             <div>Primary</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-success deletable">
                             <div>Success</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-info deletable">
                             <div>Info</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-warning deletable">
                             <div>Warning</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-danger deletable">
                             <div>Danger</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-link deletable">
                             <div>Link</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                     </div>
                     <pre class="highlight"><code class="html">&lt;div class="tag tag-primary deletable"&gt;
     &lt;div&gt;Primary&lt;/div&gt;
     &lt;div class="input"&gt;
-        &lt;i&gt;
-            &lt;svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"&gt;
-                &lt;path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"&gt;&lt;/path&gt;
-                &lt;path d="M0 0h24v24H0z" fill="none"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
-        &lt;/i&gt;
+        &lt;span&gt;&times;&lt;/span&gt;
     &lt;/div&gt;                     
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
