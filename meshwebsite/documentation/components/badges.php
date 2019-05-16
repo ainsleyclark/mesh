@@ -107,7 +107,7 @@ $tableOfContents = [
             <article class="section-scroll py-2" id="tags">
                     <h2 class="b-b-light hash">Tags</h2>
                     <p class="secondary-lead">
-                        The mesh tags should be prefiex with the <code class="inline">.tag</code> class which will give you access to all of the classes outlined below.
+                        The mesh tags should be prefix with the <code class="inline">.tag</code> class which will give you access to all of the classes outlined below.
                         <br>The mesh tags should also contain <code class="inline">.deletable</code> class which will alow tag to be deleted.
                         <br>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.
                     </p>
