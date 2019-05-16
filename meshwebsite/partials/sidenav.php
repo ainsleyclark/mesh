@@ -51,7 +51,7 @@ $activeClass = $pageData['activePage'];
                 <a class="<?php if($activeClass == 'badges') echo 'active'; ?>" href="/documentation/components/badges.php"><li>Badges</li></a>
                 <a class="<?php if($activeClass == 'breadcrumb') echo 'active'; ?>" href="/documentation/components/breadcrumb.php"><li>Breadcrumb</li></a>
                 <a class="<?php if($activeClass == 'button') echo 'active'; ?>" href="/documentation/components/button.php"><li>Button</li></a>
-                <a class="<?php if($activeClass == 'cards') echo 'active'; ?>" href="/documentation/components/cards.php"><li>Cards</li></a>
+                <a class="<?php if($activeClass == 'card') echo 'active'; ?>" href="/documentation/components/card.php"><li>Card</li></a>
                 <a class="<?php if($activeClass == 'collapse') echo 'active'; ?>" href="/documentation/components/collapse.php"><li>Collapse</li></a>
                 <a class="<?php if($activeClass == 'form') echo 'active'; ?>" href="/documentation/components/form.php"><li>Form</li></a>
                 <a class="<?php if($activeClass == 'header') echo 'active'; ?>" href="/documentation/components/header.php"><li>Header</li></a>

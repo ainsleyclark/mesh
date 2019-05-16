@@ -235,19 +235,27 @@ $toast-padding: 12px 30px !default;
 // 17. Modal
 // ==========================================================================
 
-$modal-background-color: rgba(0, 0, 0, 0.2);
+$modal-background-color: rgba(0, 0, 0, 0.2) !default;
 
 // 18. Alert
 // ==========================================================================
 
-$alert-enable-background: true;
-$alert-enable-background-shadows: true;
-$alert-enable-rounded: true;
-$alert-enable-css-close: true;
+$alert-enable-background: true !default;
+$alert-enable-background-shadows: true !default;
+$alert-enable-rounded: true !default;
+$alert-enable-css-close: true !default;
 
-$alert-default-background-color: rgba(0, 0, 0, 0.5);
+$alert-default-background-color: rgba(0, 0, 0, 0.5) !default;
 
 // 19. Breadcrumb
 // ==========================================================================
 
-$breadcrumb-active-color:rgba(0, 0, 0, 0.5);
+$breadcrumb-active-color: rgba(0, 0, 0, 0.5) !default;
+
+// 20. Pagination
+// ==========================================================================
+
+$pagination-text-color: #999 !default;
+$pagination-active-color: color('primary') !default;
+$pagination-font-size: 12px;
+$pagination-rounded: true;

@@ -5705,6 +5705,78 @@ button[data-tool-tip] {
   overflow-x: auto;
 }
 
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+.pagination .page-item {
+  border: 0;
+  margin: 0 6px;
+  padding: 0;
+  min-width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #999;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.2s;
+  border-radius: 30px !important;
+}
+
+.pagination .page-item a {
+  color: inherit;
+}
+
+.pagination .page-item:hover {
+  color: #ff2451;
+}
+
+.pagination .page-item.active {
+  background-color: #ff2451;
+  border-color: #ff2451;
+  color: #ffffff !important;
+  box-shadow: 0 4px 5px 0 rgba(255, 36, 81, 0.14), 0 1px 10px 0 rgba(255, 36, 81, 0.12), 0 2px 4px -1px rgba(255, 36, 81, 0.2);
+}
+
+.pagination .page-item.active a {
+  color: inherit;
+}
+
+.pagination .page-item:first-of-type {
+  margin-left: 0;
+}
+
+.pagination .page-item:last-of-type {
+  margin-right: 0;
+}
+
+.pagination .prev-btn,
+.pagination .next-btn {
+  text-transform: uppercase;
+}
+
+.pagination .prev-arrow,
+.pagination .next-arrow {
+  font-size: 24px;
+}
+
+.pagination .prev-btn,
+.pagination .prev-arrow {
+  margin-right: 15px;
+}
+
+.pagination .next-btn,
+.pagination .next-arrow {
+  margin-left: 15px;
+}
+
 .toast {
   position: absolute;
   top: 20px;
