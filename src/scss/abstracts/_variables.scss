@@ -9,33 +9,43 @@
 //  3. Spacing
 //  4. Position
 //  5. Sizing
-//  6. Colours
+//  6. Color
 //  7. Type
 //  8. Spacers
 //	9. Borders
 //	10. Alerts
-//	11. Buttons
-//  12. Badges
-//  13. Tags
-//	14. Cards
-//  15. Table
-//  16. Toast
-//  17. Modal
+//	11. Badges
+//	12. Breadcrumb
+//	13. Button
+//  14. Card
+//	15. Collapse
+//  16. Form
+//  17. Header
+//  18. Hero
+//  19. List
+//  20. Modal
+//  21. Nav
+//  22. Pagination
+//  23. Progress
+//  24. Table
+//	25. Tabs
+//  26. Toasts
+//  27. Tooltip
 
 // 1. Grid
 // ==========================================================================
 
-//Columns
+// Columns
 $grid-columns: 12 !default;
 $gap-width: 15px !default;
 
-//Defines Breakpoints
+// Breakpoints
 $grid-breakpoint-mob: 568 !default;
 $grid-breakpoint-tab: 768 !default;
 $grid-breakpoint-desk: 1024 !default;
 $grid-breakpoint-hd: 1408 !default;
 
-//Properties for Grid
+// Properties for grid
 $grid-properties: (
 	'': 0,
 	'-mob': $grid-breakpoint-mob,
@@ -71,9 +81,10 @@ $position-properties: (relative, absolute, fixed, static, sticky) !default;
 
 $sizing-properties: (10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%) !default;
 
-// 6. Colour
+// 6. Color
 // ==========================================================================
 
+// Color pallette
 $palette: (
 	white: #ffffff,
 	black: #000000,
@@ -89,7 +100,7 @@ $palette: (
 	link: #3763d4
 ) !default;
 
-//Color Attributes
+// Color attributes
 $color-attr: (
 	c: 'color',
 	bg: 'background-color'
@@ -98,12 +109,13 @@ $color-attr: (
 // 7. Type
 // ==========================================================================
 
+//! Sort out
 //Font Stack
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 $font-stack: Roboto, Helvetica, Arial, sans-serif;
 //$font-stack: Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-// Font Sizes
+// Font sizes
 $h1-font-size: 3.31rem !default;
 $h2-font-size: 2.25rem !default;
 $h3-font-size: 1.56rem !default;
@@ -114,11 +126,11 @@ $lead-font-size: 1.25rem !default;
 $paragraph-font-size: 1rem !default;
 $small-font-size: 75% !default;
 
-//Colors
+// Colors
 $black-text-color: #3c4858;
 $white-text-color: #ffffff;
 
-//Responsive Text
+// Responsive text
 $range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
 $responsive-text-points: 30 !default;
 $point-size: $range / $responsive-text-points !default;
@@ -131,17 +143,17 @@ $spacer-properties: (1px, 2px, 3px, 4px, 5px, 10px, 15px, 20px, 25px, 30px, 35px
 // 9. Borders
 // ==========================================================================
 
-//Border Colors
+// Border colors
 $border-colors: (
 	default: rgba(0, 0, 0, 0.3),
 	light: rgba(0, 0, 0, 0.1),
 	dark: rgba(0, 0, 0, 0.6)
 ) !default;
 
-//Border Widths
+// Border widths
 $border-width: 1px !default;
 
-//Border Radius
+// Border radius
 $border-radius: 0.5em !default;
 $border-radius-small: 0.25em !default;
 $border-radius-large: 1em !default;
@@ -149,10 +161,43 @@ $border-radius-large: 1em !default;
 // 10. Alerts
 // ==========================================================================
 
-// 11. Buttons
+// Enable features
+$alert-enable-background: true !default;
+$alert-enable-background-shadows: true !default;
+$alert-enable-rounded: true !default;
+$alert-enable-css-close: true !default;
+
+// Enable features
+$alert-default-background-color: rgba(0, 0, 0, 0.5) !default;
+
+// 11. Badges
 // ==========================================================================
 
-//Button Types
+// Enable badge features
+$badge-enable-colored: true;
+$badge-enable-rounded: true;
+
+// Enable tag features
+$tag-enable-colored: true;
+$tag-enable-rounded: true;
+
+//Padding
+$badge-padding: 5px 12px;
+
+//Font
+$badge-font-size: 10px !default;
+$badge-font-weight: 400;
+
+
+// 12. Breadcrumb
+// ==========================================================================
+
+$breadcrumb-active-color: rgba(0, 0, 0, 0.5) !default;
+
+// 13. Button
+// ==========================================================================
+
+//Enable button features
 $button-enable-colored: true;
 $button-enable-disabled: true;
 $button-enable-outline: true;
@@ -175,87 +220,100 @@ $button-font-weight: 400;
 //Shadows & Hover
 $button-enable-shadows: true;
 
-// 12. Badges
-// ==========================================================================
-
-// Badge Types
-$badge-enable-colored: true;
-$badge-enable-rounded: true;
-
-//Padding
-$badge-padding: 5px 12px;
-
-//Font
-$badge-font-size: 10px !default;
-$badge-font-weight: 400;
-
-// 13. Tags
-// ==========================================================================
-
-// Tags Types
-$tag-enable-colored: true;
-$tag-enable-rounded: true;
-
-// 14. Cards
+// 14. Card
 // ==========================================================================
 
 // Default card sizes
 $card-default-width: 300px !default;
 $card-default-width-large: 500px !default;
 
-// Default Card Padding
+// Default card padding
 $card-default-padding: 12px 30px !default;
 $card-default-header-icon-padding: 5px 0 5px 30px !default;
 $card-default-media-img-title-padding: 5px 30px !default;
 
-// Card Media-Header Size
+// Card media-header size
 $card-default-media-header-height: 150px !default;
 
-// Default Card Font Sizes
+// Default card font sizes
 $card-default-title-font-size: 18px !default;
 $card-default-content-font-size: 16px !default;
 
-// 15. Table
+// 15. Collapse
 // ==========================================================================
 
-$table-font-size: 16px !default;
-$table-heading-font-size: 18px !default;
+
+// 16. Form
+// ==========================================================================
+
+
+// 17. Header
+// ==========================================================================
+
+
+// 18. Hero
+// ==========================================================================
+
+
+// 19. List
+// ==========================================================================
+
+
+// 20. Modal
+// ==========================================================================
+
+//Background color
+$modal-background-color: rgba(0, 0, 0, 0.2) !default;
+
+// 21. Nav
+// ==========================================================================
+
+// 22. Pagination
+// ==========================================================================
+
+//Enable features
+$pagination-enable-shadow: true !default;
+$pagination-rounded: true !default;
+
+//Coloer
+$pagination-text-color: #999 !default;
+$pagination-active-color: color('primary') !default;
+
+//Font size
+$pagination-font-size: 12px !default;
+
+
+// 23. Progress
+// ==========================================================================
+
+
+// 24. Table
+// ==========================================================================
+
+// Padding & margin
 $table-padding: 10px 15px !default;
+
+// Border
 $table-standard-border: 1px solid #f0f0f0 !default;
+
+// Color
 $table-striped-color: #fdadad !default;
 $table-hover-color: #aaffaa !default;
 
-// 16. Toast
+// Font size
+$table-font-size: 16px !default;
+$table-heading-font-size: 18px !default;
+
+// 23. Tabs
+// ==========================================================================
+
+
+// 23. Toasts
 // ==========================================================================
 
 $toast-width: 256px !default;
 $toast-width-large: 512px !default;
 $toast-padding: 12px 30px !default;
 
-// 17. Modal
+// 23. Tooltip
 // ==========================================================================
-
-$modal-background-color: rgba(0, 0, 0, 0.2) !default;
-
-// 18. Alert
-// ==========================================================================
-
-$alert-enable-background: true !default;
-$alert-enable-background-shadows: true !default;
-$alert-enable-rounded: true !default;
-$alert-enable-css-close: true !default;
-
-$alert-default-background-color: rgba(0, 0, 0, 0.5) !default;
-
-// 19. Breadcrumb
-// ==========================================================================
-
-$breadcrumb-active-color: rgba(0, 0, 0, 0.5) !default;
-
-// 20. Pagination
-// ==========================================================================
-
-$pagination-text-color: #999 !default;
-$pagination-active-color: color('primary') !default;
-$pagination-font-size: 12px;
-$pagination-rounded: true;

@@ -77,7 +77,7 @@ Any ideas are welcome. The majority of the utility classes are done so UI compon
 - List
 - ~~Modal~~ -- @ainsleyc
 - ~~Nav~~ -- @Stefario
-- ~~Pagination~~ @ainsleyc @devonddunn
+- ~~Pagination~~ @ainsleyc & @devonddunn
 - Progress
 - Tabs
 - ~~Toasts~~ -- @kassuro

@@ -43,42 +43,45 @@
 			background-color: $pagination-active-color;
 			border-color: $pagination-active-color;
 			color: color-contrast($pagination-active-color) !important;
-			box-shadow: 0 4px 5px 0 rgba($pagination-active-color, 0.14), 0 1px 10px 0 rgba($pagination-active-color, 0.12), 0 2px 4px -1px rgba($pagination-active-color, 0.2);
+
+			@if $pagination-enable-shadow {
+				box-shadow: 0 4px 5px 0 rgba($pagination-active-color, 0.14), 0 1px 10px 0 rgba($pagination-active-color, 0.12), 0 2px 4px -1px rgba($pagination-active-color, 0.2);
+			}
 
 			a {
 				color: inherit;
 			}
-        }
-        
-        //Give 0 margin to first and last .page-item 
-        &:first-of-type {
-            margin-left: 0;
-        }
-        &:last-of-type {
-            margin-right: 0;
-        }
+		}
+
+		//Give 0 margin to first and last .page-item
+		&:first-of-type {
+			margin-left: 0;
+		}
+		&:last-of-type {
+			margin-right: 0;
+		}
 	}
 
 	//Button
 	.prev-btn,
-    .next-btn {
+	.next-btn {
 		text-transform: uppercase;
-    }
+	}
 
 	//Arrows
 	.prev-arrow,
 	.next-arrow {
 		font-size: 24px;
-    }
-    
-    //Give extra margin to arrows/buttons
-    .prev-btn,
-    .prev-arrow {
-        margin-right: 15px;
-    }
+	}
 
-    .next-btn,
-    .next-arrow {
-        margin-left: 15px;
-    }
+	//Give extra margin to arrows/buttons
+	.prev-btn,
+	.prev-arrow {
+		margin-right: 15px;
+	}
+
+	.next-btn,
+	.next-arrow {
+		margin-left: 15px;
+	}
 }

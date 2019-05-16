@@ -61,6 +61,7 @@ $activeClass = $pageData['activePage'];
                 <a class="<?php if($activeClass == 'nav') echo 'active'; ?>" href="/documentation/components/nav.php"><li>Nav</li></a>
                 <a class="<?php if($activeClass == 'pagination') echo 'active'; ?>" href="/documentation/components/pagination.php"><li>Pagination</li></a>
                 <a class="<?php if($activeClass == 'progress') echo 'active'; ?>" href="/documentation/components/progress.php"><li>Progress</li></a>
+                <a class="<?php if($activeClass == 'table') echo 'active'; ?>" href="/documentation/components/table.php"><li>Table</li></a>
                 <a class="<?php if($activeClass == 'tabs') echo 'active'; ?>" href="/documentation/components/tabs.php"><li>Tabs</li></a>
                 <a class="<?php if($activeClass == 'toasts') echo 'active'; ?>" href="/documentation/components/toasts.php"><li>Toasts</li></a>
                 <a class="<?php if($activeClass == 'tooltip') echo 'active'; ?>" href="/documentation/components/tooltip.php"><li>Tooltip</li></a>
