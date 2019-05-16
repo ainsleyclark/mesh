@@ -2,9 +2,9 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Nav',
-	'pageDescription' => 'Something about navigation',
-    'activePage' => 'navigation',
+	'pageTitle' => 'Tabs',
+	'pageDescription' => 'Something about tabs',
+    'activePage' => 'tabs',
     'parentDirectory' => basename(__DIR__)
 ]; 
 

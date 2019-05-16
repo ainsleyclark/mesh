@@ -58,7 +58,7 @@
 	.alert-#{$color-name} {
 		border-left: 3px solid $hex;
 		background: lighten($hex, 32%);
-		color: darken($hex, 20%);
+		color: darken($hex, 25%);
 	}
 
 	//Background alerts

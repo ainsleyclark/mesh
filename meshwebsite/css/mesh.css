@@ -4373,7 +4373,7 @@ small {
 .alert-white {
   border-left: 3px solid #ffffff;
   background: white;
-  color: #cccccc;
+  color: #bfbfbf;
 }
 
 .alert-white.alert-background {
@@ -4397,7 +4397,7 @@ small {
 .alert-dark {
   border-left: 3px solid #363636;
   background: #888888;
-  color: #030303;
+  color: black;
 }
 
 .alert-dark.alert-background {
@@ -4409,7 +4409,7 @@ small {
 .alert-muted {
   border-left: 3px solid #999999;
   background: #ebebeb;
-  color: #666666;
+  color: #595959;
 }
 
 .alert-muted.alert-background {
@@ -4421,7 +4421,7 @@ small {
 .alert-light {
   border-left: 3px solid #e8e8e8;
   background: white;
-  color: #b5b5b5;
+  color: #a8a8a8;
 }
 
 .alert-light.alert-background {
@@ -4433,7 +4433,7 @@ small {
 .alert-primary {
   border-left: 3px solid #ff2451;
   background: #ffc7d3;
-  color: #bd0027;
+  color: #a40022;
 }
 
 .alert-primary.alert-background {
@@ -4445,7 +4445,7 @@ small {
 .alert-secondary {
   border-left: 3px solid #8270b8;
   background: #e1ddee;
-  color: #514082;
+  color: #463871;
 }
 
 .alert-secondary.alert-background {
@@ -4457,7 +4457,7 @@ small {
 .alert-success {
   border-left: 3px solid #55b559;
   background: #c7e6c8;
-  color: #327234;
+  color: #2a602c;
 }
 
 .alert-success.alert-background {
@@ -4469,7 +4469,7 @@ small {
 .alert-info {
   border-left: 3px solid #37abd4;
   background: #bde3f1;
-  color: #1d6c88;
+  color: #195b73;
 }
 
 .alert-info.alert-background {
@@ -4481,7 +4481,7 @@ small {
 .alert-warning {
   border-left: 3px solid #ff9e0f;
   background: #ffe0b2;
-  color: #a86400;
+  color: #8f5500;
 }
 
 .alert-warning.alert-background {
@@ -4493,7 +4493,7 @@ small {
 .alert-danger {
   border-left: 3px solid #f55145;
   background: #fde2e0;
-  color: #c9180b;
+  color: #b1150a;
 }
 
 .alert-danger.alert-background {
@@ -4505,7 +4505,7 @@ small {
 .alert-link {
   border-left: 3px solid #3763d4;
   background: #bdccf1;
-  color: #1d3b88;
+  color: #193273;
 }
 
 .alert-link.alert-background {

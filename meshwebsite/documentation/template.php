@@ -2,15 +2,20 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => '',
-	'pageDescription' => '',
-    'activePage' => '',
+	'pageTitle' => 'Alert',
+	'pageDescription' => 'Use mesh alerts to display informaitve information easily with varying colors and styles.',
+    'activePage' => 'alert',
     'parentDirectory' => basename(__DIR__)
 ]; 
 
 //Table of contents
 $tableOfContents = [
-	'usage' => 'Usage',
+    'usage' => 'Usage',
+    'background' => 'Full background',
+    'close' => 'Close',
+    'icons' => 'Icon',
+    'css' => 'CSS alert dismiss',
+    'js' => 'JS alert dismiss',
 ];
 
 ?>
@@ -18,22 +23,64 @@ $tableOfContents = [
 <?php include_once('../../partials/header.php'); ?>
 <?php include_once('../../partials/sidenav.php'); ?>
 
-<section class="content button-page">
+<section class="content modal-page">
     <div class="container-fullwidth">
         <div class="row justify-content-center mt-4 mt-desk-5">
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
-                <h1 class="mb-2"><?php echo $pageData['pageTitle']; ?></h1>
+                <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
-
-                <p>This is a template file</p>
-
-                <!-- Rounded Buttons -->
+                
+                <!-- Usage -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b-light hash">Title</h2>
-                    <p class="secondary-lead">Lead<code class="inline">&lt;code&gt;</code></p>
-                    <pre class="highlight"><code class="html">&lt;button class="btn btn-primary btn-rounded"&gt;Rounded&lt;/button&gt;
-&lt;button class="btn btn-primary btn-rounded btn-outline"&gt;Outline&lt;/button&gt;
-&lt;button class="btn btn-primary btn-rounded" disabled&gt;Disabled&lt;/button&gt;∂</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                    <h2 class="b-b-light hash">Usage</h2>
+                    <p class="mt-3">
+                        All alerts are prefixed with the <code class="inline">alert</code> class. This gives the element some common properties for the alert such as margin and padding.
+                    </p>
+                    <p class="mb-3">You can have <strong>any combination</strong> of the classes listed below.</p>
+                    <div class="text-cont">
+                        <div class="alert">
+                            This is a default alert
+                        </div>
+                        <div class="alert alert-primary">
+                            This is a primary alert
+                        </div>
+                        <div class="alert alert-success">
+                            This is a success alert
+                        </div>
+                        <div class="alert alert-info">
+                            This is a info alert
+                        </div>
+                        <div class="alert alert-warning">
+                            This is a warning alert
+                        </div>
+                        <div class="alert alert-danger">
+                            This is a danger alert
+                        </div>
+                        <div class="alert alert-link">
+                            This is a link alert
+                        </div>
+                    </div>
+                    <pre class="highlight"><code class="html">&lt;div class="alert"&gt; 
+    This is a default alert
+&lt;/div&gt; 
+&lt;div class="alert alert-primary"&gt; 
+    This is a primary alert
+&lt;/div&gt; 
+&lt;div class="alert alert-success"&gt; 
+    This is a success alert
+&lt;/div&gt; 
+&lt;div class="alert alert-info"&gt; 
+    This is a info alert
+&lt;/div&gt; 
+&lt;div class="alert alert-warning"&gt; 
+    This is a warning alert
+&lt;/div&gt; 
+&lt;div class="alert alert-danger"&gt; 
+    This is a danger alert
+&lt;/div&gt; 
+&lt;div class="alert alert-link"&gt; 
+    This is a link alert
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
                 </div><!-- /Col -->
@@ -44,3 +91,9 @@ $tableOfContents = [
 </section>
 
 <?php include_once('../../partials/footer.php') ?>
+
+<?php function scripts() { ?>
+<script>
+    //!Any page relevant JS scripts to go in here.
+</script>
+<?php } ?>

@@ -12,8 +12,8 @@ $pageData = [
 $tableOfContents = [
     'usage' => 'Usage',
     'background' => 'Full background',
-    'icons' => 'Icon',
     'close' => 'Close',
+    'icons' => 'Icon',
     'css' => 'CSS alert dismiss',
     'js' => 'JS alert dismiss',
 ];
