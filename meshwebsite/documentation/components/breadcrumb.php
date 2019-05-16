@@ -3,16 +3,15 @@
 //Page variables
 $pageData = [
 	'pageTitle' => 'Breadcrumb',
-	'pageDescription' => 'Easily indicate the current location within a websites hierarchy with our breadcrumb utility class.',
+	'pageDescription' => 'Easily indicate the current location of a user within a websites hierarchy with our breadcrumb component.',
     'activePage' => 'breadcrumb',
     'parentDirectory' => basename(__DIR__)
 ]; 
 
 //Table of contents
-//! DUPLICATE FOR CONTENTS ITEM,
-//! If you add an article, make sure the Id matches the first value here.
 $tableOfContents = [
     'usage' => 'Usage',
+    'arrows' => 'Arrows',
 ];
 
 ?>
@@ -31,30 +30,47 @@ $tableOfContents = [
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
-                        Use the <code class="inline">class</code> for inline code.
-                        <br>Another line of something.
+                        Breadcrumbs are almost a secondary navigation screen which allows users to see clearly where they are in the website heirarchy. 
                     </p>
                     <div class="text-cont">
-                        <div class="alert">
-                            Please wrap all your text in a <code class="inline">text-cont</code> class.
-                        </div>
-                    
+                        <h3>Notation:</h3>
+                        <ul class="list">
+                            <li>In order to use breadcrumbs with mesh you need to wrap the parent with a <code class="inline">breadcrumb</code> class, and child (breadcrumb items) to have the <code class="inline">breadcrumbs-item</code> class.</li>
+                            <li>Be sure to add the <code class="inline">active</code> class to the page where the user currently is. This will give the link a color of <code class="inline">rgba(0, 0, 0, 0.5);</code></li>
+                            <li><strong>Note:</strong> It is reccomended you use the <code class="inline">&lt;/ul&gt;</code> and <code class="inline">&lt;/li&gt;</code> semantic tags with breadcrumbs.</li>
+                        </ul>
                     </div>
-
-
-                    <ul class="breadcrumb bg-secondary c-white">
-                        <li><a href="#">Nav item</a></li>
-                        <li><a href="#">Nav item</a></li>
-                        <li><a href="#">Nav item</a></li>
+                    <div class="text-cont">
+                        <h3>Example:</h3>
+                        <p>The default breadcrumb class uses forward slashes as it's seperator. You can attach colors to the breadcrumb container by using our <a href="/documentation/utility/colors.php">color utility classes</a>.</p>
+                    </div>
+                    <ul class="breadcrumb bg-light c-primary">
+                        <li class="breadcrumb-item"><a href="#">Nav item</a></li>
+                        <li class="breadcrumb-item"><a href="#">Nav item</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Active nav item</a></li>
                     </ul>
+                    <pre class="highlight"><code class="html">&lt;ul class="breadcrumb bg-light c-primary"&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Nav item&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Nav item&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item active"&gt;&lt;a href="#"&gt;Active nav item&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                </article>
 
-
-
-
-                    <pre class="highlight"><code class="html">&lt;div class="alert"&gt; 
-    This is a default alert
-&lt;/div&gt; 
-</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                <article class="section-scroll" id="arrows">
+                    <h2 class="b-b-light hash">Arrows</h2>
+                    <p class="secondary-lead">
+                       You can also change the default slashes to arrows by adding the <code class="inline">breadcrumb-arrow</code> class to the parent, in conjunction with <code class="inline">breadcrumb</code>.
+                    </p>
+                    <ul class="breadcrumb breadcrumb-arrow bg-secondary c-white mb-3">
+                        <li class="breadcrumb-item"><a href="#">Nav item</a></li>
+                        <li class="breadcrumb-item"><a href="#">Nav item</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Active nav item</a></li>
+                    </ul>
+                    <pre class="highlight"><code class="html">&lt;ul class="breadcrumb breadcrumb-arrow bg-primary c-white"&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Nav item&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item"&gt;&lt;a href="#"&gt;Nav item&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="breadcrumb-item active"&gt;&lt;a href="#"&gt;Active nav item&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
                 </div><!-- /Col -->
