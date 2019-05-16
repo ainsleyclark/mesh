@@ -3,7 +3,7 @@
 //Page variables
 $pageData = [
 	'pageTitle' => 'Nav',
-	'pageDescription' => 'Something about navigation',
+	'pageDescription' => 'Something about this page',
     'activePage' => 'navigation',
     'parentDirectory' => basename(__DIR__)
 ]; 

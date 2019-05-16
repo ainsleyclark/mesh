@@ -162,19 +162,3 @@
 		color: color-contrast($color) !important;
 	}
 }
-
-// Badges Colored
-// ==========================================================================
-
-@mixin badge-colored($color) {
-	color: color-contrast($color);
-	background-color: $color;
-}
-
-// Tags Colored
-// ===========================================================================
-
-@mixin tag-colored($color) {
-	color: color-contrast($color);
-	background-color: $color;
-}

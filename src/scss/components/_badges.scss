@@ -29,7 +29,8 @@
 	@each $color-name, $hex in $palette {
 		.badge-#{$color-name} {
 			@extend %badge-properties;
-			@include badge-colored($hex);
+			color: color-contrast($hex);
+			background-color: $hex;
 		}
 	}
 }
@@ -41,7 +42,7 @@
 	}
 }
 
-// Tag classes & styling with reference to palette.
+// Tags
 // ==========================================================================
 
 .tag {
@@ -107,7 +108,8 @@
 	@each $color-name, $hex in $palette {
 		.tag-#{$color-name} {
 			@extend %tag-properties;
-			@include tag-colored($hex);
+			color: color-contrast($hex);
+			background-color: $hex;
 		}
 	}
 }
