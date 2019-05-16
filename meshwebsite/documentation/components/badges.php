@@ -11,10 +11,8 @@ $pageData = [
 //Table of contents
 $tableOfContents = [
     'usage' => 'Usage',
-    'colored' => 'Colored',
-    'rounded' => 'Rounded',
-    'notification' => 'Notification',
-    'Tags' => 'tags',
+    'examples' => 'Examples',
+    'variations' => 'Variations'
 ];
 
 ?>
@@ -31,14 +29,12 @@ $tableOfContents = [
 
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
-                    <h2 class="b-b-light hash">Usage</h2>
-                    <p class="secondary-lead">
-                        The mesh badge should be prefixed with the <code class="inline">.badge</code> class which will give you access to all of the classes outlined below.
-                        <br>They are designed to be used with the <code class="inline">&lt;span&gt;</code>  element.
-                        <br><strong>Note:</strong> You can have <strong>any combination</strong> of the classes listed below.
-                    </p>
-                    <div class="d-flex justify-content-center justify-content-desk-start flex-wrap mb-3">
-                        <span class="badge ml-0">Default</span>
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Usage</h2>
+                    <p>The mesh badge should be prefixed with the <code class="inline">.badge</code> class which will give you access to all of the classes outlined below.</p>
+                    <p>They are designed to be used with the <code class="inline">&lt;span&gt;</code>  element.</p>
+                    <p>You can have <strong>any combination</strong> of the classes listed below.</p>
+                    <div class="d-flex justify-content-center justify-content-desk-start flex-wrap">
+                        <span class="badge">Default</span>
                         <span class="badge badge-light">Light</span>
                         <span class="badge badge-dark">Dark</span>
                         <span class="badge badge-black">Black</span>
@@ -51,10 +47,10 @@ $tableOfContents = [
 
                 <!-- Colored Badges -->
                 <article class="section-scroll py-2" id="colored">
-                    <h2 class="b-b-light hash">Colored</h2>
-                    <p class="secondary-lead">You can add color classes to brighten up the badges by prefixing it with <code class="inline">.badge-{color}</code> class which will give you access to all of the classes outlined below.</p>
-                    <div class="d-flex justify-content-center justify-content-desk-start flex-wrap mb-3">
-                        <span class="badge badge-primary ml-0">Primary</span>
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Colored</h2>
+                    <p>You can add color classes to brighten up the badges by prefixing it with <code class="inline">.badge-{color}</code> class which will give you access to all of the classes outlined below.</p>
+                    <div class="d-flex justify-content-center justify-content-desk-start flex-wrap">
+                        <span class="badge badge-primary">Primary</span>
                         <span class="badge badge-success">Success</span>
                         <span class="badge badge-info">Info</span>
                         <span class="badge badge-warning">Warning</span>
@@ -69,11 +65,11 @@ $tableOfContents = [
                 </article>
 
                 <!-- Rounded Badges -->
-                <article class="section-scroll py-2" id="rounded">
-                    <h2 class="b-b-light hash">Rounded</h2>
-                    <p class="secondary-lead">You can make badges rounded with the <code class="inline">.badge-rounded</code> class.</p>
-                    <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap mb-3">
-                        <span class="badge badge-rounded badge-primary ml-0">Primary</span>
+                <article class="section-scroll py-2" id="colored">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Rounded</h2>
+                    <p>You can make badges rounded with <code class="inline">.badge-rounded</code> class which will make badges rounded.</p>
+                    <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
+                        <span class="badge badge-rounded badge-primary">Primary</span>
                         <span class="badge badge-rounded badge-success">Success</span>
                         <span class="badge badge-rounded badge-info">Info</span>
                         <span class="badge badge-rounded badge-warning">Warning</span>
@@ -88,112 +84,69 @@ $tableOfContents = [
                 </article>
 
                  <!-- Notifications Badges -->
-                 <article class="section-scroll py-2" id="notification">
-                    <h2 class="b-b-light hash">Notifications</h2>
-                    <p class="mb-3">Mesh badges can be added to buttons as notifications without additional markup.</p>
+                 <article class="section-scroll py-2" id="sizes">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Notifications</h2>
+                    <p>Mesh badges can be added to buttons as notifications without additional classes.</p>
                     <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
-                        <button class="btn btn-primary d-flex align-items-center">
+                        <button class="btn btn-primary">
                             Notifications
                             <span class="badge badge-light">10</span>
                         </button>
                     </div>
-                    <pre class="highlight"><code class="html">&lt;button class="btn btn-primary d-flex align-items-center"&gt;
+                    <pre class="highlight"><code class="html">&lt;button class="btn btn-primary"&gt;
     Notifications
     &lt;span class="badge badge-light"&gt;10&lt;/badge&gt;
 &lt;/button&gt;
 </code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
 
             <!-- Rounded Tags -->
-            <article class="section-scroll py-2" id="tags">
-                    <h2 class="b-b-light hash">Tags</h2>
-                    <p class="secondary-lead">
-                        The mesh tags should be prefiex with the <code class="inline">.tag</code> class which will give you access to all of the classes outlined below.
-                        <br>The mesh tags should also contain <code class="inline">.deletable</code> class which will alow tag to be deleted.
-                        <br>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.
-                    </p>
-                    <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap mb-3">
+            <article class="section-scroll py-2" id="colored">
+                    <h2 class="pb-1 b-b1-light mb-1 hash">Rounded Tags</h2>
+                    <p>The mesh tags should be prefiex with the <code class="inline">.tag</code> class which will give you access to all of the classes outline below.</p>
+                    <p>The mesh tags should also containe <code class="inline">.deletable</code> class which will alow tag to be deleted.</p>
+                    <p>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.</p>
+                    <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <div class="tag tag-primary deletable">
                             <div>Primary</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-success deletable">
                             <div>Success</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-info deletable">
                             <div>Info</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-warning deletable">
                             <div>Warning</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-danger deletable">
                             <div>Danger</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                         <div class="tag tag-link deletable">
                             <div>Link</div>
                             <div class="input">
-                                <i>
-                                    <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                                        </path>
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                    </svg>
-                                </i>
+                                <span>&times;</span>
                             </div>
                         </div>
                     </div>
                     <pre class="highlight"><code class="html">&lt;div class="tag tag-primary deletable"&gt;
     &lt;div&gt;Primary&lt;/div&gt;
     &lt;div class="input"&gt;
-        &lt;i&gt;
-            &lt;svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"&gt;
-                &lt;path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"&gt;&lt;/path&gt;
-                &lt;path d="M0 0h24v24H0z" fill="none"&gt;&lt;/path&gt;
-            &lt;/svg&gt;
-        &lt;/i&gt;
+        &lt;span&gt;&times;&lt;/span&gt;
     &lt;/div&gt;                     
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
