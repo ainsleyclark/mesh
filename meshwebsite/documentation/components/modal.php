@@ -3,7 +3,7 @@
 //Page variables
 $pageData = [
 	'pageTitle' => 'Modal',
-	'pageDescription' => 'mesh includes a pure CSS modal to display custom information & content easily.',
+	'pageDescription' => 'mesh includes a pure CSS modal to easily display custom information & content.',
     'activePage' => 'modal',
     'parentDirectory' => basename(__DIR__)
 ]; 

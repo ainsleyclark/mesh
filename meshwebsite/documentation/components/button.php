@@ -128,7 +128,7 @@ $tableOfContents = [
 </code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     <!-- Just Icons -->
                     <h3 class="mt-4">Blocks</h3>
-                    <p>Button blocks extend the full width of the container that they are in. Add them by using the <code class="inline">btn-block</code> class. If multiple block buttons are present, slight margin bottom will seperate them.</p>
+                    <p>Button blocks extend the full width of the container that they are in. Add them by using the <code class="inline">btn-block</code> class. If multiple block buttons are present, slight margin bottom will separate them.</p>
                     <div class="button-cont w-50 mx-auto mx-desk-0">
                         <button class="btn btn-block">Default Block</button>
                         <button class="btn btn-block btn-primary">Primary Block</button>
