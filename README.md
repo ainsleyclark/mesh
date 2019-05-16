@@ -15,6 +15,7 @@
 
 <center>
 
+[![CodeFactor](https://www.codefactor.io/repository/github/ainsleyclark/mesh/badge)](https://www.codefactor.io/repository/github/ainsleyclark/mesh)
 [![Discord Chat](https://img.shields.io/discord/308323056592486420.svg)](https://discord.gg/geBW7CN) 
 [![known vulnerabilities](https://snyk.io/test/github/ainsleyclark/mesh/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ainsleyclark/mesh?targetFile=package.json)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
