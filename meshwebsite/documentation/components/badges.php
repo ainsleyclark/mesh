@@ -112,46 +112,46 @@ $tableOfContents = [
                         <br>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.
                     </p>
                     <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap mb-3">
-                        <div class="tag tag-primary deletable">
-                            <div>Primary</div>
-                            <div class="input">
+                        <div class="tag tag-primary">
+                            <div class="action">Primary</div>
+                            <div class="deletable">
                                 <span>&times;</span>
                             </div>
                         </div>
-                        <div class="tag tag-success deletable">
-                            <div>Success</div>
-                            <div class="input">
+                        <div class="tag tag-success">
+                            <div class="action">Success</div>
+                            <div class="deletable">
                                 <span>&times;</span>
                             </div>
                         </div>
-                        <div class="tag tag-info deletable">
-                            <div>Info</div>
-                            <div class="input">
+                        <div class="tag tag-info">
+                            <div class="action">Primary</div>
+                            <div class="deletable">
                                 <span>&times;</span>
                             </div>
                         </div>
-                        <div class="tag tag-warning deletable">
-                            <div>Warning</div>
-                            <div class="input">
+                        <div class="tag tag-warning">
+                            <div class="action">Success</div>
+                            <div class="deletable">
                                 <span>&times;</span>
                             </div>
                         </div>
-                        <div class="tag tag-danger deletable">
-                            <div>Danger</div>
-                            <div class="input">
+                        <div class="tag tag-danger">
+                            <div class="action">Primary</div>
+                            <div class="deletable">
                                 <span>&times;</span>
                             </div>
                         </div>
-                        <div class="tag tag-link deletable">
-                            <div>Link</div>
-                            <div class="input">
+                        <div class="tag tag-link">
+                            <div class="action">Success</div>
+                            <div class="deletable">
                                 <span>&times;</span>
                             </div>
                         </div>
                     </div>
-                    <pre class="highlight"><code class="html">&lt;div class="tag tag-primary deletable"&gt;
-    &lt;div&gt;Primary&lt;/div&gt;
-    &lt;div class="input"&gt;
+                    <pre class="highlight"><code class="html">&lt;div class="tag tag-primary"&gt;
+    &lt;div class="action"&gt;Primary&lt;/div&gt;
+    &lt;div class="deletable"&gt;
         &lt;span&gt;&times;&lt;/span&gt;
     &lt;/div&gt;                     
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
