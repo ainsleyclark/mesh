@@ -49,10 +49,8 @@
 	background-color: #999;
 	color: #fff;
 	display: inline-block;
-	margin-top: 7px;
 	height: auto;
-	line-height: 10px;
-	padding: $badge-padding;
+	padding: 0 12px 5px 12px;
 	padding-right: 0;
 	border-radius: 500px;
 	font-size: $badge-font-size;
@@ -72,7 +70,7 @@
 		position: relative;
 		top: 2px;
 		right: 10px;
-		color: rgba(#fff, 0.2);
+		color: rgba(#fff, 0.1);
 		font-size: 18px;
 		z-index: 6;
 		transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
