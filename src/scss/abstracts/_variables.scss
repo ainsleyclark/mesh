@@ -217,27 +217,27 @@ $button-padding-round: 12px 40px !default;
 $button-font-size: 14px !default;
 $button-font-weight: 400;
 
-//Shadows & Hover
+//Shadows & hover
 $button-enable-shadows: true;
 
 // 14. Card
 // ==========================================================================
 
-// Default card sizes
+// Sizes
 $card-default-width: 300px !default;
-$card-default-width-large: 500px !default;
+$card-default-width-large: 400px !default;
 
-// Default card padding
+// Color & shadow
+$card-border-color: rgba(0,0,0,0.2);
+$card-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+
+// Padding & margin
 $card-default-padding: 12px 30px !default;
 $card-default-header-icon-padding: 5px 0 5px 30px !default;
 $card-default-media-img-title-padding: 5px 30px !default;
 
 // Card media-header size
 $card-default-media-header-height: 150px !default;
-
-// Default card font sizes
-$card-default-title-font-size: 18px !default;
-$card-default-content-font-size: 16px !default;
 
 // 15. Collapse
 // ==========================================================================

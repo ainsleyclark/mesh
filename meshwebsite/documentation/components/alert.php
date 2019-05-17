@@ -140,7 +140,7 @@ $tableOfContents = [
                         <div class="alert alert-success alert-close">
                             This is a success alert with close button
                             <button type="button" class="close" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
+                                <span aria-hidden="true"></span>
                             </button>
                         </div>
                         <div class="alert alert-info alert-close">
@@ -165,25 +165,25 @@ $tableOfContents = [
                     <pre class="highlight"><code class="html">&lt;div class="alert alert-success alert-close"&gt;
     This is a success alert with close button
     &lt;button type="button" class="close" aria-label="Close"&gt;
-        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt;
+        &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
     &lt;/button&gt;
 &lt;/div&gt;
 &lt;div class="alert alert-info alert-close"&gt;
     This is a info alert with close button
     &lt;button type="button" class="close" aria-label="Close"&gt;
-        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt;
+        &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
     &lt;/button&gt;
 &lt;/div&gt;
 &lt;div class="alert alert-warning alert-close"&gt;
     This is a warning alert with close button
     &lt;button type="button" class="close" aria-label="Close"&gt;
-        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt;
+        &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
     &lt;/button&gt;
 &lt;/div&gt;
 &lt;div class="alert alert-danger alert-close"&gt;
     This is a danger alert with close button
     &lt;button type="button" class="close" aria-label="Close"&gt;
-        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt;
+        &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
     &lt;/button&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
@@ -233,7 +233,7 @@ $tableOfContents = [
     &lt;strong&gt;Danger alert:&lt;/strong&gt;
     We're sorry, but all the cake has gone.
     &lt;button type="button" class="close" aria-label="Close"&gt;
-        &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+        &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
     &lt;/button&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
@@ -299,7 +299,7 @@ $tableOfContents = [
     &lt;div class="alert alert-success alert-background alert-close"&gt;
         This is a success alert with close button functionality
         &lt;label for="alertdismiss1" class="close" aria-label="Close"&gt;
-            &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
+            &lt;span aria-hidden="true"&gt;&amp;times;&lt;/span&gt;
         &lt;/label&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>

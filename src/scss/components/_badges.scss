@@ -4,7 +4,7 @@
 // ==========================================================================
 
 .badge {
-	display: inline-block;
+	display: inline-flex;
 	padding: $badge-padding;
 	background-color: #999;
 	color: #fff;
@@ -17,7 +17,7 @@
 	vertical-align: middle;
 	height: auto;
 	margin-right: 5px;
-	margin-left: 5px;
+	line-height: 1;
 }
 
 %badge-properties {
@@ -48,11 +48,11 @@
 .tag {
 	background-color: #999;
 	color: #fff;
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	height: auto;
 	line-height: 1;
 	padding: 0 12px 5px;
-	padding-right: 0;
 	border-radius: 500px;
 	font-size: $badge-font-size;
 	text-transform: uppercase;
@@ -62,6 +62,7 @@
 	margin-right: 10px;
 	transition: .3s cubic-bezier(0.25, 0.8, 0.25, 1);
 	transition-property: padding-right, color, right;
+
 	& .action {
 		display: inline-block;
 	}

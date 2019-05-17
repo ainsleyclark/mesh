@@ -4368,7 +4368,7 @@ label.close {
 }
 
 .badge {
-  display: inline-block;
+  display: inline-flex;
   padding: 5px 12px;
   background-color: #999;
   color: #fff;
@@ -4381,7 +4381,7 @@ label.close {
   vertical-align: middle;
   height: auto;
   margin-right: 5px;
-  margin-left: 5px;
+  line-height: 1;
 }
 
 .badge-white, .badge-black, .badge-dark, .badge-muted, .badge-light, .badge-primary, .badge-secondary, .badge-success, .badge-info, .badge-warning, .badge-danger, .badge-link {
@@ -4457,54 +4457,44 @@ label.close {
 .tag {
   background-color: #999;
   color: #fff;
-  margin-top: 7px;
-  height: 32px;
-  padding: 0 12px;
-  padding-right: 13px;
-  display: inline-block;
-  border-radius: 32px;
+  display: inline-flex;
+  align-items: center;
+  height: auto;
+  line-height: 1;
+  padding: 0 12px 5px;
+  border-radius: 500px;
   font-size: 10px;
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 32px;
   vertical-align: middle;
   white-space: nowrap;
   margin-right: 10px;
-  transition: padding-right 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-property: padding-right, color, right;
 }
 
-.tag.deletable {
+.tag .action {
+  display: inline-block;
+}
+
+.tag .deletable {
+  display: inline-block;
   position: relative;
-}
-
-.tag .input {
-  fill: #fff;
-  top: 5%;
-  background-color: transparent !important;
+  top: 2px;
+  right: 10px;
+  color: rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+  z-index: 6;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .tag:hover {
-  padding-right: 30px;
-  transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-property: background-color, color, opacity, transform, box-shadow, padding-right;
-  will-change: background-color, color, opacity, transform, box-shadow, padding-right;
+  padding-right: 10px;
 }
 
-.tag:hover .input {
-  fill: #fff;
-  width: 18px;
-  min-width: 18px;
-  height: 10px;
-  margin: 0;
-  position: absolute;
-  top: 5%;
-  right: 15px;
-  z-index: 6;
-  transform: translate3D(50%, -20%, 0);
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  font-size: 18px;
-  border-radius: 50%;
+.tag:hover .deletable {
+  color: white;
+  transform: translate3d(120%, 0, 0);
   cursor: pointer;
 }
 
@@ -5166,6 +5156,8 @@ label.close {
   height: 45px;
   min-width: 45px;
   width: 45px;
+  align-items: center;
+  font-size: 1rem !important;
 }
 
 .btn-justicon.btn-large {
@@ -5247,178 +5239,111 @@ label.close {
 }
 
 .card {
-  position: relative;
-  margin: 15px;
-  background: #fff;
   width: 300px;
-  min-height: 250px;
-  height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 3px 3px -2px rgba(0, 0, 0, 0.22), 0 1px 7px 0 rgba(0, 0, 0, 0.14);
+  margin: .5rem 0 1rem 0;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card.card-large {
-  width: 500px;
+.card-shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  border: 0;
 }
 
-.card.img-card {
-  background-repeat: repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-origin: padding-box;
-  background-attachment: scroll;
-  box-sizing: border-box;
+.card-large {
+  width: 400px;
 }
 
-.card.img-card > .card-header {
-  padding: 0;
+.card-header {
+  padding: 12px 24px;
+}
+
+.card-header * {
   margin: 0;
 }
 
-.card .card-menu {
-  position: absolute;
-  cursor: pointer;
-  top: 5px;
-  right: 10px;
-  padding: 5px;
+.card-header .card-subtitle {
+  margin-top: -5px;
+  color: #999;
 }
 
-.card .card-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px 30px;
-  font-size: 18px;
-  font-weight: 600;
-  flex-grow: 1;
-  height: 100%;
-  /*
-     		*  Enforce font-size for all headings except h1
-     		*  because there should never be a h1 in a card
-    		*/
+.card-content {
+  position: relative;
+  padding: 24px;
+  margin-bottom: 5px;
 }
 
-.card .card-header > .card-header-icon,
-.card .card-header > .card-title {
-  display: flex;
-}
-
-.card .card-header > .card-header-icon,
-.card .card-header .card-header-icon + .card-title {
-  min-height: 50px;
-  height: auto;
-}
-
-.card .card-header.card-media-header .card-header-icon + .card-title {
-  padding: 5px 30px 5px 10px;
-  align-items: center;
-}
-
-.card .card-header > .card-header-icon {
-  justify-content: center;
-  padding-right: 10px;
-}
-
-.card .card-header > .card-header-icon > img {
-  border-radius: 100%;
-  height: 40px;
-  z-index: 10;
-}
-
-.card .card-header > .card-title > h2 {
-  font-size: inherit;
-  font-weight: inherit;
-  padding: 0;
+.card-content .card-title {
   margin: 0;
 }
 
-.card .card-header > .card-title > h3 {
-  font-size: inherit;
-  font-weight: inherit;
-  padding: 0;
-  margin: 0;
+.card-content .card-subtitle {
+  margin-top: -5px;
+  margin-bottom: .5rem;
+  color: #999;
 }
 
-.card .card-header > .card-title > h4 {
-  font-size: inherit;
-  font-weight: inherit;
-  padding: 0;
-  margin: 0;
+.card-content .card-text {
+  margin-bottom: 0;
 }
 
-.card .card-header > .card-title > h5 {
-  font-size: inherit;
-  font-weight: inherit;
-  padding: 0;
-  margin: 0;
-}
-
-.card .card-header > .card-title > h6 {
-  font-size: inherit;
-  font-weight: inherit;
-  padding: 0;
-  margin: 0;
-}
-
-.card .card-menu + .card-header {
-  padding-top: 40px;
-}
-
-.card .card-media-header {
-  padding: 0;
-  height: 150px;
-  align-items: flex-end;
-  background-repeat: repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-origin: padding-box;
-  background-attachment: scroll;
-  box-sizing: border-box;
-}
-
-.card.img-card > .card-header,
-.card.img-card > .card-header > .card-title,
-.card .card-media-header > .card-title,
-.card .card-media-header > .card-header-icon {
-  align-items: flex-end;
-}
-
-.card.img-card > .card-header > .card-title,
-.card.img-card > .card-content,
-.card .card-media-header > .card-title,
-.card .card-media-header > .card-header-icon {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.card.img-card > .card-content {
-  display: flex;
-  align-items: center;
-}
-
-.card.img-card > .card-header > .card-title,
-.card .card-media-header > .card-title {
-  padding: 5px 30px;
-  min-height: 30px;
-  width: 100%;
-}
-
-.card .card-media-header > .card-header-icon {
-  padding: 5px 0 5px 30px;
-}
-
-.card .card-content {
-  font-size: 18px;
-  padding: 12px 30px;
-  flex-grow: 1;
-}
-
-.card .card-footer {
-  padding: 12px 30px;
+.card-action {
+  padding: 16px 24px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.card .card-footer > button {
-  margin: 5px;
+.card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large) {
+  margin-right: 1rem;
+}
+
+.card .btn {
+  margin: 0;
+}
+
+.card .card-image {
+  position: relative;
+}
+
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card-icon {
+  position: absolute;
+  right: 24px;
+  bottom: -22.5px;
+  margin: 0;
+  z-index: 1;
+}
+
+.card-icon.btn-large {
+  bottom: -28px;
+}
+
+.card-background {
+  display: flex;
+  align-items: center;
+}
+
+.card-background .card-image {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .hero {

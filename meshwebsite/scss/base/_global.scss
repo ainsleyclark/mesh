@@ -4,18 +4,14 @@
 // -----------------------------------------------------------------------------
 
 html {
-	font-size: 87.5%;
+	font-size: 92.5%;
 
 	@include media-tab {
-		font-size: 95%;
+		font-size: 97.5%;
 	}
 
 	@include media-desk {
 		font-size: 100%;
-	}
-
-	@include media-hd {
-		font-size: 104%;
 	}
 }
 main {

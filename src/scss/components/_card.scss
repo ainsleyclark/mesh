@@ -1,148 +1,129 @@
+// .card {
+// 	position: relative;
+// 	margin: 15px;
+// 	background: #fff;
+// 	
+// 	min-height: 250px;
+// 	height: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 3px 3px -2px rgba(0, 0, 0, 0.22), 0 1px 7px 0 rgba(0, 0, 0, 0.14);
+
+
 .card {
-	position: relative;
-	margin: 15px;
-	background: #fff;
+	$self: &;
+
 	width: $card-default-width;
-	min-height: 250px;
-	height: 100%;
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 3px 3px -2px rgba(0, 0, 0, 0.22), 0 1px 7px 0 rgba(0, 0, 0, 0.14);
+	margin: .5rem 0 1rem 0;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid $card-border-color;
 
-	&.card-large {
+	//Optional card shadow
+	&-shadow {
+		box-shadow: $card-shadow;
+		border: 0;
+	}
+
+	&-large {
 		width: $card-default-width-large;
 	}
 
-	&.img-card {
-		background-repeat: repeat;
-		background-position: 50% 50%;
-		background-size: cover;
-		background-origin: padding-box;
-		background-attachment: scroll;
-		box-sizing: border-box;
+	//Card header
+	&-header {
+		padding: 12px 24px;
+
+		& * {
+			margin: 0;		
+		}
+
+		#{$self}-subtitle {
+			margin-top: -5px;
+			color: #999;
+		}
 	}
 
-	&.img-card > .card-header {
-		padding: 0;
+	//Card content/body
+	&-content {
+		position: relative;
+		padding: 24px;
+		margin-bottom: 5px;
+
+		#{$self}-title {
+			margin: 0;
+		}
+		
+		#{$self}-subtitle {
+			margin-top: -5px;
+			margin-bottom: .5rem;
+			color: #999;
+		}
+
+		#{$self}-text {
+			margin-bottom: 0;
+		}
+	}
+
+	//Card action/footer
+	&-action {
+		padding: 16px 24px;
+		border-top: 1px solid rgba(0,0,0,0.2);
+
+		a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large) {
+			margin-right: 1rem;
+		}
+	}
+
+	//Remove margin from button in card
+	.btn {
 		margin: 0;
 	}
 
-	.card-menu {
+	//Card image
+	.card-image {
+		position: relative;
+
+		img {
+			display: block;
+			border-radius: 	2px 2px 0 0;
+			position: relative;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	//FAB icons
+	&-icon {
 		position: absolute;
-		cursor: pointer;
-		top: 5px;
-		right: 10px;
-		padding: 5px;
-	}
+		right: 24px;
+		bottom: -22.5px;
+		margin: 0;
+		z-index: 1;
 
-	.card-header {
-		display: flex;
-		justify-content: space-between;
-		padding: $card-default-padding;
-		font-size: $card-default-title-font-size;
-		font-weight: 600;
-		flex-grow: 1;
-		height: 100%;
-
-		& > .card-header-icon,
-		& > .card-title {
-			display: flex;
-		}
-
-		& > .card-header-icon,
-		.card-header-icon + .card-title {
-			min-height: 50px;
-			height: auto;
-		}
-
-		&.card-media-header .card-header-icon + .card-title {
-			padding: 5px 30px 5px 10px;
-			align-items: center;
-		}
-
-		& > .card-header-icon {
-			justify-content: center;
-			padding-right: 10px;
-		}
-		& > .card-header-icon > img {
-			border-radius: 100%;
-			height: 40px;
-			z-index: 10;
-		}
-
-		/*
-     		*  Enforce font-size for all headings except h1
-     		*  because there should never be a h1 in a card
-    		*/
-		@for $index from 2 through 6 {
-			& > .card-title > h#{$index} {
-				font-size: inherit;
-				font-weight: inherit;
-				padding: 0;
-				margin: 0;
-			}
+		&.btn-large {
+			bottom: -28px;
 		}
 	}
 
-	//Add extra padding-top if has .card-menu sibling
-	.card-menu + .card-header {
-		padding-top: 40px;
-	}
-
-	.card-media-header {
-		padding: 0;
-		height: $card-default-media-header-height;
-		align-items: flex-end;
-		background-repeat: repeat;
-		background-position: 50% 50%;
-		background-size: cover;
-		background-origin: padding-box;
-		background-attachment: scroll;
-		box-sizing: border-box;
-	}
-
-	&.img-card > .card-header,
-	&.img-card > .card-header > .card-title,
-	.card-media-header > .card-title,
-	.card-media-header > .card-header-icon {
-		align-items: flex-end;
-	}
-
-	&.img-card > .card-header > .card-title,
-	&.img-card > .card-content,
-	.card-media-header > .card-title,
-	.card-media-header > .card-header-icon {
-		background: rgba(255, 255, 255, 0.5);
-	}
-
-	&.img-card > .card-content {
+	//Full background cards
+	&-background {
 		display: flex;
 		align-items: center;
-	}
 
-	&.img-card > .card-header > .card-title,
-	.card-media-header > .card-title {
-		padding: $card-default-media-img-title-padding;
-		min-height: 30px;
-		width: 100%;
-	}
-
-	.card-media-header > .card-header-icon {
-		padding: $card-default-header-icon-padding;
-	}
-
-	.card-content {
-		font-size: $card-default-title-font-size;
-		padding: $card-default-padding;
-		flex-grow: 1;
-	}
-
-	.card-footer {
-		padding: $card-default-padding;
-		border-top: 1px solid rgba(0, 0, 0, 0.2);
-
-		& > button {
-			margin: 5px;
+		#{$self}-image {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
 		}
 	}
 }

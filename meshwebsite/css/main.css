@@ -13,24 +13,18 @@
     ==================== */
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 html {
-  font-size: 87.5%;
+  font-size: 92.5%;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 95%;
+    font-size: 97.5%;
   }
 }
 
 @media (min-width: 1024px) {
   html {
     font-size: 100%;
-  }
-}
-
-@media (min-width: 1408px) {
-  html {
-    font-size: 104%;
   }
 }
 
@@ -425,8 +419,7 @@ header.primary nav.primary ul .download:hover svg path {
   margin-top: 10px;
 }
 
-.content .text-cont,
-.content .btn {
+.content .text-cont {
   margin-bottom: 1rem;
 }
 
