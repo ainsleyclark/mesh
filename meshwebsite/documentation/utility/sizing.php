@@ -2,23 +2,23 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Sizing',
-	'pageDescription' => 'Easily make adjustments to the width and height to an element with our responsive sizing utility classes.',
+    'pageTitle' => 'Sizing',
+    'pageDescription' => 'Easily make adjustments to the width and height to an element with our responsive sizing utility classes.',
     'activePage' => 'sizing',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
     'usage' => 'Usage',
     'examples' => 'Examples',
-    'variations' => 'Variations'
+    'variations' => 'Variations',
 ];
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content sizing-page">
     <div class="container-fullwidth">
@@ -162,7 +162,7 @@ $tableOfContents = [
                         <div class="br d-flex mb-3 justify-content-center t-center flex-wrap">
                             <div class="text px-3 mx-2 br w-100 w-tab-40">
                                 w-100 w-tab-40
-                            </div>                            
+                            </div>
                             <div class="text px-3 mx-2 mt-2 mt-tab-0 br w-100 w-tab-40">
                                 w-100 w-tab-40
                             </div>
@@ -178,10 +178,10 @@ $tableOfContents = [
                         <div class="br d-flex mb-3 justify-content-center py-2 t-center flex-wrap align-items-baseline height-200">
                             <div class="text px-3 br w-100 h-60 h-desk-40 mb-1 d-flex align-items-center justify-content-center">
                                 <span>w-100 h-60 h-desk-40</span>
-                            </div>                            
+                            </div>
                             <div class="text px-3 br w-100 h-40 h-desk-60 d-flex align-items-center justify-content-center">
                                 <span>w-100 h-40 h-desk-60</span>
-                            </div>  
+                            </div>
                         </div>
                     </div>
                     <pre class="highlight"><code class="html">&lt;div class="w-100 h-60 h-desk-40"&gt;w-100 h-60 h-desk-40&lt;/div&gt;
@@ -190,8 +190,8 @@ $tableOfContents = [
 
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
-                <h2 class="b-b-light hash">Variations</h2>
-<pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
+                    <h2 class="b-b-light hash">Variations</h2>
+                    <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="w-10"&gt;&lt;/div&gt;
 &lt;div class="w-20"&gt;&lt;/div&gt;
 &lt;div class="w-30"&gt;&lt;/div&gt;
@@ -249,10 +249,10 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

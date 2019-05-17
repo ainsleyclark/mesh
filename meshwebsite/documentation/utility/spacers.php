@@ -2,17 +2,17 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Spacers',
-	'pageDescription' => 'Use spacers to separate content when margin & padding isn&#39;t large enough with these helpful classes.' ,
+    'pageTitle' => 'Spacers',
+    'pageDescription' => 'Use spacers to separate content when margin & padding isn&#39;t large enough with these helpful classes.',
     'activePage' => 'spacers',
     'parentDirectory' => basename(__DIR__),
 
     'tags' => [
         'builder' => true,
         'variables' => true,
-        'colors' => false
-    ]
-]; 
+        'colors' => false,
+    ],
+];
 
 //Table of contents
 $tableOfContents = [
@@ -22,8 +22,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content spacers-page">
     <div class="container-fullwidth">
@@ -32,9 +32,9 @@ $tableOfContents = [
                 <h1 class="my-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
                 <div class="tags d-flex mt-3">
-                    <span class="badge badge-rounded <?php if ($pageData['tags']['builder'] == 1) { echo 'bg-success'; } else { echo 'bg-danger'; }?>">Builder</span>
-                    <span class="badge badge-rounded <?php if ($pageData['tags']['variables'] == 1) { echo 'bg-success'; } else { echo 'bg-danger'; }?>">Variables</span>
-                    <span class="badge badge-rounded <?php if ($pageData['tags']['colors'] == 1) { echo 'bg-success'; } else { echo 'bg-danger'; }?>">Colors</span>
+                    <span class="badge badge-rounded <?php if ($pageData['tags']['builder'] == 1) {echo 'bg-success';} else {echo 'bg-danger';}?>">Builder</span>
+                    <span class="badge badge-rounded <?php if ($pageData['tags']['variables'] == 1) {echo 'bg-success';} else {echo 'bg-danger';}?>">Variables</span>
+                    <span class="badge badge-rounded <?php if ($pageData['tags']['colors'] == 1) {echo 'bg-success';} else {echo 'bg-danger';}?>">Colors</span>
                 </div>
 
                 <!-- Borders -->
@@ -138,7 +138,7 @@ $tableOfContents = [
                                     <td>height: 500px;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                 </article>
 
@@ -151,7 +151,7 @@ $tableOfContents = [
                     </p>
                     <div class="column-demo c-white mb-3">
                         <div class="br d-flex bg-light justify-content-center flex-wrap t-center">
-                            <div class="text br w-100"></div>  
+                            <div class="text br w-100"></div>
                             <div class="spacer-50"></div>
                             <div class="text br w-100"></div>
                         </div>
@@ -162,12 +162,12 @@ $tableOfContents = [
     &lt;div class="w-100"&gt;&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
-    
+
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

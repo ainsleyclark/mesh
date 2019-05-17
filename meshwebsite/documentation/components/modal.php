@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Modal',
-	'pageDescription' => 'mesh includes a pure CSS modal to easily display custom information & content.',
+    'pageTitle' => 'Modal',
+    'pageDescription' => 'mesh includes a pure CSS modal to easily display custom information & content.',
     'activePage' => 'modal',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -16,8 +16,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content modal-page">
     <div class="container-fullwidth">
@@ -128,12 +128,11 @@ $tableOfContents = [
 
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
 
-<?php include_once('../../partials/footer.php') ?>
-
+<?php include_once '../../partials/footer.php'?>

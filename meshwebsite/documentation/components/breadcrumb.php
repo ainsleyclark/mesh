@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Breadcrumb',
-	'pageDescription' => 'Easily indicate the current location of a user within a websites hierarchy with our breadcrumb component.',
+    'pageTitle' => 'Breadcrumb',
+    'pageDescription' => 'Easily indicate the current location of a user within a websites hierarchy with our breadcrumb component.',
     'activePage' => 'breadcrumb',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -16,8 +16,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content breadcrumb-page">
     <div class="container-fullwidth">
@@ -25,12 +25,12 @@ $tableOfContents = [
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
-                
+
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
-                        Breadcrumbs are almost a secondary navigation screen which allows users to see clearly where they are in the website heirarchy. 
+                        Breadcrumbs are almost a secondary navigation screen which allows users to see clearly where they are in the website heirarchy.
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
@@ -59,7 +59,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="arrows">
                     <h2 class="b-b-light hash">Arrows</h2>
                     <p class="secondary-lead">
-                       You can also change the default slashes to arrows by adding the <code class="inline">breadcrumb-arrow</code> class to the parent, in conjunction with <code class="inline">breadcrumb</code>.
+                        You can also change the default slashes to arrows by adding the <code class="inline">breadcrumb-arrow</code> class to the parent, in conjunction with <code class="inline">breadcrumb</code>.
                     </p>
                     <ul class="breadcrumb breadcrumb-arrow bg-secondary c-white mb-3">
                         <li class="breadcrumb-item"><a href="#">Nav item</a></li>
@@ -73,17 +73,18 @@ $tableOfContents = [
 &lt;/ul&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
-                </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            </div><!-- /Col -->
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
 
-<?php function scripts() { ?>
+<?php function scripts()
+{?>
 <script>
-    //!Any page relevant JS scripts to go in here.
+//!Any page relevant JS scripts to go in here.
 </script>
-<?php } ?>
+<?php }?>

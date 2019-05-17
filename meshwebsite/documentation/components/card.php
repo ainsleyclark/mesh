@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Card',
-	'pageDescription' => 'Use materialistic cards in various styles & formats with ease with our card component.',
+    'pageTitle' => 'Card',
+    'pageDescription' => 'Use materialistic cards in various styles & formats with ease with our card component.',
     'activePage' => 'card',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -15,8 +15,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content card-page">
     <div class="container-fullwidth">
@@ -37,7 +37,7 @@ $tableOfContents = [
                     <div class="card">
                         <div class="card-header">
                             <div class="card-title">
-                            <h2>Simple Card Header</h2>
+                                <h2>Simple Card Header</h2>
                             </div>
                         </div>
                         <div class="card-content">
@@ -51,7 +51,7 @@ $tableOfContents = [
                     <div class="card">
                         <div class="card-header">
                             <div class="card-title">
-                            <h2>Simple Card Header</h2>
+                                <h2>Simple Card Header</h2>
                             </div>
                         </div>
                         <div class="card-content">
@@ -62,7 +62,7 @@ $tableOfContents = [
                     <div class="card card-large">
                         <div class="card-header">
                             <div class="card-title">
-                            <h2>Simple Card Header</h2>
+                                <h2>Simple Card Header</h2>
                             </div>
                         </div>
                         <div class="card-content">
@@ -74,34 +74,34 @@ $tableOfContents = [
 
 
 
-                    <pre class="highlight"><code class="html">&lt;div class="alert"&gt; 
+                    <pre class="highlight"><code class="html">&lt;div class="alert"&gt;
     This is a default alert
-&lt;/div&gt; 
-&lt;div class="alert alert-primary"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-primary"&gt;
     This is a primary alert
-&lt;/div&gt; 
-&lt;div class="alert alert-success"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-success"&gt;
     This is a success alert
-&lt;/div&gt; 
-&lt;div class="alert alert-info"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-info"&gt;
     This is a info alert
-&lt;/div&gt; 
-&lt;div class="alert alert-warning"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;
     This is a warning alert
-&lt;/div&gt; 
-&lt;div class="alert alert-danger"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-danger"&gt;
     This is a danger alert
-&lt;/div&gt; 
-&lt;div class="alert alert-link"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-link"&gt;
     This is a link alert
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

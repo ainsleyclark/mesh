@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Float',
-	'pageDescription' => 'Toggle between floats at different breakpoints using our float utility classes.' ,
+    'pageTitle' => 'Float',
+    'pageDescription' => 'Toggle between floats at different breakpoints using our float utility classes.',
     'activePage' => 'float',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -18,8 +18,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content float-page">
     <div class="container-fullwidth">
@@ -66,7 +66,7 @@ $tableOfContents = [
                                     <td>float: none;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                 </article>
 
@@ -79,7 +79,7 @@ $tableOfContents = [
                     <div class="text-cont">
                         <h3>Notation:</h3>
                         <ul class="list">
-                            <li>You can target the clearfix class by adding  <code class="inline">clearfix</code> to the element you want to be fixed. </li>
+                            <li>You can target the clearfix class by adding <code class="inline">clearfix</code> to the element you want to be fixed. </li>
                             <li>Generally speaking you would want to use the <code class="inline">clearfix</code> to the parent of the items that are being floated.</li>
                         </ul>
                     </div>
@@ -91,14 +91,14 @@ $tableOfContents = [
                     <h3 class="mt-3">Responsive floats:</h3>
                     <p>
                         Here, the first element is floated to the left, the second to the right on desktop screens, the clearfix class is used on the parent. <span class="d-none d-desk-inline">See the effect it has with it turned off by using the button.</span>
-                    <button class="btn btn-rounded btn-secondary d-none d-desk-block mt-3" id="clearfixBtn">Turn clearfix off</button>
-                    <div class="column-demo c-white mb-3">
-                        <div class="br t-center clearfix" id="clearfixDemo">
-                            <div class="text br mb-2 f-desk-left w-40"></div>  
-                            <div class="text br f-desk-right w-40"></div>
+                        <button class="btn btn-rounded btn-secondary d-none d-desk-block mt-3" id="clearfixBtn">Turn clearfix off</button>
+                        <div class="column-demo c-white mb-3">
+                            <div class="br t-center clearfix" id="clearfixDemo">
+                                <div class="text br mb-2 f-desk-left w-40"></div>
+                                <div class="text br f-desk-right w-40"></div>
+                            </div>
                         </div>
-                    </div>
-                    <pre class="highlight"><code class="html">&lt;div class="clearfix"&gt;
+                        <pre class="highlight"><code class="html">&lt;div class="clearfix"&gt;
     &lt;div class="f-desk-left w-40"&gt;&lt;/div&gt;
     &lt;div class="f-desk-right w-40"&gt;&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
@@ -107,7 +107,7 @@ $tableOfContents = [
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
                     <h2 class="b-b-light hash">Variations</h2>
-<pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
+                    <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="f-left"&gt;&lt;/div&gt;
 &lt;div class="f-right"&gt;&lt;/div&gt;
 &lt;div class="f-none"&gt;&lt;/div&gt;
@@ -128,19 +128,20 @@ $tableOfContents = [
 &lt;div class="f-hd-right"&gt;&lt;/div&gt;
 &lt;div class="f-hd-none"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
-    
+
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
 
-<?php function scripts() { ?>
+<?php function scripts()
+{?>
 
-<script>   
+<script>
 //Turn clearfix text on & off
 document.querySelector('#clearfixBtn').addEventListener('click', function() {
     this.innerHTML = this.innerHTML.includes('off') ? "Turn clearfix on" : "Turn clearfix off";
@@ -148,4 +149,4 @@ document.querySelector('#clearfixBtn').addEventListener('click', function() {
 });
 </script>
 
-<?php } ?>
+<?php }?>

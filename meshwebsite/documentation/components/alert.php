@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Alert',
-	'pageDescription' => 'Use mesh alerts to display informaitve information easily with varying colors and styles.',
+    'pageTitle' => 'Alert',
+    'pageDescription' => 'Use mesh alerts to display informaitve information easily with varying colors and styles.',
     'activePage' => 'alert',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -20,8 +20,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content alert-page">
     <div class="container-fullwidth">
@@ -60,25 +60,25 @@ $tableOfContents = [
                             This is a link alert
                         </div>
                     </div>
-                    <pre class="highlight"><code class="html">&lt;div class="alert"&gt; 
+                    <pre class="highlight"><code class="html">&lt;div class="alert"&gt;
     This is a default alert
-&lt;/div&gt; 
-&lt;div class="alert alert-primary"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-primary"&gt;
     This is a primary alert
-&lt;/div&gt; 
-&lt;div class="alert alert-success"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-success"&gt;
     This is a success alert
-&lt;/div&gt; 
-&lt;div class="alert alert-info"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-info"&gt;
     This is a info alert
-&lt;/div&gt; 
-&lt;div class="alert alert-warning"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;
     This is a warning alert
-&lt;/div&gt; 
-&lt;div class="alert alert-danger"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-danger"&gt;
     This is a danger alert
-&lt;/div&gt; 
-&lt;div class="alert alert-link"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-link"&gt;
     This is a link alert
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
@@ -108,26 +108,26 @@ $tableOfContents = [
                             This is a danger alert
                         </div>
                     </div>
-                    <pre class="highlight"><code class="html">&lt;div class="alert alert-primary alert-background"&gt; 
+                    <pre class="highlight"><code class="html">&lt;div class="alert alert-primary alert-background"&gt;
     This is a primary alert
-&lt;/div&gt; 
-&lt;div class="alert alert-success alert-background"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-success alert-background"&gt;
     This is a success alert
-&lt;/div&gt; 
-&lt;div class="alert alert-info alert-background"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-info alert-background"&gt;
     This is a info alert
-&lt;/div&gt; 
-&lt;div class="alert alert-warning alert-background"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-warning alert-background"&gt;
     This is a warning alert
-&lt;/div&gt; 
-&lt;div class="alert alert-danger alert-background"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-danger alert-background"&gt;
     This is a danger alert
-&lt;/div&gt; 
-&lt;div class="alert alert-link alert-background"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-link alert-background"&gt;
     This is a link alert
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
-                
+
                 <!-- Closeable Alerts -->
                 <article class="section-scroll" id="close">
                     <h2 class="b-b-light hash">Close</h2>
@@ -162,29 +162,29 @@ $tableOfContents = [
                             </button>
                         </div>
                     </div>
-                    <pre class="highlight"><code class="html">&lt;div class="alert alert-success alert-close"&gt; 
+                    <pre class="highlight"><code class="html">&lt;div class="alert alert-success alert-close"&gt;
     This is a success alert with close button
-    &lt;button type="button" class="close" aria-label="Close"&gt; 
-        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt; 
-    &lt;/button&gt; 
-&lt;/div&gt; 
-&lt;div class="alert alert-info alert-close"&gt; 
+    &lt;button type="button" class="close" aria-label="Close"&gt;
+        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-info alert-close"&gt;
     This is a info alert with close button
-    &lt;button type="button" class="close" aria-label="Close"&gt; 
-        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt; 
-    &lt;/button&gt; 
-&lt;/div&gt; 
-&lt;div class="alert alert-warning alert-close"&gt; 
+    &lt;button type="button" class="close" aria-label="Close"&gt;
+        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-warning alert-close"&gt;
     This is a warning alert with close button
-    &lt;button type="button" class="close" aria-label="Close"&gt; 
-        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt; 
-    &lt;/button&gt; 
-&lt;/div&gt; 
-&lt;div class="alert alert-danger alert-close"&gt; 
+    &lt;button type="button" class="close" aria-label="Close"&gt;
+        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-danger alert-close"&gt;
     This is a danger alert with close button
-    &lt;button type="button" class="close" aria-label="Close"&gt; 
-        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt; 
-    &lt;/button&gt; 
+    &lt;button type="button" class="close" aria-label="Close"&gt;
+        &lt;span aria-hidden="true"&gt; &times;&lt; /span&gt;
+    &lt;/button&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
@@ -260,7 +260,7 @@ $tableOfContents = [
                         <div class="alert-container">
                             <input type="checkbox" class="alert-toggle" id="alertdismiss1">
                             <div class="alert alert-success alert-background alert-close">
-                                This is a success alert with close button functionality 
+                                This is a success alert with close button functionality
                                 <label for="alertdismiss1" class="close" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </label>
@@ -269,7 +269,7 @@ $tableOfContents = [
                         <div class="alert-container">
                             <input type="checkbox" class="alert-toggle" id="alertdismiss2">
                             <div class="alert alert-info alert-background alert-close">
-                                This is a info alert with close button functionality 
+                                This is a info alert with close button functionality
                                 <label for="alertdismiss2" class="close" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </label>
@@ -278,7 +278,7 @@ $tableOfContents = [
                         <div class="alert-container">
                             <input type="checkbox" class="alert-toggle" id="alertdismiss3">
                             <div class="alert alert-warning alert-background alert-close">
-                                This is a warning alert with close button functionality 
+                                This is a warning alert with close button functionality
                                 <label for="alertdismiss3" class="close" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </label>
@@ -287,7 +287,7 @@ $tableOfContents = [
                         <div class="alert-container">
                             <input type="checkbox" class="alert-toggle" id="alertdismiss4">
                             <div class="alert alert-danger alert-background alert-close">
-                                This is a danger alert with close button functionality 
+                                This is a danger alert with close button functionality
                                 <label for="alertdismiss4" class="close" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </label>
@@ -297,7 +297,7 @@ $tableOfContents = [
                     <pre class="highlight"><code class="html">&lt;div class="alert-container"&gt;
     &lt;input type="checkbox" class="alert-toggle" id="alertdismiss1"&gt;
     &lt;div class="alert alert-success alert-background alert-close"&gt;
-        This is a success alert with close button functionality 
+        This is a success alert with close button functionality
         &lt;label for="alertdismiss1" class="close" aria-label="Close"&gt;
             &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
         &lt;/label&gt;
@@ -324,7 +324,7 @@ $tableOfContents = [
                     </div>
                     <div class="text-cont js-alert">
                         <div class="alert alert-success alert-background alert-close">
-                            This is a success alert with close button functionality 
+                            This is a success alert with close button functionality
                             <button type="button" class="close" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -351,15 +351,16 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
 
-<?php function scripts() { ?>
+<?php function scripts()
+{?>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     (document.querySelectorAll('.js-alert .alert .close') || []).forEach(($delete) => {
@@ -369,4 +370,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 </script>
-<?php } ?>
+<?php }?>

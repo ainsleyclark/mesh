@@ -2,23 +2,23 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Order',
-	'pageDescription' => 'Reorder columns and content with ease with our responsive order utility classes. Making visually challenging designs easy to work with.',
+    'pageTitle' => 'Order',
+    'pageDescription' => 'Reorder columns and content with ease with our responsive order utility classes. Making visually challenging designs easy to work with.',
     'activePage' => 'order',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
     'usage' => 'Usage',
     'examples' => 'Examples',
-    'variations' => 'Variations'
+    'variations' => 'Variations',
 ];
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content flex-page">
     <div class="container-fullwidth">
@@ -105,7 +105,7 @@ $tableOfContents = [
                                     <td>order: 12;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                 </article>
 
@@ -122,7 +122,7 @@ $tableOfContents = [
                         <div class="br d-flex mb-3 justify-content-between t-center">
                             <div class="text px-3 br mx-0 w-30">
                                 first child
-                            </div>                            
+                            </div>
                             <div class="text px-3 br mx-0 w-30 order-tab-last">
                                 second-child
                             </div>
@@ -188,8 +188,8 @@ $tableOfContents = [
 
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
-                <h2 class="b-b-light hash">Variations</h2>
-<pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
+                    <h2 class="b-b-light hash">Variations</h2>
+                    <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="order-first"&gt;&lt;/div&gt;
 &lt;div class="order-last"&gt;&lt;/div&gt;
 &lt;div class="order-1"&gt;&lt;/div&gt;
@@ -267,10 +267,10 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

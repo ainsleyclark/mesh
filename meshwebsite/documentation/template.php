@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Im the page title',
-	'pageDescription' => 'Use mesh alerts to display informaitve information easily with varying colors and styles.',
+    'pageTitle' => 'Im the page title',
+    'pageDescription' => 'Use mesh alerts to display informaitve information easily with varying colors and styles.',
     'activePage' => 'alert',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 //! DUPLICATE FOR CONTENTS ITEM,
@@ -18,8 +18,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content modal-page">
     <div class="container-fullwidth">
@@ -27,7 +27,7 @@ $tableOfContents = [
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
-                
+
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
@@ -58,40 +58,41 @@ $tableOfContents = [
                             This is a link alert
                         </div>
                     </div>
-                    <pre class="highlight"><code class="html">&lt;div class="alert"&gt; 
+                    <pre class="highlight"><code class="html">&lt;div class="alert"&gt;
     This is a default alert
-&lt;/div&gt; 
-&lt;div class="alert alert-primary"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-primary"&gt;
     This is a primary alert
-&lt;/div&gt; 
-&lt;div class="alert alert-success"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-success"&gt;
     This is a success alert
-&lt;/div&gt; 
-&lt;div class="alert alert-info"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-info"&gt;
     This is a info alert
-&lt;/div&gt; 
-&lt;div class="alert alert-warning"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;
     This is a warning alert
-&lt;/div&gt; 
-&lt;div class="alert alert-danger"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-danger"&gt;
     This is a danger alert
-&lt;/div&gt; 
-&lt;div class="alert alert-link"&gt; 
+&lt;/div&gt;
+&lt;div class="alert alert-link"&gt;
     This is a link alert
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
-                </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            </div><!-- /Col -->
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
 
-<?php function scripts() { ?>
+<?php function scripts()
+{?>
 <script>
-    //!Any page relevant JS scripts to go in here.
+//!Any page relevant JS scripts to go in here.
 </script>
-<?php } ?>
+<?php }?>

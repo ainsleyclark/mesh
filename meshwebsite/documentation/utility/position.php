@@ -2,24 +2,24 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Position',
-	'pageDescription' => 'Use our position classes to easily adjust the position of an element responsivley.',
+    'pageTitle' => 'Position',
+    'pageDescription' => 'Use our position classes to easily adjust the position of an element responsivley.',
     'activePage' => 'position',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
     'usage' => 'Usage',
     'pinning' => 'Pinning',
     'examples' => 'Examples',
-    'variations' => 'Variations'
+    'variations' => 'Variations',
 ];
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content flex-page">
     <div class="container-fullwidth">
@@ -74,7 +74,7 @@ $tableOfContents = [
                                     <td>position: sticky;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                 </article>
 
@@ -137,7 +137,7 @@ $tableOfContents = [
                     </p>
                     <div class="column-demo c-white mb-3">
                         <div class="br d-flex mb-3 height-100 bg-light justify-content-center align-items-center justify-content-desk-between t-center">
-                            <div class="text px-3 mx-2 br mx-0 w-30"></div>                            
+                            <div class="text px-3 mx-2 br mx-0 w-30"></div>
                             <div class="text px-3 mx-2 br mx-0 w-30"></div>
                             <div class="text px-3 mx-2 br mx-0 w-30 p-desk-absolute bg-secondary" style="opacity: 0.6; left: 20%;"></div>
                         </div>
@@ -150,8 +150,8 @@ $tableOfContents = [
 
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
-                <h2 class="b-b-light hash">Variations</h2>
-<pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
+                    <h2 class="b-b-light hash">Variations</h2>
+                    <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="p-relative"&gt;&lt;/div&gt;
 &lt;div class="p-absolute"&gt;&lt;/div&gt;
 &lt;div class="p-fixed"&gt;&lt;/div&gt;
@@ -184,10 +184,10 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
