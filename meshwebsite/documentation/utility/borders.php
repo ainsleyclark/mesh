@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Borders',
-	'pageDescription' => 'Use our border utility classes to quickly style an elements border with color classes & shape their border radius.',
+    'pageTitle' => 'Borders',
+    'pageDescription' => 'Use our border utility classes to quickly style an elements border with color classes & shape their border radius.',
     'activePage' => 'borders',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -16,8 +16,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content borders-page">
     <div class="container-fullwidth">
@@ -110,9 +110,9 @@ $tableOfContents = [
                                     <td>.b-l-dark</td>
                                     <td>border-left: 1px solid rgba(0, 0, 0, 0.6);</td>
                                 </tr>
-                    
+
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                     <div class="text-cont">
                         <h3>Example:</h3>
@@ -201,7 +201,7 @@ $tableOfContents = [
                                     <td>border-bottom-left-radius: 0.5em;<br>border-bottom-right-radius: 0.5em;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                     <div class="text-cont">
                         <h3>Example:</h3>
@@ -226,10 +226,10 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

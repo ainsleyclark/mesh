@@ -2,15 +2,15 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Getting started',
-	'pageDescription' => 'Get familiar with the setup and overview of mesh',
+    'pageTitle' => 'Getting started',
+    'pageDescription' => 'Get familiar with the setup and overview of mesh',
     'activePage' => 'introduction',
-    'parentDirectory' => basename(__DIR__)
+    'parentDirectory' => basename(__DIR__),
 ];
 
 //Table of contents
 $tableOfContents = [
-	'whatIs' => 'What is mesh?',
+    'whatIs' => 'What is mesh?',
     'download' => 'Download',
     'js' => 'A note about JS',
     'classes' => 'How we notate',
@@ -18,8 +18,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content">
     <div class="container-fullwidth">
@@ -43,7 +43,7 @@ $tableOfContents = [
                     <div class="row my-3">
                         <div class="col-12">
                             <h3 class="c-primary">meshBuilder:</h3>
-                            <p>meshBuilder is an extremley powerful tool allowing you to set variables before downloading the compiled CSS. You can adjust a vast amount of different variables to suit your needs, including but not limited to: 
+                            <p>meshBuilder is an extremley powerful tool allowing you to set variables before downloading the compiled CSS. You can adjust a vast amount of different variables to suit your needs, including but not limited to:
                                 <br>Layout breakpoints, colors (and attributes), spacing sizes (padding & margin), position properties, font sizes and a lot more.</p>
                             <p>Not only that, but you can choose to eliminate any utilities or components you may not use in your project. This ultimately makes things extremely fast and your css becomes a lot less bloated without the need to download our scss files.</p>
                             <button class="btn btn-secondary btn-rounded mt-1">Go to meshBuilder</button>
@@ -73,7 +73,8 @@ $tableOfContents = [
                 <!-- Notate -->
                 <article class="section-scroll" id="classes">
                     <h2 class="b-b-light hash">How we notate</h2>
-                    <p>We have tried to make things extremley simple for you when it comes to class names and notation. Most of the utilities you will encounter starts with the letter of the utility <span class="c-secondary">p for position</span> for example, followed by a dash <span class="c-seconary">-</span> then preceeded by the property. Here is a taster, but please see the indiviudal page on the left for more details.</p>
+                    <p>We have tried to make things extremley simple for you when it comes to class names and notation. Most of the utilities you will encounter starts with the letter of the utility <span class="c-secondary">p for position</span> for example, followed by a dash <span class="c-seconary">-</span> then preceeded by the property. Here is a taster, but please see the indiviudal page on
+                        the left for more details.</p>
                     <ul class="list">
                         <li>Columns - <code class="inline">col-12 col-mob-6 col-tab-4 col-desk-3 col-hd-1</code></li>
                         <li>Order - <code class="inline">order-6</code></li>
@@ -87,11 +88,11 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php'); ?>
-            <?php include_once('../../partials/sub-footer.php'); ?>
+            <?php include_once '../../partials/smallnav.php';?>
+            <?php include_once '../../partials/sub-footer.php';?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

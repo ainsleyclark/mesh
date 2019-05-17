@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Spacing',
-	'pageDescription' => 'mesh has a wide range of spacing utility classes, which makes it easy to toggle margin and padding responsively in your web builds.',
+    'pageTitle' => 'Spacing',
+    'pageDescription' => 'mesh has a wide range of spacing utility classes, which makes it easy to toggle margin and padding responsively in your web builds.',
     'activePage' => 'spacing',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -16,8 +16,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content spacing-page">
     <div class="container-fullwidth">
@@ -70,7 +70,7 @@ $tableOfContents = [
                                     <div class="item">{4} 2rem</div>
                                     <div class="item">{5} 3rem</div>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -85,17 +85,17 @@ $tableOfContents = [
                         <div class="br d-flex mb-3 justify-content-center justify-content-desk-between t-center">
                             <div class="text br mx-0 w-100 py-3 py-tab-4 py-desk-5">
                                 py-3 py-tab-4 py-desk-5
-                            </div>                            
+                            </div>
                         </div>
                     </div>
                     <pre class="highlight"><code class="html py-2">&lt;div class="py-3 py-tab-4 py-desk-5"&gt;py-3 py-tab-4 py-desk-5&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

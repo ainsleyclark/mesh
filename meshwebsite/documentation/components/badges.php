@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Badges',
-	'pageDescription' => 'Create handsome looking badges & tags easily with these classes.',
+    'pageTitle' => 'Badges',
+    'pageDescription' => 'Create handsome looking badges & tags easily with these classes.',
     'activePage' => 'badges',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -19,8 +19,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content badges-page">
     <div class="container-fullwidth">
@@ -34,7 +34,7 @@ $tableOfContents = [
                     <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
                         The mesh badge should be prefixed with the <code class="inline">.badge</code> class which will give you access to all of the classes outlined below.
-                        <br>They are designed to be used with the <code class="inline">&lt;span&gt;</code>  element.
+                        <br>They are designed to be used with the <code class="inline">&lt;span&gt;</code> element.
                         <br><strong>Note:</strong> You can have <strong>any combination</strong> of the classes listed below.
                     </p>
                     <div class="d-flex justify-content-center justify-content-desk-start flex-wrap mb-3">
@@ -43,7 +43,7 @@ $tableOfContents = [
                         <span class="badge badge-dark">Dark</span>
                         <span class="badge badge-black">Black</span>
                     </div>
-<pre class="highlight"><code class="html">&lt;span class="badge"&gt;Default&lt;/span&gt;
+                    <pre class="highlight"><code class="html">&lt;span class="badge"&gt;Default&lt;/span&gt;
 &lt;span class="badge badge-light"&gt;Light&lt;/span&gt;
 &lt;span class="badge badge-dark"&gt;Dark&lt;/span&gt;
 &lt;span class="badge badge-black"&gt;Black&lt;/span&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
@@ -87,8 +87,8 @@ $tableOfContents = [
 &lt;span class="badge badge-rounded badge-danger"&gt;Danger&lt;/span&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
-                 <!-- Notifications Badges -->
-                 <article class="section-scroll py-2" id="notification">
+                <!-- Notifications Badges -->
+                <article class="section-scroll py-2" id="notification">
                     <h2 class="b-b-light hash">Notifications</h2>
                     <p class="mb-3">Mesh badges can be added to buttons as notifications without additional markup.</p>
                     <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
@@ -103,65 +103,65 @@ $tableOfContents = [
 &lt;/button&gt;
 </code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
 
-            <!-- Rounded Tags -->
-            <article class="section-scroll py-2" id="tags">
-                    <h2 class="b-b-light hash">Tags</h2>
-                    <p class="secondary-lead">
-                        The mesh tags should be prefix with the <code class="inline">.tag</code> class which will give you access to all of the classes outlined below.
-                        <br>The mesh tags should also contain <code class="inline">.deletable</code> class which will alow tag to be deleted.
-                        <br>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.
-                    </p>
-                    <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap mb-3">
-                        <div class="tag tag-primary deletable">
-                            <div>Primary</div>
-                            <div class="input">
-                                <span>&times;</span>
+                    <!-- Rounded Tags -->
+                    <article class="section-scroll py-2" id="tags">
+                        <h2 class="b-b-light hash">Tags</h2>
+                        <p class="secondary-lead">
+                            The mesh tags should be prefix with the <code class="inline">.tag</code> class which will give you access to all of the classes outlined below.
+                            <br>The mesh tags should also contain <code class="inline">.deletable</code> class which will alow tag to be deleted.
+                            <br>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.
+                        </p>
+                        <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap mb-3">
+                            <div class="tag tag-primary deletable">
+                                <div>Primary</div>
+                                <div class="input">
+                                    <span>&times;</span>
+                                </div>
+                            </div>
+                            <div class="tag tag-success deletable">
+                                <div>Success</div>
+                                <div class="input">
+                                    <span>&times;</span>
+                                </div>
+                            </div>
+                            <div class="tag tag-info deletable">
+                                <div>Info</div>
+                                <div class="input">
+                                    <span>&times;</span>
+                                </div>
+                            </div>
+                            <div class="tag tag-warning deletable">
+                                <div>Warning</div>
+                                <div class="input">
+                                    <span>&times;</span>
+                                </div>
+                            </div>
+                            <div class="tag tag-danger deletable">
+                                <div>Danger</div>
+                                <div class="input">
+                                    <span>&times;</span>
+                                </div>
+                            </div>
+                            <div class="tag tag-link deletable">
+                                <div>Link</div>
+                                <div class="input">
+                                    <span>&times;</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="tag tag-success deletable">
-                            <div>Success</div>
-                            <div class="input">
-                                <span>&times;</span>
-                            </div>
-                        </div>
-                        <div class="tag tag-info deletable">
-                            <div>Info</div>
-                            <div class="input">
-                                <span>&times;</span>
-                            </div>
-                        </div>
-                        <div class="tag tag-warning deletable">
-                            <div>Warning</div>
-                            <div class="input">
-                                <span>&times;</span>
-                            </div>
-                        </div>
-                        <div class="tag tag-danger deletable">
-                            <div>Danger</div>
-                            <div class="input">
-                                <span>&times;</span>
-                            </div>
-                        </div>
-                        <div class="tag tag-link deletable">
-                            <div>Link</div>
-                            <div class="input">
-                                <span>&times;</span>
-                            </div>
-                        </div>
-                    </div>
-                    <pre class="highlight"><code class="html">&lt;div class="tag tag-primary deletable"&gt;
+                        <pre class="highlight"><code class="html">&lt;div class="tag tag-primary deletable"&gt;
     &lt;div&gt;Primary&lt;/div&gt;
     &lt;div class="input"&gt;
         &lt;span&gt;&times;&lt;/span&gt;
-    &lt;/div&gt;                     
+    &lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-                </article>
+                    </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

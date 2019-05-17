@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Media',
-	'pageDescription' => 'Quickly add responsive media to your projects by using our easy image utility class.' ,
+    'pageTitle' => 'Media',
+    'pageDescription' => 'Quickly add responsive media to your projects by using our easy image utility class.',
     'activePage' => 'media',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -17,8 +17,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content visibility-page">
     <div class="container-fullwidth">
@@ -57,7 +57,7 @@ $tableOfContents = [
                                     <td>max-width: 100%;<br>height: auto;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                     <div class="text-cont">
                         <h3>Example:</h3>
@@ -110,17 +110,17 @@ $tableOfContents = [
                                     <td>position: absolute;<br>top: 0;<br>left: 0;<br>width: 100%;<br>height: 100%;<br>border: 0;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                     <div class="text-cont">
                         <h3>Example:</h3>
                         <p class="secondary-lead mb-0">
                             Here the iframe is contained in a <code class="inline">iframe-container</code> which means the iFrame becomes responsive without distorting aspect ratio.
-                            <br><strong>Note:</strong> the first div which adds border and padding to the container is entirely optional. 
+                            <br><strong>Note:</strong> the first div which adds border and padding to the container is entirely optional.
                             <br>Go ahead a resize the screen to see the effect.
                         </p>
                         <div class="b-light p-2 my-4">
-                            <div class="iframe-container"> 
+                            <div class="iframe-container">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/6rxWc-TNIJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                         </div>
@@ -133,22 +133,23 @@ $tableOfContents = [
                 </article>
 
 
-               
-                
+
+
 
 
 
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
 
-<?php function scripts() { ?>
+<?php function scripts()
+{?>
 
 <script>
 //Turn clearfix text on & off
@@ -168,4 +169,4 @@ document.querySelector('#visibleBtn').addEventListener('click', function() {
 });
 </script>
 
-<?php } ?>
+<?php }?>

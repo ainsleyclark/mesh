@@ -2,26 +2,26 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Grid',
-	'pageDescription' => 'See how powerful our mobile-first flexbox grid is. With five breakpoints to choose from, it&#39;s easy sculpting elements to be responsive.',
+    'pageTitle' => 'Grid',
+    'pageDescription' => 'See how powerful our mobile-first flexbox grid is. With five breakpoints to choose from, it&#39;s easy sculpting elements to be responsive.',
     'activePage' => 'grid',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
     'howItWorks' => 'How it works',
     'gridOptions' => 'Grid options',
-	'containers' => 'Containers',
+    'containers' => 'Containers',
     'rows' => 'Rows',
     'columns' => 'Columns',
-	'offset' => 'Offset',
+    'offset' => 'Offset',
 ];
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content grid-page">
     <div class="container-fullwidth">
@@ -34,7 +34,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="howItWorks">
                     <h2 class="b-b-light hash">How it works</h2>
                     <p class="secondary-lead">mesh uses conventional containers, rows and columns to layout and align content, it's built with flexbox and is fully responsive. Here's an example:</p>
-<pre class="highlight"><code class="html">&lt;div class="container"&gt;
+                    <pre class="highlight"><code class="html">&lt;div class="container"&gt;
     &lt;div class="row"&gt;
         &lt;div class="col-12 col-tab-6 col-desk-4 col-hd-3"&gt;
             I'm a column, I take up 12 columns at default width, 6 at tablet, 4 at desktop and 3 in hd screens
@@ -70,7 +70,7 @@ $tableOfContents = [
                     </div>
                     <button class="btn btn-secondary" id="btnBrowser">Switch to container-fullwidth</button>
                     <div class="browser-cont">
-                        <?php include_once('../../includes/browser-window.php'); ?>
+                        <?php include_once '../../includes/browser-window.php';?>
                     </div>
                 </article>
 
@@ -135,7 +135,7 @@ $tableOfContents = [
                     <h2 class="b-b-light hash">Columns</h2>
                     <p class="secondary-lead">
                         A column is where your content lives, <strong>which lives inside a row.</strong> There can be a maximum of 12 columns in a row, if there a more they will wrap to the next line. Of course you can overwrite this behaviour by using the <code class="inline">flex-nowrap</code> class.
-                        <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12. 
+                        <br>The column prefix is <code class="inline">col-{modifier}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12.
                     </p>
                     <div class="text-cont">
                         <h3>Notes:</h3>
@@ -223,7 +223,7 @@ $tableOfContents = [
                         <div class="text-cont">
                             <h3>Wrapping</h3>
                             <p>
-                                If you require a column to wrap to the next line at various viewports, you can use the <code class="inline">w-100</code> class which will effectively create a new line in your grid without using a new <code class="inline">row</code>. Sometimes you may not want this at desktop for example, if so, use our display classes - <code class="inline">d-desk-none</code>.              
+                                If you require a column to wrap to the next line at various viewports, you can use the <code class="inline">w-100</code> class which will effectively create a new line in your grid without using a new <code class="inline">row</code>. Sometimes you may not want this at desktop for example, if so, use our display classes - <code class="inline">d-desk-none</code>.
                                 <br>You can even add margin to the <code class="inline">w-100</code> like below:
                             </p>
                         </div>
@@ -379,7 +379,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="offset">
                     <h2 class="b-b-light hash">Offset</h2>
                     <p class="secondary-lead">
-                        Offsetting is a way to push columns along in the row. Columns can be offset in a responsive manner, meaning you can offset columns dependent on viewport. 
+                        Offsetting is a way to push columns along in the row. Columns can be offset in a responsive manner, meaning you can offset columns dependent on viewport.
                         <br>To offset use <code class="inline">offset-{breakpoint}-{amount}</code> where the modifier is the class name for a breakpoint (e.g. <code class="inline">mob</code> / <code class="inline">tab</code> / <code class="inline">desk</code> / <code class="inline">hd</code>) and the amount can be from 1 to 12.
                     </p>
                     <div class="column-demo c-white mb-3 t-center">
@@ -421,24 +421,25 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php'); ?>
-            <?php include_once('../../partials/sub-footer.php'); ?>
+            <?php include_once '../../partials/smallnav.php';?>
+            <?php include_once '../../partials/sub-footer.php';?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
 
 
-<?php function scripts() { ?>
+<?php function scripts()
+{?>
 
 <script>
-//Switch to fullwidth 
+//Switch to fullwidth
 document.querySelector('#btnBrowser').addEventListener('click', function() {
     this.innerHTML = this.innerHTML.includes('full') ? "Switch to container" : "Switch to container-fullwidth";
     document.querySelector('#fullwidth').classList.toggle('d-none');
     document.querySelector('#container').classList.toggle('d-none');
-});    
+});
 //Turn gaps on & off
 document.querySelector('#btnNoGaps').addEventListener('click', function() {
     this.innerHTML = this.innerHTML.includes('off') ? "Turn gaps on" : "Turn gaps off";
@@ -446,4 +447,4 @@ document.querySelector('#btnNoGaps').addEventListener('click', function() {
 });
 </script>
 
-<?php } ?>
+<?php }?>

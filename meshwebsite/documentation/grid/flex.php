@@ -2,28 +2,28 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Flex',
-	'pageDescription' => 'The whole of flexbox is bundled with mesh, meaning you can use them inline in html, making vertical and horizontal centering a doddle. As a bonus all classes are responsive.',
+    'pageTitle' => 'Flex',
+    'pageDescription' => 'The whole of flexbox is bundled with mesh, meaning you can use them inline in html, making vertical and horizontal centering a doddle. As a bonus all classes are responsive.',
     'activePage' => 'flex',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
-	'usage' => 'Usage',
-	'direction' => 'Direction',
+    'usage' => 'Usage',
+    'direction' => 'Direction',
     'justifyContent' => 'Justify content',
     'alignItems' => 'Align items',
-	'alignSelf' => 'Align self',
-	'alignContent' => 'Align content',
-	'wrapFill' => 'Wrap & fill',
-	'growShrink' => 'Grow & shrink',
+    'alignSelf' => 'Align self',
+    'alignContent' => 'Align content',
+    'wrapFill' => 'Wrap & fill',
+    'growShrink' => 'Grow & shrink',
 ];
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content flex-page">
     <div class="container-fullwidth">
@@ -31,7 +31,7 @@ $tableOfContents = [
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
-                
+
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
@@ -55,7 +55,7 @@ $tableOfContents = [
                         <pre class="highlight"><code class="html py-2">&lt;div class="d-inline-flex"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
                     <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+                    <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="d-flex"&gt;&lt;/div&gt;
 &lt;div class="d-inline-flex"&gt;&lt;/div&gt;
 &lt;!-- Mobile --&gt;
@@ -118,7 +118,7 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
-&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>         
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         <h3>Column</h3>
                         <p>Here, the flex direction goes from top to bottom or bottom to top.</p>
                         <div class="d-none d-tab-flex justify-content-between t-center w-80 mx-auto">
@@ -158,8 +158,8 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></div></pre>
-                    <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+                        <h3>Responsive variations:</h3>
+                        <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="flex-row"&gt;&lt;/div&gt;
 &lt;div class="flex-row-reverse"&gt;&lt;/div&gt;
 &lt;div class="flex-column"&gt;&lt;/div&gt;
@@ -190,7 +190,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="justifyContent">
                     <h2 class="b-b-light hash">Justify content</h2>
                     <p class="secondary-lead">
-                        This defines the alignment across the main axis, it allows us to distribute space between the flex content within the flex container. If the flex direction is row, the alignment will be on the x-axis, if flex direction is column, alignment will be on the y-axis. 
+                        This defines the alignment across the main axis, it allows us to distribute space between the flex content within the flex container. If the flex direction is row, the alignment will be on the x-axis, if flex direction is column, alignment will be on the y-axis.
                         <br>Target justify content using <code class="inline">justify-content-{breakpoint}-{property}</code> where property is one of five listed below.
                     </p>
                     <div class="text-cont">
@@ -257,7 +257,7 @@ $tableOfContents = [
                         </div>
                     </div>
                     <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+                    <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="d-flex justify-content-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex justify-content-center"&gt;&lt;/div&gt;
@@ -293,7 +293,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="alignItems">
                     <h2 class="b-b-light hash">Align items</h2>
                     <p class="secondary-lead">
-                        This defines the alignment across the cross axis, basically it defines how how the flex items are laid out opposite from the main axis. So if flex direction is set to row, it will be vertically, is set to column, it will be horizontally. 
+                        This defines the alignment across the cross axis, basically it defines how how the flex items are laid out opposite from the main axis. So if flex direction is set to row, it will be vertically, is set to column, it will be horizontally.
                         <br>Target justify content using <code class="inline">align-items-{breakpoint}-{property}</code> where property is one of five listed below.
                     </p>
                     <div class="text-cont">
@@ -351,16 +351,26 @@ $tableOfContents = [
                         <h4><code class="inline bg-white">align-items-baseline</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex align-items-baseline mb-3 height-100">
-                                <div class="text py-0 mr-1 mr-hd-2 px-3 px-tab-4 br"><h1>1</h1></div>
-                                <div class="text py-0 mx-1 mx-hd-2 px-3 px-tab-4 br"><h6>2</h6></div>
-                                <div class="text py-0 mx-1 mx-hd-2 px-3 px-tab-4 br"><h4>3</h4></div>
-                                <div class="text py-0 mx-1 mx-hd-2 px-3 px-tab-4 br"><h2>4</h2></div>
-                                <div class="text py-0 ml-1 ml-hd-2 px-3 px-tab-4 br"><h1>5</h1></div>
+                                <div class="text py-0 mr-1 mr-hd-2 px-3 px-tab-4 br">
+                                    <h1>1</h1>
+                                </div>
+                                <div class="text py-0 mx-1 mx-hd-2 px-3 px-tab-4 br">
+                                    <h6>2</h6>
+                                </div>
+                                <div class="text py-0 mx-1 mx-hd-2 px-3 px-tab-4 br">
+                                    <h4>3</h4>
+                                </div>
+                                <div class="text py-0 mx-1 mx-hd-2 px-3 px-tab-4 br">
+                                    <h2>4</h2>
+                                </div>
+                                <div class="text py-0 ml-1 ml-hd-2 px-3 px-tab-4 br">
+                                    <h1>5</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+                    <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="d-flex align-items-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-items-end"&gt;&lt;/div&gt;
@@ -396,7 +406,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="alignSelf">
                     <h2 class="b-b-light hash">Align self</h2>
                     <p class="secondary-lead">
-                        This allows us to align one flex item on the cross axis - if flex direction is set to row, it will be vertically, is set to column, it will be horizontally. 
+                        This allows us to align one flex item on the cross axis - if flex direction is set to row, it will be vertically, is set to column, it will be horizontally.
                         <br>Target justify content using <code class="inline">align-self-{breakpoint}-{property}</code> where property is one of five listed below.
                         <br><strong>All properties are the same as <code class="inline">align-items</code>.</strong>
                     </p>
@@ -488,7 +498,7 @@ $tableOfContents = [
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
                     <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+                    <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="d-flex align-self-stretch"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-self-end"&gt;&lt;/div&gt;
@@ -524,7 +534,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="alignContent">
                     <h2 class="b-b-light hash">Align content</h2>
                     <p class="secondary-lead">
-                        This allows us to align to line flex items when there is space left over in the cross axis, very similar to <code class="inline">justify-content</code>. If flex direction is set to row, it will be vertically, is set to column, it will be horizontally. 
+                        This allows us to align to line flex items when there is space left over in the cross axis, very similar to <code class="inline">justify-content</code>. If flex direction is set to row, it will be vertically, is set to column, it will be horizontally.
                         <br>Target justify content using <code class="inline">align-content-{breakpoint}-{property}</code> where property is one of five listed below.
                         <br><strong>All properties are the same as <code class="inline">justify-content</code>.</strong>
                     </p>
@@ -596,7 +606,7 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
-&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>   
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         <h4><code class="inline bg-white">align-content-around</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex align-content-around flex-wrap mb-3 t-center height-100">
@@ -613,8 +623,8 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
-&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>                                     
-                    <h4><code class="inline bg-white">align-content-stretch</code></h4>
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                        <h4><code class="inline bg-white">align-content-stretch</code></h4>
                         <div class="br bg-light mb-3 c-white">
                             <div class="d-flex align-content-stretch flex-wrap mb-3 t-center height-100">
                                 <div class="text mr-1 mr-hd-2 px-3 px-tab-4 px-hd-5 br line-height-4">1</div>
@@ -630,10 +640,10 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
-&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>       
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
                     <h3>Responsive variations:</h3>&lt;!-- Default --&gt;
-<pre class="highlight"><code class="html">&lt;div class="d-flex align-content-start"&gt;&lt;/div&gt;
+                    <pre class="highlight"><code class="html">&lt;div class="d-flex align-content-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-between"&gt;&lt;/div&gt;
@@ -674,7 +684,7 @@ $tableOfContents = [
                     <h2 class="b-b-light hash mb-3">Wrap & fill</h2>
                     <h3>Wrap</h3>
                     <p class="secondary-lead mt-0">
-                        By default, flex items will always fit on one line, but you can change this property with flex-wrap, which allows flex items to 'wrap' to the next line. 
+                        By default, flex items will always fit on one line, but you can change this property with flex-wrap, which allows flex items to 'wrap' to the next line.
                     </p>
                     <div class="text-cont">
                         <h3>Wrap options:</h3>
@@ -700,7 +710,7 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-<h4><code class="inline bg-white">flex-nowrap</code></h4>
+                        <h4><code class="inline bg-white">flex-nowrap</code></h4>
                         <div class="br bg-light mb-3 d-flex flex-nowrap c-white t-center">
                             <div class="text br mr-2 w-30">1</div>
                             <div class="text br mx-2 w-30">2</div>
@@ -730,9 +740,9 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-                        </div>
-                        <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+                    </div>
+                    <h3>Responsive variations:</h3>
+                    <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="d-flex flex-wrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-nowrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-wrap-reverse"&gt;&lt;/div&gt;
@@ -753,35 +763,35 @@ $tableOfContents = [
 &lt;div class="d-flex flex-hd-nowrap"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-hd-wrap-reverse"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
 
-                        <!-- Fill -->
-                        <h3 class="mt-5">Fill</h3>
-                        <p class="secondary-lead mt-0">
-                            The flex fill class is set to fill the remaining space of the container. Its used by adding the <code class="inline">flex-{breakpoint}-fill</code> class to the <strong>flexible child</strong>.
-                        </p>
-                        <div class="column-demo mb-3">
-                            <div class="br bg-light mb-3 d-flex c-white t-center">
-                                <div class="flex-fill text br px-3 px-tab-4 px-hd-4 mr-1 mr-hd-2">1</div>
-                                <div class="text br px-3 px-tab-4 px-hd-4 mx-1 mx-hd-2">2</div>
-                                <div class="text br px-3 px-tab-4 px-hd-4 mx-1 mx-hd-2">3</div>
-                                <div class="text br px-3 px-tab-4 px-hd-4 mx-1 mx-hd-2">4</div>
-                                <div class="text br px-3 px-tab-4 px-hd-4 ml-1 ml-hd-2">5</div>
-                            </div>
+                    <!-- Fill -->
+                    <h3 class="mt-5">Fill</h3>
+                    <p class="secondary-lead mt-0">
+                        The flex fill class is set to fill the remaining space of the container. Its used by adding the <code class="inline">flex-{breakpoint}-fill</code> class to the <strong>flexible child</strong>.
+                    </p>
+                    <div class="column-demo mb-3">
+                        <div class="br bg-light mb-3 d-flex c-white t-center">
+                            <div class="flex-fill text br px-3 px-tab-4 px-hd-4 mr-1 mr-hd-2">1</div>
+                            <div class="text br px-3 px-tab-4 px-hd-4 mx-1 mx-hd-2">2</div>
+                            <div class="text br px-3 px-tab-4 px-hd-4 mx-1 mx-hd-2">3</div>
+                            <div class="text br px-3 px-tab-4 px-hd-4 mx-1 mx-hd-2">4</div>
+                            <div class="text br px-3 px-tab-4 px-hd-4 ml-1 ml-hd-2">5</div>
                         </div>
-                        <pre class="highlight"><code class="html">&lt;div class="d-flex"&gt;
+                    </div>
+                    <pre class="highlight"><code class="html">&lt;div class="d-flex"&gt;
     &lt;div class="flex-item flex-fill"&gt;1&lt;/div&gt;
     &lt;div class="flex-item"&gt;2&lt;/div&gt;
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-                        <h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;div class="flex-fill"&gt;&lt;/div&gt;
+                    <h3>Responsive variations:</h3>
+                    <pre class="highlight"><code class="html">&lt;div class="flex-fill"&gt;&lt;/div&gt;
 &lt;div class="flex-mob-fill"&gt;&lt;/div&gt;
 &lt;div class="flex-tab-fill"&gt;&lt;/div&gt;
 &lt;div class="flex-desk-fill"&gt;&lt;/div&gt;
 &lt;div class="flex-hd-fill"&gt;&lt;/div&gt;
 </code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-</article>
+                </article>
 
                 <!-- Grow & shrink -->
                 <article class="section-scroll" id="growShrink">
@@ -828,8 +838,8 @@ $tableOfContents = [
     &lt;div class="flex-item flex-grow-1"&gt;4&lt;/div&gt;
     &lt;div class="flex-item flex-grow-1"&gt;5&lt;/div&gt;
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
-<h3>Responsive variations:</h3>
-<pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+                    <h3>Responsive variations:</h3>
+                    <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="d-flex flex-grow-0"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-grow-1"&gt;&lt;/div&gt;
 &lt;div class="d-flex flex-shrink-0"&gt;&lt;/div&gt;
@@ -857,10 +867,10 @@ $tableOfContents = [
 
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

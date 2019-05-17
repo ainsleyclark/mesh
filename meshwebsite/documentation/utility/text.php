@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Text',
-	'pageDescription' => 'mesh includes a wide range of responsive and helpful utility classes for text. Responsive text is also included, great for decreasing size on smaller viewports.',
+    'pageTitle' => 'Text',
+    'pageDescription' => 'mesh includes a wide range of responsive and helpful utility classes for text. Responsive text is also included, great for decreasing size on smaller viewports.',
     'activePage' => 'text',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -15,13 +15,13 @@ $tableOfContents = [
     'examples' => 'Examples',
     'utility' => 'Utility classes',
     'responsive' => 'Responsive text',
-    'align' => 'Alignment'
+    'align' => 'Alignment',
 ];
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content text-page">
     <div class="container-fullwidth">
@@ -48,7 +48,7 @@ $tableOfContents = [
 
                 <!-- Font Sizes -->
                 <article class="section-scroll" id="sub">
-                <h2 class="b-b-light hash">Sub headings</h2>
+                    <h2 class="b-b-light hash">Sub headings</h2>
                     <p class="secondary-lead">A lead class is available by apply <code class="inline">.lead</code> to your element, this text is perfect for sub headings on pages and large paragraphs.</p>
                     <div class="text-cont bg-light br p-3">
                         <h1 class="normal-headings">Welcome to mesh</h1>
@@ -116,11 +116,11 @@ $tableOfContents = [
                                     <td>white-space: nowrap;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                 </article>
 
-                <!-- Responsive Text --> 
+                <!-- Responsive Text -->
                 <article class="section-scroll" id="responsive">
                     <h2 class="b-b-light hash">Responsive text</h2>
                     <p class="secondary-lead">Below is a demo of our responsive text class, you can target it by using the <code class="inline">t-responsive</code> class.</p>
@@ -130,11 +130,11 @@ $tableOfContents = [
                     </div>
                 </article>
 
-                <!-- Alignment --> 
+                <!-- Alignment -->
                 <article class="section-scroll" id="align">
                     <h2 class="b-b-light hash">Alignment</h2>
                     <p class="secondary-lead">
-                        Text alignment is simple with mesh, you can adjust it responsively by using <code class="inline">t-{breakpoint}-{property}</code>  The breakpoint being optional and one of our five breakpoints, the properties being outlined below.
+                        Text alignment is simple with mesh, you can adjust it responsively by using <code class="inline">t-{breakpoint}-{property}</code> The breakpoint being optional and one of our five breakpoints, the properties being outlined below.
                     </p>
                     <div class="text-cont">
                         <table class="table-code w-100 t-left mt-3">
@@ -164,7 +164,7 @@ $tableOfContents = [
                                     <td>text-align: center;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                     <h3 class="mt-3">Responsive variations:</h3>
                     <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
@@ -195,17 +195,18 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
 
-<?php function scripts() { ?>
+<?php function scripts()
+{?>
 
-<script>   
+<script>
 //Turn responsive text on & off
 document.querySelector('#responsiveTextBtn').addEventListener('click', function() {
     this.innerHTML = this.innerHTML.includes('off') ? "Turn responsive text on" : "Turn responsive text off";
@@ -215,4 +216,4 @@ document.querySelector('#responsiveTextBtn').addEventListener('click', function(
 });
 </script>
 
-<?php } ?>
+<?php }?>

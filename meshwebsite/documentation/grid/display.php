@@ -2,24 +2,24 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Display',
-	'pageDescription' => 'Easily toggle the display of items at each breakpoint by using our straightforward display classes. ',
+    'pageTitle' => 'Display',
+    'pageDescription' => 'Easily toggle the display of items at each breakpoint by using our straightforward display classes. ',
     'activePage' => 'display',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
     'usage' => 'Usage',
     'hiding' => 'Hiding/showing',
     'examples' => 'Examples',
-    'variations' => 'Variations'
+    'variations' => 'Variations',
 ];
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content flex-page">
     <div class="container-fullwidth">
@@ -32,7 +32,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
-                        The display property classes allows you to switch the css display property at each breakpoint, allowing you to hide and show elements in the DOM responsively. 
+                        The display property classes allows you to switch the css display property at each breakpoint, allowing you to hide and show elements in the DOM responsively.
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
@@ -86,7 +86,7 @@ $tableOfContents = [
                                     <td>display: table-cell;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                 </article>
 
@@ -150,7 +150,7 @@ $tableOfContents = [
                                 </tr>
 
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                 </article>
 
@@ -165,7 +165,7 @@ $tableOfContents = [
                         <div class="br d-flex mb-3 justify-content-center justify-content-desk-between t-center">
                             <div class="text px-3 mr-2 br mx-0 w-30">
                                 element
-                            </div>                            
+                            </div>
                             <div class="text px-3 mx-2 br mx-0 w-30">
                                 element
                             </div>
@@ -204,8 +204,8 @@ $tableOfContents = [
 
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
-                <h2 class="b-b-light hash">Variations</h2>
-<pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
+                    <h2 class="b-b-light hash">Variations</h2>
+                    <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="d-none"&gt;&lt;/div&gt;
 &lt;div class="d-inline"&gt;&lt;/div&gt;
 &lt;div class="d-inline-block"&gt;&lt;/div&gt;
@@ -258,10 +258,10 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>

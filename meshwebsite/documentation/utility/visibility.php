@@ -2,11 +2,11 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Visibility',
-	'pageDescription' => 'Remove an elements visibility from the DOM with our responsive classes.' ,
+    'pageTitle' => 'Visibility',
+    'pageDescription' => 'Remove an elements visibility from the DOM with our responsive classes.',
     'activePage' => 'visibility',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
@@ -17,8 +17,8 @@ $tableOfContents = [
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content visibility-page">
     <div class="container-fullwidth">
@@ -31,7 +31,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
-                        Our visibility classes help you to remove an elements visibility from the DOM at different breakpoints. 
+                        Our visibility classes help you to remove an elements visibility from the DOM at different breakpoints.
                         <br><strong>Note</strong> that its different from using <code class="inline">display: none;</code>, this will completely remove it from the page but <code class="inline">visibility: hidden;</code> means it's hidden but the space is allocated for it on the page, and the tag is rendered.
                     </p>
                     <div class="text-cont">
@@ -63,7 +63,7 @@ $tableOfContents = [
                                     <td>visibility: hidden;</td>
                                 </tr>
                             </tbody>
-                        </table> 
+                        </table>
                     </div>
                 </article>
 
@@ -90,7 +90,7 @@ $tableOfContents = [
                 <!-- Variations -->
                 <article class="section-scroll" id="variations">
                     <h2 class="b-b-light hash">Variations</h2>
-<pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
+                    <pre class="highlight mt-3"><code class="html">&lt;!-- Default --&gt;
 &lt;div class="visible"&gt;&lt;/div&gt;
 &lt;div class="invisible"&gt;&lt;/div&gt;
 &lt;!-- Mobile --&gt;
@@ -106,17 +106,18 @@ $tableOfContents = [
 &lt;div class="visible-hd"&gt;&lt;/div&gt;
 &lt;div class="invisible-hd"&gt;&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
-    
+
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
 
-<?php function scripts() { ?>
+<?php function scripts()
+{?>
 
 <script>
 //Turn clearfix text on & off
@@ -136,4 +137,4 @@ document.querySelector('#visibleBtn').addEventListener('click', function() {
 });
 </script>
 
-<?php } ?>
+<?php }?>

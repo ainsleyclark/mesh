@@ -2,23 +2,23 @@
 
 //Page variables
 $pageData = [
-	'pageTitle' => 'Colors',
-	'pageDescription' => 'A small color pallette has been added to mesh to keep things quick, but its totally customisable. Manipulate the elements color and background color quickly.',
+    'pageTitle' => 'Colors',
+    'pageDescription' => 'A small color pallette has been added to mesh to keep things quick, but its totally customisable. Manipulate the elements color and background color quickly.',
     'activePage' => 'colors',
-    'parentDirectory' => basename(__DIR__)
-]; 
+    'parentDirectory' => basename(__DIR__),
+];
 
 //Table of contents
 $tableOfContents = [
     'usage' => 'Usage',
     'background' => 'Background Colors',
-    'colors' => 'Colors', 
+    'colors' => 'Colors',
 ];
 
 ?>
 
-<?php include_once('../../partials/header.php'); ?>
-<?php include_once('../../partials/sidenav.php'); ?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
 <section class="content flex-page">
     <div class="container-fullwidth">
@@ -31,7 +31,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
-                        All website's colors are different, there's no doubt in that. Which is why we highly reccomend you use the mesh builder to change the default colors in order to create a custom css file. 
+                        All website's colors are different, there's no doubt in that. Which is why we highly reccomend you use the mesh builder to change the default colors in order to create a custom css file.
                         <br><strong>Color and background color</strong> are able to be manipulated inline with the color utility classes.
                     </p>
                     <div class="text-cont">
@@ -61,62 +61,86 @@ $tableOfContents = [
                         <tbody>
                             <tr>
                                 <td class="py-2">.bg-white</td>
-                                <td><div class="w-70 h-100 p-2 bg-white  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-white  br"></div>
+                                </td>
                                 <td>#ffffff</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-black</td>
-                                <td><div class="w-70 h-100 p-2 bg-black  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-black  br"></div>
+                                </td>
                                 <td>#000000</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-dark</td>
-                                <td><div class="w-70 h-100 p-2 bg-dark  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-dark  br"></div>
+                                </td>
                                 <td>#e8e8e8</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-muted</td>
-                                <td><div class="w-70 h-100 p-2 bg-muted  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-muted  br"></div>
+                                </td>
                                 <td>#999999</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-light</td>
-                                <td><div class="w-70 h-100 p-2 bg-light  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-light  br"></div>
+                                </td>
                                 <td>#e8e8e8</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-primary</td>
-                                <td><div class="w-70 h-100 p-2 bg-primary  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-primary  br"></div>
+                                </td>
                                 <td>#ff2451</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-secondary</td>
-                                <td><div class="w-70 h-100 p-2 bg-secondary  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-secondary  br"></div>
+                                </td>
                                 <td>#8270b8</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-success</td>
-                                <td><div class="w-70 h-100 p-2 bg-success  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-success  br"></div>
+                                </td>
                                 <td>#55b559</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-info</td>
-                                <td><div class="w-70 h-100 p-2 bg-info  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-info  br"></div>
+                                </td>
                                 <td>#37abd4</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-warning</td>
-                                <td><div class="w-70 h-100 p-2 bg-warning  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-warning  br"></div>
+                                </td>
                                 <td>#ff9e0f</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-danger</td>
-                                <td><div class="w-70 h-100 p-2 bg-danger  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-danger  br"></div>
+                                </td>
                                 <td>#f55145</td>
                             </tr>
                             <tr>
                                 <td class="py-2">.bg-link</td>
-                                <td><div class="w-70 h-100 p-2 bg-link  br"></div></td>
+                                <td>
+                                    <div class="w-70 h-100 p-2 bg-link  br"></div>
+                                </td>
                                 <td>#3763d4</td>
                             </tr>
                         </tbody>
@@ -141,7 +165,9 @@ $tableOfContents = [
                         <tbody>
                             <tr>
                                 <td class="py-2">.c-white</td>
-                                <td><div class="w-70 h-100 c-white br bg-muted" style="text-shadow: none;">White</div></td>
+                                <td>
+                                    <div class="w-70 h-100 c-white br bg-muted" style="text-shadow: none;">White</div>
+                                </td>
                                 <td>#ffffff</td>
                             </tr>
                             <tr>
@@ -204,10 +230,10 @@ $tableOfContents = [
                 </article>
 
             </div><!-- /Col -->
-            <?php include_once('../../partials/smallnav.php') ?>
-            <?php include_once('../../partials/sub-footer.php') ?>
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
         </div><!-- /Row -->
     </div><!-- /Container -->
 </section>
 
-<?php include_once('../../partials/footer.php') ?>
+<?php include_once '../../partials/footer.php'?>
