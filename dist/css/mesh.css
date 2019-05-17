@@ -5326,20 +5326,18 @@ label.close {
   bottom: -22.5px;
   margin: 0;
   z-index: 1;
+  box-shadow: none;
 }
 
 .card-icon.btn-large {
   bottom: -28px;
 }
 
-.card-background {
-  display: flex;
-  align-items: center;
-}
-
-.card-background .card-image {
+.card-background-img {
   position: absolute;
+  object-fit: cover;
   width: 100%;
+  height: 100%;
   top: 0;
   right: 0;
   bottom: 0;

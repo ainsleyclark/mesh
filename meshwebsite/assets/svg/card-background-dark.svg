@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #363636;
+      }
+
+      .cls-2 {
+        fill: #424242;
+      }
+    </style>
+  </defs>
+  <title>card-background</title>
+  <rect class="cls-1" width="353" height="200"/>
+  <path class="cls-2" d="M250.25,120.83H149.65L200,33.71Zm-105-45.45a45.46,45.46,0,1,0,45.46,45.45A45.45,45.45,0,0,0,145.2,75.38Z"/>
+</svg>

@@ -16,6 +16,7 @@ $tableOfContents = [
     'image' => 'Image',
     'fab' => 'FAB',
     'background' => 'Background',
+    'variants' => 'Variants',
     'header' => 'Header',
 ];
 
@@ -170,6 +171,26 @@ $tableOfContents = [
                             </div>
                         </div>
                     </div>
+                    <pre class="highlight"><code class="html">&lt;div class=&quot;card card-shadow&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+        &lt;img src=&quot;...&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-content&quot;&gt;
+        &lt;h3 class=&quot;normal-headings card-title&quot;&gt;Image card&lt;/h3&gt;
+        &lt;p class=&quot;card-text&quot;&gt;I am an image card with an image, header &amp; links.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-action&quot;&gt;
+        &lt;a href=&quot;#!&quot; class=&quot;c-primary t-uppercase&quot;&gt;Card link&lt;/a&gt;
+        &lt;a href=&quot;#!&quot; class=&quot;c-primary t-uppercase&quot;&gt;Card link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                    <div class="text-cont">
+                        <h3>Large card:</h3>
+                        <p>
+                            To make the card wider, simply add <code class="inline">card-large</code> class in conjunction with the <code class="inline">card</code> class.
+                            <br><strong>Note:</strong> you can add the <code class="inline">card-large</code> class to any card.
+                        </p>
+                    </div>
                     <div class="text-cont">
                         <!-- Large Card -->
                         <div class="card card-large card-shadow">
@@ -186,13 +207,27 @@ $tableOfContents = [
                             </div>
                         </div>
                     </div>
+                    <pre class="highlight"><code class="html">&lt;div class=&quot;card card-large card-shadow&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+        &lt;img src=&quot;...&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-content&quot;&gt;
+        &lt;h3 class=&quot;normal-headings card-title&quot;&gt;Image card&lt;/h3&gt;
+        &lt;p class=&quot;card-text&quot;&gt;I am an image card with an image, header &amp; links.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-action&quot;&gt;
+        &lt;a href=&quot;#!&quot; class=&quot;c-primary t-uppercase&quot;&gt;Card link&lt;/a&gt;
+        &lt;a href=&quot;#!&quot; class=&quot;c-primary t-uppercase&quot;&gt;Card link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
                 <!-- FAB Card -->
                 <article class="section-scroll" id="fab">
                     <h2 class="b-b-light hash t-uppercase">fab</h2>
                     <p class="secondary-lead">
-                        FAB
+                        FAB stands for floating action button, they are used to add an user interaction to a card effectively. To use the FAB button add the <code class="inline">card-icon</code> class which will make the icon absolutely positioned within the <code class="inline">card-image</code> element.
+                        <br><strong>Note:</strong>The following classes need to be used in order for the FAB button to appear like below - <code class="inline">btn btn-{color} btn-justicon br-circle</code>.
                     </p>
                     <div class="text-cont">
                         <!-- Icon Card -->
@@ -204,12 +239,29 @@ $tableOfContents = [
                                 </a>
                             </div>
                             <div class="card-content">
-                                <h3 class="normal-headings card-title">Icon card</h3>
+                                <h3 class="normal-headings card-title">FAB card</h3>
                                 <p class="card-text">I am an image card with an action icon in the middle of me.</p>
                             </div>
                         </div>
                     </div>
-
+                    <pre class="highlight"><code class="html">&lt;div class=&quot;card card-shadow&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+        &lt;img src=&quot;..&quot;&gt;
+        &lt;a href=&quot;#!&quot; class=&quot;card-icon btn btn-primary btn-justicon br-circle c-white&quot;&gt;
+            &lt;i class=&quot;far fa-plus&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-content&quot;&gt;
+        &lt;h3 class=&quot;normal-headings card-title&quot;&gt;Icon card&lt;/h3&gt;
+        &lt;p class=&quot;card-text&quot;&gt;I am an image card with an action icon in the middle of me.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                    <div class="text-cont">
+                        <h3>Large FAB:</h3>
+                        <p>
+                            To make the FAB a little bigger, simply add <code class="inline">btn-large</code> class to the <code class="inline">a</code> link. Of course you can use a button if you prefer.
+                        </p>
+                    </div>
                     <div class="text-cont">
                         <!-- Big Icon Card -->
                         <div class="card card-shadow">
@@ -220,38 +272,54 @@ $tableOfContents = [
                                 </a>
                             </div>
                             <div class="card-content">
-                                <h3 class="normal-headings card-title">Large Icon card</h3>
-                                <p class="card-text">I am an image card with an action icon in the middle of me.</p>
+                                <h3 class="normal-headings card-title">Large FAB card</h3>
+                                <p class="card-text">I am an image card with an large action icon in the middle of me.</p>
                             </div>
                         </div>
                     </div>
+                    <pre class="highlight"><code class="html">&lt;div class=&quot;card card-shadow&quot;&gt;
+    &lt;div class=&quot;card-image&quot;&gt;
+        &lt;img src=&quot;..&quot;&gt;
+        &lt;a href=&quot;#!&quot; class=&quot;card-icon btn btn-primary btn-large btn-justicon br-circle c-white&quot;&gt;
+            &lt;i class=&quot;far fa-plus&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card-content&quot;&gt;
+        &lt;h3 class=&quot;normal-headings card-title&quot;&gt;Icon card&lt;/h3&gt;
+        &lt;p class=&quot;card-text&quot;&gt;I am an image card with an large action icon in the middle of me.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
-
-
 
                 <!-- Full Background Card -->
                 <article class="section-scroll" id="background">
                     <h2 class="b-b-light hash">Background</h2>
                     <p class="secondary-lead">
-                        FAB
+                        To add a an image as a full background, place an <code class="inline">&lt;img&gt;</code> tag straight after the enclosing <code class="inline">card</code> element, then add the <code class="inline">card-background-img</code> class to position the image centrally.</code>
                     </p>
-                    <!-- Full Background Card -->
-                    <div class="card card-background card-shadow t-center bg-dark c-white py-4">
-                        <div class="card-image">
-                            <!-- <img class="card-background-img" src="/assets/svg/card-background.svg" alt="Circle & triangle background"> -->
+                    <div class="d-flex flex-wrap align-items-center">
+                        <div class="card card-shadow t-center c-white py-4 mr-3">
+                            <img class="card-background-img" src="/assets/svg/card-background-dark.svg" alt="Circle & triangle background">
+                            <div class="card-content">
+                                <h6 class="t-uppercase">Background card</h6>
+                                <h3 class="normal-headings card-title">A quote about design</h3>
+                                <p class="card-text">“If you do good work for good clients, it will lead to other good work for other good clients. If you do bad work for bad clients, it will lead to other bad work for other bad clients." <i>Michael Bierut</i></p>
+                                <a href="#!" class="btn btn-secondary c-white mt-2">Card link</a>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h6 class="t-uppercase">Background card</h6>
-                            <h3 class="normal-headings card-title">Header card</h3>
-                            <p class="card-text">I am an image card with an action icon in the middle of me.</p>
-                            <a href="#!" class="btn btn-secondary c-white">Card link</a>
+                        <div class="card card-shadow card-large t-center c-white py-4">
+                            <img class="card-background-img" src="/assets/svg/card-background-dark.svg" alt="Circle & triangle background">
+                            <div class="card-content">
+                                <h6 class="t-uppercase">Background card</h6>
+                                <h3 class="normal-headings card-title">A quote about design</h3>
+                                <p class="card-text">“To design is much more than simply to assemble, to order, or even to edit: it is to add value and meaning, to illuminate, to simplify, to clarify, to modify, to dignify, to dramatize, to persuade, and perhaps even to amuse. To design is to transform prose into poetry.” <i>Paul Rand</i></p>
+                                <a href="#!" class="btn btn-secondary c-white mt-2">Card link</a>
+                            </div>
                         </div>
                     </div>
                 </article>
 
-
-
-                <!-- Full Background Card -->
+                <!-- Variants -->
                 <article class="section-scroll" id="variant">
                     <h2 class="b-b-light hash">Variants</h2>
                     <p class="secondary-lead">
