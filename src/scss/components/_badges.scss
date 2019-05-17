@@ -48,52 +48,42 @@
 .tag {
 	background-color: #999;
 	color: #fff;
-	margin-top: 7px;
-	height: 32px;
-	padding: 0 12px;
-	padding-right: 13px;
 	display: inline-block;
-	border-radius: 32px;
+	margin-top: 7px;
+	height: auto;
+	line-height: 10px;
+	padding: $badge-padding;
+	padding-right: 0;
+	border-radius: 500px;
 	font-size: $badge-font-size;
 	text-transform: uppercase;
 	font-weight: $badge-font-weight;
-	line-height: 32px;
 	vertical-align: middle;
 	white-space: nowrap;
 	margin-right: 10px;
-	transition: padding-right 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-	&.deletable {
-		position: relative;
+	transition: .3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-property: padding-right, color, right;
+	& .action {
+		display: inline-block;
 	}
 
-	& .input {
-		fill: #fff;
-		top: 5%;
-		background-color: transparent !important;
+	& .deletable {
+		display: inline-block;
+		position: relative;
+		top: 2px;
+		right: 10px;
+		color: rgba(#fff, 0.2);
+		font-size: 18px;
+		z-index: 6;
+		transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
 	}
 
 	&:hover {
-		padding-right: 30px;
-		transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-		transition-property: background-color, color, opacity, transform, box-shadow, padding-right;
-		will-change: background-color, color, opacity, transform, box-shadow, padding-right;
+		padding-right: 10px;
 
-		& .input {
-			fill: #fff;
-			width: 18px;
-			min-width: 18px;
-			height: 10px;
-			margin: 0;
-			position: absolute;
-			top: 5%;
-			right: 15px;
-			z-index: 6;
-			transform: translate3D(50%, -20%, 0);
-			transition-duration: 0.3s;
-			transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-			font-size: 18px;
-			border-radius: 50%;
+		& .deletable {
+			color: rgba(#fff, 1);
+			transform: translate3d(120%, 0, 0);
 			cursor: pointer;
 		}
 	}
