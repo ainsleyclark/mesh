@@ -53,20 +53,16 @@
 
  # How To Use Tags
  - The mesh tags should be prefixed with the ``` tag ``` class which will give you access to all of the classes.
- - Tags should also containe ``` deletable ``` class.
- - Next add the letters for your tag between ``` <div> ``` element.
- - next wrap your choice of icon between ``` <div> ``` element. This element must containe ``` input ``` class.
+ - To make tags colorful, add a new class ``` tag-{color} ``` 
+ - Next add the letters for your tag between new ``` <div> ``` element with a class of ```action```.
+ - next inside of new ``` div ``` element add a class of ``` deletable ```.
+ - Inside of ``` deletable ``` class create a ``` span ``` element wich containes ``` &times; ```.
  #### Example:
  ```
- <div class="tag tag-primary deletable>
-   <div>Primary</div>
-   <div class="input">
-      <i>
-         <svg height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
-            <path d="M0 0h24v24H0z" fill="none"></path>
-         <svg>
-      </i>
+ <div class="tag tag-primary">
+   <div class="action">Primary</div>
+   <div class="deletable">
+      <span>&times;</span>
    </div>
  </div>
  ```
