@@ -103,7 +103,6 @@ $tableOfContents = [
 &lt;/button&gt;
 </code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
 
-
                     <!-- Rounded Tags -->
                     <article class="section-scroll py-2" id="tags">
                         <h2 class="b-b-light hash">Tags</h2>
