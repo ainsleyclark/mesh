@@ -5239,23 +5239,29 @@ label.close {
 }
 
 .card {
-  width: 300px;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: .5rem 0 1rem 0;
+  margin: 0.5rem 0 1rem 0;
   background: #fff;
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 300px;
+  }
+  .card-large {
+    width: 400px;
+  }
 }
 
 .card-shadow {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   border: 0;
-}
-
-.card-large {
-  width: 400px;
 }
 
 .card-header {
@@ -5274,7 +5280,6 @@ label.close {
 .card-content {
   position: relative;
   padding: 24px;
-  margin-bottom: 5px;
 }
 
 .card-content .card-title {
@@ -5283,7 +5288,7 @@ label.close {
 
 .card-content .card-subtitle {
   margin-top: -5px;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #999;
 }
 
@@ -5327,6 +5332,7 @@ label.close {
   margin: 0;
   z-index: 1;
   box-shadow: none;
+  transition: box-shadow 0.15s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .card-icon.btn-large {

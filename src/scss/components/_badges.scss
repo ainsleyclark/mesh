@@ -60,7 +60,7 @@
 	vertical-align: middle;
 	white-space: nowrap;
 	margin-right: 10px;
-	transition: .3s cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 	transition-property: padding-right, color, right;
 
 	& .action {
@@ -75,7 +75,7 @@
 		color: rgba(#fff, 0.1);
 		font-size: 18px;
 		z-index: 6;
-		transition: all .3s cubic-bezier(0.25, 0.8, 0.25, 1);
+		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 	}
 
 	&:hover {

@@ -1,26 +1,29 @@
-// .card {
-// 	position: relative;
-// 	margin: 15px;
-// 	background: #fff;
-// 	
-// 	min-height: 250px;
-// 	height: 100%;
-// 	display: flex;
-// 	flex-direction: column;
-// 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 3px 3px -2px rgba(0, 0, 0, 0.22), 0 1px 7px 0 rgba(0, 0, 0, 0.14);
-
+//_card.scss
+//
+// Card classes & styling contained here, header, content & action.
+// ==========================================================================
 
 .card {
 	$self: &;
 
-	width: $card-default-width;
+	width: 100%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin: .5rem 0 1rem 0;
+	margin: 0.5rem 0 1rem 0;
 	background: #fff;
 	border-radius: 3px;
 	border: 1px solid $card-border-color;
+	word-wrap: break-word;
+
+	//100% width at mobile, fixed size tablet -> upwards
+	@include media-tab {
+		width: $card-default-width;
+
+		&-large {
+			width: $card-default-width-large;
+		}
+	}
 
 	//Optional card shadow
 	&-shadow {
@@ -28,16 +31,13 @@
 		border: 0;
 	}
 
-	&-large {
-		width: $card-default-width-large;
-	}
 
 	//Card header
 	&-header {
 		padding: 12px 24px;
 
 		& * {
-			margin: 0;		
+			margin: 0;
 		}
 
 		#{$self}-subtitle {
@@ -50,15 +50,15 @@
 	&-content {
 		position: relative;
 		padding: 24px;
-		margin-bottom: 5px;
+		//margin-bottom: 5px;
 
 		#{$self}-title {
 			margin: 0;
 		}
-		
+
 		#{$self}-subtitle {
 			margin-top: -5px;
-			margin-bottom: .5rem;
+			margin-bottom: 0.5rem;
 			color: #999;
 		}
 
@@ -70,7 +70,7 @@
 	//Card action/footer
 	&-action {
 		padding: 16px 24px;
-		border-top: 1px solid rgba(0,0,0,0.2);
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
 
 		a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large) {
 			margin-right: 1rem;
@@ -88,7 +88,7 @@
 
 		img {
 			display: block;
-			border-radius: 	2px 2px 0 0;
+			border-radius: 2px 2px 0 0;
 			position: relative;
 			left: 0;
 			right: 0;
@@ -107,6 +107,7 @@
 		margin: 0;
 		z-index: 1;
 		box-shadow: none;
+		transition: box-shadow 0.15s cubic-bezier(0.4, 0, 1, 1);
 
 		&.btn-large {
 			bottom: -28px;
@@ -114,8 +115,6 @@
 	}
 
 	//Full background cards
-
-
 	&-background-img {
 		position: absolute;
 		object-fit: cover;
@@ -125,7 +124,5 @@
 		right: 0;
 		bottom: 0;
 		left: 0;
-		//z-index: -1;
 	}
-	
 }
