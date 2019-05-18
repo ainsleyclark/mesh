@@ -3,14 +3,12 @@
 //Page variables
 $pageData = [
     'pageTitle' => 'Epic',
-    'pageDescription' => 'An epic is an effective way of displaying meaningful content on a page easily with this utility class.',
+    'pageDescription' => 'An epic is an effective way of displaying meaningful content on a page with a hero styled appearance.',
     'activePage' => 'epic',
     'parentDirectory' => basename(__DIR__),
 ];
 
 //Table of contents
-//! DUPLICATE FOR CONTENTS ITEM,
-//! If you add an article, make sure the Id matches the first value here.
 $tableOfContents = [
     'usage' => 'Usage',
 ];
