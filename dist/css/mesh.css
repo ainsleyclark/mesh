@@ -5350,6 +5350,49 @@ label.close {
   left: 0;
 }
 
+.collapse {
+  position: relative;
+}
+
+.collapse-item .collapse-header {
+  padding: 25px 10px 5px 0;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse-item .collapse-header .collapse-title {
+  margin-top: 10px;
+}
+
+.collapse-item .collapse-header i {
+  color: #999;
+}
+
+.collapse-item .collapse-content {
+  padding: 0 15px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.collapse.collapse-css .collapse-content {
+  display: none;
+}
+
+.collapse.collapse-css .collapse-toggle {
+  display: none;
+  position: absolute;
+  top: -999999px;
+  left: -999999px;
+}
+
+.collapse.collapse-css .collapse-toggle:checked ~ .collapse-content {
+  display: block;
+}
+
 .hero {
   width: 100vw;
 }

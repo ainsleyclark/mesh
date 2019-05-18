@@ -140,7 +140,7 @@ $tableOfContents = [
                         <div class="alert alert-success alert-close">
                             This is a success alert with close button
                             <button type="button" class="close" aria-label="Close">
-                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="alert alert-info alert-close">
@@ -312,7 +312,7 @@ $tableOfContents = [
                         mesh doesnt ship with any JS, but you can use the following function to add functionality to dismiss the close buttons. This script adds an event listener to all the <code class="inline">close</code> buttons.
                     </p>
                     <pre class="highlight"><code class="javascript">document.addEventListener('DOMContentLoaded', () => {
-    (document.querySelectorAll('.js-alert .alert .close') || []).forEach(($delete) => {
+    (document.querySelectorAll('.alert .close') || []).forEach(($delete) => {
         $delete.addEventListener('click', () => {
             $delete.parentNode.remove();
         });

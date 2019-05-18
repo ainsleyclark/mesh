@@ -1,7 +1,68 @@
 //_collapse.scss
 //
-// Collapsable content
+// Collapsible content
 // ==========================================================================
 
 // Title
 // ==========================================================================
+
+.collapse {
+	$self: &;
+	position: relative;
+
+	&-item {
+		#{$self}-header {
+			//width: 100%;
+			padding: 25px 10px 5px 0;
+			cursor: pointer;
+			position: relative;
+			border-bottom: 1px solid #ddd;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			#{$self}-title {
+				margin-top: 10px;
+			}
+
+			i {
+				color: #999;
+			}
+		}
+
+		#{$self}-content {
+            padding: 0 15px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+
+            //! SET
+            //display: none;
+		}
+    }
+}
+
+@if $alert-enable-css-close {
+    .collapse {
+        $self: &;
+
+        &.collapse-css {
+
+            #{$self}-content {
+                display: none;
+            }
+
+            #{$self}-toggle {
+                display: none;
+                position: absolute;
+                top: -999999px;
+                left: -999999px;
+            }
+    
+            #{$self}-toggle:checked ~ #{$self}-content {
+                display: block;
+            } 
+        }
+    }
+}
+
+    
