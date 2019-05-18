@@ -1,0 +1,13 @@
+//_epic.scss
+//
+// Epic section
+// ==========================================================================
+
+.epic {
+	padding: $epic-mobile-padding;
+	margin-bottom: 2rem;
+
+	@include media-mob {
+		padding: $epic-default-padding;
+	}
+}

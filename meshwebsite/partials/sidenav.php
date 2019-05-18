@@ -53,9 +53,9 @@ $activeClass = $pageData['activePage'];
                 <a class="<?php if($activeClass == 'button') echo 'active'; ?>" href="/documentation/components/button.php"><li>Button</li></a>
                 <a class="<?php if($activeClass == 'card') echo 'active'; ?>" href="/documentation/components/card.php"><li>Card</li></a>
                 <a class="<?php if($activeClass == 'collapse') echo 'active'; ?>" href="/documentation/components/collapse.php"><li>Collapse</li></a>
+                <a class="<?php if($activeClass == 'epic') echo 'active'; ?>" href="/documentation/components/epic.php"><li>Epic</li></a>
                 <a class="<?php if($activeClass == 'form') echo 'active'; ?>" href="/documentation/components/form.php"><li>Form</li></a>
                 <a class="<?php if($activeClass == 'header') echo 'active'; ?>" href="/documentation/components/header.php"><li>Header</li></a>
-                <a class="<?php if($activeClass == 'hero') echo 'active'; ?>" href="/documentation/components/hero.php"><li>Hero</li></a>
                 <a class="<?php if($activeClass == 'list') echo 'active'; ?>" href="/documentation/components/list.php"><li>List</li></a>
                 <a class="<?php if($activeClass == 'modal') echo 'active'; ?>" href="/documentation/components/modal.php"><li>Modal</li></a>
                 <a class="<?php if($activeClass == 'nav') echo 'active'; ?>" href="/documentation/components/nav.php"><li>Nav</li></a>

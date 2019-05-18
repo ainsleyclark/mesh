@@ -2,6 +2,7 @@
 //
 // Collapsible content
 // ==========================================================================
+// sass-lint:disable nesting-depth
 
 // Title
 // ==========================================================================
@@ -31,38 +32,35 @@
 		}
 
 		#{$self}-content {
-            padding: 0 15px;
-            padding-top: 15px;
-            padding-bottom: 20px;
+			padding: 0 15px;
+			padding-top: 15px;
+			padding-bottom: 20px;
 
-            //! SET
-            //display: none;
+			//! SET
+			//display: none;
 		}
-    }
+	}
 }
 
 @if $alert-enable-css-close {
-    .collapse {
-        $self: &;
+	.collapse {
+		$self: &;
 
-        &.collapse-css {
+		&.collapse-css {
+			#{$self}-content {
+				display: none;
+			}
 
-            #{$self}-content {
-                display: none;
-            }
+			#{$self}-toggle {
+				display: none;
+				position: absolute;
+				top: -999999px;
+				left: -999999px;
+			}
 
-            #{$self}-toggle {
-                display: none;
-                position: absolute;
-                top: -999999px;
-                left: -999999px;
-            }
-    
-            #{$self}-toggle:checked ~ #{$self}-content {
-                display: block;
-            } 
-        }
-    }
+			#{$self}-toggle:checked ~ #{$self}-content {
+				display: block;
+			}
+		}
+	}
 }
-
-    

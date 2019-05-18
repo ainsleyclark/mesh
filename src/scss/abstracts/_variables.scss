@@ -19,9 +19,9 @@
 //	13. Button
 //  14. Card
 //	15. Collapse
-//  16. Form
-//  17. Header
-//  18. Hero
+//	16. Epic
+//  17. Form
+//  18. Header
 //  19. List
 //  20. Modal
 //  21. Nav
@@ -241,13 +241,17 @@ $card-default-media-header-height: 150px !default;
 // 15. Collapse
 // ==========================================================================
 
-// 16. Form
+// 16. Epic
 // ==========================================================================
 
-// 17. Header
+//Padding
+$epic-mobile-padding: 2rem 1rem;
+$epic-default-padding: 4rem 2rem;
+
+// 17. Form
 // ==========================================================================
 
-// 18. Hero
+// 18. Header
 // ==========================================================================
 
 // 19. List
@@ -269,7 +273,7 @@ $modal-background-color: rgba(0, 0, 0, 0.2) !default;
 $pagination-enable-shadow: true !default;
 $pagination-rounded: true !default;
 
-//Coloer
+//Color
 $pagination-text-color: #999 !default;
 $pagination-active-color: color('primary') !default;
 
