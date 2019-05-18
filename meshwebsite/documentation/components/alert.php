@@ -246,7 +246,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>The <code class="inline">alert-container</code> element must be the parent for both the alert and the and checkbox.</li>
                             <li>The <code class="inline">checkbox</code> should be placed before the alert in the DOM</li>
                             <li>The id for the <code class="inline">checkbox</code> and the name of the label must match.</li>

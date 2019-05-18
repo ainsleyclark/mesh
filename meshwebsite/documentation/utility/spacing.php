@@ -34,7 +34,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can target the margin util classes by using <code class="inline">m{side}-{breakpoint}-{number}</code>. The side being optional and either t, b, l, r, x or y. The breakpoint being optional and one of our five breakpoints and the amount ranging from 1 to 5.</li>
                             <li>You can target the padding util classes by using <code class="inline">p{side}-{breakpoint}-{number}</code>.</li>
                         </ul>

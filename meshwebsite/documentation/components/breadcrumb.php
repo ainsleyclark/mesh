@@ -34,7 +34,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>In order to use breadcrumbs with mesh you need to wrap the parent with a <code class="inline">breadcrumb</code> class, and child (breadcrumb items) to have the <code class="inline">breadcrumbs-item</code> class.</li>
                             <li>Be sure to add the <code class="inline">active</code> class to the page where the user currently is. This will give the link a color of <code class="inline">rgba(0, 0, 0, 0.5);</code></li>
                             <li><strong>Note:</strong> It is reccomended you use the <code class="inline">&lt;/ul&gt;</code> and <code class="inline">&lt;/li&gt;</code> semantic tags with breadcrumbs.</li>

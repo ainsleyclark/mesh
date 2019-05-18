@@ -36,7 +36,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can target the responsive image class by using <code class="inline">img-responsive</code>. Which adds the properties to the element that are outlined above.</li>
                         </ul>
                     </div>
@@ -83,7 +83,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can target the responsive iFrame class by using a container which will apply properties to make it responsive. Add <code class="inline">iframe-container</code> to the parent of the iFrame, shown below.</li>
                             <li>The <code class="inline">iframe-container</code> has a padding of <code class="inline">padding-top: 56.25%</code> setting the padding top to a percentages of height 9 / width 16 which keeps a desirable aspect ratio which matches YouTube height and width ratio.</li>
                             <li>The iFrame is set to be absolutely positioned in the container.</li>

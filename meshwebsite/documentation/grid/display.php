@@ -36,7 +36,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can target the display class by using <code class="inline">d-{breakpoint}-{property}</code>. The breakpoint being optional and one of our five breakpoints and the properties being outlined below.</li>
                             <li>These classes affect the breakpoint and upwards, for example - <code class="inline">d-tab-flex</code> will make the element's display 'flex' on tablet, desktop & HD screens.</li>
                         </ul>

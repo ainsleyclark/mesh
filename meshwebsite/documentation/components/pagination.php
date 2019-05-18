@@ -35,7 +35,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>In order to use pagination with mesh you need to wrap the parent with a <code class="inline">pagination</code> class, and child (pagination items) to have the <code class="inline">page-item</code> class.</li>
                             <li>Be sure to add the <code class="inline">active</code> class to the page where the user currently is. This will give the current active page item a background color and box shadow.</li>
                             <li><strong>Note:</strong> It is reccomended you use the <code class="inline">&lt;/ul&gt;</code> and <code class="inline">&lt;/li&gt;</code> semantic tags with breadcrumbs.</li>

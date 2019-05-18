@@ -67,7 +67,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>All text classes shown below are prefixed with <code class="inline">t-{helper}</code> for text.</li>
                         </ul>
                     </div>

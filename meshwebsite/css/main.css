@@ -72,17 +72,17 @@ a:not(.nohover):hover, a:not(.nohover):active, a:not(.nohover):focus {
 /* ====================
     Components
     ==================== */
-ul.list {
+ul.list-line {
   list-style-type: none;
   position: relative;
 }
 
-ul.list li {
+ul.list-line li {
   font-weight: 300;
   margin-bottom: 5px;
 }
 
-ul.list li:before {
+ul.list-line li:before {
   content: '';
   color: #ff2451;
   display: inline-block;
@@ -95,7 +95,7 @@ ul.list li:before {
 }
 
 @media (min-width: 768px) {
-  ul.list li:before {
+  ul.list-line li:before {
     margin-left: -20px;
   }
 }

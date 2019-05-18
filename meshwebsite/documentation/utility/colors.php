@@ -36,7 +36,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can target the color class by using <code class="inline">c-{color}</code>.</li>
                             <li>The background class can be targeted by using <code class="inline">bg-{color}</code>.</li>
                         </ul>

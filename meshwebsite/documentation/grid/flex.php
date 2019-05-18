@@ -80,7 +80,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Direction options:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can change this behaviour by using <code class="inline">flex-{breakpoint}-row</code> or <code class="inline">flex-{modifier}-column</code>. The modifier being optional and one of our five breakpoints.</li>
                             <li>Reverse direction is also possible, where <code class="inline">flex-{breakpoint}-row-reverse</code> will change the flex items to become right to left.</li>
                             <li>Or <code class="inline">flex-{breakpoint}-column-reverse</code> will change the flex items to go from bottom to top.</li>
@@ -195,7 +195,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Justify content options:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li><strong class="c-secondary">start</strong> (flex-start) - is the default, all items will be aligned to the beginning of the flex container</li>
                             <li><strong class="c-secondary">end</strong> (flex-end) - means all items will be aligned to the end of the flex container.</li>
                             <li><strong class="c-secondary">center</strong> (center) - aligns all items in the center of the flex container.</li>
@@ -298,7 +298,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Align items options:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li><strong class="c-secondary">stretch</strong> (stretch) - is the default, all items will stretch to fit the flex container whilst still respecting <code class="inline">min-width</code> and <code class="inline">max-width</code> properties.</li>
                             <li><strong class="c-secondary">start</strong> (flex-start) - means all items will be aligned to the start of the flex container, on the cross axis.</li>
                             <li><strong class="c-secondary">end</strong> (flex-end) - all items will be aligned to the end of the flex container, on the cross axis.</li>
@@ -688,7 +688,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Wrap options:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>Add <code class="inline">flex-{breakpoint}-wrap</code> for flex items to wrap to the next line, the breakpoint is optional.</li>
                             <li>Add <code class="inline">flex-{breakpoint}-nowrap</code> to prevent flex items from wrapping, the breakpoint is optional but you would usually use this with a responsive class.</li>
                             <li>Add <code class="inline">flex-{breakpoint}-wrap-reverse</code> in order for the flex items to wrap on multiple lines from <strong>top to bottom</strong>.</li>

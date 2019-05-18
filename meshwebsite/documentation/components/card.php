@@ -41,7 +41,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>Cards compromise of three different sections, all of which are prefixed with <code class="inline">card</code>. The <code class="inline">card-header</code>, <code class="inline">card-body</code> and the <code class="inline">card-action</code>, all of which are optional.</li>
                             <li>All cards (including large) are 100% width at mobile, filling the column or parent in which the card lies. They then become a fixed width at tablet screens & upwards.</li>
                         </ul>

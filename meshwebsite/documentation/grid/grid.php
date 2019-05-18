@@ -63,7 +63,7 @@ $tableOfContents = [
                     <p class="secondary-lead">A container is the wrapper for a row (more on that later) and defines the width of your content. It can be at fixed size or full width, and will gracefully become smaller as screen size gets smaller.</p>
                     <div class="text-cont">
                         <h3>Container options:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>A container is at fixed size by default, by using the <code class="inline">container</code> tag. With maximum widths set at each side, it will gradually get smaller as the viewport does.</li>
                             <li>Or a container can be full width, which will take up 100% of the screen and have slight padding either side. This is acheived by adding the <code class="inline">container-fullwidth</code> class to a div or semantic element.</li>
                         </ul>
@@ -83,7 +83,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Row options:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>To get rid of the padding on each side of a column, add the <code class="inline">no-gaps</code> class to a row. See below: </li>
                         </ul>
                     </div>
@@ -139,7 +139,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notes:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>The default size of a column is defined with <code class="inline">col-{amount}</code>, for example <code class="inline">col-10</code> will take up 10 columns at all breakpoints.</li>
                             <li>The <code class="inline">col-auto</code> class will fill up all available space within the row, great if you want a column to have a predefined width (in pixels or ems for example).</li>
                             <li>The default width of a column is 100%, meaning you can omit <code class="inline">col-12</code> if you always want to take up 12 columns for mobile.</li>
@@ -278,7 +278,7 @@ $tableOfContents = [
                         <div class="text-cont">
                             <h3>Horizontal alignment</h3>
                             <p>CSS alignment can be a nightmare. With mesh, as it's built with flexbox, alignment is easy. Just add one of our flex classes to the row or parent that the content lives in.</p>
-                            <ul class="list">
+                            <ul class="list-line">
                                 <li>To align content centrally add <code class="inline">justify-content-center</code> to the row/parent.</li>
                                 <li>To align content at the start of the row/parent add <code class="inline">justify-content-start</code>.</li>
                                 <li>To align content at the end of the row/parent add <code class="inline">justify-content-end</code>.</li>
@@ -328,7 +328,7 @@ $tableOfContents = [
                         <div class="text-cont">
                             <h3>Vertical alignment</h3>
                             <p>To align content vertically within the container you will need to take advantage of our flex class <code class="inline">align-items-*</code>.</p>
-                            <ul class="list">
+                            <ul class="list-line">
                                 <li>To align content centrally add <code class="inline">align-items-center</code> to the row/container.</li>
                                 <li>To align content at the start of the row/container add <code class="inline">align-items-start</code>.</li>
                                 <li>To align content at the end of the row/container add <code class="inline">align-items-end</code>.</li>

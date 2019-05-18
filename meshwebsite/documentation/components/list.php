@@ -34,12 +34,35 @@ $tableOfContents = [
                         Use the <code class="inline">class</code> for inline code.
                         <br>Another line of something.
                     </p>
-                    <div class="text-cont">
-                        <div class="alert">
-                            Please wrap all your text in a <code class="inline">text-cont</code> class.
-                        </div>
 
-                    </div>
+
+                    <ul class="list">
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                    </ul>
+
+                    <ul class="list">
+                        <li class="list-item active">List item</li>
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                    </ul>
+
+                    <ul class="list">
+                        <li class="list-item disabled">List item</li>
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                        <li class="list-item">List item</li>
+                    </ul>
+
+
+
+
                     <pre class="highlight"><code class="html">&lt;div class="alert"&gt;
     This is a default alert
 &lt;/div&gt;

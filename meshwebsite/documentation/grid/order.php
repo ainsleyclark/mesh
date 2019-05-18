@@ -35,7 +35,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can target the order class by using <code class="inline">flex-{breakpoint}-{amount}</code>. The breakpoint being optional and one of our five breakpoints and the amount being a number <strong>from 1 to 12</strong>.</li>
                             <li>Order first and last classes are also bundled with mesh. <code class="inline">order-{breakpoint}-first</code> and <code class="inline">order-{breakpoint}-last</code> will place the content you target first or last in the container retrospectively.</li>
                         </ul>

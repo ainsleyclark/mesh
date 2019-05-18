@@ -34,7 +34,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>All border classes shown below are prefixed with <code class="inline">b-{side}-{shade}</code> where side is <code class="inline">t, r, b, l</code>, (top, right, bottom or left) and optional and shade being light or dark, which is optional too.</li>
                         </ul>
                     </div>
@@ -140,7 +140,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>All border radius classes shown below are prefixed with <code class="inline">br-{helper}</code>.</li>
                         </ul>
                     </div>

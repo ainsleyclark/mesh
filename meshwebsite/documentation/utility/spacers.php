@@ -45,7 +45,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can target the spacer classes by using <code class="inline">spacer-{size}</code>. The size being one of the classes below.</li>
                         </ul>
                     </div>

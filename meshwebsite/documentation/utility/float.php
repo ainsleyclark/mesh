@@ -36,7 +36,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can target the float classes by using <code class="inline">f-{property}</code>. he breakpoint being optional and one of our five breakpoints, the properties being outlined below.</li>
                             <li>These classes effect the breakpoint and upwards, for example - <code class="inline">f-tab-right</code> will make the element float right on tablet, desktop & HD screens but none at mobile or extra small.</li>
                         </ul>
@@ -78,7 +78,7 @@ $tableOfContents = [
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
-                        <ul class="list">
+                        <ul class="list-line">
                             <li>You can target the clearfix class by adding <code class="inline">clearfix</code> to the element you want to be fixed. </li>
                             <li>Generally speaking you would want to use the <code class="inline">clearfix</code> to the parent of the items that are being floated.</li>
                         </ul>

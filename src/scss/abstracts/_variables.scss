@@ -257,6 +257,11 @@ $epic-default-padding: 4rem 2rem;
 // 19. List
 // ==========================================================================
 
+$list-border-color: rgba(0, 0, 0, 0.2) !default;
+$list-active-color: color('secondary') !default;
+$list-disabled-color: #999 !default;
+
+
 // 20. Modal
 // ==========================================================================
 

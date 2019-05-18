@@ -34,13 +34,9 @@ $tableOfContents = [
                         Use of the epic component is simple, just add the <code class="inline">epic</code> class to the parent of the content you wish to wrap. This will add padding on the x and y axis of the container.
                         <br><strong>Note:</strong> Be sure to add the <code class="inline">bg-{color}</code> class to display the appropriate background. 
                     </p>
-                    <div class="text-cont">
-
-
-                    </div>
                     <div class="epic bg-primary c-white br">
                         <h1 class="normal-headings">Epic section</h1>
-                        <p class="lead">This section is pretty epic, you can put all sorts inside of me, headings, leads & CTA's.</p>
+                        <p class="lead mb-3">This section is pretty epic, you can put all sorts inside of me, headings, leads & CTA's.</p>
                         <button class="btn btn-white btn-outline">Call to action!</button>
                     </div>
                     <pre class="highlight"><code class="html">&lt;div class=&quot;epic bg-primary c-white br&quot;&gt;

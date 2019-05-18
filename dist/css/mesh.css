@@ -3505,7 +3505,7 @@ h6 {
 
 p {
   font-size: 1rem;
-  margin: 0 0 10px;
+  margin: 0 0 1rem;
   font-weight: 300;
 }
 
@@ -5404,6 +5404,37 @@ label.close {
   }
 }
 
+.list {
+  padding: 0;
+  list-style-type: none;
+  margin: .5rem 0 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.list-item {
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.list-item:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.list-item.active {
+  background-color: #8270b8;
+  color: #ffffff;
+}
+
+.list-item.disabled {
+  color: #999;
+}
+
 /* Add animation (Standard syntax) */
 @keyframes example {
   from {
@@ -5526,7 +5557,6 @@ label.close {
   background: transparent;
   text-align: center;
   cursor: pointer;
-  transition: color 0.2s;
   border-radius: 30px !important;
 }
 
