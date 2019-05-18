@@ -52,14 +52,15 @@
 	align-items: center;
 	height: auto;
 	line-height: 1;
-	padding: 0 12px 5px;
+	padding: 5px 12px 4px;
+	padding-right: 1px;
 	border-radius: 500px;
 	font-size: $badge-font-size;
 	text-transform: uppercase;
 	font-weight: $badge-font-weight;
 	vertical-align: middle;
 	white-space: nowrap;
-	margin-right: 10px;
+	margin-right: 5px;
 	transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 	transition-property: padding-right, color, right;
 
@@ -70,7 +71,7 @@
 	& .deletable {
 		display: inline-block;
 		position: relative;
-		top: 2px;
+		top: -1px;
 		right: 10px;
 		color: rgba(#fff, 0.1);
 		font-size: 18px;
