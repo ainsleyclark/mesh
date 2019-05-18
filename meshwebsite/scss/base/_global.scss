@@ -18,10 +18,11 @@ main {
 	position: relative;
 }
 
-a:not(.nohover) {
-	transition: color 0.2s;
+//! Come back to, conflicts with lists
+// a:not(.nohover) {
+// 	transition: color 0.2s;
 
-	@include on-event {
-		color: color(primary);
-	}
-}
+// 	@include on-event {
+// 		color: color(primary);
+// 	}
+// }

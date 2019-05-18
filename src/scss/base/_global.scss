@@ -22,8 +22,9 @@ body {
 
 a,
 a:visited {
-	color: $black-text-color;
+	color: color('primary');
 	text-decoration: none;
+	background-color: transparent;
 }
 
 ul {

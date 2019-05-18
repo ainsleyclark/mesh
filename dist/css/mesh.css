@@ -23,8 +23,9 @@ body {
 
 a,
 a:visited {
-  color: #3c4858;
+  color: #ff2451;
   text-decoration: none;
+  background-color: transparent;
 }
 
 ul {
@@ -5407,8 +5408,8 @@ label.close {
 .list {
   padding: 0;
   list-style-type: none;
-  margin: .5rem 0 1rem 0;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0.5rem 0 1rem 0;
+  border: 1px solid #ddd;
   border-radius: 3px;
   overflow: hidden;
   position: relative;
@@ -5423,16 +5424,35 @@ label.close {
 }
 
 .list-item:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #ddd;
 }
 
 .list-item.active {
-  background-color: #8270b8;
+  background-color: #ff2451;
   color: #ffffff;
 }
 
 .list-item.disabled {
   color: #999;
+}
+
+.list a.list-item {
+  display: block;
+  transition: background-color 0.25s;
+}
+
+.list a.list-item:not(.active) {
+  background-color: #fff;
+}
+
+.list a.list-item:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.list-icon {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Add animation (Standard syntax) */

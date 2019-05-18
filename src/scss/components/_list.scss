@@ -4,37 +4,58 @@
 // ==========================================================================
 
 .list {
-    padding: 0;
-    list-style-type: none;
-    margin: .5rem 0 1rem 0;
-    border: 1px solid $list-border-color;
-    border-radius: 3px;
-    overflow: hidden;
-    position: relative;
+	$self: &;
 
-    &-item {
-        background-color: #fff;
-        line-height: 1.5rem;
-        padding: 10px 20px;
-        margin: 0;
-        cursor: pointer;
+	padding: 0;
+	list-style-type: none;
+	margin: 0.5rem 0 1rem 0;
+	border: 1px solid $list-border-color;
+	border-radius: 3px;
+	overflow: hidden;
+	position: relative;
 
-        &:not(:last-child) {
-            border-bottom: 1px solid $list-border-color;
+	&-item {
+		background-color: #fff;
+		line-height: 1.5rem;
+		padding: 10px 20px;
+		margin: 0;
+		cursor: pointer;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $list-border-color;
+		}
+
+		&.active {
+			background-color: $list-active-color;
+			color: color-contrast($list-active-color);
+		}
+
+		&.disabled {
+			color: $list-disabled-color;
+		}
+	}
+
+	//Links
+	a#{$self}-item {
+        display: block;
+        transition: background-color 0.25s;
+
+        &:not(.active) {
+            background-color: #fff;
         }
-
-        &.active {
-            background-color: $list-active-color;
-            color: color-contrast($list-active-color);
-        }
-
-        &.disabled {
-            color: $list-disabled-color;
+        
+        &:hover:not(.active) {
+            background-color: #ddd;
         }
     }
-
+    
+    //Icon 
+    &-icon {
+        display: flex !important; // Overwrite specificity above
+        justify-content: space-between;
+        align-items: center;
+    }
 }
-
 
 // Title
 // ==========================================================================

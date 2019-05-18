@@ -23,7 +23,7 @@
 		background: transparent;
 		text-align: center;
 		cursor: pointer;
-		
+
 		//Add border radius if variable true
 		@if $pagination-rounded {
 			border-radius: 30px !important;

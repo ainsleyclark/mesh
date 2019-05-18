@@ -60,6 +60,80 @@ $tableOfContents = [
                         <li class="list-item">List item</li>
                     </ul>
 
+                    <ul class="list">
+                        <a href="#!" class="list-item">List item</a>
+                        <a href="#!" class="list-item active">List item</a>
+                        <a href="#!" class="list-item">List item</a>
+                        <a href="#!" class="list-item">List item</a>
+                        <a href="#!" class="list-item">List item</a>
+                    </ul>
+
+                    <ul class="list">
+                        <a href="#!" class="list-item list-icon">
+                            List item
+                            <i class="fas fa-caret-right fa-lg"></i>
+                        </a>                        
+                        <a href="#!" class="list-item list-icon active">
+                            List item
+                            <i class="fas fa-caret-right fa-lg"></i>
+                        </a>
+                        <a href="#!" class="list-item list-icon">
+                            List item
+                            <i class="fas fa-caret-right fa-lg"></i>
+                        </a>                        
+                        <a href="#!" class="list-item list-icon">
+                            List item
+                            <i class="fas fa-caret-right fa-lg"></i>
+                        </a>
+                        <a href="#!" class="list-item list-icon">
+                            List item
+                            <i class="fas fa-caret-right fa-lg"></i>
+                        </a>                        
+                    </ul>
+
+                    <ul class="list">
+                        <a href="#!" class="list-item list-icon">
+                            List item
+                            <div class="badge badge-primary badge-rounded">2</div>
+                        </a>                        
+                        <a href="#!" class="list-item list-icon active">
+                            List item
+                            <div class="badge badge-primary badge-rounded bg-white c-primary">4</div>
+                        </a>
+                        <a href="#!" class="list-item list-icon">
+                            List item
+                            <div class="badge badge-primary badge-rounded">14</div>
+                        </a>                        
+                    </ul>
+
+                    <ul class="list w-100 w-tab-60">
+                        <a href="#!" class="list-item w-100 c-dark">
+                            <div class="d-flex justify-content-between align-items-center my-2">
+                                <h3 class="mb-0">List item heading</h3>
+                                <div class="badge badge-primary">Posted 2 days ago</div>
+                            </div>
+                            <p>Kogi single-origin coffee farm-to-table letterpress keffiyeh heirloom. Helvetica cold-pressed readymade meggings, echo park retro sartorial. +1 wolf subway tile, quinoa heirloom live-edge ethical letterpress blog kale chips vape pok pok butcher. Everyday carry kombucha gochujang VHS, poke man braid copper mug asymmetrical cronut. Man braid viral fashion axe thundercats try-hard church-key literally quinoa.</p>
+                            <h6>Posted by Tiger Woods</h6>
+                        </a>                        
+                        <a href="#!" class="list-item active">
+                            <div class="d-flex justify-content-between align-items-center my-2">
+                                <h3 class="mb-0">List item heading</h3>
+                                <div class="badge badge-white">Posted 5 days ago</div>
+                            </div>
+                            <p>Kogi single-origin coffee farm-to-table letterpress keffiyeh heirloom. Helvetica cold-pressed readymade meggings, echo park retro sartorial. +1 wolf subway tile, quinoa heirloom live-edge ethical letterpress blog kale chips vape pok pok butcher. Everyday carry kombucha gochujang VHS, poke man braid copper mug asymmetrical cronut. Man braid viral fashion axe thundercats try-hard church-key literally quinoa.</p>
+                            <h6>Posted by Gordon Ramsey</h6>
+                        </a> 
+                        <a href="#!" class="list-item w-100 c-dark">
+                            <div class="d-flex justify-content-between align-items-center my-2">
+                                <h3 class="mb-0">List item heading</h3>
+                                <div class="badge badge-primary">Posted 10 days ago</div>
+                            </div>
+                            <p>Kogi single-origin coffee farm-to-table letterpress keffiyeh heirloom. Helvetica cold-pressed readymade meggings, echo park retro sartorial. +1 wolf subway tile, quinoa heirloom live-edge ethical letterpress blog kale chips vape pok pok butcher. Everyday carry kombucha gochujang VHS, poke man braid copper mug asymmetrical cronut. Man braid viral fashion axe thundercats try-hard church-key literally quinoa.</p>
+                            <h6>Posted by Above & Beyond</h6>
+                        </a>                       
+                    </ul>
+
+
 
 
 

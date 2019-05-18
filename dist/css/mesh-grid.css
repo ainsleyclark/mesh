@@ -23,8 +23,9 @@ body {
 
 a,
 a:visited {
-  color: #3c4858;
+  color: #ff2451;
   text-decoration: none;
+  background-color: transparent;
 }
 
 ul {
