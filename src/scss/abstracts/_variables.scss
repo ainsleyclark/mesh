@@ -176,10 +176,7 @@ $alert-default-background-color: rgba(0, 0, 0, 0.5) !default;
 // Enable badge features
 $badge-enable-colored: true;
 $badge-enable-rounded: true;
-
-// Enable tag features
-$tag-enable-colored: true;
-$tag-enable-rounded: true;
+$badge-enable-deletable: true;
 
 //Padding
 $badge-padding: 5px 12px;
@@ -187,6 +184,9 @@ $badge-padding: 5px 12px;
 //Font
 $badge-font-size: 10px !default;
 $badge-font-weight: 400;
+
+// Border
+$badge-rounded: 500px;
 
 // 12. Breadcrumb
 // ==========================================================================

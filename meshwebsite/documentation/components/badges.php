@@ -113,50 +113,80 @@ $tableOfContents = [
                             <br>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.
                         </p>
                         <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap mb-3">
-                            <div class="tag tag-primary">
+                            <div class="badge badge-deletable badge-primary">
                                 <div class="action">Primary</div>
-                                <div class="deletable">
+                                <div class="delete">
                                     <span>&times;</span>
                                 </div>
                             </div>
-                            <div class="tag tag-success">
-                                <div class="action">Primary</div>
-                                <div class="deletable">
+                            <div class="badge badge-deletable badge-success">
+                                <div class="action">Success</div>
+                                <div class="delete">
                                     <span>&times;</span>
                                 </div>
                             </div>
-                            <div class="tag tag-info">
-                                <div class="action">Primary</div>
-                                <div class="deletable">
+                            <div class="badge badge-deletable badge-info">
+                                <div class="action">Info</div>
+                                <div class="delete">
                                     <span>&times;</span>
                                 </div>
                             </div>
-                            <div class="tag tag-warning">
-                                <div class="action">Primary</div>
-                                <div class="deletable">
+                            <div class="badge badge-deletable badge-warning">
+                                <div class="action">Warning</div>
+                                <div class="delete">
                                     <span>&times;</span>
                                 </div>
                             </div>
-                            <div class="tag tag-danger">
-                                <div class="action">Primary</div>
-                                <div class="deletable">
+                            <div class="badge badge-deletable badge-danger">
+                                <div class="action">Danger</div>
+                                <div class="delete">
                                     <span>&times;</span>
                                 </div>
                             </div>
-                            <div class="tag tag-link">
-                                <div class="action">Primary</div>
-                                <div class="deletable">
+                            <div class="badge badge-deletable badge-link">
+                                <div class="action">Link</div>
+                                <div class="delete">
                                     <span>&times;</span>
                                 </div>
                             </div>
                             
                         </div>
-                        <pre class="highlight"><code class="html">&lt;div class="tag tag-primary"&gt;
+                        <pre class="highlight"><code class="html">&lt;div class="badge badge-deletable badge-primary"&gt;
     &lt;div class="action"&gt;Primary&lt;/div&gt;
-    &lt;div class="deletable"&gt;
+    &lt;div class="delete"&gt;
         &lt;span&gt;&times;&lt;/span&gt;
     &lt;/div&gt;
-&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+&lt;/div&gt;
+&lt;div class="badge badge-deletable badge-success"&gt;
+    &lt;div class="action"&gt;Primary&lt;/div&gt;
+    &lt;div class="delete"&gt;
+        &lt;span&gt;&times;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge badge-deletable badge-info"&gt;
+    &lt;div class="action"&gt;Primary&lt;/div&gt;
+    &lt;div class="delete"&gt;
+        &lt;span&gt;&times;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge badge-deletable badge-warning"&gt;
+    &lt;div class="action"&gt;Primary&lt;/div&gt;
+    &lt;div class="delete"&gt;
+        &lt;span&gt;&times;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge badge-deletable badge-danger"&gt;
+    &lt;div class="action"&gt;Primary&lt;/div&gt;
+    &lt;div class="delete"&gt;
+        &lt;span&gt;&times;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="badge badge-deletable badge-link"&gt;
+    &lt;div class="action"&gt;Primary&lt;/div&gt;
+    &lt;div class="delete"&gt;
+        &lt;span&gt;&times;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </article>
 
             </div><!-- /Col -->
