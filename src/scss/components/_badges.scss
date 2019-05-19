@@ -18,6 +18,8 @@
 	height: auto;
 	margin-right: 5px;
 	line-height: 1;
+	user-select: none;
+
 }
 
 %badge-properties {
@@ -37,77 +39,49 @@
 
 @if $badge-enable-rounded {
 	.badge-rounded {
-		border-radius: 500px;
+		border-radius: $badge-rounded;
 		padding: $badge-padding;
 	}
 }
 
-// Tags
-// ==========================================================================
+@if $badge-enable-deletable {
+	.badge-deletable {
+		padding: 5px 2px 10px 12px;
+		height: 20px;
+		line-height: 1;
+		border-radius: $badge-rounded;
+		transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+		transition-property: padding-right, color, right;
 
-.tag {
-	background-color: #999;
-	color: #fff;
-	display: inline-flex;
-	align-items: center;
-	height: auto;
-	line-height: 1;
-	padding: 5px 12px 4px;
-	padding-right: 1px;
-	border-radius: 500px;
-	font-size: $badge-font-size;
-	text-transform: uppercase;
-	font-weight: $badge-font-weight;
-	vertical-align: middle;
-	white-space: nowrap;
-	margin-right: 5px;
-	transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-	transition-property: padding-right, color, right;
-
-	& .action {
-		display: inline-block;
-	}
-
-	& .deletable {
-		display: inline-block;
-		position: relative;
-		top: -1px;
-		right: 10px;
-		color: rgba(#fff, 0.1);
-		font-size: 18px;
-		z-index: 6;
-		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-	}
-
-	&:hover {
-		padding-right: 10px;
-
-		& .deletable {
-			color: rgba(#fff, 1);
-			transform: translate3d(120%, 0, 0);
-			cursor: pointer;
+		& .action {
+			display: inline-flex;
+			position: relative;
+			width: 100%;
+			height: 100%;
 		}
-	}
-}
-
-%tag-properties {
-	border: 0;
-	color: #ffffff;
-}
-
-@if $tag-enable-colored {
-	@each $color-name, $hex in $palette {
-		.tag-#{$color-name} {
-			@extend %tag-properties;
-			color: color-contrast($hex);
-			background-color: $hex;
+	
+		& .delete {
+			display: inline-flex;
+			position: relative;
+			right: 10px;
+			padding: 0;
+			margin: auto;
+			top: -5px;
+			padding-bottom: 0;
+			color: rgba(#fff, 0);
+			font-size: 18px;
+			z-index: 6;
+			transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 		}
-	}
-}
+	
+		&:hover {
+			padding-right: 10px;
 
-@if $tag-enable-rounded {
-	.tag-rounded {
-		border-radius: 500px;
-		padding: $badge-padding;
+			& .delete {
+				color: rgba(#fff, 1);
+				transform: translate3d(120%, 0, 0);
+				cursor: pointer;
+			}
+		}
 	}
 }
