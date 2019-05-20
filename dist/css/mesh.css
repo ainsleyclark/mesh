@@ -5301,9 +5301,7 @@ label.close {
 }
 
 .collapse-item .collapse-content {
-  padding: 0 15px;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding: 15px 15px 20px;
 }
 
 .collapse.collapse-css .collapse-content {
@@ -5319,6 +5317,25 @@ label.close {
 
 .collapse.collapse-css .collapse-toggle:checked ~ .collapse-content {
   display: block;
+}
+
+.collapse-item.active .collapse-header i {
+  transform: rotate(180deg);
+}
+
+.collapse.collapse-js .collapse-header i {
+  transition: 0.4s;
+}
+
+.collapse.collapse-js .collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.collapse.collapse-js .collapse-content .inner {
+  padding: 15px 15px 20px;
 }
 
 .epic {
