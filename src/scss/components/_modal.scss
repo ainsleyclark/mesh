@@ -1,3 +1,122 @@
+// //_modal.scss
+// //
+// // All styles related to modal using :target selector
+// // ==========================================================================
+
+// /* Add animation (Standard syntax) */
+// @keyframes example {
+// 	from {
+// 		opacity: 0;
+// 	}
+// 	to {
+// 		opacity: 1;
+// 	}
+// }
+
+// @keyframes example2 {
+// 	from {
+// 		opacity: 1;
+// 	}
+// 	to {
+// 		opacity: 0;
+// 	}
+// }
+
+// .modal {
+// 	$self: &;
+// 	overflow-y: auto;
+// 	padding: 25px 15px;
+
+// 	@include media-tab {
+// 		padding: 75px 0;
+// 	}
+
+// 	///!SET TO NONE HERE
+// 	display: none;
+
+// 	///Target - make modal appear
+// 	&:target {
+// 		position: fixed;
+// 		display: flex;
+// 		align-items: start;
+// 		top: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		left: 0;
+// 		z-index: 9999999;
+// 	}
+
+// 	&-container {
+// 		max-width: 500px;
+// 		position: relative;
+// 		background-color: #fff;
+// 		box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+// 		border-radius: 6px;
+// 		border: 0;
+// 		margin: 0 auto;
+
+// 		#{$self}-header {
+// 			display: flex;
+// 			align-items: center;
+// 			justify-content: center;
+// 			padding: 24px 24px 0;
+// 		}
+
+// 		.close {
+// 			position: absolute;
+// 			right: 10px;
+// 			top: 5px;
+// 			display: flex;
+// 			align-items: center;
+// 			justify-content: center;
+// 			padding: 8px 16px;
+// 			color: rgba(0, 0, 0, 0.4);
+// 		}
+
+// 		#{$self}-body {
+// 			padding: 24px 24px 16px;
+// 		}
+
+// 		#{$self}-footer {
+// 			display: flex;
+// 			align-items: center;
+// 			justify-content: flex-end;
+// 			padding: 0 24px 24px;
+// 		}
+// 	}
+
+// 	///Close button
+// 	& .close {
+// 		display: block;
+
+// 		&:before {
+// 			left: 0;
+// 			top: 0;
+// 			width: 100vw;
+// 			height: 100vh;
+// 			position: fixed;
+// 			content: '';
+// 			cursor: default;
+// 			background: rgba(0, 0, 0, 0.4);
+// 			z-index: -1;
+
+// 			animation-name: example;
+// 			animation-duration: 0.5s;
+// 		}
+
+// 		&:active {
+// 			animation-name: example2;
+// 			animation-duration: 15s;
+// 		}
+// 	}
+// }
+
+// .modal-centered {
+// 	.modal-container {
+// 		margin: auto;
+// 	}
+// }
+
 //_modal.scss
 //
 // All styles related to modal using :target selector
@@ -23,22 +142,34 @@
 }
 
 .modal {
-	$self: #{&};
+	$self: &;
+
 	overflow-y: auto;
+	padding: 25px 15px;
+
+	@include media-tab {
+		padding: 75px 0;
+	}
 
 	///!SET TO NONE HERE
-	display: none;
+	//display: none;
+	display: flex;
+	align-items: start;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 200ms;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 999999;
 
 	///Target - make modal appear
 	&:target {
-		position: fixed;
-		display: flex;
-		align-items: start;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 9999999;
+		visibility: visible;
+		opacity: 1;
 	}
 
 	&-container {
@@ -48,7 +179,8 @@
 		box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 		border-radius: 6px;
 		border: 0;
-		margin: 130px auto 0;
+		margin: 0 auto;
+		transition: all 5s ease-in-out;
 
 		#{$self}-header {
 			display: flex;
@@ -94,14 +226,6 @@
 			cursor: default;
 			background: rgba(0, 0, 0, 0.4);
 			z-index: -1;
-
-			animation-name: example;
-			animation-duration: 0.5s;
-		}
-
-		&:active {
-			animation-name: example2;
-			animation-duration: 15s;
 		}
 	}
 }
@@ -111,3 +235,90 @@
 		margin: auto;
 	}
 }
+
+
+
+
+
+.box {
+	width: 40%;
+	margin: 0 auto;
+	background: rgba(255,255,255,0.2);
+	padding: 35px;
+	border: 2px solid #fff;
+	border-radius: 20px/50px;
+	background-clip: padding-box;
+	text-align: center;
+  }
+  
+  .button {
+	font-size: 1em;
+	padding: 10px;
+	color: #fff;
+	border: 2px solid #06d85f;
+	border-radius: 20px/50px;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+  }
+  .button:hover {
+	background: #06d85f;
+  }
+  
+  .overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 200ms;
+	visibility: hidden;
+	opacity: 0;
+  }
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+  
+  .popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
+  .popup .close:hover {
+	color: #06d85f;
+  }
+  .popup .content {
+	max-height: 30%;
+	overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px) {
+	.box {
+	  width: 70%;
+	}
+	.popup {
+	  width: 70%;
+	}
+  }
