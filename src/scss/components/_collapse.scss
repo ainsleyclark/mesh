@@ -32,9 +32,7 @@
 		}
 
 		#{$self}-content {
-			padding: 0 15px;
-			padding-top: 15px;
-			padding-bottom: 20px;
+			padding: 15px 15px 20px;
 
 			//! SET
 			//display: none;
@@ -60,6 +58,35 @@
 
 			#{$self}-toggle:checked ~ #{$self}-content {
 				display: block;
+			}
+		}
+	}
+}
+
+@if $alert-enable-js-close {
+	.collapse {
+		$self: &;
+
+		&-item.active {
+			#{$self}-header i {
+				transform: rotate(180deg);
+			}
+		}
+
+		&.collapse-js {
+			#{$self}-header i {
+				transition: 0.4s;
+			}
+
+			#{$self}-content {
+				max-height: 0;
+				overflow: hidden;
+				padding: 0;
+				transition: 0.5s;
+
+				.inner {
+					padding: 15px 15px 20px;
+				}
 			}
 		}
 	}

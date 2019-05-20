@@ -37,24 +37,24 @@
 
 	//Links
 	a#{$self}-item {
-        display: block;
-        transition: background-color 0.25s;
+		display: block;
+		transition: background-color 0.25s;
 
-        &:not(.active) {
-            background-color: #fff;
-        }
-        
-        &:hover:not(.active) {
-            background-color: #ddd;
-        }
-    }
-    
-    //Icon 
-    &-icon {
-        display: flex !important; // Overwrite specificity above
-        justify-content: space-between;
-        align-items: center;
-    }
+		&:not(.active) {
+			background-color: #fff;
+		}
+
+		&:hover:not(.active) {
+			background-color: #ddd;
+		}
+	}
+
+	//Icon
+	&-icon {
+		display: flex !important; // Overwrite specificity above
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 // Title

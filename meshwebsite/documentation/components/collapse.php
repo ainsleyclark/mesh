@@ -112,35 +112,38 @@ $tableOfContents = [
                 </div>
 
                 <h3 class="mt-4">Javascript</h3>
-                <div class="collapse collapse-css">
+                <div class="collapse collapse-js">
                     <div class="collapse-item">
-                        <input type="checkbox" class="collapse-toggle" id="collapse1">
-                        <label class="collapse-header" for="collapse1">
+                        <label class="collapse-header">
                             <span class="collapse-title"># Collapsible item no 1.</span>
                             <i class="fas fa-chevron-down"></i>
                         </label>
                         <div class="collapse-content">
-                            <p>Fingerstache paleo copper mug 8-bit taiyaki. Semiotics normcore live-edge mumblecore letterpress hammock flexitarian. Hexagon mlkshk tote bag actually. Woke vaporware tumeric iPhone pop-up bushwick, cliche letterpress raw denim affogato. Irony deep v salvia, farm-to-table bitters craft beer chicharrones portland lo-fi kickstarter green juice. Flannel polaroid iPhone fixie, franzen swag meggings hoodie cray master cleanse shabby chic.</p>
+                            <div class="inner">
+                                <p>Fingerstache paleo copper mug 8-bit taiyaki. Semiotics normcore live-edge mumblecore letterpress hammock flexitarian. Hexagon mlkshk tote bag actually. Woke vaporware tumeric iPhone pop-up bushwick, cliche letterpress raw denim affogato. Irony deep v salvia, farm-to-table bitters craft beer chicharrones portland lo-fi kickstarter green juice. Flannel polaroid iPhone fixie, franzen swag meggings hoodie cray master cleanse shabby chic.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="collapse-item">
-                        <input type="checkbox" class="collapse-toggle" id="collapse2">
-                        <label class="collapse-header" for="collapse2">
+                        <label class="collapse-header" for="collapsej2">
                             <span class="collapse-title"># Collapsible item no 2.</span>
                             <i class="fas fa-chevron-down"></i>
                         </label>
                         <div class="collapse-content">
-                            <p>Photo booth bespoke ethical, affogato snackwave plaid typewriter shaman health goth master cleanse intelligentsia humblebrag. Keytar sartorial etsy polaroid knausgaard. Roof party echo park man bun direct trade. Ethical la croix yr, wayfarers beard chillwave man braid DIY austin brunch palo santo cray plaid live-edge yuccie. XOXO thundercats fam keffiyeh bicycle rights sriracha copper mug artisan shoreditch pitchfork gastropub neutra deep v.</p>
+                            <div class="inner">
+                                <p>Photo booth bespoke ethical, affogato snackwave plaid typewriter shaman health goth master cleanse intelligentsia humblebrag. Keytar sartorial etsy polaroid knausgaard. Roof party echo park man bun direct trade. Ethical la croix yr, wayfarers beard chillwave man braid DIY austin brunch palo santo cray plaid live-edge yuccie. XOXO thundercats fam keffiyeh bicycle rights sriracha copper mug artisan shoreditch pitchfork gastropub neutra deep v.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="collapse-item">
-                        <input type="checkbox" class="collapse-toggle" id="collapse3">
-                        <label class="collapse-header" for="collapse3">
+                        <label class="collapse-header">
                             <span class="collapse-title"># Collapsible item no 3.</span>
                             <i class="fas fa-chevron-down"></i>
                         </label>
                         <div class="collapse-content">
-                            <p>Cornhole organic yr, flannel air plant irony bicycle rights listicle locavore crucifix kinfolk jianbing thundercats plaid. Kogi raw denim selvage, air plant vice fashion axe 3 wolf moon offal schlitz occupy kinfolk distillery yr. Franzen slow-carb DIY coloring book. Pitchfork hell of tacos, semiotics squid shaman ennui mumblecore ugh etsy XOXO freegan umami. You probably haven't heard of them wayfarers tumblr semiotics drinking vinegar iPhone enamel pin fixie.</p>
+                            <div class="inner">
+                                <p>Cornhole organic yr, flannel air plant irony bicycle rights listicle locavore crucifix kinfolk jianbing thundercats plaid. Kogi raw denim selvage, air plant vice fashion axe 3 wolf moon offal schlitz occupy kinfolk distillery yr. Franzen slow-carb DIY coloring book. Pitchfork hell of tacos, semiotics squid shaman ennui mumblecore ugh etsy XOXO freegan umami. You probably haven't heard of them wayfarers tumblr semiotics drinking vinegar iPhone enamel pin fixie.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -158,5 +161,27 @@ $tableOfContents = [
 {?>
 <script>
 //!Any page relevant JS scripts to go in here.
+    let collapseOuter = document.querySelector('.collapse-js'),
+        collapseHeader = collapseOuter.querySelectorAll('.collapse-header');
+
+    collapseHeader.forEach(el => {
+        el.addEventListener('click', event => {
+            try {
+                let content = event.target.parentNode.querySelector('.collapse-content');
+                let height = 0;
+                let classList = event.target.parentNode.classList;
+                classList.toggle('active');
+                if (classList.contains('active')) {
+                    let children = content.children;
+                    for(let i = 0; i < children.length; i++) {
+                        height += children[i].clientHeight;
+                    }
+                }
+                content.style.maxHeight = height + 'px';
+            } catch(e) {
+                console.error(e);
+            }
+        })
+    })
 </script>
 <?php }?>
