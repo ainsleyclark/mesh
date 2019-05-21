@@ -35,6 +35,7 @@ $isHome = stripos($pageData['activePage'], 'home') === false;
     <meta name="twitter:image" content="<?php echo ($websiteData['ogImage']); ?>">
     <!-- CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/mesh.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <!-- Font Awesome -->

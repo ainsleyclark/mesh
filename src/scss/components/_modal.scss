@@ -143,7 +143,15 @@
 
 .modal {
 	$self: &;
-
+	visibility: hidden;
+	position: fixed;
+	display: flex;
+	align-items: start;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999999;
 	overflow-y: auto;
 	padding: 25px 15px;
 
@@ -151,25 +159,12 @@
 		padding: 75px 0;
 	}
 
-	///!SET TO NONE HERE
-	//display: none;
-	display: flex;
-	align-items: start;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.7);
-	transition: opacity 200ms;
-	visibility: hidden;
-	opacity: 0;
-	z-index: 999999;
-
-	///Target - make modal appear
-	&:target {
-		visibility: visible;
-		opacity: 1;
+	//Checkbox
+	&-toggle {
+		display: none;
+		position: absolute;
+		top: -999999px;
+		left: -999999px;
 	}
 
 	&-container {
@@ -180,7 +175,9 @@
 		border-radius: 6px;
 		border: 0;
 		margin: 0 auto;
-		transition: all 5s ease-in-out;
+		opacity: 0;
+		transform: translateY(-100px);
+		transition: all 0.5s;
 
 		#{$self}-header {
 			display: flex;
@@ -189,15 +186,17 @@
 			padding: 24px 24px 0;
 		}
 
-		.close {
+		//Close Button
+		#{$self}-close {
 			position: absolute;
 			right: 10px;
-			top: 5px;
+			top: 10px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			padding: 8px 16px;
 			color: rgba(0, 0, 0, 0.4);
+			cursor: pointer;
 		}
 
 		#{$self}-body {
@@ -212,113 +211,39 @@
 		}
 	}
 
-	///Close button
-	& .close {
+	//Grey overlay
+	&-overlay {
+		left: 0;
+		top: 0;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
 		display: block;
+		cursor: default;
+		background: rgba(0, 0, 0, 0.4);
+		z-index: -1;
+		opacity: 0;
+		transition: all 0.5s;
+	}
 
-		&:before {
-			left: 0;
-			top: 0;
-			width: 100vw;
-			height: 100vh;
-			position: fixed;
-			content: '';
-			cursor: default;
-			background: rgba(0, 0, 0, 0.4);
-			z-index: -1;
+	//Close functionality
+	&-toggle:checked ~ #{$self} {
+		visibility: visible;
+
+		#{$self}-container {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		#{$self}-overlay {
+			opacity: 1;
+		}
+	}
+
+	//Centered modal
+	&-centered {
+		#{$self}-container {
+			margin: auto;
 		}
 	}
 }
-
-.modal-centered {
-	.modal-container {
-		margin: auto;
-	}
-}
-
-
-
-
-
-.box {
-	width: 40%;
-	margin: 0 auto;
-	background: rgba(255,255,255,0.2);
-	padding: 35px;
-	border: 2px solid #fff;
-	border-radius: 20px/50px;
-	background-clip: padding-box;
-	text-align: center;
-  }
-  
-  .button {
-	font-size: 1em;
-	padding: 10px;
-	color: #fff;
-	border: 2px solid #06d85f;
-	border-radius: 20px/50px;
-	text-decoration: none;
-	cursor: pointer;
-	transition: all 0.3s ease-out;
-  }
-  .button:hover {
-	background: #06d85f;
-  }
-  
-  .overlay {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0, 0, 0, 0.7);
-	transition: opacity 200ms;
-	visibility: hidden;
-	opacity: 0;
-  }
-  .overlay:target {
-	visibility: visible;
-	opacity: 1;
-  }
-  
-  .popup {
-	margin: 70px auto;
-	padding: 20px;
-	background: #fff;
-	border-radius: 5px;
-	width: 30%;
-	position: relative;
-	transition: all 5s ease-in-out;
-  }
-  
-  .popup h2 {
-	margin-top: 0;
-	color: #333;
-	font-family: Tahoma, Arial, sans-serif;
-  }
-  .popup .close {
-	position: absolute;
-	top: 20px;
-	right: 30px;
-	transition: all 200ms;
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #333;
-  }
-  .popup .close:hover {
-	color: #06d85f;
-  }
-  .popup .content {
-	max-height: 30%;
-	overflow: auto;
-  }
-  
-  @media screen and (max-width: 700px) {
-	.box {
-	  width: 70%;
-	}
-	.popup {
-	  width: 70%;
-	}
-  }
