@@ -176,16 +176,16 @@ $tableOfContents = [
                 </div>
 
                 <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                        (document.querySelectorAll('[data-modal]') || []).forEach(($button) => {
+                    document.addEventListener('DOMContentLoaded', function () {
+                        (document.querySelectorAll('[data-modal]') || []).forEach(function ($button) {
                             $modal = document.querySelector($button.getAttribute('data-modal'));
-                            $button.addEventListener('click', () => {
-                                $modal.classList.add('modal-open');
+                            $button.addEventListener('click', function () {
+                            $modal.classList.add('modal-open');
                             });
-                            (document.querySelectorAll('.modal-hide') || []).forEach(($el) => {
-                                $el.addEventListener('click', () => {
-                                    $el.closest('.modal').classList.remove('modal-open');
-                                });
+                            (document.querySelectorAll('.modal-hide') || []).forEach(function ($el) {
+                            $el.addEventListener('click', function () {
+                                $el.closest('.modal').classList.remove('modal-open');
+                            });
                             });
                         });
                     });
