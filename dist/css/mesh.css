@@ -5404,7 +5404,7 @@ label.close {
   visibility: hidden;
   position: fixed;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   top: 0;
   right: 0;
   bottom: 0;
