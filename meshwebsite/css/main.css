@@ -265,6 +265,7 @@ header.primary nav.primary ul .download {
 header.primary nav.primary ul .download svg {
   width: 18px;
   height: auto;
+  max-height: 20px;
 }
 
 header.primary nav.primary ul .download svg path {
@@ -502,6 +503,12 @@ footer .footer-icon {
 section.hero {
   height: calc(100vh - 75px);
   min-height: 500px;
+}
+
+section.hero .container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 section.hero .home-logo {

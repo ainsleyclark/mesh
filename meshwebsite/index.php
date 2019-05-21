@@ -34,7 +34,7 @@ $pageData = [
     <!-- =====================
         Hero
         ===================== -->
-    <section class="hero d-flex align-items-center">
+    <section class="hero">
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-desk-6 col-hd-5 order-last order-desk-first">

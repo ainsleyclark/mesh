@@ -3,7 +3,7 @@
 //Page variables
 $pageData = [
     'pageTitle' => 'Modal',
-    'pageDescription' => 'mesh includes a pure CSS modal to easily display custom information & content.',
+    'pageDescription' => 'mesh includes a pure CSS modal to easily display custom information & content via an animated popup section.',
     'activePage' => 'modal',
     'parentDirectory' => basename(__DIR__),
 ];
@@ -39,7 +39,6 @@ $tableOfContents = [
                         </ul>
                     </div>
                 </article>
-
 
                 <!-- Centered -->
                 <label for="centeredModal" class="btn btn-secondary nohover c-white">Centered</label>
@@ -175,25 +174,6 @@ $tableOfContents = [
                     <div class="modal-overlay modal-hide"></div>
                 </div>
 
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        (document.querySelectorAll('[data-modal]') || []).forEach(function ($button) {
-                            $modal = document.querySelector($button.getAttribute('data-modal'));
-                            $button.addEventListener('click', function () {
-                            $modal.classList.add('modal-open');
-                            });
-                            (document.querySelectorAll('.modal-hide') || []).forEach(function ($el) {
-                            $el.addEventListener('click', function () {
-                                $el.closest('.modal').classList.remove('modal-open');
-                            });
-                            });
-                        });
-                    });
-                </script>
-
-
-
-
             </div><!-- /Col -->
             <?php include_once '../../partials/smallnav.php'?>
             <?php include_once '../../partials/sub-footer.php'?>
@@ -203,3 +183,21 @@ $tableOfContents = [
 
 
 <?php include_once '../../partials/footer.php'?>
+
+<?php function scripts() {?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            (document.querySelectorAll('[data-modal]') || []).forEach(function ($button) {
+                $modal = document.querySelector($button.getAttribute('data-modal'));
+                $button.addEventListener('click', function () {
+                    $modal.classList.add('modal-open');
+                });
+                (document.querySelectorAll('.modal-hide') || []).forEach(function ($el) {
+                    $el.addEventListener('click', function () {
+                        $el.closest('.modal').classList.remove('modal-open');
+                    });
+                });
+            });
+        });
+    </script>
+<?php } ?>

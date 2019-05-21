@@ -30,11 +30,11 @@
 	}
 
 	&-container {
-		max-width: 500px;
+		max-width: $modal-container-small-width;
 		position: relative;
 		background-color: #fff;
-		box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
-		border-radius: 6px;
+		box-shadow: $modal-container-box-shadow;
+		border-radius: $modal-container-border-radius;
 		border: 0;
 		margin: 0 auto;
 		opacity: 0;
@@ -124,7 +124,7 @@
 	//Large
 	&-large {
 		#{$self}-container {
-			max-width: 700px;
+			max-width: $modal-container-large-width;
 		}
 	}
 

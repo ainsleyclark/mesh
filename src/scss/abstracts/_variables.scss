@@ -265,6 +265,13 @@ $list-disabled-color: #999 !default;
 //Background color
 $modal-background-color: rgba(0, 0, 0, 0.2) !default;
 
+$modal-container-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+$modal-container-border-radius: 6px;
+$modal-container-small-width: 500px;
+$modal-container-large-width: 700px;
+
+$modal-overlay-background-color: rgba(0, 0, 0, 0.4);
+
 // 21. Nav
 // ==========================================================================
 

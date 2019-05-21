@@ -7,6 +7,12 @@ section.hero {
 	height: calc(100vh - 75px);
 	min-height: 500px;
 
+	.container {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
 	.home-logo {
 		top: 50%;
 		left: 50%;

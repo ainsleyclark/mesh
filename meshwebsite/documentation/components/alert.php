@@ -311,9 +311,9 @@ $tableOfContents = [
                     <p class="secondary-lead">
                         mesh doesnt ship with any JS, but you can use the following function to add functionality to dismiss the close buttons. This script adds an event listener to all the <code class="inline">close</code> buttons.
                     </p>
-                    <pre class="highlight"><code class="javascript">document.addEventListener('DOMContentLoaded', () => {
-    (document.querySelectorAll('.alert .close') || []).forEach(($delete) => {
-        $delete.addEventListener('click', () => {
+                    <pre class="highlight"><code class="javascript">document.addEventListener('DOMContentLoaded', function () {
+    (document.querySelectorAll('.alert .close') || []).forEach(function ($delete) {
+        $delete.addEventListener('click', function () {
             $delete.parentNode.remove();
         });
     });
@@ -359,15 +359,14 @@ $tableOfContents = [
 
 <?php include_once '../../partials/footer.php'?>
 
-<?php function scripts()
-{?>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    (document.querySelectorAll('.js-alert .alert .close') || []).forEach(($delete) => {
-        $delete.addEventListener('click', () => {
+<?php function scripts() {?>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        (document.querySelectorAll('.js-alert .alert .close') || []).forEach(function ($delete) {
+            $delete.addEventListener('click', function () {
             $delete.parentNode.remove();
+            });
         });
     });
-});
-</script>
-<?php }?>
+    </script>
+<?php } ?>
