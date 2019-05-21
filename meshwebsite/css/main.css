@@ -505,12 +505,6 @@ section.hero {
   min-height: 500px;
 }
 
-section.hero .container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 section.hero .home-logo {
   top: 50%;
   left: 50%;

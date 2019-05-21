@@ -34,16 +34,16 @@ $pageData = [
     <!-- =====================
         Hero
         ===================== -->
-    <section class="hero">
+    <section class="hero d-flex align-items-center">
         <div class="container">
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-desk-6 col-hd-5 order-last order-desk-first">
                     <div class="d-flex justify-content-center align-items-center w-100 flex-column">
-                        <div class="text-cont t-center t-desk-left">
+                        <div class="text-cont t-center t-desk-left w-100">
                             <h1 class="my-0">meshCSS</h1>
                             <div class="lead pr-5 mt-3">A blazingly fast, versatile, pure CSS open source framework with a modular approach to a responsive grid system and a vast amount of utilities.</div>
-                            <a href="/documentation/getting-started"><button class="btn btn-rounded btn-primary mt-4">Get Started with mesh</button></a>
-                            <a href="https://github.com/ainsleyclark/mesh" target="_blank"><button class="btn btn-rounded btn-outline btn-primary mt-4 mx-2">View on Github</button></a>
+                            <a href="/documentation/getting-started" class="btn btn-rounded btn-primary mt-4 mr-2 c-white">Get Started with mesh</a>
+                            <a href="https://github.com/ainsleyclark/mesh" class="btn btn-rounded btn-outline btn-primary mt-4" target="_blank">View on Github</a>
                         </div>
                     </div>
                 </div>

@@ -22,9 +22,12 @@ body {
 
 a,
 a:visited {
-  color: #ff2451;
   text-decoration: none;
   background-color: transparent;
+}
+
+a:visited {
+  color: #000000;
 }
 
 ul {
@@ -5055,7 +5058,7 @@ label.close {
 
 .btn-rounded {
   border-radius: 500px;
-  padding: 12px 40px;
+  padding: 14px 40px;
 }
 
 .btn-icon {
