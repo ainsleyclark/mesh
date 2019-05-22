@@ -312,18 +312,18 @@ $pagination-font-size: 12px !default;
 // ==========================================================================
 
 // Padding & margin
-$table-padding: 10px 15px !default;
+$table-row-padding: 12px 32px 12px 0 !default;
 
 // Border
 $table-standard-border: 1px solid #f0f0f0 !default;
 
 // Color
-$table-striped-color: #fdadad !default;
-$table-hover-color: #aaffaa !default;
+$table-striped-color: #f9f9f9 !default;
+$table-hover-color: rgb(245, 245, 245) !default;
 
 // Font size
-$table-font-size: 16px !default;
-$table-heading-font-size: 18px !default;
+$table-header-font-size: 1.1rem !default;
+$table-row-font-size: 14px !default;
 
 // 23. Tabs
 // ==========================================================================

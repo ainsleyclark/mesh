@@ -1,3 +1,8 @@
+/*
+ * mesh v1.0.0 (https://meshcss.com)
+ * Copyright 2018-2019 meshCSS
+ * MIT License (https://github.com/ainsleyclark/mesh/blob/master/LICENSE)
+ */
 html {
   box-sizing: border-box;
 }
@@ -18,6 +23,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a,
@@ -5594,68 +5600,74 @@ label.close {
 }
 
 .table {
-  font-size: 16px;
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  background-color: #fff;
+  font-size: 14px;
+  font-weight: 300;
 }
 
-.table th,
-.table td {
-  border: 1px solid #f0f0f0;
-  border-width: 0 0 1px;
-}
-
-.table thead th,
-.table tfoot th {
-  font-size: 18px;
-  font-weight: 500;
-  border-width: 0 0 3px;
+.table thead th {
+  font-size: 1.1rem;
+  padding: 12px 32px 12px 0;
+  position: relative;
   text-align: left;
-  padding: 10px 15px;
-}
-
-.table tbody tr:last-child {
-  border-width: 0;
-}
-
-.table tfoot th {
-  border-width: 2px 0 0;
-}
-
-.table tbody td {
-  padding: 10px 15px;
-}
-
-.table thead th:first-child,
-.table tbody tr td:first-child,
-.table tfoot th:first-child {
-  padding-left: 30px;
+  height: 28px;
+  line-height: 28px;
+  font-weight: 300;
 }
 
 .table thead th:last-child,
-.table tbody tr td:last-child,
+.table tbody td:last-child,
 .table tfoot th:last-child {
-  padding-right: 20px;
+  text-align: right;
+  padding: 0;
 }
 
-.table.table-striped tbody tr:nth-child(even) {
-  background-color: #fdadad;
+.table tbody tr,
+.table tfoot tr {
+  border-top: 1.4px solid #ddd;
 }
 
-.table.table-fullwidth {
-  width: 100%;
-  margin: 0;
+.table tbody td,
+.table tfoot th {
+  font-size: 14px;
+  padding: 12px 32px 12px 0;
+  font-weight: 300;
+  text-align: left;
 }
 
-.table.table-hoverable tbody tr:hover {
-  background-color: #aaffaa;
+.table-striped tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-.table-responsive {
-  display: block;
-  width: 100%;
+.table-striped thead th:first-child,
+.table-striped tbody td:first-child,
+.table-striped tfoot th:first-child, .table-hover thead th:first-child,
+.table-hover tbody td:first-child,
+.table-hover tfoot th:first-child {
+  padding-left: 10px;
+}
+
+.table-striped thead th:last-child,
+.table-striped tbody td:last-child,
+.table-striped tfoot th:last-child, .table-hover thead th:last-child,
+.table-hover tbody td:last-child,
+.table-hover tfoot th:last-child {
+  padding-right: 10px;
+}
+
+.table.table-hover tbody tr {
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.table.table-hover tbody tr:hover {
+  background-color: whitesmoke;
+}
+
+.table-scroll {
   overflow-x: auto;
+  white-space: nowrap;
 }
 
 [tooltip] {

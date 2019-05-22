@@ -18,7 +18,8 @@ body {
 	font-size: 1rem;
 	line-height: 1.6;
 	-webkit-font-smoothing: antialiased; // sass-lint:disable-line  no-vendor-prefixes
-}
+	-webkit-tap-highlight-color: transparent; // sass-lint:disable-line  no-vendor-prefixes
+} 
 
 //! FIX HERE
 a,

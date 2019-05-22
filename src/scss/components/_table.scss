@@ -1,65 +1,88 @@
+
+//_table.scss
+//
+// Tables with striped, hover & responsive classes
+// =========================================================================
+
 .table {
-	font-size: $table-font-size;
+	width: 100%;
 	border-collapse: collapse;
 	border-spacing: 0;
-	background-color: #fff;
+	font-size: $table-row-font-size;
+	font-weight: 300;
 
-	& th,
-	& td {
-		border: $table-standard-border;
-		border-width: 0 0 1px;
+	thead {
+
+		th {
+			font-size: $table-header-font-size;
+			padding: $table-row-padding;
+			position: relative;
+			text-align: left;
+			height: 28px;
+			line-height: 28px;
+			font-weight: 300;
+		}
 	}
 
-	& thead th,
-	& tfoot th {
-		font-size: $table-heading-font-size;
-		font-weight: 500;
-		border-width: 0 0 3px;
+	//Align last child right, no padding
+	thead th:last-child,
+	tbody td:last-child,
+	tfoot th:last-child {
+		text-align: right;
+		padding: 0;
+	}
+
+	//Border
+	tbody tr,
+	tfoot tr {
+		border-top: 1.4px solid #ddd;
+	}
+
+	//Common props body & footer (td & th)
+	tbody td,
+	tfoot th {
+		font-size: $table-row-font-size;
+		padding: 12px 32px 12px 0;
+		font-weight: 300;
 		text-align: left;
-		padding: $table-padding;
 	}
 
-	& tbody tr:last-child {
-		border-width: 0;
+	//Striped table
+	&-striped {
+		
+		tbody tr:nth-child(even) {
+			background-color: $table-striped-color;
+		}
+	}
+	
+	&-striped, &-hover {
+		thead th:first-child,
+		tbody td:first-child,
+		tfoot th:first-child {
+			padding-left: 10px;
+		}	
+
+		thead th:last-child,
+		tbody td:last-child,
+		tfoot th:last-child {
+			padding-right: 10px;
+		}	
 	}
 
-	& tfoot th {
-		border-width: 2px 0 0;
+	//Hover
+	&.table-hover tbody tr {
+		transition: background-color .3s cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover {
+			background-color: $table-hover-color;
+		}
 	}
 
-	& tbody td {
-		padding: $table-padding;
-	}
-
-	// select first and last child of each row for extra padding
-	& thead th:first-child,
-	& tbody tr td:first-child,
-	& tfoot th:first-child {
-		padding-left: 30px;
-	}
-
-	& thead th:last-child,
-	& tbody tr td:last-child,
-	& tfoot th:last-child {
-		padding-right: 20px;
-	}
-
-	&.table-striped tbody tr:nth-child(even) {
-		background-color: $table-striped-color;
-	}
-
-	&.table-fullwidth {
-		width: 100%;
-		margin: 0;
-	}
-
-	&.table-hoverable tbody tr:hover {
-		background-color: $table-hover-color;
+	//Scroll
+	&-scroll {
+		overflow-x: auto;
+		white-space: nowrap;
 	}
 }
 
-.table-responsive {
-	display: block;
-	width: 100%;
-	overflow-x: auto;
-}
+

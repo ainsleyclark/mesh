@@ -1,3 +1,9 @@
+/*
+ * mesh v1.0.0 (https://meshcss.com)
+ * Copyright 2018-2019 meshCSS
+ * MIT License (https://github.com/ainsleyclark/mesh/blob/master/LICENSE)
+ */
+
 ///**
 //* mesh.scss
 //* Imports all files from abstracts, base, components, layout, pages & vendor
@@ -39,7 +45,6 @@
 
 //Components
 // ==========================================================================
-//! Work in progress, please feel to contribute
 @import 'components/_alerts';
 @import 'components/_badges';
 @import 'components/_breadcrumb';
@@ -55,6 +60,3 @@
 @import 'components/_tabs';
 @import 'components/_tooltip';
 @import 'components/_toast';
-
-//! See if there is enough space for this at the end.
-// @import 'components/_social';
