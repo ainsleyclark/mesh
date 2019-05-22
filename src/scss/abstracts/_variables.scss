@@ -262,15 +262,31 @@ $list-disabled-color: #999 !default;
 // 20. Modal
 // ==========================================================================
 
-//Background color
-$modal-background-color: rgba(0, 0, 0, 0.2) !default;
+//Enable features
+$modal-enable-css: true !default;
+$modal-enable-js: true !default;
 
-$modal-container-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
-$modal-container-border-radius: 6px;
-$modal-container-small-width: 500px;
-$modal-container-large-width: 700px;
+//Container
+$modal-container-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22) !default;
+$modal-container-border-radius: 6px !default;
+$modal-container-small-width: 500px !default;
+$modal-container-large-width: 700px !default;
+$modal-container-transform: -50px !default;
 
-$modal-overlay-background-color: rgba(0, 0, 0, 0.4);
+//Close button
+$modal-close-button-color: rgba(0, 0, 0, 0.4) !default;
+
+//Padding
+$modal-header-padding: 24px 24px 0 !default;
+$modal-body-padding: 24px 24px 16px !default;
+$modal-footer-padding: 0 24px 24px !default;
+
+//Overlay
+$modal-overlay-background-color: rgba(0, 0, 0, 0.4) !default;
+
+//Transition
+$modal-container-transition: 0.4s;
+$modal-overlay-transition: 0.6s;
 
 // 21. Nav
 // ==========================================================================

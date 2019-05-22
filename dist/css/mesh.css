@@ -5463,10 +5463,6 @@ label.close {
   font-size: 12px;
 }
 
-.modal-container .modal-btn-close:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
-
 .modal-container .modal-body {
   padding: 24px 24px 16px;
 }

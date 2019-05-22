@@ -1,4 +1,4 @@
- <?php
+<?php
 
 //Page variables
 $pageData = [
@@ -20,36 +20,90 @@ $tableOfContents = [
 
 ?>
 
- <?php include_once '../../partials/header.php';?>
- <?php include_once '../../partials/sidenav.php';?>
+<?php include_once '../../partials/header.php';?>
+<?php include_once '../../partials/sidenav.php';?>
 
- <section class="content modal-page">
-     <div class="container-fullwidth">
-         <div class="row justify-content-center mt-4 mt-desk-5">
-             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
-                 <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
-                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
+<section class="content modal-page">
+    <div class="container-fullwidth">
+        <div class="row justify-content-center mt-4 mt-desk-5">
+            <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
+                <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
+                <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
 
-                 <!-- Usage -->
+                <!-- Usage -->
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
-                        <code class="inline">{property}-{breakpoint}</code>
+                        Modals are notoriously difficult to accomplish with pure CSS. There are two ways of adding popup functionality, one through the <code class="inline">:target</code> selector, the other the <code class="inline">checkbox</code> method.
+                        <br>We have opted to create our modals via the checkbox technique as having empty links on a page can hinder your SEO efforts. 
+                        <br>Of course if you prefer to use vanilla JS for modals, there is a simple script you can you use at the bottom of this page. 
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
                         <p class="secondary-lead"></p>
                         <ul class="list-line">
-                            <li>Test</li>
+                            <li>There needs to be an action button & check box that links to the modal in order for it to appear.</li>
+                            <li>To achieve this, add a <code class="inline">&lt;label&gt;</code> element with a <code class="inline">for</code> attribute. Then create a checkbox with the class <code class="inline">modal-toggle</code> and set the ID the same as the label.</li>
+                            <li>If you wish to add multiple close buttons, just simply add more labels with the <code class="inline">for</code> attribute set equal to the ID of the checkbox.</li>
+                            <li>The modal compromises of a <code class="inline">modal-container</code> to wrap the modal content, a <code class="inline">modal-header</code> for the title & close button, the <code class="inline">modal-body</code> for the main content & the <code class="inline">modal-footer</code> for action buttons.</li>
+                            <li>The <code class="inline">modal-overlay</code> is entirely optional, if you wish to disable the close functionality, simply change the <code class="inline">&lt;label&gt;</code> to a <code class="inline">&lt;div&gt;</code></li> 
                         </ul>
                     </div>
+                    <div class="text-cont">
+                        <h3>Example:</h3>
+                        <p class="secondary-lead">Click the modal button! The id's have been highlighted to see where you need to change them.</p>
+                    </div>
+                    <div class="modal-cont">
+                        <label for="exampleModal" class="btn btn-secondary c-white">Click Me</label>
+                        <input type="checkbox" class="modal-toggle" id="exampleModal">
+                        <div class="modal modal-centered" aria-hidden="true">
+                            <div class="modal-container">
+                                <div class="modal-header">
+                                    <h3>Modal Title</h3>
+                                    <label class="modal-btn-close" for="exampleModal">
+                                        <i class="fas fa-times"></i>
+                                    </label>
+                                </div>
+                                <div class="modal-body">
+                                    <p>An old man walked across the beach until he came across a young boy throwing something into the breaking waves. Upon closer inspection, the old man could see that the boy was tossing stranded starfish from the sandy beach, back into the ocean.</p>
+                                    <p>“What are you doing, young man?” He asked. “If the starfish are still on the beach when the sun rises, they will die,” the boy answered. “That is ridiculous. There are thousands of miles of beach and millions of starfish. It doesn’t matter how many you throw in; you can’t make a difference.”</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn mr-2 btn-primary">Nice Story!</button>
+                                    <label for="exampleModal" class="btn btn-secondary">Close</label>
+                                </div>
+                            </div>
+                            <label for="exampleModal" class="modal-overlay"></label>
+                        </div>
+                    </div>
+                    <pre class="highlight"><code class="html">&lt;label for=&quot;<strong>exampleModal</strong>&quot; class=&quot;btn btn-secondary c-white&quot;&gt;Centered&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;modal-toggle&quot; id=&quot;<strong>exampleModal</strong>&quot;&gt;
+
+&lt;div class=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-container&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h3&gt;Modal Title&lt;/h3&gt;
+            &lt;label class=&quot;modal-btn-close&quot; for=&quot;<strong>exampleModal</strong>&quot;&gt;
+                &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;An old man walked across the beach...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button class=&quot;btn mr-2 btn-primary&quot;&gt;Nice Story!&lt;/button&gt;
+            &lt;label for=&quot;<strong>exampleModal</strong>&quot; class=&quot;btn btn-secondary&quot;&gt;Close&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;label for=&quot;<strong>exampleModal</strong>&quot; class=&quot;modal-overlay&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
                 <!-- Centered -->
                 <article class="section-scroll" id="centered">
                     <h2 class="b-b-light hash">Centered</h2>
                     <p class="secondary-lead">
-                        <code class="inline">{property}-{breakpoint}</code>
+                        To center a modal in the middle of the viewport, just add the <code class="inline">modal-centered</code> class to the <code class="inline">modal</code>.
                     </p>
                     <div class="modal-cont">
                         <label for="centeredModal" class="btn btn-secondary c-white">Centered</label>
@@ -74,13 +128,34 @@ $tableOfContents = [
                             <label for="centeredModal" class="modal-overlay"></label>
                         </div>
                     </div>
+                    <pre class="highlight"><code class="html">&lt;label for=&quot;<strong>centeredModal</strong>&quot; class=&quot;btn btn-secondary c-white&quot;&gt;Centered&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;modal-toggle&quot; id=&quot;<strong>centeredModal</strong>&quot;&gt;
+
+&lt;div class=&quot;modal modal-centered&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-container&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h3&gt;Modal Title&lt;/h3&gt;
+            &lt;label class=&quot;modal-btn-close&quot; for=&quot;<strong>centeredModal</strong>&quot;&gt;
+                &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;An old man walked across the beach...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button class=&quot;btn mr-2 btn-primary&quot;&gt;Nice Story!&lt;/button&gt;
+            &lt;label for=&quot;<strong>centeredModal</strong>&quot; class=&quot;btn btn-secondary&quot;&gt;Close&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;label for=&quot;<strong>centeredModal</strong>&quot; class=&quot;modal-overlay&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
                 <!-- Small -->
                 <article class="section-scroll" id="small">
                     <h2 class="b-b-light hash">Small</h2>
                     <p class="secondary-lead">
-                        <code class="inline">{property}-{breakpoint}</code>
+                        As a <code class="inline">max-width</code> property has been set on the modal, there is no need to add any additional classes. These are great for small alert type modals.
                     </p>
                     <div class="modal-cont">
                         <label for="smallModal" class="btn btn-secondary c-white">Small</label>
@@ -104,13 +179,34 @@ $tableOfContents = [
                             <label for="smallModal" class="modal-overlay"></label>
                         </div>
                     </div>
+                    <pre class="highlight"><code class="html">&lt;label for=&quot;<strong>smallModal</strong>&quot; class=&quot;btn btn-secondary c-white&quot;&gt;Small&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;modal-toggle&quot; id=&quot;<strong>smallModal</strong>&quot;&gt;
+
+&lt;div class=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-container&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h3&gt;Modal Title&lt;/h3&gt;
+            &lt;label class=&quot;modal-btn-close&quot; for=&quot;<strong>smallModal</strong>&quot;&gt;
+                &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;Are you sure you want to do this?&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;label for=&quot;<strong>smallModal</strong>&quot; class=&quot;btn btn-secondary mr-1&quot;&gt;Not really&lt;/label&gt;
+            &lt;label for=&quot;<strong>smallModal</strong>&quot; class=&quot;btn btn-primary&quot;&gt;Yes&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;label for=&quot;<strong>smallModal</strong>&quot; class=&quot;modal-overlay&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
                 <!-- Large -->
                 <article class="section-scroll" id="large">
                     <h2 class="b-b-light hash">Large</h2>
                     <p class="secondary-lead">
-                        <code class="inline">{property}-{breakpoint}</code>
+                        To create a large modal, simply add the <code class="inline">modal-large</code> to the <code class="inline">modal</code> element. This will increase the maximum width to 700 pixels.
                     </p>
                     <div class="modal-cont">
                         <label for="largeModal" class="btn btn-secondary c-white">Large</label>
@@ -140,13 +236,34 @@ $tableOfContents = [
                             <label for="largeModal" class="modal-overlay"></label>
                         </div>
                     </div>
+                    <pre class="highlight"><code class="html">&lt;label for=&quot;<strong>largeModal</strong>&quot; class=&quot;btn btn-secondary c-white&quot;&gt;Large&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;modal-toggle&quot; id=&quot;<strong>largeModal</strong>&quot;&gt;
+
+&lt;div class=&quot;modal modal-large&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-container&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h3&gt;Modal Title&lt;/h3&gt;
+            &lt;label class=&quot;modal-btn-close&quot; for=&quot;<strong>largeModal</strong>&quot;&gt;
+                &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;An elderly carpenter was ready to retire...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button class=&quot;btn mr-2 btn-primary&quot;&gt;Nice Story!&lt;/button&gt;
+            &lt;label for=&quot;<strong>largeModal</strong>&quot; class=&quot;btn btn-secondary&quot;&gt;Close&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;label for=&quot;<strong>largeModal</strong>&quot; class=&quot;modal-overlay&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
                 
                 <!-- Scrolling -->
                 <article class="section-scroll" id="scroll">
                     <h2 class="b-b-light hash">Scroll</h2>
                     <p class="secondary-lead">
-                        <code class="inline">{property}-{breakpoint}</code>
+                        If you have a large amount of content, the modal will automatically become scroll-able using the<code class="inline">overflow-y: auto;</code> property. Give it a go!
                     </p>
                     <div class="modal-cont">
                         <label for="scrollingModal" class="btn btn-secondary c-white">Scrolling Content</label>
@@ -184,14 +301,44 @@ $tableOfContents = [
                             <label for="scrollingModal" class="modal-overlay"></label>
                         </div>
                     </div>
+                    <pre class="highlight"><code class="html">&lt;label for=&quot;<strong>scrollingModal</strong>&quot; class=&quot;btn btn-secondary c-white&quot;&gt;Scrolling Content&lt;/label&gt;
+&lt;input type=&quot;checkbox&quot; class=&quot;modal-toggle&quot; id=&quot;<strong>scrollingModal</strong>&quot;&gt;
+&lt;div class=&quot;modal&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-container&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h3&gt;Modal Title&lt;/h3&gt;
+            &lt;label class=&quot;modal-btn-close&quot; for=&quot;<strong>scrollingModal</strong>&quot;&gt;
+                &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;In a small village, in the valley, lived a man who was always happy..&lt;/p&gt; 
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button class=&quot;btn mr-2 btn-primary&quot;&gt;Nice Story!&lt;/button&gt;
+            &lt;label for=&quot;<strong>scrollingModal</strong>&quot; class=&quot;btn btn-secondary&quot;&gt;Close&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;label for=&quot;<strong>scrollingModal</strong>&quot; class=&quot;modal-overlay&quot;&gt;&lt;/label&gt;
+&lt;/div&gt;
+</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
                 <!-- Javascript -->
                 <article class="section-scroll" id="javascript">
                     <h2 class="b-b-light hash">Javascript</h2>
                     <p class="secondary-lead">
-                        <code class="inline">{property}-{breakpoint}</code>
+                        If you wish to use Javascript instead of the checkbox technique, follow the notation below and be sure to use our demo JS code at the very bottom.
                     </p>
+                    <div class="text-cont">
+                        <h3>Notation:</h3>
+                        <p class="secondary-lead"></p>
+                        <ul class="list-line">
+                            <li>All thats required for the modal to work with JS is a button with the attribute <code class="inline">data-modal</code> set to the ID of the modal itself.</li>
+                            <li>Be sure to add the hash tag to the data attribute.</li>
+                            <li>The <code class="inline">modal-hide</code> class will dismiss the modal.</li>
+                        </ul>
+                    </div>
                     <div class="modal-cont">
                         <button data-modal="#meshjsmodal" class="btn btn-secondary nohover c-white">Javascript</button>
                         <div class="modal" id="meshjsmodal" aria-hidden="true">
@@ -214,20 +361,73 @@ $tableOfContents = [
                             <div class="modal-overlay modal-hide"></div>
                         </div>
                     </div>
+                    <pre class="highlight"><code class="html">&lt;button data-modal=&quot;<strong>#meshjsmodal</strong>&quot; class=&quot;btn btn-secondary nohover c-white&quot;&gt;Javascript&lt;/button&gt;
+&lt;div class=&quot;modal&quot; id=&quot;<strong>meshjsmodal</strong>&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-container&quot;&gt;
+        &lt;div class=&quot;modal-header&quot;&gt;
+            &lt;h3&gt;Modal Title&lt;/h3&gt;
+            &lt;div class=&quot;modal-btn-close modal-hide&quot;&gt;
+                &lt;i class=&quot;fas fa-times&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-body&quot;&gt;
+            &lt;p&gt;An old man walked across the beach...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;modal-footer&quot;&gt;
+            &lt;button class=&quot;btn mr-2 btn-primary&quot;&gt;Nice Story!&lt;/button&gt;
+            &lt;button class=&quot;btn btn-secondary modal-hide&quot;&gt;Close&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal-overlay modal-hide&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                    <div class="text-cont">
+                        <h3>Code:</h3>
+                        <p class="secondary-lead">
+                            Here we are looping through the buttons and adding a eventListener for clicks. When clicked the <code class="inline">modal-open</code> class is added to the modal, trigging the animation.
+                            We then loop through the <code class="inline">modal-hide</code> classes and remove the class mentioned above on click.
+                        </p>
+                    </div>          
+                    <pre class="highlight"><code class="javascript">document.addEventListener('DOMContentLoaded', function() {
+    (document.querySelectorAll('[data-modal]') || []).forEach(function(button) {
+        modal = document.querySelector(button.getAttribute('data-modal'));
+        button.addEventListener('click', function() {
+            modal.classList.add('modal-open');
+        });
+        (document.querySelectorAll('.modal-hide') || []).forEach(function(el) {
+            el.addEventListener('click', function() {
+                el.closest('.modal').classList.remove('modal-open');
+            });
+        });
+    });
+});
+</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                        <div class="text-cont">
+                        <h3>Open/Close function:</h3>
+                        <p class="secondary-lead">Its handy having open and close functions to call with JS, here's an example fragment for you to take away.</p>
+                    </div>          
+                    <pre class="highlight"><code class="javascript">//Open modal function
+const closeModal = id => document.querySelector(id).classList.remove('modal-open');
+//Close modal function
+const openModal = id => document.querySelector(id).classList.add('modal-open');
+</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                 </article>
 
-             </div><!-- /Col -->
-             <?php include_once '../../partials/smallnav.php'?>
-             <?php include_once '../../partials/sub-footer.php'?>
-         </div><!-- /Row -->
-     </div><!-- /Container -->
- </section>
+            </div><!-- /Col -->
+            <?php include_once '../../partials/smallnav.php'?>
+            <?php include_once '../../partials/sub-footer.php'?>
+        </div><!-- /Row -->
+    </div><!-- /Container -->
+</section>
 
- <?php include_once '../../partials/footer.php'?>
+<?php include_once '../../partials/footer.php'?>
 
- <?php function scripts()
+<?php function scripts()
 {?>
- <script>
+<script>
+
+let closeModal = id => document.querySelector(id).classList.remove('modal-open');
+let openModal = id => document.querySelector(id).classList.add('modal-open');
+
 document.addEventListener('DOMContentLoaded', function() {
     (document.querySelectorAll('[data-modal]') || []).forEach(function(button) {
         modal = document.querySelector(button.getAttribute('data-modal'));
@@ -241,5 +441,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
- </script>
- <?php }?>
+</script>
+<?php }?>

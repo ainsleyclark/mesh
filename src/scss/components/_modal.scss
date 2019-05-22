@@ -38,14 +38,14 @@
 		border: 0;
 		margin: 0 auto;
 		opacity: 0;
-		transform: translateY(-50px);
-		transition: all 0.4s;
+		transform: translateY($modal-container-transform);
+		transition: all $modal-container-transition;
 
 		#{$self}-header {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			padding: 24px 24px 0;
+			padding: $modal-header-padding;
 		}
 
 		//Close Button
@@ -57,24 +57,20 @@
 			align-items: center;
 			justify-content: center;
 			padding: 8px 16px;
-			color: rgba(0, 0, 0, 0.4);
+			color: $modal-close-button-color;
 			cursor: pointer;
 			font-size: 12px;
-
-			&:hover {
-				color: rgba(0, 0, 0, 0.6);
-			}
 		}
 
 		#{$self}-body {
-			padding: 24px 24px 16px;
+			padding: $modal-body-padding;
 		}
 
 		#{$self}-footer {
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
-			padding: 0 24px 24px;
+			padding: $modal-footer-padding;
 		}
 	}
 
@@ -87,39 +83,47 @@
 		position: fixed;
 		display: block;
 		cursor: default;
-		background: rgba(0, 0, 0, 0.4);
+		background: $modal-overlay-background-color;
 		z-index: -1;
 		opacity: 0;
-		transition: opacity 0.6s;
+		transition: opacity $modal-overlay-transition;
 	}
 
 	//CSS close functionality
-	&-toggle:checked + #{$self} {
-		visibility: visible;
+	@if $modal-enable-css {
 
-		#{$self}-container {
-			opacity: 1;
-			transform: translateY(0);
-		}
-
-		#{$self}-overlay {
-			opacity: 1;
+		&-toggle:checked + #{$self} {
+			visibility: visible;
+	
+			#{$self}-container {
+				opacity: 1;
+				transform: translateY(0);
+			}
+	
+			#{$self}-overlay {
+				opacity: 1;
+			}
 		}
 	}
+
 
 	//JS close functionality
-	&-open {
-		visibility: visible;
+	@if $modal-enable-js {
 
-		#{$self}-container {
-			opacity: 1;
-			transform: translateY(0);
-		}
-
-		#{$self}-overlay {
-			opacity: 1;
+		&-open {
+			visibility: visible;
+	
+			#{$self}-container {
+				opacity: 1;
+				transform: translateY(0);
+			}
+	
+			#{$self}-overlay {
+				opacity: 1;
+			}
 		}
 	}
+
 
 	//Large
 	&-large {
