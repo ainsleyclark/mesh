@@ -1,73 +1,78 @@
+//_toast.scss
+//
+// Toasts to appear via js function
+// ==========================================================================
+
 .toast {
+	$self: &;
+
 	position: absolute;
-	top: 20px;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	min-height: 48px;
+	top: 35px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 100%;
 	z-index: 100;
+	font-weight: 300;
+	line-height: 1.6;
+	cursor: default;
 
-	&.toast-left-corner {
-		align-items: flex-start;
+	@include media-tab {
+		width: auto;
 	}
 
-	&.toast-right-corner {
-		align-items: flex-end;
-	}
-
-	&.toast-bottom {
-		top: auto;
-		bottom: 20px;
-	}
-}
-
-.toast-body {
-	border-radius: 3px;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 3px 3px -2px rgba(0, 0, 0, 0.22), 0 1px 7px 0 rgba(0, 0, 0, 0.14);
-	color: #fff;
-	position: relative;
-	padding: $toast-padding;
-	width: $toast-width;
-	margin: 5px;
-
-	& .toast-control {
-		position: absolute;
-		top: 10px;
-		right: 20px;
-	}
-
-	&.toast-body-large {
-		width: $toast-width-large;
-	}
-
-	&.show {
-		animation-duration: 3s;
-		animation-name: show;
-		animation-iteration-count: 1;
-	}
-
-	&.hide {
-		display: none;
-		opacity: 0;
+	&-body {
+		border-radius: 3px;
+		box-shadow: $toast-box-shadow;
+		color: #fff;
+		position: relative;
+		padding: $toast-padding;
+		width: $toast-width;
+		margin-top: 10px;
+	
+		& .toast-control {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+		}
+	
+		&.toast-show {
+			animation: toast-show-animation 2s 1;
+		}
+	
+		//Rounded
+		#{$self}-rounded {
+			border-radius: 500px;
+		}
 	}
 }
 
-@keyframes show {
+// Show animation
+// ==========================================================================
+
+@keyframes toast-show-animation {
 	0% {
 		opacity: 0;
+		transform: translateY(20px);
 		display: none;
 	}
 	15% {
 		opacity: 1;
+		transform: translateY(0);
 		display: block;
 	}
 	85% {
 		opacity: 1;
+		transform: translateY(0);
 		display: block;
 	}
 	100% {
 		opacity: 0;
+		transform: translateY(-20px);
 		display: none;
 	}
 }

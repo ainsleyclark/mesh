@@ -9,8 +9,6 @@ $pageData = [
 ];
 
 //Table of contents
-//! DUPLICATE FOR CONTENTS ITEM,
-//! If you add an article, make sure the Id matches the first value here.
 $tableOfContents = [
     'usage' => 'Usage',
 ];
@@ -26,6 +24,29 @@ $tableOfContents = [
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="mb-2 mt-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
+
+
+                <div class="toast">
+                </div>
+
+                <!-- <div class="toast toast-left-corner">
+                    <div class="toast-body bg-primary">
+                        <span>A wonderful message.</span>
+                    </div>
+                </div>
+
+                <div class="toast">
+                    <div class="toast-body bg-primary">
+                        <span>A wonderful message.</span>
+                    </div>
+                </div>
+
+                <div class="toast-body bg-primary">
+                    <div class="toast-control">
+                        <i class="close-icon"></i>
+                    </div>
+                    <span>A wonderful message.</span>
+                </div> -->
 
                 <!-- Usage -->
                 <article class="section-scroll" id="usage">
@@ -58,6 +79,40 @@ $tableOfContents = [
 <?php function scripts()
 {?>
 <script>
-//!Any page relevant JS scripts to go in here.
+function meshToast(text, opts = {}) {
+
+    // Create sensible defaults for our toast-bodys.
+    const defaults = {
+        color: "bg-primary"
+    };
+
+    const options = Object.assign(defaults, opts);
+
+    // Select our toast container to insert our new toast-body later.
+    const toastContainer = document.getElementsByClassName("toast")[0];
+
+    // Now we create a new toast-body element
+    const toastBody = document.createElement("div");
+    toastBody.classList.add("toast-body", options.color);
+
+    const toastText = document.createElement("span");
+    toastText.innerText = text;
+    toastBody.appendChild(toastText);
+    toastContainer.appendChild(toastBody);
+
+    // We use the 'animationend' event from a CSS animation to remove the toast after it is finished displaying
+    toastBody.addEventListener("animationend", e => {
+        toastBody.remove(1);
+    });
+
+    // The show CSS class is used to add a fade-in & -out animation. After this is finished the 'animationend' event is triggerd and the toast-body is removed from the DOM.
+    toastBody.classList.add("toast-show");
+    if (options.displayTime) {
+        toastBody.style.animationDuration = options.displayTime;
+    }
+}
+
+meshToast('Demo Text', { displayTime: '5s' });
+meshToast('Secondary Text', { displayTime: '5s', color: "bg-secondary" });
 </script>
 <?php }?>
