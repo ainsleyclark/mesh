@@ -1,6 +1,6 @@
 //_modal.scss
 //
-// All styles related to modal using :target selector
+// All styles related to modal using checkbox, centered, large & JS
 // ==========================================================================
 
 .modal {
@@ -91,39 +91,35 @@
 
 	//CSS close functionality
 	@if $modal-enable-css {
-
 		&-toggle:checked + #{$self} {
 			visibility: visible;
-	
+
 			#{$self}-container {
 				opacity: 1;
 				transform: translateY(0);
 			}
-	
+
 			#{$self}-overlay {
 				opacity: 1;
 			}
 		}
 	}
-
 
 	//JS close functionality
 	@if $modal-enable-js {
-
 		&-open {
 			visibility: visible;
-	
+
 			#{$self}-container {
 				opacity: 1;
 				transform: translateY(0);
 			}
-	
+
 			#{$self}-overlay {
 				opacity: 1;
 			}
 		}
 	}
-
 
 	//Large
 	&-large {
@@ -139,5 +135,3 @@
 		}
 	}
 }
-
-

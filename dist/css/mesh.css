@@ -5658,122 +5658,106 @@ label.close {
   overflow-x: auto;
 }
 
-[data-tool-tip] {
+[tooltip] {
   position: relative;
   cursor: pointer;
-  z-index: 10;
 }
 
-[data-tool-tip]:hover::after {
-  content: attr(data-tool-tip);
+[tooltip]::after, [tooltip]::before {
   position: absolute;
-  left: 0;
-  top: 30px;
-  min-width: 100px;
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: 500;
-  z-index: 1;
-  color: #fff;
-  background-color: #000;
-  border: 1px solid #000;
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity 0.15s, transform 0.15s;
 }
 
-[data-tool-tip]:hover::before {
-  content: '';
-  position: absolute;
-  top: 25px;
-  left: 10px;
-  width: 0;
-  height: 0;
-  border: 10px solid #000;
-  border-bottom: 0;
-  border-left: 0;
-  margin-left: 18px;
-  margin-bottom: 10px;
-  transform: rotate(45deg);
-  z-index: 9;
-}
-
-[data-tool-tip].no-point:hover::before {
-  border-color: transparent !important;
-}
-
-[data-tool-tip].tool-dark:hover::after {
-  color: #fff;
-  background-color: #000;
-  border-color: #000;
-}
-
-[data-tool-tip].tool-dark:hover::before {
-  border-color: #000;
-}
-
-[data-tool-tip].tool-light:hover::after {
-  color: #000;
+[tooltip]::after {
+  content: attr(tooltip);
+  left: 50%;
+  top: -6px;
+  border-radius: 4px;
+  padding: 12px 22px;
+  transform: translateX(-50%) translateY(-100%);
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
+  color: #666;
   background-color: #fff;
-  border-color: #000;
+  text-transform: initial;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  min-width: 130px;
+  z-index: 999;
+  line-height: 1;
 }
 
-[data-tool-tip].tool-light:hover::before {
-  border-color: #000;
+[tooltip]::before {
+  content: '';
+  display: inline-block;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 4px 6px 0 6px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  z-index: 1000;
 }
 
-[data-tool-tip].custom-tool:hover::after {
-  color: var(--tooltip-color);
-  background-color: var(--tooltip-bg);
-  font-size: var(--tooltip-font-size);
-  font-family: var(--tooltip-font-family);
-  cursor: var(--tooltip-cursor);
-  border-color: var(--tooltip-color);
+[tooltip]:hover::after, [tooltip]:hover::before {
+  opacity: 1;
 }
 
-[data-tool-tip].custom-tool:hover::after {
-  border-color: var(--tooltip-border-color);
+[tooltip-color='dark']::after {
+  background-color: #323232;
+  color: #ffffff;
 }
 
-[data-tool-tip].custom-tool:hover::before {
-  border-color: var(--tooltip-color);
+[tooltip-color='dark']::before {
+  border-top-color: #323232;
 }
 
-[data-tool-tip].custom-tool:hover::before {
-  border-color: var(--tooltip-border-color);
+[tooltip-position='top']::after, [tooltip-position='top']::before {
+  left: 50%;
 }
 
-a[data-tool-tip],
-button[data-tool-tip] {
-  cursor: pointer;
+[tooltip-position='right']::after {
+  left: 100%;
+  top: 50%;
+  margin-left: 8px;
+  transform: translateX(0%) translateY(-50%);
 }
 
-[data-tool-tip].top:hover::before {
-  transform: rotate(225deg);
-  top: -15px;
+[tooltip-position='right']::before {
+  left: 100%;
+  top: 50%;
+  margin-left: 1px;
+  transform: translateY(-50%) rotate(90deg);
 }
 
-[data-tool-tip].top:hover::after {
-  top: -35px;
+[tooltip-position='bottom']::after {
+  top: 100%;
+  margin-top: 8px;
+  transform: translateX(-50%) translateY(0%);
+  z-index: 100;
 }
 
-[data-tool-tip].bot:hover::after {
-  top: 30px;
+[tooltip-position='bottom']::before {
+  top: 100%;
+  margin-top: 8px;
+  transform: translateX(-50%) translateY(-100%) rotate(-180deg);
 }
 
-[data-tool-tip].bot:hover::before {
-  top: 25px;
-  left: 10px;
+[tooltip-position='left']::after {
+  left: 0%;
+  top: 50%;
+  margin-left: -8px;
+  transform: translateX(-100%) translateY(-50%);
 }
 
-[data-tool-tip].right:hover::before {
-  margin-left: 103%;
-  margin-top: 0;
-  top: 0 !important;
-  transform: rotate(315deg);
-}
-
-[data-tool-tip].right:hover::after {
-  margin-left: 110%;
-  top: -10px;
+[tooltip-position='left']::before {
+  left: 0%;
+  top: 50%;
+  margin-left: -12.2px;
+  transform: translateY(-50%) rotate(-90deg);
 }
 
 .toast {

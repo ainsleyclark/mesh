@@ -1,144 +1,137 @@
-//replace with dark and light colors --- both the ::after and ::before
-//.tool-dark = default (both balck bg black border & white txt)
-$light-temp: #fff;
-$dark-temp: #000;
+//_tooltip.scss
+//
+// Tooltip via tooltip data attrbiute, position & dark mode
+// ==========================================================================
 
-/////////////////////////////////////////////////////
-//  before sets the pointer
-//  after adds the content from the data attribute
-//  variables come from -- in styles for custom ovverides to any color
-/////////////////////////////////////////////////////
-
-[data-tool-tip] {
+[tooltip] {
 	position: relative;
 	cursor: pointer;
-	z-index: 10;
 
-	//default (with default color black with white text)
-	&:hover::after {
-		content: attr(data-tool-tip);
+	&::after,
+	&::before {
 		position: absolute;
-		left: 0;
-		top: 30px;
-		min-width: 100px;
-		border-radius: 5px;
-		padding: 5px;
-		font-size: 1rem;
-		font-weight: 500;
-		z-index: 1;
-		color: $light-temp;
-		background-color: $dark-temp;
-		border: 1px solid $dark-temp;
+		opacity: 0;
+		will-change: opacity;
+		transition: opacity $tooltip-transition-time, transform $tooltip-transition-time;
 	}
 
-	&:hover::before {
+	//Main tooltip
+	&::after {
+		content: attr(tooltip);
+		left: 50%;
+		top: -6px;
+		border-radius: $tooltip-border-radius;
+		padding: $tooltip-padding;
+		transform: translateX(-50%) translateY(-100%);
+		font-size: 0.875rem;
+		font-weight: 400;
+		text-align: center;
+		color: $tooltip-font-color;
+		background-color: #fff;
+		text-transform: initial;
+		box-shadow: $tooltip-box-shadow;
+		pointer-events: none;
+		min-width: 130px;
+		z-index: 999;
+		line-height: 1;
+	}
+
+	//Arrow
+	&::before {
 		content: '';
-		position: absolute;
-		top: 25px;
-		left: 10px;
-		width: 0;
-		height: 0;
-		border: 10px solid $dark-temp;
-		border-bottom: 0;
-		border-left: 0;
-		margin-left: 18px;
-		margin-bottom: 10px;
-		transform: rotate(45deg);
-		z-index: 9;
+		display: inline-block;
+		top: -6px;
+		left: 50%;
+		transform: translateX(-50%);
+		border-width: 4px 6px 0 6px;
+		border-style: solid;
+		border-color: #fff transparent transparent transparent;
+		z-index: 1000;
 	}
-	//end of default
-	//remove pointer --- set to important encase custom used
-	&.no-point:hover::before {
-		border-color: transparent !important;
+
+	//Hover
+	&:hover::after,
+	&:hover::before {
+		opacity: 1;
 	}
-	//dark tooltip colors
-	&.tool-dark:hover {
+}
+
+// Dark
+// ==========================================================================
+
+@if $tooltip-enable-dark {
+
+	[tooltip-color='dark'] {
 		&::after {
-			color: $light-temp;
-			background-color: $dark-temp;
-			border-color: $dark-temp;
+			background-color: $tooltip-dark-color;
+			color: color-contrast($tooltip-dark-color);
 		}
+	
 		&::before {
-			border-color: $dark-temp;
-		}
-	}
-	//light tooltip colors
-	&.tool-light:hover {
-		&::after {
-			color: $dark-temp;
-			background-color: $light-temp;
-			border-color: $dark-temp;
-		}
-		&::before {
-			border-color: $dark-temp;
-		}
-	}
-
-	//set button and a tag to have cursor pointer (the rest are help)
-	&.custom-tool {
-		&:hover::after {
-			color: var(--tooltip-color);
-			background-color: var(--tooltip-bg);
-			font-size: var(--tooltip-font-size);
-			font-family: var(--tooltip-font-family);
-			cursor: var(--tooltip-cursor);
-			//sets to same as text color
-			border-color: var(--tooltip-color);
-		}
-		&:hover::after {
-			//ovverides border color if specified
-			border-color: var(--tooltip-border-color);
-		}
-		&:hover::before {
-			//sets point to specified color if .no-point is absent and color is set
-			border-color: var(--tooltip-color);
-		}
-		&:hover::before {
-			//ovverides if specifically set border color
-			border-color: var(--tooltip-border-color);
+			border-top-color: $tooltip-dark-color;
 		}
 	}
 }
 
-a[data-tool-tip],
-button[data-tool-tip] {
-	cursor: pointer;
-}
-//flip for top
-[data-tool-tip].top:hover::before {
-	transform: rotate(225deg);
-	top: -15px;
+
+// Positions (::after - Main tooltip, ::before - Arrow)
+// ==========================================================================
+
+//Top
+[tooltip-position='top'] {
+
+	&::after,
+	&::before {
+		left: 50%;
+	}
 }
 
-[data-tool-tip].top:hover::after {
-	top: -35px;
+//Right
+[tooltip-position='right'] {
+	&::after {
+		left: 100%;
+		top: 50%;
+		margin-left: 8px;
+		transform: translateX(0%) translateY(-50%);
+	}
+
+	&::before {
+		left: 100%;
+		top: 50%;
+		margin-left: 1px;
+		transform: translateY(-50%) rotate(90deg);
+	}
 }
-//bottom class (default)
-[data-tool-tip].bot:hover::after {
-	top: 30px;
+
+//Bottom
+[tooltip-position='bottom'] {
+	&::after {
+		top: 100%;
+		margin-top: 8px;
+		transform: translateX(-50%) translateY(0%);
+		z-index: 100;
+	}
+
+	&::before {
+		top: 100%;
+		margin-top: 8px;
+		transform: translateX(-50%) translateY(-100%) rotate(-180deg);
+	}
 }
-[data-tool-tip].bot:hover::before {
-	top: 25px;
-	left: 10px;
+
+//Left
+[tooltip-position='left'] {
+	&::after {
+		left: 0%;
+		top: 50%;
+		margin-left: -8px;
+		transform: translateX(-100%) translateY(-50%);
+	}
+
+	&::before {
+		left: 0%;
+		top: 50%;
+		margin-left: -12.2px;
+		transform: translateY(-50%) rotate(-90deg);
+	}
 }
-//allows for right class which goes to right side of element
-[data-tool-tip].right:hover::before {
-	margin-left: 103%;
-	margin-top: 0;
-	top: 0 !important;
-	transform: rotate(315deg);
-}
-[data-tool-tip].right:hover::after {
-	margin-left: 110%;
-	top: -10px;
-}
-//allows for left class ### not working left now
-// [data-tool-tip].left:hover::before{
-//    margin-left:auto;
-//    transform:rotate(315deg);
-//  }
-//  [data-tool-tip].left:hover::after{
-//     //  margin-left:-10%;
-//      margin-top:20px;
-//      top:-10px;
-//  }

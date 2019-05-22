@@ -337,3 +337,19 @@ $toast-padding: 12px 30px !default;
 
 // 23. Tooltip
 // ==========================================================================
+
+//Enable features
+$tooltip-enable-dark: true !default;
+
+//Color & shadow
+$tooltip-font-color: #666 !default;
+$tooltip-dark-color: #323232 !default;
+$tooltip-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2) !default;
+
+//Padding & radius
+$tooltip-padding: 12px 22px !default;
+$tooltip-border-radius: 4px !default;
+
+//Transition
+$tooltip-transition-time: 0.15s !default;
+
