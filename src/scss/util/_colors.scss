@@ -5,7 +5,7 @@
 
 @each $color-name, $hex in $palette {
 	@each $attr-name, $attr in $color-attr {
-		.#{$attr-name}-#{$color-name} {
+		.#{$attr-name}-#{'' + $color-name} {
 			#{$attr}: $hex !important;
 		}
 	}

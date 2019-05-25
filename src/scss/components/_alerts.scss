@@ -52,7 +52,7 @@
 //Colored alerts
 @each $color-name, $hex in $palette {
 	//Default Alerts
-	.alert-#{$color-name} {
+	.alert-#{'' + $color-name} {
 		border-left: 3px solid $hex;
 		background: lighten($hex, 32%);
 		color: darken($hex, 25%);
@@ -60,7 +60,7 @@
 
 	//Background alerts
 	@if $alert-enable-background {
-		.alert-#{$color-name}.alert-background {
+		.alert-#{'' + $color-name}.alert-background {
 			@extend %alert-backgrond;
 			background-color: $hex;
 			color: color-contrast($hex);

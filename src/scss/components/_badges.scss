@@ -28,7 +28,7 @@
 
 @if $badge-enable-colored {
 	@each $color-name, $hex in $palette {
-		.badge-#{$color-name} {
+		.badge-#{'' + $color-name} {
 			@extend %badge-properties;
 			color: color-contrast($hex);
 			background-color: $hex;

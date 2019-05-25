@@ -23,12 +23,8 @@ body {
 
 a,
 a:visited {
+  color: #000;
   text-decoration: none;
-  background-color: transparent;
-}
-
-a:visited {
-  color: #000000;
 }
 
 ul {

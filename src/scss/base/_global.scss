@@ -21,16 +21,10 @@ body {
 	-webkit-tap-highlight-color: transparent; // sass-lint:disable-line  no-vendor-prefixes
 }
 
-//! FIX HERE
 a,
 a:visited {
-	//color: color('primary');
+	color: #000;
 	text-decoration: none;
-	background-color: transparent;
-}
-
-a:visited {
-	color: #000000;
 }
 
 ul {

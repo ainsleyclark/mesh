@@ -48,7 +48,7 @@
 
 @if $button-enable-colored {
 	@each $color-name, $hex in $palette {
-		.btn-#{$color-name} {
+		.btn-#{'' + $color-name} {
 			@extend %button-properties;
 			@include buttons-colored($hex);
 		}
@@ -72,7 +72,7 @@
 
 @if $button-enable-outline {
 	@each $color-name, $hex in $palette {
-		.btn-#{$color-name}.btn-outline {
+		.btn-#{'' + $color-name}.btn-outline {
 			@include buttons-outline($hex);
 		}
 	}
@@ -119,7 +119,7 @@
 	}
 
 	@each $color-name, $hex in $palette {
-		.btn-#{$color-name}:disabled {
+		.btn-#{'' + $color-name}:disabled {
 			background-color: rgba($hex, 0.5);
 		}
 	}
@@ -270,7 +270,7 @@
 	@each $color-name, $hex in $palette {
 		@if (to-lower-case(inspect($hex)) != '#ffffff' and to-lower-case(inspect($hex)) != '#000000') {
 			// sass-lint:disable-line hex-notation
-			.btn-#{$color-name}:after {
+			.btn-#{'' + $color-name}:after {
 				@extend %white-spinner;
 			}
 		}

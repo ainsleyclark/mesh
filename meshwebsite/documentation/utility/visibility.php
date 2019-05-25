@@ -39,7 +39,7 @@ $tableOfContents = [
                         <ul class="list-line">
                             <li>You can target the visibility classes by using <code class="inline">visible-{breakpoint}</code>. The breakpoint being optional and one of our five breakpoints</li>
                             <li>You can also make an element invisible by using <code class="inline">invisible-{breakpoint}</code>.</li>
-                            <li>These classes effect the breakpoint and upwards, for example <code class="inline">invisible-tab</code> will make the element's visibility hidden on tablet, desktop & HD screens but visible at mobile or extra small./li>
+                            <li>These classes effect the breakpoint and upwards, for example <code class="inline">invisible-tab</code> will make the element's visibility hidden on tablet, desktop & HD screens but visible at mobile or extra small.</li>
                         </ul>
                     </div>
                     <div class="text-cont">
