@@ -6,12 +6,6 @@ $pageData = [
     'pageDescription' => 'Use spacers to separate content when margin & padding isn&#39;t large enough with these helpful classes.',
     'activePage' => 'spacers',
     'parentDirectory' => basename(__DIR__),
-
-    'tags' => [
-        'builder' => true,
-        'variables' => true,
-        'colors' => false,
-    ],
 ];
 
 //Table of contents
@@ -31,12 +25,7 @@ $tableOfContents = [
             <div class="col-12 col-tab-9 col-desk-8 mr-desk-2 px-desk-4">
                 <h1 class="my-0"><?php echo $pageData['pageTitle'] ?></h1>
                 <div class="lead"><?php echo $pageData['pageDescription'] ?></div>
-                <div class="tags d-flex mt-3">
-                    <span class="badge badge-rounded <?php if ($pageData['tags']['builder'] == 1) {echo 'bg-success';} else {echo 'bg-danger';}?>">Builder</span>
-                    <span class="badge badge-rounded <?php if ($pageData['tags']['variables'] == 1) {echo 'bg-success';} else {echo 'bg-danger';}?>">Variables</span>
-                    <span class="badge badge-rounded <?php if ($pageData['tags']['colors'] == 1) {echo 'bg-success';} else {echo 'bg-danger';}?>">Colors</span>
-                </div>
-
+                
                 <!-- Borders -->
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>

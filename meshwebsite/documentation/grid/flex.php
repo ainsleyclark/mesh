@@ -708,8 +708,9 @@ $tableOfContents = [
     ...
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
-                    <h3>Responsive variations:</h3>&lt;!-- Default --&gt;
-                    <pre class="highlight"><code class="html">&lt;div class="d-flex align-content-start"&gt;&lt;/div&gt;
+                    <h3>Responsive variations:</h3>
+                    <pre class="highlight"><code class="html">&lt;!-- Default --&gt;
+&lt;div class="d-flex align-content-start"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-end"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-center"&gt;&lt;/div&gt;
 &lt;div class="d-flex align-content-between"&gt;&lt;/div&gt;

@@ -14,7 +14,7 @@ $tableOfContents = [
     'colored' => 'Colored',
     'rounded' => 'Rounded',
     'notification' => 'Notification',
-    'Tags' => 'tags',
+    'close' => 'Close',
 ];
 
 ?>
@@ -94,7 +94,7 @@ $tableOfContents = [
                     <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap">
                         <button class="btn btn-primary d-flex align-items-center">
                             Notifications
-                            <span class="badge badge-light">10</span>
+                            <span class="badge badge-light ml-1">10</span>
                         </button>
                     </div>
                     <pre class="highlight"><code class="html">&lt;button class="btn btn-primary d-flex align-items-center"&gt;
@@ -103,90 +103,26 @@ $tableOfContents = [
 &lt;/button&gt;
 </code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
 
-
-                    <!-- Rounded Tags -->
-                    <article class="section-scroll py-2" id="tags">
-                        <h2 class="b-b-light hash">Tags</h2>
+                    <!-- Close -->
+                    <article class="section-scroll py-2" id="close">
+                        <h2 class="b-b-light hash">Close</h2>
                         <p class="secondary-lead">
-                            The mesh tags should be prefix with the <code class="inline">.tag</code> class which will give you access to all of the classes outlined below.
-                            <br>The mesh tags should also contain <code class="inline">.deletable</code> class which will alow tag to be deleted.
-                            <br>You can add color classes to brighten up the tag by prefixing it with <code class="inline">.tag-{color}</code> class which will give you access to all the colors.
+                            To add a closeable button to the badge, simply add <code class="inline">badge-close</code> class to enable a hover effect.
                         </p>
                         <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap mb-3">
-                            <div class="badge badge-deletable badge-primary">
-                                <div class="action">Primary</div>
-                                <div class="delete">
-                                    <span>&times;</span>
-                                </div>
-                            </div>
-                            <div class="badge badge-deletable badge-success">
-                                <div class="action">Success</div>
-                                <div class="delete">
-                                    <span>&times;</span>
-                                </div>
-                            </div>
-                            <div class="badge badge-deletable badge-info">
-                                <div class="action">Info</div>
-                                <div class="delete">
-                                    <span>&times;</span>
-                                </div>
-                            </div>
-                            <div class="badge badge-deletable badge-warning">
-                                <div class="action">Warning</div>
-                                <div class="delete">
-                                    <span>&times;</span>
-                                </div>
-                            </div>
-                            <div class="badge badge-deletable badge-danger">
-                                <div class="action">Danger</div>
-                                <div class="delete">
-                                    <span>&times;</span>
-                                </div>
-                            </div>
-                            <div class="badge badge-deletable badge-link">
-                                <div class="action">Link</div>
-                                <div class="delete">
-                                    <span>&times;</span>
-                                </div>
-                            </div>
-                            
+                            <span class="badge badge-close badge-primary ml-0">Primary</span>
+                            <span class="badge badge-close badge-success">Success</span>
+                            <span class="badge badge-close badge-info">Info</span>
+                            <span class="badge badge-close badge-warning">Warning</span>
+                            <span class="badge badge-close badge-danger">Danger</span>
+                            <span class="badge badge-close badge-link">Link</span>
                         </div>
-                        <pre class="highlight"><code class="html">&lt;div class="badge badge-deletable badge-primary"&gt;
-    &lt;div class="action"&gt;Primary&lt;/div&gt;
-    &lt;div class="delete"&gt;
-        &lt;span&gt;&times;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="badge badge-deletable badge-success"&gt;
-    &lt;div class="action"&gt;Primary&lt;/div&gt;
-    &lt;div class="delete"&gt;
-        &lt;span&gt;&times;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="badge badge-deletable badge-info"&gt;
-    &lt;div class="action"&gt;Primary&lt;/div&gt;
-    &lt;div class="delete"&gt;
-        &lt;span&gt;&times;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="badge badge-deletable badge-warning"&gt;
-    &lt;div class="action"&gt;Primary&lt;/div&gt;
-    &lt;div class="delete"&gt;
-        &lt;span&gt;&times;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="badge badge-deletable badge-danger"&gt;
-    &lt;div class="action"&gt;Primary&lt;/div&gt;
-    &lt;div class="delete"&gt;
-        &lt;span&gt;&times;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="badge badge-deletable badge-link"&gt;
-    &lt;div class="action"&gt;Primary&lt;/div&gt;
-    &lt;div class="delete"&gt;
-        &lt;span&gt;&times;&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                        <pre class="highlight"><code class="html">&lt;span class=&quot;badge badge-close badge-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-danger&quot;&gt;Danger&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-link&quot;&gt;Link&lt;/span&gt;</code></code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </article>
 
             </div><!-- /Col -->

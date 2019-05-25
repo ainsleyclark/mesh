@@ -312,11 +312,11 @@ $tableOfContents = [
                         mesh doesnt ship with any JS, but you can use the following function to add functionality to dismiss the close buttons. This script adds an event listener to all the <code class="inline">close</code> buttons.
                     </p>
                     <pre class="highlight"><code class="javascript">document.addEventListener('DOMContentLoaded', function () {
-    (document.querySelectorAll('.alert .close') || []).forEach(function ($delete) {
-        $delete.addEventListener('click', function () {
-            $delete.parentNode.remove();
+        (document.querySelectorAll('.alert .close') || []).forEach(function(close){
+            close.addEventListener('click', function () {
+                close.parentNode.remove();
+            });
         });
-    });
 });</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     <div class="text-cont">
                         <h3>Example:</h3>
@@ -362,9 +362,9 @@ $tableOfContents = [
 <?php function scripts() {?>
     <script>
     document.addEventListener('DOMContentLoaded', function () {
-        (document.querySelectorAll('.js-alert .alert .close') || []).forEach(function ($delete) {
-            $delete.addEventListener('click', function () {
-            $delete.parentNode.remove();
+        (document.querySelectorAll('.js-alert .alert .close') || []).forEach(function(close){
+            close.addEventListener('click', function () {
+                close.parentNode.remove();
             });
         });
     });
