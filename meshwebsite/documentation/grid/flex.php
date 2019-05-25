@@ -541,12 +541,22 @@ $tableOfContents = [
                     <div class="column-demo mb-3">
                         <h4><code class="inline bg-white">align-content-start</code></h4>
                         <div class="br bg-light mb-3 c-white">
-                            <div class="d-flex align-content-start flex-wrap mb-3 t-center height-100">
-                                <div class="text mr-1 mr-hd-2 px-3 px-tab-4 px-hd-5 br">1</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">2</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">3</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">4</div>
-                                <div class="text ml-1 ml-hd-2 px-3 px-tab-4 px-hd-5 br">5</div>
+                            <div class="d-flex align-content-start flex-wrap mb-3 t-center height-200">
+                                <div class="text px-2 px-tab-4">1</div>
+                                <div class="text px-2 px-tab-4">2</div>
+                                <div class="text px-2 px-tab-4">3</div>
+                                <div class="text px-2 px-tab-4">4</div>
+                                <div class="text px-2 px-tab-4">5</div>
+                                <div class="text px-2 px-tab-4">6</div>
+                                <div class="text px-2 px-tab-4">7</div>
+                                <div class="text px-2 px-tab-4">8</div>
+                                <div class="text px-2 px-tab-4">9</div>
+                                <div class="text px-2 px-tab-4">10</div>
+                                <div class="text px-2 px-tab-4">11</div>
+                                <div class="text px-2 px-tab-4">12</div>
+                                <div class="text px-2 px-tab-4">13</div>
+                                <div class="text px-2 px-tab-4">14</div>
+                                <div class="text px-2 px-tab-4">15</div>
                             </div>
                         </div>
                         <pre class="highlight"><code class="html">&lt;div class="d-flex align-content-start flex-wrap"&gt;
@@ -555,15 +565,26 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
+    ...
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         <h4><code class="inline bg-white">align-content-end</code></h4>
                         <div class="br bg-light mb-3 c-white">
-                            <div class="d-flex align-content-end flex-wrap mb-3 t-center height-100">
-                                <div class="text mr-1 mr-hd-2 px-3 px-tab-4 px-hd-5 br">1</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">2</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">3</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">4</div>
-                                <div class="text ml-1 ml-hd-2 px-3 px-tab-4 px-hd-5 br">5</div>
+                            <div class="d-flex align-content-end flex-wrap mb-3 t-center height-200">
+                                <div class="text px-2 px-tab-4">1</div>
+                                <div class="text px-2 px-tab-4">2</div>
+                                <div class="text px-2 px-tab-4">3</div>
+                                <div class="text px-2 px-tab-4">4</div>
+                                <div class="text px-2 px-tab-4">5</div>
+                                <div class="text px-2 px-tab-4">6</div>
+                                <div class="text px-2 px-tab-4">7</div>
+                                <div class="text px-2 px-tab-4">8</div>
+                                <div class="text px-2 px-tab-4">9</div>
+                                <div class="text px-2 px-tab-4">10</div>
+                                <div class="text px-2 px-tab-4">11</div>
+                                <div class="text px-2 px-tab-4">12</div>
+                                <div class="text px-2 px-tab-4">13</div>
+                                <div class="text px-2 px-tab-4">14</div>
+                                <div class="text px-2 px-tab-4">15</div>
                             </div>
                         </div>
                         <pre class="highlight"><code class="html">&lt;div class="d-flex align-content-end flex-wrap"&gt;
@@ -572,15 +593,26 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
+    ...
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         <h4><code class="inline bg-white">align-content-center</code></h4>
                         <div class="br bg-light mb-3 c-white">
-                            <div class="d-flex align-content-center flex-wrap mb-3 t-center height-100">
-                                <div class="text mr-1 mr-hd-2 px-3 px-tab-4 px-hd-5 br">1</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">2</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">3</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">4</div>
-                                <div class="text ml-1 ml-hd-2 px-3 px-tab-4 px-hd-5 br">5</div>
+                            <div class="d-flex align-content-center flex-wrap mb-3 t-center height-200">
+                                <div class="text px-2 px-tab-4">1</div>
+                                <div class="text px-2 px-tab-4">2</div>
+                                <div class="text px-2 px-tab-4">3</div>
+                                <div class="text px-2 px-tab-4">4</div>
+                                <div class="text px-2 px-tab-4">5</div>
+                                <div class="text px-2 px-tab-4">6</div>
+                                <div class="text px-2 px-tab-4">7</div>
+                                <div class="text px-2 px-tab-4">8</div>
+                                <div class="text px-2 px-tab-4">9</div>
+                                <div class="text px-2 px-tab-4">10</div>
+                                <div class="text px-2 px-tab-4">11</div>
+                                <div class="text px-2 px-tab-4">12</div>
+                                <div class="text px-2 px-tab-4">13</div>
+                                <div class="text px-2 px-tab-4">14</div>
+                                <div class="text px-2 px-tab-4">15</div>
                             </div>
                         </div>
                         <pre class="highlight"><code class="html">&lt;div class="d-flex align-content-center flex-wrap"&gt;
@@ -589,15 +621,26 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
+    ...
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         <h4><code class="inline bg-white">align-content-between</code></h4>
                         <div class="br bg-light mb-3 c-white">
-                            <div class="d-flex align-content-between flex-wrap mb-3 t-center height-100">
-                                <div class="text mr-1 mr-hd-2 px-3 px-tab-4 px-hd-5 br">1</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">2</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">3</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">4</div>
-                                <div class="text ml-1 ml-hd-2 px-3 px-tab-4 px-hd-5 br">5</div>
+                            <div class="d-flex align-content-between flex-wrap mb-3 t-center height-200">
+                                <div class="text px-2 px-tab-4">1</div>
+                                <div class="text px-2 px-tab-4">2</div>
+                                <div class="text px-2 px-tab-4">3</div>
+                                <div class="text px-2 px-tab-4">4</div>
+                                <div class="text px-2 px-tab-4">5</div>
+                                <div class="text px-2 px-tab-4">6</div>
+                                <div class="text px-2 px-tab-4">7</div>
+                                <div class="text px-2 px-tab-4">8</div>
+                                <div class="text px-2 px-tab-4">9</div>
+                                <div class="text px-2 px-tab-4">10</div>
+                                <div class="text px-2 px-tab-4">11</div>
+                                <div class="text px-2 px-tab-4">12</div>
+                                <div class="text px-2 px-tab-4">13</div>
+                                <div class="text px-2 px-tab-4">14</div>
+                                <div class="text px-2 px-tab-4">15</div>
                             </div>
                         </div>
                         <pre class="highlight"><code class="html">&lt;div class="d-flex align-content-between flex-wrap"&gt;
@@ -606,15 +649,26 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
+    ...
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         <h4><code class="inline bg-white">align-content-around</code></h4>
                         <div class="br bg-light mb-3 c-white">
-                            <div class="d-flex align-content-around flex-wrap mb-3 t-center height-100">
-                                <div class="text mr-1 mr-hd-2 px-3 px-tab-4 px-hd-5 br">1</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">2</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">3</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br">4</div>
-                                <div class="text ml-1 ml-hd-2 px-3 px-tab-4 px-hd-5 br">5</div>
+                            <div class="d-flex align-content-around flex-wrap mb-3 t-center height-200">
+                                <div class="text px-2 px-tab-4">1</div>
+                                <div class="text px-2 px-tab-4">2</div>
+                                <div class="text px-2 px-tab-4">3</div>
+                                <div class="text px-2 px-tab-4">4</div>
+                                <div class="text px-2 px-tab-4">5</div>
+                                <div class="text px-2 px-tab-4">6</div>
+                                <div class="text px-2 px-tab-4">7</div>
+                                <div class="text px-2 px-tab-4">8</div>
+                                <div class="text px-2 px-tab-4">9</div>
+                                <div class="text px-2 px-tab-4">10</div>
+                                <div class="text px-2 px-tab-4">11</div>
+                                <div class="text px-2 px-tab-4">12</div>
+                                <div class="text px-2 px-tab-4">13</div>
+                                <div class="text px-2 px-tab-4">14</div>
+                                <div class="text px-2 px-tab-4">15</div>
                             </div>
                         </div>
                         <pre class="highlight"><code class="html">&lt;div class="d-flex align-content-around flex-wrap"&gt;
@@ -623,15 +677,26 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
+    ...
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                         <h4><code class="inline bg-white">align-content-stretch</code></h4>
                         <div class="br bg-light mb-3 c-white">
-                            <div class="d-flex align-content-stretch flex-wrap mb-3 t-center height-100">
-                                <div class="text mr-1 mr-hd-2 px-3 px-tab-4 px-hd-5 br line-height-4">1</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br line-height-4">2</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br line-height-4">3</div>
-                                <div class="text mx-1 mx-hd-2 px-3 px-tab-4 px-hd-5 br line-height-4">4</div>
-                                <div class="text ml-1 ml-hd-2 px-3 px-tab-4 px-hd-5 br line-height-4">5</div>
+                            <div class="d-flex align-content-stretch flex-wrap mb-3 t-center height-200">
+                                <div class="text px-2 px-tab-4">1</div>
+                                <div class="text px-2 px-tab-4">2</div>
+                                <div class="text px-2 px-tab-4">3</div>
+                                <div class="text px-2 px-tab-4">4</div>
+                                <div class="text px-2 px-tab-4">5</div>
+                                <div class="text px-2 px-tab-4">6</div>
+                                <div class="text px-2 px-tab-4">7</div>
+                                <div class="text px-2 px-tab-4">8</div>
+                                <div class="text px-2 px-tab-4">9</div>
+                                <div class="text px-2 px-tab-4">10</div>
+                                <div class="text px-2 px-tab-4">11</div>
+                                <div class="text px-2 px-tab-4">12</div>
+                                <div class="text px-2 px-tab-4">13</div>
+                                <div class="text px-2 px-tab-4">14</div>
+                                <div class="text px-2 px-tab-4">15</div>
                             </div>
                         </div>
                         <pre class="highlight"><code class="html">&lt;div class="d-flex align-content-stretch flex-wrap"&gt;
@@ -640,6 +705,7 @@ $tableOfContents = [
     &lt;div class="flex-item"&gt;3&lt;/div&gt;
     &lt;div class="flex-item"&gt;4&lt;/div&gt;
     &lt;div class="flex-item"&gt;5&lt;/div&gt;
+    ...
 &lt;/div&gt;</code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </div>
                     <h3>Responsive variations:</h3>&lt;!-- Default --&gt;

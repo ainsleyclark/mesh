@@ -31,7 +31,7 @@ $tableOfContents = [
                 <article class="section-scroll" id="usage">
                     <h2 class="b-b-light hash">Usage</h2>
                     <p class="secondary-lead">
-                        You can change the width and height of an element by using <code class="inline">{property}-{breakpoi</code>
+                        You can change the width and height of an element by using <code class="inline">{property}-{breakpoint}</code>
                     </p>
                     <div class="text-cont">
                         <h3>Notation:</h3>
