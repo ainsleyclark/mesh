@@ -41,6 +41,7 @@
 		"node-sass": "^4.12.0",
 		"nodemon": "^1.19.0",
 		"postcss-cli": "^6.1.2",
+		"prettier": "^1.17.1",
 		"sass-lint": "^1.13.1"
 	},
 	"dependencies": {}

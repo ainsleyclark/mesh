@@ -60,26 +60,23 @@
 // ==========================================================================
 
 @if $tooltip-enable-dark {
-
 	[tooltip-color='dark'] {
 		&::after {
 			background-color: $tooltip-dark-color;
 			color: color-contrast($tooltip-dark-color);
 		}
-	
+
 		&::before {
 			border-top-color: $tooltip-dark-color;
 		}
 	}
 }
 
-
 // Positions (::after - Main tooltip, ::before - Arrow)
 // ==========================================================================
 
 //Top
 [tooltip-position='top'] {
-
 	&::after,
 	&::before {
 		left: 50%;

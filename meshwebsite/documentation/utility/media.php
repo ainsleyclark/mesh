@@ -159,7 +159,7 @@ document.querySelector('#visibleBtn').addEventListener('click', function() {
     invisibleDemo.classList.toggle('invisible');
     invisibleDemo.classList.toggle('d-none');
 
-    if (this.innerHTML.includes('none')) {
+    if (this.innerHTML.indexOf('none')) {
         invisibleCode.innerHTML = invisibleCode.innerHTML.replace('invisible', 'd-none');
         this.innerHTML = "Switch to invisible";
     } else {

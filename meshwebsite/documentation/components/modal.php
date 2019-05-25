@@ -389,7 +389,7 @@ $tableOfContents = [
                     </div>          
                     <pre class="highlight"><code class="javascript">document.addEventListener('DOMContentLoaded', function() {
     (document.querySelectorAll('[data-modal]') || []).forEach(function(button) {
-        modal = document.querySelector(button.getAttribute('data-modal'));
+        let modal = document.querySelector(button.getAttribute('data-modal'));
         button.addEventListener('click', function() {
             modal.classList.add('modal-open');
         });
@@ -430,7 +430,7 @@ let openModal = id => document.querySelector(id).classList.add('modal-open');
 
 document.addEventListener('DOMContentLoaded', function() {
     (document.querySelectorAll('[data-modal]') || []).forEach(function(button) {
-        modal = document.querySelector(button.getAttribute('data-modal'));
+        let modal = document.querySelector(button.getAttribute('data-modal'));
         button.addEventListener('click', function() {
             modal.classList.add('modal-open');
         });

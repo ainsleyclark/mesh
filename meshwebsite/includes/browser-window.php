@@ -1,4 +1,4 @@
-<svg id="browser" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3207.3 1836.6">
+<svg id="browser" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3207.3 1836.6" style="max-width: 100%; min-width: 100%;">
   <defs>
     <style>
       .cls-1 {

@@ -26,11 +26,10 @@
 //  20. Modal
 //  21. Nav
 //  22. Pagination
-//  23. Progress
-//  24. Table
-//	25. Tabs
-//  26. Toasts
-//  27. Tooltip
+//  23. Table
+//	24. Tabs
+//  25. Toasts
+//  26. Tooltip
 
 // 1. Grid
 // ==========================================================================
@@ -305,10 +304,7 @@ $pagination-active-color: color('primary') !default;
 //Font size
 $pagination-font-size: 12px !default;
 
-// 23. Progress
-// ==========================================================================
-
-// 24. Table
+// 23. Table
 // ==========================================================================
 
 // Padding & margin
@@ -325,20 +321,20 @@ $table-hover-color: rgb(245, 245, 245) !default;
 $table-header-font-size: 1.1rem !default;
 $table-row-font-size: 14px !default;
 
-// 23. Tabs
+// 24. Tabs
 // ==========================================================================
 
-// 23. Toasts
+// 25. Toasts
 // ==========================================================================
 
 //Width
 $toast-width: 256px !default;
 $toast-padding: 10px 25px !default;
 
-//Shadow 
+//Shadow
 $toast-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 3px 3px -2px rgba(0, 0, 0, 0.22), 0 1px 7px 0 rgba(0, 0, 0, 0.14);
 
-// 23. Tooltip
+// 26. Tooltip
 // ==========================================================================
 
 //Enable features
@@ -355,4 +351,3 @@ $tooltip-border-radius: 4px !default;
 
 //Transition
 $tooltip-transition-time: 0.15s !default;
-

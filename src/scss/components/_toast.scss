@@ -33,17 +33,17 @@
 		padding: $toast-padding;
 		width: $toast-width;
 		margin-top: 10px;
-	
+
 		& .toast-control {
 			position: absolute;
 			top: 10px;
 			right: 20px;
 		}
-	
+
 		&.toast-show {
 			animation: toast-show-animation 2s 1;
 		}
-	
+
 		//Rounded
 		#{$self}-rounded {
 			border-radius: 500px;
