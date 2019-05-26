@@ -83,7 +83,8 @@ function meshToast(text, opts = {}) {
 
     // Create sensible defaults for our toast-bodys.
     const defaults = {
-        color: "bg-primary"
+        color: "bg-primary",
+        classes: ""
     };
 
     const options = Object.assign(defaults, opts);
@@ -93,7 +94,7 @@ function meshToast(text, opts = {}) {
 
     // Now we create a new toast-body element
     const toastBody = document.createElement("div");
-    toastBody.classList.add("toast-body", options.color);
+    toastBody.setAttribute('class', "toast-body " + options.color + " " + options.classes);
 
     const toastText = document.createElement("span");
     toastText.innerText = text;
@@ -114,5 +115,6 @@ function meshToast(text, opts = {}) {
 
 meshToast('Demo Text', { displayTime: '5s' });
 meshToast('Secondary Text', { displayTime: '5s', color: "bg-secondary" });
+meshToast('Third Text', { displayTime: '5s', classes: "classes" });
 </script>
 <?php }?>
