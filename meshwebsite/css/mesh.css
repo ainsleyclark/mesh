@@ -4714,7 +4714,7 @@ label.close {
 .badge {
   display: inline-flex;
   align-items: center;
-  padding: 5px 12px;
+  padding: 3px 12px;
   background-color: #999;
   color: #fff;
   border-radius: 3px;
@@ -4726,7 +4726,6 @@ label.close {
   vertical-align: baseline;
   height: auto;
   margin-right: 5px;
-  line-height: 1;
   user-select: none;
 }
 
@@ -4797,38 +4796,45 @@ label.close {
 
 .badge-rounded {
   border-radius: 500px;
-  padding: 5px 12px;
+  padding: 3px 12px;
 }
 
 .badge-close {
   position: relative;
-  line-height: 1;
   border-radius: 500px;
   transition: 0.3s ease;
   transition-property: padding-right;
+  padding-right: 20px;
 }
 
 .badge-close .badge-delete {
   position: absolute;
   font-size: 12px;
-  right: 8px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
-  opacity: 0;
   z-index: 1;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #fff;
   padding: 4px;
 }
 
-.badge-close:hover {
-  padding-right: 20px;
-}
-
-.badge-close:hover .badge-delete {
-  opacity: 1;
-  transform: translate(20%, -50%);
-  cursor: pointer;
+@media (min-width: 1024px) {
+  .badge-close {
+    padding: 3px 12px;
+  }
+  .badge-close .badge-delete {
+    opacity: 0;
+    right: 8px;
+  }
+  .badge-close:hover {
+    padding-right: 20px;
+  }
+  .badge-close:hover .badge-delete {
+    opacity: 1;
+    transform: translate(20%, -50%);
+    cursor: pointer;
+  }
 }
 
 .breadcrumb {
