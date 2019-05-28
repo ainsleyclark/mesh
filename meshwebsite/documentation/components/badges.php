@@ -107,23 +107,106 @@ $tableOfContents = [
                     <article class="section-scroll py-2" id="close">
                         <h2 class="b-b-light hash">Close</h2>
                         <p class="secondary-lead">
-                            To add a closeable button to the badge, simply add <code class="inline">badge-close</code> class to enable a hover effect.
+                            To add a closeable button to the badge, simply add <code class="inline">badge-close</code> class to enable a hover effect. Then add an icon of your choice, we have stuck with font awesome and add the <code class="inline">badge-delete</code> class to the icon.
                         </p>
                         <div class="d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap mb-3">
-                            <span class="badge badge-close badge-primary ml-0">Primary</span>
-                            <span class="badge badge-close badge-success">Success</span>
-                            <span class="badge badge-close badge-info">Info</span>
-                            <span class="badge badge-close badge-warning">Warning</span>
-                            <span class="badge badge-close badge-danger">Danger</span>
-                            <span class="badge badge-close badge-link">Link</span>
+                            <span class="badge badge-close badge-primary ml-0">
+                                Primary
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-success">
+                                Success
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-info">
+                                Info
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-warning">
+                                Warning
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-danger">
+                                Danger
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-link">
+                                Link
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
                         </div>
-                        <pre class="highlight"><code class="html">&lt;span class=&quot;badge badge-close badge-primary&quot;&gt;Primary&lt;/span&gt;
-&lt;span class=&quot;badge badge-close badge-success&quot;&gt;Success&lt;/span&gt;
-&lt;span class=&quot;badge badge-close badge-info&quot;&gt;Info&lt;/span&gt;
-&lt;span class=&quot;badge badge-close badge-warning&quot;&gt;Warning&lt;/span&gt;
-&lt;span class=&quot;badge badge-close badge-danger&quot;&gt;Danger&lt;/span&gt;
-&lt;span class=&quot;badge badge-close badge-link&quot;&gt;Link&lt;/span&gt;</code></code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                        <pre class="highlight"><code class="html">&lt;span class=&quot;badge badge-close badge-primary ml-0&quot;&gt;
+    Primary
+    &lt;i class=&quot;badge-delete fas fa-times&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-success&quot;&gt;
+    Success
+    &lt;i class=&quot;badge-delete fas fa-times&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-info&quot;&gt;
+    Info
+    &lt;i class=&quot;badge-delete fas fa-times&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-warning&quot;&gt;
+    Warning
+    &lt;i class=&quot;badge-delete fas fa-times&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-danger&quot;&gt;
+    Danger
+    &lt;i class=&quot;badge-delete fas fa-times&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;
+&lt;span class=&quot;badge badge-close badge-link&quot;&gt;
+    Link
+    &lt;i class=&quot;badge-delete fas fa-times&quot;&gt;&lt;/i&gt;
+&lt;/span&gt;</code></code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
+                        <div class="text-cont">
+                            <h3>JS close</h3>
+                            <p>To add close functionality to the closeable badges, use the script below. Go ahead and close the tags!</p>
+                        </div>
+                        <div class="js-close d-flex justify-content-center justify-content-desk-start align-items-end flex-wrap mb-3">
+                            <span class="badge badge-close badge-primary ml-0">
+                                Primary
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-success">
+                                Success
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-info">
+                                Info
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-warning">
+                                Warning
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-danger">
+                                Danger
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                            <span class="badge badge-close badge-link">
+                                Link
+                                <i class="badge-delete fas fa-times"></i>
+                            </span>
+                        </div>
+                        <pre class="highlight"><code class="javascript">document.addEventListener('DOMContentLoaded', function () {
+    (document.querySelectorAll('.badge-close .badge-delete') || []).forEach(function(close){
+        close.addEventListener('click', function () {
+            close.parentNode.remove();
+        });
+    }); 
+});</code></code><img class="copy-to-clipboard"src="/assets/icons/copy.svg" alt="Copy icon"><img class="copy-tick"src="/assets/icons/checked.svg" alt="Success icon"></pre>
                     </article>
+
+                    <script> 
+                        document.addEventListener('DOMContentLoaded', function () {
+                            (document.querySelectorAll('.badge-close .badge-delete') || []).forEach(function(close){
+                                close.addEventListener('click', function () {
+                                    close.parentNode.remove();
+                                });
+                            });
+                        });
+                    </script>
 
             </div><!-- /Col -->
             <?php include_once '../../partials/smallnav.php'?>

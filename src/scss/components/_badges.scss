@@ -28,6 +28,7 @@
 }
 
 @if $badge-enable-colored {
+	
 	@each $color-name, $hex in $palette {
 		.badge-#{'' + $color-name} {
 			@extend %badge-properties;
@@ -38,6 +39,7 @@
 }
 
 @if $badge-enable-rounded {
+
 	.badge-rounded {
 		border-radius: $badge-rounded;
 		padding: $badge-padding;
@@ -45,6 +47,7 @@
 }
 
 @if $badge-enable-deletable {
+
 	.badge-close {
 		position: relative;
 		line-height: 1;
@@ -52,24 +55,25 @@
 		transition: 0.3s ease;
 		transition-property: padding-right;
 
-		&:after {
-			content: 'x';
+		.badge-delete {
 			position: absolute;
-			font-size: 11px;
-			right: 10px;
+			font-size: 12px;
+			right: 8px;
 			top: 50%;
 			transform: translateY(-50%);
 			opacity: 0;
 			z-index: 1;
 			transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+			color: #fff;
+			padding: 4px;
 		}
 
 		&:hover {
 			padding-right: 20px;
 
-			&:after {
+			.badge-delete {
 				opacity: 1;
-				transform: translate(10%, -50%);
+				transform: translate(20%, -50%);
 				cursor: pointer;
 			}
 		}
