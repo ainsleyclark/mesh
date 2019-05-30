@@ -27,7 +27,6 @@
 }
 
 @if $badge-enable-colored {
-	
 	@each $color-name, $hex in $palette {
 		.badge-#{'' + $color-name} {
 			@extend %badge-properties;
@@ -38,7 +37,6 @@
 }
 
 @if $badge-enable-rounded {
-
 	.badge-rounded {
 		border-radius: $badge-rounded;
 		padding: $badge-padding;
@@ -46,7 +44,6 @@
 }
 
 @if $badge-enable-deletable {
-
 	.badge-close {
 		position: relative;
 		border-radius: $badge-rounded;
@@ -66,7 +63,6 @@
 			padding: 4px;
 		}
 
-
 		@include media-desk {
 			padding: $badge-padding;
 
@@ -77,7 +73,7 @@
 
 			&:hover {
 				padding-right: 20px;
-	
+
 				.badge-delete {
 					opacity: 1;
 					transform: translate(20%, -50%);
