@@ -39,7 +39,7 @@
 		"clean-css-cli": "^4.3.0",
 		"concurrently": "^4.1.0",
 		"node-sass": "^4.12.0",
-		"nodemon": "^1.19.0",
+		"nodemon": "^1.19.1",
 		"postcss-cli": "^6.1.2",
 		"prettier": "^1.17.1",
 		"sass-lint": "^1.13.1"
