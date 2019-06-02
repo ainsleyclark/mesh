@@ -34,14 +34,6 @@
 				#{$self}-title, i {
 					color: $collapse-active-color;
 				}
-
-				i {
-					transform: rotate(180deg);
-				}
-			}
-
-			i {
-				transition: 0.4s;
 			}
 		}
 
@@ -85,6 +77,7 @@
 		$self: &;
 
 		&-item.active {
+
 			#{$self}-header i {
 				transform: rotate(180deg);
 			}
@@ -92,6 +85,10 @@
 			#{$self}-title, i {
 				color: $collapse-active-color;
 			}
+		}
+
+		#{$self}-title, i {
+			transition: 0.4s;
 		}
 
 		&.collapse-js {
@@ -102,8 +99,8 @@
 				padding: 0;
 				transition: 0.5s;
 
-				.inner {
-					padding: 15px 15px 20px;
+				.collapse-inner {
+					padding: $collapse-content-padding;
 				}
 			}
 		}
