@@ -236,7 +236,22 @@ $card-action-padding: 16px 24px !default;
 $card-margin: 0.5rem 0 1rem 0 !default;
 
 // 15. Collapse
-// ==========================================================================
+// ==========================================================================\
+
+//Enable features
+$collapse-enable-css-close: true !default;
+$collapse-enable-js-close: true !default;
+
+//Padding & margin 
+$collapse-header-padding: 25px 10px 5px 0 !default;
+$collapse-content-padding: 15px 15px 20px !default; 
+$collapse-title-margin-top: 10px !default;
+
+//Color
+$collapse-active-color: color('secondary') !default;
+
+//Border
+$collapse-border: 1px solid #ddd !default;
 
 // 16. Epic
 // ==========================================================================
@@ -331,8 +346,7 @@ $table-row-font-size: 14px !default;
 // 25. Toasts
 // ==========================================================================
 
-//Width
-//$toast-width: 256px !default;
+//Padding
 $toast-padding: 10px 25px !default;
 
 //Shadow

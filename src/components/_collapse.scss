@@ -11,28 +11,28 @@
 	&-item {
 
 		#{$self}-header {
-			padding: 25px 10px 5px 0;
+			padding: $collapse-header-padding;
 			cursor: pointer;
 			position: relative;
-			border-bottom: 1px solid #ddd;
+			border-bottom: $collapse-border;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			outline: none;
 
 			#{$self}-title {
-				margin-top: 10px;
+				margin-top: $collapse-title-margin-top;
 			}
 
 			&:hover {
 				#{$self}-title, i {
-					color: color('secondary');
+					color: $collapse-active-color;
 				}
 			}
 
 			&:focus, &:active {
 				#{$self}-title, i {
-					color: color('secondary');
+					color: $collapse-active-color;
 				}
 
 				i {
@@ -46,12 +46,15 @@
 		}
 
 		#{$self}-content {
-			padding: 15px 15px 20px;
+			padding: $collapse-content-padding;
 		}
 	}
 }
 
-@if $alert-enable-css-close {
+// CSS close
+// ==========================================================================
+
+@if $collapse-enable-css-close {
 	.collapse {
 		$self: &;
 
@@ -74,7 +77,10 @@
 	}
 }
 
-@if $alert-enable-js-close {
+// JS collapse & accordion
+// ==========================================================================
+
+@if $collapse-enable-js-close {
 	.collapse {
 		$self: &;
 
@@ -84,7 +90,7 @@
 			}
 
 			#{$self}-title, i {
-				color: color('secondary');
+				color: $collapse-active-color;
 			}
 		}
 
