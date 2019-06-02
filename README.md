@@ -64,26 +64,6 @@ Please email info@ainsleyclark.com if you have any questions, I will be more tha
 6. When finished use `npm run prod` to clean compiled css files. 
 7. Merge & commit, create new pull request.
 
-### How to contribute:
-Any ideas are welcome. The majority of the utility classes are done so UI components are needed (remember CSS only!), including: 
-- ~~Alert~~ -- @ainsleyc
-- ~~Badges~~ -- @nicholsk
-- ~~Breadcrumb~~ -- @ainsleyc
-- ~~Button~~ -- @ainsleyc & @nicholsk
-- ~~Card~~ -- @kassuro
-- Collapse 
-- ~~Form~~ -- @VersusTune
-- ~~Header~~ -- @Stefario
-- Hero
-- List
-- ~~Modal~~ -- @ainsleyc
-- ~~Nav~~ -- @Stefario
-- ~~Pagination~~ @ainsleyc & @devonddunn
-- Progress
-- Tabs
-- ~~Toasts~~ -- @kassuro
-- ~~Tooltip~~ -- @devonddunn
-
 **Notes:**
 - Please do not edit ***mesh.css*** directly, they are automatically generated. 
 - Get yourself familiar with the demo pages to see how things work. 
