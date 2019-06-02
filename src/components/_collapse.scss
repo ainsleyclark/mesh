@@ -4,16 +4,13 @@
 // ==========================================================================
 // sass-lint:disable nesting-depth
 
-// Title
-// ==========================================================================
-
 .collapse {
 	$self: &;
 	position: relative;
 
 	&-item {
+
 		#{$self}-header {
-			//width: 100%;
 			padding: 25px 10px 5px 0;
 			cursor: pointer;
 			position: relative;
@@ -21,21 +18,35 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			outline: none;
 
 			#{$self}-title {
 				margin-top: 10px;
 			}
 
+			&:hover {
+				#{$self}-title, i {
+					color: color('secondary');
+				}
+			}
+
+			&:focus, &:active {
+				#{$self}-title, i {
+					color: color('secondary');
+				}
+
+				i {
+					transform: rotate(180deg);
+				}
+			}
+
 			i {
-				color: #999;
+				transition: 0.4s;
 			}
 		}
 
 		#{$self}-content {
 			padding: 15px 15px 20px;
-
-			//! SET
-			//display: none;
 		}
 	}
 }
@@ -71,12 +82,13 @@
 			#{$self}-header i {
 				transform: rotate(180deg);
 			}
+
+			#{$self}-title, i {
+				color: color('secondary');
+			}
 		}
 
 		&.collapse-js {
-			#{$self}-header i {
-				transition: 0.4s;
-			}
 
 			#{$self}-content {
 				max-height: 0;
