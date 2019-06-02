@@ -34,7 +34,7 @@
 	//Border
 	tbody tr,
 	tfoot tr {
-		border-top: 1.4px solid #ddd;
+		border-top: 1.4px solid $table-border-color;
 	}
 
 	//Common props body & footer (td & th)

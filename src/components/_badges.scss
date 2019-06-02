@@ -38,7 +38,7 @@
 
 @if $badge-enable-rounded {
 	.badge-rounded {
-		border-radius: $badge-rounded;
+		border-radius: 500px;
 		padding: $badge-padding;
 	}
 }
@@ -46,7 +46,7 @@
 @if $badge-enable-deletable {
 	.badge-close {
 		position: relative;
-		border-radius: $badge-rounded;
+		border-radius: 500px;
 		transition: 0.3s ease;
 		transition-property: padding-right;
 		padding-right: 20px;
