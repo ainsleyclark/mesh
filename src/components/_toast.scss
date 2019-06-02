@@ -7,7 +7,7 @@
 	$self: &;
 
 	position: absolute;
-	width: 100%;
+	width: auto;
 	max-width: 100%;
 	height: auto;
 	min-height: 48px;
@@ -21,18 +21,12 @@
 	line-height: 1.6;
 	cursor: default;
 
-	@include media-tab {
-		width: auto;
-	}
-
 	&-body {
 		border-radius: 3px;
-		box-shadow: $toast-box-shadow;
 		color: #fff;
 		position: relative;
 		padding: $toast-padding;
-		width: $toast-width;
-		margin-top: 10px;
+		margin-bottom: 10px;
 
 		& .toast-control {
 			position: absolute;
@@ -43,11 +37,22 @@
 		&.toast-show {
 			animation: toast-show-animation 2s 1;
 		}
+	}
 
-		//Rounded
-		#{$self}-rounded {
-			border-radius: 500px;
-		}
+	//Rounded
+	&-rounded #{$self}-body {
+		border-radius: 24px;
+	}
+
+	//Block (full-width)
+	&-block #{$self}-body {
+		width: 100%;
+	}
+
+	//Block (full-width)
+	&-action {
+		font-weight: 500;
+		margin-left: 3rem;
 	}
 }
 
