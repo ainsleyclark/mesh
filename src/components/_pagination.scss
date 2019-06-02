@@ -14,8 +14,8 @@
 		margin: 0 6px;
 		padding: 0;
 		min-width: 30px;
-		height: 30px;
-		line-height: 30px;
+		height: $pagination-height;
+		line-height: $pagination-height;
 		color: $pagination-text-color;
 		font-weight: 400;
 		font-size: $pagination-font-size;

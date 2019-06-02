@@ -23,7 +23,7 @@
 		border-radius: $tooltip-border-radius;
 		padding: $tooltip-padding;
 		transform: translateX(-50%) translateY(-100%);
-		font-size: 0.875rem;
+		font-size: $tooltip-font-size;
 		font-weight: 400;
 		text-align: center;
 		color: $tooltip-font-color;

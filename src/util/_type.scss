@@ -101,15 +101,20 @@ small {
 }
 
 //Responsive Text
-.t-responsive {
-	@for $i from 1 through $responsive-text-points {
-		@media only screen and (min-width: 360 + ($i * $point-size * 1px)) {
-			font-size: 1.2rem * (1 + (0.02 * $i));
-		}
-	}
+@if $type-enable-responsive-text {
+	$range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
+	$point-size: $range / $responsive-text-points !default;
 
-	@media only screen and (max-width: 360px) {
-		font-size: 1.2rem;
+	.t-responsive {
+		@for $i from 1 through $responsive-text-points {
+			@media only screen and (min-width: 360 + ($i * $point-size * 1px)) {
+				font-size: 1.2rem * (1 + (0.02 * $i));
+			}
+		}
+
+		@media only screen and (max-width: 360px) {
+			font-size: 1.2rem;
+		}
 	}
 }
 
