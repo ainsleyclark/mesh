@@ -16,7 +16,7 @@
 
 	//List items (li)
 	&-item {
-		background-color: #fff;
+		background-color: $list-background-color;
 		line-height: 1.5rem;
 		padding: 10px 20px;
 		margin: 0;
@@ -47,7 +47,7 @@
 		}
 
 		&:hover:not(.active) {
-			background-color: #ddd;
+			background-color: $list-border-color;
 		}
 	}
 

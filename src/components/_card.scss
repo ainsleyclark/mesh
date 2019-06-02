@@ -10,8 +10,8 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin: 0.5rem 0 1rem 0;
-	background: #fff;
+	margin: $card-margin;
+	background: $card-background-color;
 	border-radius: 3px;
 	border: 1px solid $card-border-color;
 	word-wrap: break-word;
@@ -33,7 +33,7 @@
 
 	//Card header
 	&-header {
-		padding: 12px 24px;
+		padding: $card-header-padding;
 
 		& * {
 			margin: 0;
@@ -48,8 +48,7 @@
 	//Card content/body
 	&-content {
 		position: relative;
-		padding: 24px;
-		//margin-bottom: 5px;
+		padding: $card-content-padding;
 
 		#{$self}-title {
 			margin: 0;
@@ -68,7 +67,7 @@
 
 	//Card action/footer
 	&-action {
-		padding: 16px 24px;
+		padding: $card-action-padding;
 		border-top: 1px solid rgba(0, 0, 0, 0.2);
 
 		a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large) {
@@ -99,29 +98,33 @@
 	}
 
 	//FAB icons
-	&-icon {
-		position: absolute;
-		right: 24px;
-		bottom: -22.5px;
-		margin: 0;
-		z-index: 1;
-		box-shadow: none;
-		transition: box-shadow 0.15s cubic-bezier(0.4, 0, 1, 1);
-
-		&.btn-large {
-			bottom: -28px;
+	@if $card-enable-fab-icon {
+		&-icon {
+			position: absolute;
+			right: 24px;
+			bottom: -22.5px;
+			margin: 0;
+			z-index: 1;
+			box-shadow: none;
+			transition: box-shadow 0.15s cubic-bezier(0.4, 0, 1, 1);
+	
+			&.btn-large {
+				bottom: -28px;
+			}
 		}
 	}
 
 	//Full background cards
-	&-background-img {
-		position: absolute;
-		object-fit: cover;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+	@if $card-enable-background-img {
+		&-background-img {
+			position: absolute;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
 	}
 }
