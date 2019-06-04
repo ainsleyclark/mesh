@@ -9,8 +9,8 @@
 
 
 ## /subtree
-git subtree push --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master
-git subtree pull --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master
+git subtree push --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master --squash
+git subtree pull --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master --squash
 
 ## Gulp 
 sudo npm install gulp -g 
