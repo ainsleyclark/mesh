@@ -11,3 +11,9 @@
 ## /subtree
 git subtree push --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master
 git subtree pull --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master
+
+## Gulp 
+sudo npm install gulp -g 
+
+const input = process.argv[2]
+const input = process.argv[3]
