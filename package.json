@@ -5,17 +5,14 @@
 	"author": "Ainsley Clark",
 	"license": "MIT",
 	"scripts": {
-		"dev": "vagrant up && npm run watch-css",
+		"dev": "npm run watch-css",
 		"prod": "npm run prefix && npm run clean && npm run minify",
 		"build-css": "./bin/build-css",
 		"watch-css": "./bin/watch-css",
 		"clean": "./bin/clean",
 		"prefix": "./bin/prefix",
 		"minify": "./bin/minify",
-		"lint": "./bin/lint",
-		"docker-start": "docker start mesh-php && npm run watch-css",
-		"docker-stop": "docker stop mesh-php",
-		"docker-create": "./bin/docker-create"
+		"lint": "./bin/lint"
 	},
 	"browserslist": [
 		"last 2 versions",
