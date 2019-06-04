@@ -1,2 +1,0 @@
-MESHPATH="$(pwd)/meshwebsite/"
-docker run -d -v $MESHPATH:/var/www/html --name mesh-php -p 8080:80 php:7-apache-stretch

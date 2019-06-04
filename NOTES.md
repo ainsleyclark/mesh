@@ -7,6 +7,7 @@
 ## /etc/hosts
 - 192.168.33.10 meshcss.com
 
-git subtree push --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master
 
-Test
+## /subtree
+git subtree push --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master
+git subtree pull --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master

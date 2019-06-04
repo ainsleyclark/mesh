@@ -1,24 +1,31 @@
+/*
+ * mesh v1.0.0 (https://meshcss.com)
+ * Copyright 2018-2019 meshCSS
+ * MIT License (https://github.com/ainsleyclark/mesh/blob/master/LICENSE)
+ */
+
 ///**
-//* master.scss
+//* mesh.scss
 //* Imports all files from abstracts, base, components, layout, pages & vendor
 //* @author Ainsley Clark
 //* @author URL:   https://www.ainsleyclark.com
 //* @author email: info@ainsleyclark.com
-//*
+//
 
 //Abstracts
-//----------------------------------------------
-@import 'abstracts/_functions';
-@import 'abstracts/_variables';
+// ==========================================================================
+@import 'abstracts/_functions.scss';
 @import 'abstracts/_mixins';
+@import 'abstracts/_variables';
 
 //Base
-//----------------------------------------------
+// ==========================================================================
+@import 'base/normalize';
 @import 'base/_global';
 
 //Grid
-//----------------------------------------------
+// ==========================================================================
 @import 'grid/_grid';
-@import 'grid/_display';
-@import 'grid/_order';
 @import 'grid/_flex';
+@import 'grid/_order';
+@import 'grid/_display';
