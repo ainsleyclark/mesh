@@ -2,10 +2,11 @@
 const   gulp = require('gulp'),
         sass = require('gulp-sass'),
         autoprefixer = require('gulp-autoprefixer'),
-        prettier = require('gulp-prettier');
-        prettierconfig = require("./config/prettier.config.js");
-
-
+        prettier = require('gulp-prettier'),
+        prettierconfig = require("./config/prettier.config.js"),
+        cleanCSS = require('gulp-clean-css'),
+        rename = require('gulp-rename');
+        merge = require('merge-stream');
 
 gulp.task('test', function(){
     console.log(prettierconfig);
@@ -13,19 +14,8 @@ gulp.task('test', function(){
 });
 
 
-
 const inputFile = process.argv[2];
 const outputFile = process.argv[3];
-
-//Browser support
-const browserSupport = [
-    "last 2 versions",
-    "Chrome >= 35",
-    "Firefox >= 31",
-    "not ie 10",
-    "not ie_mob 10",
-    "Safari >= 9"
-];
 
 // Fetch command line arguments
 const arg = (argList => {
@@ -56,34 +46,46 @@ const arg = (argList => {
 
 })(process.argv);
 
+//Build
+let scssFiles = ['mesh.scss', 'mesh-grid.scss'];
 
 gulp.task('build', function() {
-    return gulp.src('src/mesh.scss')
-        .pipe(sass({outputStyle: 'expanded'})) // Converts Sass to CSS with gulp-sass
-        .pipe(gulp.dest('dist/css'))
-        .pipe(autoprefixer({
-            browsers: browserSupport,
-            cascade: false
-        }))
-        .pipe(prettier(prettierconfig))
-        .pipe(gulp.src('src/mesh-grid.scss', {passthrough:true})) 
-        .pipe(sass({outputStyle: 'expanded'})) // Converts Sass to CSS with gulp-sass
-        .pipe(autoprefixer({
-            browsers: browserSupport,
-            cascade: false
-        }))
-        .pipe(prettier(prettierconfig))
-        .pipe(gulp.dest('dist/css'))
+
+    let tasks = scssFiles.map(function(element){
+        return gulp.src('src/' + element)
+            .pipe(sass({outputStyle: 'expanded'}))
+            .pipe(gulp.dest('dist/css'))
+            .pipe(autoprefixer())
+            .pipe(prettier(prettierconfig))
+    });
+
+    return merge(tasks);
+
 });
 
-gulp.task('prod', function() {
-    console.log('nowwwwwwww');
+//Minify
+let minfiyFiles = ['mesh.css', 'mesh-grid.css'];
+
+gulp.task('minify', function() {
+
+    let tasks = minfiyFiles.map(function(element){
+        return gulp.src('dist/css/' + element)
+            .pipe(cleanCSS())
+            .pipe(rename({
+                suffix: '.min'
+            }))
+            .pipe(gulp.dest('dist/css/'))
+    });
+
+    return merge(tasks);
+});
+
+//Prod
+gulp.task('prod', gulp.series('build', 'minify'))
+
+
+gulp.task('watch', function(){
+    gulp.watch("./assets/scss/**/*", css);
+    //gulp.watch('src/**/*.scss', ['sass']); 
+    // Other watchers
 })
-
-gulp.task('test', gulp.series('build', 'prod'))
-
-
-// gulp.task('watch', function(){
-//     gulp.watch('src/**/*.scss', ['sass']); 
-//     // Other watchers
-// })
