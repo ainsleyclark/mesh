@@ -9,6 +9,7 @@
 
 
 ## /subtree
+git subtree add --prefix=mesh-src https://github.com/ainsleyclark/mesh.git master --squash
 git subtree push --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master --squash
 git subtree pull --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  master --squash
 
