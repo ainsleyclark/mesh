@@ -27,10 +27,6 @@ const arg = (argList => {
 
 })(process.argv);
 
-
-
-// const inputFile = process.argv[2];
-// const outputFile = process.argv[3]
-
+module.exports = arg;
 
 

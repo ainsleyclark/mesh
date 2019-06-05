@@ -17,5 +17,9 @@ git subtree pull --prefix=mesh-src https://github.com/ainsleyclark/mesh.git  mas
 sudo npm install gulp -g 
 npm install --global gulp-cli
 
+###
+Example usage via shell (for website)
+gulp website --input './src/mesh.scss' --output './dist/css/mesh.css' --build_dir './dist/css'
+
 const input = process.argv[2]
 const input = process.argv[3]
