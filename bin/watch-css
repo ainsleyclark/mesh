@@ -1,1 +1,0 @@
-nodemon -e scss -x "npm run build-css && npm run lint && cp ./dist/css/mesh.css ./meshwebsite/css"

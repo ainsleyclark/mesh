@@ -3,16 +3,13 @@
 	"version": "1.0.0",
 	"description": "A lightweight, pure CSS framework.",
 	"author": "Ainsley Clark",
+	"homepage": "https://meshcss.com/",
 	"license": "MIT",
+	"style": "dist/css/mesh.css",
+	"sass": "src/mesh.scss",
 	"scripts": {
-		"dev": "npm run watch-css",
-		"prod": "npm run prefix && npm run clean && npm run minify",
-		"build-css": "./bin/build-css",
-		"watch-css": "./bin/watch-css",
-		"clean": "./bin/clean",
-		"prefix": "./bin/prefix",
-		"minify": "./bin/minify",
-		"lint": "./bin/lint"
+		"dev": "gulp dev",
+		"prod": "gulp prod"
 	},
 	"repository": {
 		"type": "git",
@@ -22,21 +19,19 @@
 		"url": "https://github.com/ainsleyclark/mesh/issues"
 	},
 	"homepage": "https://github.com/ainsleyclark/mesh#readme",
+	"engine": "node >= 6",
 	"devDependencies": {
+		"@bdchauvette/gulp-prettier": "^2.0.0",
 		"autoprefixer": "^9.6.0",
-		"clean-css": "^4.2.1",
-		"clean-css-cli": "^4.3.0",
-		"concurrently": "^4.1.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^6.1.0",
 		"gulp-clean-css": "^4.2.0",
 		"gulp-cli": "^2.2.0",
-		"gulp-prettier": "^2.1.0",
+		"gulp-filter": "^6.0.0",
 		"gulp-rename": "^1.4.0",
 		"gulp-sass": "^4.0.2",
+		"gulp-sass-lint": "^1.4.0",
 		"merge-stream": "^2.0.0",
-		"node-sass": "^4.12.0",
-		"nodemon": "^1.19.1",
 		"postcss-cli": "^6.1.2",
 		"prettier": "^1.17.1",
 		"sass-lint": "^1.13.1"

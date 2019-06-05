@@ -10,7 +10,6 @@ options:
 files:
   ignore:
     - './node_modules'
-    - 'meshwebsite/css/vendor/**'
 # Rule Configuration
 rules:
   border-zero:

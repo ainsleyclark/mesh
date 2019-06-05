@@ -1,1 +1,0 @@
-postcss dist/css/mesh.css --use=autoprefixer --no-map --output=dist/css/mesh.css && postcss dist/css/mesh-grid.css --use=autoprefixer --no-map --output=dist/css/mesh-grid.css && postcss meshwebsite/css/main.css --use=autoprefixer --no-map --output=meshwebsite/css/main.css

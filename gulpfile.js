@@ -1,91 +1,110 @@
+"use strict";
+
 // Require Gulp & Plugins
-const   gulp = require('gulp'),
-        sass = require('gulp-sass'),
-        autoprefixer = require('gulp-autoprefixer'),
-        prettier = require('gulp-prettier'),
-        prettierconfig = require("./config/prettier.config.js"),
-        cleanCSS = require('gulp-clean-css'),
-        rename = require('gulp-rename');
-        merge = require('merge-stream');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const prettier = require("@bdchauvette/gulp-prettier");
+const prettierconfig = require("./config/prettier.config.js");
+const cleanCSS = require('gulp-clean-css');
+const rename = require('gulp-rename');
+const merge = require('merge-stream');
+const sassLint = require('gulp-sass-lint');
+const filter = require("gulp-filter");
 
-gulp.task('test', function(){
-    console.log(prettierconfig);
-    // Other watchers
-});
-
-
-const inputFile = process.argv[2];
-const outputFile = process.argv[3];
-
-// Fetch command line arguments
-const arg = (argList => {
-
-    let arg = {}, a, opt, thisOpt, curOpt;
-    for (a = 0; a < argList.length; a++) {
-
-        thisOpt = argList[a].trim();
-        opt = thisOpt.replace(/^\-+/, '');
-
-        if (opt === thisOpt) {
-
-        // argument value
-        if (curOpt) arg[curOpt] = opt;
-        curOpt = null;
-
-    } else {
-
-        // argument name
-        curOpt = opt;
-        arg[curOpt] = true;
-
+//File paths for build
+let filePath = {
+    build_dir: './dist/css',
+    scss: {
+        src: ['./src/mesh.scss', './src/mesh-grid.scss']
+    },
+    css: {
+        src: ['./dist/css/mesh.css', './dist/css/mesh-grid.css']
+    },
+    clean: {
+        scss_src: 'src/**/*.scss',
+        css_src: 'dist/**/*.css'
+    },
+    watch: {
+        scss_src: 'src/**/*.scss'
+    },
+    lint: {
+        scss_src: 'src/**/*.scss'
     }
+}
 
-    }
+gulp.task('test', () => {
+    // console.log(process.argv[]);
+})
 
-    return arg;
-
-})(process.argv);
-
-//Build
-let scssFiles = ['mesh.scss', 'mesh-grid.scss'];
-
-gulp.task('build', function() {
-
-    let tasks = scssFiles.map(function(element){
-        return gulp.src('src/' + element)
+//Build CSS
+gulp.task('build', () => {
+    let tasks = filePath.scss.src.map(function(element){
+        return gulp.src(element)
             .pipe(sass({outputStyle: 'expanded'}))
-            .pipe(gulp.dest('dist/css'))
-            .pipe(autoprefixer())
-            .pipe(prettier(prettierconfig))
+            .pipe(gulp.dest(filePath.build_dir))
     });
-
     return merge(tasks);
-
 });
 
 //Minify
-let minfiyFiles = ['mesh.css', 'mesh-grid.css'];
-
-gulp.task('minify', function() {
-
-    let tasks = minfiyFiles.map(function(element){
-        return gulp.src('dist/css/' + element)
+gulp.task('minify', () => {
+    let tasks = filePath.css.src.map(function(element){
+        return gulp.src(element)
             .pipe(cleanCSS())
             .pipe(rename({
                 suffix: '.min'
             }))
-            .pipe(gulp.dest('dist/css/'))
+            .pipe(gulp.dest(filePath.build_dir))
     });
-
     return merge(tasks);
 });
 
-//Prod
-gulp.task('prod', gulp.series('build', 'minify'))
+//Clean SCSS
+gulp.task('clean-scss', () => {
+    return gulp.src(filePath.clean.scss_src)
+        .pipe(prettier(prettierconfig))
+        .pipe(filter(file => file.didPrettierFormat))
+        .pipe(gulp.dest(file => file.base))
+});
 
+//Clean CSS
+gulp.task('clean-css', () => {
+    return gulp.src(filePath.clean.css_src)
+        .pipe(prettier(prettierconfig))
+        .pipe(filter(file => file.didPrettierFormat))
+        .pipe(gulp.dest(file => file.base))
 
-gulp.task('watch', function(){
-    gulp.watch("./assets/scss/**/*", css);
-    //gulp.watch('src/**/*.scss', ['sass']); 
-    // Other watchers
+});
+
+//Prefix
+gulp.task('prefix', () => {
+    let tasks = filePath.css.src.map(function(element){
+        return gulp.src(element)
+            .pipe(autoprefixer())
+            .pipe(gulp.dest(filePath.build_dir))
+    });
+    return merge(tasks);
+});
+
+//Lint
+gulp.task('lint', function () {
+    return gulp.src(filePath.lint.scss_src)
+        .pipe(sassLint())
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError())
+});
+
+//Watch
+gulp.task('watch-scss', () => {
+    gulp.watch(filePath.watch.scss_src, gulp.series('lint'));
+    gulp.watch(filePath.watch.scss_src, gulp.series('build'));
 })
+
+//Scripts
+gulp.task('prod', gulp.series('lint', 'clean-scss', 'build', 'prefix', 'clean-css', 'minify'));
+gulp.task('dev', gulp.series('watch-scss'));
+gulp.task('website', gulp.series('build', 'prefix', 'clean-css', 'minify'));
+
+
+

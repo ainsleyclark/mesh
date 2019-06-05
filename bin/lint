@@ -1,1 +1,0 @@
-sass-lint -c ./config/.sass-lint.yaml 'src/**/*.scss, meshwebsite/**/*.scss' -v -q

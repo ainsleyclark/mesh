@@ -1,1 +1,0 @@
-cleancss --level=1 --output dist/css/mesh.min.css dist/css/mesh.css && cleancss --level=1 --output dist/css/mesh-grid.min.css dist/css/mesh-grid.css && cleancss --level=1 --output meshwebsite/css/main.min.css meshwebsite/css/main.css
