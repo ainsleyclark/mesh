@@ -101,7 +101,9 @@ gulp.task('prefix', () => {
     console.log('Adding vendor prefixes...');
     let tasks = filePath.css.src.map(function(element){
         return gulp.src(element)
-            .pipe(autoprefixer())
+            .pipe(autoprefixer({
+                browsers: require('.browserlistrc')
+            }))
             .pipe(gulp.dest(filePath.build_dir))
     });
     return merge(tasks);

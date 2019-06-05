@@ -20,3 +20,4 @@ npm install --global gulp-cli
 ###
 Example usage via shell (for website)
 gulp website --input './src/mesh.scss' --output './dist/css/mesh.css' --build_dir './dist/css'
+gulp website --input '/Users/Ainsley/Desktop/Web/mesh-site/temp/test.scss' --output '/Users/Ainsley/Desktop/Web/mesh-site/temp/test.css' --build_dir '/Users/Ainsley/Desktop/Web/mesh-site/temp/'

@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "A lightweight, pure CSS framework.",
 	"author": "Ainsley Clark",
-	"homepage": "https://meshcss.com/",
+	"homepage": "https://github.com/ainsleyclark/mesh#readme",
 	"license": "MIT",
 	"style": "dist/css/mesh.css",
 	"sass": "src/mesh.scss",
@@ -18,7 +18,6 @@
 	"bugs": {
 		"url": "https://github.com/ainsleyclark/mesh/issues"
 	},
-	"homepage": "https://github.com/ainsleyclark/mesh#readme",
 	"engine": "node >= 6",
 	"devDependencies": {
 		"@bdchauvette/gulp-prettier": "^2.0.0",
