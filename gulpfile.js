@@ -6,6 +6,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const prettier = require("@bdchauvette/gulp-prettier");
 const prettierconfig = require("./config/prettier.config.js");
+const browsersupport = require("./browserslistrc.js");
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const merge = require('merge-stream');
@@ -101,9 +102,7 @@ gulp.task('prefix', () => {
     console.log('Adding vendor prefixes...');
     let tasks = filePath.css.src.map(function(element){
         return gulp.src(element)
-            .pipe(autoprefixer({
-                browsers: require('.browserlistrc')
-            }))
+            .pipe(autoprefixer(browsersupport))
             .pipe(gulp.dest(filePath.build_dir))
     });
     return merge(tasks);
