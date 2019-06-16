@@ -35,6 +35,9 @@
 		.justify-content#{$modifier}-around {
 			justify-content: space-around !important;
 		}
+		.justify-content#{$modifier}-evenly {
+			justify-content: space-evenly !important;
+		}
 
 		//Align Self & Align Items
 		@each $property in ('self', 'items') {
