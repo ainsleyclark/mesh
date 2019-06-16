@@ -84,6 +84,10 @@ small {
 	font-weight: 300 !important;
 }
 
+.t-italic {
+	font-style: italic !important;
+}
+
 .t-uppercase {
 	text-transform: uppercase !important;
 }
@@ -99,6 +103,7 @@ small {
 .t-nowrap {
 	white-space: nowrap !important;
 }
+
 
 //Responsive Text
 @if $type-enable-responsive-text {
