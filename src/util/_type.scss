@@ -104,7 +104,6 @@ small {
 	white-space: nowrap !important;
 }
 
-
 //Responsive Text
 @if $type-enable-responsive-text {
 	$range: $grid-breakpoint-hd - $grid-breakpoint-mob !default;
