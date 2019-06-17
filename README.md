@@ -44,17 +44,17 @@ It has a huge amount of very useful utility classes, it's also built entirely ar
 
 ## Getting Started
 
-Head over to [http://meshcss.com/documentation/getting-started/installation](http://meshcss.com/documentation/getting-started/installation)</a> for more details on how to install and download mesh.
+Head over to the [installation](http://meshcss.com/documentation/getting-started/installation) for more details on how to install and download mesh. But here are a few options to get you started.
 
 - We recommend you to head over to the [meshBuilder](https://www.meshcss.com/builder) to only download the components/utilities you need with an extremely powerful tool helping you customize what components to import and colors to use.
 - Download the [latest release](https://github.com/ainsleyclark/mesh/releases/latest) with pre-compiled CSS
-- Install with [npm](https://npmjs.com) to get all source files as they are available on Github: ```npm install meshcss````
+- Install with [npm](https://npmjs.com) to get all source files as they are available on Github: ```npm install meshcss```
 - Directly load meshCSS via CDN from [jsDelivr](https://cdn.jsdelivr.net/gh/ainsleyclark/mesh@master/dist/css/mesh.min.css): https://cdn.jsdelivr.net/gh/ainsleyclark/mesh@master/dist/css/mesh.min.css
 
 
 ## Documentation
 
-Documentation for each utility and component can be found under the documentation folder, alternatively you can visit meshcss.com to see all 
+Documentation for each utility and component can be found under the documentation folder, alternatively you can visit [meshcss.com](https://www.meshcss.com) to see visual examples & code snippets.
 
 ## Contributing 
 
@@ -66,6 +66,7 @@ mesh welcomes contributors, but please read the [CONTRIBUTING document](CONTRIBU
 
 
 ## Contributors
+https://avatars.githubusercontent.com/ainsleyclark
 [@kassuro]( https://github.com/kassuro )
 [@nicholsk18]( https://github.com/nicholsk18 )
 [@versustune]( https://github.com/versustune )
@@ -79,7 +80,7 @@ mesh welcomes contributors, but please read the [CONTRIBUTING document](CONTRIBU
 - Edge
 - IE 11+
 
-Many thanks to Browserstack to ensure meshCSS works on multiple browsers.  <br/>
+Many thanks to Browserstack to ensure meshCSS works on multiple browsers.<br/>
 <a href="https://www.browserstack.com/">
   <img alt="BrowserStack Logo" src="https://www.meshcss.com/assets/img/browserstack-logo.png" width="144">
 </a>
