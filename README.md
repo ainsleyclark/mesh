@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://www.meshcss.com">
     <!-- <img alt="mesh-logo" src="https://www.meshcss.com/assets/img/meshlogo.svg" width="144"> -->
-    <img alt="mesh-logo" src="res/mesh-background-min.jpg" width="500gi">
+    <img alt="mesh-logo" src="res/mesh-background.jpg" width="500">
   </a>
 </p>
 
@@ -11,7 +11,7 @@
 
 <p align="center">
   A blazingly fast, versatile, pure CSS open source framework with a modular approach to a responsive grid system and a vast amount of utilities.<br>
-  <a href="http://staging.meshcss.com/"><strong>## Browse the docs ##-</strong></a>
+  <a href="http://staging.meshcss.com/"><strong>## Browse the docs ##</strong></a>
 </p>
 
 <p align="center">
