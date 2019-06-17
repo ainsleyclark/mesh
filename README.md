@@ -73,9 +73,9 @@ If you want to sponsor us or just buy us a copy, it would be greatly appreciated
 
 ## Contributors
 
-<table>
-	<tr>
-		<td align="center">
+<table border="0" cellpadding="0" cellspacing="0">
+	<tr border="0">
+		<td align="center" border="0">
 			<a href="https://github.com/ainsleyclark">
 				 <img src="https://avatars.githubusercontent.com/ainsleyclark" width="50px;"/>
 				<br /><sub><b>Ainsley Clark</b></sub>
