@@ -38,9 +38,11 @@
 
 ## Why meshCSS?
 
-meshCSS is pureCSS framework featuring a responsive grid system, a vast amount of utilities and pure dynamic components such as modals, tabs, alerts and many more.<br/>
-It's extremely quick -  100kb minified. mesh was built with a very modular approach, meaning you can cut back on classes & components you won't use by using our meshBuilder or the scss files.<br/>
-It has a huge amount of very useful utility classes, it's also built entirely around flex box, which enables you to write HTML quicker. It's extremely easy to pick up and will save you bags of time in the long run.
+meshCSS is a pureCSS framework built on a responsive grid system, featuring an array of pure dynamic components, such as modals, tabs, alerts and many more. 
+It's extremely quick -  100kb minified. <br />>
+mesh was specifically built with a modular approach, to allow you to cut back on classes and components by using our sass files or our unique meshBuilder.<br/>
+In addition, mesh has a huge amount of very useful utility classes and it's built entirely around flexbox, which enables you to write HTML quicker.<br/>
+Simple, concise and easy to pick up, mesh will save you time and make layouts a breeze
 
 ## Getting Started
 
