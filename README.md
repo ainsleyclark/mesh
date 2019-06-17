@@ -66,56 +66,20 @@ Documentation for each utility and component can be found under the documentatio
 ## Contributing 
 
 mesh welcomes contributors, but please read the [contributing document](CONTRIBUTING.md) before making a pull request. You can also browse the issues or help wanted section found above.
+We advise to get yourself familiar with grid system, utilities and components at [meshCSS](https://www.meshcss.com) to see how things work before contributing.
 
-**Notes:**
-- Get yourself familiar with grid system, utilities and components at [meshCSS](https://www.meshcss.com) to see how things work before contributing.
-- Please do not edit ***mesh.css*** directly, they are automatically generated.
 
 ## Donate
 If you want to sponsor us or just buy us a copy, it would be greatly appreciated. You can help keep meshCSS alive by donating. <br> Please visit GET SPONSOR to donate. 
 
 ## Contributors
 
-<table border="0" cellpadding="0" cellspacing="0">
-	<tr border="0">
-		<td align="center" border="0">
-			<a href="https://github.com/ainsleyclark">
-				 <img src="https://avatars.githubusercontent.com/ainsleyclark" width="50px;"/>
-				<br /><sub><b>Ainsley Clark</b></sub>
-			</a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/nicholsk18">
-				 <img src="https://avatars.githubusercontent.com/nicholsk18" width="50px;"/>
-				<br /><sub><b>Karson Nichols</b></sub>
-			</a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/Hazetheai">
-				 <img src="https://avatars.githubusercontent.com/Hazetheai" width="50px;"/>
-				<br /><sub><b>Jake Riordan</b></sub>
-			</a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/versustune">
-				 <img src="https://avatars.githubusercontent.com/versustune" width="50px;"/>
-				<br /><sub><b>Maurice Grönwoldt</b></sub>
-			</a>
-		</td>
-		<td align="center">
-			<a href="https://github.com/kassuro">
-				 <img src="https://avatars.githubusercontent.com/kassuro" width="50px;"/>
-				<br /><sub><b>Luca Fuhl</b></sub>
-			</a>
-		</td>
-</table>
-
 <p float="left">
-	<a href="https://github.com/ainsleyclark"><img src="https://avatars.githubusercontent.com/ainsleyclark" width="80px;" style="border-radius:100%""></a>
-	<a href="https://github.com/nicholsk18"><img src="https://avatars.githubusercontent.com/nicholsk18" width="80px;" style="border-radius:100%""></a>
-	<a href="https://github.com/Hazetheai"><img src="https://avatars.githubusercontent.com/Hazetheai" width="80px;" style="border-radius:100%""></a>
-	<a href="https://github.com/versustune"><img src="https://avatars.githubusercontent.com/versustune" width="80px;" style="border-radius:100%""></a>
-	<a href="https://github.com/kassuro"><img src="https://avatars.githubusercontent.com/kassuro" width="80px;" style="border-radius:100%"></a>
+	<a href="https://github.com/ainsleyclark"><img src="https://avatars.githubusercontent.com/ainsleyclark" width="80px;"/></a>
+	<a href="https://github.com/nicholsk18"><img src="https://avatars.githubusercontent.com/nicholsk18" width="80px;"/></a>
+	<a href="https://github.com/Hazetheai"><img src="https://avatars.githubusercontent.com/Hazetheai" width="80px;"/></a>
+	<a href="https://github.com/versustune"><img src="https://avatars.githubusercontent.com/versustune" width="80px;"/</a>
+	<a href="https://github.com/kassuro"><img src="https://avatars.githubusercontent.com/kassuro" width="80px;"/></a>
 </p>
 
 ## Browser Support
