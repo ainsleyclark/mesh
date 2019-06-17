@@ -34,15 +34,17 @@
   </a>
 </p>
 
+<br/>
+
 ## Why meshCSS?
 
-meshCSS is pureCSS framework featuring a responsive grid system, a vast amount of utilities and pure dynamic components such as modals, tabs, alerts and many more. 
-It's extremely quick -  100kb minified. mesh was built with a very modular approach, meaning you can cut back on classes & components you won't use by using our meshBuilder or the scss files.
+meshCSS is pureCSS framework featuring a responsive grid system, a vast amount of utilities and pure dynamic components such as modals, tabs, alerts and many more.<br/>
+It's extremely quick -  100kb minified. mesh was built with a very modular approach, meaning you can cut back on classes & components you won't use by using our meshBuilder or the scss files.<br/>
 It has a huge amount of very useful utility classes, it's also built entirely around flex box, which enables you to write HTML quicker. It's extremely easy to pick up and will save you bags of time in the long run.
 
 ## Getting Started
 
-Head over to <a href="http://meshcss.com/documentation/getting-started/installation">http://meshcss.com/documentation/getting-started/installation</a> for more details on how to install and download mesh.
+Head over to [http://meshcss.com/documentation/getting-started/installation](http://meshcss.com/documentation/getting-started/installation)</a> for more details on how to install and download mesh.
 
 - We recommend you to head over to the [meshBuilder](https://www.meshcss.com/builder) to only download the components/utilities you need with an extremely powerful tool helping you customize what components to import and colors to use.
 - Download the [latest release](https://github.com/ainsleyclark/mesh/releases/latest) with pre-compiled CSS
@@ -60,10 +62,15 @@ mesh welcomes contributors, but please read the [CONTRIBUTING document](CONTRIBU
 
 **Notes:**
 - Please do not edit ***mesh.css*** directly, they are automatically generated. 
-- Get yourself familiar with grid system, utilities and components at <a href="https://www.meshcss.com/">meshcss.com</a> to see how things work before contributing.
+- Get yourself familiar with grid system, utilities and components at [meshCSS](https://www.meshcss.com) to see how things work before contributing.
 
-## Supported Browsers:
-meshCSS is compatible with the following browsers:
+
+## Contributors
+[@kassuro]( https://github.com/kassuro )
+[@nicholsk18]( https://github.com/nicholsk18 )
+[@versustune]( https://github.com/versustune )
+
+## Browser Support
 
 - Chrome 35+
 - Firefox 31+
@@ -72,27 +79,10 @@ meshCSS is compatible with the following browsers:
 - Edge
 - IE 11+
 
-## Licence
-Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE).
-
-## Contributors
-[@kassuro]( https://github.com/kassuro )
-[@nicholsk18]( https://github.com/nicholsk18 )
-[@versustune]( https://github.com/versustune )
-
-## Thanks
 Many thanks to Browserstack to ensure meshCSS works on multiple browsers.  <br/>
 <a href="https://www.browserstack.com/">
   <img alt="BrowserStack Logo" src="https://www.meshcss.com/assets/img/browserstack-logo.png" width="144">
 </a>
 
-<table border="0">
- <tr>
-    <td><b style="font-size:30px">Title</b></td>
-    <td><b style="font-size:30px">Title 2</b></td>
- </tr>
- <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
- </tr>
-</table>
+## Licence
+Code Copyright 2018 mesh. Code released under the [MIT Licence](LICENCE).
