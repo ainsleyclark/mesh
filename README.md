@@ -66,8 +66,12 @@ mesh welcomes contributors, but please read the [CONTRIBUTING document](CONTRIBU
 
 
 ## Contributors
-<img src="https://avatars.githubusercontent.com/ainsleyclark" width="50px;" style="border-radius: 50%"/><br /><sub><b>Ainsley Clark</b></sub>
-
+<p align="center">
+<img src="https://avatars.githubusercontent.com/ainsleyclark" width="50px;"/><br /><sub><b>Ainsley Clark</b></sub>
+</p>
+<p align="center">
+<img src="https://avatars.githubusercontent.com/ainsleyclark" width="50px;"/><br /><sub><b>Ainsley Clark</b></sub>
+</p>
 [@kassuro]( https://github.com/kassuro )
 [@nicholsk18]( https://github.com/nicholsk18 )
 [@versustune]( https://github.com/versustune )
