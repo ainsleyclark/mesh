@@ -9,13 +9,6 @@
 </h1>
 
 <p align="center">
-  A blazingly fast, versatile, pure CSS open source framework <br>
-  with a modular approach to a responsive grid system and a <br>
-  vast amount of utilities.<br>
-  <a href="https://www.meshcss.com/"><strong>## Go to Docs ##</strong></a>
-</p>
-
-<p align="center">
   <a href="https://www.codefactor.io/repository/github/ainsleyclark/mesh">
   <img src="https://www.codefactor.io/repository/github/ainsleyclark/mesh/badge">
   </a>
@@ -34,6 +27,16 @@
   <a href="https://github.com/ainsleyclark/mesh/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square">
   </a>
+</p>
+
+<p align="center">
+  A blazingly fast, versatile, pure CSS open source framework <br>
+  with a modular approach to a responsive grid system and a <br>
+  vast amount of utilities.<br>
+</p>
+
+<p align="center">
+  <a href="https://www.meshcss.com/"><strong>## Go to Docs ##</strong></a>
 </p>
 
 <br/>
