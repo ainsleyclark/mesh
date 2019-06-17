@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://www.meshcss.com">
     <!-- <img alt="mesh-logo" src="https://www.meshcss.com/assets/img/meshlogo.svg" width="144"> -->
-    <img alt="mesh-logo" src="res/meshbackground.png" width="300">
+    <img alt="mesh-logo" src="res/mesh-background-min.jpg" width="600">
   </a>
 </p>
 
@@ -15,12 +15,14 @@
 
 
 <p align="center">
+
 [![CodeFactor](https://www.codefactor.io/repository/github/ainsleyclark/mesh/badge)](https://www.codefactor.io/repository/github/ainsleyclark/mesh)
 [![Discord Chat](https://img.shields.io/discord/308323056592486420.svg)](https://discord.gg/geBW7CN) 
 [![known vulnerabilities](https://snyk.io/test/github/ainsleyclark/mesh/badge.svg?targetFile=package.json)](https://snyk.io/test/github/ainsleyclark/mesh?targetFile=package.json)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 [![dependency status](https://david-dm.org/ainsleyclark/mesh.svg)](https://david-dm.org/ainsleyclark/mesh)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/ainsleyclark/mesh/) 
+
 </p>
 
 ## Why? [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
