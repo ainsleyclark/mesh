@@ -66,15 +66,11 @@ mesh welcomes contributors, but please read the [CONTRIBUTING document](CONTRIBU
 
 
 ## Contributors
-<p align="center">
 <img src="https://avatars.githubusercontent.com/ainsleyclark" width="50px;"/><br /><sub><b>Ainsley Clark</b></sub>
-</p>
-<p align="center">
-<img src="https://avatars.githubusercontent.com/ainsleyclark" width="50px;"/><br /><sub><b>Ainsley Clark</b></sub>
-</p>
-[@kassuro]( https://github.com/kassuro )
-[@nicholsk18]( https://github.com/nicholsk18 )
-[@versustune]( https://github.com/versustune )
+<img src="https://avatars.githubusercontent.com/nicholsk18" width="50px;"/><br /><sub><b>Karson Nichols</b></sub>
+<img src="https://avatars.githubusercontent.com/Hazetheai" width="50px;"/><br /><sub><b>Jake Riordan</b></sub>
+<img src="https://avatars.githubusercontent.com/versustune" width="50px;"/><br /><sub><b>Maurice Grönwoldt</b></sub>
+<img src="https://avatars.githubusercontent.com/kassuro" width="50px;"/><br /><sub><b>Luca Fuhl</b></sub>
 
 ## Browser Support
 
