@@ -1004,6 +1004,11 @@ ul {
 	justify-content: space-around !important;
 }
 
+.justify-content-evenly {
+	-webkit-box-pack: space-evenly !important;
+	justify-content: space-evenly !important;
+}
+
 .align-self-start {
 	align-self: flex-start !important;
 }
@@ -1148,6 +1153,10 @@ ul {
 	.justify-content-mob-around {
 		justify-content: space-around !important;
 	}
+	.justify-content-mob-evenly {
+		-webkit-box-pack: space-evenly !important;
+		justify-content: space-evenly !important;
+	}
 	.align-self-mob-start {
 		align-self: flex-start !important;
 	}
@@ -1269,6 +1278,10 @@ ul {
 	}
 	.justify-content-tab-around {
 		justify-content: space-around !important;
+	}
+	.justify-content-tab-evenly {
+		-webkit-box-pack: space-evenly !important;
+		justify-content: space-evenly !important;
 	}
 	.align-self-tab-start {
 		align-self: flex-start !important;
@@ -1392,6 +1405,10 @@ ul {
 	.justify-content-desk-around {
 		justify-content: space-around !important;
 	}
+	.justify-content-desk-evenly {
+		-webkit-box-pack: space-evenly !important;
+		justify-content: space-evenly !important;
+	}
 	.align-self-desk-start {
 		align-self: flex-start !important;
 	}
@@ -1513,6 +1530,10 @@ ul {
 	}
 	.justify-content-hd-around {
 		justify-content: space-around !important;
+	}
+	.justify-content-hd-evenly {
+		-webkit-box-pack: space-evenly !important;
+		justify-content: space-evenly !important;
 	}
 	.align-self-hd-start {
 		align-self: flex-start !important;
