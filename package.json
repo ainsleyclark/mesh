@@ -1,12 +1,18 @@
 {
-	"name": "mesh",
-	"version": "1.0.0",
-	"description": "A lightweight, pure CSS framework.",
-	"author": "Ainsley Clark",
+	"name": "meshcss",
+	"version": "0.5.0",
+	"description": "A blazingly fast, versatile, pure CSS open source framework with a modular approach to a responsive grid system and a vast amount of utilities.",
+	"author": "Ainsley Clark <info@ainsleyclark.com>",
 	"homepage": "https://github.com/ainsleyclark/mesh#readme",
 	"license": "MIT",
 	"style": "dist/css/mesh.css",
 	"sass": "src/mesh.scss",
+	"contributors": [
+		"Jake Riordan",
+		"Karson Nichols",
+		"Maurice Grönwoldt",
+		"Luca Fuhl"
+	],	
 	"scripts": {
 		"dev": "gulp dev",
 		"prod": "gulp prod"
