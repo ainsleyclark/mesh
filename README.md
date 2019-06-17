@@ -30,7 +30,7 @@
 </p>
 
 <p align="center">
-  A blazingly fast, versatile, pure CSS open source framework <br>
+  A blazingly fast, versatile, pure CSS framework <br>
   with a modular approach to a responsive grid system and a <br>
   vast amount of utilities.<br>
 </p>
@@ -43,7 +43,7 @@
 
 ## Why meshCSS?
 
-meshCSS is a pureCSS framework built on a responsive grid system, featuring an array of pure dynamic components, such as modals, tabs, alerts and many more. Better yet
+meshCSS is a pureCSS framework built on a responsive grid system, featuring an array of pure dynamic components, such as modals, tabs, alerts and many more. Better yet,
 it's extremely quick - <strong>100kb minified.</strong><br />
 mesh was specifically built with a modular approach, to allow you to cut back on classes and components by using our sass files or our unique meshBuilder.<br/>
 In addition, mesh has a huge amount of very useful utility classes and it's built entirely around flexbox, which enables you to write HTML quicker.<br/>
@@ -51,7 +51,7 @@ Simple, concise and easy to pick up, mesh will save you time and make layouts a 
 
 ## Getting Started
 
-Head over to the [installation](https://meshcss.com/documentation/getting-started/installation) page for more details on how to install and download mesh. But here are a few options to get you started.
+Head over to the [installation](https://meshcss.com/documentation/getting-started/installation) page for more details on how to download and install mesh. Here are a few options to get you started.
 
 - We recommend you visit the [meshBuilder](https://www.meshcss.com/builder) before downloading. With this powerful tool, you only download the components/utilities you need and you can change variables such as colors and spacing.
 - Download the [latest release](https://github.com/ainsleyclark/mesh/releases/latest) with pre-compiled CSS.
@@ -72,7 +72,7 @@ mesh welcomes contributors, but please read the [contributing document](CONTRIBU
 - Please do not edit ***mesh.css*** directly, they are automatically generated.
 
 ## Donate
-If you want to sponsor us or just buy us a copy, it would be greatly appreciated. You can help keep meshCSS alive by donating. <br> Please visit GET SPONSER to donate. 
+If you want to sponsor us or just buy us a copy, it would be greatly appreciated. You can help keep meshCSS alive by donating. <br> Please visit GET SPONSOR to donate. 
 
 ## Contributors
 
