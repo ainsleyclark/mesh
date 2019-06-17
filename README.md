@@ -111,11 +111,11 @@ If you want to sponsor us or just buy us a copy, it would be greatly appreciated
 </table>
 
 <p float="left">
-	<a href="https://github.com/ainsleyclark"><img src="https://avatars.githubusercontent.com/ainsleyclark" width="50px;"/></a>
-	<a href="https://github.com/nicholsk18"><img src="https://avatars.githubusercontent.com/nicholsk18" width="50px;"/></a>
-	<a href="https://github.com/Hazetheai"><img src="https://avatars.githubusercontent.com/Hazetheai" width="50px;"/></a>
-	<a href="https://github.com/versustune"><img src="https://avatars.githubusercontent.com/versustune" width="50px;"/</a>
-	<a href="https://github.com/kassuro"><img src="https://avatars.githubusercontent.com/kassuro" width="50px;"/></a>
+	<a href="https://github.com/ainsleyclark"><img src="https://avatars.githubusercontent.com/ainsleyclark" width="80px;"/></a>
+	<a href="https://github.com/nicholsk18"><img src="https://avatars.githubusercontent.com/nicholsk18" width="80px;"/></a>
+	<a href="https://github.com/Hazetheai"><img src="https://avatars.githubusercontent.com/Hazetheai" width="80px;"/></a>
+	<a href="https://github.com/versustune"><img src="https://avatars.githubusercontent.com/versustune" width="80px;"/</a>
+	<a href="https://github.com/kassuro"><img src="https://avatars.githubusercontent.com/kassuro" width="80px;"/></a>
 </p>
 
 ## Browser Support
