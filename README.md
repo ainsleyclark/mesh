@@ -7,10 +7,12 @@
 <h1 align="center" style="font-size: 3.2em">
   meshCSS
 </h1>
-
 <p align="center">
   <a href="https://www.codefactor.io/repository/github/ainsleyclark/mesh">
-  <img src="https://www.codefactor.io/repository/github/ainsleyclark/mesh/badge">
+    <img src="https://www.codefactor.io/repository/github/ainsleyclark/mesh/badge">
+  </a>
+  <a href="https://bundlephobia.com/result?p=meshcss">
+    <img src="https://img.shields.io/bundlephobia/min/rellax.svg?label=minified&color=green">
   </a>
   <a href="https://discord.gg/geBW7CN">
     <img src="https://img.shields.io/discord/569873903237857300.svg">
