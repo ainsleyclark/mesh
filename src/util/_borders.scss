@@ -3,6 +3,9 @@
 //Add borders & border radius & colors
 // ==========================================================================
 
+.b-none {
+	border: 0 !important;
+}
 .b {
 	border: #{$border-width} solid map-get($border-colors, 'default') !important;
 }
