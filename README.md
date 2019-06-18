@@ -9,13 +9,13 @@
 </h1>
 <p align="center">
   <a href="https://bundlephobia.com/result?p=meshcss">
-    <img src="https://img.shields.io/bundlephobia/min/meshcss.svg?label=minified&color=ff2451">
+    <img src="https://img.shields.io/bundlephobia/min/meshcss.svg?label=minified&color=ff69b4">
   </a>
   <a href="https://www.codefactor.io/repository/github/ainsleyclark/mesh">
     <img src="https://www.codefactor.io/repository/github/ainsleyclark/mesh/badge">
   </a>
   <a href="https://discord.gg/geBW7CN">
-    <img src="https://img.shields.io/discord/569873903237857300.svg">
+    <img src="https://img.shields.io/discord/569873903237857300.svg?brightgreen">
   </a>
   <a href="https://snyk.io/test/github/ainsleyclark/mesh?targetFile=package.json">
     <img src="https://snyk.io/test/github/ainsleyclark/mesh/badge.svg?targetFile=package.json">
@@ -55,10 +55,10 @@ Simple, concise and easy to pick up, mesh will save you time and make layouts a 
 
 Head over to the [installation](https://meshcss.com/documentation/getting-started/installation) page for more details on how to download and install mesh. Here are a few options to get you started.
 
-- We recommend you visit the [meshBuilder](https://www.meshcss.com/builder) before downloading. With this powerful tool, you only download the components/utilities you need and you can change variables such as colors and spacing.
-- Download the [latest release](https://github.com/ainsleyclark/mesh/releases/latest) with pre-compiled CSS.
-- Install with [npm](https://npmjs.com) to get all source files as they are available on Github: ```npm install meshcss```.
-- Load CSS via CDN from [jsDelivr](https://cdn.jsdelivr.net/gh/ainsleyclark/mesh@master/dist/css/mesh.min.css): https://cdn.jsdelivr.net/gh/ainsleyclark/mesh@master/dist/css/mesh.min.css
+- **meshBuilder** - We recommend you visit the [meshBuilder](https://www.meshcss.com/builder) before downloading. With this powerful tool, you only download the components/utilities you need and you can change variables such as colors and spacing.
+- **Direct download** - Download the [latest release](https://github.com/ainsleyclark/mesh/releases/latest) with pre-compiled CSS.
+- **npm** - Install with [npm](https://npmjs.com) to get all source files as they are available on Github: ```npm install meshcss```.
+- **CDN** - Load CSS via CDN from [jsDelivr](https://cdn.jsdelivr.net/gh/ainsleyclark/mesh@master/dist/css/mesh.min.css): https://cdn.jsdelivr.net/gh/ainsleyclark/mesh@master/dist/css/mesh.min.css
 
 
 ## Documentation
@@ -72,16 +72,17 @@ We advise to get yourself familiar with grid system, utilities and components at
 
 
 ## Donate
-If you want to sponsor us or just buy us a copy, it would be greatly appreciated. You can help keep meshCSS alive by donating. <br> Please visit GET SPONSOR to donate. 
+Maintaining & updating mesh is time consuming, if you want to sponsor us or just buy us a coffee, it would be greatly appreciated. You can help keep meshCSS alive by donating. 
+<br>Please visit [our donation page](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HEC5AZCBWH2B6&source=url) to contribute to the project, even a small amount helps.
 
 ## Contributors
 
 <p float="left">
-	<a href="https://github.com/ainsleyclark"><img src="https://avatars.githubusercontent.com/ainsleyclark" width="80px;"/></a>
-	<a href="https://github.com/nicholsk18"><img src="https://avatars.githubusercontent.com/nicholsk18" width="80px;"/></a>
-	<a href="https://github.com/Hazetheai"><img src="https://avatars.githubusercontent.com/Hazetheai" width="80px;"/></a>
-	<a href="https://github.com/versustune"><img src="https://avatars.githubusercontent.com/versustune" width="80px;"/</a>
-	<a href="https://github.com/kassuro"><img src="https://avatars.githubusercontent.com/kassuro" width="80px;"/></a>
+	<a href="https://github.com/ainsleyclark"><img src="https://avatars.githubusercontent.com/ainsleyclark" width="60px;"/></a>
+	<a href="https://github.com/nicholsk18"><img src="https://avatars.githubusercontent.com/nicholsk18" width="60px;"/></a>
+	<a href="https://github.com/Hazetheai"><img src="https://avatars.githubusercontent.com/Hazetheai" width="60px;"/></a>
+	<a href="https://github.com/versustune"><img src="https://avatars.githubusercontent.com/versustune" width="60px;"/</a>
+	<a href="https://github.com/kassuro"><img src="https://avatars.githubusercontent.com/kassuro" width="60px;"/></a>
 </p>
 
 ## Browser Support
