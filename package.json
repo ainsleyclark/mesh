@@ -8,6 +8,7 @@
 	"style": "dist/css/mesh.css",
 	"sass": "src/mesh.scss",
 	"contributors": [
+		"Ainsley Clark",
 		"Jake Riordan",
 		"Karson Nichols",
 		"Maurice Grönwoldt",
