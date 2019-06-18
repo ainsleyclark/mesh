@@ -342,8 +342,15 @@ $table-row-font-size: 14px !default;
 
 // 24. Tabs
 // ==========================================================================
+
+
 //Enable tabs features
 $tabs-enable-colored: true !default;
+$tabs-enable-css-hover: true !default;
+
+$tabs-active-color: color('primary') !default;
+$tabs-active-bar-color: color('primary') !default;
+$tabs-label-opacity: 0.7 !default;
 
 //Font
 $tabs-font-size: 14px !default;
