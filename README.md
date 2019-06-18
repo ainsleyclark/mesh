@@ -9,7 +9,7 @@
 </h1>
 <p align="center">
   <a href="https://bundlephobia.com/result?p=meshcss">
-    <img src="https://img.shields.io/bundlephobia/min/meshcss.svg?label=minified&color=#ff2451">
+    <img src="https://img.shields.io/bundlephobia/min/meshcss.svg?label=minified&color=ff2451">
   </a>
   <a href="https://www.codefactor.io/repository/github/ainsleyclark/mesh">
     <img src="https://www.codefactor.io/repository/github/ainsleyclark/mesh/badge">
