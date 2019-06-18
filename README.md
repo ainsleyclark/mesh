@@ -47,9 +47,6 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 ## Table of Contents
-- [
-  meshCSS
-](#meshcss)
   - [Why meshCSS?](#why-meshcss)
   - [Getting Started](#getting-started)
   - [Documentation](#documentation)
