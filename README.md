@@ -12,7 +12,7 @@
     <img src="https://www.codefactor.io/repository/github/ainsleyclark/mesh/badge">
   </a>
   <a href="https://bundlephobia.com/result?p=meshcss">
-    <img src="https://img.shields.io/bundlephobia/min/rellax.svg?label=minified&color=green">
+    <img src="https://img.shields.io/bundlephobia/min/meshcss.svg?label=minified&color=success">
   </a>
   <a href="https://discord.gg/geBW7CN">
     <img src="https://img.shields.io/discord/569873903237857300.svg">
