@@ -43,6 +43,24 @@
 
 <br/>
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+## Table of Contents
+- [
+  meshCSS
+](#meshcss)
+  - [Why meshCSS?](#why-meshcss)
+  - [Getting Started](#getting-started)
+  - [Documentation](#documentation)
+  - [Contributing](#contributing)
+  - [Donate](#donate)
+  - [Contributors](#contributors)
+  - [Browser Support](#browser-support)
+  - [Licence](#licence)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Why meshCSS?
 
 meshCSS is a pureCSS framework built on a responsive grid system, featuring an array of pure dynamic components, such as modals, tabs, alerts and many more. Better yet,
