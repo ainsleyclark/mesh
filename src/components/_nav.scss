@@ -14,11 +14,7 @@
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-<<<<<<< HEAD
   box-shadow: 0 0 2px -1px color("black");
-=======
-  box-shadow: 0 0 2px -1px map-get($palette, black);
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
 }
 
 .nav-container-lg {
@@ -44,13 +40,8 @@
   flex-direction: column;
   align-items: flex-start;
   min-width: 100%;
-<<<<<<< HEAD
   background-color: color("white");
   box-shadow: 0 1px 2px -1px color("black");
-=======
-  background-color: $white;
-  box-shadow: 0 1px 2px -1px map-get($palette, black);
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
   transform: scale(0);
   z-index: 100;
 }
@@ -151,11 +142,7 @@
 .nav-link,
 .dropdown-link {
   text-decoration: none;
-<<<<<<< HEAD
   color: color("dark");
-=======
-  color: map-get($palette, dark);
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
 
   &:hover,
   &:active {
@@ -172,11 +159,7 @@
   &-btn {
     position: relative;
     cursor: pointer;
-<<<<<<< HEAD
     border: 0;
-=======
-    border: none;
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
     background-color: transparent;
     padding: 4px 5px 6px 20px;
   }
@@ -222,48 +205,28 @@
 
     width: max-content;
     padding: 1rem 0.5rem;
-<<<<<<< HEAD
     box-shadow: 0 0 5px -2px color("black");
     border-radius: 3px;
     background-color: color("white");
-=======
-    box-shadow: 0 0 5px -2px map-get($palette, black);
-    border-radius: 3px;
-    background-color: map-get($palette, white);
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
     list-style-type: none;
     z-index: 99;
   }
 
   &-header {
-<<<<<<< HEAD
     padding: 0 1rem 1rem 1rem;
     // color: darken(color(dark), 40%);
-=======
-    padding: 0 1rem 1rem;
-    // color: darken(map-get($palette, dark), 40%);
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
   }
 
   // Item and Link base styles are set the same as nav-item & nav-link above
 
   &-item:hover {
-<<<<<<< HEAD
     background-color: color("primary");
     color: color("white");
-=======
-    background-color: map-get($palette, primary);
-    color: map-get($palette, white);
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
   }
 
   &-divider {
     width: 80%;
-<<<<<<< HEAD
     border-bottom: 1px solid color("light");
-=======
-    border-bottom: 1px solid map-get($palette, "light");
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
     margin: 0.5rem;
   }
 }
@@ -301,7 +264,6 @@
 .form-control {
   width: auto;
   padding: 0.5rem 0.25rem;
-<<<<<<< HEAD
   // color: color("dark");
   border: 0;
   background: none;
@@ -310,41 +272,20 @@
 
   &::placeholder {
     color: color("dark");
-=======
-  // color: map-get($palette, "dark");
-  border: none;
-  background: none;
-  border-bottom: 0.5px solid map-get($palette, "");
-  margin-right: 1rem;
-
-  &::placeholder {
-    color: map-get($palette, "dark");
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
   }
 }
 
 .form-btn-search {
-<<<<<<< HEAD
   background-color: transparent;
   padding: 0.5rem 0.25rem;
   border: 1px solid color("info");
-=======
-  background-color: $transparent;
-  padding: 0.5rem 0.25rem;
-  border: 1px solid map-get($palette, "info");
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
   border-radius: 3px;
   margin-bottom: 0 !important;
 
   &:active {
     transform: scale(0.95);
-<<<<<<< HEAD
     background-color: color("info");
     // color: darken(color(primary), 15%);
-=======
-    background-color: map-get($palette, "");
-    // color: darken(map-get($palette, "primary"), 15%);
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
   }
 
   &:hover {
@@ -361,7 +302,6 @@
 }
 
 .disabled-link {
-<<<<<<< HEAD
   color: color("muted");
   opacity: 0.5;
   background-color: transparent;
@@ -371,17 +311,6 @@
     cursor: default;
     opacity: 0.3;
     background-color: transparent;
-=======
-  color: map-get($palette, "muted");
-  opacity: 0.5;
-  background-color: $transparent;
-
-  &:hover {
-    color: map-get($palette, "muted");
-    cursor: default;
-    opacity: 0.3;
-    background-color: $transparent;
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
   }
 }
 
@@ -440,22 +369,14 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: flex-start;
     min-width: 100%;
-<<<<<<< HEAD
     box-shadow: 0 0 2px -1px color("black");
-=======
-    box-shadow: 0 0 2px -1px map-get($palette, black);
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
   }
 
   .nav-container {
     align-items: center;
     flex-wrap: wrap;
     max-height: 3.3rem;
-<<<<<<< HEAD
     box-shadow: 0 0 2px -1px color("black");
-=======
-    box-shadow: 0 0 2px -1px map-get($palette, black);
->>>>>>> 7f71a6b3b5ab752289e0fafb0487b97d633304c4
   }
 
   .nav-list {
