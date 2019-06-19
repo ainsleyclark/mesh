@@ -10,416 +10,416 @@
 // ==================== Navigation Bar =====================
 
 .nav-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  box-shadow: 0 0 2px -1px color("black");
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	position: relative;
+	box-shadow: 0 0 2px -1px color('black');
 }
 
 .nav-container-lg {
-  @include media-mob {
-    flex-wrap: nowrap;
-  }
+	@include media-mob {
+		flex-wrap: nowrap;
+	}
 }
 .nav-container-md {
-  @include media-tab {
-    flex-wrap: nowrap;
-  }
+	@include media-tab {
+		flex-wrap: nowrap;
+	}
 }
 .nav-container-sm {
-  @include media-desk {
-    flex-wrap: nowrap;
-  }
+	@include media-desk {
+		flex-wrap: nowrap;
+	}
 }
 
 .nav {
-  position: relative;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  min-width: 100%;
-  background-color: color("white");
-  box-shadow: 0 1px 2px -1px color("black");
-  transform: scale(0);
-  z-index: 100;
+	position: relative;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	min-width: 100%;
+	background-color: color('white');
+	box-shadow: 0 1px 2px -1px color('black');
+	transform: scale(0);
+	z-index: 100;
 }
 
 .nav-lg {
-  @include media-mob {
-    min-width: 20%;
-    position: relative;
-    flex-direction: row;
-    margin: 0 1rem 0 auto;
-    align-items: center;
-    box-shadow: none;
-  }
+	@include media-mob {
+		min-width: 20%;
+		position: relative;
+		flex-direction: row;
+		margin: 0 1rem 0 auto;
+		align-items: center;
+		box-shadow: none;
+	}
 }
 .nav-md {
-  @include media-tab {
-    min-width: 20%;
-    position: relative;
-    flex-direction: row;
-    margin: 0 1rem 0 auto;
-    align-items: center;
-    box-shadow: none;
-  }
+	@include media-tab {
+		min-width: 20%;
+		position: relative;
+		flex-direction: row;
+		margin: 0 1rem 0 auto;
+		align-items: center;
+		box-shadow: none;
+	}
 }
 .nav-sm {
-  @include media-desk {
-    min-width: 20%;
-    position: relative;
-    flex-direction: row;
-    margin: 0 1rem 0 auto;
-    align-items: center;
-    box-shadow: none;
-  }
+	@include media-desk {
+		min-width: 20%;
+		position: relative;
+		flex-direction: row;
+		margin: 0 1rem 0 auto;
+		align-items: center;
+		box-shadow: none;
+	}
 }
 
 .nav-list {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
 }
 
 .nav-list-lg {
-  @include media-mob {
-    flex-direction: row;
-  }
+	@include media-mob {
+		flex-direction: row;
+	}
 }
 
 .nav-list-md {
-  @include media-tab {
-    flex-direction: row;
-  }
+	@include media-tab {
+		flex-direction: row;
+	}
 }
 
 .nav-list-sm {
-  @include media-desk {
-    flex-direction: row;
-  }
+	@include media-desk {
+		flex-direction: row;
+	}
 }
 //================//Navigation Modifiers//================
 
 //================ JS Add these classes to make a desktop view =============
 // Add to .nav-list
 .nav-row {
-  flex-direction: row;
+	flex-direction: row;
 }
 
 // Add to .nav
 .desktop-view {
-  max-width: 100%;
-  position: relative;
-  flex-direction: row;
-  margin: 0 1rem 0 auto;
-  align-items: center;
-  transform: scale(1);
-  top: 0;
-  box-shadow: none;
+	max-width: 100%;
+	position: relative;
+	flex-direction: row;
+	margin: 0 1rem 0 auto;
+	align-items: center;
+	transform: scale(1);
+	top: 0;
+	box-shadow: none;
 
-  & ~ .navbar-collapse-label {
-    display: none;
-  }
+	& ~ .navbar-collapse-label {
+		display: none;
+	}
 }
 //================//================//================
 .nav-item,
 .dropdown-item {
-  position: relative;
-  list-style-type: none;
-  text-align: left;
-  border-radius: 3px;
-  padding: 1rem;
-  cursor: pointer;
+	position: relative;
+	list-style-type: none;
+	text-align: left;
+	border-radius: 3px;
+	padding: 1rem;
+	cursor: pointer;
 
-  &:hover,
-  &:active {
-    border-radius: 3px;
-  }
+	&:hover,
+	&:active {
+		border-radius: 3px;
+	}
 }
 
 .nav-link,
 .dropdown-link {
-  text-decoration: none;
-  color: color("dark");
+	text-decoration: none;
+	color: color('dark');
 
-  &:hover,
-  &:active {
-    opacity: 0.7;
-  }
+	&:hover,
+	&:active {
+		opacity: 0.7;
+	}
 }
 
 .show-nav {
-  transform: scale(1);
+	transform: scale(1);
 }
 
 .navbar-collapse {
-  //=============JS selectable button=============
-  &-btn {
-    position: relative;
-    cursor: pointer;
-    border: 0;
-    background-color: transparent;
-    padding: 4px 5px 6px 20px;
-  }
-  &-icon {
-    width: 2rem;
-    &:hover {
-      opacity: 0.7;
-    }
-  }
+	//=============JS selectable button=============
+	&-btn {
+		position: relative;
+		cursor: pointer;
+		border: 0;
+		background-color: transparent;
+		padding: 4px 5px 6px 20px;
+	}
+	&-icon {
+		width: 2rem;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
 
-  //============= Checkbox hack =============
-  &-label {
-    padding: 4px 5px 0 20px;
-    width: 4rem;
+	//============= Checkbox hack =============
+	&-label {
+		padding: 4px 5px 0 20px;
+		width: 4rem;
 
-    position: relative;
-    &:hover {
-      opacity: 0.7;
-    }
-  }
+		position: relative;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
 }
 #nav-toggle {
-  visibility: hidden;
+	visibility: hidden;
 
-  &:checked ~ .nav {
-    transform: scale(1);
-  }
+	&:checked ~ .nav {
+		transform: scale(1);
+	}
 }
 
 .brand-logo {
-  cursor: pointer;
-  width: 45px;
-  &:hover {
-    opacity: 0.8;
-  }
+	cursor: pointer;
+	width: 45px;
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 //====================DropDown============================
 
 .dropdown {
-  &-menu {
-    position: absolute;
+	&-menu {
+		position: absolute;
 
-    width: max-content;
-    padding: 1rem 0.5rem;
-    box-shadow: 0 0 5px -2px color("black");
-    border-radius: 3px;
-    background-color: color("white");
-    list-style-type: none;
-    z-index: 99;
-  }
+		width: max-content;
+		padding: 1rem 0.5rem;
+		box-shadow: 0 0 5px -2px color('black');
+		border-radius: 3px;
+		background-color: color('white');
+		list-style-type: none;
+		z-index: 99;
+	}
 
-  &-header {
-    padding: 0 1rem 1rem;
-    // color: darken(color(dark), 40%);
-  }
+	&-header {
+		padding: 0 1rem 1rem;
+		// color: darken(color(dark), 40%);
+	}
 
-  // Item and Link base styles are set the same as nav-item & nav-link above
+	// Item and Link base styles are set the same as nav-item & nav-link above
 
-  &-item:hover {
-    background-color: color("primary");
-    color: color("white");
-  }
+	&-item:hover {
+		background-color: color('primary');
+		color: color('white');
+	}
 
-  &-divider {
-    width: 80%;
-    border-bottom: 1px solid color("light");
-    margin: 0.5rem;
-  }
+	&-divider {
+		width: 80%;
+		border-bottom: 1px solid color('light');
+		margin: 0.5rem;
+	}
 }
 
 .dropdown-1 {
-  display: none;
+	display: none;
 }
 
 .dropdown-2 {
-  display: none;
+	display: none;
 }
 
 .dropdown-toggle {
-  &:hover {
-    cursor: pointer;
-  }
-  &:hover > .dropdown-1 {
-    display: block;
-  }
+	&:hover {
+		cursor: pointer;
+	}
+	&:hover > .dropdown-1 {
+		display: block;
+	}
 
-  &:hover > .dropdown-2 {
-    display: block;
-  }
+	&:hover > .dropdown-2 {
+		display: block;
+	}
 }
 
 // ==================== Navigation Form =====================
 
 .form-inline {
-  display: flex;
-  padding: 1rem;
-  justify-content: flex-start;
-  align-items: center;
+	display: flex;
+	padding: 1rem;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .form-control {
-  width: auto;
-  padding: 0.5rem 0.25rem;
-  // color: color("dark");
-  border: 0;
-  background: none;
-  border-bottom: 0.5px solid color("white");
-  margin-right: 1rem;
+	width: auto;
+	padding: 0.5rem 0.25rem;
+	// color: color("dark");
+	border: 0;
+	background: none;
+	border-bottom: 0.5px solid color('white');
+	margin-right: 1rem;
 
-  &::placeholder {
-    color: color("dark");
-  }
+	&::placeholder {
+		color: color('dark');
+	}
 }
 
 .form-btn-search {
-  background-color: transparent;
-  padding: 0.5rem 0.25rem;
-  border: 1px solid color("info");
-  border-radius: 3px;
-  margin-bottom: 0 !important;
+	background-color: transparent;
+	padding: 0.5rem 0.25rem;
+	border: 1px solid color('info');
+	border-radius: 3px;
+	margin-bottom: 0 !important;
 
-  &:active {
-    transform: scale(0.95);
-    background-color: color("info");
-    // color: darken(color(primary), 15%);
-  }
+	&:active {
+		transform: scale(0.95);
+		background-color: color('info');
+		// color: darken(color(primary), 15%);
+	}
 
-  &:hover {
-    cursor: pointer;
-    opacity: 0.7;
-  }
+	&:hover {
+		cursor: pointer;
+		opacity: 0.7;
+	}
 }
 
 // ====================  General Modifier classes =====================
 
 // JS selectable class.
 .active-link {
-  opacity: 0.7;
+	opacity: 0.7;
 }
 
 .disabled-link {
-  color: color("muted");
-  opacity: 0.5;
-  background-color: transparent;
+	color: color('muted');
+	opacity: 0.5;
+	background-color: transparent;
 
-  &:hover {
-    color: color("muted");
-    cursor: default;
-    opacity: 0.3;
-    background-color: transparent;
-  }
+	&:hover {
+		color: color('muted');
+		cursor: default;
+		opacity: 0.3;
+		background-color: transparent;
+	}
 }
 
 // Dropdown side
 .drop-left {
-  right: 4rem;
+	right: 4rem;
 }
 
 .drop-right {
-  left: 4rem;
+	left: 4rem;
 }
 
-input[type="checkbox"] {
-  display: none;
+input[type='checkbox'] {
+	display: none;
 }
 
 .animated-top {
-  transition: all 400ms ease-in-out;
-  transform-origin: top;
+	transition: all 400ms ease-in-out;
+	transform-origin: top;
 }
 
 .animated-right {
-  transition: all 400ms ease-in-out;
-  transform-origin: right;
+	transition: all 400ms ease-in-out;
+	transform-origin: right;
 }
 
 .animated-bottom {
-  transition: all 400ms ease-in-out;
-  transform-origin: bottom;
+	transition: all 400ms ease-in-out;
+	transform-origin: bottom;
 }
 
 .animated-left {
-  transition: all 400ms ease-in-out;
-  transform-origin: left;
+	transition: all 400ms ease-in-out;
+	transform-origin: left;
 }
 
 // ================== Doc positioning helper classes ===================
 // NOT USED OUTSIDE OF MESH DOCS
 
 .nav-doc-position {
-  position: relative;
-  left: 0;
+	position: relative;
+	left: 0;
 }
 
 .con-cont {
-  min-height: 8rem;
-  margin: 2rem 0;
+	min-height: 8rem;
+	margin: 2rem 0;
 }
 
 .header-cont {
-  height: 10rem;
+	height: 10rem;
 }
 
 @media screen and (max-width: 1395px) {
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 100%;
-    box-shadow: 0 0 2px -1px color("black");
-  }
+	.nav {
+		flex-direction: column;
+		align-items: flex-start;
+		min-width: 100%;
+		box-shadow: 0 0 2px -1px color('black');
+	}
 
-  .nav-container {
-    align-items: center;
-    flex-wrap: wrap;
-    max-height: 3.3rem;
-    box-shadow: 0 0 2px -1px color("black");
-  }
+	.nav-container {
+		align-items: center;
+		flex-wrap: wrap;
+		max-height: 3.3rem;
+		box-shadow: 0 0 2px -1px color('black');
+	}
 
-  .nav-list {
-    flex-direction: column;
-    align-content: flex-start;
-  }
+	.nav-list {
+		flex-direction: column;
+		align-content: flex-start;
+	}
 }
 
 @media screen and(min-width: 1395px) {
-  .nav-sm,
-  .nav-md,
-  .nav-lg {
-    transform: scale(1);
-  }
+	.nav-sm,
+	.nav-md,
+	.nav-lg {
+		transform: scale(1);
+	}
 }
 
 #nav-toggle-2 {
-  visibility: hidden;
+	visibility: hidden;
 
-  &:checked ~ .nav {
-    transform: scale(1);
-  }
+	&:checked ~ .nav {
+		transform: scale(1);
+	}
 }
 #nav-toggle-3 {
-  visibility: hidden;
+	visibility: hidden;
 
-  &:checked ~ .nav {
-    transform: scale(1);
-  }
+	&:checked ~ .nav {
+		transform: scale(1);
+	}
 }
 #nav-toggle-4 {
-  visibility: hidden;
+	visibility: hidden;
 
-  &:checked ~ .nav {
-    transform: scale(1);
-  }
+	&:checked ~ .nav {
+		transform: scale(1);
+	}
 }
 #nav-toggle-6 {
-  visibility: hidden;
+	visibility: hidden;
 
-  &:checked ~ .nav {
-    transform: scale(1);
-  }
+	&:checked ~ .nav {
+		transform: scale(1);
+	}
 }
 
 // ================== Doc positioning ===================

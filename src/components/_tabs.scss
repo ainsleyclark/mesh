@@ -30,7 +30,7 @@
 		text-decoration: none;
 		position: relative;
 		text-transform: uppercase;
-		-webkit-tap-highlight-color: transparent;
+		-webkit-tap-highlight-color: transparent; // sass-lint:disable-line  no-vendor-prefixes
 		font-weight: $tabs-font-weight;
 
 		@media (max-width: 599px) {
