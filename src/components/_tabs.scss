@@ -14,7 +14,7 @@
 	&-label {
 		font-size: $tabs-font-size;
 		height: 48px;
-		padding: 0 16px;
+		padding: $tabs-label-mobile-padding;
 		cursor: pointer;
 		opacity: $tabs-label-opacity;
 		min-width: 60px;
@@ -33,7 +33,7 @@
 
 		@include media-tab {
 			min-width: 160px;
-			padding: $tabs-padding;
+			padding: $tabs-label-padding;
 		}
 
 		//Active bar
@@ -72,7 +72,7 @@
 		flex-grow: 999999;
 		width: 100%;
 		display: none;
-		padding: 1rem;
+		padding: $tabs-panel-padding;
 		background: #fff;
 		border-top: $tabs-border-color;
 	}
