@@ -1,6 +1,6 @@
 //_tabs.scss
-
-// Horizontal Tabs
+//
+// Horizontal and vertical tab styling
 // ==========================================================================
 
 .tabs {
@@ -33,7 +33,7 @@
 
 		@include media-tab {
 			min-width: 160px;
-			padding: 0 24px;
+			padding: $tabs-padding;
 		}
 
 		//Active bar
