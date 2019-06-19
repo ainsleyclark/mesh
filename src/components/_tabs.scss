@@ -14,7 +14,7 @@
 	&-label {
 		font-size: $tabs-font-size;
 		height: 48px;
-		padding: 0 16px;
+		padding: $tabs-label-mobile-padding;
 		cursor: pointer;
 		opacity: $tabs-label-opacity;
 		min-width: 60px;
@@ -28,12 +28,12 @@
 		position: relative;
 		overflow: hidden;
 		text-transform: uppercase;
-		-webkit-tap-highlight-color: transparent;
+		-webkit-tap-highlight-color: transparent; // sass-lint:disable-line  no-vendor-prefixes
 		font-weight: $tabs-font-weight;
 
 		@include media-tab {
 			min-width: 160px;
-			padding: $tabs-padding;
+			padding: $tabs-label-padding;
 		}
 
 		//Active bar
@@ -52,14 +52,13 @@
 
 	//Animation bar class
 	&-animate {
-
 		#{$self}-label:after {
 			transform: scaleX(0);
 			transition: opacity 0.3s cubic-bezier(0.35, 0, 0.25, 1), transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 		}
 	}
 
-	//Radio 
+	//Radio
 	&-toggle {
 		display: none;
 		position: absolute;
@@ -73,7 +72,7 @@
 		flex-grow: 999999;
 		width: 100%;
 		display: none;
-		padding: 1rem;
+		padding: $tabs-panel-padding;
 		background: #fff;
 		border-top: $tabs-border-color;
 	}
@@ -85,7 +84,7 @@
 		//Active bar
 		&:after {
 			opacity: 1;
-			transform: scale(1) !important //Overwrite specifity of left and right tabs;
+			transform: scale(1) !important; //Overwrite specifity of left and right tabs;
 		}
 	}
 
@@ -93,11 +92,9 @@
 		display: block;
 	}
 
-	
 	// Bottom
 	// ==========================================================================
 	&-bottom {
-
 		#{$self}-label {
 			order: 1000;
 			border-top: 0;
@@ -117,10 +114,10 @@
 	// Left & right common props
 	// ==========================================================================
 
-	@mixin tabs-lr-props() {
+	@mixin tabs-lr-props {
 		display: grid;
 		grid-template-rows: auto [last-line];
-		grid-template-columns: repeat(1, minmax(50%, 50%)) [last-col] 50%; 
+		grid-template-columns: repeat(1, minmax(50%, 50%)) [last-col] 50%;
 
 		#{$self}-label {
 			grid-column: 1;
@@ -138,23 +135,19 @@
 		}
 
 		&#{$self}-animate {
-
 			#{$self}-label:after {
 				transform: scaleY(0);
 			}
 		}
 	}
 
-
 	// Left
 	// ==========================================================================
 
 	&-left {
-
 		@include media-tab {
+			@include tabs-lr-props;
 
-			@include tabs-lr-props();
-	
 			#{$self}-label {
 				justify-content: flex-start;
 				border-right: $tabs-border-color;
@@ -165,7 +158,6 @@
 					right: 0;
 				}
 			}
-	
 			#{$self}-panel {
 				grid-column: last-col / span 1;
 				grid-row: 1 / last-line;
@@ -178,11 +170,9 @@
 	// ==========================================================================
 
 	&-right {
-
 		@include media-tab {
+			@include tabs-lr-props;
 
-			@include tabs-lr-props();
-	
 			#{$self}-label {
 				grid-column: 2;
 				border-left: $tabs-border-color;
@@ -193,10 +183,10 @@
 					right: auto;
 				}
 			}
-	
+
 			#{$self}-panel {
 				grid-column: 1;
-				grid-row: 1/last-line;
+				grid-row: 1 / last-line;
 				grid-row-start: span 9999;
 			}
 		}
