@@ -161,7 +161,6 @@ $border-radius-large: 1em !default;
 // Enable features
 $alert-enable-background: true !default;
 $alert-enable-background-shadows: true !default;
-$alert-enable-rounded: true !default;
 $alert-enable-css-close: true !default;
 $alert-enable-js-close: true !default;
 
@@ -346,11 +345,7 @@ $table-row-font-size: 14px !default;
 //Color & opacity
 $tabs-active-color: color('primary') !default;
 $tabs-active-bar-color: color('primary') !default;
-<<<<<<< HEAD
-$tabs-border-color: 1px solid rgba(0, 0, 0, 0.12);
-=======
 $tabs-border-color: 1px solid rgba(0, 0, 0, 0.12) !default;
->>>>>>> d765c3232864e32be23725871f9c4e8cb7b322b4
 $tabs-label-opacity: 0.7 !default;
 
 //Font
@@ -358,14 +353,9 @@ $tabs-font-size: 14px !default;
 $tabs-font-weight: 500 !default;
 
 //Padding
-<<<<<<< HEAD
-$tabs-mobile-padding: 0 16px !default;
-$tabs-padding: 0 24px !default;
-=======
 $tabs-label-mobile-padding: 0 16px !default;
 $tabs-label-padding: 0 24px !default;
 $tabs-panel-padding: 1rem !default;
->>>>>>> d765c3232864e32be23725871f9c4e8cb7b322b4
 
 
 // 25. Toasts

@@ -4,6 +4,8 @@
 // ==========================================================================
 
 .alert {
+	$self: &;
+
 	border: 0;
 	font-weight: 300;
 	position: relative;
@@ -13,10 +15,6 @@
 	font-size: 1rem;
 	background: lighten($alert-default-background-color, 80%);
 	border-left: 3px solid $alert-default-background-color;
-
-	@if $alert-enable-rounded {
-		border-radius: 4px;
-	}
 
 	&-container {
 		position: relative;
@@ -71,6 +69,7 @@
 		}
 	}
 }
+
 
 // Close button styling
 // ==========================================================================
