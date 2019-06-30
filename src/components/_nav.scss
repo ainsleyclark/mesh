@@ -1,6 +1,6 @@
 
-$header-mobile-padding: 1.2em;
-$header-padding: 1.2em 1.5em;
+$navbar-mobile-padding: 1.2em;
+$navbar-padding: 1.2em 1.5em;
 $nav-active-color: color('primary');
 $nav-enable-js-close: true;
 
@@ -10,7 +10,7 @@ $nav-enable-js-close: true;
 	align-items: center;
 	align-content: center;
 	justify-content: space-between;
-    padding: $header-mobile-padding;
+    padding: $navbar-mobile-padding;
 	margin-bottom: 20px;
 	flex-wrap: wrap;
 	min-height: 70px;
@@ -18,11 +18,13 @@ $nav-enable-js-close: true;
 	@include media-desk {
 		flex-wrap: nowrap;
 		padding: 10px 15px;
-		padding: $header-padding;
+		padding: $navbar-padding;
 	}
 }
 
-//Main nav list
+// Nav menu (<div class="nav-menu">)
+// ==========================================================================
+
 .nav-menu {
 	$self: &;
 
@@ -65,137 +67,145 @@ $nav-enable-js-close: true;
 	&-left {
 		order: -1;
 	}
+}
 	
-	//Nav item (li)
-	.nav-item {
-		margin-top: 1rem;
-    	font-size: 14px;
-		cursor: pointer;
+// Nav item (<li>)
+// ==========================================================================
 
-		& > a,
-		& > span {
-			color: #999;
-		}
+.nav-item {
+	margin-top: 1rem;
+	font-size: 14px;
+	cursor: pointer;
 
-		//Active class 
-		.active {
-			color: $nav-active-color;
-		}
-
-		@include media-desk {
-			padding: 0 15px;
-			margin-top: 0;
-
-			&:hover:not(.active) {
-
-				& > a, 
-				& > span {
-					color: #222;
-				}
-				.active {
-					color: $nav-active-color;
-				}
-			}
-		}
+	& > a,
+	& > span {
+		color: #999;
 	}
 
-	//Arrow for mobile, dropdown 
-	.nav-arrow {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-
-		&:after {
-			content: "";
-			display: inline-block;
-			width: 0;
-			height: 0;
-			border-top: 5px solid;
-			border-right: 5px solid transparent;
-			border-bottom: 0;
-			border-left: 5px solid transparent;
-		}
-
-		@include media-desk {
-			display: block;
-
-			&:after {
-				display: none;
-			}
-		}
+	//Active class 
+	.active {
+		color: $nav-active-color;
 	}
 
-	//Set arrow back to shown on second level deep & under
 	@include media-desk {
-		#{$self} &-dropdown-link &-dropdown-link &-arrow {
+		padding: 0 15px;
+		margin-top: 0;
 
-			display: flex;
+		&:hover:not(.active) {
 
-			&:after {
-				display: inline-block;
+			& > a, 
+			& > span {
+				color: #222;
+			}
+			.active {
+				color: $nav-active-color;
 			}
 		}
 	}
-
-	//Dropdown functionality
-	.nav-dropdown-link {
-		margin-top: 1rem;
-
-		#{$self}-dropdown,
-		ul {
-			background-color: #ffffff;
-			margin-top: 15px;
-		}
-
-		@include media-desk {
-
-			&:hover,
-			&:focus-within {
-				#{$self}-dropdown {
-					visibility: visible;
-					opacity: 1;
-					transform: translateY(0);
-				}
-			}
-
-			& > #{$self}-dropdown {
-				visibility: hidden;
-				position: absolute;
-				opacity: 0;
-				z-index: 1020;
-				min-width: 200px;
-				padding: 5px 15px;
-				background: #fff;
-				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-				margin-top: 45px;
-				transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
-				transform: translateY(-5px);
-				will-change: opacity, transform;
-		
-				#{$self}-item {
-					padding: 0;
-					margin: 10px 0;
-				}
-		
-				&:after {
-					content: '';
-					display: block;
-					height: 200%;
-					width: 150%;
-					top: 40%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					position: absolute;
-					opacity: 0;
-					z-index: -1;
-				}
-			}
-		}
-	}
-
 }
 
-//Hamburger Icon
+// Arrow for dropdown
+// ==========================================================================
+
+.nav-arrow {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&:after {
+		content: "";
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-top: 5px solid;
+		border-right: 5px solid transparent;
+		border-bottom: 0;
+		border-left: 5px solid transparent;
+	}
+
+	@include media-desk {
+		display: block;
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
+//Set arrow back to shown on second level deep & under
+@include media-desk {
+	.nav-menu .nav-dropdown-link .nav-dropdown-link .nav-arrow {
+
+		display: flex;
+
+		&:after {
+			display: inline-block;
+		}
+	}
+}
+
+// Dropdown functionality ( <ul class="nav-dropdown">)
+// ==========================================================================
+
+.nav-dropdown-link {
+
+	margin-top: 1rem;
+
+	.nav-dropdown,
+	ul {
+		background-color: #ffffff;
+		margin-top: 15px;
+	}
+
+	@include media-desk {
+
+		&:hover,
+		&:focus-within {
+			.nav-dropdown {
+				visibility: visible;
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		& > .nav-dropdown {
+			visibility: hidden;
+			position: absolute;
+			opacity: 0;
+			z-index: 1020;
+			min-width: 200px;
+			padding: 5px 15px;
+			background: #fff;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			margin-top: 45px;
+			transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+			transform: translateY(-5px);
+			will-change: opacity, transform;
+	
+			.nav-item {
+				padding: 0;
+				margin: 10px 0;
+			}
+	
+			&:after {
+				content: '';
+				display: block;
+				height: 200%;
+				width: 150%;
+				top: 40%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				position: absolute;
+				opacity: 0;
+				z-index: -1;
+			}
+		}
+	}
+}
+
+// Nav btn (hamburger icon)
+// ==========================================================================
+
 .nav-btn {
 	position: relative;
 	display: flex;
@@ -581,7 +591,7 @@ $nav-enable-js-close: true;
 // 	margin: 2rem 0;
 // }
 
-// .header-cont {
+// .navbar-cont {
 // 	height: 10rem;
 // }
 
