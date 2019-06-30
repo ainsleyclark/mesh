@@ -2,6 +2,7 @@
 $header-mobile-padding: 1.2em;
 $header-padding: 1.2em 1.5em;
 $nav-active-color: color('primary');
+$nav-enable-js-close: true;
 
 .navbar {
 	width: 100%;
@@ -28,6 +29,19 @@ $nav-active-color: color('primary');
 	list-style-type: none;
 	flex-direction: column;
 	width: 100%;
+
+	@if $nav-enable-js-close {
+
+		max-height: 0;
+		overflow: hidden;
+		transition: 0.5s;
+		
+		&-dropdown-link ul {
+			max-height: 0;
+			overflow: hidden;
+			transition: 0.5s;
+		}
+	}
 
 	//Target all, ul's no bullets
 	ul {
