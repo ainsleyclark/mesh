@@ -94,24 +94,26 @@ $nav-active-color: color('primary');
 			border-left: 5px solid transparent;
 		}
 
-		// @include media-desk {
-		// 	display: block;
+		@include media-desk {
+			display: block;
 
-		// 	&:after {
-		// 		display: none;
-		// 	}
-		// }
-	}
-
-	#{$self} > &-item > &-dropdown-link {
-
-		display: block;
-
-		&:after {
-			display: none;
+			&:after {
+				display: none;
+			}
 		}
 	}
 
+	//Set arrow back to shown on second level deep & under
+	@include media-desk {
+		#{$self} &-dropdown-link &-dropdown-link &-arrow {
+
+			display: flex;
+
+			&:after {
+				display: inline-block;
+			}
+		}
+	}
 
 	//Dropdown functionality
 	&-dropdown-link {
@@ -119,7 +121,8 @@ $nav-active-color: color('primary');
 		padding: 0 10px;
 		margin: 10px 0;
 
-		#{$self}-dropdown {
+		#{$self}-dropdown,
+		ul {
 			background-color: #ffffff;
 			margin-top: 15px;
 		}
@@ -140,7 +143,7 @@ $nav-active-color: color('primary');
 				position: absolute;
 				opacity: 0;
 				z-index: 1020;
-				min-width: 150px;
+				min-width: 200px;
 				padding: 5px 15px;
 				background: #fff;
 				box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -170,7 +173,7 @@ $nav-active-color: color('primary');
 		}
 	}
 	
-	//Hamburger
+	//Hamburger Icon
 	&-btn {
 		display: flex;
 		justify-content: center;
@@ -179,6 +182,7 @@ $nav-active-color: color('primary');
 		padding: 0 15px;
 		height: $header-mobile-padding;
 		margin: -15px;
+		min-height: 60px;
 		
 		#{$self}-icon {
 			height: 20px;
@@ -189,8 +193,6 @@ $nav-active-color: color('primary');
 			display: none;
 		}
 	}
-	
-	
 }
 
 
