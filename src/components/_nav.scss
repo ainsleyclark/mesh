@@ -10,9 +10,10 @@ $nav-enable-js-close: true;
 	align-items: center;
 	align-content: center;
 	justify-content: space-between;
-    padding: 1.2em;
+    padding: $header-mobile-padding;
 	margin-bottom: 20px;
 	flex-wrap: wrap;
+	min-height: 70px;
 
 	@include media-desk {
 		flex-wrap: nowrap;
@@ -22,12 +23,9 @@ $nav-enable-js-close: true;
 }
 
 //Main nav list
-.nav {
+.nav-menu {
 	$self: &;
 
-	display: flex;
-	list-style-type: none;
-	flex-direction: column;
 	width: 100%;
 
 	@if $nav-enable-js-close {
@@ -36,10 +34,16 @@ $nav-enable-js-close: true;
 		overflow: hidden;
 		transition: 0.5s;
 		
-		&-dropdown-link ul {
-			max-height: 0;
-			overflow: hidden;
-			transition: 0.5s;
+		// &-dropdown-link ul {
+		// 	max-height: 0px;
+		// 	overflow: hidden;
+		// 	transition: 0.5s;
+		// }
+
+		@include media-desk {
+			max-height: none;
+			overflow: visible;
+			transition: none;
 		}
 	}
 
@@ -49,9 +53,12 @@ $nav-enable-js-close: true;
 	}
 
 	@include media-desk {
-		flex-direction: row;
 		width: auto;
-		align-items: center;
+
+		ul {
+			display: flex;
+			align-items: center;
+		}
 	}
 	
 	//Position (left class)
@@ -60,8 +67,8 @@ $nav-enable-js-close: true;
 	}
 	
 	//Nav item (li)
-	&-item {
-		padding: 10px;
+	.nav-item {
+		margin-top: 1rem;
     	font-size: 14px;
 		cursor: pointer;
 
@@ -77,6 +84,7 @@ $nav-enable-js-close: true;
 
 		@include media-desk {
 			padding: 0 15px;
+			margin-top: 0;
 
 			&:hover:not(.active) {
 
@@ -92,7 +100,7 @@ $nav-enable-js-close: true;
 	}
 
 	//Arrow for mobile, dropdown 
-	&-arrow {
+	.nav-arrow {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -130,10 +138,8 @@ $nav-enable-js-close: true;
 	}
 
 	//Dropdown functionality
-	&-dropdown-link {
-
-		padding: 0 10px;
-		margin: 10px 0;
+	.nav-dropdown-link {
+		margin-top: 1rem;
 
 		#{$self}-dropdown,
 		ul {
@@ -186,26 +192,27 @@ $nav-enable-js-close: true;
 			}
 		}
 	}
-	
-	//Hamburger Icon
-	&-btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
-		padding: 0 15px;
-		height: $header-mobile-padding;
-		margin: -15px;
-		min-height: 60px;
-		
-		#{$self}-icon {
-			height: 20px;
-			width: 20px;
-		}
 
-		@include media-desk {
-			display: none;
-		}
+}
+
+//Hamburger Icon
+.nav-btn {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	padding: 0 15px;
+	margin: -15px;
+	min-height: 70px;
+	
+	.nav-icon {
+		height: 20px;
+		width: 20px;
+	}
+
+	@include media-desk {
+		display: none;
 	}
 }
 
