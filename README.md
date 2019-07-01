@@ -78,17 +78,17 @@ Head over to the [installation](https://meshcss.com/documentation/getting-starte
 
 ## Documentation
 
-Documentation for each utility and component can be found under the documentation folder, alternatively you can visit [meshcss.com](https://www.meshcss.com) to see visual examples & code snippets.
+Documentation for each utility and component can be found under the documentation folder. Alternatively, you can visit [meshcss.com](https://www.meshcss.com) to see visual examples & code snippets.
 
 ## Contributing 
 
-mesh welcomes contributors, but please read the [contributing document](CONTRIBUTING.md) before making a pull request. You can also browse the issues or help wanted section found above.
-We advise to get yourself familiar with grid system, utilities and components at [meshCSS](https://www.meshcss.com) to see how things work before contributing.
+mesh welcomes contributors, but please read the [contributing document](CONTRIBUTING.md) before making a pull request. You can also browse the [issues](https://github.com/ainsleyclark/mesh/issuesissues) or [help wanted](https://github.com/ainsleyclark/mesh/pulls?q=is%3Apr+is%3Aopen+label%3A%22help+wanted%22) section found above.
+We advise that you get yourself familiar with grid system, utilities and components at [meshCSS](https://www.meshcss.com) to see how things work before contributing.
 
 
 ## Donate
-Maintaining & updating mesh is time consuming, if you want to sponsor us or just buy us a coffee, it would be greatly appreciated. You can help keep meshCSS alive by donating. 
-<br>Please visit [our donation page](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HEC5AZCBWH2B6&source=url) to contribute to the project, even a small amount helps.
+Maintaining & updating mesh is time consuming. If you want to sponsor us or just buy us a coffee, it would be greatly appreciated. You can help keep meshCSS alive by donating. 
+<br>Please visit [our donation page](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HEC5AZCBWH2B6&source=url) to contribute to the project - even a small amount helps.
 
 ## Contributors
 
@@ -109,7 +109,7 @@ Maintaining & updating mesh is time consuming, if you want to sponsor us or just
 - Edge
 - IE 11+
 
-Many thanks to Browserstack to ensure meshCSS works on multiple browsers.<br/>
+Many thanks to Browserstack for ensuring meshCSS works on multiple browsers.<br/>
 <a href="https://www.browserstack.com/">
   <img alt="BrowserStack Logo" src="https://www.meshcss.com/assets/img/browserstack-logo.png" width="144">
 </a>
