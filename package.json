@@ -13,7 +13,7 @@
 		"Karson Nichols",
 		"Maurice Grönwoldt",
 		"Luca Fuhl"
-	],	
+	],
 	"scripts": {
 		"dev": "gulp dev",
 		"prod": "gulp prod"
@@ -39,7 +39,7 @@
 		"gulp-sass-lint": "^1.4.0",
 		"merge-stream": "^2.0.0",
 		"postcss-cli": "^6.1.2",
-		"prettier": "^1.17.1",
+		"prettier": "^1.18.2",
 		"sass-lint": "^1.13.1"
 	},
 	"dependencies": {}
