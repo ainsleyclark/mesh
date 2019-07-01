@@ -21,10 +21,10 @@
 //	15. Collapse
 //	16. Epic
 //  17. Form
-//  18. Header
 //  19. List
 //  20. Modal
 //  21. Nav
+//  18. Navbar
 //  22. Pagination
 //  23. Table
 //	24. Tabs
@@ -262,10 +262,7 @@ $epic-default-padding: 4rem 2rem !default;
 // 17. Form
 // ==========================================================================
 
-// 18. Header
-// ==========================================================================
-
-// 19. List
+// 18. List
 // ==========================================================================
 
 $list-background-color: #fff !default;
@@ -273,7 +270,7 @@ $list-border-color: #ddd !default;
 $list-active-color: color('primary') !default;
 $list-disabled-color: #999 !default;
 
-// 20. Modal
+// 19. Modal
 // ==========================================================================
 
 //Enable features
@@ -304,8 +301,19 @@ $modal-overlay-background-color: rgba(0, 0, 0, 0.4) !default;
 $modal-container-transition: 0.4s !default;
 $modal-overlay-transition: 0.6s !default;
 
-// 21. Nav
+// 20. Nav
 // ==========================================================================
+
+// 21. Navbar
+// ==========================================================================
+
+//Padding & margin
+$navbar-mobile-padding: 1.2em !default;
+$navbar-padding: 1.2em 1.5em !default;
+$navbar-margin-bottom: 20px !default;
+
+//Color
+$navbar-background-color: #ebeaea !default;
 
 // 22. Pagination
 // ==========================================================================
@@ -346,7 +354,6 @@ $table-row-font-size: 14px !default;
 $tabs-active-color: color('primary') !default;
 $tabs-active-bar-color: color('primary') !default;
 $tabs-border-color: 1px solid rgba(0, 0, 0, 0.12) !default;
-$tabs-label-opacity: 0.7 !default;
 
 //Font
 $tabs-font-size: 14px !default;
@@ -356,7 +363,6 @@ $tabs-font-weight: 500 !default;
 $tabs-label-mobile-padding: 0 16px !default;
 $tabs-label-padding: 0 24px !default;
 $tabs-panel-padding: 1rem !default;
-
 
 // 25. Toasts
 // ==========================================================================

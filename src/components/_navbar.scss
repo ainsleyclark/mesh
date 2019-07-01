@@ -1,0 +1,102 @@
+// ==================== 1. Main header =====================
+
+.navbar {
+	$self: &;
+
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+	padding: $navbar-mobile-padding;
+	margin-bottom: $navbar-margin-bottom;
+	flex-wrap: wrap;
+	min-height: 70px;
+	background-color: $navbar-background-color;
+
+	// Color Schemes
+	// ==========================================================================
+	&-dark {
+		#{$self}-brand {
+			color: #fff;
+		}
+
+		.nav-item {
+			a,
+			span {
+				color: $nav-dark-color;
+			}
+
+			.active {
+				color: $nav-dark-active-color;
+			}
+
+			&:hover:not(.active) {
+				& > a,
+				& > span {
+					color: $nav-dark-active-color;
+				}
+			}
+		}
+	}
+
+	// Brand
+	// ==========================================================================
+	&-brand {
+		font-size: 1.3rem;
+		margin: 0;
+	}
+
+	// Search
+	// ==========================================================================
+	// &-search {
+
+	// }
+
+	// Bottom
+	// ==========================================================================
+
+	//Center class
+	&-center {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	//Other position classes
+	@include media-desk {
+		flex-wrap: nowrap;
+		padding: $navbar-padding;
+
+		&-left {
+			order: -1;
+		}
+
+		&-right {
+			order: 99999;
+		}
+	}
+
+	// Tabs
+	// ==========================================================================
+	&-tabs {
+		padding: 0;
+
+		#{$self}-brand,
+		.nav-btn {
+			padding: $navbar-mobile-padding;
+			margin: 0;
+		}
+
+		@include media-desk {
+			flex-wrap: wrap;
+
+			.navbar-brand,
+			.nav-btn {
+				padding: $navbar-padding;
+			}
+		}
+	}
+}

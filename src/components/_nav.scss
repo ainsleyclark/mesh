@@ -1,26 +1,8 @@
-
-$navbar-mobile-padding: 1.2em;
-$navbar-padding: 1.2em 1.5em;
-$nav-active-color: color('primary');
+$nav-color: #999;
+$nav-dark-color: rgba(255, 255, 255, 0.5);
+$nav-active-color: rgba(0, 0, 0, 0.9);
+$nav-dark-active-color: #fff;
 $nav-enable-js-close: true;
-
-.navbar {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: space-between;
-    padding: $navbar-mobile-padding;
-	margin-bottom: 20px;
-	flex-wrap: wrap;
-	min-height: 70px;
-
-	@include media-desk {
-		flex-wrap: nowrap;
-		padding: 10px 15px;
-		padding: $navbar-padding;
-	}
-}
 
 // Nav menu (<div class="nav-menu">)
 // ==========================================================================
@@ -31,11 +13,10 @@ $nav-enable-js-close: true;
 	width: 100%;
 
 	@if $nav-enable-js-close {
-
 		max-height: 0;
 		overflow: hidden;
 		transition: 0.5s;
-		
+
 		// &-dropdown-link ul {
 		// 	max-height: 0px;
 		// 	overflow: hidden;
@@ -62,13 +43,13 @@ $nav-enable-js-close: true;
 			align-items: center;
 		}
 	}
-	
+
 	//Position (left class)
 	&-left {
 		order: -1;
 	}
 }
-	
+
 // Nav item (<li>)
 // ==========================================================================
 
@@ -77,12 +58,11 @@ $nav-enable-js-close: true;
 	font-size: 14px;
 	cursor: pointer;
 
-	& > a,
-	& > span {
-		color: #999;
+	a,
+	span {
+		color: $nav-color;
 	}
 
-	//Active class 
 	.active {
 		color: $nav-active-color;
 	}
@@ -92,12 +72,8 @@ $nav-enable-js-close: true;
 		margin-top: 0;
 
 		&:hover:not(.active) {
-
-			& > a, 
+			& > a,
 			& > span {
-				color: #222;
-			}
-			.active {
 				color: $nav-active-color;
 			}
 		}
@@ -113,7 +89,7 @@ $nav-enable-js-close: true;
 	justify-content: space-between;
 
 	&:after {
-		content: "";
+		content: '';
 		display: inline-block;
 		width: 0;
 		height: 0;
@@ -135,7 +111,6 @@ $nav-enable-js-close: true;
 //Set arrow back to shown on second level deep & under
 @include media-desk {
 	.nav-menu .nav-dropdown-link .nav-dropdown-link .nav-arrow {
-
 		display: flex;
 
 		&:after {
@@ -148,7 +123,6 @@ $nav-enable-js-close: true;
 // ==========================================================================
 
 .nav-dropdown-link {
-
 	margin-top: 1rem;
 
 	.nav-dropdown,
@@ -158,7 +132,6 @@ $nav-enable-js-close: true;
 	}
 
 	@include media-desk {
-
 		&:hover,
 		&:focus-within {
 			.nav-dropdown {
@@ -176,17 +149,17 @@ $nav-enable-js-close: true;
 			min-width: 200px;
 			padding: 5px 15px;
 			background: #fff;
-			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 			margin-top: 45px;
 			transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 			transform: translateY(-5px);
 			will-change: opacity, transform;
-	
+
 			.nav-item {
 				padding: 0;
 				margin: 10px 0;
 			}
-	
+
 			&:after {
 				content: '';
 				display: block;
@@ -215,7 +188,7 @@ $nav-enable-js-close: true;
 	padding: 0 15px;
 	margin: -15px;
 	min-height: 70px;
-	
+
 	.nav-icon {
 		height: 20px;
 		width: 20px;
@@ -225,9 +198,6 @@ $nav-enable-js-close: true;
 		display: none;
 	}
 }
-
-
-
 
 // =========================== Table of Contents ===========================
 // 1. Navigation bar

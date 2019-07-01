@@ -16,7 +16,7 @@
 		height: 48px;
 		padding: $tabs-label-mobile-padding;
 		cursor: pointer;
-		opacity: $tabs-label-opacity;
+		opacity: 1;
 		min-width: 60px;
 		text-align: center;
 		display: inline-flex;
@@ -43,10 +43,25 @@
 			bottom: 0;
 			left: 0;
 			display: block;
-			height: 2px;
+			height: 3px;
 			width: 100%;
 			background-color: color('primary');
 			opacity: 0;
+		}
+	}
+
+	//Dark mode
+	&-dark {
+		#{$self}-label {
+			color: rgba(255, 255, 255, 0.5);
+
+			&:after {
+				background-color: #fff;
+			}
+		}
+
+		#{$self}-toggle:checked + #{$self}-label {
+			color: #fff;
 		}
 	}
 
@@ -84,7 +99,7 @@
 		//Active bar
 		&:after {
 			opacity: 1;
-			transform: scale(1) !important; //Overwrite specifity of left and right tabs;
+			transform: scale(1) !important; //Overwrite specificity of left and right tabs;
 		}
 	}
 
