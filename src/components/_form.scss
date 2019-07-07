@@ -72,18 +72,16 @@ input {
 	}
 }
 
-.floating-label input:focus ~ .input-label,
-.floating-label input:valid ~ .input-label {
+.floating-label input:focus ~ .input-label {
+	color: color('primary');
 	transform: translateY(-0.72rem);
 	font-size: 0.7rem;
 }
 
-.floating-label input:focus ~ .input-label {
-	color: color('primary');
-}
-
 .floating-label input:valid ~ .input-label {
 	color: color('secondary');
+	transform: translateY(-0.72rem);
+	font-size: 0.7rem;
 }
 
 .focus {
