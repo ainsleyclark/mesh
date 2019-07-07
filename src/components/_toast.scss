@@ -16,7 +16,6 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	z-index: 100;
 	font-weight: 300;
 	line-height: 1.6;
 	z-index: 9999;
@@ -47,25 +46,25 @@
 	}
 
 	//Positions
-	&-top-right, 
-	&-top-left, 
-	&-top-center, 
-	&-bottom-right, 
-	&-bottom-left, 
+	&-top-right,
+	&-top-left,
+	&-top-center,
+	&-bottom-right,
+	&-bottom-left,
 	&-bottom-center {
 		position: fixed;
 	}
 
-	&-top-right, 
-	&-top-left, 
+	&-top-right,
+	&-top-left,
 	&-top-center {
 		top: 20px;
 		left: 50%;
 		transform: translateX(-50%);
 	}
 
-	&-bottom-right, 
-	&-bottom-left, 
+	&-bottom-right,
+	&-bottom-left,
 	&-bottom-center {
 		top: auto;
 		bottom: 20px;
@@ -74,27 +73,26 @@
 	}
 
 	@include media-tab {
-
 		&-top-right {
 			top: 20px;
 			right: 20px;
 			transform: none;
 			left: auto;
 		}
-	
+
 		&-top-left {
 			top: 20px;
 			left: 20px;
 			right: 20px;
 			transform: none;
 		}
-	
+
 		&-top-center {
 			top: 20px;
 			left: 50%;
 			transform: translateX(-50%);
 		}
-		
+
 		&-bottom-right {
 			top: auto;
 			bottom: 20px;
@@ -102,23 +100,21 @@
 			left: auto;
 			transform: none;
 		}
-	
+
 		&-bottom-left {
 			top: auto;
 			bottom: 20px;
 			left: 20px;
 			transform: none;
 		}
-	
+
 		&-bottom-center {
 			top: auto;
 			bottom: 20px;
 			left: 50%;
 			transform: translateX(-50%);
 		}
-
 	}
-
 
 	//Rounded
 	&-rounded #{$self}-body {
