@@ -27,19 +27,11 @@
 		position: relative;
 		padding: $toast-padding;
 		width: 95vw;
-<<<<<<< HEAD
-		margin: 0 auto 10px auto;
-
-		@include media-tab {
-			width: auto;
-			margin: 0 0 10px 0;
-=======
 		margin: 0 auto 10px;
 
 		@include media-tab {
 			width: auto;
 			margin: 0 0 10px;
->>>>>>> 1c3d6040df0b05d1db65bbaa1e157cbba47d9d70
 		}
 
 		& .toast-control {
