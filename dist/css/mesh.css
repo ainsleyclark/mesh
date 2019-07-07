@@ -7122,7 +7122,7 @@ label.close {
 	max-width: 100%;
 	height: auto;
 	min-height: 48px;
-	top: 35px;
+	top: 20px;
 	display: -webkit-box;
 	display: flex;
 	-webkit-box-align: center;
@@ -7132,9 +7132,9 @@ label.close {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	flex-direction: column;
-	z-index: 100;
 	font-weight: 300;
 	line-height: 1.6;
+	z-index: 9999;
 	cursor: default;
 }
 
@@ -7143,7 +7143,15 @@ label.close {
 	color: #fff;
 	position: relative;
 	padding: 10px 25px;
-	margin-bottom: 10px;
+	width: 95vw;
+	margin: 0 auto 10px auto;
+}
+
+@media (min-width: 768px) {
+	.toast-body {
+		width: auto;
+		margin: 0 0 10px 0;
+	}
 }
 
 .toast-body .toast-control {
@@ -7155,6 +7163,79 @@ label.close {
 .toast-body.toast-show {
 	-webkit-animation: toast-show-animation 2s 1;
 	animation: toast-show-animation 2s 1;
+}
+
+.toast-top-right,
+.toast-top-left,
+.toast-top-center,
+.toast-bottom-right,
+.toast-bottom-left,
+.toast-bottom-center {
+	position: fixed;
+}
+
+.toast-top-right,
+.toast-top-left,
+.toast-top-center {
+	top: 20px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.toast-bottom-right,
+.toast-bottom-left,
+.toast-bottom-center {
+	top: auto;
+	bottom: 20px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+	.toast-top-right {
+		top: 20px;
+		right: 20px;
+		-webkit-transform: none;
+		transform: none;
+		left: auto;
+	}
+	.toast-top-left {
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		-webkit-transform: none;
+		transform: none;
+	}
+	.toast-top-center {
+		top: 20px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+	.toast-bottom-right {
+		top: auto;
+		bottom: 20px;
+		right: 20px;
+		left: auto;
+		-webkit-transform: none;
+		transform: none;
+	}
+	.toast-bottom-left {
+		top: auto;
+		bottom: 20px;
+		left: 20px;
+		-webkit-transform: none;
+		transform: none;
+	}
+	.toast-bottom-center {
+		top: auto;
+		bottom: 20px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
 }
 
 .toast-rounded .toast-body {
