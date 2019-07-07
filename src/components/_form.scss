@@ -64,24 +64,26 @@ input {
 	}
 
 	input {
+		&:valid,
+		&:focus {
+			& ~ .input-label {
+				transform: translateY(-0.72rem);
+				font-size: 0.7rem;
+			}
+		}
+
 		&:valid {
 			& ~ .input-label {
 				color: color('secondary');
 			}
 		}
+
+		&:focus {
+			& ~ .input-label {
+				color: color('primary');
+			}
+		}
 	}
-}
-
-.floating-label input:focus ~ .input-label {
-	color: color('primary');
-	transform: translateY(-0.72rem);
-	font-size: 0.7rem;
-}
-
-.floating-label input:valid ~ .input-label {
-	color: color('secondary');
-	transform: translateY(-0.72rem);
-	font-size: 0.7rem;
 }
 
 .focus {

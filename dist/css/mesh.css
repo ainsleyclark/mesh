@@ -7286,22 +7286,19 @@ input:focus ~ .focus {
 	pointer-events: none;
 }
 
+.floating-label input:valid ~ .input-label,
+.floating-label input:focus ~ .input-label {
+	-webkit-transform: translateY(-0.72rem);
+	transform: translateY(-0.72rem);
+	font-size: 0.7rem;
+}
+
 .floating-label input:valid ~ .input-label {
 	color: #8270b8;
 }
 
 .floating-label input:focus ~ .input-label {
 	color: #ff2451;
-	-webkit-transform: translateY(-0.72rem);
-	transform: translateY(-0.72rem);
-	font-size: 0.7rem;
-}
-
-.floating-label input:valid ~ .input-label {
-	color: #8270b8;
-	-webkit-transform: translateY(-0.72rem);
-	transform: translateY(-0.72rem);
-	font-size: 0.7rem;
 }
 
 .focus {
