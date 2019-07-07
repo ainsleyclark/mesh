@@ -1,0 +1,146 @@
+// sass-lint:disable nesting-depth
+.input,
+.input-check {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	margin: 2px 0;
+}
+
+.input {
+	margin-top: 1rem;
+
+	&.center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.right {
+		margin-left: 10%;
+	}
+}
+
+.input-field,
+.input-select {
+	border-bottom: 2px solid #dcdcdc;
+}
+
+input {
+	&:focus {
+		& + .input {
+			&:after {
+				width: 100%;
+			}
+		}
+
+		& ~ .focus {
+			transform: scaleX(1);
+			transform-origin: right;
+		}
+	}
+}
+
+.input input,
+.input select {
+	border: 0;
+	position: relative;
+	width: 100%;
+	background-color: transparent;
+	appearance: none;
+}
+
+.input input:focus,
+.input select:focus {
+	outline: none;
+}
+
+.floating-label {
+	.input-label {
+		display: block;
+		position: absolute;
+		top: 0;
+		transition: 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+		pointer-events: none;
+	}
+
+	input {
+		&:valid,
+		&:focus {
+			& ~ .input-label {
+				transform: translateY(-0.72rem);
+				font-size: 0.7rem;
+			}
+		}
+
+		&:valid {
+			& ~ .input-label {
+				color: color('secondary');
+			}
+		}
+
+		&:focus {
+			& ~ .input-label {
+				color: color('primary');
+			}
+		}
+	}
+}
+
+.focus {
+	width: 100%;
+	transform: scaleX(0);
+	background-color: color('primary');
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	height: 2px;
+	transition: 0.4s cubic-bezier(0.8, 0.4, 0.25, 1);
+	transform-origin: left;
+}
+
+.input-check {
+	input {
+		position: absolute;
+		top: -99999vw;
+
+		&:checked ~ .input-label {
+			.check {
+				border-color: color('secondary');
+
+				&:after {
+					background-color: color('secondary');
+					transform: scale(1);
+				}
+			}
+		}
+	}
+
+	.input-label {
+		display: flex;
+	}
+
+	.check {
+		width: 16px;
+		height: 16px;
+		border: 1px solid color('primary');
+		transition: border-color 0.5s;
+		margin-right: 5px;
+
+		&.radio,
+		&.radio:after {
+			border-radius: 50%;
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 12px;
+			height: 12px;
+			margin-left: 1px;
+			margin-top: 1px;
+			background-color: transparent;
+			transform: scale(0);
+			transition: 0.5s;
+		}
+	}
+}
