@@ -38,10 +38,10 @@
 				width: (100 / ($grid-columns / $i)) * 1%;
 			}
 		}
-		.col#{$modifier}-offset-0 {
+		//Offsets
+		.offset#{$modifier}-0 {
 			margin-left: 0;
 		}
-		//Offsets
 		@for $i from 1 through $grid-columns {
 			.offset#{$modifier}-#{$i} {
 				margin-left: (100 / ($grid-columns / $i)) * 1%;
