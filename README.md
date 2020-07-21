@@ -96,7 +96,7 @@ Maintaining & updating mesh is time consuming. If you want to sponsor us or just
 	<a href="https://github.com/ainsleyclark"><img src="https://avatars.githubusercontent.com/ainsleyclark" width="60px;"/></a>
 	<a href="https://github.com/nicholsk18"><img src="https://avatars.githubusercontent.com/nicholsk18" width="60px;"/></a>
 	<a href="https://github.com/Hazetheai"><img src="https://avatars.githubusercontent.com/Hazetheai" width="60px;"/></a>
-	<a href="https://github.com/versustune"><img src="https://avatars.githubusercontent.com/versustune" width="60px;"/</a>
+	<a href="https://github.com/versustunez"><img src="https://avatars.githubusercontent.com/versustunez" width="60px;"/</a>
 	<a href="https://github.com/kassuro"><img src="https://avatars.githubusercontent.com/kassuro" width="60px;"/></a>
 </p>
 
